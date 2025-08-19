@@ -1,0 +1,435 @@
+"""
+Orquestador principal del pipeline de Cuentería
+"""
+import json
+import logging
+import argparse
+from pathlib import Path
+from datetime import datetime
+from typing import Dict, Any, Optional, List
+import uuid
+
+from config import (
+    AGENT_PIPELINE,
+    get_story_path,
+    get_artifact_path,
+    PROCESSING_CONFIG,
+    validate_config
+)
+from agent_runner import AgentRunner
+from llm_client import get_llm_client
+
+logger = logging.getLogger(__name__)
+
+
+class StoryOrchestrator:
+    """Orquesta el pipeline completo de generación de cuentos"""
+    
+    def __init__(self, story_id: Optional[str] = None):
+        """
+        Inicializa el orquestador
+        
+        Args:
+            story_id: ID de la historia (si None, se genera uno)
+        """
+        self.story_id = story_id or self._generate_story_id()
+        self.story_path = get_story_path(self.story_id)
+        self.agent_runner = AgentRunner(self.story_id)
+        self.manifest = self._init_manifest()
+        
+    def _generate_story_id(self) -> str:
+        """Genera un ID único para la historia"""
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        unique_id = str(uuid.uuid4())[:8]
+        return f"{timestamp}_{unique_id}"
+    
+    def _init_manifest(self) -> Dict[str, Any]:
+        """Inicializa o carga el manifest de la historia"""
+        manifest_path = get_artifact_path(self.story_id, "manifest.json")
+        
+        if manifest_path.exists():
+            with open(manifest_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        else:
+            return {
+                "story_id": self.story_id,
+                "source": "local",
+                "created_at": datetime.now().isoformat(),
+                "updated_at": datetime.now().isoformat(),
+                "estado": "iniciado",
+                "paso_actual": None,
+                "qa_historial": {},
+                "devoluciones": [],
+                "reintentos": {},
+                "timestamps": {},
+                "webhook_url": None,
+                "webhook_attempts": 0
+            }
+    
+    def process_story(self, brief: Dict[str, Any], webhook_url: Optional[str] = None) -> Dict[str, Any]:
+        """
+        Procesa una historia completa a través del pipeline
+        
+        Args:
+            brief: Diccionario con personajes, historia, mensaje_a_transmitir, edad_objetivo
+            webhook_url: URL opcional para notificaciones
+            
+        Returns:
+            Diccionario con el resultado del procesamiento
+        """
+        logger.info(f"Iniciando procesamiento de historia: {self.story_id}")
+        
+        try:
+            # Validar configuración
+            validate_config()
+            
+            # Crear directorio de la historia
+            self.story_path.mkdir(parents=True, exist_ok=True)
+            logs_dir = self.story_path / "logs"
+            logs_dir.mkdir(exist_ok=True)
+            
+            # Guardar brief
+            brief_path = get_artifact_path(self.story_id, "brief.json")
+            with open(brief_path, 'w', encoding='utf-8') as f:
+                json.dump(brief, f, ensure_ascii=False, indent=2)
+            
+            # Actualizar manifest
+            self.manifest["webhook_url"] = webhook_url
+            self.manifest["estado"] = "en_progreso"
+            self._save_manifest()
+            
+            # Ejecutar pipeline
+            for agent_name in AGENT_PIPELINE:
+                logger.info(f"Ejecutando agente: {agent_name}")
+                
+                # Actualizar manifest
+                self.manifest["paso_actual"] = agent_name
+                self.manifest["updated_at"] = datetime.now().isoformat()
+                self._save_manifest()
+                
+                # Ejecutar agente
+                start_time = datetime.now()
+                result = self.agent_runner.run_agent(agent_name)
+                execution_time = (datetime.now() - start_time).total_seconds()
+                
+                # Registrar en manifest
+                self.manifest["timestamps"][agent_name] = {
+                    "start": start_time.isoformat(),
+                    "end": datetime.now().isoformat(),
+                    "duration": execution_time
+                }
+                
+                # Verificar resultado
+                if result["status"] == "error":
+                    logger.error(f"Error en agente {agent_name}: {result.get('error')}")
+                    self.manifest["estado"] = "error"
+                    self.manifest["error"] = {
+                        "agent": agent_name,
+                        "message": result.get("error"),
+                        "timestamp": datetime.now().isoformat()
+                    }
+                    self._save_manifest()
+                    return self._build_error_response(agent_name, result.get("error"))
+                
+                elif result["status"] == "qa_failed":
+                    logger.warning(f"QA falló para {agent_name} después de reintentos")
+                    
+                    # Registrar QA scores
+                    if "qa_scores" in result:
+                        self.manifest["qa_historial"][agent_name] = result["qa_scores"]
+                    
+                    # Registrar devolución
+                    self.manifest["devoluciones"].append({
+                        "paso": agent_name,
+                        "motivo": "QA bajo umbral después de reintentos",
+                        "qa_scores": result.get("qa_scores"),
+                        "issues": result.get("qa_issues"),
+                        "timestamp": datetime.now().isoformat()
+                    })
+                    
+                    # Registrar reintentos
+                    if agent_name not in self.manifest["reintentos"]:
+                        self.manifest["reintentos"][agent_name] = 0
+                    self.manifest["reintentos"][agent_name] = result.get("retry_count", 0)
+                    
+                    self.manifest["estado"] = "qa_failed"
+                    self._save_manifest()
+                    
+                    # Continuar con advertencia (o detener según configuración)
+                    logger.warning(f"Continuando pipeline a pesar de QA bajo para {agent_name}")
+                
+                else:  # success
+                    logger.info(f"Agente {agent_name} completado exitosamente")
+                    
+                    # Registrar QA scores
+                    if "qa_scores" in result:
+                        self.manifest["qa_historial"][agent_name] = result["qa_scores"]
+                    
+                    # Registrar reintentos si hubo
+                    if result.get("retry_count", 0) > 0:
+                        self.manifest["reintentos"][agent_name] = result["retry_count"]
+                
+                self._save_manifest()
+            
+            # Pipeline completado
+            logger.info("Pipeline completado exitosamente")
+            self.manifest["estado"] = "completo"
+            self.manifest["updated_at"] = datetime.now().isoformat()
+            self._save_manifest()
+            
+            # Obtener resultado final
+            final_result = self._get_final_result()
+            
+            return {
+                "status": "success",
+                "story_id": self.story_id,
+                "result": final_result,
+                "qa_scores": self._calculate_overall_qa(),
+                "processing_time": self._calculate_total_time(),
+                "metadata": {
+                    "retries": self.manifest.get("reintentos", {}),
+                    "warnings": self.manifest.get("devoluciones", [])
+                }
+            }
+            
+        except Exception as e:
+            logger.error(f"Error fatal en pipeline: {e}")
+            self.manifest["estado"] = "error"
+            self.manifest["error"] = {
+                "message": str(e),
+                "timestamp": datetime.now().isoformat()
+            }
+            self._save_manifest()
+            return self._build_error_response("orchestrator", str(e))
+    
+    def resume_story(self) -> Dict[str, Any]:
+        """
+        Reanuda el procesamiento de una historia interrumpida
+        
+        Returns:
+            Diccionario con el resultado
+        """
+        logger.info(f"Reanudando historia: {self.story_id}")
+        
+        # Cargar brief
+        brief_path = get_artifact_path(self.story_id, "brief.json")
+        if not brief_path.exists():
+            return self._build_error_response("resume", "Brief no encontrado")
+        
+        with open(brief_path, 'r', encoding='utf-8') as f:
+            brief = json.load(f)
+        
+        # Determinar desde dónde continuar
+        last_completed = self._find_last_completed_agent()
+        
+        if last_completed is None:
+            # Empezar desde el principio
+            return self.process_story(brief, self.manifest.get("webhook_url"))
+        
+        # Encontrar siguiente agente
+        try:
+            last_index = AGENT_PIPELINE.index(last_completed)
+            remaining_agents = AGENT_PIPELINE[last_index + 1:]
+        except ValueError:
+            return self._build_error_response("resume", f"Agente desconocido: {last_completed}")
+        
+        if not remaining_agents:
+            logger.info("Historia ya completada")
+            return {
+                "status": "already_completed",
+                "story_id": self.story_id,
+                "result": self._get_final_result()
+            }
+        
+        # Continuar con agentes restantes
+        logger.info(f"Continuando desde: {remaining_agents[0]}")
+        
+        for agent_name in remaining_agents:
+            logger.info(f"Ejecutando agente: {agent_name}")
+            
+            self.manifest["paso_actual"] = agent_name
+            self.manifest["updated_at"] = datetime.now().isoformat()
+            self._save_manifest()
+            
+            result = self.agent_runner.run_agent(agent_name)
+            
+            if result["status"] == "error":
+                logger.error(f"Error en agente {agent_name}: {result.get('error')}")
+                self.manifest["estado"] = "error"
+                self._save_manifest()
+                return self._build_error_response(agent_name, result.get("error"))
+            
+            if "qa_scores" in result:
+                self.manifest["qa_historial"][agent_name] = result["qa_scores"]
+            
+            self._save_manifest()
+        
+        # Completado
+        self.manifest["estado"] = "completo"
+        self._save_manifest()
+        
+        return {
+            "status": "success",
+            "story_id": self.story_id,
+            "result": self._get_final_result(),
+            "resumed": True
+        }
+    
+    def get_status(self) -> Dict[str, Any]:
+        """
+        Obtiene el estado actual de la historia
+        
+        Returns:
+            Diccionario con el estado
+        """
+        return {
+            "story_id": self.story_id,
+            "estado": self.manifest.get("estado"),
+            "paso_actual": self.manifest.get("paso_actual"),
+            "qa_historial": self.manifest.get("qa_historial"),
+            "reintentos": self.manifest.get("reintentos"),
+            "created_at": self.manifest.get("created_at"),
+            "updated_at": self.manifest.get("updated_at")
+        }
+    
+    def _find_last_completed_agent(self) -> Optional[str]:
+        """Encuentra el último agente completado exitosamente"""
+        for agent in reversed(AGENT_PIPELINE):
+            output_file = self._get_agent_output_file(agent)
+            if get_artifact_path(self.story_id, output_file).exists():
+                return agent
+        return None
+    
+    def _get_agent_output_file(self, agent_name: str) -> str:
+        """Obtiene el nombre del archivo de salida de un agente"""
+        agent_index = {
+            "director": "01",
+            "psicoeducador": "02",
+            "cuentacuentos": "03",
+            "editor_claridad": "04",
+            "ritmo_rima": "05",
+            "continuidad": "06",
+            "diseno_escena": "07",
+            "direccion_arte": "08",
+            "sensibilidad": "09",
+            "portadista": "10",
+            "loader": "11",
+            "validador": "12"
+        }
+        index = agent_index.get(agent_name, "99")
+        return f"{index}_{agent_name}.json"
+    
+    def _get_final_result(self) -> Dict[str, Any]:
+        """Obtiene el resultado final del validador"""
+        validador_path = get_artifact_path(self.story_id, "12_validador.json")
+        
+        if validador_path.exists():
+            with open(validador_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        
+        return {}
+    
+    def _calculate_overall_qa(self) -> Dict[str, float]:
+        """Calcula los scores QA generales"""
+        qa_historial = self.manifest.get("qa_historial", {})
+        
+        if not qa_historial:
+            return {"overall": 0.0}
+        
+        all_scores = []
+        for agent_scores in qa_historial.values():
+            if isinstance(agent_scores, dict):
+                for metric, score in agent_scores.items():
+                    if metric != "promedio" and isinstance(score, (int, float)):
+                        all_scores.append(score)
+        
+        if all_scores:
+            overall = sum(all_scores) / len(all_scores)
+            return {
+                "overall": round(overall, 2),
+                "by_agent": qa_historial
+            }
+        
+        return {"overall": 0.0, "by_agent": qa_historial}
+    
+    def _calculate_total_time(self) -> float:
+        """Calcula el tiempo total de procesamiento"""
+        timestamps = self.manifest.get("timestamps", {})
+        total_time = 0
+        
+        for agent_times in timestamps.values():
+            if "duration" in agent_times:
+                total_time += agent_times["duration"]
+        
+        return round(total_time, 2)
+    
+    def _save_manifest(self):
+        """Guarda el manifest actualizado"""
+        manifest_path = get_artifact_path(self.story_id, "manifest.json")
+        with open(manifest_path, 'w', encoding='utf-8') as f:
+            json.dump(self.manifest, f, ensure_ascii=False, indent=2)
+    
+    def _build_error_response(self, agent: str, error: str) -> Dict[str, Any]:
+        """Construye una respuesta de error"""
+        return {
+            "status": "error",
+            "story_id": self.story_id,
+            "agent": agent,
+            "error": error,
+            "manifest": self.manifest
+        }
+
+
+def main():
+    """Función principal para ejecución CLI"""
+    parser = argparse.ArgumentParser(description="Orquestador de Cuentería")
+    parser.add_argument("--story-id", help="ID de la historia")
+    parser.add_argument("--brief", help="Ruta al archivo brief.json")
+    parser.add_argument("--resume", action="store_true", help="Reanudar historia existente")
+    parser.add_argument("--validate", help="Validar historia por ID")
+    parser.add_argument("--status", help="Ver estado de historia por ID")
+    parser.add_argument("--log-level", default="INFO", help="Nivel de logging")
+    
+    args = parser.parse_args()
+    
+    # Configurar logging
+    logging.basicConfig(
+        level=getattr(logging, args.log_level.upper()),
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    )
+    
+    # Validar modelo LLM disponible
+    llm_client = get_llm_client()
+    if not llm_client.validate_connection():
+        logger.error("No se pudo conectar al modelo LLM. Verifica la configuración.")
+        return 1
+    
+    # Ejecutar según argumentos
+    if args.resume and args.story_id:
+        orchestrator = StoryOrchestrator(args.story_id)
+        result = orchestrator.resume_story()
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        
+    elif args.status and args.story_id:
+        orchestrator = StoryOrchestrator(args.story_id)
+        status = orchestrator.get_status()
+        print(json.dumps(status, ensure_ascii=False, indent=2))
+        
+    elif args.brief:
+        # Cargar brief
+        with open(args.brief, 'r', encoding='utf-8') as f:
+            brief = json.load(f)
+        
+        orchestrator = StoryOrchestrator(args.story_id)
+        result = orchestrator.process_story(brief)
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        
+    else:
+        parser.print_help()
+        return 1
+    
+    return 0
+
+
+if __name__ == "__main__":
+    exit(main())

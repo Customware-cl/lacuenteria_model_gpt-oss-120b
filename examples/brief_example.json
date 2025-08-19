@@ -1,0 +1,22 @@
+{
+  "personajes": [
+    {
+      "nombre": "Luna",
+      "descripcion": "Una pequeña luciérnaga de 5 años con una luz muy tenue que se apaga cuando tiene miedo",
+      "rasgos": "Tímida, curiosa, valiente cuando es necesario"
+    },
+    {
+      "nombre": "Estrellín", 
+      "descripcion": "Un grillo sabio y anciano que toca el violín",
+      "rasgos": "Paciente, sabio, motivador"
+    },
+    {
+      "nombre": "Sombra",
+      "descripcion": "La oscuridad del bosque, no es malvada sino incomprendida",
+      "rasgos": "Misteriosa, solitaria, protectora"
+    }
+  ],
+  "historia": "Luna es una luciérnaga que teme a la oscuridad, lo cual es un problema porque debe brillar de noche. Con ayuda de Estrellín el grillo músico, descubre que la oscuridad (Sombra) no es su enemiga sino el lienzo donde su luz puede brillar. A través de pequeños pasos y respirando profundo, Luna aprende a controlar su miedo y descubre que su luz, aunque pequeña, puede iluminar el camino de otros insectos perdidos en el bosque.",
+  "mensaje_a_transmitir": "Los miedos se vencen poco a poco con valentía y apoyo. La respiración nos ayuda a calmarnos. Todos tenemos una luz interior que puede ayudar a otros, sin importar cuán pequeña sea.",
+  "edad_objetivo": "4-6 años"
+}
