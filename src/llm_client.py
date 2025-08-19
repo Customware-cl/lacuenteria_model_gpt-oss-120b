@@ -44,18 +44,19 @@ class LLMClient:
             Exception: Si falla después de todos los reintentos
         """
         # Construir el prompt completo
+        # Incluir instrucción JSON en el system prompt
+        json_instruction = "\n\nIMPORTANTE: Tu respuesta debe ser ÚNICAMENTE un JSON válido, sin texto adicional antes o después."
         messages = [
-            {"role": "system", "content": system_prompt},
+            {"role": "system", "content": system_prompt + json_instruction},
             {"role": "user", "content": user_prompt}
         ]
         
-        # Preparar el payload
+        # Preparar el payload para chat/completions
         payload = {
             "model": self.model,
             "messages": messages,
             "temperature": temperature or self.temperature,
-            "max_tokens": max_tokens or self.max_tokens,
-            "response_format": {"type": "json_object"}  # Forzar respuesta JSON
+            "max_tokens": max_tokens or self.max_tokens
         }
         
         # Intentar con reintentos
@@ -80,7 +81,11 @@ class LLMClient:
                 
                 # Extraer el contenido generado
                 if "choices" in result and len(result["choices"]) > 0:
-                    content = result["choices"][0]["message"]["content"]
+                    content = result["choices"][0].get("message", {}).get("content")
+                    
+                    if content is None or content == "":
+                        logger.warning("El modelo devolvió contenido vacío")
+                        raise ValueError("El modelo no generó contenido")
                     
                     # Intentar parsear como JSON
                     try:
@@ -89,6 +94,7 @@ class LLMClient:
                         return json_content
                     except json.JSONDecodeError as e:
                         logger.warning(f"La respuesta no es JSON válido: {e}")
+                        logger.debug(f"Contenido recibido: {content[:500]}")
                         # Intentar limpiar y parsear de nuevo
                         cleaned_content = self._clean_json_response(content)
                         try:
@@ -159,30 +165,30 @@ class LLMClient:
             True si el endpoint responde, False en caso contrario
         """
         try:
-            # Intentar una petición simple de health check
-            # Ajustar según la API específica de gpt-oss-120b
-            response = requests.get(
-                self.endpoint.replace("/v1/completions", "/health"),
-                timeout=5
+            # Primero intentar endpoint /v1/models
+            models_endpoint = self.endpoint.replace("/v1/chat/completions", "/v1/models")
+            response = requests.get(models_endpoint, timeout=5)
+            if response.status_code == 200:
+                return True
+        except:
+            pass
+        
+        try:
+            # Si no funciona, intentar con una petición mínima de chat
+            payload = {
+                "model": self.model,
+                "messages": [{"role": "user", "content": "test"}],
+                "max_tokens": 1
+            }
+            response = requests.post(
+                self.endpoint,
+                json=payload,
+                timeout=5,
+                headers={"Content-Type": "application/json"}
             )
             return response.status_code == 200
         except:
-            # Si no hay endpoint de health, intentar con una petición mínima
-            try:
-                payload = {
-                    "model": self.model,
-                    "messages": [{"role": "user", "content": "test"}],
-                    "max_tokens": 1
-                }
-                response = requests.post(
-                    self.endpoint,
-                    json=payload,
-                    timeout=5,
-                    headers={"Content-Type": "application/json"}
-                )
-                return response.status_code == 200
-            except:
-                return False
+            return False
     
     def estimate_tokens(self, text: str) -> int:
         """

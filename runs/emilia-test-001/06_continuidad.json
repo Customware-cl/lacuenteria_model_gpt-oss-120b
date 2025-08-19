@@ -1,0 +1,58 @@
+{
+  "character_bible": [
+    {
+      "nombre": "Emilia",
+      "edad": "2 años",
+      "rasgos_visibles": "Pelo castaño ondulado, ojos grandes y curiosos, sonrisa amplia, postura activa y curiosa.",
+      "vestuario": "Vestido azul con estampado de flores blancas, zapatillas blancas y una diadema rosa.",
+      "colores_clave": [
+        "azul",
+        "rosa",
+        "blanco"
+      ],
+      "objeto_ancla": "chupete rosa",
+      "gestos": "Se lleva el chupete a la boca, agita los brazos al caminar, se agacha para oler las flores y señala con el dedo.",
+      "no_haria": "No dejaría a Triki solo en el desierto ni rompería la cajita mágica."
+    },
+    {
+      "nombre": "Triki",
+      "edad": "Peluche (edad indefinida)",
+      "rasgos_visibles": "Triceratops púrpura con ojos brillantes, cuernos pequeños y una sonrisa tierna.",
+      "vestuario": "Capa ligera verde que envuelve su cuello, sin ropa adicional.",
+      "colores_clave": [
+        "púrpura",
+        "verde",
+        "dorado"
+      ],
+      "objeto_ancla": "cajita mágica",
+      "gestos": "Inclina la cabeza, extiende su brazo de peluche como si ofreciera ayuda, emite suaves sonidos de consuelo.",
+      "no_haria": "No se alejaría de Emilia, no rompería la cajita y no usaría sus cuernos para dañar."
+    }
+  ],
+  "continuidad_narrativa": {
+    "relaciones": "Emilia y Triki son inseparables; Triki actúa como protector y guía, mientras Emilia confía plenamente en él y lo considera su mejor amigo.",
+    "evolucion_emocional": "Emilia pasa de depender del chupete para sentirse segura a confiar en su propia valentía, aprendiendo a guardarlo en la cajita mágica y disfrutar del entorno. Triki evoluciona de ser solo un consejero a un compañero activo que celebra los logros de Emilia.",
+    "objeto_ancla_reapariciones": [
+      {
+        "personaje": "Emilia",
+        "paginas": [
+          3,
+          6,
+          9
+        ]
+      },
+      {
+        "personaje": "Triki",
+        "paginas": [
+          4,
+          5,
+          9
+        ]
+      }
+    ]
+  },
+  "qa": {
+    "coherencia_rasgos": 5,
+    "utilidad_arte": 5
+  }
+}

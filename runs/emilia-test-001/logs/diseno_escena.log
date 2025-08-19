@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2025-08-19T21:33:15.302282",
+    "retry_count": 0,
+    "qa_scores": {
+      "alineacion_verso_escena": 5,
+      "variedad_planos": 5,
+      "promedio": 5.0
+    },
+    "execution_time": 16.290634,
+    "temperature": 0.8,
+    "status": "success"
+  }
+]

@@ -14,8 +14,8 @@ RUNS_DIR.mkdir(exist_ok=True)
 
 # Configuración del modelo LLM local
 LLM_CONFIG = {
-    "model": "gpt-oss-120b",
-    "endpoint": os.getenv("LLM_ENDPOINT", "http://localhost:8080/v1/completions"),
+    "model": "openai/gpt-oss-120b",
+    "endpoint": os.getenv("LLM_ENDPOINT", "http://69.19.136.204:8000/v1/chat/completions"),
     "temperature": float(os.getenv("LLM_TEMPERATURE", "0.7")),
     "max_tokens": int(os.getenv("LLM_MAX_TOKENS", "4000")),
     "timeout": int(os.getenv("LLM_TIMEOUT", "60")),

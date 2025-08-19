@@ -1,0 +1,19 @@
+{
+  "loader": [
+    "Emilia y Triki ajustan su capa verde bajo el cielo azul.",
+    "Brillan los colores del amanecer: #F4D35E y #A8D0E6 iluminan la arena.",
+    "¡Vamos, Triki, explorar! El leitmotiv vibra y la caja mágica reluce.",
+    "Emilia frunce el ceño; el chupete rosa bloquea el perfume de la flor.",
+    "Triki levanta la cajita brillante, señalando la decisión de Emilia.",
+    "Con valentía, Emilia guarda el chupete rosa en la caja chispeante.",
+    "Al oler la flor, Emilia sonríe; el atardecer #FF9F1C tiñe el aire.",
+    "Mariposas azules vuelan; Emilia y Triki descubren frutas rojas.",
+    "Tormenta de arena; Emilia agarra su chupete rosa, Triki la cuida.",
+    "Bajo un arcoíris de flores, Emilia y Triki ríen sin el chupete."
+  ],
+  "qa": {
+    "pertinencia": 5,
+    "brevedad_tono": 5,
+    "sensacion_adaptativa": 5
+  }
+}

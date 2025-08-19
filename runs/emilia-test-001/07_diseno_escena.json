@@ -1,0 +1,30 @@
+{
+  "prompts_paginas": {
+    "1": "Entorno: desierto mágico con dunas suaves y cientos de flores gigantes multicolores. Acción principal: Emilia, con su pelo rizado y vestido azul con diadema rosa, camina de la mano de Triki, el triceratops púrpura con capa verde, sobre la arena brillante. Emoción dominante: curiosidad y alegría infantil. Objetos ancla: el chupete rosa en la mano de Emilia y Triki al lado. Momento del día/iluminación: mañana clara, luz dorada que realza los colores de las flores. Composición: plano general a nivel del suelo, cámara ligeramente inclinada hacia arriba para capturar la inmensidad del desierto y la explosión de colores, estilo ilustración infantil colorida.",
+    "2": "Entorno: claro del desierto con flores altas que parecen torres. Acción principal: Triki señala una rosa amarilla enorme mientras Emilia extiende los brazos, admirando las flores. Emoción dominante: asombro y entusiasmo. Objetos ancla: rosas amarillas brillantes y Triki con su capa verde. Momento del día/iluminación: luz del mediodía, sombras suaves. Composición: plano medio, ángulo bajo que enfatiza la altura de las flores y la expresión de maravilla en el rostro de Emilia, estilo ilustración infantil colorida.",
+    "3": "Entorno: un rincón del desierto con una flor delicada y perfumada. Acción principal: Emilia intenta oler la flor, pero aprieta su chupete rosa y su carita se desploma por el dolor. Emoción dominante: frustración y tristeza. Objetos ancla: el chupete rosa y la flor perfumada. Momento del día/iluminación: luz tenue del atardecer que suaviza los colores. Composición: primer plano del rostro de Emilia, enfoque nítido en sus ojos y el chupete, fondo ligeramente desenfocado, estilo ilustración infantil colorida.",
+    "4": "Entorno: zona de sombra bajo una gran palmera del desierto. Acción principal: Triki abre una cajita mágica que reluce como una estrella, ofreciendo a Emilia guardar su chupete. Emoción dominante: ternura y seguridad. Objetos ancla: la cajita mágica dorada y el chupete rosa. Momento del día/iluminación: luz filtrada por la hoja de la palmera, brillo suave sobre la caja. Composición: plano medio con foco centrado en la cajita abierta, ángulo frontal que muestra la expresión confiada de Triki y la mirada expectante de Emilia, estilo ilustración infantil colorida.",
+    "5": "Entorno: claro del desierto con pétalos cayendo alrededor. Acción principal: Emilia coloca cuidadosamente su chupete rosa dentro de la cajita mágica que Triki sostiene. Emoción dominante: valentía y confianza. Objetos ancla: la cajita mágica y el chupete rosa. Momento del día/iluminación: luz dorada del sol bajo, reflejos cálidos. Composición: plano detalle de las manos de Emilia y Triki con la cajita abierta, enfoque macro en el chupete entrando, fondo desenfocado, estilo ilustración infantil colorida.",
+    "6": "Entorno: campo de flores perfumadas bajo un cielo azul claro. Acción principal: sin el chupete, Emilia inclina la cabeza y huele la flor, su corazón late feliz. Emoción dominante: gozo y orgullo. Objetos ancla: la flor grande y el rostro radiante de Emilia. Momento del día/iluminación: luz del mediodía, cielo azul brillante. Composición: plano general que muestra a Emilia de cuerpo entero rodeada de flores, cámara ligeramente elevada para captar su postura feliz, estilo ilustración infantil colorida.",
+    "7": "Entorno: pradera desértica con árboles frutales y mariposas revoloteando. Acción principal: Emilia prueba frutas jugosas mientras Triki observa, y ambos siguen a una mariposa de colores. Emoción dominante: alegría y juego compartido. Objetos ancla: frutas brillantes y una mariposa azul. Momento del día/iluminación: luz cálida del atardecer, sombras largas. Composición: plano medio dinámico, ángulo diagonal que sigue la trayectoria de la mariposa, foco en la interacción entre Emilia y Triki, estilo ilustración infantil colorida.",
+    "8": "Entorno: vasto desierto con senderos de arena y flores esparcidas como estrellas. Acción principal: Emilia y Triki continúan explorando, paso a paso, cantando el estribillo. Emoción dominante: entusiasmo y sensación de aventura. Objetos ancla: la cajita mágica al hombro de Triki y las flores bajo sus pies. Momento del día/iluminación: luz dorada del sol bajo, tono cálido. Composición: plano general amplio que captura la travesía, cámara en posición alta que muestra el recorrido y el horizonte, estilo ilustración infantil colorida.",
+    "9": "Entorno: zona rocosa del desierto con una sombra protectora. Acción principal: Emilia siente un leve miedo, saca su chupete rosa con el dedo, lo mira y luego lo vuelve a guardar en la cajita. Emoción dominante: miedo breve que se transforma en confianza. Objetos ancla: el chupete rosa y el dedo de Emilia. Momento del día/iluminación: luz suave del crepúsculo, tonos rosados. Composición: primer plano del dedo y el chupete, enfoque nítido en el gesto, fondo ligeramente desenfocado, estilo ilustración infantil colorida.",
+    "10": "Entorno: horizonte del desierto con el sol descendiendo, creando un cielo anaranjado. Acción principal: Emilia observa el sol que se va a descansar, siente que ha crecido un poquito y sonríe satisfecha. Emoción dominante: serenidad y orgullo. Objetos ancla: el sol poniente y la cajita mágica al lado de Emilia. Momento del día/iluminación: atardecer cálido, luz difusa. Composición: plano general que muestra a Emilia de pie frente al horizonte, cámara a nivel de los ojos, foco en la silueta contra el cielo, estilo ilustración infantil colorida."
+  },
+  "anotaciones": [
+    "p1 plano general luminoso",
+    "p2 plano medio ángulo bajo",
+    "p3 primer plano rostro detalle",
+    "p4 plano medio foco cajita",
+    "p5 plano detalle manos y chupete",
+    "p6 plano general cuerpo entero",
+    "p7 plano medio dinámico ángulo diagonal",
+    "p8 plano general amplio vista alta",
+    "p9 primer plano dedo y chupete",
+    "p10 plano general horizonte atardecer"
+  ],
+  "qa": {
+    "alineacion_verso_escena": 5,
+    "variedad_planos": 5
+  }
+}

@@ -1,5 +1,7 @@
 # Directorios de ejecución
 runs/
+# Excepto el ejemplo de Emilia
+!runs/emilia-test-001/
 
 # Archivos del sistema
 .DS_Store

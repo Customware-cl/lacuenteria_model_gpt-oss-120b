@@ -1,0 +1,14 @@
+{
+  "titulos": [
+    "¡Vamos, Triki, a Explorar!",
+    "Emilia y el Tesoro de la Flor",
+    "El Viaje del Chupete y la Caja Mágica"
+  ],
+  "portada": {
+    "prompt": "Ilustración digital infantil vibrante, estilo acuarela con trazos suaves y colores pastel cálidos. En el centro, Emilia, niña de 2 años con pelo castaño ondulado, vestido azul con flores blancas y diadema rosa, sostiene en sus brazos a Triki, un triceratops púrpura con capa ligera verde. Frente a ellos, la caja mágica reluce como una estrella y el chupete rosa descansa sobre ella. El escenario es un desierto de arena dorada bajo una mañana clara, con flores gigantes de pétalos rosados y amarillos que se alzan como torres. Paleta de la página 1: #F4D35E, #A8D0E6, #FF6F91, #5DADE2. La composición muestra a los personajes en una pose de aventura, mirando hacia el horizonte, transmitiendo curiosidad, valentía y alegría, con una atmósfera luminosa y mágica."
+  },
+  "qa": {
+    "recordabilidad_titulo": 5,
+    "sintesis_emotiva": 5
+  }
+}

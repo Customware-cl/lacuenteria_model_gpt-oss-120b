@@ -1,0 +1,90 @@
+{
+  "leitmotiv": "¡Vamos, Triki, explorar!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y a Triki en el inicio de su aventura",
+      "conflicto": "Ninguno, es un comienzo alegre",
+      "emocion": "Alegría y curiosidad",
+      "imagen_nuclear": "Emilia, con su pelo ondulado, sostiene a Triki mientras pisan la arena dorada del desierto florido bajo un cielo azul."
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Descubrir el desierto lleno de flores gigantes y coloridas",
+      "conflicto": "Emilia quiere explorar cada flor",
+      "emocion": "Asombro",
+      "imagen_nuclear": "Flores enormes de pétalos rosados y amarillos se alzan como torres, Emilia corre entre ellas con Triki a su lado."
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Intentar oler una flor pero el chupete lo impide",
+      "conflicto": "El chupete bloquea el sentido del olfato y el sabor",
+      "emocion": "Frustración leve",
+      "imagen_nuclear": "Emilia se acerca a una flor, su nariz casi toca el pétalo, pero el chupete en su boca la hace fruncir el ceño."
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Triki sugiere usar una cajita mágica para guardarla",
+      "conflicto": "Emilia duda si puede confiar en la cajita",
+      "emocion": "Esperanza",
+      "imagen_nuclear": "Triki levanta una pequeña caja brillante que refleja la luz del sol, señalándola a Emilia."
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Emilia guarda su chupete en la cajita",
+      "conflicto": "Miedo a perder su objeto querido",
+      "emocion": "Valentía",
+      "imagen_nuclear": "Emilia coloca el chupete dentro de la caja que chispea, mientras su mano tiembla ligeramente."
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Sin el chupete, Emilia prueba oler la flor y saborea su aroma",
+      "conflicto": "Extraña ligeramente su chupete",
+      "emocion": "Alegría mezclada con nostalgia",
+      "imagen_nuclear": "Emilia cierra los ojos, inhalando profundamente el perfume de la flor, una gran sonrisa ilumina su cara."
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Descubrir más maravillas: frutas jugosas y mariposas brillantes",
+      "conflicto": "Querer compartir todo con Triki",
+      "emocion": "Entusiasmo",
+      "imagen_nuclear": "Emilia y Triki corren entre mariposas azules mientras una fruta roja cuelga cerca."
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Clímax: una tormenta de arena cubre el desierto y asusta a Emilia",
+      "conflicto": "Necesita su chupete para calmarse, pero está en la caja",
+      "emocion": "Tensión",
+      "imagen_nuclear": "Vientos fuertes levantan arena, Emilia se cubre los ojos, Triki la protege bajo su ala."
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Emilia saca el chupete, lo abraza, se tranquiliza y luego lo vuelve a guardar",
+      "conflicto": "Decidir usarlo para calmarse y después liberarse nuevamente",
+      "emocion": "Alivio y crecimiento",
+      "imagen_nuclear": "Emilia sostiene el chupete contra el pecho bajo la tormenta, luego lo vuelve a colocar en la caja que brilla."
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Resolución cálida: el desierto vuelve a brillar y Emilia disfruta sin su chupete",
+      "resolucion": "Emilia continúa explorando, ahora libre para saborear y oler todo, mientras Triki la acompaña",
+      "emocion": "Satisfacción y esperanza",
+      "imagen_nuclear": "Emilia y Triki bajo un arcoíris de flores, sin chupete, abrazados y riendo bajo el cielo despejado."
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "Una nube de polvo cubre una flor gigante y Emilia piensa que se ha perdido la oportunidad de probar su aroma.",
+      "resolucion_alternativa": "Emilia abre la cajita, saca el chupete, lo sostiene brevemente y luego lo guarda, descubriendo que el aroma vuelve a brillar."
+    },
+    {
+      "climax_alternativo": "Un zorro juguetón roba la cajita y la esconde entre las dunas.",
+      "resolucion_alternativa": "Emilia y Triki siguen al zorro, recuperan la caja y, al abrirla, deciden que pueden disfrutar del desierto con o sin el chupete."
+    }
+  ],
+  "qa": {
+    "arco_completo": 5,
+    "claridad_visual": 5,
+    "potencia_leitmotiv": 5
+  }
+}

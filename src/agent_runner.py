@@ -54,11 +54,15 @@ class AgentRunner:
             agent_temperature = AGENT_TEMPERATURES.get(agent_name, None)
             
             # 5. Llamar al LLM con temperatura específica
+            # Para cuentacuentos, usar menos tokens
+            max_tokens = 2000 if agent_name == "cuentacuentos" else None
+            
             start_time = datetime.now()
             agent_output = self.llm_client.generate(
                 system_prompt, 
                 user_prompt,
-                temperature=agent_temperature
+                temperature=agent_temperature,
+                max_tokens=max_tokens
             )
             execution_time = (datetime.now() - start_time).total_seconds()
             
