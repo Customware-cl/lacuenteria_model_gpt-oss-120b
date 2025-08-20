@@ -61,6 +61,12 @@ AGENT_PIPELINE = [
     "validador"
 ]
 
+# Configuración de max_tokens específica por agente
+AGENT_MAX_TOKENS = {
+    "validador": 8000,  # El validador necesita generar un JSON muy grande
+    # otros agentes usan None (sin límite explícito)
+}
+
 # Temperaturas específicas por agente (sobrescriben la temperatura global)
 AGENT_TEMPERATURES = {
     # Agentes creativos - temperatura alta para mayor creatividad
@@ -97,7 +103,8 @@ AGENT_DEPENDENCIES = {
     "sensibilidad": ["05_ritmo_rima.json", "07_diseno_escena.json", "08_direccion_arte.json"],
     "portadista": ["05_ritmo_rima.json", "06_continuidad.json", "08_direccion_arte.json", "01_director.json"],
     "loader": ["10_portadista.json", "brief.json", "01_director.json", "06_continuidad.json", "08_direccion_arte.json"],
-    "validador": [f"{str(i).zfill(2)}_{agent}.json" for i, agent in enumerate(AGENT_PIPELINE[:-1], 1)]
+    # Optimizar dependencias del validador - solo los esenciales para ensamblar el JSON final
+    "validador": ["05_ritmo_rima.json", "08_direccion_arte.json", "09_sensibilidad.json", "10_portadista.json", "11_loader.json"]
 }
 
 # Configuración de logging

@@ -1,5 +1,9 @@
 # Cuentería - Sistema de Generación de Cuentos Infantiles
 
+## ⚠️ Estado Actual: En Desarrollo
+
+**Nota Importante**: El sistema presenta limitaciones con respuestas largas del modelo GPT-OSS-120B que afectan algunos agentes. Ver [`docs/LIMITACIONES_MODELO.md`](docs/LIMITACIONES_MODELO.md) para detalles técnicos.
+
 ## 📚 Descripción
 
 Cuentería es un sistema multiagente basado en IA para la creación automatizada de cuentos infantiles personalizados. El sistema orquesta 12 agentes especializados que trabajan en conjunto para producir narrativas infantiles completas con texto e indicaciones visuales, garantizando calidad pedagógica, literaria y sensibilidad cultural.

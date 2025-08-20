@@ -1,0 +1,121 @@
+{
+  "evaluacion_critica": {
+    "nota_general": {
+      "puntuacion": 3.5,
+      "nivel": "ACEPTABLE",
+      "resumen": "El cuento es adecuado para su público pero necesita mejoras en la calidad de la rima, mayor variedad visual y mayor creatividad en los mensajes de carga."
+    },
+    "notas_por_topico": {
+      "prompts_imagenes": {
+        "puntuacion_promedio": 4.0,
+        "nivel": "BUENO",
+        "notas_por_ambito": {
+          "claridad_descriptiva": 4.5,
+          "consistencia_personajes": 4.0,
+          "nivel_detalle": 4.0,
+          "adecuacion_infantil": 4.5,
+          "variedad_visual": 3.5,
+          "tecnica_narrativa": 3.5
+        },
+        "observaciones": [
+          "Descripciones muy detalladas y coloridas",
+          "Falta de variedad en los planos y ángulos"
+        ],
+        "problemas_detectados": [],
+        "paginas_afectadas": []
+      },
+      "mensajes_carga": {
+        "puntuacion_promedio": 3.0,
+        "nivel": "ACEPTABLE",
+        "notas_por_ambito": {
+          "originalidad": 3.0,
+          "brevedad": 4.0,
+          "conexion_narrativa": 3.5,
+          "transmision_emocion": 3.0,
+          "lenguaje_infantil": 3.5
+        },
+        "observaciones": [
+          "Algunos mensajes son demasiado genéricos",
+          "Repetición de frases similares"
+        ],
+        "loaders_problematicos": [],
+        "ejemplos_inadecuados": []
+      },
+      "texto_narrativo": {
+        "puntuacion_promedio": 3.5,
+        "nivel": "ACEPTABLE",
+        "estructura_poetica": {
+          "puntuacion_promedio": 3.0,
+          "notas_por_ambito": {
+            "numero_versos": 4.0,
+            "longitud_versos": 3.5,
+            "calidad_rima": 2.5,
+            "fluidez_ritmo": 2.5
+          },
+          "versos_problematicos": [
+            "Página 3: 'dolor' y 'desploma' no riman"
+          ]
+        },
+        "contenido_narrativo": {
+          "puntuacion_promedio": 4.0,
+          "notas_por_ambito": {
+            "coherencia_historia": 4.5,
+            "progresion_emocional": 4.0,
+            "lenguaje_apropiado": 4.5,
+            "transmision_valores": 4.0,
+            "originalidad_creatividad": 3.0
+          },
+          "observaciones": [
+            "Buena progresión del personaje y transmisión de valores",
+            "Repetición del estribillo '¡Vamos, Triki, a explorar!' en varias páginas"
+          ]
+        },
+        "palabras_inadecuadas": [],
+        "paginas_revisar": [
+          3
+        ]
+      }
+    },
+    "recomendaciones_mejora": {
+      "criticas": [
+        {
+          "prioridad": "ALTA",
+          "topico": "texto",
+          "descripcion": "Mejorar la calidad de las rimas y la fluidez del ritmo",
+          "sugerencia": "Revisar terminaciones de los versos para lograr rima consonante consistente y evitar pares forzados como 'dolor'/'desploma'"
+        },
+        {
+          "prioridad": "MEDIA",
+          "topico": "prompts_imagenes",
+          "descripcion": "Aumentar la variedad de planos y ángulos en las ilustraciones",
+          "sugerencia": "Incluir tomas cenitales, contrapicados y primeros planos para romper la monotonía visual"
+        },
+        {
+          "prioridad": "MEDIA",
+          "topico": "mensajes_carga",
+          "descripcion": "Enriquecer la originalidad y carga emocional de los loaders",
+          "sugerencia": "Añadir pequeños fragmentos de la historia o preguntas que inviten al niño a imaginar la aventura"
+        }
+      ],
+      "mejoras_prioritarias": [
+        "Reescribir los versos de la página 3 y revisar rimas en todo el cuento",
+        "Diversificar los ángulos de cámara en los prompts de ilustración",
+        "Crear mensajes de carga más creativos y vinculados a la trama"
+      ]
+    },
+    "decision_publicacion": {
+      "apto_para_publicar": true,
+      "requiere_revision": true,
+      "nivel_revision_requerido": "MENOR",
+      "justificacion": "El cuento es publicable, pero pequeñas correcciones en rima, variedad visual y loaders mejorarán su calidad y atractivo para el público infantil."
+    },
+    "metadata": {
+      "fecha_evaluacion": "2025-08-19T00:00:00",
+      "version_evaluador": "1.0",
+      "criterios_aplicados": 20,
+      "paginas_evaluadas": 10,
+      "prompts_evaluados": 10,
+      "loaders_evaluados": 10
+    }
+  }
+}

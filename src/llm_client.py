@@ -19,7 +19,7 @@ class LLMClient:
         self.model = LLM_CONFIG["model"]
         self.temperature = LLM_CONFIG["temperature"]
         self.max_tokens = LLM_CONFIG["max_tokens"]
-        self.timeout = LLM_CONFIG["timeout"]
+        self.timeout = 120  # Aumentar timeout a 120 segundos para respuestas largas
         self.retry_attempts = LLM_CONFIG["retry_attempts"]
         self.retry_delay = LLM_CONFIG["retry_delay"]
         
@@ -86,6 +86,11 @@ class LLMClient:
                     if content is None or content == "":
                         logger.warning("El modelo devolvió contenido vacío")
                         raise ValueError("El modelo no generó contenido")
+                    
+                    # Detectar posibles respuestas truncadas
+                    if content.rstrip().endswith(('...', '"', '\\', ',', '{', '[')):
+                        logger.warning(f"Posible respuesta truncada detectada. Último carácter: '{content[-1]}'")
+                        logger.debug(f"Longitud de respuesta: {len(content)} caracteres")
                     
                     # Intentar parsear como JSON
                     try:

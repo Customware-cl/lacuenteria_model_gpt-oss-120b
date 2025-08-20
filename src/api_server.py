@@ -309,7 +309,18 @@ def get_story_result(story_id):
                         "by_agent": qa_historial
                     }
         
-        return jsonify({
+        # Obtener evaluación crítica si existe
+        evaluacion_critica = None
+        critico_path = get_artifact_path(story_id, "13_critico.json")
+        if critico_path.exists():
+            try:
+                with open(critico_path, 'r', encoding='utf-8') as f:
+                    critico_data = json.load(f)
+                evaluacion_critica = critico_data.get("evaluacion_critica", None)
+            except Exception as e:
+                logger.warning(f"No se pudo cargar evaluación crítica: {e}")
+        
+        response = {
             "story_id": story_id,
             "status": "completed",
             "result": result,
@@ -320,7 +331,13 @@ def get_story_result(story_id):
                 "retries": manifest.get("reintentos", {}),
                 "warnings": manifest.get("devoluciones", [])
             }
-        }), 200
+        }
+        
+        # Incluir evaluación crítica si existe
+        if evaluacion_critica:
+            response["evaluacion_critica"] = evaluacion_critica
+        
+        return jsonify(response), 200
         
     except Exception as e:
         logger.error(f"Error obteniendo resultado: {e}")
@@ -357,6 +374,81 @@ def get_story_logs(story_id):
         return jsonify({
             "status": "error",
             "error": str(e)
+        }), 500
+
+
+@app.route('/api/stories/<story_id>/evaluate', methods=['POST'])
+def evaluate_story(story_id):
+    """
+    Ejecuta el agente crítico sobre una historia completada
+    
+    Returns:
+        JSON estructurado en cascada con la evaluación crítica
+    """
+    try:
+        # Verificar que la historia existe
+        story_path = get_story_path(story_id)
+        if not story_path.exists():
+            return jsonify({
+                "status": "error",
+                "message": "Historia no encontrada"
+            }), 404
+        
+        # Verificar que existe el archivo validador
+        validador_path = get_artifact_path(story_id, "12_validador.json")
+        if not validador_path.exists():
+            return jsonify({
+                "status": "error",
+                "message": "Historia no completada. Falta archivo validador."
+            }), 400
+        
+        # Ejecutar evaluación crítica
+        from agent_runner import AgentRunner
+        runner = AgentRunner(story_id)
+        
+        logger.info(f"Ejecutando evaluación crítica para historia: {story_id}")
+        result = runner.run_agent("critico")
+        
+        if result["status"] == "success":
+            # Leer el resultado del crítico
+            critico_path = get_artifact_path(story_id, "13_critico.json")
+            if critico_path.exists():
+                with open(critico_path, 'r', encoding='utf-8') as f:
+                    evaluacion = json.load(f)
+                
+                # Retornar la evaluación crítica estructurada
+                return jsonify({
+                    "status": "success",
+                    "story_id": story_id,
+                    "evaluacion_critica": evaluacion.get("evaluacion_critica", {}),
+                    "timestamp": datetime.now().isoformat()
+                })
+            else:
+                return jsonify({
+                    "status": "error",
+                    "message": "No se pudo leer el resultado de la evaluación"
+                }), 500
+        else:
+            # Si falló pero hay QA scores, incluirlos
+            response = {
+                "status": "partial",
+                "story_id": story_id,
+                "message": "Evaluación con observaciones"
+            }
+            
+            if "qa_scores" in result:
+                response["qa_scores"] = result["qa_scores"]
+            
+            if "qa_issues" in result:
+                response["qa_issues"] = result["qa_issues"]
+            
+            return jsonify(response), 206  # Partial Content
+    
+    except Exception as e:
+        logger.error(f"Error ejecutando evaluación crítica: {e}")
+        return jsonify({
+            "status": "error",
+            "message": str(e)
         }), 500
 
 

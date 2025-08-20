@@ -50,12 +50,12 @@ class AgentRunner:
             user_prompt = self._build_user_prompt(agent_name, dependencies)
             
             # 4. Obtener temperatura específica del agente
-            from config import AGENT_TEMPERATURES
+            from config import AGENT_TEMPERATURES, AGENT_MAX_TOKENS
             agent_temperature = AGENT_TEMPERATURES.get(agent_name, None)
             
             # 5. Llamar al LLM con temperatura específica
-            # Para cuentacuentos, usar menos tokens
-            max_tokens = 2000 if agent_name == "cuentacuentos" else None
+            # Usar configuración de max_tokens específica por agente si existe
+            max_tokens = AGENT_MAX_TOKENS.get(agent_name, None)
             
             start_time = datetime.now()
             agent_output = self.llm_client.generate(
@@ -81,8 +81,8 @@ class AgentRunner:
                     "retry_count": retry_count
                 }
             
-            # 6. Verificar quality gates (excepto para validador que no tiene QA)
-            if agent_name != "validador":
+            # 6. Verificar quality gates (excepto para validador y critico que no tienen QA)
+            if agent_name not in ["validador", "critico"]:
                 qa_passed, qa_scores, qa_issues = self.quality_checker.check_qa_scores(
                     agent_output, agent_name
                 )
