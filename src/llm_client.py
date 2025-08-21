@@ -19,7 +19,7 @@ class LLMClient:
         self.model = LLM_CONFIG["model"]
         self.temperature = LLM_CONFIG["temperature"]
         self.max_tokens = LLM_CONFIG["max_tokens"]
-        self.timeout = 120  # Aumentar timeout a 120 segundos para respuestas largas
+        self.timeout = 900  # Aumentar timeout a 900 segundos para respuestas largas
         self.retry_attempts = LLM_CONFIG["retry_attempts"]
         self.retry_delay = LLM_CONFIG["retry_delay"]
         

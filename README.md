@@ -198,6 +198,84 @@ El sistema requiere:
 3. **Mensaje a transmitir**: Objetivo educativo
 4. **Edad objetivo**: Para adaptar complejidad
 
+## 🌐 API Endpoints
+
+### Sistema de Endpoints
+
+El sistema Cuentería utiliza tres tipos de endpoints:
+
+#### 1. **Modelo LLM GPT-OSS-120B**
+- **Endpoint**: `http://69.19.136.204:8000/v1/chat/completions`
+- **Función**: Procesamiento de IA para todos los agentes
+- **Timeout**: 900 segundos para respuestas largas
+
+#### 2. **API REST de Cuentería** (Puerto 5000)
+
+##### Health Check
+- **GET** `/health`
+- **Función**: Verificar estado del servidor y conexión con LLM
+- **Respuesta**: Estado del servidor, conexión LLM y configuración
+
+##### Crear Historia
+- **POST** `/api/stories/create`
+- **Función**: Iniciar generación de un nuevo cuento
+- **Payload**:
+  ```json
+  {
+    "story_id": "identificador-único",
+    "personajes": ["lista de personajes"],
+    "historia": "trama principal",
+    "mensaje_a_transmitir": "objetivo educativo",
+    "edad_objetivo": 3,
+    "webhook_url": "URL opcional para notificaciones"
+  }
+  ```
+- **Respuesta**: Status 202 (Accepted) con ID y tiempo estimado
+- **Proceso**: Ejecuta los 12 agentes en secuencia asíncrona
+
+##### Consultar Estado
+- **GET** `/api/stories/{story_id}/status`
+- **Función**: Obtener estado actual del procesamiento
+- **Respuesta**: Estado (queued/processing/completed/error), paso actual, timestamps
+
+##### Obtener Resultado
+- **GET** `/api/stories/{story_id}/result`
+- **Función**: Obtener el cuento completo generado
+- **Respuesta**: JSON con título, 10 páginas, portada y mensajes loader
+
+##### Ver Logs
+- **GET** `/api/stories/{story_id}/logs`
+- **Función**: Obtener logs detallados del procesamiento
+- **Respuesta**: Logs de cada agente con timestamps y métricas
+
+##### Evaluación Crítica (Opcional)
+- **POST** `/api/stories/{story_id}/evaluate`
+- **Función**: Ejecutar agente crítico sobre historia completada
+- **Respuesta**: Evaluación detallada con fortalezas, áreas de mejora y sugerencias
+- **Nota**: No es parte del flujo principal, se ejecuta por separado
+
+##### Reintentar Historia
+- **POST** `/api/stories/{story_id}/retry`
+- **Función**: Reintentar procesamiento desde el último punto de fallo
+- **Respuesta**: Similar a create, reinicia el procesamiento
+
+#### 3. **Webhooks hacia lacuenteria.cl**
+- **Configuración**: URL proporcionada en cada request
+- **Eventos**:
+  - Progreso de procesamiento
+  - Completación exitosa
+  - Errores durante procesamiento
+- **CORS**: Habilitado para `https://lacuenteria.cl`
+
+### Flujo de Comunicación
+
+```
+1. lacuenteria.cl → POST /api/stories/create → Cuentería API
+2. Cuentería API → Procesa con 12 agentes → GPT-OSS-120B
+3. Cuentería API → Notifica progreso → lacuenteria.cl (webhook)
+4. lacuenteria.cl → GET /api/stories/{id}/result → Obtiene cuento
+```
+
 ## 📝 Notas
 
 - Todos los agentes operan en español
