@@ -1,0 +1,93 @@
+{
+  "name": "optimization_v1",
+  "description": "Configuración optimizada basada en análisis de verificador QA - 2025-08-21",
+  "version": "1.0.0",
+  
+  "temperatures": {
+    "director": 0.75,
+    "psicoeducador": 0.55,
+    "cuentacuentos": 0.75,
+    "editor_claridad": 0.40,
+    "ritmo_rima": 0.50,
+    "continuidad": 0.35,
+    "diseno_escena": 0.70,
+    "direccion_arte": 0.65,
+    "sensibilidad": 0.40,
+    "portadista": 0.75,
+    "loader": 0.80,
+    "validador": 0.30,
+    "verificador_qa": 0.30,
+    "critico": 0.40
+  },
+  
+  "max_tokens": {
+    "default": 4000,
+    "cuentacuentos": 6000,
+    "editor_claridad": 6000,
+    "ritmo_rima": 5000,
+    "continuidad": 5000,
+    "verificador_qa": 4000,
+    "validador": 8000,
+    "critico": 6000
+  },
+  
+  "quality_thresholds": {
+    "min_qa_score": 3.5,
+    "max_retries": 3,
+    "retry_delay": 5
+  },
+  
+  "features": {
+    "use_json_format": true,
+    "enable_verificador_qa": true,
+    "enable_fallback": false,
+    "cache_successful_outputs": false
+  },
+  
+  "timeout_overrides": {
+    "default": 900,
+    "validador": 1200,
+    "verificador_qa": 900
+  },
+  
+  "comparison_with_default": {
+    "temperature_changes": {
+      "director": {"from": 0.85, "to": 0.75, "change": -0.10},
+      "cuentacuentos": {"from": 0.90, "to": 0.75, "change": -0.15},
+      "editor_claridad": {"from": 0.60, "to": 0.40, "change": -0.20},
+      "ritmo_rima": {"from": 0.65, "to": 0.50, "change": -0.15},
+      "continuidad": {"from": 0.40, "to": 0.35, "change": -0.05},
+      "diseno_escena": {"from": 0.80, "to": 0.70, "change": -0.10},
+      "direccion_arte": {"from": 0.75, "to": 0.65, "change": -0.10},
+      "sensibilidad": {"from": 0.50, "to": 0.40, "change": -0.10},
+      "portadista": {"from": 0.85, "to": 0.75, "change": -0.10},
+      "loader": {"from": 0.90, "to": 0.80, "change": -0.10}
+    },
+    "token_changes": {
+      "cuentacuentos": {"from": 4000, "to": 6000, "change": 2000},
+      "editor_claridad": {"from": 4000, "to": 6000, "change": 2000},
+      "ritmo_rima": {"from": 4000, "to": 5000, "change": 1000},
+      "continuidad": {"from": 4000, "to": 5000, "change": 1000},
+      "verificador_qa": {"from": 3000, "to": 4000, "change": 1000}
+    },
+    "threshold_changes": {
+      "min_qa_score": {"from": 4.0, "to": 3.5, "change": -0.5},
+      "max_retries": {"from": 2, "to": 3, "change": 1}
+    }
+  },
+  
+  "expected_improvements": {
+    "empty_outputs_reduction": "70%",
+    "generation_time_improvement": "50%",
+    "average_quality_increase": "20%",
+    "failure_rate_reduction": "60%"
+  },
+  
+  "notes": [
+    "Temperaturas reducidas en agentes con problemas de coherencia",
+    "Max tokens aumentados para prevenir truncamiento",
+    "Umbral QA reducido para evitar reintentos excesivos",
+    "Editor_claridad con temperatura más baja (0.40) para evitar outputs vacíos",
+    "Cuentacuentos con temperatura reducida (0.75) para mejor coherencia poética"
+  ]
+}

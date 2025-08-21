@@ -105,7 +105,7 @@ class AgentRunner:
                     original_timeout = self.llm_client.timeout
                     self.llm_client.timeout = 900  # 900 segundos para evitar truncamiento
                     
-                    verificador_result, _, _ = self.llm_client.generate(
+                    verificador_result = self.llm_client.generate(
                         system_prompt=self._load_system_prompt("verificador_qa"),
                         user_prompt=verification_prompt,
                         temperature=0.3,  # Baja para evaluación consistente
@@ -115,9 +115,12 @@ class AgentRunner:
                     # Restaurar timeout original
                     self.llm_client.timeout = original_timeout
                     
-                    # Parsear resultado del verificador
+                    # Parsear resultado del verificador si es necesario
                     import json
-                    verification = json.loads(verificador_result)
+                    if isinstance(verificador_result, str):
+                        verification = json.loads(verificador_result)
+                    else:
+                        verification = verificador_result  # Ya es un dict
                     
                     # Extraer scores y verificar umbral
                     qa_scores = verification.get("qa_scores", {})
