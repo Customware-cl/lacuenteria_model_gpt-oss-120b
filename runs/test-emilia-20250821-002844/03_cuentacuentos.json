@@ -1,0 +1,25 @@
+{
+  "paginas_texto": {
+    "1": "En el jardín Emilia abre los brazos al sol, (A)\nSus ojos brillan como farol. (A)\nUn destello entre flores la invita a mirar, (B)\n¿Qué misterio guardará? (B)",
+    "2": "Aparece el unicornio con crin de arcoíris, (A)\nSu boca cerrada guarda mil matices. (A)\nUna nube gris flota sobre su hocico triste, (B)\nEmilia siente su pena y la persiste. (B)",
+    "3": "Emilia dibuja un corazón en el aire, (A)\nCon sus dedos habla sin hablar, sin desaire. (A)\nMuecas y gestos su voz sustituyen, (B)\nY la esperanza en su pecho relucen. (B)",
+    "4": "Del unicornio brotan chispas de polvo estelar, (A)\nPero ninguna palabra logra sonar. (A)\nSus lágrimas de luz tiemblan de preocupación, (B)\nY la sombra del silencio busca su canción. (B)",
+    "5": "Con ternura Emilia abre los brazos, (A)\nUn abrazo rosado ilumina los pasos. (A)\nEl unicornio duda, pero el amor lo guía, (B)\nY la primera chispa de habla se vuelve poesía. (B)",
+    "6": "El abrazo empuja la sombra que quería quedar, (A)\nNotas de colores empiezan a girar. (A)\nLa luz se expande en un baile asombroso, (B)\nY el silencio retrocede, quedando borroso. (B)",
+    "7": "Manos al cielo forman un arco de colores, (A)\nEl puente vibra con risas y sabores. (A)\nJuntos construyen una senda de alegría, (B)\nDonde cada gesto es pura melodía. (B)",
+    "8": "Una campanilla suena suave, casi un susurro, (A)\nEl unicornio abre su boca, siente el murmullo. (A)\nEl sonido pequeño vibra con excitación, (B)\nY la magia crece en cada pulsación. (B)",
+    "9": "Una barrera de silencio intenta bloquear, (A)\nPero Emilia aplaude, la rompe al brillar. (A)\nUna lluvia de estrellas libera la canción, (B)\nTriunfo y risas llenan el corazón. (B)",
+    "10": "El unicornio agradece con un abrazo brillante, (A)\nRíen juntos bajo corazones relucientes. (A)\n¡Abrazo, sonrisa, magia! su lazo perdura, (B)\nY la amistad sin palabras siempre asegura. (B)"
+  },
+  "leitmotiv_usado_en": [
+    1,
+    5,
+    6,
+    10
+  ],
+  "qa": {
+    "emocion": 5,
+    "claridad_visual": 5,
+    "uso_leitmotiv": 5
+  }
+}

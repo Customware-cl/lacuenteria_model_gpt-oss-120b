@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2025-08-20T02:16:15.890917",
+    "retry_count": 0,
+    "qa_scores": {
+      "comprensibilidad": 5,
+      "imagen_inequivoca": 5,
+      "promedio": 5.0
+    },
+    "execution_time": 16.923263,
+    "temperature": 0.6,
+    "status": "success"
+  }
+]

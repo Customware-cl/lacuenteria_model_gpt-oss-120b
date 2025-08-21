@@ -1,0 +1,19 @@
+{
+  "loader": [
+    "Emilia ajusta su cinturón de estrellas y siente el amanecer dorado.",
+    "El Unicornio con crin arcoíris vibra bajo la luz rosada del puente.",
+    "¡Abrazo, sonrisa, magia! Late en cada página que se descubre.",
+    "Brillan los brillos de atardecer mientras Emilia dibuja un corazón.",
+    "La nube gris sobre la nariz del Unicornio se disipa con un gesto suave.",
+    "Notas musicales de colores giran alrededor, anunciando la próxima página.",
+    "El cinturón de estrellas de Emilia guía el puente de luz arcoíris.",
+    "Un destello de polvo empuja la sombra de silencio en la página 6.",
+    "Emilia aplaude, y la lluvia de estrellas libera la voz del Unicornio.",
+    "Al cerrar el libro, corazones flotan, recordando la unión."
+  ],
+  "qa": {
+    "pertinencia": 5,
+    "brevedad_tono": 5,
+    "sensacion_adaptativa": 5
+  }
+}

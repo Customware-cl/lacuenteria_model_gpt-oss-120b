@@ -1,0 +1,95 @@
+{
+  "paginas_texto_claro": {
+    "1": "En el jardín Emilia abre los brazos al sol,\nSus ojos brillan como una lámpara.\nUn destello entre flores la llama a mirar,\n¿Qué secreto guardará?",
+    "2": "Aparece el unicornio con melena de colores,\nSu boca cerrada guarda muchos tonos.\nUna nube gris está sobre su nariz triste,\nEmilia siente su pena y la comparte.",
+    "3": "Emilia dibuja un corazón en el aire,\nCon sus dedos habla sin palabras.\nGestos y muecas son su voz,\nY la esperanza brilla en su pecho.",
+    "4": "Del unicornio salen chispas de polvo brillante,\nPero no suenan palabras.\nSus lágrimas de luz tiemblan de miedo,\nY la oscuridad del silencio busca una canción.",
+    "5": "Con ternura Emilia abre los brazos,\nUn abrazo rosado ilumina el camino.\nEl unicornio duda, pero el amor lo guía,\nY la primera palabra nace como poesía.",
+    "6": "El abrazo aleja la sombra que quería quedarse,\nNotas de colores empiezan a girar.\nLa luz se abre en un baile brillante,\nY el silencio se aleja, quedando lejano.",
+    "7": "Manos al cielo crean un arco de colores,\nEl puente tiembla con risas.\nJuntos hacen un camino de alegría,\nDonde cada gesto es una canción.",
+    "8": "Una campanilla suena suave, casi un susurro,\nEl unicornio abre su boca y escucha.\nEl pequeño sonido vibra con alegría,\nY la magia crece con cada latido.",
+    "9": "Una pared de silencio quiere bloquear,\nPero Emilia aplaude y la rompe con luz.\nUna lluvia de estrellas suelta la canción,\nY la risa llena el corazón.",
+    "10": "El unicornio agradece con un abrazo brillante,\nRíen juntos bajo luces de corazón.\nAbrazo, sonrisa, magia, su lazo dura,\nY la amistad sin palabras siempre queda."
+  },
+  "glosario": [
+    {
+      "original": "crin",
+      "simple": "melena"
+    },
+    {
+      "original": "arcoíris",
+      "simple": "colores"
+    },
+    {
+      "original": "matices",
+      "simple": "tonos"
+    },
+    {
+      "original": "hocico",
+      "simple": "nariz"
+    },
+    {
+      "original": "persiste",
+      "simple": "comparte"
+    },
+    {
+      "original": "desaire",
+      "simple": "sin palabras"
+    },
+    {
+      "original": "relucen",
+      "simple": "brilla"
+    },
+    {
+      "original": "estelar",
+      "simple": "brillante"
+    },
+    {
+      "original": "preocupación",
+      "simple": "miedo"
+    },
+    {
+      "original": "sombra",
+      "simple": "oscuridad"
+    },
+    {
+      "original": "silencio",
+      "simple": "quietud"
+    },
+    {
+      "original": "asombroso",
+      "simple": "brillante"
+    },
+    {
+      "original": "vibra",
+      "simple": "tiembla"
+    },
+    {
+      "original": "excitación",
+      "simple": "alegría"
+    },
+    {
+      "original": "pulsación",
+      "simple": "latido"
+    },
+    {
+      "original": "barrera",
+      "simple": "pared"
+    },
+    {
+      "original": "relucientes",
+      "simple": "luces"
+    }
+  ],
+  "cambios_clave": [
+    "Reemplazado vocabulario complejo por sinónimos simples.",
+    "Mantenida la estructura de 4 versos por página.",
+    "Clarificadas las imágenes para que cada verso sea inequívoco.",
+    "Simplificada la métrica sin perder la musicalidad.",
+    "Eliminadas ambigüedades y redundancias."
+  ],
+  "qa": {
+    "comprensibilidad": 5,
+    "imagen_inequivoca": 5
+  }
+}

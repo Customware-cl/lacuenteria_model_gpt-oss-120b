@@ -1,0 +1,93 @@
+{
+  "metas_generales": [
+    "Expresar emociones y deseos mediante gestos, sonrisas y abrazos.",
+    "Reconocer y responder a la comunicación no verbal de los demás.",
+    "Practicar la empatía ofreciendo apoyo físico y visual.",
+    "Desarrollar autorregulación con respiración y etiquetado sencillo de emociones.",
+    "Fomentar la iniciativa de pedir y ofrecer ayuda sin necesidad de palabras."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Observar y reproducir gestos de saludo (abrir brazos, sonrisa).",
+      "frase_modelo": "Mira, Emilia abre sus brazos y sonríe para decir hola.",
+      "recurso": "Juego de espejo: el niño copia el gesto que ve en el adulto.",
+      "evitar": "Criticar la falta de palabras o forzar una respuesta verbal."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Identificar la tristeza en otro mediante expresión facial.",
+      "frase_modelo": "Vemos que el unicornio está triste porque su boca está cerrada.",
+      "recurso": "Etiquetado emocional simple: \"está triste\" acompañado de una carita azul.",
+      "evitar": "Decir que está \"mal\" o que debe hablar para sentirse mejor."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Ofrecer un abrazo como señal de cariño y apoyo.",
+      "frase_modelo": "Emilia da un abrazo grande y suave al unicornio.",
+      "recurso": "Guía paso a paso: acercarse, abrir brazos, envolver suavemente.",
+      "evitar": "Forzar el contacto si el otro muestra incomodidad."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Reconocer la sensación de calor interno al abrazar.",
+      "frase_modelo": "Siento mi corazón calentarse cuando abrazo a alguien.",
+      "recurso": "Respiración de barriga: 2 cuentas al inhalar, 2 al exhalar mientras abraza.",
+      "evitar": "Exigir que el niño sienta una emoción específica."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Usar un gesto amplio (señalar al cielo) para iniciar una actividad grupal.",
+      "frase_modelo": "Emilia señala al cielo y todos miran la señal luminosa.",
+      "recurso": "Tarjeta visual con una flecha grande y brillante.",
+      "evitar": "Presionar a que todos imiten sin comprender la señal."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Escuchar y responder a sonidos no verbales (canción de la hada).",
+      "frase_modelo": "Escuchamos la música de la hada y movemos nuestras manos al ritmo.",
+      "recurso": "Instrumento suave (maracas o pandereta) para acompañar la melodía.",
+      "evitar": "Decir que deben cantar con palabras."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Cooperar físicamente formando una cadena de luz (manos unidas).",
+      "frase_modelo": "Todos juntamos nuestras manos y la luz se vuelve más fuerte.",
+      "recurso": "Ejercicio de unión de manos con cuenta regresiva (3,2,1).",
+      "evitar": "Criticar si la cadena se rompe o si alguien suelta la mano."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Expandir la sonrisa para expresar alegría y alentar al otro.",
+      "frase_modelo": "Emilia muestra una sonrisa gigante que ilumina la cara del unicornio.",
+      "recurso": "Juego del espejo de sonrisa: imitar la sonrisa del compañero.",
+      "evitar": "Forzar una sonrisa que no se siente auténtica."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Celebrar el logro con aplausos, gestos de alegría y abrazos.",
+      "frase_modelo": "Aplaudimos y nos abrazamos cuando el unicornio canta su canción.",
+      "recurso": "Ritmo de palmadas 1‑2‑3 para marcar la celebración.",
+      "evitar": "Enfatizar la falta previa de voz o la frustración del niño."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Invitar a compartir un gesto de cariño al final (abrazo + sonrisa).",
+      "frase_modelo": "Todos nos damos un abrazo y una sonrisa bajo el arcoíris.",
+      "recurso": "Círculo de abrazos guiado: cada niño abraza al vecino y sonríe.",
+      "evitar": "Imponer que todos tengan que hablar para participar."
+    }
+  ],
+  "banderas": [
+    "Resistencia o miedo al contacto físico (abrazos).",
+    "Falta de respuesta a gestos o señales visuales.",
+    "Ansiedad al mantener contacto visual prolongado.",
+    "Frustración cuando no se obtiene respuesta verbal.",
+    "Sobrecarga sensorial ante luces o sonidos intensos."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

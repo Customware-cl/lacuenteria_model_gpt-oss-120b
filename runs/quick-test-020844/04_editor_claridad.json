@@ -1,0 +1,185 @@
+{
+  "paginas_texto_claro": {
+    "1": "En el bosque negro Luna se oculta,\nbajo grandes hojas su luz apenas brilla.\nTímida y pequeña, el miedo la aprieta,\npero su corazón late y busca esperanza.",
+    "2": "Sobre el lago las luciérnagas bailan siempre,\nsus luces pintan la noche de perfume.\nDesde la sombra Luna quiere brillar,\nBrilla, Luna, brilla, y pronto lo hará.",
+    "3": "Luna trata de encender su luz en la noche,\npero la chispa se escapa y no lo consigue.\nSus ojos se llenan de lágrimas y tristeza,\naunque el miedo la cubra, sigue intentando.",
+    "4": "Una tortuga sabia bajo el árbol la mira,\ncon ojos tranquilos que guardan su temor.\n“Respira, pequeña, y cree en tu luz dentro,”\n“Siente tu corazón, allí nace la luz verdadera.”",
+    "5": "Luna respira hondo, aparecen burbujas de luz,\ny al soplar salen pequeñas chispas.\nEl miedo tiembla mientras el aire la rodea,\nBrilla, Luna, brilla, y su pecho se llena de luz.",
+    "6": "Bajo el sauce la sombra la cubre y mece,\ny su tenue luz se junta en la penumbra.\nAunque la oscuridad quiere apagar su brillo,\nLuna sigue, y su chispa vuelve a encenderse.",
+    "7": "Una suave lluvia empieza a caer,\nlas gotas al tocar el suelo se esparcen.\nLa luz titila, temiendo la sombra,\nLuna respira hondo y vence la gris niebla, disipando el miedo.",
+    "8": "Llama la tortuga, su consejo al corazón,\nporque el latido sincero enciende la llama.\nEl miedo duda, ¿puede el corazón dar luz real?\nBrilla, Luna, brilla, siente el latido, la luz nace real.",
+    "9": "Luna junta valor, su luz interior ahora brilla,\ntodo el bosque celebra bajo la noche luminosa.\nCon un destello dorado, la alegría la rodea,\ny su corazón canta, la felicidad la abraza.",
+    "10": "Los amigos del bosque se juntan bajo su luz,\ny sus voces suenan como un coro de estrellas.\nBrilla, Luna, brilla, ilumina la fiesta,\ny cada ser agradece, porque la amistad siempre brilla."
+  },
+  "glosario": [
+    {
+      "original": "oscuro",
+      "simple": "negro"
+    },
+    {
+      "original": "esconde",
+      "simple": "oculta"
+    },
+    {
+      "original": "apenas responde",
+      "simple": "apenas brilla"
+    },
+    {
+      "original": "abraza",
+      "simple": "aprieta"
+    },
+    {
+      "original": "destellos",
+      "simple": "luces"
+    },
+    {
+      "original": "jazmín",
+      "simple": "perfume"
+    },
+    {
+      "original": "anhela",
+      "simple": "quiere"
+    },
+    {
+      "original": "intenta",
+      "simple": "trata"
+    },
+    {
+      "original": "destello",
+      "simple": "chispa"
+    },
+    {
+      "original": "pretender",
+      "simple": "conseguir"
+    },
+    {
+      "original": "pesar",
+      "simple": "tristeza"
+    },
+    {
+      "original": "envuelve",
+      "simple": "cubre"
+    },
+    {
+      "original": "observa",
+      "simple": "mira"
+    },
+    {
+      "original": "calma",
+      "simple": "tranquilos"
+    },
+    {
+      "original": "conserva",
+      "simple": "guardan"
+    },
+    {
+      "original": "confía",
+      "simple": "cree"
+    },
+    {
+      "original": "fulgor interior",
+      "simple": "luz verdadera"
+    },
+    {
+      "original": "inhala",
+      "simple": "respira"
+    },
+    {
+      "original": "exhalar",
+      "simple": "soplar"
+    },
+    {
+      "original": "disuelve",
+      "simple": "se llena"
+    },
+    {
+      "original": "cobija",
+      "simple": "cubre"
+    },
+    {
+      "original": "acuna",
+      "simple": "mece"
+    },
+    {
+      "original": "aduna",
+      "simple": "junta"
+    },
+    {
+      "original": "absorber",
+      "simple": "apagar"
+    },
+    {
+      "original": "persiste",
+      "simple": "sigue"
+    },
+    {
+      "original": "encender su brillo",
+      "simple": "encenderse"
+    },
+    {
+      "original": "ligera",
+      "simple": "suave"
+    },
+    {
+      "original": "vuelven a caer",
+      "simple": "se esparcen"
+    },
+    {
+      "original": "temiendo la sombra del temor",
+      "simple": "temiendo la sombra"
+    },
+    {
+      "original": "inspira",
+      "simple": "respira"
+    },
+    {
+      "original": "vence al gris",
+      "simple": "vence la gris niebla"
+    },
+    {
+      "original": "al pecho llama",
+      "simple": "al corazón"
+    },
+    {
+      "original": "luz verdadera",
+      "simple": "luz real"
+    },
+    {
+      "original": "nace verdadera",
+      "simple": "nace real"
+    },
+    {
+      "original": "reúne",
+      "simple": "junta"
+    },
+    {
+      "original": "entero",
+      "simple": "todo"
+    },
+    {
+      "original": "envuelve",
+      "simple": "abraza"
+    },
+    {
+      "original": "congregan",
+      "simple": "se juntan"
+    },
+    {
+      "original": "ilumina la fiesta con su luz al brillar",
+      "simple": "ilumina la fiesta"
+    },
+    {
+      "original": "siempre hará brillar",
+      "simple": "siempre brilla"
+    }
+  ],
+  "cambios_clave": [
+    "Se sustituyeron palabras complejas por sinónimos simples y cotidianos.",
+    "Se mantuvo una imagen clara y única en cada verso para evitar ambigüedad visual.",
+    "Se conservó la métrica aproximada y el ritmo poético mientras se simplificaba el lenguaje."
+  ],
+  "qa": {
+    "comprensibilidad": 5,
+    "imagen_inequivoca": 5
+  }
+}

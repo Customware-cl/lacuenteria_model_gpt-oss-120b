@@ -1,0 +1,48 @@
+{
+  "story_id": "quick-test-015704",
+  "source": "local",
+  "created_at": "2025-08-20T01:57:04.474789",
+  "updated_at": "2025-08-20T01:57:32.658412",
+  "estado": "error",
+  "paso_actual": "cuentacuentos",
+  "qa_historial": {
+    "director": {
+      "arco_completo": 5,
+      "claridad_visual": 5,
+      "potencia_leitmotiv": 5,
+      "promedio": 5.0
+    },
+    "psicoeducador": {
+      "ajuste_edad": 5,
+      "alineacion_mensaje": 5,
+      "tono_amable": 5,
+      "promedio": 5.0
+    }
+  },
+  "devoluciones": [],
+  "reintentos": {},
+  "timestamps": {
+    "director": {
+      "start": "2025-08-20T01:57:04.475777",
+      "end": "2025-08-20T01:57:16.156048",
+      "duration": 11.680269
+    },
+    "psicoeducador": {
+      "start": "2025-08-20T01:57:16.156681",
+      "end": "2025-08-20T01:57:32.658159",
+      "duration": 16.501475
+    },
+    "cuentacuentos": {
+      "start": "2025-08-20T01:57:32.658798",
+      "end": "2025-08-20T01:58:19.690535",
+      "duration": 47.031728
+    }
+  },
+  "webhook_url": null,
+  "webhook_attempts": 0,
+  "error": {
+    "agent": "cuentacuentos",
+    "message": "Fallo después de 3 intentos. Último error: Error en intento 3: El modelo no generó contenido",
+    "timestamp": "2025-08-20T01:58:19.690565"
+  }
+}

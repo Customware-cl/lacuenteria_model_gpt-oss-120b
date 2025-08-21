@@ -1,0 +1,25 @@
+{
+  "paginas_texto": {
+    "1": "En el bosque oscuro Luna se esconde,\nbajo hojas grandes su luz apenas responde.\nTimida y pequeña, el miedo la abraza,\npero su corazón late, busca la esperanza.",
+    "2": "Al lago las luciérnagas bailan sin fin,\nsus destellos pintan la noche de jazmín.\nDesde la sombra Luna anhela brillar,\nBrilla, Luna, brilla, y pronto podrá brillar.",
+    "3": "Intenta Luna su luz en la noche encender,\npero el destello se escapa, no logra pretender.\nSus ojos se llenan de lágrima y pesar,\naunque el miedo la envuelve, no deja de intentar.",
+    "4": "Una tortuga sabia bajo el árbol la observa,\ncon ojos de calma que su temor conserva.\n“Respira, pequeña, y confía en tu luz interior,”\n“Siente tu corazón, pues allí nace el fulgor interior.”",
+    "5": "Luna inhala profundo, burbujas de luz aparecen,\ny al exhalar, pequeñas chispas también aparecen.\nEl miedo tiembla mientras el aire la envuelve,\nBrilla, Luna, brilla, y el pecho con luz se disuelve.",
+    "6": "Bajo el sauce la sombra la cobija y acuna,\ny su tenue destello en la penumbra se aduna.\nAunque la oscuridad intenta absorber su brillo,\nLuna persiste, y su chispa vuelve a encender su brillo.",
+    "7": "Una ligera lluvia comienza a caer,\nlas gotas al tocar el suelo vuelven a caer.\nEl destello titila, temiendo la sombra del temor,\nLuna inspira profundo y vence al gris, disipando el temido temor.",
+    "8": "Recuerda la tortuga, su consejo al pecho llama,\npues el latido sincero enciende la llama.\nDuda el miedo, ¿puede el corazón dar luz verdadera?,\nBrilla, Luna, brilla, siente el latido, la luz nace verdadera.",
+    "9": "Luna reúne valor, su luz interior ahora brilla,\nel bosque entero celebra, bajo la noche que también brilla.\nCon un destello dorado, la alegría la envuelve,\ny su corazón canta, la felicidad siempre la envuelve.",
+    "10": "Amigos del bosque bajo su luz se congregan,\ny en coro de estrellas, sus voces también se congregan.\nBrilla, Luna, brilla, ilumina la fiesta con su luz al brillar,\ny cada ser agradece, pues la amistad siempre hará brillar."
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    8,
+    10
+  ],
+  "qa": {
+    "emocion": 5,
+    "claridad_visual": 5,
+    "uso_leitmotiv": 5
+  }
+}

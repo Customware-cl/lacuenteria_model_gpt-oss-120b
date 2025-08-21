@@ -79,6 +79,16 @@ class LLMClient:
                 # Parsear respuesta
                 result = response.json()
                 
+                # Extraer tokens consumidos si están disponibles
+                tokens_info = {}
+                if "usage" in result:
+                    tokens_info = {
+                        "prompt_tokens": result["usage"].get("prompt_tokens", 0),
+                        "completion_tokens": result["usage"].get("completion_tokens", 0),
+                        "total_tokens": result["usage"].get("total_tokens", 0)
+                    }
+                    logger.debug(f"Tokens consumidos - Prompt: {tokens_info['prompt_tokens']}, Completion: {tokens_info['completion_tokens']}")
+                
                 # Extraer el contenido generado
                 if "choices" in result and len(result["choices"]) > 0:
                     content = result["choices"][0].get("message", {}).get("content")
@@ -96,6 +106,9 @@ class LLMClient:
                     try:
                         json_content = json.loads(content)
                         logger.info("Respuesta JSON válida recibida del LLM")
+                        # Agregar información de tokens al resultado
+                        if tokens_info:
+                            json_content["_metadata_tokens"] = tokens_info
                         return json_content
                     except json.JSONDecodeError as e:
                         logger.warning(f"La respuesta no es JSON válido: {e}")
@@ -105,6 +118,9 @@ class LLMClient:
                         try:
                             json_content = json.loads(cleaned_content)
                             logger.info("Respuesta JSON limpiada y parseada exitosamente")
+                            # Agregar información de tokens al resultado
+                            if tokens_info:
+                                json_content["_metadata_tokens"] = tokens_info
                             return json_content
                         except:
                             raise ValueError(f"No se pudo parsear la respuesta como JSON: {content[:500]}")

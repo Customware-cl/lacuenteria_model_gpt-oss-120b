@@ -1,0 +1,60 @@
+{
+  "titulo": "Emilia y Triki: La Aventura del Desierto Florido",
+  "paginas": {
+    "1": {
+      "texto": "Emilia con pelo rizado\ncamina con Triki a su lado\nPor desierto con mil flores\ndonde brillan los colores",
+      "prompt": "Ilustración infantil colorida: Emilia, niña de 2 años con pelo castaño ondulado, vestido celeste con flores pequeñas, sostiene a Triki, un peluche de triceratops púrpura. Caminan sobre arena dorada del desierto florido. Flores gigantes de colores vibrantes (rosa, amarillo, naranja) se alzan como torres. Cielo azul brillante, momento: mañana temprana. Plano general mostrando la inmensidad del desierto mágico."
+    },
+    "2": {
+      "texto": "¡Vamos, Triki, a explorar!\nFlores grandes vamos a mirar\nRosas, amarillas, brillantes\ncomo torres elegantes",
+      "prompt": "Ilustración infantil vibrante: Emilia corre entre flores enormes que la sobrepasan en altura, Triki en su mano. Las flores tienen pétalos brillantes y translúcidos. Emilia señala emocionada una flor rosa gigante. Su expresión muestra asombro y alegría. Luz dorada del sol filtrándose entre los pétalos. Plano medio, ángulo ligeramente contrapicado para enfatizar el tamaño de las flores."
+    },
+    "3": {
+      "texto": "Emilia quiere oler la flor\npero el chupete causa dolor\nNo puede sentir el aroma\nsu carita se desploma",
+      "prompt": "Ilustración infantil emotiva: Primer plano de Emilia acercándose a una flor amarilla aromática. Su chupete rosa en la boca le impide acercarse completamente. Su expresión muestra frustración leve, ceño ligeramente fruncido. Triki la observa comprensivo. Los pétalos de la flor desprenden pequeñas partículas doradas de polen mágico. Luz suave del mediodía."
+    },
+    "4": {
+      "texto": "Triki muestra cajita bella\nque reluce como estrella\n'Guarda aquí tu chupetito\ncuando quieras, amiguito'",
+      "prompt": "Ilustración infantil mágica: Triki sostiene una pequeña caja brillante de color turquesa con destellos dorados. La caja emite un suave resplandor mágico. Emilia la observa con curiosidad y esperanza. El desierto florido de fondo con colores suaves. Plano medio mostrando la interacción entre Emilia y Triki. Momento del día: mediodía con luz cálida."
+    },
+    "5": {
+      "texto": "¡Vamos, Triki, a explorar!\nEmilia es valiente de verdad\nGuarda el chupete con cuidado\nen la caja lo ha dejado",
+      "prompt": "Ilustración infantil valiente: Emilia coloca delicadamente su chupete rosa en la cajita mágica. Su expresión muestra determinación y valentía. Triki la anima con una sonrisa. La caja brilla al recibir el chupete, con pequeñas estrellas mágicas alrededor. Flores del desierto observan como testigos. Plano medio-cercano, foco en las manos de Emilia y la caja."
+    },
+    "6": {
+      "texto": "Sin chupete en su boquita\nhuele la flor tan bonita\n¡Qué perfume tan hermoso!\nsu corazón está gozoso",
+      "prompt": "Ilustración infantil gozosa: Emilia con los ojos cerrados, inhalando profundamente el aroma de una flor púrpura gigante. Su cara muestra pura felicidad y descubrimiento. Pequeñas notas musicales y espirales de colores representan el perfume. Triki celebra a su lado. El fondo muestra más flores brillantes. Primer plano del rostro de Emilia, expresión de alegría pura."
+    },
+    "7": {
+      "texto": "Prueba frutas muy sabrosas\nmira las mariposas\nCon Triki todo comparte\nes un día de buen arte",
+      "prompt": "Ilustración infantil festiva: Emilia probando una fruta dorada jugosa mientras mariposas multicolores revolotean alrededor. Comparte un pedazo con Triki. Las mariposas tienen alas iridiscentes con patrones mágicos. Flores y cactus con frutas de colores en el fondo. Plano general mostrando la abundancia del desierto. Luz dorada de media tarde."
+    },
+    "8": {
+      "texto": "¡Vamos, Triki, a explorar!\nEl desierto es especial\nCada paso es aventura\ncada flor es hermosura",
+      "prompt": "Ilustración infantil aventurera: Emilia y Triki caminando por un sendero entre flores, dejando pequeñas huellas en la arena. El desierto se extiende con diferentes tipos de flores mágicas y formaciones rocosas coloridas. El sol crea sombras largas y dramáticas. Vista panorámica del desierto florido en todo su esplendor. Momento: tarde dorada."
+    },
+    "9": {
+      "texto": "Cuando Emilia siente miedo\nsaca el chupete con su dedo\nLo mira y vuelve a guardar\n¡es grande y puede explorar!",
+      "prompt": "Ilustración infantil empoderada: Emilia sostiene su chupete, lo mira con cariño pero con decisión lo vuelve a guardar en la cajita. Su postura muestra confianza y madurez. Triki la apoya con orgullo. El atardecer tiñe todo de colores cálidos naranjas y rosas. Plano medio mostrando la transformación emocional de Emilia."
+    },
+    "10": {
+      "texto": "¡Vamos, Triki, a explorar!\nEl sol se va a descansar\nEmilia creció un poquito\nhoy fue día muy bonito",
+      "prompt": "Ilustración infantil conclusiva: Emilia abraza a Triki mientras el sol se pone en el horizonte del desierto. Sus siluetas se recortan contra un cielo de colores púrpura, naranja y rosa. La cajita mágica brilla suavemente en la mano de Emilia. Las flores del desierto se cierran para dormir. Plano general emotivo, composición centrada en el abrazo, atmósfera cálida y reconfortante."
+    }
+  },
+  "portada": {
+    "prompt": "Ilustración de portada mágica y vibrante: Emilia en primer plano con su pelo castaño ondulado y vestido celeste, sonriendo con confianza mientras abraza a Triki, su triceratops púrpura. La cajita mágica turquesa brilla entre sus manos. El desierto florido se extiende detrás con flores gigantes de todos los colores formando un arco iris natural. Mariposas iridiscentes vuelan alrededor. El título 'Emilia y Triki: La Aventura del Desierto Florido' en letras juguetonas y coloridas en la parte superior. Sol radiante en el cielo azul. Estilo ilustración infantil digital con texturas suaves y colores vibrantes que invitan a la aventura."
+  },
+  "loader": [
+    "Emilia prepara su mochila mágica ✨",
+    "Triki afina su valentía púrpura 💜",
+    "Las flores del desierto despiertan",
+    "¡Vamos, Triki, a explorar!",
+    "La cajita mágica brilla con luz",
+    "Mariposas pintan el cielo de colores",
+    "El perfume de las flores llena el aire",
+    "Emilia respira profundo y sonríe",
+    "El desierto florido cobra vida",
+    "¡Tu cuento está casi listo!"
+  ]
+}

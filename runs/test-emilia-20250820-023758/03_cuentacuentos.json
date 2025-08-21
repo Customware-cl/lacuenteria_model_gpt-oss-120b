@@ -1,0 +1,25 @@
+{
+  "paginas_texto": {
+    "1": "En el prado Emilia abre sus brazos sin cantar,\nlas mariposas brillan al ritmo de su gesto al cantar,\nCon su sonrisa invita al mundo a sentir y amar,\ny cada niño descubre que el cariño es puro amar.",
+    "2": "Un unicornio llegó, su cuerno reluce bajo la luz,\npero su boca cerrada no deja melodías en la luz,\n¡Abrazo, sonrisa, y luz! susurra el eco del corazón,\ny Emilia, con gestos suaves, busca curar su corazón.",
+    "3": "Emilia se acerca, sus brazos se abren con brillo,\ny al abrazar al unicornio, la luz crece en su brillo,\nUna corriente dorada vibra, anunciando la unión,\ny la esperanza crece, fuerte en la dulce unión.",
+    "4": "El abrazo calienta, como fuego suave en la piel,\ny el unicornio siente el calor, latido fiel en la piel,\nCorazones flotan, destellos rosados de puro amor,\ny el brillo interno se eleva, como una llama de amor.",
+    "5": "Emilia alza la mano, señala al cielo con fervor,\nun arcoíris nace, pintando el aire de color en fervor,\n¡Abrazo, sonrisa, y luz! surge la señal que guía el corazón,\ny la canción del bosque espera, despertando su vibrar del corazón.",
+    "6": "Una hada aparece, sus alas cantan sin decir palabra,\ny notas estelares bailan, llenando el bosque de luz y palabra,\nLa melodía llama, pidiendo una clave brillante,\ny todos siguen el ritmo, bajo la estrella brillante.",
+    "7": "Manos entrelazadas forman una cadena de luz dorada,\ny aunque titila, la fuerza sigue brillando dorada,\nUn susurro de unión pide más calor para crecer,\ny el corazón de Emilia impulsa la llama a crecer.",
+    "8": "Emilia muestra una sonrisa tan grande como el sol,\ny su brillo ilumina la cara triste del unicornio, como el sol,\n¡Abrazo, sonrisa, y luz! envuelve al amigo en calor,\ny la tristeza se desvanece, reemplazada por dulce calor.",
+    "9": "Un último destello surge, la voz del unicornio quiere cantar,\nlas notas arcoíris fluyen, llenando el aire al vibrar y cantar,\nEl abrazo y la sonrisa son la llave que abre su canción,\ny el bosque entero celebra, unido en una gran canción.",
+    "10": "Todos bailan bajo el arcoíris, abrazos y risas sin fin,\nel unicornio canta agradecido, su voz ilumina el jardín sin fin,\n¡Abrazo, sonrisa, y luz! el mensaje vive en cada corazón,\ny niños y criaturas siguen unidos, compartiendo amor y corazón."
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    8,
+    10
+  ],
+  "qa": {
+    "emocion": 5,
+    "claridad_visual": 5,
+    "uso_leitmotiv": 5
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "leitmotiv": "Brilla, Luna, brilla",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Luna, la luciérgana tímida, en su rincón oscuro del bosque.",
+      "conflicto": "Luna se siente invisible y temerosa de mostrarse.",
+      "emocion": "Curiosidad",
+      "imagen_nuclear": "Luna escondida bajo una hoja grande, con una luz tenue que apenas se asoma."
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Mostrar a las demás luciérnagas brillando y bailando alrededor del lago.",
+      "conflicto": "Luna desea brillar como ellas pero no se atreve.",
+      "emocion": "Anhelo",
+      "imagen_nuclear": "Un círculo de luciérnagas iluminando el agua mientras Luna observa desde la sombra."
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Luna intenta encender su luz por primera vez.",
+      "conflicto": "La luz no sale y Luna se siente frustrada.",
+      "emocion": "Frustración",
+      "imagen_nuclear": "Luna cerrando los ojos y haciendo un pequeño destello que se apaga rápidamente."
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Luna encuentra a la Tortuga Sabia que le ofrece un consejo.",
+      "conflicto": "Necesita aprender a confiar en sí misma.",
+      "emocion": "Esperanza",
+      "imagen_nuclear": "Una tortuga sentada bajo un árbol, escuchando a Luna que se acerca con timidez."
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Aprender a respirar profundo para activar su brillo interior.",
+      "conflicto": "El miedo al soplo hace que la respiración sea irregular.",
+      "emocion": "Nervios",
+      "imagen_nuclear": "Luna inhalando grande, formando burbujas luminosas que flotan alrededor."
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Practicar su luz bajo la sombra protectora del sauce.",
+      "conflicto": "La sombra parece absorber su brillo débil.",
+      "emocion": "Determinación",
+      "imagen_nuclear": "Luna emitiendo un tenue resplandor entre las ramas del sauce."
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Enfrentar una lluvia ligera que amenaza apagar su luz.",
+      "conflicto": "Las gotas hacen que el destello titile y se apague momentáneamente.",
+      "emocion": "Temor",
+      "imagen_nuclear": "Luna bajo una lluvia de gotas brillantes que chispean al caer."
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Recordar el consejo de la tortuga: “Brilla con tu corazón”.",
+      "conflicto": "Duda si su corazón puede producir luz verdadera.",
+      "emocion": "Coraje creciente",
+      "imagen_nuclear": "Un brillo cálido emerge del pecho de Luna, iluminando su entorno."
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Clímax: Luna libera su brillo pleno y sin miedo.",
+      "conflicto": "Superar el último vestigio de miedo antes de brillar totalmente.",
+      "emocion": "Alegría",
+      "imagen_nuclear": "Luna explota en una gran luz dorada que llena todo el bosque."
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Compartir su luz con los amigos del bosque y celebrar juntos.",
+      "resolucion": "Todas las criaturas se reúnen bajo la luz de Luna, bailando y cantando.",
+      "emocion": "Satisfacción",
+      "imagen_nuclear": "El bosque iluminado con luciérnagas girando alrededor de Luna, que brilla intensamente."
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "Luna se une a un grupo de luciérnagas y crean una constelación de luz en el cielo nocturno.",
+      "resolucion_alternativa": "El bosque celebra la nueva estrella, y todas las criaturas miran al cielo agradecidas."
+    },
+    {
+      "climax_alternativo": "Luna usa su luz para guiar a un pequeño ratón perdido hasta su madriguera.",
+      "resolucion_alternativa": "El ratón agradece a Luna, y los animales del bosque organizan una fiesta de luces en su honor."
+    }
+  ],
+  "qa": {
+    "arco_completo": 5,
+    "claridad_visual": 5,
+    "potencia_leitmotiv": 5
+  }
+}

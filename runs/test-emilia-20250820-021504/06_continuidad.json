@@ -1,0 +1,80 @@
+{
+  "character_bible": [
+    {
+      "nombre": "Emilia",
+      "edad": "3 años",
+      "rasgos_visibles": "Niña no verbal, gestos amplios y expresivos, sonrisa radiante, ojos brillantes, abraza constantemente a su osito y a los personajes que encuentra.",
+      "vestuario": "Vestido de colores pastel con estampado de estrellas, medias blancas y zapatillas suaves de tono rosa.",
+      "colores_clave": [
+        "rosa pastel",
+        "azul cielo",
+        "amarillo suave"
+      ],
+      "objeto_ancla": "osito de peluche",
+      "gestos": "Abraza, señala con las manos, dibuja formas en el aire, aplaude y gira sobre sí misma al ritmo de la música del bosque.",
+      "no_haria": "Hablar en voz alta, usar palabras, mostrar agresión o alejarse sin ofrecer un gesto de amistad."
+    },
+    {
+      "nombre": "Unicornio gris",
+      "edad": "Eterno (ser mitológico)",
+      "rasgos_visibles": "Cuerpo gris perla con crin plateada, ojos que reflejan lágrimas, cuerno luminoso que destella dorado.",
+      "vestuario": "No lleva ropa; su cuerno brillante y su melena con destellos plateados son sus principales adornos.",
+      "colores_clave": [
+        "gris perla",
+        "plateado",
+        "dorado"
+      ],
+      "objeto_ancla": "cuerno brillante",
+      "gestos": "Inclina la cabeza, extiende su cuerno hacia Emilia, emite luz suave, abraza con su cuerpo al acercarse.",
+      "no_haria": "Hablar con voz humana, atacar sin causa, alejarse de Emilia sin una razón emocional."
+    },
+    {
+      "nombre": "Flor Susurro",
+      "edad": "Mágica (flor eterna)",
+      "rasgos_visibles": "Pétalos translúcidos que brillan con luz lavanda, aroma calmante, presencia etérea que flota ligeramente.",
+      "vestuario": "No aplica; su propio brillo y los destellos de luz que la rodean son su “vestido”.",
+      "colores_clave": [
+        "lavanda",
+        "blanco perlado",
+        "verde suave"
+      ],
+      "objeto_ancla": "pétalo luminoso",
+      "gestos": "Se posa delicadamente sobre el cuerno del unicornio, vibra con la brisa, emite destellos que guían el camino.",
+      "no_haria": "Moverse rápidamente, causar daño, desaparecer sin motivo narrativo."
+    }
+  ],
+  "continuidad_narrativa": {
+    "relaciones": "Emilia y el unicornio forman un vínculo de amistad basado en abrazos, sonrisas y gestos sin palabras; la Flor Susurro actúa como guía y símbolo de paz, conectando a ambos y reforzando la comunicación no verbal.",
+    "evolucion_emocional": "Emilia pasa de curiosidad y ternura a una confianza plena, descubriendo que sus gestos pueden curar y reconfortar; el unicornio evoluciona de tristeza y pérdida de voz a alegría y luz interior al recibir el abrazo y la canción de Emilia; la Flor Susurro mantiene serenidad, pero su presencia intensifica la calma y la esperanza en los demás.",
+    "objeto_ancla_reapariciones": [
+      {
+        "personaje": "Emilia",
+        "paginas": [
+          1,
+          4,
+          9
+        ]
+      },
+      {
+        "personaje": "Unicornio gris",
+        "paginas": [
+          5,
+          8,
+          9
+        ]
+      },
+      {
+        "personaje": "Flor Susurro",
+        "paginas": [
+          7,
+          8,
+          9
+        ]
+      }
+    ]
+  },
+  "qa": {
+    "coherencia_rasgos": 5,
+    "utilidad_arte": 5
+  }
+}

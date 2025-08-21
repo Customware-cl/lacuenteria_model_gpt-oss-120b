@@ -51,6 +51,7 @@ class StoryOrchestrator:
             with open(manifest_path, 'r', encoding='utf-8') as f:
                 return json.load(f)
         else:
+            from config import LLM_CONFIG
             return {
                 "story_id": self.story_id,
                 "source": "local",
@@ -63,7 +64,14 @@ class StoryOrchestrator:
                 "reintentos": {},
                 "timestamps": {},
                 "webhook_url": None,
-                "webhook_attempts": 0
+                "webhook_attempts": 0,
+                "configuracion_modelo": {
+                    "modelo": LLM_CONFIG["model"],
+                    "endpoint": LLM_CONFIG["endpoint"],
+                    "timeout": self.agent_runner.llm_client.timeout,
+                    "default_temperature": LLM_CONFIG["temperature"],
+                    "default_max_tokens": LLM_CONFIG["max_tokens"]
+                }
             }
     
     def process_story(self, brief: Dict[str, Any], webhook_url: Optional[str] = None) -> Dict[str, Any]:

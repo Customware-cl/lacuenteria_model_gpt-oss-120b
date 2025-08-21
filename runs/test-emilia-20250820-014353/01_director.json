@@ -1,0 +1,90 @@
+{
+  "leitmotiv": "¡Abrazo, sonrisa y luz!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y su forma expresiva de comunicar.",
+      "conflicto": "Nadie entiende bien a Emilia porque no habla.",
+      "emocion": "Curiosidad y ternura.",
+      "imagen_nuclear": "Emilia sentada en la alfombra, señalando con sus manos mientras su mamá la mira con una gran sonrisa."
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Mostrar el descubrimiento del bosque mágico.",
+      "conflicto": "Emilia se siente un poco perdida al entrar al bosque brillante.",
+      "emocion": "Maravilla y leve incertidumbre.",
+      "imagen_nuclear": "Un sendero de luces rosadas que lleva a Emilia, rodeado de árboles con hojas que brillan."
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Introducir al unicornio sin voz.",
+      "conflicto": "El unicornio intenta cantar pero solo sale un susurro sin sonido.",
+      "emocion": "Compasión y sorpresa.",
+      "imagen_nuclear": "Un unicornio plateado con una melena arcoíris, intentando abrir la boca y mostrando una nube de silencio."
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Emilia decide ayudar al unicornio.",
+      "conflicto": "No sabe cómo devolverle la voz al unicornio.",
+      "emocion": "Determinación y esperanza.",
+      "imagen_nuclear": "Emilia colocando sus manos sobre el corazón del unicornio y mirándolo con ojos brillantes."
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Explorar los gestos como herramienta.",
+      "conflicto": "Los primeros gestos no hacen que el unicornio hable.",
+      "emocion": "Frustración ligera y juego.",
+      "imagen_nuclear": "Emilia haciendo una gran ola con las manos mientras el unicornio observa curioso."
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Descubrir el poder del abrazo.",
+      "conflicto": "Emilia necesita confiar en su propio abrazo para crear magia.",
+      "emocion": "Calma y alegría creciente.",
+      "imagen_nuclear": "Emilia abrazando al unicornio con ambos envueltos en una luz rosada que vibra."
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Superar una nube de niebla que bloquea la luz del abrazo.",
+      "conflicto": "La niebla hace que el abrazo parezca perder fuerza.",
+      "emocion": "Tensión y coraje.",
+      "imagen_nuclear": "Una nube gris flotando entre Emilia y el unicornio, mientras sus manos siguen unidas."
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Clímax: el abrazo rompe la niebla y devuelve la voz.",
+      "conflicto": "Necesitan un último impulso de energía emocional.",
+      "emocion": "Éxtasis y triunfo.",
+      "imagen_nuclear": "El abrazo de Emilia ilumina todo el bosque; la niebla se disipa y el unicornio abre la boca, dejando salir una cascada de notas brillantes."
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Celebrar la victoria y compartir la canción del unicornio.",
+      "conflicto": "Ninguno, la alegría fluye libremente.",
+      "emocion": "Felicidad contagiosa.",
+      "imagen_nuclear": "El unicornio cantando mientras Emilia baila, rodeados de mariposas que siguen el ritmo."
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Cierre cálido que reafirma que la comunicación trasciende las palabras.",
+      "resolucion": "Emilia y el unicornio se despiden con un último abrazo y sonrisa, sabiendo que siempre pueden entenderse sin hablar.",
+      "emocion": "Calma y esperanza.",
+      "imagen_nuclear": "Emilia y el unicornio caminando hacia el atardecer, sus manos todavía unidas en un suave gesto de luz."
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "Emilia usa una gran sonrisa que se vuelve un arco de luz, devolviendo la voz al unicornio.",
+      "resolucion_alternativa": "El unicornio canta una canción de gratitud y enseña a Emilia una danza de gestos que pueden usar siempre."
+    },
+    {
+      "climax_alternativo": "Emilia crea una cadena de abrazos con los animales del bosque, y la energía colectiva restaura la voz.",
+      "resolucion_alternativa": "Todos los animales y Emilia forman un círculo de luz, y el unicornio promete regresar siempre cuando necesiten su abrazo mágico."
+    }
+  ],
+  "qa": {
+    "arco_completo": 5,
+    "claridad_visual": 5,
+    "potencia_leitmotiv": 5
+  }
+}

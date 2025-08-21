@@ -1,0 +1,93 @@
+{
+  "paginas_texto_pulido": {
+    "1": "Bajo el árbol de flores Emilia entona su canción,\nAbraza al osito, el día se vuelve un rincón,\nDibuja estrellas en el aire, su trazo vibra como canción,\nEl bosque responde con risas, eco alegre en cada rincón.",
+    "2": "Un unicornio gris llega en silencio, su mirada es lágrima,\nEmilia extiende sus manos, le brinda un abrazo de estima,\nEl unicornio percibe el cariño, su pecho se eleva al cielo,\nY devuelve una sonrisa, que ilumina todo su cielo.",
+    "3": "Con un trazo de luz Emilia dibuja un corazón, puro anhelo,\nEl unicornio lo contempla, curioso, su aliento es un suave velo,\nEl eco se aleja, pero su pecho guarda la fe, firme como anhelo,\nUna pequeña chispa vibra, encendiendo la noche bajo el velo.",
+    "4": "Emilia avanza lenta, su paso enciende luz en la senda,\nEl unicornio recibe el brillo, un abrazo cálido que guía su senda,\nUn halo dorado surge, corona su vínculo sincera,\nEl corazón del unicornio late al ritmo de una canción sincera.",
+    "5": "El cuerno del unicornio brilla, señala una estrella lejana,\nEmilia apunta la luz, deseando que sea su amiga cercana,\nLe brinda otro abrazo, su sonrisa se vuelve faro en la noche lejana,\nÉl responde con su propio fulgor, devolviendo luz a la amiga cercana.",
+    "6": "Sobre un puente que tiembla, cada paso es un suspiro que suena,\nSus pies y patas avanzan juntos, cada paso retumba y suena,\nEl río bajo ellos reluce en mil tonos, espejo de colores sin pena,\nEl arco iris les brinda su brillo, una danza de luz que también no tiene pena.",
+    "7": "Emilia inhala hondo, su aliento asciende como suave canción,\nEl viento lo lleva lejos, disipando la niebla en su dirección,\nLa claridad renace, el mundo se vuelve claro como una canción,\nY la Flor Susurro brilla bajo la luz, guiando la nueva dirección.",
+    "8": "La Flor Susurro se posa ligera sobre el cuerno, como un susurro de paz,\nCon ternura la colocan, regalo de amistad que el aire abraza y da paz,\nUn abrazo y una sonrisa se elevan, como destellos que el cielo abraza,\nLa magia responde, respondiendo al gesto, y el bosque entero también abraza.",
+    "9": "El unicornio alza su luz y escribe “gracias” en el aire, brillante como sol,\nEmilia aplaude, su rostro irradia alegría, su risa vibra como un farol,\nDestellos dorados pintan el cielo, cada chispa un canto de gratitud al sol,\nEl eco de la felicidad resuena, un murmullo que alegra como un suave farol.",
+    "10": "Al volver a casa bajo un arco de colores, Emilia siente la paz del hogar,\nSu familia la envuelve en un lazo, un abrazo que la lleva al calor del hogar,\nUn abrazo y una sonrisa llenan la estancia, luz que al corazón hace latir sin pesar,\nEl pecho late tranquilo, la calma se asienta, la noche descansa sin ningún pesar."
+  },
+  "esquema_rima": {
+    "1": "ABAB",
+    "2": "AABB",
+    "3": "ABAB",
+    "4": "AABB",
+    "5": "ABAB",
+    "6": "AABB",
+    "7": "ABAB",
+    "8": "AABB",
+    "9": "ABAB",
+    "10": "AABB"
+  },
+  "finales_de_verso": {
+    "1": [
+      "canción",
+      "rincón",
+      "canción",
+      "rincón"
+    ],
+    "2": [
+      "lágrima",
+      "estima",
+      "cielo",
+      "cielo"
+    ],
+    "3": [
+      "anhelo",
+      "velo",
+      "anhelo",
+      "velo"
+    ],
+    "4": [
+      "senda",
+      "senda",
+      "sincera",
+      "sincera"
+    ],
+    "5": [
+      "lejana",
+      "cercana",
+      "lejana",
+      "cercana"
+    ],
+    "6": [
+      "suena",
+      "suena",
+      "pena",
+      "pena"
+    ],
+    "7": [
+      "canción",
+      "dirección",
+      "canción",
+      "dirección"
+    ],
+    "8": [
+      "paz",
+      "paz",
+      "abraza",
+      "abraza"
+    ],
+    "9": [
+      "sol",
+      "farol",
+      "sol",
+      "farol"
+    ],
+    "10": [
+      "hogar",
+      "hogar",
+      "pesar",
+      "pesar"
+    ]
+  },
+  "qa": {
+    "fluidez": 5,
+    "consistencia_rima": 5,
+    "variacion_cierres": 5
+  }
+}

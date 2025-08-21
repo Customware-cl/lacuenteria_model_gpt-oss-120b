@@ -1,0 +1,67 @@
+{
+  "paginas_texto_claro": {
+    "1": "Bajo un árbol lleno de flores, Emilia canta. Abraza a su osito y el día la hace feliz. Dibuja estrellas con sus manos y el bosque contesta con risas brillantes.",
+    "2": "Un unicornio gris llega en silencio, con ojos de lágrima. Emilia extiende sus manos y le ofrece un abrazo y una sonrisa. El unicornio siente ese cariño.",
+    "3": "Emilia traza un corazón en el aire, coloreando el cielo. El unicornio lo observa con curiosidad. Aunque el eco se aleja, su corazón guarda esperanza y una pequeña fe vibra.",
+    "4": "Emilia camina despacio y se acerca al unicornio, dándole luz. Un abrazo cálido los cubre como un brillo. Aparece un halo dorado y el corazón del unicornio late al ritmo de una canción.",
+    "5": "El cuerno del unicornio brilla y apunta a una estrella distante. Emilia señala la luz, deseando que sea su amiga. Le da un abrazo y una sonrisa; él responde con su propio brillo.",
+    "6": "Al cruzar un puente que tiembla, cada paso es un suspiro. Sus pies y patas avanzan juntos con valentía. El río bajo ellos reluce con muchos colores, y el arco iris les muestra su brillo.",
+    "7": "Emilia inhala hondo y su aliento sube al cielo. El viento lleva su suspiro. La niebla desaparece, dejando claridad, y la Flor Susurro brilla bajo la luz.",
+    "8": "La Flor Susurro se posa suavemente en el cuerno. Con ternura la colocan, como un regalo. Un abrazo y una sonrisa se elevan y la magia responde.",
+    "9": "El unicornio levanta luz y escribe “gracias” en el aire con destellos dorados. Emilia aplaude feliz, su cara llena de sonrisa. El eco de la alegría vibra en todos.",
+    "10": "Al volver a casa, bajo un arco de colores, su familia la abraza formando un lazo. Un abrazo y una sonrisa llenan el hogar, y el corazón late tranquilo."
+  },
+  "glosario": [
+    {
+      "original": "aureola",
+      "simple": "halo"
+    },
+    {
+      "original": "destella",
+      "simple": "brilla"
+    },
+    {
+      "original": "cristal",
+      "simple": "vidrio"
+    },
+    {
+      "original": "tembloroso",
+      "simple": "que tiembla"
+    },
+    {
+      "original": "pezuñas",
+      "simple": "patas"
+    },
+    {
+      "original": "eco",
+      "simple": "sonido"
+    },
+    {
+      "original": "chispa",
+      "simple": "destello"
+    },
+    {
+      "original": "canto",
+      "simple": "canción"
+    },
+    {
+      "original": "arcoíris",
+      "simple": "arco iris"
+    },
+    {
+      "original": "luminosas",
+      "simple": "brillantes"
+    }
+  ],
+  "cambios_clave": [
+    "Se simplificó la frase repetida \"Un Abrazo, una sonrisa, un gesto de amor\" a \"un abrazo y una sonrisa\".",
+    "Se reemplazaron palabras complejas como \"aureola\" por \"halo\" y \"destella\" por \"brilla\".",
+    "Se redujeron las ambigüedades y se aclararon las acciones de los personajes.",
+    "Se mantuvo una idea visual clara por verso para evitar confusión.",
+    "Se conservó la métrica aproximada y el tono poético mientras se aumentó la claridad."
+  ],
+  "qa": {
+    "comprensibilidad": 5,
+    "imagen_inequivoca": 5
+  }
+}

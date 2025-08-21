@@ -66,6 +66,9 @@ class AgentRunner:
             )
             execution_time = (datetime.now() - start_time).total_seconds()
             
+            # Extraer información de tokens si está disponible
+            tokens_info = agent_output.pop("_metadata_tokens", {})
+            
             # 5. Validar estructura de salida
             valid_structure, structure_errors = self.quality_checker.validate_output_structure(
                 agent_output, agent_name
@@ -125,14 +128,21 @@ class AgentRunner:
             self._save_output(output_file, agent_output)
             
             # 8. Guardar log
-            self._save_log(agent_name, {
+            log_data = {
                 "timestamp": datetime.now().isoformat(),
                 "retry_count": retry_count,
                 "qa_scores": qa_scores if agent_name != "validador" else None,
                 "execution_time": execution_time,
                 "temperature": agent_temperature or self.llm_client.temperature,
+                "max_tokens": max_tokens or self.llm_client.max_tokens,
                 "status": "success"
-            })
+            }
+            
+            # Agregar información de tokens si está disponible
+            if tokens_info:
+                log_data["tokens_consumed"] = tokens_info
+            
+            self._save_log(agent_name, log_data)
             
             return {
                 "status": "success",

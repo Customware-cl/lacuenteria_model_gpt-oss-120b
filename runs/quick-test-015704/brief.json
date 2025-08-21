@@ -1,0 +1,12 @@
+{
+  "personajes": [
+    {
+      "nombre": "Luna",
+      "descripcion": "Luciérnaga tímida",
+      "rasgos": "Curiosa"
+    }
+  ],
+  "historia": "Luna debe aprender a brillar",
+  "mensaje_a_transmitir": "Vencer miedos",
+  "edad_objetivo": "4-6 años"
+}

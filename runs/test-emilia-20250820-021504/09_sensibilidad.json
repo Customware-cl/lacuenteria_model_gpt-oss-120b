@@ -1,0 +1,28 @@
+{
+  "riesgos_detectados": [
+    {
+      "pagina": 2,
+      "detalle": "El unicornio muestra lágrimas, lo que puede generar una sensación de tristeza en niños pequeños.",
+      "riesgo": "emocional_suave"
+    },
+    {
+      "pagina": 6,
+      "detalle": "El puente se describe como \"tiembla ligeramente\", lo que podría provocar un leve miedo o inquietud.",
+      "riesgo": "miedo_leve"
+    }
+  ],
+  "correcciones_sugeridas": [
+    {
+      "pagina": 2,
+      "texto_o_prompt": "Cambiar \"sus ojos reflejan lágrimas\" por \"sus ojos brillan con una luz suave\" para mantener la emotividad sin introducir lágrimas."
+    },
+    {
+      "pagina": 6,
+      "texto_o_prompt": "Modificar \"puente de madera que tiembla ligeramente\" a \"puente de madera que se balancea suavemente\" para reducir la sensación de inestabilidad."
+    }
+  ],
+  "apto_para_ninos": true,
+  "qa": {
+    "seguridad_respecto": 5
+  }
+}

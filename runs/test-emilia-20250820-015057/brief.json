@@ -1,0 +1,12 @@
+{
+  "personajes": [
+    {
+      "nombre": "Emilia",
+      "descripcion": "Niña de 3 años con síndrome de Angelman",
+      "rasgos": "No verbal, comunicación gestual y afectiva muy expresiva"
+    }
+  ],
+  "historia": "Emilia descubre el poder de comunicarse sin palabras a través de abrazos, sonrisas y gestos en una aventura mágica donde debe ayudar a un unicornio que ha perdido su voz",
+  "mensaje_a_transmitir": "La comunicación va más allá de las palabras. Los gestos, sonrisas y abrazos son formas poderosas de expresar amor y conectar con otros",
+  "edad_objetivo": "3-5 años"
+}

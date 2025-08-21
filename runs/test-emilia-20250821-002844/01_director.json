@@ -1,0 +1,90 @@
+{
+  "leitmotiv": "¡Abrazo, sonrisa, magia!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y su mundo lleno de gestos expresivos.",
+      "conflicto": "Un pequeño brillo en el jardín llama su atención, pero no sabe qué es.",
+      "emocion": "Curiosidad",
+      "imagen_nuclear": "Emilia con los brazos abiertos, ojos brillantes, mirando una luz titilante entre las flores."
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Encontrar al unicornio sin voz.",
+      "conflicto": "El unicornio aparece triste, con la boca cerrada y una burbuja silenciosa sobre él.",
+      "emocion": "Empatía",
+      "imagen_nuclear": "Unicornio de crin arcoíris, mirando a Emilia, con una nube gris flotando sobre su hocico."
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Mostrar que Emilia se comunica sin palabras.",
+      "conflicto": "Emilia intenta hablar, pero solo produce muecas y gestos.",
+      "emocion": "Esperanza",
+      "imagen_nuclear": "Emilia dibuja un gran corazón en el aire con sus dedos mientras sonríe."
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Reforzar la necesidad de ayuda del unicornio.",
+      "conflicto": "Pequeñas chispas emergen de la boca del unicornio, pero ninguna palabra sale.",
+      "emocion": "Preocupación",
+      "imagen_nuclear": "Unicornio con lágrimas de polvo estelar, intentando hacer sonar una campanilla invisible."
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Introducir el abrazo como forma de comunicación.",
+      "conflicto": "El unicornio duda antes de aceptar el abrazo de Emilia.",
+      "emocion": "Ternura",
+      "imagen_nuclear": "Emilia envuelve al unicornio en un cálido abrazo que emite una luz rosada."
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Demostrar el poder del contacto físico.",
+      "conflicto": "Una sombra de silencio intenta quedarse, pero el abrazo la empuja.",
+      "emocion": "Asombro",
+      "imagen_nuclear": "Notas musicales de colores giran alrededor de Emilia y el unicornio mientras la luz del abrazo se expande."
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Construir una conexión con gestos y movimiento.",
+      "conflicto": "El puente arcoíris que forman con sus manos tiembla y necesita refuerzo.",
+      "emocion": "Alegría",
+      "imagen_nuclear": "Emilia y el unicornio levantan los brazos, creando un puente de arcoíris que brilla bajo sus gestos."
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Cercanar la voz del unicornio.",
+      "conflicto": "Un sonido de campanilla muy suave aparece, pero es apenas audible.",
+      "emocion": "Excitación",
+      "imagen_nuclear": "La boca del unicornio se abre ligeramente y una pequeña nota de campana flota en el aire."
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Clímax: liberar la voz completa del unicornio.",
+      "conflicto": "Una última barrera de silencio bloquea la canción.",
+      "emocion": "Triunfo",
+      "imagen_nuclear": "Emilia aplaude y sonríe; la nota crece hasta convertirse en una lluvia de estrellas que liberan la voz del unicornio."
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Resolver la historia mostrando la comunicación sin palabras.",
+      "resolucion": "El unicornio agradece a Emilia con un abrazo brillante y ambos ríen, sabiendo que el amor y los gestos hablan por sí mismos.",
+      "emocion": "Felicidad",
+      "imagen_nuclear": "Emilia y el unicornio se abrazan bajo un cielo de corazones centelleantes."
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "Emilia dibuja un gran sol en el suelo; al tocarlo, el unicornio recupera su voz.",
+      "resolucion_alternativa": "Ambos celebran dibujando símbolos de amistad en la arena, demostrando que el arte también comunica."
+    },
+    {
+      "climax_alternativo": "Emilia canta suavemente una canción sin palabras; la melodía vibra y libera la voz del unicornio.",
+      "resolucion_alternativa": "Cantando juntos, crean una canción sin letras que llena el bosque de alegría."
+    }
+  ],
+  "qa": {
+    "arco_completo": 5,
+    "claridad_visual": 5,
+    "potencia_leitmotiv": 5
+  }
+}

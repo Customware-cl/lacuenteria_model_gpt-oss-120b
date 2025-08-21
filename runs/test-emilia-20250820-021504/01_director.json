@@ -1,0 +1,90 @@
+{
+  "leitmotiv": "Un abrazo, una sonrisa, un gesto de amor",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y su forma expresiva de comunicarse sin palabras",
+      "conflicto": "Emilia siente que a veces los demás no entienden sus gestos",
+      "emocion": "Curiosidad y alegría",
+      "imagen_nuclear": "Emilia, de 3 años, sonríe ampliamente y abraza su osito de peluche bajo un árbol florecido"
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Introducir al unicornio que ha perdido la voz",
+      "conflicto": "El unicornio está triste y silencioso, sin poder hablar",
+      "emocion": "Sorpresa y compasión",
+      "imagen_nuclear": "Un unicornio gris con la boca cerrada y lágrimas, mientras Emilia extiende sus manos con un gesto de ayuda"
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Mostrar que Emilia intenta comunicarse con gestos",
+      "conflicto": "El unicornio no responde a las palabras, solo a los gestos",
+      "emocion": "Frustración leve pero esperanzada",
+      "imagen_nuclear": "Emilia dibuja un corazón en el aire con sus manos mientras el unicornio observa curiosamente"
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Descubrir el poder del abrazo",
+      "conflicto": "Emilia debe acercarse sin temor al unicornio triste",
+      "emocion": "Alegría creciente",
+      "imagen_nuclear": "Emilia abraza al unicornio; una suave luz dorada envuelve a ambos"
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Fortalecer el vínculo y buscar la voz del unicornio",
+      "conflicto": "Necesitan encontrar la fuente que devuelva la voz",
+      "emocion": "Esperanza",
+      "imagen_nuclear": "El cuerno del unicornio brilla ligeramente mientras Emilia señala una estrella distante en el cielo"
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Emprender la búsqueda de la Flor de Susurro",
+      "conflicto": "Cruzan un puente de madera tembloroso sobre un río de colores brillantes",
+      "emocion": "Tensión ligera",
+      "imagen_nuclear": "Emilia y el unicornio caminan de la mano sobre el puente, mirando el río arcoíris"
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Superar la niebla que cubre la flor",
+      "conflicto": "La niebla impide ver la Flor de Susurro",
+      "emocion": "Incertidumbre",
+      "imagen_nuclear": "Emilia hace un gesto de soplo y la niebla se disipa, revelando la flor luminosa"
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Activar la voz del unicornio con la flor",
+      "conflicto": "La flor debe mantenerse sobre el cuerno mientras Emilia mantiene el gesto",
+      "emocion": "Asombro",
+      "imagen_nuclear": "La Flor de Susurro se posa en el cuerno del unicornio y emite notas musicales flotantes"
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Clímax: el unicornio recupera su voz y agradece",
+      "conflicto": "Mantener la conexión para que la voz persista",
+      "emocion": "Euforia",
+      "imagen_nuclear": "El unicornio lanza destellos que forman la palabra de luz \"GRACIAS\", mientras Emilia aplaude con una sonrisa radiante"
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Cierre: demostrar que la comunicación sigue sin palabras",
+      "resolucion": "Emilia vuelve a casa y celebra con su familia mediante abrazos y sonrisas, bajo un arco iris que brilla",
+      "emocion": "Calidez y paz",
+      "imagen_nuclear": "Emilia rodeada de su familia, todos abrazados bajo un arco iris que ilumina el cielo"
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "Emilia utiliza una canción de palmas para despertar la voz del unicornio",
+      "resolucion_alternativa": "El unicornio canta una melodía que hace florecer un jardín de colores; Emilia comparte el jardín con su comunidad"
+    },
+    {
+      "climax_alternativo": "Emilia dibuja un arco de luz con sus manos, devolviendo la voz al unicornio",
+      "resolucion_alternativa": "El unicornio entrega a Emilia una estrella que brilla cada vez que ella sonríe, reforzando la comunicación sin palabras"
+    }
+  ],
+  "qa": {
+    "arco_completo": 5,
+    "claridad_visual": 5,
+    "potencia_leitmotiv": 5
+  }
+}

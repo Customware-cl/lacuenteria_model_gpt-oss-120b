@@ -1,0 +1,136 @@
+{
+  "story_id": "test-emilia-20250821-002844",
+  "source": "local",
+  "created_at": "2025-08-21T00:28:44.047879",
+  "updated_at": "2025-08-21T00:32:44.499017",
+  "estado": "completo",
+  "paso_actual": "validador",
+  "qa_historial": {
+    "director": {
+      "arco_completo": 5,
+      "claridad_visual": 5,
+      "potencia_leitmotiv": 5,
+      "promedio": 5.0
+    },
+    "psicoeducador": {
+      "ajuste_edad": 5,
+      "alineacion_mensaje": 5,
+      "tono_amable": 5,
+      "promedio": 5.0
+    },
+    "cuentacuentos": {
+      "emocion": 5,
+      "claridad_visual": 5,
+      "uso_leitmotiv": 5,
+      "promedio": 5.0
+    },
+    "editor_claridad": {
+      "comprensibilidad": 5,
+      "imagen_inequivoca": 5,
+      "promedio": 5.0
+    },
+    "ritmo_rima": {
+      "fluidez": 5,
+      "consistencia_rima": 5,
+      "variacion_cierres": 5,
+      "promedio": 5.0
+    },
+    "continuidad": {
+      "coherencia_rasgos": 5,
+      "utilidad_arte": 5,
+      "promedio": 5.0
+    },
+    "diseno_escena": {
+      "alineacion_verso_escena": 5,
+      "variedad_planos": 5,
+      "promedio": 5.0
+    },
+    "direccion_arte": {
+      "coherencia_visual": 5,
+      "progresion_emocional": 5,
+      "promedio": 5.0
+    },
+    "sensibilidad": {
+      "seguridad_respecto": 5,
+      "promedio": 5.0
+    },
+    "portadista": {
+      "recordabilidad_titulo": 5,
+      "sintesis_emotiva": 5,
+      "promedio": 5.0
+    },
+    "loader": {
+      "pertinencia": 5,
+      "brevedad_tono": 5,
+      "sensacion_adaptativa": 5,
+      "promedio": 5.0
+    },
+    "validador": {}
+  },
+  "devoluciones": [],
+  "reintentos": {},
+  "timestamps": {
+    "director": {
+      "start": "2025-08-21T00:28:44.048783",
+      "end": "2025-08-21T00:28:57.855118",
+      "duration": 13.806332
+    },
+    "psicoeducador": {
+      "start": "2025-08-21T00:28:57.855711",
+      "end": "2025-08-21T00:29:13.907164",
+      "duration": 16.05145
+    },
+    "cuentacuentos": {
+      "start": "2025-08-21T00:29:13.907851",
+      "end": "2025-08-21T00:29:22.875267",
+      "duration": 8.967413
+    },
+    "editor_claridad": {
+      "start": "2025-08-21T00:29:22.875885",
+      "end": "2025-08-21T00:29:39.525457",
+      "duration": 16.649569
+    },
+    "ritmo_rima": {
+      "start": "2025-08-21T00:29:39.526177",
+      "end": "2025-08-21T00:30:04.633563",
+      "duration": 25.107383
+    },
+    "continuidad": {
+      "start": "2025-08-21T00:30:04.634292",
+      "end": "2025-08-21T00:30:13.870423",
+      "duration": 9.236119
+    },
+    "diseno_escena": {
+      "start": "2025-08-21T00:30:13.871071",
+      "end": "2025-08-21T00:30:30.407988",
+      "duration": 16.536914
+    },
+    "direccion_arte": {
+      "start": "2025-08-21T00:30:30.408751",
+      "end": "2025-08-21T00:30:44.750652",
+      "duration": 14.341898
+    },
+    "sensibilidad": {
+      "start": "2025-08-21T00:30:44.751379",
+      "end": "2025-08-21T00:30:48.607672",
+      "duration": 3.856288
+    },
+    "portadista": {
+      "start": "2025-08-21T00:30:48.608506",
+      "end": "2025-08-21T00:30:54.692872",
+      "duration": 6.084363
+    },
+    "loader": {
+      "start": "2025-08-21T00:30:54.693592",
+      "end": "2025-08-21T00:31:12.780149",
+      "duration": 18.086554
+    },
+    "validador": {
+      "start": "2025-08-21T00:31:12.780988",
+      "end": "2025-08-21T00:32:44.498722",
+      "duration": 91.717732
+    }
+  },
+  "webhook_url": null,
+  "webhook_attempts": 0
+}
