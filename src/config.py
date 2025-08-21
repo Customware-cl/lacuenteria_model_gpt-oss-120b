@@ -80,6 +80,7 @@ AGENT_TEMPERATURES = {
     # Agentes técnicos - temperatura baja para precisión
     "validador": 0.3,            # Mínima variación, máxima precisión
     "continuidad": 0.4,          # Consistencia estricta en Character Bible
+    "verificador_qa": 0.3,       # Evaluación consistente y objetiva
     
     # Agentes de refinamiento - temperatura media
     "editor_claridad": 0.6,      # Balance entre claridad y preservar belleza

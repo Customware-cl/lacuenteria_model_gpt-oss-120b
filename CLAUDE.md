@@ -125,10 +125,33 @@ Cuentería es un sistema de orquestación multiagente para la generación automa
 - `runs/{story_id}/manifest.json` - Metadata y estado del procesamiento
 - `runs/{story_id}/12_validador.json` - Cuento final completo
 
+## Sistema de Evaluación de Calidad (QA)
+
+### Verificador QA Independiente
+- **Agente**: `verificador_qa` - Evaluador crítico e independiente
+- **Función**: Reemplaza la autoevaluación de agentes (que siempre daba 5/5)
+- **Temperatura**: 0.3 para evaluaciones consistentes
+- **Umbral**: 4.0/5 para pasar (configurable)
+- **Reintentos**: Máximo 2 si QA < 4.0
+
+### Calibración de Evaluación
+- **5/5**: Excepcional, sin defectos (<5% de casos)
+- **4/5**: Bueno, errores mínimos (20% de casos)
+- **3/5**: Aceptable, errores notables (60% de casos) - NORMAL
+- **2/5**: Deficiente, problemas serios (10% de casos)
+- **1/5**: Inaceptable, debe rehacerse (5% de casos)
+
+### Métricas Consolidadas
+- **Endpoint**: `/api/stories/{id}/evaluate` incluye métricas del pipeline
+- **Módulo**: `src/metrics_consolidator.py`
+- **Información**: Tiempos, temperaturas, QA scores, reintentos por agente
+- **Robustez**: Funciona incluso sin logs disponibles
+
 ## Limitaciones Conocidas
 
 - **Truncamiento de respuestas**: El modelo puede truncar respuestas largas (>3000 caracteres en JSON)
 - **Solución implementada**: Timeout aumentado a 900s, max_tokens específicos por agente
+- **Verificador QA estricto**: Promedio actual 2.3-3.7 (calibración en proceso)
 - **Documentación**: Ver `docs/LIMITACIONES_MODELO.md` para detalles
 
 ## Comandos de Prueba

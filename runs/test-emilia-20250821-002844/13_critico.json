@@ -1,0 +1,104 @@
+{
+  "evaluacion_critica": {
+    "nota_general": {
+      "puntuacion": 3.0,
+      "nivel": "ACEPTABLE",
+      "resumen": "No se recibió el cuento para una evaluación completa; la valoración es preliminar."
+    },
+    "notas_por_topico": {
+      "prompts_imagenes": {
+        "puntuacion_promedio": 3.0,
+        "nivel": "ACEPTABLE",
+        "notas_por_ambito": {
+          "claridad_descriptiva": 3.0,
+          "consistencia_personajes": 3.0,
+          "nivel_detalle": 3.0,
+          "adecuacion_infantil": 3.0,
+          "variedad_visual": 3.0,
+          "tecnica_narrativa": 3.0
+        },
+        "observaciones": [
+          "No se proporcionaron prompts de imágenes."
+        ],
+        "problemas_detectados": [
+          "Falta de contenido para evaluar."
+        ],
+        "paginas_afectadas": []
+      },
+      "mensajes_carga": {
+        "puntuacion_promedio": 3.0,
+        "nivel": "ACEPTABLE",
+        "notas_por_ambito": {
+          "originalidad": 3.0,
+          "brevedad": 3.0,
+          "conexion_narrativa": 3.0,
+          "transmision_emocion": 3.0,
+          "lenguaje_infantil": 3.0
+        },
+        "observaciones": [
+          "No se incluyeron mensajes de carga."
+        ],
+        "loaders_problematicos": [],
+        "ejemplos_inadecuados": []
+      },
+      "texto_narrativo": {
+        "puntuacion_promedio": 3.0,
+        "nivel": "ACEPTABLE",
+        "estructura_poetica": {
+          "puntuacion_promedio": 3.0,
+          "notas_por_ambito": {
+            "numero_versos": 3.0,
+            "longitud_versos": 3.0,
+            "calidad_rima": 3.0,
+            "fluidez_ritmo": 3.0
+          },
+          "versos_problematicos": []
+        },
+        "contenido_narrativo": {
+          "puntuacion_promedio": 3.0,
+          "notas_por_ambito": {
+            "coherencia_historia": 3.0,
+            "progresion_emocional": 3.0,
+            "lenguaje_apropiado": 3.0,
+            "transmision_valores": 3.0,
+            "originalidad_creatividad": 3.0
+          },
+          "observaciones": [
+            "No se proporcionó texto narrativo para evaluar."
+          ]
+        },
+        "palabras_inadecuadas": [],
+        "paginas_revisar": []
+      }
+    },
+    "recomendaciones_mejora": {
+      "criticas": [
+        {
+          "prioridad": "ALTA",
+          "topico": "entrada",
+          "descripcion": "Falta el contenido del cuento necesario para una evaluación detallada",
+          "sugerencia": "Proporcionar el JSON del cuento completo con prompts, loaders y texto narrativo."
+        }
+      ],
+      "mejoras_prioritarias": [
+        "Enviar el cuento completo en el formato esperado",
+        "Incluir prompts de imágenes y mensajes de carga",
+        "Añadir el texto narrativo con estructura poética"
+      ]
+    },
+    "decision_publicacion": {
+      "apto_para_publicar": false,
+      "requiere_revision": true,
+      "nivel_revision_requerido": "CRÍTICA",
+      "justificacion": "No se dispone del contenido del cuento; es imprescindible recibirlo para determinar la idoneidad de publicación."
+    },
+    "metadata": {
+      "fecha_evaluacion": "2025-08-21T00:00:00",
+      "version_evaluador": "1.0",
+      "criterios_aplicados": 20,
+      "paginas_evaluadas": 0,
+      "prompts_evaluados": 0,
+      "loaders_evaluados": 0
+    }
+  }
+}

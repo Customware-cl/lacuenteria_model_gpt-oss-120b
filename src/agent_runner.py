@@ -85,10 +85,56 @@ class AgentRunner:
                 }
             
             # 6. Verificar quality gates (excepto para validador y critico que no tienen QA)
-            if agent_name not in ["validador", "critico"]:
-                qa_passed, qa_scores, qa_issues = self.quality_checker.check_qa_scores(
-                    agent_output, agent_name
-                )
+            if agent_name not in ["validador", "critico", "verificador_qa"]:
+                # Usar verificador_qa independiente en lugar de autoevaluación
+                logger.info(f"Ejecutando verificación QA independiente para {agent_name}")
+                
+                # Preparar contexto para el verificador
+                verification_context = {
+                    "agente_a_evaluar": agent_name,
+                    "output_del_agente": agent_output,
+                    "dependencias_usadas": dependencies if dependencies else {}
+                }
+                
+                # Ejecutar verificador_qa
+                verification_prompt = self._build_verification_prompt(agent_name, agent_output, dependencies)
+                
+                try:
+                    # Llamar al verificador con temperatura baja para consistencia
+                    # Guardar configuración actual de timeout
+                    original_timeout = self.llm_client.timeout
+                    self.llm_client.timeout = 900  # 900 segundos para evitar truncamiento
+                    
+                    verificador_result, _, _ = self.llm_client.generate(
+                        system_prompt=self._load_system_prompt("verificador_qa"),
+                        user_prompt=verification_prompt,
+                        temperature=0.3,  # Baja para evaluación consistente
+                        max_tokens=3000  # Aumentado para respuestas completas
+                    )
+                    
+                    # Restaurar timeout original
+                    self.llm_client.timeout = original_timeout
+                    
+                    # Parsear resultado del verificador
+                    import json
+                    verification = json.loads(verificador_result)
+                    
+                    # Extraer scores y verificar umbral
+                    qa_scores = verification.get("qa_scores", {})
+                    qa_scores["promedio"] = verification.get("promedio", 0)
+                    qa_passed = verification.get("pasa_umbral", False)
+                    qa_issues = verification.get("problemas_detectados", [])
+                    
+                    # Log de la evaluación independiente
+                    logger.info(f"Verificación QA para {agent_name}: promedio={qa_scores.get('promedio', 0)}, pasa={qa_passed}")
+                    
+                except Exception as e:
+                    logger.error(f"Error en verificación QA independiente: {e}")
+                    # Fallback a la autoevaluación si falla el verificador
+                    logger.warning("Usando autoevaluación como fallback")
+                    qa_passed, qa_scores, qa_issues = self.quality_checker.check_qa_scores(
+                        agent_output, agent_name
+                    )
                 
                 if not qa_passed:
                     logger.warning(f"QA no pasó para {agent_name}: {qa_issues}")
@@ -222,6 +268,41 @@ class AgentRunner:
         
         return "\n".join(prompt_parts)
     
+    def _build_verification_prompt(self, agent_name: str, agent_output: Dict[str, Any], dependencies: Dict[str, Any]) -> str:
+        """Construye el prompt para el verificador QA"""
+        prompt_parts = []
+        
+        prompt_parts.append("TAREA: Evaluar objetivamente el trabajo del siguiente agente")
+        prompt_parts.append("=" * 50)
+        prompt_parts.append(f"\nAGENTE A EVALUAR: {agent_name}")
+        
+        # Incluir dependencias que usó el agente para contexto
+        if dependencies:
+            prompt_parts.append("\nDEPENDENCIAS QUE USÓ EL AGENTE:")
+            prompt_parts.append("-" * 30)
+            for dep_name in dependencies.keys():
+                prompt_parts.append(f"- {dep_name}")
+        
+        prompt_parts.append("\nOUTPUT DEL AGENTE A EVALUAR:")
+        prompt_parts.append("=" * 50)
+        prompt_parts.append(json.dumps(agent_output, ensure_ascii=False, indent=2))
+        
+        prompt_parts.append("\n\nINSTRUCCIONES DE EVALUACIÓN:")
+        prompt_parts.append("=" * 50)
+        prompt_parts.append("1. Analiza el output buscando problemas específicos")
+        prompt_parts.append("2. Aplica las penalizaciones automáticas según corresponda")
+        prompt_parts.append("3. Calcula el score para cada métrica del agente")
+        prompt_parts.append("4. Determina si pasa el umbral de 4.0")
+        prompt_parts.append("5. Genera feedback específico y accionable")
+        
+        prompt_parts.append("\nRECUERDA:")
+        prompt_parts.append("- Sé CRÍTICO y OBJETIVO")
+        prompt_parts.append("- La mayoría de outputs deben estar en 3-3.5")
+        prompt_parts.append("- Un 5/5 es excepcional y requiere justificación")
+        prompt_parts.append("- Devuelve ÚNICAMENTE el JSON especificado")
+        
+        return "\n".join(prompt_parts)
+    
     def _get_agent_instructions(self, agent_name: str) -> str:
         """Obtiene instrucciones específicas para cada agente"""
         instructions = {
@@ -270,7 +351,8 @@ class AgentRunner:
             "sensibilidad": "09",
             "portadista": "10",
             "loader": "11",
-            "validador": "12"
+            "validador": "12",
+            "critico": "13"
         }
         
         index = agent_index.get(agent_name, "99")

@@ -13,8 +13,9 @@ Thumbs.db
 *.swp
 *~
 
-# Logs
+# Logs (excepto los de runs/)
 *.log
+!runs/**/*.log
 
 # IDEs
 .vscode/

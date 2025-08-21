@@ -1,0 +1,356 @@
+{
+  "evaluacion_critica": {
+    "decision_publicacion": {
+      "apto_para_publicar": false,
+      "justificacion": "No se dispone del contenido del cuento; es imprescindible recibirlo para determinar la idoneidad de publicación.",
+      "nivel_revision_requerido": "CRÍTICA",
+      "requiere_revision": true
+    },
+    "metadata": {
+      "criterios_aplicados": 20,
+      "fecha_evaluacion": "2025-08-21T00:00:00",
+      "loaders_evaluados": 0,
+      "paginas_evaluadas": 0,
+      "prompts_evaluados": 0,
+      "version_evaluador": "1.0"
+    },
+    "nota_general": {
+      "nivel": "ACEPTABLE",
+      "puntuacion": 3.0,
+      "resumen": "No se recibió el cuento para una evaluación completa; la valoración es preliminar."
+    },
+    "notas_por_topico": {
+      "mensajes_carga": {
+        "ejemplos_inadecuados": [],
+        "loaders_problematicos": [],
+        "nivel": "ACEPTABLE",
+        "notas_por_ambito": {
+          "brevedad": 3.0,
+          "conexion_narrativa": 3.0,
+          "lenguaje_infantil": 3.0,
+          "originalidad": 3.0,
+          "transmision_emocion": 3.0
+        },
+        "observaciones": [
+          "No se incluyeron mensajes de carga."
+        ],
+        "puntuacion_promedio": 3.0
+      },
+      "prompts_imagenes": {
+        "nivel": "ACEPTABLE",
+        "notas_por_ambito": {
+          "adecuacion_infantil": 3.0,
+          "claridad_descriptiva": 3.0,
+          "consistencia_personajes": 3.0,
+          "nivel_detalle": 3.0,
+          "tecnica_narrativa": 3.0,
+          "variedad_visual": 3.0
+        },
+        "observaciones": [
+          "No se proporcionaron prompts de imágenes."
+        ],
+        "paginas_afectadas": [],
+        "problemas_detectados": [
+          "Falta de contenido para evaluar."
+        ],
+        "puntuacion_promedio": 3.0
+      },
+      "texto_narrativo": {
+        "contenido_narrativo": {
+          "notas_por_ambito": {
+            "coherencia_historia": 3.0,
+            "lenguaje_apropiado": 3.0,
+            "originalidad_creatividad": 3.0,
+            "progresion_emocional": 3.0,
+            "transmision_valores": 3.0
+          },
+          "observaciones": [
+            "No se proporcionó texto narrativo para evaluar."
+          ],
+          "puntuacion_promedio": 3.0
+        },
+        "estructura_poetica": {
+          "notas_por_ambito": {
+            "calidad_rima": 3.0,
+            "fluidez_ritmo": 3.0,
+            "longitud_versos": 3.0,
+            "numero_versos": 3.0
+          },
+          "puntuacion_promedio": 3.0,
+          "versos_problematicos": []
+        },
+        "nivel": "ACEPTABLE",
+        "paginas_revisar": [],
+        "palabras_inadecuadas": [],
+        "puntuacion_promedio": 3.0
+      }
+    },
+    "recomendaciones_mejora": {
+      "criticas": [
+        {
+          "descripcion": "Falta el contenido del cuento necesario para una evaluación detallada",
+          "prioridad": "ALTA",
+          "sugerencia": "Proporcionar el JSON del cuento completo con prompts, loaders y texto narrativo.",
+          "topico": "entrada"
+        }
+      ],
+      "mejoras_prioritarias": [
+        "Enviar el cuento completo en el formato esperado",
+        "Incluir prompts de imágenes y mensajes de carga",
+        "Añadir el texto narrativo con estructura poética"
+      ]
+    }
+  },
+  "metricas_disponibles": true,
+  "metricas_pipeline": {
+    "detalle_agentes": [
+      {
+        "agente": "director",
+        "disponible": true,
+        "qa_detalle": {
+          "arco_completo": 5,
+          "claridad_visual": 5,
+          "potencia_leitmotiv": 5,
+          "promedio": 5.0
+        },
+        "qa_promedio": 5.0,
+        "reintentos": 0,
+        "status": "success",
+        "temperatura": 0.85,
+        "temperatura_configurada": 0.85,
+        "tiempo_ejecucion": 13.805547,
+        "timestamp": "2025-08-21T00:28:57.854936"
+      },
+      {
+        "agente": "psicoeducador",
+        "disponible": true,
+        "qa_detalle": {
+          "ajuste_edad": 5,
+          "alineacion_mensaje": 5,
+          "promedio": 5.0,
+          "tono_amable": 5
+        },
+        "qa_promedio": 5.0,
+        "reintentos": 0,
+        "status": "success",
+        "temperatura": 0.55,
+        "temperatura_configurada": 0.55,
+        "tiempo_ejecucion": 16.050581,
+        "timestamp": "2025-08-21T00:29:13.907001"
+      },
+      {
+        "agente": "cuentacuentos",
+        "disponible": true,
+        "qa_detalle": {
+          "claridad_visual": 5,
+          "emocion": 5,
+          "promedio": 5.0,
+          "uso_leitmotiv": 5
+        },
+        "qa_promedio": 5.0,
+        "reintentos": 0,
+        "status": "success",
+        "temperatura": 0.9,
+        "temperatura_configurada": 0.9,
+        "tiempo_ejecucion": 8.966507,
+        "timestamp": "2025-08-21T00:29:22.875077"
+      },
+      {
+        "agente": "editor_claridad",
+        "disponible": true,
+        "qa_detalle": {
+          "comprensibilidad": 5,
+          "imagen_inequivoca": 5,
+          "promedio": 5.0
+        },
+        "qa_promedio": 5.0,
+        "reintentos": 0,
+        "status": "success",
+        "temperatura": 0.6,
+        "temperatura_configurada": 0.6,
+        "tiempo_ejecucion": 16.648794,
+        "timestamp": "2025-08-21T00:29:39.525271"
+      },
+      {
+        "agente": "ritmo_rima",
+        "disponible": true,
+        "qa_detalle": {
+          "consistencia_rima": 5,
+          "fluidez": 5,
+          "promedio": 5.0,
+          "variacion_cierres": 5
+        },
+        "qa_promedio": 5.0,
+        "reintentos": 0,
+        "status": "success",
+        "temperatura": 0.65,
+        "temperatura_configurada": 0.65,
+        "tiempo_ejecucion": 25.106599,
+        "timestamp": "2025-08-21T00:30:04.633390"
+      },
+      {
+        "agente": "continuidad",
+        "disponible": true,
+        "qa_detalle": {
+          "coherencia_rasgos": 5,
+          "promedio": 5.0,
+          "utilidad_arte": 5
+        },
+        "qa_promedio": 5.0,
+        "reintentos": 0,
+        "status": "success",
+        "temperatura": 0.4,
+        "temperatura_configurada": 0.4,
+        "tiempo_ejecucion": 9.234725,
+        "timestamp": "2025-08-21T00:30:13.869749"
+      },
+      {
+        "agente": "diseno_escena",
+        "disponible": true,
+        "qa_detalle": {
+          "alineacion_verso_escena": 5,
+          "promedio": 5.0,
+          "variedad_planos": 5
+        },
+        "qa_promedio": 5.0,
+        "reintentos": 0,
+        "status": "success",
+        "temperatura": 0.8,
+        "temperatura_configurada": 0.8,
+        "tiempo_ejecucion": 16.536021,
+        "timestamp": "2025-08-21T00:30:30.407827"
+      },
+      {
+        "agente": "direccion_arte",
+        "disponible": true,
+        "qa_detalle": {
+          "coherencia_visual": 5,
+          "progresion_emocional": 5,
+          "promedio": 5.0
+        },
+        "qa_promedio": 5.0,
+        "reintentos": 0,
+        "status": "success",
+        "temperatura": 0.75,
+        "temperatura_configurada": 0.75,
+        "tiempo_ejecucion": 14.340983,
+        "timestamp": "2025-08-21T00:30:44.750474"
+      },
+      {
+        "agente": "sensibilidad",
+        "disponible": true,
+        "qa_detalle": {
+          "promedio": 5.0,
+          "seguridad_respecto": 5
+        },
+        "qa_promedio": 5.0,
+        "reintentos": 0,
+        "status": "success",
+        "temperatura": 0.5,
+        "temperatura_configurada": 0.5,
+        "tiempo_ejecucion": 3.854912,
+        "timestamp": "2025-08-21T00:30:48.607429"
+      },
+      {
+        "agente": "portadista",
+        "disponible": true,
+        "qa_detalle": {
+          "promedio": 5.0,
+          "recordabilidad_titulo": 5,
+          "sintesis_emotiva": 5
+        },
+        "qa_promedio": 5.0,
+        "reintentos": 0,
+        "status": "success",
+        "temperatura": 0.85,
+        "temperatura_configurada": 0.85,
+        "tiempo_ejecucion": 6.083234,
+        "timestamp": "2025-08-21T00:30:54.692686"
+      },
+      {
+        "agente": "loader",
+        "disponible": true,
+        "qa_detalle": {
+          "brevedad_tono": 5,
+          "pertinencia": 5,
+          "promedio": 5.0,
+          "sensacion_adaptativa": 5
+        },
+        "qa_promedio": 5.0,
+        "reintentos": 0,
+        "status": "success",
+        "temperatura": 0.9,
+        "temperatura_configurada": 0.9,
+        "tiempo_ejecucion": 18.085339,
+        "timestamp": "2025-08-21T00:31:12.779974"
+      },
+      {
+        "agente": "validador",
+        "disponible": true,
+        "qa_detalle": null,
+        "qa_promedio": null,
+        "reintentos": 0,
+        "status": "success",
+        "temperatura": 0.3,
+        "temperatura_configurada": 0.3,
+        "tiempo_ejecucion": 91.716586,
+        "timestamp": "2025-08-21T00:32:44.498552"
+      }
+    ],
+    "estadisticas": {
+      "qa_scores": {
+        "agente_menor_qa": {
+          "agente": "director",
+          "qa_promedio": 5.0
+        },
+        "agentes_bajo_umbral": [],
+        "distribucion": {
+          "5": 11
+        },
+        "mejor_agente": {
+          "agente": "director",
+          "qa_promedio": 5.0
+        }
+      },
+      "temperaturas": {
+        "max": 0.9,
+        "min": 0.3,
+        "promedio": 0.67,
+        "rango_configurado": [
+          0.3,
+          0.9
+        ]
+      },
+      "tiempos": {
+        "agente_mas_lento": {
+          "agente": "validador",
+          "tiempo": 91.72
+        },
+        "agente_mas_rapido": {
+          "agente": "sensibilidad",
+          "tiempo": 3.85
+        },
+        "max": 91.72,
+        "min": 3.85,
+        "promedio": 20.04,
+        "total": 240.43
+      }
+    },
+    "metadata": {
+      "agentes_faltantes": [],
+      "agentes_procesados": 12,
+      "fecha_consolidacion": "2025-08-21T18:45:52.704326"
+    },
+    "resumen_global": {
+      "agentes_ejecutados": 12,
+      "promedio_qa_global": 5.0,
+      "reintentos_totales": 0,
+      "tasa_exito_primera": 100.0,
+      "tiempo_total_segundos": 240.43,
+      "total_agentes": 12
+    }
+  },
+  "status": "success",
+  "story_id": "test-emilia-20250821-002844",
+  "timestamp": "2025-08-21T18:45:52.704330"
+}

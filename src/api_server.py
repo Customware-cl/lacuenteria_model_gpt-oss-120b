@@ -410,19 +410,40 @@ def evaluate_story(story_id):
         result = runner.run_agent("critico")
         
         if result["status"] == "success":
-            # Leer el resultado del crítico
+            # Leer el resultado del crítico (puede estar como 13_critico.json o 99_critico.json)
             critico_path = get_artifact_path(story_id, "13_critico.json")
+            if not critico_path.exists():
+                # Intentar con el nombre alternativo
+                critico_path = get_artifact_path(story_id, "99_critico.json")
+            
             if critico_path.exists():
                 with open(critico_path, 'r', encoding='utf-8') as f:
                     evaluacion = json.load(f)
                 
-                # Retornar la evaluación crítica estructurada
-                return jsonify({
+                # Intentar consolidar métricas del pipeline
+                from metrics_consolidator import consolidate_agent_metrics
+                metricas = consolidate_agent_metrics(story_id)
+                
+                # Construir respuesta base
+                response = {
                     "status": "success",
                     "story_id": story_id,
                     "evaluacion_critica": evaluacion.get("evaluacion_critica", {}),
                     "timestamp": datetime.now().isoformat()
-                })
+                }
+                
+                # Agregar métricas si están disponibles
+                if metricas:
+                    response["metricas_pipeline"] = metricas
+                    response["metricas_disponibles"] = True
+                    logger.info(f"Métricas consolidadas exitosamente para {story_id}")
+                else:
+                    response["metricas_disponibles"] = False
+                    response["metricas_nota"] = "Métricas no disponibles para esta ejecución"
+                    logger.info(f"No se pudieron consolidar métricas para {story_id}")
+                
+                # Retornar la evaluación crítica estructurada con métricas opcionales
+                return jsonify(response)
             else:
                 return jsonify({
                     "status": "error",
