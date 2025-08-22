@@ -1,0 +1,14 @@
+{
+  "titulos": [
+    "Emilia y el Unicornio del Silencio: Un Corazón de Luz",
+    "Bailando Sin Palabras: La Magia del Gestos",
+    "¡Juntos Brillamos! El Abrazo de Luz y Amor"
+  ],
+  "portada": {
+    "prompt": "Ilustración infantil a página completa, estilo acuarela digital vibrante con trazos suaves y luz sutil. En un jardín bajo un árbol frondoso bajo un día claro, Emilia (6 años) lleva su vestido verde con flores, zapatillas blancas y una cinta azul atada al cabello; extiende la palma abierta, señalando al unicornio. El unicornio es blanco perlado con crin multicolor brillante, cuerno gris metálico y lleva un collar de luz rosa. Ambos se tocan, sus manos y cuerno forman un delicado corazón luminoso que irradia destellos rosados. Al fondo, flores silvestres en tonos verdes, rosas y blancos, mariposas y pequeñas estrellas de luz. La atmósfera transmite curiosidad, amistad y magia, con una composición centrada que dirige la mirada al gesto de unión, usando la paleta de la página 1 del color script (#A8E6A3, #6FC3DF, #3A7DFF, #F5C6D6)."
+  },
+  "qa": {
+    "recordabilidad_titulo": 5,
+    "sintesis_emotiva": 5
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "leitmotiv": "¡Brilla, brilla, luz de amistad!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y su jardín tranquilo.",
+      "conflicto": "Emilia se siente sola mientras juega sin palabras.",
+      "emocion": "Curiosidad",
+      "imagen_nuclear": "Emilia sentada entre flores coloridas, mirando una mariposa que revolotea."
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Descubrir al unicornio mágico entre los arbustos.",
+      "conflicto": "El unicornio parece triste y su cuerno solo emite un tenue brillo.",
+      "emocion": "Asombro",
+      "imagen_nuclear": "Un unicornio de crin arcoíris aparece entre hojas, con la cabeza baja y una luz suave en su cuerno."
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Mostrar que el unicornio ha perdido su voz.",
+      "conflicto": "El unicornio abre la boca pero solo sale un destello silencioso.",
+      "emocion": "Frustración ligera",
+      "imagen_nuclear": "Primer plano del unicornio intentando hablar, de su boca sale sólo un brillo sin sonido."
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Emilia intenta comunicarse usando gestos.",
+      "conflicto": "Al principio el unicornio no entiende los movimientos de Emilia.",
+      "emocion": "Paciencia",
+      "imagen_nuclear": "Emilia levanta las manos formando una señal clara mientras el unicornio observa curioso."
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Logran una primera conexión mediante gestos.",
+      "conflicto": "Necesitan una señal común para seguir comunicándose.",
+      "emocion": "Alegría creciente",
+      "imagen_nuclear": "El unicornio imita el gesto de Emilia, una sonrisa ilumina su rostro."
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Descubren que sus gestos combinados con la luz del cuerno crean destellos mágicos.",
+      "conflicto": "Deben sincronizar sus movimientos para que la magia funcione.",
+      "emocion": "Asombro",
+      "imagen_nuclear": "Destellos multicolores emergen alrededor de Emilia y el unicornio mientras hacen gestos al unísono."
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Aparece la sombra del silencio que cubre el jardín.",
+      "conflicto": "La sombra gris oscurece las flores y la luz del cuerno.",
+      "emocion": "Temor",
+      "imagen_nuclear": "Una sombra gris se extiende sobre el jardín, apagando los colores de las flores."
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Emilia y el unicornio usan su nuevo lenguaje para enfrentar la sombra.",
+      "conflicto": "La sombra resiste y parece absorber sus gestos al principio.",
+      "emocion": "Determinación",
+      "imagen_nuclear": "Un arco de luz brillante formado por gestos y el cuerno empuja la sombra hacia los bordes."
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Clímax: la sombra se rompe y desaparece, revelando un arcoíris.",
+      "conflicto": "Un último fragmento de oscuridad intenta volver a cubrir el jardín.",
+      "emocion": "Euforia",
+      "imagen_nuclear": "El arcoíris full color aparece mientras Emilia y el unicornio se abrazan con un gesto de corazón."
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Celebrar y confirmar que hay muchas formas de decir \"te quiero\".",
+      "resolucion": "Se sientan bajo el arcoíris, hacen un gesto de corazón y la luz del cuerno brilla al ritmo del leitmotiv.",
+      "emocion": "Calidez y esperanza",
+      "imagen_nuclear": "Emilia y el unicornio bajo el arcoíris, rodeados de luces danzantes, con sus manos formando un gran corazón."
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "En lugar de romper la sombra, Emilia enseña al unicornio a cantar sin voz, creando una melodía de luces que disuelve la oscuridad.",
+      "resolucion_alternativa": "La melodía de luces se extiende por el jardín, y todos los animales aparecen para celebrar la nueva forma de comunicación."
+    },
+    {
+      "climax_alternativo": "El unicornio descubre que su cuerno puede dibujar palabras en el aire, y con la ayuda de Emilia, escribe \"amigos\" que hacen desaparecer la sombra.",
+      "resolucion_alternativa": "Las palabras luminosas flotan y se convierten en mariposas que llenan el jardín, simbolizando la amistad sin palabras."
+    }
+  ],
+  "qa": {
+    "arco_completo": 5,
+    "claridad_visual": 5,
+    "potencia_leitmotiv": 5
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "paginas_texto": {
+    "1": "En el jardín juega Emilia sin fin (A)\nSus pies descalzos ruedan sobre jazmín (A)\nDe pronto un brillo surge entre la flor (B)\nUn unicornio aparece, puro fulgor (B)",
+    "2": "La criatura alza su cuerno en señal (A)\nUn susurro gris sale, sin vocal (A)\nEmilia siente pena en su corazón (B)\nQuiere devolverle la dulce canción (B)",
+    "3": "Miradas se cruzan, silencio profundo (A)\nAmbos buscan palabras en el mundo (A)\nUn gesto nace, la amistad empieza (B)\nSin hablar, el cariño se confiesa (B)",
+    "4": "Emilia levanta su mano, dice hola (A)\nEl unicornio observa, su luz enrola (A)\nEl gesto flota como ola en el mar (B)\nEsperan que el otro lo pueda imitar (B)",
+    "5": "El unicornio intenta copiar la ola (A)\nSu cuerno chispea, la torpeza se inmola (A)\nUna risa suave rompe la tensión (B)\nY la magia de juego gana la ocasión (B)",
+    "6": "Juntos cuentan 1‑2‑3, alzan la mano (A)\nUna chispa de luz surge, como hermano (A)\nLos gestos unidos forman color (B)\nY la magia danza en su interior (B)",
+    "7": "Una nube gris cubre el jardín quieto (A)\nLa sombra del silencio trae el reto (A)\nLos colores tiemblan, la luz se esconde (B)\nPero su amistad no se desmoronde (B)",
+    "8": "Con manos forman un gran corazón (A)\nLuz resplandece, vence la opresión (A)\nLa sombra huye bajo su calor (B)\nY el jardín florece con más amor (B)",
+    "9": "El unicornio suena, campanas al volar (A)\nUn tintineo suave vuelve a cantar (A)\nEmilia celebra con risas y danza (B)\nLa alegría brilla en la esperanza (B)",
+    "10": "Juntos brillamos, la amistad es luz (A)\nAbrazan la vida, sin ningún alud (A)\nCorazones flotan, el jardín sonó (B)\nY el eco dice: ¡Te quiero, mi amor! (B)"
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    8,
+    10
+  ],
+  "qa": {
+    "emocion": 5,
+    "claridad_visual": 5,
+    "uso_leitmotiv": 5
+  }
+}

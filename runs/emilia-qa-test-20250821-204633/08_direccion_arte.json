@@ -1,0 +1,156 @@
+{
+  "estilo_global": "Ilustración infantil colorida con acuarela digital vibrante, trazos suaves, texturas ligeras tipo papel y uso de luces y sombras sutiles para reforzar el estado emocional.",
+  "color_script": {
+    "1": {
+      "paleta": [
+        "#A8E6A3",
+        "#6FC3DF",
+        "#3A7DFF",
+        "#F5C6D6"
+      ],
+      "momento": "día claro bajo árbol frondoso",
+      "atmosfera": "luminosidad suave, curiosidad y alegría"
+    },
+    "2": {
+      "paleta": [
+        "#C0C0C0",
+        "#8A9BAE",
+        "#E6E6FA",
+        "#F7B6C2"
+      ],
+      "momento": "mañana brumosa en el bosque",
+      "atmosfera": "difusión grisácea, tristeza y silencio"
+    },
+    "3": {
+      "paleta": [
+        "#FFD166",
+        "#A8D5BA",
+        "#F58C9C",
+        "#FFFFFF"
+      ],
+      "momento": "atardecer dorado en el jardín",
+      "atmosfera": "luz cálida, amabilidad y conexión"
+    },
+    "4": {
+      "paleta": [
+        "#FFB6C1",
+        "#FFD700",
+        "#A2D5F2",
+        "#FFFFFF"
+      ],
+      "momento": "crepúsculo rosado en el prado",
+      "atmosfera": "luz dorada, alegría tranquila"
+    },
+    "5": {
+      "paleta": [
+        "#2C3E50",
+        "#BDC3C7",
+        "#F8C8DC",
+        "#FFFFFF"
+      ],
+      "momento": "crepúsculo con estrellas tímidas",
+      "atmosfera": "destellos plateados, asombro y maravilla"
+    },
+    "6": {
+      "paleta": [
+        "#0B0C10",
+        "#1F2833",
+        "#FF6F61",
+        "#E0E0E0"
+      ],
+      "momento": "noche estrellada en el jardín amplio",
+      "atmosfera": "luces cósmicas, euforia y magia"
+    },
+    "7": {
+      "paleta": [
+        "#1C1C1C",
+        "#4B4B4B",
+        "#7F7F7F",
+        "#B22222"
+      ],
+      "momento": "noche oscura con sombra gris",
+      "atmosfera": "alto contraste, miedo y ansiedad"
+    },
+    "8": {
+      "paleta": [
+        "#FF9AA2",
+        "#FFE5B4",
+        "#FFF5E1",
+        "#A8E6CF"
+      ],
+      "momento": "amanecer rosado y tibio",
+      "atmosfera": "luz cálida, esperanza y triunfo"
+    },
+    "9": {
+      "paleta": [
+        "#F4D35E",
+        "#A7C957",
+        "#F3E5AB",
+        "#FFFFFF"
+      ],
+      "momento": "tarde suave y serena",
+      "atmosfera": "luz dorada, ternura y libertad"
+    },
+    "10": {
+      "paleta": [
+        "#FFB347",
+        "#FFCC33",
+        "#F7D794",
+        "#FFFFFF"
+      ],
+      "momento": "atardecer dorado que envuelve todo",
+      "atmosfera": "luz cálida y difusa, paz y felicidad"
+    }
+  },
+  "transiciones": [
+    {
+      "de_pagina": 1,
+      "a_pagina": 2,
+      "tipo": "fade"
+    },
+    {
+      "de_pagina": 2,
+      "a_pagina": 3,
+      "tipo": "dissolve"
+    },
+    {
+      "de_pagina": 3,
+      "a_pagina": 4,
+      "tipo": "pan"
+    },
+    {
+      "de_pagina": 4,
+      "a_pagina": 5,
+      "tipo": "fade"
+    },
+    {
+      "de_pagina": 5,
+      "a_pagina": 6,
+      "tipo": "flash"
+    },
+    {
+      "de_pagina": 6,
+      "a_pagina": 7,
+      "tipo": "corte"
+    },
+    {
+      "de_pagina": 7,
+      "a_pagina": 8,
+      "tipo": "explosión"
+    },
+    {
+      "de_pagina": 8,
+      "a_pagina": 9,
+      "tipo": "fade"
+    },
+    {
+      "de_pagina": 9,
+      "a_pagina": 10,
+      "tipo": "pan"
+    }
+  ],
+  "qa": {
+    "coherencia_visual": 5,
+    "progresion_emocional": 5
+  }
+}

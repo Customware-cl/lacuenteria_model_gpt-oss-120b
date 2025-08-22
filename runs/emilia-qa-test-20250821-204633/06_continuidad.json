@@ -1,0 +1,60 @@
+{
+  "character_bible": [
+    {
+      "nombre": "Emilia",
+      "edad": "6 años",
+      "rasgos_visibles": "Cabello rizado castaño, ojos grandes y curiosos, sonrisa amplia, manos expresivas que siempre están abiertas o señalando.",
+      "vestuario": "Vestido largo verde con estampado de flores silvestres, zapatillas blancas y medias de color rosa pálido.",
+      "colores_clave": [
+        "verde",
+        "rosa",
+        "blanco"
+      ],
+      "objeto_ancla": "cinta azul atada al cabello",
+      "gestos": "Señala con los dedos, abre la palma como saludo, gira los brazos al ritmo de la música, dibuja corazones en el aire con las manos.",
+      "no_haria": "No hablará en voz alta ni forzará palabras; nunca interrumpirá el silencio del unicornio con gritos."
+    },
+    {
+      "nombre": "Unicornio",
+      "edad": "Mágico (eterno)",
+      "rasgos_visibles": "Cuerpo blanco perlado, crin multicolor que brilla, cuerno gris metálico que refleja la luz, orejas largas y móviles.",
+      "vestuario": "Una ligera capa de luz que envuelve su cuerpo, visible como un halo translúcido.",
+      "colores_clave": [
+        "gris",
+        "blanco",
+        "arcoíris"
+      ],
+      "objeto_ancla": "collar de luz rosa",
+      "gestos": "Inclina la cabeza, mueve suavemente el cuerno, toca con el cuerno la mano de Emilia, vibra con destellos al bailar.",
+      "no_haria": "No romperá su silencio voluntariamente ni intentará emitir sonido; nunca usará la voz para comunicarse."
+    }
+  ],
+  "continuidad_narrativa": {
+    "relaciones": "Emilia y el Unicornio forman una amistad basada en la comunicación no verbal; se entienden mediante gestos, miradas y la magia que surge al combinar sus expresiones.",
+    "evolucion_emocional": "Emilia pasa de la curiosidad y la soledad a la confianza y el cariño al descubrir que sus gestos son comprendidos. El Unicornio evoluciona de la tristeza y el temor al silencio a la alegría y seguridad al sentir el apoyo de Emilia y la desaparición de la sombra del silencio.",
+    "objeto_ancla_reapariciones": [
+      {
+        "personaje": "Emilia",
+        "paginas": [
+          1,
+          3,
+          5,
+          8
+        ]
+      },
+      {
+        "personaje": "Unicornio",
+        "paginas": [
+          2,
+          4,
+          6,
+          9
+        ]
+      }
+    ]
+  },
+  "qa": {
+    "coherencia_rasgos": 5,
+    "utilidad_arte": 5
+  }
+}

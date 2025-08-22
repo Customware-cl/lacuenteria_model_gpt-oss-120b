@@ -1,0 +1,14 @@
+{
+  "titulos": [
+    "El lazo estelar de Emilia",
+    "Brilla la amistad: Emilia y el unicornio",
+    "La canción de la estrella y el unicornio"
+  ],
+  "portada": {
+    "prompt": "Ilustración infantil colorida, acuarela digital vibrante con trazos suaves y textura de papel húmedo. En primer plano, Emilia, de 5 años, con cabello en dos coletas, vestido de algodón con estampado de nubes y sobrepantalón azul marino, sostiene su lazo azul con una pequeña estrella dorada mientras lo lleva a la mano con asombro. Junto a ella, un unicornio plateado de crin luminosa, inclina la cabeza hacia Emilia, transmitiendo ternura y confianza. Fondo: amanecer en un parque mágico, luz dorada y suave, paleta #FFD27F, #FFB6C1, #4A90E2, con flores delicadas y destellos de luz. Composición centrada, enfatizando la conexión emotiva entre la niña y el unicornio, atmósfera de curiosidad, asombro y amistad."
+  },
+  "qa": {
+    "recordabilidad_titulo": 5,
+    "sintesis_emotiva": 5
+  }
+}

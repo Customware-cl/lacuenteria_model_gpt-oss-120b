@@ -1,0 +1,93 @@
+{
+  "paginas_texto_pulido": {
+    "1": "En el jardín Emilia empieza a cantar\nSus pies desnudos al ritmo van a cantar\nUn destello surge entre la flor que brilla\nAparece un unicornio, luz que brilla",
+    "2": "El cuerno se alza, señal de magia al cantar\nUn susurro gris flota, sin palabras al cantar\nEmilia siente una pena en su corazón\nQuiere ofrecerle una canción al corazón",
+    "3": "Sus miradas se cruzan, silencio como viento\nLos dos buscan respuestas flotando en el viento\nUn gesto nace, la amistad en su canto\nSin palabras, el cariño vibra en su canto",
+    "4": "Emilia alza la mano y dice hola\nEl unicornio mira, su luz también dice hola\nEl gesto flota, suave como ola del mar\nEsperan que el otro lo copie, eco del mar",
+    "5": "El unicornio intenta copiar la ola\nSu cuerno destella, pero la forma no es ola\nUna risa ligera se vuelve canto\nY el juego mágico se eleva en canto",
+    "6": "Juntos cuentan 1‑2‑3 y levantan la mano\nUna chispa de luz surge, como hermano en la mano\nLos gestos unidos pintan nuevo color\nY la magia baila dentro, llenando de color",
+    "7": "Una nube gris cubre el jardín gris\nLa sombra del silencio trae un gris\nLos colores tiemblan y la luz se rompe\nPero su amistad jamás se rompe",
+    "8": "Con manos forman un gran corazón\nUna luz brilla, late dentro del corazón\nLa sombra huye bajo el brillo de la flor\nY el jardín florece con más color y flor",
+    "9": "El unicornio suena, campanas al cantar\nUn tintineo suave vuelve a cantar\nEmilia celebra con risas y bailar\nLa alegría brilla, invita a bailar",
+    "10": "Juntos brillamos, la amistad es luz\nAbrazamos la vida sin ningún temor, luz\nLos corazones flotan, el jardín canta\nY el eco susurra: ¡Te quiero, amiga, canta!"
+  },
+  "esquema_rima": {
+    "1": "AABB",
+    "2": "AABB",
+    "3": "AABB",
+    "4": "AABB",
+    "5": "AABB",
+    "6": "AABB",
+    "7": "AABB",
+    "8": "AABB",
+    "9": "AABB",
+    "10": "AABB"
+  },
+  "finales_de_verso": {
+    "1": [
+      "cantar",
+      "cantar",
+      "brilla",
+      "brilla"
+    ],
+    "2": [
+      "cantar",
+      "cantar",
+      "corazón",
+      "corazón"
+    ],
+    "3": [
+      "viento",
+      "viento",
+      "canto",
+      "canto"
+    ],
+    "4": [
+      "hola",
+      "hola",
+      "mar",
+      "mar"
+    ],
+    "5": [
+      "ola",
+      "ola",
+      "canto",
+      "canto"
+    ],
+    "6": [
+      "mano",
+      "mano",
+      "color",
+      "color"
+    ],
+    "7": [
+      "gris",
+      "gris",
+      "rompe",
+      "rompe"
+    ],
+    "8": [
+      "corazón",
+      "corazón",
+      "flor",
+      "flor"
+    ],
+    "9": [
+      "cantar",
+      "cantar",
+      "bailar",
+      "bailar"
+    ],
+    "10": [
+      "luz",
+      "luz",
+      "canta",
+      "canta"
+    ]
+  },
+  "qa": {
+    "fluidez": 5,
+    "consistencia_rima": 5,
+    "variacion_cierres": 5
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "leitmotiv": "Brilla, brilla, luz de amistad",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y su curiosidad por el mundo",
+      "conflicto": "Su día es rutinario y sin emociones",
+      "emocion": "Curiosidad",
+      "imagen_nuclear": "Emilia con una lupa, mirando el jardín lleno de flores"
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Descubrir pistas mágicas que rompen la rutina",
+      "conflicto": "Ve huellas brillantes y no sabe si son reales",
+      "emocion": "Sorpresa",
+      "imagen_nuclear": "Pequeñas huellas luminosas en el barro que forman un camino"
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Seguir el rastro hacia el bosque",
+      "conflicto": "El bosque suena extraño y le parece un poco oscuro",
+      "emocion": "Intriga",
+      "imagen_nuclear": "Emilia caminando entre árboles altos, con la luz filtrándose"
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Encontrar un portal de luz que indica algo especial",
+      "conflicto": "Miedo a lo desconocido al ver un arco de colores sobre un estanque",
+      "emocion": "Asombro",
+      "imagen_nuclear": "Un arco iris reflejado en el agua, creando un brillo mágico"
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Vislumbrar al unicornio pero sin poder verlo completamente",
+      "conflicto": "El unicornio se esconde tras los árboles y desaparece",
+      "emocion": "Frustración",
+      "imagen_nuclear": "La cabeza de un unicornio con crin brillante asomando entre los troncos"
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Invocar al unicornio con su canción",
+      "conflicto": "Su voz tiembla y teme no ser escuchada",
+      "emocion": "Esperanza",
+      "imagen_nuclear": "Emilia cantando, notas musicales flotando y brillando"
+    },
+    {
+      "pagina": 7,
+      "objetivo": "El unicornio se muestra, pero necesita ayuda",
+      "conflicto": "Una rama caída aprieta una de sus alas",
+      "emocion": "Compasión",
+      "imagen_nuclear": "Un unicornio plateado con una rama atrapada en su ala"
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Ayudar al unicornio a liberarse",
+      "conflicto": "La rama es pesada y requiere esfuerzo",
+      "emocion": "Valentía",
+      "imagen_nuclear": "Emilia empujando la rama mientras el unicornio observa"
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Recibir el regalo de gratitud del unicornio",
+      "conflicto": "Decidir si volver a casa o quedarse más tiempo",
+      "emocion": "Alegría y melancolía",
+      "imagen_nuclear": "El unicornio entrega una estrella luminosa que flota en la mano de Emilia"
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Regresar a casa con la estrella y compartir la amistad",
+      "resolucion": "Emilia coloca la estrella en su mesita; su habitación se llena de luz y recuerda al unicornio cada noche",
+      "emocion": "Satisfacción",
+      "imagen_nuclear": "Emilia en su cama, la estrella brillando sobre su almohada mientras ella sonríe"
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "El unicornio vuelve a la nube antes de ser ayudado, y Emilia aprende que la amistad también vive en la imaginación.",
+      "resolucion_alternativa": "Emilia guarda la canción del unicornio en su corazón y la canta cada noche, manteniendo viva la magia."
+    },
+    {
+      "climax_alternativo": "El unicornio está triste porque perdió su cuerno; Emilia lo ayuda a buscarlo entre los árboles.",
+      "resolucion_alternativa": "Al encontrar el cuerno, el unicornio regresa feliz y deja una pluma brillante como recuerdo para Emilia."
+    }
+  ],
+  "qa": {
+    "arco_completo": 5,
+    "claridad_visual": 5,
+    "potencia_leitmotiv": 5
+  }
+}

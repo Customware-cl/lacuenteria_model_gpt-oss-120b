@@ -1,0 +1,78 @@
+{
+  "paginas_texto_claro": {
+    "1": "En el jardín juega Emilia sin parar (A)\nSus pies desnudos tocan el jazmín (A)\nDe pronto un destello nace entre la flor (B)\nUn unicornio llega, luz clara (B)",
+    "2": "El unicornio levanta su cuerno como señal (A)\nUn susurro gris suena, sin palabras (A)\nEmilia siente tristeza en su pecho (B)\nQuiere darle una canción dulce (B)",
+    "3": "Sus miradas se encuentran, silencio intenso (A)\nLos dos buscan palabras en el aire (A)\nUn gesto nace, la amistad comienza (B)\nSin hablar, el cariño se muestra (B)",
+    "4": "Emilia alza su mano y dice hola (A)\nEl unicornio mira, su luz brilla (A)\nEl gesto flota como ola en el mar (B)\nEsperan que el otro lo copie (B)",
+    "5": "El unicornio trata de imitar la ola (A)\nSu cuerno chispea, la torpeza se muestra (A)\nUna risa suave rompe la tensión (B)\nY el juego mágico gana el momento (B)",
+    "6": "Juntos cuentan 1‑2‑3 y levantan la mano (A)\nUna chispa de luz aparece, como un hermano (A)\nLos gestos unidos crean color (B)\nY la magia baila dentro de ellos (B)",
+    "7": "Una nube gris cubre el jardín tranquilo (A)\nLa sombra del silencio trae un reto (A)\nLos colores tiemblan y la luz se oculta (B)\nPero su amistad no se rompe (B)",
+    "8": "Con manos forman un gran corazón (A)\nUna luz brilla y vence la tristeza (A)\nLa sombra huye bajo su calor (B)\nY el jardín florece con más amor (B)",
+    "9": "El unicornio suena, como campanas al volar (A)\nUn tintineo suave vuelve a cantar (A)\nEmilia celebra con risas y baile (B)\nLa alegría brilla con esperanza (B)",
+    "10": "Juntos brillamos, la amistad es luz (A)\nAbrazan la vida sin miedo (A)\nLos corazones flotan, el jardín canta (B)\nY el eco dice: ¡Te quiero, amiga! (B)"
+  },
+  "glosario": [
+    {
+      "original": "descalzos",
+      "simple": "desnudos"
+    },
+    {
+      "original": "fulgor",
+      "simple": "luz clara"
+    },
+    {
+      "original": "vocal",
+      "simple": "palabras"
+    },
+    {
+      "original": "pena",
+      "simple": "tristeza"
+    },
+    {
+      "original": "silencio profundo",
+      "simple": "silencio intenso"
+    },
+    {
+      "original": "confiesa",
+      "simple": "muestra"
+    },
+    {
+      "original": "enrola",
+      "simple": "brilla"
+    },
+    {
+      "original": "inmola",
+      "simple": "se muestra"
+    },
+    {
+      "original": "ocasión",
+      "simple": "momento"
+    },
+    {
+      "original": "interior",
+      "simple": "dentro"
+    },
+    {
+      "original": "desmoronde",
+      "simple": "se rompe"
+    },
+    {
+      "original": "opresión",
+      "simple": "tristeza"
+    },
+    {
+      "original": "alud",
+      "simple": "miedo"
+    }
+  ],
+  "cambios_clave": [
+    "Reemplazo de vocabulario complejo por sinónimos simples",
+    "Simplificación de frases manteniendo la rima y métrica aproximada",
+    "Clarificación de imágenes para que cada verso tenga una visual inequívoca",
+    "Eliminación de ambigüedades y palabras poco cotidianas"
+  ],
+  "qa": {
+    "comprensibilidad": 5,
+    "imagen_inequivoca": 5
+  }
+}

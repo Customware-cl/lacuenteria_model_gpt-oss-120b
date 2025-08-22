@@ -1,0 +1,92 @@
+{
+  "metas_generales": [
+    "Reconocer y nombrar sus propias emociones usando palabras o gestos simples.",
+    "Utilizar gestos y señas para expresar necesidades, deseos y sentimientos.",
+    "Practicar la respiración profunda o la burbuja de aire cuando siente frustración o miedo.",
+    "Pedir ayuda o apoyo a un compañero cuando la comunicación no es clara.",
+    "Celebrar y valorar las diferentes formas de decir \"te quiero\" sin necesidad de palabras habladas."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Identificar y nombrar la emoción de curiosidad al observar su entorno.",
+      "frase_modelo": "Me siento curiosa al ver la mariposa que vuela.",
+      "recurso": "Tarjetas con caritas de emociones para que la niña señale la que siente.",
+      "evitar": "Decir que está sola o triste; enfocarse en la curiosidad positiva."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Expresar asombro mediante un gesto amplio de manos abiertas.",
+      "frase_modelo": "¡Wow, qué lindo unicornio!",
+      "recurso": "Juego de imitación: el adulto muestra el gesto y la niña lo repite.",
+      "evitar": "Comparaciones que puedan generar inseguridad."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Detectar una leve frustración y aplicar respiración de burbujas (3 inhalaciones y 3 exhalaciones).",
+      "frase_modelo": "Siento un pequeño enojo, respiro como si hiciera burbujas.",
+      "recurso": "Pequeña pipa de burbujas o visualización de burbujas en el aire.",
+      "evitar": "Etiquetar la emoción como \"muy enojada\" o exagerar la reacción."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Modelar un gesto sencillo (por ejemplo, saludo con la mano) y esperar la respuesta del otro.",
+      "frase_modelo": "Levanté mi mano para decir hola.",
+      "recurso": "Tarjetas de señas básicas con imágenes claras.",
+      "evitar": "Presionar al unicornio para que responda rápidamente."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Celebrar la primera comprensión mutua con un aplauso o palmada conjunta.",
+      "frase_modelo": "¡Lo entendimos! Aplaudo contigo.",
+      "recurso": "Ritmo de palmadas en cuenta de 2‑2‑2 para reforzar la sincronía.",
+      "evitar": "Generar ruido excesivo que distraiga la atención."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Coordinar un gesto al mismo tiempo que el compañero (sincronización 3‑2‑1).",
+      "frase_modelo": "Hacemos el gesto al mismo tiempo, ¡listos!",
+      "recurso": "Cuenta regresiva verbal y visual antes de ejecutar el gesto.",
+      "evitar": "Crear competencia; enfatizar la cooperación."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Nombrar la sensación de temor que produce la sombra gris.",
+      "frase_modelo": "Me da un poquito de miedo la sombra.",
+      "recurso": "Caja de luces de colores que se encienden al nombrar la emoción.",
+      "evitar": "Aumentar la amenaza o dramatizar la sombra."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Pedir ayuda al compañero para mantener la señal y reforzar el mensaje.",
+      "frase_modelo": "¿Me ayudas a mantener el gesto?",
+      "recurso": "Palabras de apoyo como \"Juntos podemos\" y un gesto de unión de manos.",
+      "evitar": "Culpar a la sombra o al otro por la dificultad."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Expresar euforia con un salto y un gesto de corazón con las manos.",
+      "frase_modelo": "¡Estoy feliz! Salto y hago un corazón.",
+      "recurso": "Música alegre y espacio seguro para moverse libremente.",
+      "evitar": "Sobrecargar con estímulos visuales o sonoros intensos."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Crear y compartir un gesto de corazón para decir \"te quiero\" sin palabras.",
+      "frase_modelo": "Te quiero con este gesto de corazón.",
+      "recurso": "Collage de gestos dibujados y luces suaves que siguen el ritmo del leitmotiv.",
+      "evitar": "Comparaciones con otras formas de expresión que puedan invalidar la propia."
+    }
+  ],
+  "banderas": [
+    "Frustración visible cuando la comunicación no es comprendida.",
+    "Retiro del contacto visual o del juego ante la dificultad de expresarse.",
+    "Señales de ansiedad (respiración acelerada, manos temblorosas) al intentar nuevos gestos.",
+    "Resistencia a pedir ayuda o a colaborar con el compañero."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

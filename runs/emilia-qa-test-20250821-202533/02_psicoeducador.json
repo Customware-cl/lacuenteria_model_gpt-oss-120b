@@ -1,0 +1,91 @@
+{
+  "metas_generales": [
+    "Reconocer y nombrar emociones sin necesidad de palabras habladas.",
+    "Utilizar gestos y señas como medio de comunicación eficaz y divertido.",
+    "Regular la excitación o la frustración mediante respiraciones lentas y pausas antes de actuar.",
+    "Fomentar la cooperación y el juego compartido para crear momentos de magia conjunta.",
+    "Valorar la diversidad de formas de expresión, mostrando que todas son válidas y hermosas."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Observar y nombrar la emoción de maravilla usando gestos y respiración de descubrimiento.",
+      "frase_modelo": "¡Mira, qué jardín tan brillante! (inhala mirando, exhala sonriendo).",
+      "recurso": "Juego de “mirar‑y‑suspirar”: inhalar mientras se observa algo bonito, exhalar con una sonrisa.",
+      "evitar": "Forzar palabras o comentarios que presionen al niño a hablar."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Identificar la señal de silencio del unicornio y expresar compasión mediante toque suave y etiquetado emocional.",
+      "frase_modelo": "Veo que estás triste, ¿te puedo dar un abrazo?",
+      "recurso": "Tocar la mano del otro suavemente mientras se dice la emoción (tristeza, silencio).",
+      "evitar": "Criticar la falta de voz o minimizar la sensación."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Establecer contacto visual y usar un gesto de saludo simple (ola).",
+      "frase_modelo": "¡Hola con mis manos!",
+      "recurso": "Juego del espejo: cada uno imita el gesto del otro lentamente.",
+      "evitar": "Presionar para que hable antes de que el gesto sea comprendido."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Enseñar un gesto sencillo y esperar la respuesta del otro con paciencia.",
+      "frase_modelo": "Mira mi ola, ¿puedes copiarla?",
+      "recurso": "Pausa de 2‑3 segundos después de mostrar el gesto, reforzamiento positivo con una sonrisa.",
+      "evitar": "Mostrar frustración si el gesto no se replica al instante."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Aceptar intentos torpes y celebrar el esfuerzo con humor suave.",
+      "frase_modelo": "¡Qué gracioso, lo intentaste! Muy bien.",
+      "recurso": "Risa ligera y aplauso, reforzamiento del intento (“¡Lo intentaste muy bien!”).",
+      "evitar": "Señalar el error o comparar con “mejor” desempeño."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Sincronizar gestos para crear “magia” mediante conteo y respiración conjunta.",
+      "frase_modelo": "Juntos hacemos luz, contemos 1‑2‑3 y respiramos.",
+      "recurso": "Contar hasta tres en voz baja, inhalar juntos, exhalar mientras se mueven las manos.",
+      "evitar": "Competir por quién hace el gesto mejor."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Detectar la sensación de tensión (sombra gris) y aplicar respiración 4‑4 para calmarse.",
+      "frase_modelo": "Sentimos la nube gris, vamos a respirar profundo.",
+      "recurso": "Respiración cuadrada: inhalar 4 seg, mantener 4, exhalar 4, mantener 4.",
+      "evitar": "Ignorar la ansiedad o minimizar la sombra."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Crear un gesto de corazón grande y expresar cariño sin palabras.",
+      "frase_modelo": "Nuestro corazón grande muestra cuánto nos queremos.",
+      "recurso": "Modelar forma de corazón con ambas manos, decir “te quiero” con el gesto.",
+      "evitar": "Forzar que digan la frase hablada; respetar la expresión no verbal."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Celebrar la voz nueva del unicornio con movimiento y etiquetar la alegría.",
+      "frase_modelo": "¡Mira las campanitas brillantes! ¡Qué alegría!",
+      "recurso": "Baile corto de celebración, nombrar la emoción (alegría, felicidad).",
+      "evitar": "Comparar la “voz” con la de otros niños."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Expresar gratitud y despedida mediante abrazo suave y respiración de cierre.",
+      "frase_modelo": "Gracias, amigo, te quiero mucho.",
+      "recurso": "Abrazo ligero, inhalar profundo, exhalar despidiendo la historia.",
+      "evitar": "Prolongar la tristeza o la frustración si algo no salió perfecto."
+    }
+  ],
+  "banderas": [
+    "Cruzado de brazos o retirada física que indique frustración.",
+    "Llantos o gritos repentinos sin causa aparente.",
+    "Negarse a participar en gestos después de varios intentos fallidos."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

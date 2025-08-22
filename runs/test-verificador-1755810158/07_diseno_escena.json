@@ -1,0 +1,30 @@
+{
+  "prompts_paginas": {
+    "1": "Entorno: parque infantil al amanecer, columpios y árbol de hoja grande. Acción principal: Emilia corre hacia el árbol, su lazo azul con estrella dorada al vuelo. Emoción dominante: curiosidad inocente. Objetos ancla: lazo azul, una mariposa luminosa. Momento del día/iluminación: luz dorada del sol naciente, sombras suaves. Composición: plano general amplio, cámara a nivel del suelo mirando hacia el horizonte, enfoque nítido en Emilia y el lazo. Estilo: ilustración infantil colorida con tonos rosa, celeste y blanco.",
+    "2": "Entorno: claro del bosque con musgo brillante y flores pastel. Acción principal: Emilia se detiene, inclina la cabeza y escucha un susurro mágico. Emoción dominante: asombro. Objetos ancla: una hoja gigante que refleja luz, lazo azul en su mano. Momento del día/iluminación: luz filtrada entre ramas, rayos de sol moteados. Composición: plano medio, cámara ligeramente elevada, foco en el rostro de Emilia y su gesto de inclinar la cabeza. Estilo: ilustración infantil colorida.",
+    "3": "Entorno: claro del bosque, cerca de un arroyo cantarina. Acción principal: Aparece el unicornio, de color perlado, bebiendo agua. Emoción dominante: maravilla. Objetos ancla: lazo azul que Emilia sostiene, una piedra brillante junto al arroyo. Momento del día/iluminación: luz de mediodía, reflejos brillantes en el agua. Composición: plano detalle del unicornio y el lazo, ángulo bajo que captura la cabeza del unicornio y la expresión de Emilia al fondo. Estilo: ilustración infantil colorida.",
+    "4": "Entorno: claro del bosque con una pequeña cascada de luz. Acción principal: Emilia se acerca al unicornio, lleva el lazo a su mano y lo muestra. Emoción dominante: confianza creciente. Objetos ancla: lazo azul con estrella dorada, una flor azul que cae. Momento del día/iluminación: luz suave del atardecer, tonos anaranjados y rosados. Composición: plano medio, cámara a nivel de los ojos, foco en las manos de Emilia y el cuerno del unicornio. Estilo: ilustración infantil colorida.",
+    "5": "Entorno: rincón del bosque con hongos luminosos. Acción principal: El unicornio muestra una pista brillante en el suelo. Emoción dominante: intriga. Objetos ancla: la pista luminosa (huella de luz), lazo azul colgando del brazo de Emilia. Momento del día/iluminación: crepúsculo, luces de luciérnagas alrededor. Composición: plano general, vista diagonal desde arriba, énfasis en la pista que guía a Emilia. Estilo: ilustración infantil colorida.",
+    "6": "Entorno: sendero de piedras doradas que lleva a una cueva misteriosa. Acción principal: Emilia sigue la pista, apoya su mano en la piedra brillante. Emoción dominante: valentía. Objetos ancla: lazo azul que brilla ligeramente, una pequeña llave dorada encontrada en el camino. Momento del día/iluminación: luz tenue con focos de luz dorada sobre la senda. Composición: plano medio, cámara ligeramente lateral, foco en la expresión decidida de Emilia y la llave en su mano. Estilo: ilustración infantil colorida.",
+    "7": "Entorno: entrada de la cueva con cristales que reflejan arcoíris. Acción principal: Emilia coloca su lazo azul sobre el altar de cristal, activando un rayo de luz. Emoción dominante: asombro y esperanza. Objetos ancla: lazo azul con estrella dorada, el altar de cristal. Momento del día/iluminación: luz interior de la cueva, efectos de prismas coloridos. Composición: primer plano del lazo sobre el altar, ángulo cenital, foco nítido en el lazo y el haz de luz emergente. Estilo: ilustración infantil colorida.",
+    "8": "Entorno: interior de la cueva, cámara amplia con un lago de espejo mágico. Acción principal: El unicornio bebe del lago y su cuerno brilla intensamente. Emoción dominante: alegría compartida. Objetos ancla: lazo azul que Emilia sostiene, reflejo del unicornio en el agua. Momento del día/iluminación: luz interna fulgurante, tonos azulados y plateados. Composición: plano general, cámara a nivel del agua, foco en el reflejo y la interacción de Emilia con el unicornio. Estilo: ilustración infantil colorida.",
+    "9": "Entorno: salida de la cueva hacia un prado lleno de flores. Acción principal: Emilia y el unicornio corren hacia el prado, lanzando pétalos al aire. Emoción dominante: felicidad y libertad. Objetos ancla: lazo azul ondeando, una corona de flores que el unicornio lleva. Momento del día/iluminación: luz del atardecer dorada, sombras largas y cálidas. Composición: plano medio, cámara detrás de Emilia mirando al unicornio, foco en movimiento y pétalos volando. Estilo: ilustración infantil colorida.",
+    "10": "Entorno: prado bajo un cielo estrellado, fogata pequeña al fondo. Acción principal: Emilia se sienta, abraza su lazo y mira al unicornio que se despide con un guiño. Emoción dominante: confianza y serenidad. Objetos ancla: lazo azul con estrella dorada, una linterna de papel flotante. Momento del día/iluminación: luz de la luna y estrellas, luz cálida de la fogata. Composición: primer plano del rostro de Emilia, ángulo frontal, foco en sus ojos y el lazo, fondo ligeramente desenfocado con el unicornio. Estilo: ilustración infantil colorida."
+  },
+  "anotaciones": [
+    "p1 plano general luminoso",
+    "p2 plano medio gesto de curiosidad",
+    "p3 primer plano detalle unicornio",
+    "p4 plano medio interacción lazo",
+    "p5 plano general pista brillante",
+    "p6 plano medio valentía",
+    "p7 primer plano detalle lazo sobre altar",
+    "p8 plano general reflejo en lago",
+    "p9 plano medio movimiento alegre",
+    "p10 primer plano rostro sereno"
+  ],
+  "qa": {
+    "alineacion_verso_escena": 5,
+    "variedad_planos": 5
+  }
+}

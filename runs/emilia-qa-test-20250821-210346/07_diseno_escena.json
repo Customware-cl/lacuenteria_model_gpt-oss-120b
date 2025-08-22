@@ -1,0 +1,30 @@
+{
+  "prompts_paginas": {
+    "1": "Entorno: prado verde al amanecer con flores multicolores. Acción: una pequeña coneja llamada Lila salta fuera de su madriguera. Emoción dominante: curiosidad alegre. Objetos ancla: una mochila azul y una lupa brillante. Momento del día/iluminación: luz dorada suave del amanecer, sombras largas. Composición: plano general amplio, cámara a nivel del suelo, enfoque profundo que muestra el paisaje y la coneja en movimiento. Estilo: ilustración infantil colorida.",
+    "2": "Entorno: bosque de árboles altos con troncos cubiertos de musgo. Acción: Lila descubre un mapa viejo sobre una roca. Emoción dominante: sorpresa emocionada. Objetos ancla: mapa envejecido y una ramita dorada. Momento del día/iluminación: luz filtrada por las hojas, tonos verdes y amarillos. Composición: plano medio, cámara ligeramente picada, foco en el mapa y la expresión de Lila. Estilo: ilustración infantil colorida.",
+    "3": "Entorno: claro del bosque con un arroyo cristalino. Acción: Lila cruza el arroyo usando una hoja grande como bote. Emoción dominante: valentía juguetona. Objetos ancla: hoja gigante y una pequeña brújula plateada. Momento del día/iluminación: mediodía brillante, reflejos brillantes en el agua. Composición: plano detalle de la hoja y la brújula, ángulo bajo que destaca la superficie del agua. Estilo: ilustración infantil colorida.",
+    "4": "Entorno: colina cubierta de hierbas altas bajo un cielo azul. Acción: Lila escala la colina mientras el viento agita su pelaje. Emoción dominante: determinación contenta. Objetos ancla: una bandera roja y un trozo de pastel de zanahoria. Momento del día/iluminación: tarde cálida, luz dorada al final del día. Composición: plano general con Lila en el centro, cámara ligeramente elevada, foco en la bandera ondeando. Estilo: ilustración infantil colorida.",
+    "5": "Entorno: cueva iluminada por luciérnagas. Acción: Lila encuentra un cofre antiguo. Emoción dominante: asombro mágico. Objetos ancla: cofre de madera tallada y una llave de cristal. Momento del día/iluminación: luz tenue de luciérnagas, tonos azules y morados. Composición: plano medio, cámara al nivel de los ojos de Lila, foco suave en el cofre abierto. Estilo: ilustración infantil colorida.",
+    "6": "Entorno: jardín secreto con plantas exóticas y mariposas. Acción: Lila comparte el pastel de zanahoria con una mariposa gigante. Emoción dominante: amistad sincera. Objetos ancla: trozo de pastel y una flor gigante. Momento del día/iluminación: atardecer rosado, luz cálida y difusa. Composición: primer plano del pastel y la mariposa, cámara ligeramente inclinada, foco en la interacción. Estilo: ilustración infantil colorida.",
+    "7": "Entorno: puente de madera sobre el arroyo al anochecer. Acción: Lila cruza el puente mientras la luna llena se refleja en el agua. Emoción dominante: serenidad tranquila. Objetos ancla: una linterna pequeña y una rama luminosa. Momento del día/iluminación: noche clara, luz plateada de la luna. Composición: plano general con el puente en diagonal, cámara a nivel del puente, foco en la linterna que ilumina a Lila. Estilo: ilustración infantil colorida.",
+    "8": "Entorno: campo de estrellas en una colina alta. Acción: Lila se recuesta y observa constelaciones que forman figuras de sus amigos. Emoción dominante: maravilla soñadora. Objetos ancla: telescopio de juguete y una manta azul. Momento del día/iluminación: noche profunda, cielo estrellado con luces titilantes. Composición: plano detalle de la manta y el telescopio, cámara en ángulo bajo que captura el cielo estrellado. Estilo: ilustración infantil colorida.",
+    "9": "Entorno: casa del árbol de Lila decorada con luces festivas. Acción: Lila celebra su aventura con una fiesta para todos los animales del bosque. Emoción dominante: alegría festiva. Objetos ancla: pastel grande y guirnaldas de colores. Momento del día/iluminación: crepúsculo con luces cálidas colgantes. Composición: plano medio, cámara a nivel de los invitados, foco en el pastel y las caras sonrientes. Estilo: ilustración infantil colorida.",
+    "10": "Entorno: amanecer sobre el prado, similar a la primera página pero con más luz. Acción: Lila vuelve a su madriguera, coloca la llave de cristal en una caja de recuerdos. Emoción dominante: satisfacción y nostalgia. Objetos ancla: caja de recuerdos y la llave de cristal. Momento del día/iluminación: luz suave del alba, tonos rosados y dorados. Composición: primer plano de la caja y la llave, cámara ligeramente picada, foco nítido en la llave mientras el fondo se difumina. Estilo: ilustración infantil colorida."
+  },
+  "anotaciones": [
+    "p1 plano general luminoso",
+    "p2 plano medio enfocando mapa",
+    "p3 plano detalle hoja y brújula",
+    "p4 plano general con bandera",
+    "p5 plano medio luz de luciérnagas",
+    "p6 primer plano pastel y mariposa",
+    "p7 plano general puente bajo luna",
+    "p8 plano detalle manta y telescopio",
+    "p9 plano medio fiesta festiva",
+    "p10 primer plano caja y llave"
+  ],
+  "qa": {
+    "alineacion_verso_escena": 5,
+    "variedad_planos": 5
+  }
+}

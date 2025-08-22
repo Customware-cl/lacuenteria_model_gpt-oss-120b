@@ -1,0 +1,58 @@
+{
+  "character_bible": [
+    {
+      "nombre": "Emilia",
+      "edad": "6 años",
+      "rasgos_visibles": "Cabello rizado castaño claro, ojos grandes color miel, pies descalzos que siempre sienten la hierba.",
+      "vestuario": "Vestido ligero de algodón con estampado de flores blancas, medias color crema y zapatillas de tela azul pastel.",
+      "colores_clave": [
+        "azul pastel",
+        "blanco",
+        "miel"
+      ],
+      "objeto_ancla": "cinta azul atada a la muñeca derecha",
+      "gestos": "Levanta la mano abierta para saludar, forma corazones con ambas manos, palmas juntas al ritmo de la canción.",
+      "no_haria": "No interrumpiría el momento de silencio del unicornio ni forzaría palabras habladas."
+    },
+    {
+      "nombre": "Unicornio",
+      "edad": "Ser mágico sin edad definida",
+      "rasgos_visibles": "Cuerpo blanco nacarado, crin arcoíris que ondea suavemente, cuerno largo y brillante, ojos azul profundo que reflejan la luz.",
+      "vestuario": "No lleva ropa, pero su cuerno está adornado con una pequeña campanilla dorada que tintinea al moverse.",
+      "colores_clave": [
+        "blanco",
+        "arcoíris",
+        "dorado"
+      ],
+      "objeto_ancla": "campanilla dorada colgando del cuerno",
+      "gestos": "Inclina la cabeza al ritmo, mueve el cuerno en círculos suaves, extiende la melena como si dibujara ondas en el aire.",
+      "no_haria": "No usaría su magia para asustar a Emilia ni rompería la confianza que han construido."
+    }
+  ],
+  "continuidad_narrativa": {
+    "relaciones": "Emilia y el Unicornio desarrollan una amistad basada en la empatía y la comunicación no verbal; se convierten en compañeros de juego que se entienden mediante gestos, miradas y sus objetos ancla que simbolizan su vínculo.",
+    "evolucion_emocional": "Al inicio Emilia siente curiosidad y un poco de tristeza al ver al unicornio sin voz; poco a poco descubre la alegría de compartir gestos, lo que genera confianza y ternura; al final ambos celebran una profunda conexión y el sentido de pertenencia, superando la sombra del silencio.",
+    "objeto_ancla_reapariciones": [
+      {
+        "personaje": "Emilia",
+        "paginas": [
+          1,
+          4,
+          8
+        ]
+      },
+      {
+        "personaje": "Unicornio",
+        "paginas": [
+          2,
+          5,
+          9
+        ]
+      }
+    ]
+  },
+  "qa": {
+    "coherencia_rasgos": 5,
+    "utilidad_arte": 5
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "loader": [
+    "Emilia ajusta su cinta azul y siente la magia del jardín.",
+    "Los brillos de atardecer tintinean alrededor del Unicornio.",
+    "¡Juntos brillamos! El leitmotiv vibra en cada gesto.",
+    "La campanilla dorada del Unicornio destella, anunciando la amistad.",
+    "Página 3 cobra vida: miradas de Emilia y Unicornio, pura empatía.",
+    "Se encienden los tonos azul pastel y dorado, iluminando la mañana.",
+    "Un gesto de corazón surge, disipando la sombra del silencio.",
+    "Pequeños pasos hacia la comunicación sin palabras, ¡qué hermoso!",
+    "Ráfaga de luces multicolores une sus manos en la página 6.",
+    "Al final, corazones flotantes celebran el mensaje de amor y expresión."
+  ],
+  "qa": {
+    "pertinencia": 5,
+    "brevedad_tono": 5,
+    "sensacion_adaptativa": 5
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "titulos": [
+    "Emilia y el Unicornio de Luz",
+    "El Canto Sin Palabras del Jardín",
+    "Juntos Brillamos en el Jardín"
+  ],
+  "portada": {
+    "prompt": "Ilustración infantil en acuarela digital vibrante, estilo suave y colorido, mañana clara con luz dorada suave. En el centro, Emilia (6 años) con vestido de flores blancas, medias crema y zapatillas de tela azul pastel, cinta azul atada a la muñeca derecha, pies descalzos sobre la hierba, levanta la mano abierta en señal de saludo. Frente a ella, el unicornio mágico de cuerpo blanco nacarado, crin arcoíris ondulante y cuerno largo con una campanilla dorada que tintinea, inclina la cabeza y extiende su melena dibujando ondas en el aire. Ambos forman un gesto de corazón con sus manos, generando una chispa luminosa que ilumina flores y mariposas alrededor. Composición centrada, detalle de pétalos brillantes y sombras cálidas, atmósfera de asombro y amistad."
+  },
+  "qa": {
+    "recordabilidad_titulo": 5,
+    "sintesis_emotiva": 5
+  }
+}

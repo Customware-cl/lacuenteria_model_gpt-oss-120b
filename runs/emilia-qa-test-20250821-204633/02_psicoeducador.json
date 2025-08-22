@@ -1,0 +1,92 @@
+{
+  "metas_generales": [
+    "Reconocer que la comunicación puede hacerse con gestos, miradas y expresiones corporales.",
+    "Desarrollar la habilidad de identificar y nombrar sus propias emociones y las de los demás.",
+    "Practicar la autorregulación mediante respiraciones cortas y pausas antes de intentar comunicar.",
+    "Fomentar la búsqueda de ayuda o apoyo cuando una forma de expresión no funciona.",
+    "Reforzar la idea de que cada forma de expresión es valiosa y contribuye a crear conexión y magia."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Observar y nombrar colores y objetos del jardín usando gestos de señal (apuntar, abrir la palma).",
+      "frase_modelo": "Miro la flor y le muestro con mi mano.",
+      "recurso": "Juego de “¿Qué ves?” con tarjetas de colores; respiración de 2‑2 (inhala 2 seg, exhala 2 seg) antes de señalar.",
+      "evitar": "Decir que está “solo” o que necesita “hablar” para ser escuchado."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Identificar la emoción de sorpresa al ver al unicornio, etiquetándola con gesto de ojos abiertos y boca en forma de O.",
+      "frase_modelo": "¡Wow! (gesto de sorpresa).",
+      "recurso": "Canción corta de “¡Sorpresa!” con palmas; pausa de respiración para sentir la emoción.",
+      "evitar": "Enfatizar que el unicornio está “triste” sin validar la sorpresa del niño."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Establecer contacto visual y un gesto de saludo (mano abierta) para iniciar vínculo.",
+      "frase_modelo": "Yo saludo con mi mano.",
+      "recurso": "Ejercicio de “mirar y saludar” con espejo; respiración profunda antes del contacto.",
+      "evitar": "Criticar la falta de palabras o insinuar que el niño es “mudo”."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Practicar la señal de “hola” y observar la respuesta del unicornio, ajustando el gesto si no entiende.",
+      "frase_modelo": "Muestro hola y espero su señal.",
+      "recurso": "Juego de “imita mi gesto” con refuerzo positivo; pausa de 3 segundos para observar la reacción.",
+      "evitar": "Presionar para que el unicornio “hable” o que el niño se frustre."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Crear destellos de “magia” al combinar gestos simultáneos (manos + cuerno), reforzando la cooperación.",
+      "frase_modelo": "Juntos hacemos luz con nuestras manos.",
+      "recurso": "Actividad de “manos brillantes” con luces LED; respiración de 4‑4 para calmar si se siente torpe.",
+      "evitar": "Criticar los intentos “torpes” o comparar con otros niños."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Mantener una secuencia de gestos al ritmo de una canción sin sonido, fomentando la perseverancia.",
+      "frase_modelo": "Bailo y sigo el ritmo con mis manos.",
+      "recurso": "Cuenta regresiva de 5 a 1 antes de cada gesto; técnica de “respira y sigue”.",
+      "evitar": "Enfatizar los errores como fracasos."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Reconocer la presencia de la “sombra del silencio” como una sensación incómoda y nombrarla con gesto de mano sobre el corazón.",
+      "frase_modelo": "Siento una sombra, la toco con mi mano.",
+      "recurso": "Ejercicio de “etiquetar la sensación” + respiración abdominal de 3‑3 para reducir tensión.",
+      "evitar": "Atribuir culpa al unicornio o al niño por la sombra."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Unir manos y cuerno en un gesto de corazón, usando respiración profunda para generar energía positiva que disipa la sombra.",
+      "frase_modelo": "Juntos hacemos un gran corazón brillante.",
+      "recurso": "Respiración de “inhalar confianza, exhalar miedo” (4‑6); visualización de luz rosa.",
+      "evitar": "Amenazar con que la sombra volverá si no lo hacen perfectamente."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Expresar amor y plenitud mediante un abrazo simbólico (abrazo propio) y gestos de mariposas con los dedos.",
+      "frase_modelo": "Me abrazo y siento amor.",
+      "recurso": "Técnica de “auto‑abrazo” + respiración de 5‑5 para consolidar la calma.",
+      "evitar": "Comparar la experiencia con “sentirse feliz solo cuando todo es perfecto”."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Continuar la danza de gestos al atardecer, integrando una pausa de respiración antes de cada nuevo movimiento para mantener la atención.",
+      "frase_modelo": "Dibujamos corazones brillantes mientras respiro.",
+      "recurso": "Rutina de “respira‑y‑crea” (inhala, dibuja, exhala); reforzamiento verbal amable de “¡Qué bonito lo haces!”.",
+      "evitar": "Imponer la necesidad de seguir siempre la misma coreografía."
+    }
+  ],
+  "banderas": [
+    "El niño muestra frustración prolongada al no ser comprendido.",
+    "Evita el contacto visual o los gestos después de un intento fallido.",
+    "Se retrae físicamente (cruza brazos, se encoge) cuando la sombra aparece.",
+    "Muestra signos de ansiedad (respiración rápida, temblores) al intentar comunicar."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

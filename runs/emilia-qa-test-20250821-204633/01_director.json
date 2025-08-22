@@ -1,0 +1,90 @@
+{
+  "leitmotiv": "¡Juntos brillamos!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y su jardín lleno de colores.",
+      "conflicto": "Emilia se siente sola mientras juega.",
+      "emocion": "Curiosidad",
+      "imagen_nuclear": "Emilia sentada bajo un árbol, rodeada de flores, mirando al cielo."
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Introducir al unicornio mágico que llega sin voz.",
+      "conflicto": "El unicornio no puede hablar y parece triste.",
+      "emocion": "Sorpresa",
+      "imagen_nuclear": "Un unicornio brillante emergiendo de la niebla, con la boca cerrada, mirando a Emilia."
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Crear el primer vínculo entre Emilia y el unicornio.",
+      "conflicto": "No pueden comunicarse con palabras.",
+      "emocion": "Empatía",
+      "imagen_nuclear": "Emilia extiende la mano, el unicornio baja la cabeza, sus ojos se encuentran."
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Mostrar el lenguaje de señas como herramienta.",
+      "conflicto": "El unicornio no entiende el gesto al inicio.",
+      "emocion": "Confusión",
+      "imagen_nuclear": "Emilia muestra un saludo con la palma abierta, el unicornio inclina la oreja."
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Descubrir la magia que surge al imitar gestos.",
+      "conflicto": "Los intentos son torpes pero generan destellos.",
+      "emocion": "Asombro",
+      "imagen_nuclear": "Destellos de luz alrededor de las manos de Emilia y el cuerno del unicornio."
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Consolidar la comunicación mediante una canción sin sonido.",
+      "conflicto": "A veces se equivocan, pero siguen intentándolo.",
+      "emocion": "Alegría",
+      "imagen_nuclear": "Emilia y el unicornio bailan, sus gestos crean notas brillantes en el aire."
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Presentar el obstáculo interno: la sombra del silencio.",
+      "conflicto": "Una sombra gris envuelve al unicornio, intentando silenciar los gestos.",
+      "emocion": "Tensión",
+      "imagen_nuclear": "Una sombra oscura rodea al unicornio mientras Emilia observa preocupada."
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Clímax: unir fuerzas para disipar la sombra.",
+      "conflicto": "La sombra resiste el gesto de corazón que hacen juntos.",
+      "emocion": "Esperanza",
+      "imagen_nuclear": "Explosión de luz rosa al unir las manos de Emilia y el cuerno, rompiendo la sombra."
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Revelar la transformación y el mensaje de amor.",
+      "conflicto": "La sombra desaparece, dejando una sensación de plenitud.",
+      "emocion": "Amor",
+      "imagen_nuclear": "Unicornio y Emilia abrazados bajo mariposas brillantes, el cuerno resplandece."
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Cierre cálido: seguir comunicándose sin palabras.",
+      "resolucion": "Emilia y el unicornio continúan su danza bajo el atardecer, usando gestos y magia, felices.",
+      "emocion": "Paz y satisfacción",
+      "imagen_nuclear": "Emilia y el unicornio bajo el cielo dorado, dibujando corazones luminosos con sus manos y cuerno."
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "Emilia y el unicornio hallan un espejo que refleja la luz de sus gestos, y la sombra se desvanece al ver su propio brillo.",
+      "resolucion_alternativa": "La sombra se transforma en una nube de estrellas que se unen a su danza."
+    },
+    {
+      "climax_alternativo": "La sombra se vuelve una música silenciosa; Emilia y el unicornio la convierten en una melodía de colores vibrantes.",
+      "resolucion_alternativa": "El jardín se llena de flores que cantan sin sonido, celebrando su nueva forma de comunicación."
+    }
+  ],
+  "qa": {
+    "arco_completo": 5,
+    "claridad_visual": 5,
+    "potencia_leitmotiv": 5
+  }
+}

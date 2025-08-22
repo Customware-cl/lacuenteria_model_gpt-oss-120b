@@ -1,0 +1,36 @@
+{
+  "character_bible": [
+    {
+      "nombre": "Emilia",
+      "edad": "5 años",
+      "rasgos_visibles": "Cabello castaño en dos coletas, ojos grandes y curiosos, pecas en la nariz, sonrisa constante.",
+      "vestuario": "Vestido de algodón con estampado de nubes, sobrepantalón azul marino, zapatillas blancas con luces LED.",
+      "colores_clave": [
+        "rosa",
+        "celeste",
+        "blanco"
+      ],
+      "objeto_ancla": "lazo azul con una pequeña estrella dorada",
+      "gestos": "Inclina la cabeza al escuchar, se lleva el lazo a la mano cuando está emocionada, aplaude suavemente al descubrir algo nuevo.",
+      "no_haria": "No rompería la confianza del unicornio ni mentiría sobre lo que ve; nunca dejaría su lazo fuera de su mano cuando está asustada."
+    }
+  ],
+  "continuidad_narrativa": {
+    "relaciones": "Emilia establece una amistad tierna y protectora con el unicornio, compartiendo confidencias y juegos; mantiene una relación de apoyo con sus padres, quienes la alientan a explorar.",
+    "evolucion_emocional": "Comienza con curiosidad inocente, pasa a asombro y maravilla al ver al unicornio, y termina con confianza y valentía al decidir ayudar al ser mágico.",
+    "objeto_ancla_reapariciones": [
+      {
+        "personaje": "Emilia",
+        "paginas": [
+          1,
+          4,
+          7
+        ]
+      }
+    ]
+  },
+  "qa": {
+    "coherencia_rasgos": 5,
+    "utilidad_arte": 5
+  }
+}
