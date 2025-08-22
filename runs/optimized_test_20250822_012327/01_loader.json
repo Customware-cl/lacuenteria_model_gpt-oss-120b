@@ -1,0 +1,29 @@
+{
+  "loader": [
+    "Emilia extiende su mano; la chispa azul titila junto al unicornio.",
+    "¡Luz, luz, sin decir nada! vibra mientras la sombra del bosque titila.",
+    "Un destello dorado rodea a Emilia y al unicornio entre la niebla.",
+    "Una ola azulada abraza el árbol oscuro que acecha.",
+    "Luciérnagas giran alrededor de la luz dorada, una danza de esperanza.",
+    "Emilia y el unicornio se saludan con gestos; la señal brilla.",
+    "¡Luz, luz, sin decir nada! La comunicación regala estrella a Emilia.",
+    "Los colores vivos del bosque brillan; la luz dibuja senderos claros.",
+    "Cada gesto mantiene la luz; Emilia y el unicornio crean brillo eterno.",
+    "La estrella de Emilia brilla, la comunicación supera las palabras."
+  ],
+  "qa": {
+    "promedio": 4.2
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 2260,
+    "completion_tokens": 4544,
+    "total_tokens": 6804
+  },
+  "_metadata_params": {
+    "temperature": 0.9,
+    "top_p": null,
+    "repetition_penalty": null,
+    "attempt": 3
+  },
+  "_qa_passed": true
+}

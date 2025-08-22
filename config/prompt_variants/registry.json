@@ -1,0 +1,77 @@
+{
+  "editor_claridad": {
+    "with_examples": {
+      "file": "config/prompt_variants/editor_claridad_with_examples.json",
+      "created_at": "2025-08-22T00:39:09.539679",
+      "modifications": {
+        "append": "EJEMPLO DE SALIDA ESPERADA:\n{\n  \"paginas_texto_claro\": {\n    \"1\": \"Bajo el árbol grande suena el viento suave\\nLas hojas verdes bailan con alegría\\nEl sol dorado brilla entre las ramas\\nY todo el jardín canta su melodía\",\n    \"2\": \"[TEXTO COMPLETO DE LA PÁGINA 2]\",\n    \"3\": \"[CONTINUAR CON TODAS LAS PÁGINAS...]\",\n    \"10\": \"[TEXTO COMPLETO DE LA PÁGINA 10]\"\n  },\n  \"glosario\": [\n    {\"original\": \"destella\", \"simple\": \"brilla\"},\n    {\"original\": \"penumbra\", \"simple\": \"sombra\"}\n  ],\n  \"cambios_clave\": [\n    \"Simplificación de vocabulario complejo\",\n    \"Clarificación de imágenes ambiguas\"\n  ],\n  \"qa\": {\"comprensibilidad\": 5, \"imagen_inequivoca\": 5}\n}\n\nIMPORTANTE: INCLUIR TEXTO COMPLETO EN TODAS LAS 10 PÁGINAS."
+      }
+    },
+    "structured_process": {
+      "file": "config/prompt_variants/editor_claridad_structured_process.json",
+      "created_at": "2025-08-22T00:39:09.540018",
+      "modifications": {
+        "prepend": "PROCESO ESTRUCTURADO DE EDICIÓN:\n1. LEER: Analiza cada página del texto original\n2. IDENTIFICAR: Marca palabras complejas y ambigüedades\n3. SIMPLIFICAR: Reemplaza con vocabulario de 5 años\n4. VERIFICAR: Asegura una imagen clara por verso\n5. VALIDAR: Confirma que cada página tiene texto completo\n\nREGLA CRÍTICA: NO DEJAR NINGUNA PÁGINA VACÍA O INCOMPLETA.",
+        "replace": {
+          "Tu objetivo:": "Tu misión CRÍTICA:",
+          "Devuelve únicamente ese JSON.": "GENERA JSON COMPLETO CON LAS 10 PÁGINAS. NO TRUNCAR."
+        }
+      }
+    },
+    "anti_truncation": {
+      "file": "config/prompt_variants/editor_claridad_anti_truncation.json",
+      "created_at": "2025-08-22T00:39:09.540502",
+      "modifications": {
+        "append": "\nINSTRUCCIONES ANTI-TRUNCAMIENTO:\n⚠️ DEBES generar texto para TODAS las 10 páginas\n⚠️ NUNCA dejes campos vacíos o con placeholder\n⚠️ USA todos los tokens necesarios (tienes 8000 disponibles)\n⚠️ Si una página queda vacía, el trabajo será RECHAZADO\n⚠️ Completa TODO el JSON antes de terminar\n\nVERIFICACIÓN FINAL:\n✓ ¿Página 1 tiene texto? \n✓ ¿Página 2 tiene texto?\n✓ ¿Página 3 tiene texto?\n✓ ¿Página 4 tiene texto?\n✓ ¿Página 5 tiene texto?\n✓ ¿Página 6 tiene texto?\n✓ ¿Página 7 tiene texto?\n✓ ¿Página 8 tiene texto?\n✓ ¿Página 9 tiene texto?\n✓ ¿Página 10 tiene texto?\n\nSI ALGUNA RESPUESTA ES NO, COMPLÉTALA ANTES DE TERMINAR."
+      }
+    },
+    "detailed_criteria": {
+      "file": "config/prompt_variants/editor_claridad_detailed_criteria.json",
+      "created_at": "2025-08-22T00:39:09.540927",
+      "modifications": {
+        "replace": {
+          "hacer el texto cristalino sin perder belleza": "hacer el texto PERFECTAMENTE CLARO para niños de 5 años, manteniendo la belleza poética.\n\nCRITERIOS DE SIMPLIFICACIÓN:\n• Vocabulario: Máximo nivel preescolar (5-6 años)\n• Sintaxis: Oraciones simples, máximo 10 palabras\n• Imágenes: Una acción concreta por verso\n• Causalidad: Relaciones causa-efecto explícitas\n• Temporalidad: Secuencia clara (primero, después, al final)\n\nPALABRAS A EVITAR: destella, penumbra, resplandor, emanar, susurrar, vislumbrar\nPREFERIR: brilla, sombra, luz, salir, hablar bajito, ver"
+        },
+        "append": "\nFORMATO ESTRICTO DEL JSON:\nCada página DEBE tener 4 versos de 8-10 sílabas.\nNinguna página puede quedar vacía.\nEl glosario debe tener al menos 5 entradas.\nLos cambios_clave deben listar al menos 3 mejoras específicas."
+      }
+    }
+  },
+  "cuentacuentos": {
+    "anti_repetition": {
+      "file": "config/prompt_variants/cuentacuentos_anti_repetition.json",
+      "created_at": "2025-08-22T01:00:25.647209",
+      "modifications": {
+        "append": "\nREGLAS ANTI-REPETICIÓN:\n• NO uses la misma palabra más de 3 veces en todo el cuento\n• Usa SINÓNIMOS variados (brilla → resplandece, ilumina, destella)\n• Evita repetir el leitmotiv más de 3 veces total\n• Cada página debe tener vocabulario único\n• Penalización: -1 punto QA por cada repetición excesiva\n\nVOCABULARIO VARIADO SUGERIDO:\n- Para \"luz\": brillo, destello, fulgor, resplandor, claridad\n- Para \"magia\": encanto, hechizo, sortilegio, milagro\n- Para \"baila\": danza, gira, se mueve, flota\n- Para \"brilla\": ilumina, destella, resplandece, reluce"
+      }
+    },
+    "structured_metrics": {
+      "file": "config/prompt_variants/cuentacuentos_structured_metrics.json",
+      "created_at": "2025-08-22T01:00:25.647621",
+      "modifications": {
+        "prepend": "ESTRUCTURA MÉTRICA OBLIGATORIA:\nCada página = 4 versos de 8-10 sílabas\nEsquema de rima: ABAB o ABCB\nNO forzar rimas idénticas (amor/amor)\nRitmo constante: acentos en sílabas 3, 6, 9",
+        "replace": {
+          "ritmo envolvente": "ritmo CONSISTENTE de 8-10 sílabas por verso",
+          "musicalidad": "métrica regular sin forzar rimas"
+        }
+      }
+    },
+    "with_verse_examples": {
+      "file": "config/prompt_variants/cuentacuentos_with_verse_examples.json",
+      "created_at": "2025-08-22T01:00:25.648071",
+      "modifications": {
+        "append": "\nEJEMPLOS DE VERSOS BIEN CONSTRUIDOS:\n✅ \"El unicornio blanco camina despacio\" (11 sílabas, imagen clara)\n✅ \"Sus ojos como estrellas en la noche\" (11 sílabas, metáfora simple)\n✅ \"Emilia extiende su mano pequeñita\" (11 sílabas, acción concreta)\n✅ \"Y juntos forman luz donde hay sombras\" (10 sílabas, transformación)\n\nEVITAR:\n❌ \"Brilla brilla luz de amistad brilla\" (repetitivo)\n❌ \"El unicornio mágico es mágico\" (redundante)\n❌ \"Destella resplandece ilumina brilla\" (exceso de sinónimos)"
+      }
+    },
+    "narrative_flow": {
+      "file": "config/prompt_variants/cuentacuentos_narrative_flow.json",
+      "created_at": "2025-08-22T01:00:25.648414",
+      "modifications": {
+        "replace": {
+          "emoción in crescendo": "progresión narrativa clara: inicio→desarrollo→clímax→resolución",
+          "leitmotiv": "estribillo (usar máximo 3 veces, en páginas 1, 5 y 10)"
+        },
+        "append": "\nFLUIDEZ NARRATIVA:\n• Página 1-3: Presentación (tono suave)\n• Página 4-6: Desarrollo (aumenta tensión)\n• Página 7-8: Clímax (máxima emoción)\n• Página 9-10: Resolución (calma y cierre)\n\nCONECTORES ENTRE PÁGINAS:\n- Usar \"Entonces...\", \"De pronto...\", \"Mientras tanto...\"\n- Cada página debe fluir naturalmente a la siguiente\n- No cortes abruptos en la narrativa"
+      }
+    }
+  }
+}

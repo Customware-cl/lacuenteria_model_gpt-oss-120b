@@ -1,0 +1,160 @@
+{
+  "version": "1.0.0",
+  "description": "Configuración optimizada individual por agente basada en análisis de QA scores",
+  "created": "2025-08-22",
+  "baseline_qa_scores": {
+    "editor_claridad": 1.0,
+    "ritmo_rima": 2.2,
+    "sensibilidad": 2.5,
+    "cuentacuentos": 3.2,
+    "continuidad": 3.5,
+    "direccion_arte": 3.83,
+    "diseno_escena": 4.17,
+    "loader": 4.2,
+    "director": 4.33,
+    "psicoeducador": 4.33,
+    "portadista": 4.33
+  },
+  
+  "agent_configs": {
+    "director": {
+      "priority": "low",
+      "qa_status": "good",
+      "temperature": 0.85,
+      "max_tokens": 4000,
+      "_comment": "Mantener - funciona bien con QA 4.33"
+    },
+    
+    "psicoeducador": {
+      "priority": "low",
+      "qa_status": "good",
+      "temperature": 0.55,
+      "max_tokens": 4000,
+      "_comment": "Mantener - funciona bien con QA 4.33"
+    },
+    
+    "cuentacuentos": {
+      "priority": "high",
+      "qa_status": "poor",
+      "temperature": 0.75,
+      "max_tokens": 6500,
+      "top_p": 0.80,
+      "repetition_penalty": 1.15,
+      "frequency_penalty": 0.35,
+      "presence_penalty": 0.2,
+      "_comment": "Optimizado - reducir repeticiones (brilla 5x, luz 8x)"
+    },
+    
+    "editor_claridad": {
+      "priority": "critical",
+      "qa_status": "failed",
+      "temperature": 0.50,
+      "max_tokens": 6000,
+      "top_p": 0.60,
+      "repetition_penalty": 1.05,
+      "response_format": "json",
+      "_comment": "Crítico - páginas vacías, necesita ser más conservador"
+    },
+    
+    "ritmo_rima": {
+      "priority": "high",
+      "qa_status": "poor",
+      "temperature": 0.55,
+      "max_tokens": 5500,
+      "top_p": 0.65,
+      "frequency_penalty": 0.3,
+      "presence_penalty": 0.2,
+      "repetition_penalty": 1.10,
+      "_comment": "Optimizado - evitar rimas forzadas e idénticas"
+    },
+    
+    "continuidad": {
+      "priority": "medium",
+      "qa_status": "acceptable",
+      "temperature": 0.35,
+      "max_tokens": 5000,
+      "top_p": 0.45,
+      "seed": 42,
+      "_comment": "Mejorar coherencia narrativa con temperatura más baja"
+    },
+    
+    "diseno_escena": {
+      "priority": "low",
+      "qa_status": "good",
+      "temperature": 0.80,
+      "max_tokens": 4500,
+      "_comment": "Mantener - funciona bien con QA 4.17"
+    },
+    
+    "direccion_arte": {
+      "priority": "medium",
+      "qa_status": "acceptable",
+      "temperature": 0.65,
+      "max_tokens": 5000,
+      "top_p": 0.70,
+      "repetition_penalty": 1.05,
+      "_comment": "Ajuste menor - evitar paletas muy oscuras"
+    },
+    
+    "sensibilidad": {
+      "priority": "high",
+      "qa_status": "poor",
+      "temperature": 0.40,
+      "max_tokens": 4500,
+      "top_p": 0.50,
+      "seed": 42,
+      "_comment": "Optimizado - análisis más detallado y consistente"
+    },
+    
+    "portadista": {
+      "priority": "low",
+      "qa_status": "good",
+      "temperature": 0.85,
+      "max_tokens": 4000,
+      "_comment": "Mantener - funciona bien con QA 4.33"
+    },
+    
+    "loader": {
+      "priority": "low",
+      "qa_status": "good",
+      "temperature": 0.90,
+      "max_tokens": 4000,
+      "_comment": "Mantener - funciona bien con QA 4.2"
+    },
+    
+    "validador": {
+      "priority": "low",
+      "qa_status": "technical",
+      "temperature": 0.30,
+      "max_tokens": 10000,
+      "response_format": "json",
+      "stop": [],
+      "_comment": "Técnico - aumentar tokens para JSON grande"
+    },
+    
+    "verificador_qa": {
+      "priority": "low",
+      "qa_status": "evaluator",
+      "temperature": 0.30,
+      "max_tokens": 4000,
+      "seed": 42,
+      "_comment": "Evaluador - consistencia en evaluaciones"
+    }
+  },
+  
+  "optimization_goals": {
+    "target_qa_average": 4.1,
+    "max_retries_per_agent": 1,
+    "max_total_time_seconds": 420,
+    "zero_empty_outputs": true,
+    "zero_agents_below_3_5": true
+  },
+  
+  "fallback_config": {
+    "temperature": 0.60,
+    "max_tokens": 5000,
+    "top_p": 0.70,
+    "repetition_penalty": 1.08,
+    "_comment": "Configuración segura si falla la específica"
+  }
+}

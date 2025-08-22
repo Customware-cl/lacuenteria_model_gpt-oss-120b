@@ -310,26 +310,12 @@ class StoryOrchestrator:
     
     def _get_agent_output_file(self, agent_name: str) -> str:
         """Obtiene el nombre del archivo de salida de un agente"""
-        agent_index = {
-            "director": "01",
-            "psicoeducador": "02",
-            "cuentacuentos": "03",
-            "editor_claridad": "04",
-            "ritmo_rima": "05",
-            "continuidad": "06",
-            "diseno_escena": "07",
-            "direccion_arte": "08",
-            "sensibilidad": "09",
-            "portadista": "10",
-            "loader": "11",
-            "validador": "12"
-        }
-        index = agent_index.get(agent_name, "99")
-        return f"{index}_{agent_name}.json"
+        # Usar solo el nombre del agente sin numeración para evitar problemas de dependencias
+        return f"{agent_name}.json"
     
     def _get_final_result(self) -> Dict[str, Any]:
         """Obtiene el resultado final del validador"""
-        validador_path = get_artifact_path(self.story_id, "12_validador.json")
+        validador_path = get_artifact_path(self.story_id, "validador.json")
         
         if validador_path.exists():
             with open(validador_path, 'r', encoding='utf-8') as f:

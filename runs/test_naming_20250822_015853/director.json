@@ -1,0 +1,100 @@
+{
+  "leitmotiv": "¡Hola, hola, unicornio!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Emilia descubre el prado brillante y desea hacer un nuevo amigo.",
+      "conflicto": "Se siente sola y busca compañía.",
+      "emocion": "Curiosidad",
+      "imagen_nuclear": "Emilia de pie bajo un arcoíris, mirando el cielo con ojos expectantes."
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Emilia escucha un zumbido suave y ve al unicornio entre las flores.",
+      "conflicto": "El unicornio aparece tímido y no se acerca.",
+      "emocion": "Sorpresa",
+      "imagen_nuclear": "Un unicornio con crin brillante emergiendo entre margaritas."
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Emilia intenta hablar, pero el unicornio solo inclina su cabeza.",
+      "conflicto": "Parece que las palabras no funcionan.",
+      "emocion": "Frustración ligera",
+      "imagen_nuclear": "Emilia con la mano en la boca, el unicornio mirándola con grandes ojos."
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Emilia recuerda la canción que su abuela le enseñó y la tararea.",
+      "conflicto": "No hay palabras, solo una melodía.",
+      "emocion": "Esperanza",
+      "imagen_nuclear": "Emilia cantando, notas musicales flotando alrededor."
+    },
+    {
+      "pagina": 5,
+      "objetivo": "El unicornio responde con un relincho melódico que pinta colores en el aire.",
+      "conflicto": "Entenderse a través de la música.",
+      "emocion": "Alegría",
+      "imagen_nuclear": "Destellos de luz multicolor rodean al unicornio mientras vibra."
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Juntos crean un ritmo simple con palmas y pisadas.",
+      "conflicto": "Alinear sus pasos al compás.",
+      "emocion": "Diversión",
+      "imagen_nuclear": "Emilia y el unicornio golpeando sus pies al ritmo, creando ondas sonoras visibles."
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Cantan el leitmotiv \"¡Hola, hola, unicornio!\" en coro.",
+      "conflicto": "Mantener la melodía en armonía.",
+      "emocion": "Unión",
+      "imagen_nuclear": "Ambos con bocas abiertas cantando, notas brillantes formando un lazo entre ellos."
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Nubes oscuras aparecen y el viento amenaza separarlos.",
+      "conflicto": "Miedo a perder la conexión.",
+      "emocion": "Tensión",
+      "imagen_nuclear": "Nubes grises acercándose rápidamente, el viento agitando las flores."
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Usan su canción para calmar el viento; la melodía envuelve y disipa las nubes.",
+      "conflicto": "Superar la tormenta con comunicación no verbal.",
+      "emocion": "Triunfo",
+      "imagen_nuclear": "Una cuerda luminosa de música envuelve las nubes, que se desvanecen dejando el sol."
+    },
+    {
+      "pagina": 10,
+      "objetivo": "El sol regresa y Emilia comprende que pueden hablar sin palabras.",
+      "resolucion": "Emilia despide al unicornio, quien le deja una pequeña estrella brillante como recuerdo.",
+      "emocion": "Calidez y esperanza",
+      "imagen_nuclear": "Emilia sostiene una estrella luminosa mientras el unicornio se aleja entre rayos de sol."
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "En lugar de la tormenta, Emilia y el unicornio entran en un laberinto de espejos que distorsiona sus reflejos.",
+      "resolucion_alternativa": "Usan su canción para sincronizar sus pasos y encuentran la salida, descubriendo un jardín secreto lleno de flores que cantan."
+    },
+    {
+      "climax_alternativo": "Un viento travieso roba el cuerno del unicornio; sin él, el unicornio se siente incompleto.",
+      "resolucion_alternativa": "Emilia y el unicornio se comunican con gestos y melodías silenciosas, recuperan el cuerno y su vínculo se fortalece."
+    }
+  ],
+  "qa": {
+    "promedio": 4.2
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 605,
+    "completion_tokens": 2121,
+    "total_tokens": 2726
+  },
+  "_metadata_params": {
+    "temperature": 0.85,
+    "top_p": null,
+    "repetition_penalty": null,
+    "attempt": 3
+  },
+  "_qa_passed": true
+}

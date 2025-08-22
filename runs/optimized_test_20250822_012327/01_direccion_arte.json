@@ -1,0 +1,157 @@
+{
+  "estilo_global": "Ilustración digital vibrante con trazos suaves y texturas tipo acuarela",
+  "color_script": {
+    "1": {
+      "paleta": [
+        "#FFEBB7",
+        "#A8D0DB",
+        "#F4C2C2"
+      ],
+      "momento": "Amanecer",
+      "atmosfera": "Calma y esperanza"
+    },
+    "2": {
+      "paleta": [
+        "#FFD580",
+        "#87CEFA",
+        "#F5A9A9"
+      ],
+      "momento": "Mañana temprana",
+      "atmosfera": "Optimismo ligero"
+    },
+    "3": {
+      "paleta": [
+        "#FFC300",
+        "#6CA0DC",
+        "#E58E8E"
+      ],
+      "momento": "Media mañana",
+      "atmosfera": "Curiosidad y movimiento"
+    },
+    "4": {
+      "paleta": [
+        "#FFB84D",
+        "#5A9BD5",
+        "#D96C6C"
+      ],
+      "momento": "Almuerzo",
+      "atmosfera": "Calidez y energía"
+    },
+    "5": {
+      "paleta": [
+        "#FF9933",
+        "#4A86C5",
+        "#C04A4A"
+      ],
+      "momento": "Tarde",
+      "atmosfera": "Tensión creciente"
+    },
+    "6": {
+      "paleta": [
+        "#CC6600",
+        "#386FA4",
+        "#A23E3E"
+      ],
+      "momento": "Atardecer",
+      "atmosfera": "Conflicto interno"
+    },
+    "7": {
+      "paleta": [
+        "#994C00",
+        "#2E5A8A",
+        "#822828"
+      ],
+      "momento": "Crepúsculo",
+      "atmosfera": "Desesperación y sombra"
+    },
+    "8": {
+      "paleta": [
+        "#663300",
+        "#1F4475",
+        "#5D1F1F"
+      ],
+      "momento": "Noche profunda",
+      "atmosfera": "Clímax oscuro"
+    },
+    "9": {
+      "paleta": [
+        "#336699",
+        "#99CCFF",
+        "#FFCCCC"
+      ],
+      "momento": "Amanecer post‑clímax",
+      "atmosfera": "Renacimiento y alivio"
+    },
+    "10": {
+      "paleta": [
+        "#99CCFF",
+        "#FFE5B4",
+        "#C2E0FF"
+      ],
+      "momento": "Mañana clara",
+      "atmosfera": "Resolución y paz"
+    }
+  },
+  "transiciones": [
+    {
+      "de_pagina": 1,
+      "a_pagina": 2,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 2,
+      "a_pagina": 3,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 3,
+      "a_pagina": 4,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 4,
+      "a_pagina": 5,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 5,
+      "a_pagina": 6,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 6,
+      "a_pagina": 7,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 7,
+      "a_pagina": 8,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 8,
+      "a_pagina": 9,
+      "tipo": "corte brusco"
+    },
+    {
+      "de_pagina": 9,
+      "a_pagina": 10,
+      "tipo": "gradual"
+    }
+  ],
+  "qa": {
+    "promedio": 4.2
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 391,
+    "completion_tokens": 1159,
+    "total_tokens": 1550
+  },
+  "_metadata_params": {
+    "temperature": 0.65,
+    "top_p": 0.7,
+    "repetition_penalty": 1.05,
+    "attempt": 3
+  },
+  "_qa_passed": true
+}

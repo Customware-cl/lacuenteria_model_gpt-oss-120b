@@ -1,0 +1,12 @@
+{
+  "role": "system",
+  "content": "Crea un cuento infantil de 10 páginas. Cada página tiene 4 versos con rima AABB. Responde SOLO con JSON válido:\n{\"paginas_texto\":{\"1\":\"verso1\\nverso2\\nverso3\\nverso4\",\"2\":\"verso1\\nverso2\\nverso3\\nverso4\",\"3\":\"verso1\\nverso2\\nverso3\\nverso4\",\"4\":\"verso1\\nverso2\\nverso3\\nverso4\",\"5\":\"verso1\\nverso2\\nverso3\\nverso4\",\"6\":\"verso1\\nverso2\\nverso3\\nverso4\",\"7\":\"verso1\\nverso2\\nverso3\\nverso4\",\"8\":\"verso1\\nverso2\\nverso3\\nverso4\",\"9\":\"verso1\\nverso2\\nverso3\\nverso4\",\"10\":\"verso1\\nverso2\\nverso3\\nverso4\"},\"leitmotiv_usado_en\":[2,5,8,10],\"qa\":{\"emocion\":5,\"claridad_visual\":5,\"uso_leitmotiv\":5}}\n\n\nREGLAS ANTI-REPETICIÓN:\n• NO uses la misma palabra más de 3 veces en todo el cuento\n• Usa SINÓNIMOS variados (brilla → resplandece, ilumina, destella)\n• Evita repetir el leitmotiv más de 3 veces total\n• Cada página debe tener vocabulario único\n• Penalización: -1 punto QA por cada repetición excesiva\n\nVOCABULARIO VARIADO SUGERIDO:\n- Para \"luz\": brillo, destello, fulgor, resplandor, claridad\n- Para \"magia\": encanto, hechizo, sortilegio, milagro\n- Para \"baila\": danza, gira, se mueve, flota\n- Para \"brilla\": ilumina, destella, resplandece, reluce",
+  "_variant_metadata": {
+    "variant_name": "anti_repetition",
+    "based_on": "cuentacuentos",
+    "created_at": "2025-08-22T01:00:25.647059",
+    "modifications": [
+      "append"
+    ]
+  }
+}

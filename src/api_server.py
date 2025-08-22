@@ -162,7 +162,7 @@ def create_story():
                 
                 if manifest.get("estado") == "completo":
                     # Devolver resultado existente
-                    validador_path = get_artifact_path(story_id, "12_validador.json")
+                    validador_path = get_artifact_path(story_id, "validador.json")
                     if validador_path.exists():
                         with open(validador_path, 'r', encoding='utf-8') as f:
                             result = json.load(f)
@@ -281,7 +281,7 @@ def get_story_result(story_id):
                 }), 202
         
         # Obtener resultado del validador
-        validador_path = get_artifact_path(story_id, "12_validador.json")
+        validador_path = get_artifact_path(story_id, "validador.json")
         if not validador_path.exists():
             return jsonify({
                 "status": "error",
@@ -395,7 +395,7 @@ def evaluate_story(story_id):
             }), 404
         
         # Verificar que existe el archivo validador
-        validador_path = get_artifact_path(story_id, "12_validador.json")
+        validador_path = get_artifact_path(story_id, "validador.json")
         if not validador_path.exists():
             return jsonify({
                 "status": "error",

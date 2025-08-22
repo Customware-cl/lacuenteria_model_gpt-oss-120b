@@ -1,0 +1,97 @@
+{
+  "timestamp": "20250822_005931",
+  "total_tests": 7,
+  "successful": 4,
+  "results": [
+    {
+      "config_name": "original_baseline",
+      "variant": "original",
+      "execution_time": 55.17273139953613,
+      "qa_score": 5.0,
+      "is_complete": true,
+      "empty_pages": [],
+      "has_glosario": true,
+      "glosario_size": 20,
+      "params_summary": {
+        "temp": 0.6,
+        "top_p": null,
+        "max_tokens": 4000
+      }
+    },
+    {
+      "config_name": "with_examples_conservative",
+      "variant": "with_examples",
+      "execution_time": 63.33685755729675,
+      "qa_score": 5.0,
+      "is_complete": true,
+      "empty_pages": [],
+      "has_glosario": true,
+      "glosario_size": 19,
+      "params_summary": {
+        "temp": 0.4,
+        "top_p": 0.5,
+        "max_tokens": 6000
+      }
+    },
+    {
+      "config_name": "with_examples_optimized_v1",
+      "variant": "with_examples",
+      "execution_time": 64.68860983848572,
+      "qa_score": 5.0,
+      "is_complete": true,
+      "empty_pages": [],
+      "has_glosario": true,
+      "glosario_size": 24,
+      "params_summary": {
+        "temp": 0.45,
+        "top_p": 0.6,
+        "max_tokens": 6000
+      }
+    },
+    {
+      "config_name": "structured_optimized_v1",
+      "variant": "structured_process",
+      "error": "Fallo después de 3 intentos. Último error: Error en intento 3: No se pudo parsear como JSON: {\n  \"paginas_texto_claro\": {\n    \"1\": \"Emilia está bajo un árbol mirando el cielo azul\\nSeñala con sus dedi"
+    },
+    {
+      "config_name": "detailed_balanced",
+      "variant": "detailed_criteria",
+      "error": "Fallo después de 3 intentos. Último error: Error en intento 3: No se pudo parsear como JSON: {\n  \"paginas_texto_claro\": {\n    \"1\": \"Emilia está bajo árbol.\\nVe flores rojas que brillan.\\nEl jardín tie"
+    },
+    {
+      "config_name": "anti_truncation_adjusted",
+      "variant": "anti_truncation",
+      "execution_time": 62.53287100791931,
+      "qa_score": 5.0,
+      "is_complete": true,
+      "empty_pages": [],
+      "has_glosario": true,
+      "glosario_size": 31,
+      "params_summary": {
+        "temp": 0.35,
+        "top_p": 0.4,
+        "max_tokens": 7500
+      }
+    },
+    {
+      "config_name": "optimal_candidate",
+      "variant": "with_examples",
+      "error": "Fallo después de 3 intentos. Último error: Error en intento 3: No se pudo parsear como JSON: {\n{\"\":\"\"}  \n  :  \t\n\t  \n  \n\t \t\n\t\t  \n\n\t\t  \n\t\t\t    \n\t\t\t\t    \n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t"
+    }
+  ],
+  "best_config": {
+    "config_name": "original_baseline",
+    "variant": "original",
+    "execution_time": 55.17273139953613,
+    "qa_score": 5.0,
+    "is_complete": true,
+    "empty_pages": [],
+    "has_glosario": true,
+    "glosario_size": 20,
+    "params_summary": {
+      "temp": 0.6,
+      "top_p": null,
+      "max_tokens": 4000
+    }
+  }
+}

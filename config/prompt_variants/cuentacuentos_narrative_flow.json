@@ -1,0 +1,13 @@
+{
+  "role": "system",
+  "content": "Crea un cuento infantil de 10 páginas. Cada página tiene 4 versos con rima AABB. Responde SOLO con JSON válido:\n{\"paginas_texto\":{\"1\":\"verso1\\nverso2\\nverso3\\nverso4\",\"2\":\"verso1\\nverso2\\nverso3\\nverso4\",\"3\":\"verso1\\nverso2\\nverso3\\nverso4\",\"4\":\"verso1\\nverso2\\nverso3\\nverso4\",\"5\":\"verso1\\nverso2\\nverso3\\nverso4\",\"6\":\"verso1\\nverso2\\nverso3\\nverso4\",\"7\":\"verso1\\nverso2\\nverso3\\nverso4\",\"8\":\"verso1\\nverso2\\nverso3\\nverso4\",\"9\":\"verso1\\nverso2\\nverso3\\nverso4\",\"10\":\"verso1\\nverso2\\nverso3\\nverso4\"},\"estribillo (usar máximo 3 veces, en páginas 1, 5 y 10)_usado_en\":[2,5,8,10],\"qa\":{\"emocion\":5,\"claridad_visual\":5,\"uso_estribillo (usar máximo 3 veces, en páginas 1, 5 y 10)\":5}}\n\n\nFLUIDEZ NARRATIVA:\n• Página 1-3: Presentación (tono suave)\n• Página 4-6: Desarrollo (aumenta tensión)\n• Página 7-8: Clímax (máxima emoción)\n• Página 9-10: Resolución (calma y cierre)\n\nCONECTORES ENTRE PÁGINAS:\n- Usar \"Entonces...\", \"De pronto...\", \"Mientras tanto...\"\n- Cada página debe fluir naturalmente a la siguiente\n- No cortes abruptos en la narrativa",
+  "_variant_metadata": {
+    "variant_name": "narrative_flow",
+    "based_on": "cuentacuentos",
+    "created_at": "2025-08-22T01:00:25.648308",
+    "modifications": [
+      "replace",
+      "append"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "paginas_texto": {
+    "1": "Emilia brinca sobre el fresco pasto encantado,\nObserva la sombra que abraza el rincón olvidado.\nUn susurro leve pide paso al corazón valiente,\nUn canto callado vibra dentro del ambiente.",
+    "2": "Emilia alza su mano y nace una chispa azul de alba,\n¡¡Luz, luz, sin decir nada!! destella breve cual aurora clara alba.\nLa chispa danza tímida y busca volver a brillar,\nPero pronto se esfuma como sueño que quiere olvidar y brillar.",
+    "3": "Del follaje surge un ser puro como nube de esperanza,\nEl unicornio avanza con mirada plena de esperanza.\nSus pasos dejan huellas suaves sobre la hierba fresca aire,\nSin pronunciar voz alguna comparte magia pura en el aire.",
+    "4": "Niebla ligera envuelve la escena creando juego sutil,\nEmilia señala y él replica con gesto gentil.\nLos movimientos trazan puentes invisibles bajo la niebla tenue,\nY ambos sienten cómo crecen secretos en esa caverna tenue.",
+    "5": "Circulan círculos dorados emergiendo del suelo vibrante,\n¡¡Luz, luz, sin decir nada!! impulsa ondas cálidas radiante.\nCada halo palpita fuerte contra la sombra temblorosa,\nY renace la fe cuando la claridad es generosa.",
+    "6": "Luciernagas revolotean buscando refugio en la penumbra dura,\nAlgunos destellos huyen mientras otros luchan por ventura.\nEmilia observa preocupado el pequeño ejército errante,\nDeseando guiar su vuelo hacia el centro fulgurante.",
+    "7": "Surge entonces una ola azulada que rompe toda oscuridad,\nCon firme decisión empuja sombras hasta perder gravedad.\nEl mar lumínico envuelve tronco viejo y rama cansada,\nHasta que todo lo sombrío se rinde ante fuerza entregada.",
+    "8": "Todo el bosque resplandece en tonos vivos y caminos claros,\n¡¡Luz, luz, sin decir nada!! murmura viento mientras titila raro.\nSin embargo una franja vacilante empieza a menguar lento,\nComo si necesitase otro gesto para mantenerse atento.",
+    "9": "Manos extendidas unen crines en chispa constante perpetua,\nAmbos comparten señal que mantiene viva la energía perpetua.\nAsí confían en el vínculo que jamás dejará de arder,\nY el bosque entero celebra ese pacto para siempre proteger.",
+    "10": "Camina bajo estrellas llevando estrella guardada en su bolsillo fiel,\n¡¡Luz, luz, sin decir nada!! acompaña su paso con brillo dulce miel.\nRegresa a casa feliz sabiendo que su gesto quedó inmortalizado,\nY cada noche el bosque sonríe con luz por siempre renovado."
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    8,
+    10
+  ],
+  "qa": {
+    "promedio": 1.0
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 1683,
+    "completion_tokens": 2344,
+    "total_tokens": 4027
+  },
+  "_metadata_params": {
+    "temperature": 0.75,
+    "top_p": 0.8,
+    "repetition_penalty": 1.15,
+    "attempt": 3
+  },
+  "_qa_passed": false
+}

@@ -1,0 +1,12 @@
+{
+  "role": "system",
+  "content": "Crea un cuento infantil de 10 páginas. Cada página tiene 4 versos con rima AABB. Responde SOLO con JSON válido:\n{\"paginas_texto\":{\"1\":\"verso1\\nverso2\\nverso3\\nverso4\",\"2\":\"verso1\\nverso2\\nverso3\\nverso4\",\"3\":\"verso1\\nverso2\\nverso3\\nverso4\",\"4\":\"verso1\\nverso2\\nverso3\\nverso4\",\"5\":\"verso1\\nverso2\\nverso3\\nverso4\",\"6\":\"verso1\\nverso2\\nverso3\\nverso4\",\"7\":\"verso1\\nverso2\\nverso3\\nverso4\",\"8\":\"verso1\\nverso2\\nverso3\\nverso4\",\"9\":\"verso1\\nverso2\\nverso3\\nverso4\",\"10\":\"verso1\\nverso2\\nverso3\\nverso4\"},\"leitmotiv_usado_en\":[2,5,8,10],\"qa\":{\"emocion\":5,\"claridad_visual\":5,\"uso_leitmotiv\":5}}\n\n\nEJEMPLOS DE VERSOS BIEN CONSTRUIDOS:\n✅ \"El unicornio blanco camina despacio\" (11 sílabas, imagen clara)\n✅ \"Sus ojos como estrellas en la noche\" (11 sílabas, metáfora simple)\n✅ \"Emilia extiende su mano pequeñita\" (11 sílabas, acción concreta)\n✅ \"Y juntos forman luz donde hay sombras\" (10 sílabas, transformación)\n\nEVITAR:\n❌ \"Brilla brilla luz de amistad brilla\" (repetitivo)\n❌ \"El unicornio mágico es mágico\" (redundante)\n❌ \"Destella resplandece ilumina brilla\" (exceso de sinónimos)",
+  "_variant_metadata": {
+    "variant_name": "with_verse_examples",
+    "based_on": "cuentacuentos",
+    "created_at": "2025-08-22T01:00:25.647960",
+    "modifications": [
+      "append"
+    ]
+  }
+}

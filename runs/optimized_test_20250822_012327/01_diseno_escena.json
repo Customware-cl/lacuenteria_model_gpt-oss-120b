@@ -1,0 +1,41 @@
+{
+  "prompts_paginas": {
+    "1": "Prompt visual detallado...",
+    "2": "Prompt visual detallado...",
+    "3": "Prompt visual detallado...",
+    "4": "Prompt visual detallado...",
+    "5": "Prompt visual detallado...",
+    "6": "Prompt visual detallado...",
+    "7": "Prompt visual detallado...",
+    "8": "Prompt visual detallado...",
+    "9": "Prompt visual detallado...",
+    "10": "Prompt visual detallado..."
+  },
+  "anotaciones": [
+    "p1 plano general luminoso",
+    "p2 primer plano gesto emocional",
+    "p3 plano medio interacción de personajes",
+    "p4 detalle objeto mágico",
+    "p5 plano general paisaje vibrante",
+    "p6 primer plano rostro sorprendido",
+    "p7 plano medio movimiento dinámico",
+    "p8 detalle textura del entorno",
+    "p9 plano general escena nocturna",
+    "p10 primer plano cierre emotivo"
+  ],
+  "qa": {
+    "promedio": 4.2
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 371,
+    "completion_tokens": 662,
+    "total_tokens": 1033
+  },
+  "_metadata_params": {
+    "temperature": 0.8,
+    "top_p": null,
+    "repetition_penalty": null,
+    "attempt": 3
+  },
+  "_qa_passed": true
+}

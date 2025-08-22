@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": 1755826425.1396837,
+    "retry_count": 0,
+    "error": "Fallo después de 3 intentos. Último error: Error en intento 3: No se pudo parsear como JSON: {\n  \"paginas_texto_pulido\": {\n    \"1\": \"Al alba suena el tambor\\nLa niebla baila sobre la ola al pasar\\nLos niños juegan con gran vigor\\nY el día besa la arena al amar\",\n    \"2\": \"Llevamos pasos firmes por sendero\\nSigue nuestra voz como viajero\\nLuna dibuja luz en estela\\nLas sombras duermen tras candela\",\n    \"3\": \"Llegamos hallando tesoro\\nNubes cruzan alto bajo flor\\nSusurran vientos canción de amor\\nRegresamos guardando decoro\",\n    \"4\": \"\\\"Eco\\\" grita montaña mientras trueno vibra fuerte,\\...",
+    "execution_time": 110.55259728431702,
+    "status": "error"
+  },
+  {
+    "timestamp": 1755826538.76239,
+    "retry_count": 1,
+    "error": "Fallo después de 3 intentos. Último error: Error en intento 3: No se pudo parsear como JSON: {\"paginas_texto_pulido\":{\"1\":\"Brilla el sol sobre la ciudad\\nLos fuertes ecos de espuma llegan del mar\\nCanta el río bajo la libertad\\nLa noche susurra su canto al dulce amar.\",\"2\":\"Despierta el bosque bajo luz de sol\\nSe funde en crisol bajo luz de sol\\nLa bruma danza entre sombras y luz\\nSe envuelve en sutil luz.\",\"3\":\"Cae la lluvia suave sobre el río\\nLas nubes pintan gris sobre el cielo\\nSe desvanece el eco bajo aquel cielo\\nY mi alma vibra en eterno delirio.\",\"4\":\"Al alba subo firme la mont...",
+    "execution_time": 108.62208890914917,
+    "status": "error"
+  },
+  {
+    "timestamp": 1755826643.5878859,
+    "retry_count": 2,
+    "error": "Fallo después de 3 intentos. Último error: Error en intento 3: No se pudo parsear como JSON: {\n  \"paginas_texto_pulido\": {\n    \"1\": [\n      \"La aurora late mi corazón\",\n      \"El bosque guía nuestro destino\",\n      \"Canta el río su razón\",\n      \"Pasa firme rumbo al camino\"\n    ],\n    \"2\": [\n      \"Al alba se vuelve cielo ardiente\",\n      \"\\\"Incandescente\\\" brilla entre las cumbres\",\n      \"\\\"Temeroso\\\" susurra la noche oscura\",\n      \"\\\"Peligroso\\\" acecha bajo la niebla\"\n    ],\n    \"3\": [\n      \"\\\"Silencio\\\" cubre los valles profundos\",\n      \"\\\"Eco\\\" responde entre rocas viejas\",\n    ...",
+    "execution_time": 99.82476234436035,
+    "status": "error"
+  }
+]

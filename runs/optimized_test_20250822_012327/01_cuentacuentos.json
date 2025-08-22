@@ -1,0 +1,35 @@
+{
+  "paginas_texto": {
+    "1": "La niñita recorre el huerto buscando un nuevo destello\nSus pasos siguen sombras que guardan un suave destello\nAl filo del bosque yace una zona gris de profunda penumbra\nAllí la oscuridad invita a explorar la vieja penumbra",
+    "2": "Levanta su mano y siente latir una tenue chispa\n¡Luz, luz, sin decir nada!, murmura y nace otra chispa\nUn fulgor azul danza breve sobre su palma al viento\nEl destello desaparece rápido siguiendo el leve viento",
+    "3": "Entre rosas surge una figura envuelta en pura magia\nEs un caballo alado cuyo cuerno refleja eterna magia\nSin voz pronuncia sueños en la calma del silencio\nLos árboles escuchan atentos el profundo silencio",
+    "4": "Con dedos dibuja símbolos que cuentan mil seña\nÉl responde con crines suaves repitiendo la misma seña\nUna bruma ligera rodea sus cuerpos como velo de niebla\nGiran girasoles invisibles dentro del denso manto de niebla",
+    "5": "De sus palmas emergen círculos tibios cual pequeño lucero\n¡Luz, luz, sin decir nada!, vibra y crecen miles de luceros\ndestellos cálidos surgen y pintan todo con tonos dorados\nel suelo reluce feliz bajo mantos eternos de dorados",
+    "6": "Luciernagas revolotean creando un concierto lleno de aleteo\nPero algunas caen lejos cuando la sombra vuelve a su negro aleteo\nPequeñas luces buscan refugio frente al vasto vacío oscuro\nY temen perderse allí donde mora siempre el frio oscuro",
+    "7": "Unidos forman una corriente fuerte como gran explosión\nLa energía fluye potente rompiendo toda pesada explosión\nSobre el tronco sombrío avanza una luminosa poderosa marea\nQue arrasa la negrura antigua dejando atrás solo clara marea",
+    "8": "El bosque renace vibrante bajo cielos llenos de canto y susurro\n¡Luz, luz, sin decir nada!, eco queda mientras late otro susurro\nPero al horizonte la claridad tiembla en timido parpadeo\nLas estrellas observan quietas esperando firmeza del mismo parpadeo",
+    "9": "Mantienen sus manos enlazadas y sienten fuerte pulso latido\nCada gesto alimenta llama viva con ritmo seguro latido\nJuntos crean puente brillante que jamas dejara caer su brillo eterno\nConfian en ese vinculo sagrado que protege luz por siempre eterno",
+    "10": "Vuelve a su hogar cruzando sendas dulces bajo tierna sonrisa\n¡Luz, luz, sin decir nada!, guarda en su bolsillo una chispa y sigue con valiente sonrisa\nUna pequeña estrella guia sus pasos brillando como amiga fiel estrella\nY cada noche recuerda aquel pacto secreto que vive junto a ella estrella"
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    8,
+    10
+  ],
+  "qa": {
+    "promedio": 1.0
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 1683,
+    "completion_tokens": 3030,
+    "total_tokens": 4713
+  },
+  "_metadata_params": {
+    "temperature": 0.75,
+    "top_p": 0.8,
+    "repetition_penalty": 1.15,
+    "attempt": 3
+  },
+  "_qa_passed": false
+}

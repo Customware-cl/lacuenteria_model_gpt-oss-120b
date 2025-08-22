@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": 1755826199.6274412,
+    "retry_count": 0,
+    "error": "Fallo después de 3 intentos. Último error: Error en intento 3: No se pudo parsear como JSON: {\n{\"\":\"\"}...",
+    "execution_time": 39.61641478538513,
+    "status": "error"
+  },
+  {
+    "timestamp": 1755826251.0352643,
+    "retry_count": 1,
+    "error": "Fallo después de 3 intentos. Último error: Error en intento 3: No se pudo parsear como JSON: {\n{\"\":\"\"}...",
+    "execution_time": 46.4071888923645,
+    "status": "error"
+  },
+  {
+    "timestamp": 1755826314.5866272,
+    "retry_count": 2,
+    "error": "Fallo después de 3 intentos. Último error: Error en intento 3: No se pudo parsear como JSON: {\n{\"\":\"\"}...",
+    "execution_time": 58.55066394805908,
+    "status": "error"
+  }
+]

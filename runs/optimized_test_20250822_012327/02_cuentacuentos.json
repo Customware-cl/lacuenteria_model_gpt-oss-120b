@@ -1,0 +1,35 @@
+{
+  "paginas_texto": {
+    "1": "En el jardín brinca la tierna Emilia alegre\nObserva una penumbra que vibra tan leve y alegre\nLa sombra devora destellos cual viejo hechizo secreto\nY guarda silencio profundo bajo un manto nocturno secreto",
+    "2": "¡Luz, luz, sin decir nada!\n¡Luz, luz, sin decir nada!\nLevantó su mano y nació una chispa azul de tenue destello\nMas pronto se apagó dejando solo eco de aquel breve destello",
+    "3": "Entre rosales surge un unicornio blanco como sueño mágico\nSu crin arcoíris reluce suave bajo luna tono mágico\nEl animal mira atento pero su voz permanece en silencio\nGuardando secretos antiguos dentro del bosque callado silencio",
+    "4": "Con niebla sutil ambos trazan señal con delicado gesto\nSus manos hablan fuerte aunque el vapor envuelve todo en mismo gesto\nLos ojos buscan pistas mientras la bruma empieza a vagar\nY el corazón late firme pese al entorno que tiembla al vagar",
+    "5": "¡Luz, luz, sin decir nada!\n¡Luz, luz, sin decir nada!\nCírculos dorados emergen bailando sobre tierra para siempre brillar\nLuz creciente rodea a Emilia y unicornio hasta que todo vuelva a brillar",
+    "6": "Luciernagas revolotean cerca intentando seguir el ritmo al parpadear\nPero algunas caen lejos cuando la sombra las obliga a temer al parpadear\nPequeñas luces luchan contra la falta de guía en lo oscuro\ny mientras la noche susurra dudas entre sombras densas del oscuro",
+    "7": "Juntos forman corriente azul que avanza firme y valiente\nUna ola radiante rompe la negrura con fuerza noble y valiente\nLa energía fluye libre y alimenta cada rama para crecer\nAsí el árbol sombrío renace vibrante bajo la llama nueva para crecer",
+    "8": "¡Luz, luz, sin decir nada!\n¡Luz, luz, sin decir nada!\nEl bosque resplandece en tonos vivos mientras senderos claros empiezan a latir\nSin embargo la aurora titila tímida en el confín distante aun quiere latir",
+    "9": "Manos amigas cruzan señales creando vínculo puro de sincera unión\nEllas repiten silencioso juramento manteniendo viva llama en unión\nMantienen contacto constante pues saben que así durará eternamente\nen este pacto luminoso cuyo fulgor será siempre eternamente",
+    "10": "¡Luz, Lúz ,sin decir nada!\n¡Luz,luz,sin decir nada!\nsostiene su paso bajo estrellas guiándolo seguro caminar\ny guardará esa chispa brillante dentro del bolsillo para siempre caminar"
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    8,
+    10
+  ],
+  "qa": {
+    "promedio": 1.0
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 1683,
+    "completion_tokens": 3387,
+    "total_tokens": 5070
+  },
+  "_metadata_params": {
+    "temperature": 0.75,
+    "top_p": 0.8,
+    "repetition_penalty": 1.15,
+    "attempt": 3
+  },
+  "_qa_passed": false
+}

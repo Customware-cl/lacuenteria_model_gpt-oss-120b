@@ -1,0 +1,49 @@
+[
+  {
+    "config": "Test 1: Original + Baseline",
+    "variant": "original",
+    "execution_time": 53.25566220283508,
+    "qa_score": 4.5,
+    "is_complete": true,
+    "empty_pages": [],
+    "tokens_used": {
+      "prompt_tokens": 879,
+      "completion_tokens": 2800,
+      "total_tokens": 3679
+    },
+    "sample": "Emilia está bajo un árbol y sueña bajo el cielo azul\nSus dedos apuntan a flores que crecen en la tierra brillante\nEl jardín muestra colores que bailan felices\nY siente en su corazón un calor mágico"
+  },
+  {
+    "config": "Test 2: Anti-truncation + Ultra-conservative",
+    "variant": "anti_truncation",
+    "error": "Fallo después de 3 intentos. Último error: Error en intento 3: No se pudo parsear como JSON: {\n  \"paginas_texto_claro\": {\n    \"1\": \"Emilia está sentada bajo un árbol y mira el cielo azul.\\nSeñala con sus deditos flores rojas que salen del suelo.\\nEl jardín muestra muchos colores que parecen bailar.\\nSu corazón siente algo dulce, como una chispa feliz.\",\n    \"2\": \"En el bosque hay neblina leve que parece algodón.\\nDe pronto aparece un unicornio blanco con cuerno brillante.\\nUna lucecita rosada le acaricia la cara suavemente.\\nEmilia lo ve emocionada y su corazón late contento.\",\n    \"3\":..."
+  },
+  {
+    "config": "Test 3: With-examples + Conservative",
+    "variant": "with_examples",
+    "execution_time": 61.15800595283508,
+    "qa_score": 4.5,
+    "is_complete": true,
+    "empty_pages": [],
+    "tokens_used": {
+      "prompt_tokens": 1161,
+      "completion_tokens": 2143,
+      "total_tokens": 3304
+    },
+    "sample": "Emilia está bajo un árbol y mira el cielo azul\nSeñala con sus dedos flores que salen del suelo brillante\nEl jardín muestra muchos colores que bailan felices\nY siente en su corazón una cálida chispa má"
+  },
+  {
+    "config": "Test 4: Structured + Balanced",
+    "variant": "structured_process",
+    "execution_time": 57.146241903305054,
+    "qa_score": 4.5,
+    "is_complete": true,
+    "empty_pages": [],
+    "tokens_used": {
+      "prompt_tokens": 1055,
+      "completion_tokens": 2472,
+      "total_tokens": 3527
+    },
+    "sample": "Emilia sienta bajo un árbol mirando el cielo azul.\nCon sus deditos señala flores que salen de la tierra brillante.\nEl jardín muestra muchos colores que bailan felices.\nEn su corazón siente un pequeño "
+  }
+]

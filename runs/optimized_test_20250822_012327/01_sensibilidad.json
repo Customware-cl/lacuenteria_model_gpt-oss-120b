@@ -1,0 +1,20 @@
+{
+  "riesgos_detectados": [],
+  "correcciones_sugeridas": [],
+  "apto_para_ninos": true,
+  "qa": {
+    "promedio": 4.2
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 316,
+    "completion_tokens": 196,
+    "total_tokens": 512
+  },
+  "_metadata_params": {
+    "temperature": 0.4,
+    "top_p": 0.5,
+    "repetition_penalty": null,
+    "attempt": 3
+  },
+  "_qa_passed": true
+}

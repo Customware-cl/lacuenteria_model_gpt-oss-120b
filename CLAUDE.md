@@ -174,6 +174,6 @@ curl http://localhost:5000/health
 
 - El sistema es stateless entre agentes (cada uno lee archivos previos)
 - Los logs se guardan en `runs/{story_id}/logs/`
-- Cada agente genera un archivo numerado (01_director.json, 02_psicoeducador.json, etc.)
+- Cada agente genera un archivo sin numeración (director.json, psicoeducador.json, etc.)
 - El manifest.json mantiene el estado completo del procesamiento
 - Los webhooks son opcionales pero recomendados para UX en tiempo real

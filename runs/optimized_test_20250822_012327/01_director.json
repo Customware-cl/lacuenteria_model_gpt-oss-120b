@@ -1,0 +1,101 @@
+{
+  "leitmotiv": "¡Luz, luz, sin decir nada!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y su curiosidad en el jardín.",
+      "conflicto": "Una zona de sombra misteriosa al borde del bosque.",
+      "emocion": "Curiosidad",
+      "imagen_nuclear": "Emilia parada en el césped, mirando una mancha oscura que parece absorber la luz."
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Mostrar que Emilia intenta comunicarse con un gesto.",
+      "conflicto": "Una chispa de luz aparece y se apaga rápidamente.",
+      "emocion": "Sorpresa",
+      "imagen_nuclear": "Emilia levanta la mano y una pequeña chispa azul brota de sus dedos, luego se desvanece."
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Introducir al unicornio mágico.",
+      "conflicto": "El unicornio está oculto entre los arbustos y no habla.",
+      "emocion": "Asombro",
+      "imagen_nuclear": "Un unicornio blanco con crin arcoíris emerge de entre flores, su cuerno brilla suavemente."
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Establecer la conexión sin palabras mediante gestos.",
+      "conflicto": "Una ligera niebla cubre la zona, dificultando la vista.",
+      "emocion": "Intriga",
+      "imagen_nuclear": "Emilia y el unicornio hacen señas con las manos mientras la niebla gira a su alrededor."
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Demostrar que su comunicación crea luz.",
+      "conflicto": "Las luces que aparecen parpadean y casi se apagan.",
+      "emocion": "Esperanza",
+      "imagen_nuclear": "Círculos de luz dorada brotan del suelo alrededor de Emilia y el unicornio."
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Mostrar el efecto colectivo de la luz recién nacida.",
+      "conflicto": "Algunas luciérnagas se pierden en la sombra que queda.",
+      "emocion": "Preocupación",
+      "imagen_nuclear": "Luciérnagas vuelan alrededor de la luz, mientras unas pocas titilan fuera del círculo luminoso."
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Clímax: crear una gran ola de luz donde había oscuridad.",
+      "conflicto": "La sombra parece más grande y amenaza con envolver la luz.",
+      "emocion": "Determinación",
+      "imagen_nuclear": "Una ola luminosa azulada se expande desde Emilia y el unicornio, abrazando un árbol oscuro."
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Transformar el bosque entero con la luz.",
+      "conflicto": "La luz comienza a desvanecerse lentamente, como si necesitara ser reforzada.",
+      "emocion": "Tristeza ligera",
+      "imagen_nuclear": "El bosque iluminado muestra colores vivos y senderos claros, pero la luz titila en el horizonte."
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Asegurar que la luz perdure mediante la comunicación continua.",
+      "conflicto": "Necesitan mantener el gesto para que la luz no se apague.",
+      "emocion": "Confianza",
+      "imagen_nuclear": "Emilia y el unicornio unen sus manos (o crin) y una chispa constante brilla entre ellos."
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Concluir mostrando el mensaje de que la comunicación trasciende palabras.",
+      "resolucion": "Emilia regresa a casa con una estrella de luz en su bolsillo; el bosque sigue brillando cada noche gracias a su gesto compartido.",
+      "emocion": "Satisfacción y alegría",
+      "imagen_nuclear": "Emilia camina bajo un cielo estrellado, sosteniendo una pequeña luz brillante que ilumina su camino."
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "En lugar de una ola, Emilia y el unicornio cantan una melodía sencilla que hace brotar luces como notas flotantes.",
+      "resolucion_alternativa": "La canción queda grabada en el bosque, y cada noche los animales cantan para que la luz nunca se apague."
+    },
+    {
+      "climax_alternativo": "Emilia dibuja en el aire un gran sol con sus dedos, y el dibujo se vuelve luz real que llena el bosque.",
+      "resolucion_alternativa": "El sol dibujado se transforma en una lámpara mágica que Emilia lleva consigo, iluminando su casa y el bosque."
+    }
+  ],
+  "qa": {
+    "promedio": 4.2
+  },
+  "aviso": "Por favor, no introduzca elementos que no aparezcan en los versos posteriores.",
+  "_metadata_tokens": {
+    "prompt_tokens": 619,
+    "completion_tokens": 2375,
+    "total_tokens": 2994
+  },
+  "_metadata_params": {
+    "temperature": 0.85,
+    "top_p": null,
+    "repetition_penalty": null,
+    "attempt": 3
+  },
+  "_qa_passed": true
+}

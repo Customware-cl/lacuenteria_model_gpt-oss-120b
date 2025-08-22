@@ -342,24 +342,8 @@ class AgentRunner:
     
     def _get_output_filename(self, agent_name: str) -> str:
         """Genera el nombre del archivo de salida para un agente"""
-        agent_index = {
-            "director": "01",
-            "psicoeducador": "02",
-            "cuentacuentos": "03",
-            "editor_claridad": "04",
-            "ritmo_rima": "05",
-            "continuidad": "06",
-            "diseno_escena": "07",
-            "direccion_arte": "08",
-            "sensibilidad": "09",
-            "portadista": "10",
-            "loader": "11",
-            "validador": "12",
-            "critico": "13"
-        }
-        
-        index = agent_index.get(agent_name, "99")
-        return f"{index}_{agent_name}.json"
+        # Usar solo el nombre del agente sin numeración para evitar problemas de dependencias
+        return f"{agent_name}.json"
     
     def _save_output(self, filename: str, content: Dict[str, Any]):
         """Guarda la salida de un agente"""

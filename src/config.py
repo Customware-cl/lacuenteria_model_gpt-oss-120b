@@ -94,18 +94,18 @@ AGENT_TEMPERATURES = {
 # Mapeo de dependencias de agentes (qué archivos necesita cada uno)
 AGENT_DEPENDENCIES = {
     "director": ["brief.json"],
-    "psicoeducador": ["brief.json", "01_director.json"],
-    "cuentacuentos": ["01_director.json", "02_psicoeducador.json"],
-    "editor_claridad": ["03_cuentacuentos.json"],
-    "ritmo_rima": ["04_editor_claridad.json"],
-    "continuidad": ["05_ritmo_rima.json", "brief.json"],
-    "diseno_escena": ["05_ritmo_rima.json", "06_continuidad.json"],
-    "direccion_arte": ["07_diseno_escena.json", "06_continuidad.json"],
-    "sensibilidad": ["05_ritmo_rima.json", "07_diseno_escena.json", "08_direccion_arte.json"],
-    "portadista": ["05_ritmo_rima.json", "06_continuidad.json", "08_direccion_arte.json", "01_director.json"],
-    "loader": ["10_portadista.json", "brief.json", "01_director.json", "06_continuidad.json", "08_direccion_arte.json"],
+    "psicoeducador": ["brief.json", "director.json"],
+    "cuentacuentos": ["director.json", "psicoeducador.json"],
+    "editor_claridad": ["cuentacuentos.json"],
+    "ritmo_rima": ["editor_claridad.json"],
+    "continuidad": ["ritmo_rima.json", "brief.json"],
+    "diseno_escena": ["ritmo_rima.json", "continuidad.json"],
+    "direccion_arte": ["diseno_escena.json", "continuidad.json"],
+    "sensibilidad": ["ritmo_rima.json", "diseno_escena.json", "direccion_arte.json"],
+    "portadista": ["ritmo_rima.json", "continuidad.json", "direccion_arte.json", "director.json"],
+    "loader": ["portadista.json", "brief.json", "director.json", "continuidad.json", "direccion_arte.json"],
     # Optimizar dependencias del validador - solo los esenciales para ensamblar el JSON final
-    "validador": ["05_ritmo_rima.json", "08_direccion_arte.json", "09_sensibilidad.json", "10_portadista.json", "11_loader.json"]
+    "validador": ["ritmo_rima.json", "direccion_arte.json", "sensibilidad.json", "portadista.json", "loader.json"]
 }
 
 # Configuración de logging
