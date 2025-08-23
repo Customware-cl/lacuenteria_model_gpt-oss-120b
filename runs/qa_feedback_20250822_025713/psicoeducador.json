@@ -1,0 +1,129 @@
+{
+  "metas_generales": [
+    "Identificar y nombrar sus emociones usando palabras simples.",
+    "Expresar ideas o necesidades mediante gestos, sonidos o dibujos cuando las palabras no son suficientes.",
+    "Regular su estado interno con respiraciones profundas y pausas cuando siente frustración.",
+    "Pedir ayuda a un adulto o a un amigo cuando necesita apoyo para comunicarse.",
+    "Sustituir conductas de irritación (golpear, gritar) por acciones calmadas como apretar una pelota o cantar una nota."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Observar y describir el entorno usando los sentidos.",
+      "frase_modelo": "Veo sombras y me siento curioso.",
+      "recurso": "Etiquetado sensorial (ver, oír, tocar).",
+      "evitar": "Usar palabras negativas como “asustado” sin haberlo sentido."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Reconocer la sorpresa y expresarla con gestos.",
+      "frase_modelo": "¡Qué brillante eres!",
+      "recurso": "Imitar el destello con las manos y una sonrisa.",
+      "evitar": "Gritar o lanzar objetos."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Identificar una frustración leve y aplicar respiración calmada.",
+      "frase_modelo": "La luz se apaga, respiro profundo.",
+      "recurso": "Respiración 3‑2‑1 (inhala 3 seg, sostén 2, exhala 1).",
+      "evitar": "Tirar cosas o golpear el suelo."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Usar el canto o el tarareo como forma de comunicación sin palabras.",
+      "frase_modelo": "(canta una nota) \"La canción habla\".",
+      "recurso": "Tarareo sencillo y movimiento de manos al ritmo.",
+      "evitar": "Quedarse en silencio cuando se siente la necesidad de compartir."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Reconocer y compartir la alegría creciente.",
+      "frase_modelo": "¡Qué bonito brilla!",
+      "recurso": "Sonreír, aplaudir suavemente y decir palabras positivas.",
+      "evitar": "Comparar con algo negativo o minimizar la alegría."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Detectar la tensión y pedir ayuda de forma clara.",
+      "frase_modelo": "Necesito ayuda para seguir.",
+      "recurso": "Levantar la mano y decir \"ayuda\" con voz clara.",
+      "evitar": "Intentar forzar el paso sin solicitar apoyo."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Cooperar cantando y trabajando en equipo.",
+      "frase_modelo": "Cantemos juntos.",
+      "recurso": "Turnarse para cantar, mantener el ritmo y mirarse los ojos.",
+      "evitar": "Interrumpir o hablar encima del otro."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Expresar asombro de manera segura y entusiasta.",
+      "frase_modelo": "¡Wow, es increíble!",
+      "recurso": "Abrir los ojos, respirar profundo y usar una voz suave pero expresiva.",
+      "evitar": "Gritar o lanzar objetos por la sorpresa."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Celebrar la diversidad de expresiones de los demás.",
+      "frase_modelo": "Todos brillan.",
+      "recurso": "Aplaudir en círculo y decir palabras de reconocimiento.",
+      "evitar": "Exclamar que solo una forma de luz es la mejor."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Despedirse recordando la lección de comunicación sin palabras.",
+      "frase_modelo": "Hasta pronto, seguimos brillando.",
+      "recurso": "Abrazo simbólico, dibujar una estrella y repetir la frase de cierre.",
+      "evitar": "Despedidas tristes o que generen sensación de pérdida."
+    }
+  ],
+  "banderas": [
+    "Puede confundir frustración con enojo y reaccionar con gritos.",
+    "Tiende a buscar palabras exactas antes de usar gestos o sonidos.",
+    "Puede sentir miedo ante la oscuridad y buscar luz constante."
+  ],
+  "qa": {
+    "alineacion_pedagogica": 3.5,
+    "aplicabilidad": 3.0,
+    "sensibilidad": 4.0,
+    "promedio": 3.5
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 2061,
+    "completion_tokens": 2151,
+    "total_tokens": 4212
+  },
+  "_metadata_params": {
+    "temperature": 0.55,
+    "top_p": null,
+    "repetition_penalty": null,
+    "attempt": 1
+  },
+  "_qa_evaluation": {
+    "scores": {
+      "alineacion_pedagogica": 3.5,
+      "aplicabilidad": 3.0,
+      "sensibilidad": 4.0,
+      "promedio": 3.5
+    },
+    "promedio": 3.5,
+    "pasa_umbral": false,
+    "problemas": [
+      "Repetición de la raíz 'brill' en frases de páginas 2,5,9,10 (4 veces).",
+      "Desajuste entre micro_habilidad y frase modelo en página 2 (sorpresa vs elogio).",
+      "Frase modelo '¡Qué bonito brilla!' (página 5) es gramaticalmente extraña para niños de 5 años.",
+      "Instrucción de respiración 3‑2‑1 sin guía visual o auditiva para niños pequeños.",
+      "Uso de vocabulario potencialmente avanzado ('cooperar', 'tarareo') sin ejemplos concretos."
+    ],
+    "mejoras": [
+      "Variar expresiones reemplazando 'brilla' por sinónimos como 'reluce', 'destella' o 'sonríe'.",
+      "Modificar la frase de la página 2 a algo como '¡Qué sorpresa!' para reflejar la micro_habilidad.",
+      "Reformular la frase de la página 5 a '¡Qué bonito es!' o usar una descripción sencilla.",
+      "Añadir un temporizador visual (ej. cuenta regresiva con dibujos) para la respiración 3‑2‑1.",
+      "Proveer ejemplos concretos de gestos (ej. levantar la mano, aplaudir) y simplificar vocabulario."
+    ],
+    "justificacion": "Score 3.5/5: El contenido está bien estructurado y pedagógicamente alineado, pero presenta repeticiones, desajustes entre habilidades y frases, y vocabulario que puede resultar complejo para la edad objetivo. Con las correcciones sugeridas podría alcanzar un 4/5."
+  },
+  "_qa_passed": false
+}

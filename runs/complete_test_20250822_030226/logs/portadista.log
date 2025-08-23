@@ -1,0 +1,65 @@
+[
+  {
+    "timestamp": 1755832569.608276,
+    "retry_count": 0,
+    "qa_scores": {
+      "impacto_titulo": 3,
+      "sintesis": 3.5,
+      "gancho_visual": 3,
+      "promedio": 3.1666666667
+    },
+    "execution_time": 6.9982404708862305,
+    "config_used": {
+      "temperature": 0.85,
+      "max_tokens": 4000
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 5454,
+      "completion_tokens": 840,
+      "total_tokens": 6294
+    }
+  },
+  {
+    "timestamp": 1755832587.0773697,
+    "retry_count": 1,
+    "qa_scores": {
+      "impacto_titulo": 2.5,
+      "sintesis": 3.0,
+      "gancho_visual": 2.5,
+      "promedio": 2.7
+    },
+    "execution_time": 4.6005589962005615,
+    "config_used": {
+      "temperature": 0.85,
+      "max_tokens": 4000
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 5454,
+      "completion_tokens": 650,
+      "total_tokens": 6104
+    }
+  },
+  {
+    "timestamp": 1755832606.0230596,
+    "retry_count": 2,
+    "qa_scores": {
+      "impacto_titulo": 3,
+      "sintesis_emotiva": 4,
+      "gancho_visual": 3,
+      "promedio": 3.3
+    },
+    "execution_time": 4.749826431274414,
+    "config_used": {
+      "temperature": 0.85,
+      "max_tokens": 4000
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 5454,
+      "completion_tokens": 678,
+      "total_tokens": 6132
+    }
+  }
+]

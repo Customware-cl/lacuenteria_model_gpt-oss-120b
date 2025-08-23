@@ -1,0 +1,127 @@
+{
+  "leitmotiv": "¡Brilla, brilla, luz sin fin!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y su deseo de conectar con el mundo a su alrededor.",
+      "conflicto": "La habitación está sumida en penumbras y no hay palabras para expresar su curiosidad.",
+      "emocion": "Curiosidad",
+      "imagen_nuclear": "Emilia de pie junto a una ventana oscura, con la mano extendida hacia el vacío, mirando las sombras que bailan."
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Mostrar el inesperado encuentro con el unicornio mágico.",
+      "conflicto": "El unicornio aparece tímido, sin poder hablar.",
+      "emocion": "Asombro",
+      "imagen_nuclear": "Un unicornio de crines pastel emerge suavemente entre arbustos luminosos, su cuerno destella ligeramente."
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Demostrar la primera comunicación mediante gestos.",
+      "conflicto": "Los gestos iniciales no se entienden del todo.",
+      "emocion": "Frustración ligera",
+      "imagen_nuclear": "Emilia levanta la mano en señal de saludo mientras el unicornio inclina su cabeza y una chispa pequeña sale de su cuerno."
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Empezar a crear pequeñas luces juntos.",
+      "conflicto": "Las luces aparecen pero se desvanecen rápidamente.",
+      "emocion": "Entusiasmo",
+      "imagen_nuclear": "Destellos de luz flotan alrededor de Emilia y el unicornio como luciérnagas, mientras repiten el leitmotiv: ¡Brilla, brilla, luz sin fin!"
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Introducir una amenaza de oscuridad mayor.",
+      "conflicto": "Una sombra densa cubre el jardín, amenazando con apagar todo.",
+      "emocion": "Miedo",
+      "imagen_nuclear": "Una nube gris se desliza sobre el jardín, dejando todo en tonos apagados y silentes."
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Intensificar la comunicación con gestos más amplios.",
+      "conflicto": "La sombra parece absorber la luz que crean.",
+      "emocion": "Determinación",
+      "imagen_nuclear": "Emilia agita sus brazos como alas mientras el unicornio lanza un rayo brillante de su cuerno, repitiendo: ¡Brilla, brilla, luz sin fin!"
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Descubrir que la sincronía potencia la luz.",
+      "conflicto": "Necesitan alinear perfectamente sus gestos para que la luz sea suficiente.",
+      "emocion": "Sorpresa y alegría",
+      "imagen_nuclear": "Manos y cuerno se alinean formando un arco luminoso que atraviesa la sombra, que comienza a romperse."
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Clímax: la luz se expande y vence la oscuridad.",
+      "conflicto": "Mantener la luz mientras se expande por todo el jardín.",
+      "emocion": "Euforia",
+      "imagen_nuclear": "Un haz gigantesco de luz brota del punto de contacto, bañando flores y mariposas; el leitmotiv suena una última vez: ¡Brilla, brilla, luz sin fin!"
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Resolución del conflicto externo y consolidar la amistad.",
+      "conflicto": "Asegurarse de que la luz perdure después de la sombra.",
+      "emocion": "Alivio",
+      "imagen_nuclear": "El jardín bajo un cielo azul brillante, Emilia y el unicornio sonríen mientras una suave luz parpadea alrededor de ambos."
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Transmitir el mensaje de que la comunicación va más allá de las palabras.",
+      "resolucion": "Emilia y el unicornio comprenden que sus gestos crean una luz interior que siempre los conectará.",
+      "emocion": "Calidez",
+      "imagen_nuclear": "Emilia y el unicornio se tocan suavemente—ella su mano, él su cuerno—y una estrella luminosa aparece sobre ellos, simbolizando una amistad eterna."
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "En lugar de un haz de luz, Emilia y el unicornio forman un círculo de luz giratorio que empuja la sombra fuera del jardín.",
+      "resolucion_alternativa": "El círculo queda como un farol permanente en el centro del jardín, recordando que la unión crea luz constante."
+    },
+    {
+      "climax_alternativo": "El unicornio entrega a Emilia una pequeña gema luminosa que, al combinarse con sus gestos, genera una lluvia de estrellas.",
+      "resolucion_alternativa": "Las estrellas se posan como luciérnagas eternas, y Emilia aprende que lleva la luz dentro de sí misma."
+    }
+  ],
+  "qa": {
+    "arco_narrativo": 4.5,
+    "potencia_leitmotiv": 4.5,
+    "claridad_estructura": 3.0,
+    "promedio": 4.0
+  },
+  "nota": "Por favor, no introduzcas elementos que no aparezcan en los versos posteriores.",
+  "_metadata_tokens": {
+    "prompt_tokens": 619,
+    "completion_tokens": 2393,
+    "total_tokens": 3012
+  },
+  "_metadata_params": {
+    "temperature": 0.85,
+    "top_p": null,
+    "repetition_penalty": null,
+    "attempt": 1
+  },
+  "_qa_evaluation": {
+    "scores": {
+      "arco_narrativo": 4.5,
+      "potencia_leitmotiv": 4.5,
+      "claridad_estructura": 3.0,
+      "promedio": 4.0
+    },
+    "promedio": 4.0,
+    "pasa_umbral": true,
+    "problemas": [
+      "Repetición del leitmotiv \"¡Brilla, brilla, luz sin fin!\" en al menos 4 páginas (páginas 4, 6, 8 y 4 nuevamente) – supera el límite de 3 repeticiones.",
+      "Inconsistencia de campos: página 10 usa \"resolucion\" en lugar de \"conflicto\", rompiendo la uniformidad del beat sheet.",
+      "Falta de campo \"conflicto\" en la página 10, generando incoherencia estructural.",
+      "Descripciones de la amenaza (página 5) son vagas y no explican el origen o naturaleza de la sombra."
+    ],
+    "mejoras": [
+      "Variar la frase del leitmotiv en algunas páginas (p. ej., \"¡Brilla, brilla, luz eterna!\" o \"¡Luz que nunca se apaga!\") para evitar repetición excesiva.",
+      "Uniformizar la estructura del beat sheet: mantener siempre los campos \"objetivo\", \"conflicto\", \"emocion\" e \"imagen_nuclear\"; añadir un campo \"resolucion\" separado si es necesario.",
+      "En la página 10, incluir un campo \"conflicto\" coherente y mover la resolución a un nuevo campo \"resolucion\".",
+      "Ampliar la descripción de la sombra en la página 5 (p. ej., indicar que proviene de una nube de dudas o de un viento frío) para reforzar la amenaza."
+    ],
+    "justificacion": "Score 4.0/5: El director entrega un arco narrativo sólido y un leitmotiv atractivo, pero la estructura muestra inconsistencias y una repetición excesiva del leitmotiv que penalizan la claridad. Con los ajustes propuestos, el output podría alcanzar una calificación superior."
+  },
+  "_qa_passed": true
+}

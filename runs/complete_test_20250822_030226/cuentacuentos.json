@@ -1,0 +1,64 @@
+{
+  "paginas_texto": {
+    "1": "Miraba la niña tras la puerta cerrada,\nSoñaba despierta bajo la niebla velada.\nExtiende su mano anhelando calor,\nMas solo siente ecos de viejo temor.",
+    "2": "Surge entre ramas un ser tan delicado,\nSu crin pastel brilla cual oro fundado.\nSe aproxima lenta al verde del jardín,\nY murmura «¡Brilla, brilla, luz sin fin!» al escuchar el fin.",
+    "3": "Levanta su palma con gesto audaz,\nMantiene firme su pulso tenaz.\nBusca descifrar la señal de visión,\nPreserva quietud en pura misión.",
+    "4": "Juntos danzan brazos al compás ligero,\nCrean chispas breves como fuego fiero.\nSus risas vuelan sobre hojas de jazmín,\nCelebran instante fugaz de luz sin fin.",
+    "5": "Una sombra gruesa envuelve el vergel oscuro,\nProvoca temores que fluyen como muro.\nEntonces exclama fuerte con fervor:\n«¡Resplandece, resplandece, llama eternal!» al clamor.",
+    "6": "Emilia despliega alas de aire tibio,\nEl unicornio dispara rayo vivo.\nCon fuerza combinan su fulgor creciente,\nRompen velo negro con acto valiente.",
+    "7": "Cuentan uno-dos-tres con voz entera,\nAl tercer latido lanzan aura certera.\nArco radiante corta neblina gris,\nIlumina senderos donde hubo raíz.",
+    "8": "El haz gigante estalla en amplio rumor,\nEnvuelve pétalos y mariposas en ardor.\nGritan unidos «¡Luz que nunca cesa!» triunfal,\nDispersando noche en coro celestial.",
+    "9": "El jardín renace bajo cielo azul profundo,\nSonrisas brotan entre flora y segundo.\nMano sobre cuerno sellan gratitud viva,\nCultivan amistad que siempre motiva.",
+    "10": "Silencios hablan entre miradas brillantes,\nSentimientos internos surgen vibrantes.\nToque suave evoca estrella perpetua;\nsus corazones cantan paz completa."
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    8
+  ],
+  "qa": {
+    "musicalidad": 2.5,
+    "imagineria": 4.0,
+    "fluidez_oral": 3.0,
+    "promedio": 3.2
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 4221,
+    "completion_tokens": 2037,
+    "total_tokens": 6258
+  },
+  "_metadata_params": {
+    "temperature": 0.75,
+    "top_p": 0.8,
+    "repetition_penalty": 1.15,
+    "attempt": 1
+  },
+  "_qa_evaluation": {
+    "scores": {
+      "musicalidad": 2.5,
+      "imagineria": 4.0,
+      "fluidez_oral": 3.0,
+      "promedio": 3.2
+    },
+    "promedio": 3.2,
+    "pasa_umbral": false,
+    "problemas": [
+      "Rima forzada 'jazmín / fin' en página 4",
+      "Rima forzada 'jardín / fin' en página 2",
+      "Rima débil 'gris / raíz' en página 7",
+      "Error tipográfico 'razo' en lugar de 'rayo' en página 6",
+      "Métrica inconsistente entre estrofas (variación de 7 a 13 sílabas)",
+      "Frase forzada 'al escuchar el fin' en página 2",
+      "Repetición de la frase 'luz sin fin' en páginas 2 y 4"
+    ],
+    "mejoras": [
+      "Reemplazar la rima forzada 'jazmín / fin' por una rima consonante, p.ej., 'jazmín / jardín'",
+      "Corregir el error tipográfico cambiando 'razo' por 'rayo' en la página 6",
+      "Reescribir el verso problemático a: 'Y murmura «¡Brilla, brilla, luz sin fin!» al cerrar el día' para mejorar fluidez y métrica",
+      "Uniformizar la métrica a 8-10 sílabas por verso, revisando líneas largas como la de la página 1",
+      "Variar la expresión de 'luz sin fin' usando sinónimos (ej. 'claridad eterna') para evitar repetición"
+    ],
+    "justificacion": "Score 3.2/5: El cuento destaca por su imaginería y uso del leitmotiv, pero la musicalidad sufre por rimas forzadas, errores tipográficos y métrica irregular. Con los ajustes propuestos podría alcanzar una calificación cercana a 4/5."
+  },
+  "_qa_passed": false
+}

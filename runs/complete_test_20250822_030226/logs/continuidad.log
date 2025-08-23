@@ -1,0 +1,71 @@
+[
+  {
+    "timestamp": 1755832223.3313096,
+    "retry_count": 0,
+    "qa_scores": {
+      "consistencia_personajes": 4.0,
+      "utilidad_referencias": 4.0,
+      "coherencia_narrativa": 3.0,
+      "promedio": 3.7
+    },
+    "execution_time": 7.874458312988281,
+    "config_used": {
+      "temperature": 0.35,
+      "max_tokens": 5000,
+      "top_p": 0.45,
+      "seed": 42
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 487,
+      "completion_tokens": 1094,
+      "total_tokens": 1581
+    }
+  },
+  {
+    "timestamp": 1755832250.1657887,
+    "retry_count": 1,
+    "qa_scores": {
+      "consistencia_personajes": 3.0,
+      "utilidad_referencias": 3.5,
+      "coherencia_narrativa": 3.5,
+      "promedio": 3.3
+    },
+    "execution_time": 7.750159025192261,
+    "config_used": {
+      "temperature": 0.35,
+      "max_tokens": 5000,
+      "top_p": 0.45,
+      "seed": 42
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 487,
+      "completion_tokens": 1081,
+      "total_tokens": 1568
+    }
+  },
+  {
+    "timestamp": 1755832272.7820268,
+    "retry_count": 2,
+    "qa_scores": {
+      "consistencia_personajes": 4.2,
+      "utilidad_referencias": 3.2,
+      "coherencia_narrativa": 2.8,
+      "promedio": 3.4
+    },
+    "execution_time": 7.8996336460113525,
+    "config_used": {
+      "temperature": 0.35,
+      "max_tokens": 5000,
+      "top_p": 0.45,
+      "seed": 42
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 487,
+      "completion_tokens": 1081,
+      "total_tokens": 1568
+    }
+  }
+]

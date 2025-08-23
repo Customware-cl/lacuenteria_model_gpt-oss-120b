@@ -30,6 +30,7 @@ class OptimizedLLMClient:
                  # Parámetros básicos
                  temperature: Optional[float] = None,
                  max_tokens: Optional[int] = None,
+                 timeout: Optional[int] = None,  # Timeout personalizado
                  # Parámetros avanzados de GPT-OSS-120B
                  top_p: Optional[float] = None,
                  top_k: Optional[int] = None,
@@ -153,10 +154,14 @@ FORMATO CRÍTICO:
                 logger.info(f"Intento {attempt + 1}/{self.retry_attempts} de llamada a LLM")
                 
                 # Hacer la petición
+                # Usar timeout personalizado si se proporciona, sino usar el default
+                request_timeout = timeout if timeout is not None else self.timeout
+                logger.debug(f"Usando timeout de {request_timeout} segundos para esta petición")
+                
                 response = requests.post(
                     self.endpoint,
                     json=payload,
-                    timeout=self.timeout,
+                    timeout=request_timeout,
                     headers={"Content-Type": "application/json"}
                 )
                 
@@ -177,6 +182,15 @@ FORMATO CRÍTICO:
                     logger.info(f"Tokens usados - Prompt: {tokens_info['prompt_tokens']}, "
                                f"Completion: {tokens_info['completion_tokens']}, "
                                f"Total: {tokens_info['total_tokens']}")
+                    
+                    # Análisis de truncamiento
+                    if max_tokens:
+                        utilization = (tokens_info['completion_tokens'] / max_tokens) * 100
+                        logger.info(f"Utilización de max_tokens: {utilization:.1f}% "
+                                   f"({tokens_info['completion_tokens']}/{max_tokens})")
+                        
+                        if tokens_info['completion_tokens'] >= max_tokens - 10:
+                            logger.warning(f"⚠️ TRUNCAMIENTO POR TOKENS: Se alcanzó el límite de {max_tokens} tokens")
                 
                 # Extraer el contenido generado
                 if "choices" in result and len(result["choices"]) > 0:
@@ -188,13 +202,31 @@ FORMATO CRÍTICO:
                     
                     # Detectar posibles respuestas truncadas
                     if self._is_truncated(content):
-                        logger.warning(f"Posible respuesta truncada detectada")
-                        logger.debug(f"Últimos 100 caracteres: ...{content[-100:]}")
-                        # Si hay reintentos disponibles, intentar con más tokens
-                        if attempt < self.retry_attempts - 1 and max_tokens:
-                            payload["max_tokens"] = int(max_tokens * 1.5)
-                            logger.info(f"Aumentando max_tokens a {payload['max_tokens']} para siguiente intento")
-                            raise ValueError("Respuesta truncada, reintentando con más tokens")
+                        # Análisis detallado del truncamiento
+                        logger.warning(f"🔍 ANÁLISIS DE TRUNCAMIENTO:")
+                        logger.warning(f"   - Longitud de respuesta: {len(content)} caracteres")
+                        logger.warning(f"   - Brackets: {{ {content.count('{')} vs }} {content.count('}')}")
+                        logger.warning(f"   - Square brackets: [ {content.count('[')} vs ] {content.count(']')}")
+                        logger.warning(f"   - Comillas: \" {content.count('\"')} (desbalanceadas: {content.count('\"') % 2 != 0})")
+                        logger.warning(f"   - Termina con: '{content[-20:]}'" if len(content) > 20 else f"   - Contenido: '{content}'")
+                        
+                        if tokens_info:
+                            logger.warning(f"   - Tokens completion: {tokens_info.get('completion_tokens', 0)}")
+                            logger.warning(f"   - Max tokens configurado: {max_tokens}")
+                            
+                        # Analizar si es truncamiento por tokens o por formato
+                        is_token_truncation = (max_tokens and 
+                                              tokens_info.get('completion_tokens', 0) >= (max_tokens * 0.95))
+                        
+                        if is_token_truncation:
+                            logger.error(f"❌ TRUNCAMIENTO CONFIRMADO: Límite de tokens alcanzado")
+                            if attempt < self.retry_attempts - 1:
+                                new_max = int((max_tokens or 4000) * 1.5)
+                                payload["max_tokens"] = new_max
+                                logger.info(f"↗️ Aumentando max_tokens a {new_max} para siguiente intento")
+                                raise ValueError(f"Truncamiento por tokens (usó {tokens_info.get('completion_tokens', 0)}/{max_tokens})")
+                        else:
+                            logger.warning(f"⚠️ JSON MALFORMADO pero no por límite de tokens (usó {tokens_info.get('completion_tokens', 0)}/{max_tokens or 'no-limit'})")
                     
                     # Intentar parsear como JSON
                     try:
@@ -262,23 +294,20 @@ FORMATO CRÍTICO:
         """
         content = content.rstrip()
         
-        # Indicadores de truncamiento
-        truncation_indicators = [
-            '...',
-            '\\',
-            '"',
-            ',',
-            '{',
-            '[',
-            ':',
-            # JSON incompleto
-            content.count('{') != content.count('}'),
-            content.count('[') != content.count(']'),
-            # Termina en medio de una palabra
-            content[-1:].isalpha() and not content.endswith('"}')
-        ]
+        # Solo considerar truncado si:
+        # 1. Los brackets/braces no están balanceados
+        brackets_unbalanced = content.count('{') != content.count('}')
+        square_unbalanced = content.count('[') != content.count(']')
         
-        return any(truncation_indicators[:7]) or truncation_indicators[7] or truncation_indicators[8] or truncation_indicators[9]
+        # 2. Termina con elipsis explícito
+        ends_with_ellipsis = content.endswith('...')
+        
+        # 3. Termina en medio de un string (comilla sin cerrar al final)
+        # Contar comillas que no están escapadas
+        quotes = content.count('"') - content.count('\\"')
+        quotes_unbalanced = quotes % 2 != 0
+        
+        return brackets_unbalanced or square_unbalanced or ends_with_ellipsis or quotes_unbalanced
     
     def _clean_json_response(self, content: str) -> str:
         """

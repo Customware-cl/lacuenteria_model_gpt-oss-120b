@@ -1,0 +1,9 @@
+[
+  {
+    "timestamp": 1755832201.5879407,
+    "retry_count": 0,
+    "error": "Fallo después de 3 intentos. Último error: Error en intento 3: El modelo no generó contenido",
+    "execution_time": 105.87425804138184,
+    "status": "error"
+  }
+]

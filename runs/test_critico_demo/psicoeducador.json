@@ -1,0 +1,91 @@
+{
+  "metas_generales": [
+    "Desarrollar la curiosidad y la disposición a probar cosas nuevas.",
+    "Aprender a reconocer y expresar emociones al enfrentarse a desafíos.",
+    "Fomentar la autorregulación mediante respiración y pausa antes de actuar.",
+    "Practicar pedir ayuda de forma clara y respetuosa cuando se necesita.",
+    "Reemplazar conductas de evitación con acciones de intento progresivo."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Identificar la emoción de curiosidad",
+      "frase_modelo": "Me pregunto cómo funciona esto, ¡qué interesante!",
+      "recurso": "Tarjetas con caras que muestran curiosidad y preguntas.",
+      "evitar": "Descartar la actividad sin intentar observarla."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Etiquetar emociones al iniciar una prueba",
+      "frase_modelo": "Siento un poco de nervios, pero también ganas de intentar.",
+      "recurso": "Juego de palabras‑emociones para nombrar sentimientos.",
+      "evitar": "Negar la emoción diciendo \"no me pasa nada\"."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Respiración profunda de 4‑4",
+      "frase_modelo": "Inhalo contando hasta 4, exhalo contando hasta 4, y me siento más tranquilo.",
+      "recurso": "Pulgar arriba y abajo como guía visual para contar.",
+      "evitar": "Reaccionar impulsivamente sin tomarse un momento."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Pedir ayuda con palabras amables",
+      "frase_modelo": "¿Me puedes ayudar, por favor? No sé cómo seguir.",
+      "recurso": "Cartel con la frase modelo para practicar en voz alta.",
+      "evitar": "Gritar o llorar sin comunicar la necesidad."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Dividir la tarea en pasos pequeños",
+      "frase_modelo": "Primero voy a mirar la pieza, luego la tocaré, después la probaré.",
+      "recurso": "Secuencia de imágenes que representan cada paso.",
+      "evitar": "Abordar la tarea completa de una sola vez sin planificación."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Celebrar el intento, no solo el éxito",
+      "frase_modelo": "¡Lo intenté! Eso es un gran paso.",
+      "recurso": "Pegatinas de “Buen intento” para colocar después de cada prueba.",
+      "evitar": "Solo reconocer el resultado perfecto y olvidar el proceso."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Reconocer y aceptar el error",
+      "frase_modelo": "Me equivoqué, pero puedo intentarlo de nuevo.",
+      "recurso": "Cuento corto donde el personaje aprende de errores.",
+      "evitar": "Culpar a otros o al objeto por el error."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Usar una herramienta de sustitución (ej. juguete de apoyo)",
+      "frase_modelo": "Voy a usar este bloque para sostener la pieza mientras pruebo.",
+      "recurso": "Kit de objetos de apoyo que el niño puede elegir.",
+      "evitar": "Abandonar la actividad por falta de apoyo físico."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Autocontrol mediante pausa de 5 segundos",
+      "frase_modelo": "Me detengo 5 segundos, respiro y decido qué hacer.",
+      "recurso": "Reloj de arena de 5 segundos para visualizar la pausa.",
+      "evitar": "Actuar sin reflexión cuando surge la frustración."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Reflexionar al final de la prueba",
+      "frase_modelo": "¿Qué aprendí hoy? Me gustó probar y descubrí que puedo hacerlo.",
+      "recurso": "Diario ilustrado donde dibuja o escribe su experiencia.",
+      "evitar": "Olvidar la experiencia y pasar a la siguiente actividad sin reflexión."
+    }
+  ],
+  "banderas": [
+    "Evitación constante de actividades nuevas.",
+    "Llamados frecuentes a adultos sin intentar primero.",
+    "Falta de expresión verbal de emociones."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

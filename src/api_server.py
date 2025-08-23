@@ -13,6 +13,7 @@ from config import (
     API_CONFIG,
     get_story_path,
     get_artifact_path,
+    get_agent_prompt_path,
     validate_config
 )
 from orchestrator import StoryOrchestrator
@@ -377,93 +378,233 @@ def get_story_logs(story_id):
         }), 500
 
 
+def validate_external_story(story_data):
+    """
+    Valida la estructura de una historia externa
+    Usa la misma estructura que genera el pipeline de 12 agentes
+    
+    Returns:
+        tuple: (is_valid, error_message)
+    """
+    try:
+        # 1. Verificar campos requeridos (según formato del validador)
+        required_fields = ["titulo", "paginas", "portada", "loader"]
+        for field in required_fields:
+            if field not in story_data:
+                return False, f"Campo requerido faltante: {field}"
+        
+        # 2. Verificar que paginas es un diccionario
+        if not isinstance(story_data["paginas"], dict):
+            return False, "El campo 'paginas' debe ser un diccionario"
+        
+        # 3. Verificar que hay al menos 1 página
+        num_pages = len(story_data["paginas"])
+        if num_pages == 0:
+            return False, "La historia debe tener al menos 1 página"
+        
+        # 4. Verificar estructura de cada página (flexible en numeración)
+        for page_key, page in story_data["paginas"].items():
+            if not isinstance(page, dict):
+                return False, f"La página '{page_key}' debe ser un diccionario"
+            
+            if "texto" not in page:
+                return False, f"La página '{page_key}' no tiene campo 'texto'"
+            
+            if "prompt" not in page:
+                return False, f"La página '{page_key}' no tiene campo 'prompt'"
+        
+        # 5. Verificar tamaño máximo (1MB)
+        json_size = len(json.dumps(story_data))
+        if json_size > 1_000_000:
+            return False, f"Historia demasiado grande: {json_size/1_000_000:.2f}MB (máximo 1MB)"
+        
+        # 6. Verificar portada
+        if not isinstance(story_data["portada"], dict):
+            return False, "El campo 'portada' debe ser un diccionario"
+        
+        if "prompt" not in story_data["portada"]:
+            return False, "La portada debe tener campo 'prompt'"
+        
+        # 7. Verificar loader
+        if not isinstance(story_data["loader"], list):
+            return False, "El campo 'loader' debe ser una lista"
+        
+        if len(story_data["loader"]) == 0:
+            return False, "Debe haber al menos un mensaje de carga"
+        
+        return True, None
+        
+    except Exception as e:
+        return False, f"Error validando estructura: {str(e)}"
+
+
+def run_critico_on_data(story_data, story_id="external"):
+    """
+    Ejecuta el agente crítico sobre datos de historia sin depender de archivos locales
+    
+    Args:
+        story_data: Diccionario con la historia completa
+        story_id: ID de la historia (para logging)
+    
+    Returns:
+        Diccionario con la evaluación crítica
+    """
+    try:
+        from llm_client import LLMClient
+        
+        # Cargar prompt del crítico
+        critico_prompt_path = get_agent_prompt_path("critico")
+        with open(critico_prompt_path, 'r', encoding='utf-8') as f:
+            critico_config = json.load(f)
+        
+        # Preparar el prompt con los datos de la historia
+        system_prompt = critico_config["content"]
+        user_prompt = f"""Evalúa el siguiente cuento infantil:
+
+{json.dumps(story_data, ensure_ascii=False, indent=2)}
+
+Recuerda responder ÚNICAMENTE con el JSON de evaluación crítica especificado."""
+        
+        # Ejecutar LLM
+        llm_client = LLMClient()
+        logger.info(f"Ejecutando crítico para historia externa: {story_id}")
+        
+        evaluacion = llm_client.generate(
+            system_prompt=system_prompt,
+            user_prompt=user_prompt,
+            temperature=0.4,  # Baja para evaluación consistente
+            max_tokens=4000   # Suficiente para evaluación completa
+        )
+        
+        return evaluacion
+        
+    except Exception as e:
+        logger.error(f"Error ejecutando crítico en datos externos: {e}")
+        raise
+
+
 @app.route('/api/stories/<story_id>/evaluate', methods=['POST'])
 def evaluate_story(story_id):
     """
-    Ejecuta el agente crítico sobre una historia completada
+    Ejecuta el agente crítico sobre una historia (interna o externa)
+    
+    Soporta dos modos:
+    1. Historia interna: Busca en runs/{story_id}/
+    2. Historia externa: Recibe el JSON completo en el body del request
     
     Returns:
-        JSON estructurado en cascada con la evaluación crítica
+        JSON con evaluación crítica y métricas (si aplican)
     """
     try:
-        # Verificar que la historia existe
+        story_source = None
+        story_data = None
+        evaluacion = None
+        
+        # Primero intentar buscar historia local
         story_path = get_story_path(story_id)
-        if not story_path.exists():
+        validador_path = get_artifact_path(story_id, "validador.json")
+        
+        if story_path.exists() and validador_path.exists():
+            # HISTORIA INTERNA
+            logger.info(f"Historia interna encontrada: {story_id}")
+            story_source = "internal"
+            
+            # Leer datos de la historia
+            with open(validador_path, 'r', encoding='utf-8') as f:
+                story_data = json.load(f)
+            
+            # Ejecutar evaluación crítica usando el runner existente
+            from agent_runner import AgentRunner
+            runner = AgentRunner(story_id)
+            
+            logger.info(f"Ejecutando evaluación crítica para historia interna: {story_id}")
+            result = runner.run_agent("critico")
+            
+            if result["status"] == "success":
+                # Leer el resultado del crítico
+                critico_path = get_artifact_path(story_id, "critico.json")
+                if not critico_path.exists():
+                    # Intentar con nombres alternativos
+                    for alt_name in ["13_critico.json", "99_critico.json"]:
+                        alt_path = get_artifact_path(story_id, alt_name)
+                        if alt_path.exists():
+                            critico_path = alt_path
+                            break
+                
+                if critico_path.exists():
+                    with open(critico_path, 'r', encoding='utf-8') as f:
+                        evaluacion = json.load(f)
+                else:
+                    return jsonify({
+                        "status": "error",
+                        "message": "No se pudo leer el resultado de la evaluación"
+                    }), 500
+            else:
+                # Si falló, devolver información parcial
+                return jsonify({
+                    "status": "error",
+                    "story_id": story_id,
+                    "source": story_source,
+                    "message": "Error ejecutando crítico",
+                    "details": result.get("error", "Unknown error")
+                }), 500
+                
+        elif request.json:
+            # HISTORIA EXTERNA
+            logger.info(f"Procesando historia externa: {story_id}")
+            story_source = "external"
+            story_data = request.json
+            
+            # Validar estructura de historia externa
+            is_valid, error_msg = validate_external_story(story_data)
+            if not is_valid:
+                return jsonify({
+                    "status": "error",
+                    "message": f"Historia externa inválida: {error_msg}"
+                }), 400
+            
+            # Ejecutar crítico directamente sobre los datos
+            logger.info(f"Ejecutando crítico para historia externa: {story_id}")
+            evaluacion = run_critico_on_data(story_data, story_id)
+            
+        else:
+            # No se encontró historia local ni se proporcionó en el body
             return jsonify({
                 "status": "error",
-                "message": "Historia no encontrada"
+                "message": "Historia no encontrada. Proporcione datos en el body para historias externas."
             }), 404
         
-        # Verificar que existe el archivo validador
-        validador_path = get_artifact_path(story_id, "validador.json")
-        if not validador_path.exists():
-            return jsonify({
-                "status": "error",
-                "message": "Historia no completada. Falta archivo validador."
-            }), 400
+        # Construir respuesta base
+        response = {
+            "status": "success",
+            "story_id": story_id,
+            "source": story_source,
+            "evaluacion_critica": evaluacion.get("evaluacion_critica", evaluacion) if evaluacion else {},
+            "timestamp": datetime.now().isoformat()
+        }
         
-        # Ejecutar evaluación crítica
-        from agent_runner import AgentRunner
-        runner = AgentRunner(story_id)
-        
-        logger.info(f"Ejecutando evaluación crítica para historia: {story_id}")
-        result = runner.run_agent("critico")
-        
-        if result["status"] == "success":
-            # Leer el resultado del crítico (puede estar como 13_critico.json o 99_critico.json)
-            critico_path = get_artifact_path(story_id, "13_critico.json")
-            if not critico_path.exists():
-                # Intentar con el nombre alternativo
-                critico_path = get_artifact_path(story_id, "99_critico.json")
-            
-            if critico_path.exists():
-                with open(critico_path, 'r', encoding='utf-8') as f:
-                    evaluacion = json.load(f)
-                
-                # Intentar consolidar métricas del pipeline
+        # Agregar métricas solo para historias internas
+        if story_source == "internal":
+            try:
                 from metrics_consolidator import consolidate_agent_metrics
                 metricas = consolidate_agent_metrics(story_id)
                 
-                # Construir respuesta base
-                response = {
-                    "status": "success",
-                    "story_id": story_id,
-                    "evaluacion_critica": evaluacion.get("evaluacion_critica", {}),
-                    "timestamp": datetime.now().isoformat()
-                }
-                
-                # Agregar métricas si están disponibles
                 if metricas:
                     response["metricas_pipeline"] = metricas
                     response["metricas_disponibles"] = True
-                    logger.info(f"Métricas consolidadas exitosamente para {story_id}")
+                    logger.info(f"Métricas consolidadas para historia interna: {story_id}")
                 else:
                     response["metricas_disponibles"] = False
                     response["metricas_nota"] = "Métricas no disponibles para esta ejecución"
-                    logger.info(f"No se pudieron consolidar métricas para {story_id}")
-                
-                # Retornar la evaluación crítica estructurada con métricas opcionales
-                return jsonify(response)
-            else:
-                return jsonify({
-                    "status": "error",
-                    "message": "No se pudo leer el resultado de la evaluación"
-                }), 500
-        else:
-            # Si falló pero hay QA scores, incluirlos
-            response = {
-                "status": "partial",
-                "story_id": story_id,
-                "message": "Evaluación con observaciones"
-            }
-            
-            if "qa_scores" in result:
-                response["qa_scores"] = result["qa_scores"]
-            
-            if "qa_issues" in result:
-                response["qa_issues"] = result["qa_issues"]
-            
-            return jsonify(response), 206  # Partial Content
+            except Exception as e:
+                logger.warning(f"No se pudieron consolidar métricas: {e}")
+                response["metricas_disponibles"] = False
+        
+        # Nota informativa para historias externas
+        if story_source == "external":
+            response["nota"] = "Historia externa evaluada. Las métricas del pipeline no aplican."
+        
+        return jsonify(response)
     
     except Exception as e:
         logger.error(f"Error ejecutando evaluación crítica: {e}")

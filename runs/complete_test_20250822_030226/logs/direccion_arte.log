@@ -1,0 +1,71 @@
+[
+  {
+    "timestamp": 1755832400.2257113,
+    "retry_count": 0,
+    "qa_scores": {
+      "coherencia_visual": 3.5,
+      "progresion_emocional": 4.0,
+      "practicidad": 2.5,
+      "promedio": 3.3
+    },
+    "execution_time": 14.777487993240356,
+    "config_used": {
+      "temperature": 0.65,
+      "max_tokens": 5000,
+      "top_p": 0.7,
+      "repetition_penalty": 1.05
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 4117,
+      "completion_tokens": 1879,
+      "total_tokens": 5996
+    }
+  },
+  {
+    "timestamp": 1755832435.754199,
+    "retry_count": 1,
+    "qa_scores": {
+      "coherencia_visual": 4,
+      "progresion_emocional": 4,
+      "practicidad": 3.5,
+      "promedio": 3.8
+    },
+    "execution_time": 16.791504621505737,
+    "config_used": {
+      "temperature": 0.65,
+      "max_tokens": 5000,
+      "top_p": 0.7,
+      "repetition_penalty": 1.05
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 4117,
+      "completion_tokens": 2333,
+      "total_tokens": 6450
+    }
+  },
+  {
+    "timestamp": 1755832472.4126513,
+    "retry_count": 2,
+    "qa_scores": {
+      "coherencia_visual": 3.2,
+      "progresion_emocional": 4.6,
+      "practicidad": 3.5,
+      "promedio": 3.8
+    },
+    "execution_time": 18.95150637626648,
+    "config_used": {
+      "temperature": 0.65,
+      "max_tokens": 5000,
+      "top_p": 0.7,
+      "repetition_penalty": 1.05
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 4117,
+      "completion_tokens": 2671,
+      "total_tokens": 6788
+    }
+  }
+]

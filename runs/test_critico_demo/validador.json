@@ -1,0 +1,55 @@
+{
+  "titulo": "¡A la caza de pistas con mi lupa mágica!",
+  "paginas": {
+    "1": {
+      "texto": "En el jardín brillante empieza la gran aventura\nPrueba agarra su lupa mágica con emoción\nLos rayos del sol dibujan sombras misteriosas\nUn pequeño insecto se posa sobre una hoja",
+      "prompt": "Ilustración infantil en un jardín luminoso al atardecer. Prueba, niña de 5 años con cabello rizado castaño, ojos verdes y pecas, lleva camiseta de rayas azules y blancas, pantalones cortos amarillos y zapatillas rojas. Sostiene una lupa de madera que brilla. Un insecto pequeño está sobre una hoja verde. Luz cálida del sol ilumina la escena, estilo acuarela con contornos suaves."
+    },
+    "2": {
+      "texto": "Con la lupa, descubre una pista brillante y dorada\nEl insecto parece guiarla hacia un tesoro escondido\nSiguen las huellas diminutas sobre la hierba verde\nCada paso revela colores que bailan bajo el cielo",
+      "prompt": "Escena del jardín donde Prueba mira a través de su lupa y ve una pista reluciente de color dorado sobre la tierra. Un pequeño insecto verde señala el camino. Huellas diminutas aparecen sobre la hierba verde. El fondo muestra un cielo azul claro con tonos pastel, colores vivos que parecen bailar alrededor de los pasos de Prueba."
+    },
+    "3": {
+      "texto": "Prueba abre un libro de cuentos bajo la sombra\nLas páginas susurran secretos de animales viajeros\nUna mariposa azul muestra la ruta con alas\nLa lupa refleja la luz como una estrella pequeña",
+      "prompt": "Prueba sentada bajo la sombra de un árbol, abre un libro grande de cuentos. Las páginas parecen moverse como si susurraran. Una mariposa azul revolotea cerca, indicando una dirección con sus alas. La lupa en sus manos refleja la luz del sol, creando una pequeña estrella brillante en la ilustración."
+    },
+    "4": {
+      "texto": "Al cruzar el puente de madera, escuchan cantos suaves\nUn sapo verde salta y señala una caja oculta\nDentro hay una llave dorada que brilla intensamente\nPrueba la toma y siente el pulso de la historia",
+      "prompt": "Ilustración del puente de madera sobre un pequeño arroyo. Prueba camina sobre él mientras se oyen cantos suaves. Un sapo verde salta cerca y apunta a una caja de madera medio enterrada. Dentro de la caja se ve una llave dorada que emite un brillo intenso. Prueba la sostiene, y la escena sugiere que la historia late alrededor de ella."
+    },
+    "5": {
+      "texto": "Con la llave, abre una puerta de pétalos rosados\nEl jardín secreto revela un lago de colores vivos\nEn el agua, reflejan estrellas que cantan melodías\nPrueba se sumerge, descubriendo un cofre bajo la superficie",
+      "prompt": "Puerta hecha de pétalos rosados se abre con la llave dorada. Detrás, un jardín secreto muestra un lago cuyas aguas tienen tonos brillantes y reflejan estrellas que parecen cantar. Prueba se inclina y se sumerge, descubriendo un cofre antiguo en el fondo del lago, todo en estilo acuarela suave."
+    },
+    "6": {
+      "texto": "El cofre contiene una carta escrita con tinta brillante\nDice: ‘Gracias por encontrar la magia de la curiosidad’\nLa lupa vibra, mostrando un mapa hacia la casa del árbol\nPrueba sigue el mapa, saltando entre ramas juguetonas",
+      "prompt": "Primer plano del cofre abierto con una carta dentro, la tinta brilla ligeramente. La frase de agradecimiento está escrita con caligrafía infantil. La lupa en la mano de Prueba vibra y proyecta un mapa dibujado en papel que indica la ruta a una casa del árbol. Prueba corre entre ramas que se balancean, mostrando movimiento y alegría."
+    },
+    "7": {
+      "texto": "Arriba, la casa del árbol está decorada con luces doradas\nDentro, una biblioteca guarda libros de aventuras pasadas\nCada libro cuenta historias de niños valientes y descubrimientos\nPrueba elige un libro y lo abre con la lupa",
+      "prompt": "Vista de la casa del árbol en lo alto, iluminada con pequeñas luces doradas colgantes. En el interior, estanterías llenas de libros antiguos. Cada libro tiene ilustraciones de niños aventureros. Prueba selecciona uno y lo abre usando su lupa, enfocando el texto mientras la luz dorada resalta la escena."
+    },
+    "8": {
+      "texto": "Al leer, aparecen imágenes que vuelan como mariposas\nLas mariposas llevan mensajes de amistad y valentía\nPrueba siente que su corazón late más fuerte\nLa lupa destella, iluminando la última página brillante",
+      "prompt": "Cuando Prueba lee, las ilustraciones cobran vida y se convierten en mariposas coloridas que revolotean alrededor. Cada mariposa lleva una pequeña cinta con palabras como \"amistad\" y \"valentía\". Prueba muestra una expresión emocionada, su corazón parece latir más rápido. La lupa emite un destello que ilumina la última página, que brilla intensamente."
+    },
+    "9": {
+      "texto": "En la última página, un tesoro de estrellas aparece\nCada estrella susurra un deseo para quien la descubra\nPrueba pide que todos los niños encuentren su propia luz\nLa lupa se eleva, reflejando la luz del nuevo día",
+      "prompt": "Ilustración de la última página del libro, donde aparecen estrellas doradas como un tesoro flotante. Cada estrella tiene un pequeño brillo que sugiere un susurro. Prueba, con la lupa en alto, formula un deseo para que todos los niños encuentren su luz interior. La lupa se eleva y refleja la luz dorada del amanecer que se asoma."
+    },
+    "10": {
+      "texto": "Al cerrar el libro, el jardín vuelve a su calma\nPrueba agradece a la lupa por la gran aventura\nEl sol se oculta, pintando el cielo de naranja\nY en su corazón, la curiosidad sigue brillando siempre",
+      "prompt": "Escena final con Prueba cerrando el libro bajo el mismo árbol del inicio. El jardín vuelve a estar tranquilo. Prueba mira a su lupa y sonríe agradecida. El sol se pone, tiñendo el cielo de tonos naranjas. Un suave resplandor alrededor del pecho de Prueba indica que su curiosidad sigue viva."
+    }
+  },
+  "portada": {
+    "prompt": "Ilustración infantil colorida, escena diurna en un jardín brillante, Prueba de 5 años con cabello rizado castaño, ojos verdes y pecas, lleva su camiseta de rayas azules y blancas, pantalones cortos amarillos y zapatillas rojas. En sus manos sostiene la lupa de juguete con mango de madera que refleja luz. Prueba señala un pequeño insecto sobre una hoja, sonríe con la boca abierta, mientras el sol de tarde baña la escena con tonos cálidos. Composición centrada, estilo de acuarela suave con contornos definidos, colores predominantes azul, amarillo y rojo, transmitiendo curiosidad y alegría."
+  },
+  "loader": [
+    "Cargando la aventura...",
+    "Descubriendo pistas...",
+    "Explorando el jardín...",
+    "Abriendo el libro mágico...",
+    "Preparando la historia..."
+  ]
+}

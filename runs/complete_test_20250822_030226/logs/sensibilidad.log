@@ -1,0 +1,71 @@
+[
+  {
+    "timestamp": 1755832494.3828185,
+    "retry_count": 0,
+    "qa_scores": {
+      "seguridad_infantil": 4.0,
+      "identificacion_riesgos": 2.5,
+      "respeto_cultural": 4.0,
+      "promedio": 3.5
+    },
+    "execution_time": 9.5210440158844,
+    "config_used": {
+      "temperature": 0.4,
+      "max_tokens": 4500,
+      "top_p": 0.5,
+      "seed": 42
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 4906,
+      "completion_tokens": 1156,
+      "total_tokens": 6062
+    }
+  },
+  {
+    "timestamp": 1755832524.6315331,
+    "retry_count": 1,
+    "qa_scores": {
+      "seguridad_infantil": 3.0,
+      "identificacion_riesgos": 2.5,
+      "respeto_cultural": 3.5,
+      "promedio": 2.5
+    },
+    "execution_time": 16.260714054107666,
+    "config_used": {
+      "temperature": 0.4,
+      "max_tokens": 4500,
+      "top_p": 0.5,
+      "seed": 42
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 4906,
+      "completion_tokens": 2218,
+      "total_tokens": 7124
+    }
+  },
+  {
+    "timestamp": 1755832556.2328856,
+    "retry_count": 2,
+    "qa_scores": {
+      "seguridad_infantil": 3.0,
+      "identificacion_riesgos": 2.5,
+      "respeto_cultural": 2.0,
+      "promedio": 2.5
+    },
+    "execution_time": 16.26365637779236,
+    "config_used": {
+      "temperature": 0.4,
+      "max_tokens": 4500,
+      "top_p": 0.5,
+      "seed": 42
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 4906,
+      "completion_tokens": 2218,
+      "total_tokens": 7124
+    }
+  }
+]

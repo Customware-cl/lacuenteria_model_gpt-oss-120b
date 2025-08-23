@@ -1,0 +1,77 @@
+[
+  {
+    "timestamp": 1755831876.3919258,
+    "retry_count": 0,
+    "qa_scores": {
+      "musicalidad": 2.5,
+      "imagineria": 3.5,
+      "fluidez_oral": 2.5,
+      "promedio": 2.8
+    },
+    "execution_time": 11.39126706123352,
+    "config_used": {
+      "temperature": 0.75,
+      "max_tokens": 6500,
+      "top_p": 0.8,
+      "repetition_penalty": 1.15,
+      "frequency_penalty": 0.35,
+      "presence_penalty": 0.2
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 4221,
+      "completion_tokens": 1448,
+      "total_tokens": 5669
+    }
+  },
+  {
+    "timestamp": 1755831953.9249663,
+    "retry_count": 1,
+    "qa_scores": {
+      "musicalidad": 2.0,
+      "imagineria": 3.5,
+      "fluidez_oral": 3.0,
+      "promedio": 2.8
+    },
+    "execution_time": 26.206996202468872,
+    "config_used": {
+      "temperature": 0.75,
+      "max_tokens": 6500,
+      "top_p": 0.8,
+      "repetition_penalty": 1.15,
+      "frequency_penalty": 0.35,
+      "presence_penalty": 0.2
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 4221,
+      "completion_tokens": 3681,
+      "total_tokens": 7902
+    }
+  },
+  {
+    "timestamp": 1755831990.7842882,
+    "retry_count": 2,
+    "qa_scores": {
+      "musicalidad": 2.5,
+      "imagineria": 4.0,
+      "fluidez_oral": 3.0,
+      "promedio": 3.2
+    },
+    "execution_time": 14.628210544586182,
+    "config_used": {
+      "temperature": 0.75,
+      "max_tokens": 6500,
+      "top_p": 0.8,
+      "repetition_penalty": 1.15,
+      "frequency_penalty": 0.35,
+      "presence_penalty": 0.2
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 4221,
+      "completion_tokens": 2037,
+      "total_tokens": 6258
+    }
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": 1755831503.967398,
+    "retry_count": 0,
+    "qa_scores": {
+      "alineacion_pedagogica": 3.5,
+      "aplicabilidad": 3.0,
+      "sensibilidad": 4.0,
+      "promedio": 3.5
+    },
+    "execution_time": 16.159051179885864,
+    "config_used": {
+      "temperature": 0.55,
+      "max_tokens": 4000
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 2061,
+      "completion_tokens": 2151,
+      "total_tokens": 4212
+    }
+  }
+]

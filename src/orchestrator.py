@@ -25,17 +25,21 @@ logger = logging.getLogger(__name__)
 class StoryOrchestrator:
     """Orquesta el pipeline completo de generación de cuentos"""
     
-    def __init__(self, story_id: Optional[str] = None):
+    def __init__(self, story_id: Optional[str] = None, mode_verificador_qa: bool = True):
         """
         Inicializa el orquestador
         
         Args:
             story_id: ID de la historia (si None, se genera uno)
+            mode_verificador_qa: Si True usa verificador_qa, si False usa autoevaluación
         """
         self.story_id = story_id or self._generate_story_id()
         self.story_path = get_story_path(self.story_id)
-        self.agent_runner = AgentRunner(self.story_id)
+        self.mode_verificador_qa = mode_verificador_qa
+        self.agent_runner = AgentRunner(self.story_id, mode_verificador_qa=mode_verificador_qa)
         self.manifest = self._init_manifest()
+        
+        logger.info(f"Orchestrator inicializado - mode_verificador_qa: {mode_verificador_qa}")
         
     def _generate_story_id(self) -> str:
         """Genera un ID único para la historia"""

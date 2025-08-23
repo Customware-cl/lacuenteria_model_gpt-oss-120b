@@ -1,0 +1,35 @@
+{
+  "paginas_texto": {
+    "1": "Al borde del árbol escucha latir el pecho de Emilia silencioso\nLa sombra espesa cubre senderos y pulsa en tonos sombríos silencioso\nSus ojos buscan faroles invisibles guiados por pura valentía\nY aun temerosa avanza firme descubriendo su propia valentía",
+    "2": "Brilla, brilla, luz de amistad brota en aurora tibia como estrella estela\nEl unicornio emerge entre niebla ofreciendo halo suave cual estela\nSutil vibra su cuerno emitendo notas que bailan en quieto susurro\nEcos plateados responden al viento y pintan el aire con tierno susurro",
+    "3": "Palabras nacen en su garganta y se evaporan como vapor vaho\nSe disipán antes de alcanzar al ser mágico quedándose sólo vaho\nTrazos oscuros emergen desde sus labios buscando resonar en eco\nPero la sombra traga los sonidos dejándolos mudos dentro del eco",
+    "4": "Acorde vibrante nace cuando el cuerno destella mil pequeñas luces\nY ella replica danzando dedos creando chispeantes ondas entre ambas luces\nNuevas notas flotan formando constelaciones que adornan ancho cielo\nCautiva la noche entera mientras titilan estrellas bajo amplio cielo",
+    "5": "Brilla, brilla, luz de amistad guía juegos y despierta alegres risas\nManos chispeantes siguen la melodía lanzando destellos que provocan risas\nCada chispa se une al canto creando círculos llenos de cálido brillo\nLa unión crece feliz mientras la magia refuerza su radiante brillo",
+    "6": "Mantienen sus palmas elevadas trazando esfera que arde como fuego\nEn torno giran figuras luminosas intentando cubrir toda zona fuego\nPese a su esfuerzo una mancha negra permanece como triste centelleo\nDentro del aro palpitan esperanzas luchando contra ese frío centelleo",
+    "7": "Ojos cómplices reflejan valor y juntas vuelan hacia sueños alto\nLuminiscencias entrelazadas crean columna que asciende siempre alto\nLa sombra retuerce formas densas pero ellos sienten pulso firme latido\nCruzando nubes negras confían mutuamente manteniendo vivo su latido",
+    "8": "Brilla, brilla, luz de amistad renueva fuerzas tocando profunda alma\nEl haz potente golpea la masa oscura intentando curvarla hasta alma\nLa nube densa ruge absorbiendo matices como viejo rumor\nMas los rayos perseveran batiendo sombras al compás del constante rumor",
+    "9": "Cantan unidos voces dulces rompiendo velo negro hacia fin\nLa frase mágica vibra liberando energía que abraza todo fin\nLa luz dorada explota brillante y disuelve la nube sin detenerse fluir\nInundando praderas celestes restaura esperanza en eterno fluir",
+    "10": "Brilla, brilla, luz de amistad culmina este viaje lleno de paz\nEl bosque reluce claro y estrellas celebran serenata eterna paz\nAl amanecer ambos se estrechan con ternura sellando puro abrazo\nLa gratitud fluye libremente mientras el sol besa cada nuevo abrazo"
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    8,
+    10
+  ],
+  "qa": {
+    "promedio": 1.0
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 3000,
+    "completion_tokens": 3380,
+    "total_tokens": 6380
+  },
+  "_metadata_params": {
+    "temperature": 0.75,
+    "top_p": 0.8,
+    "repetition_penalty": 1.15,
+    "attempt": 1
+  },
+  "_qa_passed": false
+}

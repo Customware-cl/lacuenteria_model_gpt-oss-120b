@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": 1755829560.7128787,
+    "retry_count": 0,
+    "qa_scores": {
+      "promedio": 4.2
+    },
+    "execution_time": 14.132717370986938,
+    "config_used": {
+      "temperature": 0.85,
+      "max_tokens": 4000
+    },
+    "status": "success",
+    "tokens_consumed": {
+      "prompt_tokens": 600,
+      "completion_tokens": 2015,
+      "total_tokens": 2615
+    }
+  }
+]

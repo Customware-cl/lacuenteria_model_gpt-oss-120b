@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": 1755971167.0992062,
+    "retry_count": 0,
+    "qa_scores": {
+      "arco_narrativo": 1.0,
+      "potencia_leitmotiv": 1.0,
+      "claridad_estructura": 1.0,
+      "promedio": 1.0
+    },
+    "execution_time": 3.5612246990203857,
+    "config_used": {
+      "temperature": 0.85,
+      "max_tokens": 4000
+    },
+    "status": "qa_failed",
+    "tokens_consumed": {
+      "prompt_tokens": 516,
+      "completion_tokens": 495,
+      "total_tokens": 1011
+    }
+  }
+]

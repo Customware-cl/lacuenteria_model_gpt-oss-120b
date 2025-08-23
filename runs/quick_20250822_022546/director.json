@@ -1,0 +1,100 @@
+{
+  "leitmotiv": "Brilla, brilla, luz sin fin",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y al Unicornio, y despertar su deseo de conectar",
+      "conflicto": "Emilia siente timidez y no sabe cómo iniciar la conversación",
+      "emocion": "Curiosidad",
+      "imagen_nuclear": "Emilia se asoma detrás de un gran girasol mientras el Unicornio muestra su cuerno brillante bajo el cielo azul"
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Intentar el primer contacto mediante gestos y sonidos",
+      "conflicto": "El Unicornio percibe el llamado de Emilia pero no entiende sus palabras",
+      "emocion": "Esperanza",
+      "imagen_nuclear": "Emilia agita la mano y suena un suave 'ding' que hace que el Unicornio incline la cabeza, dejando caer pequeñas chispas"
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Descubrir un lenguaje visual compartido",
+      "conflicto": "Aún falta una señal que ambos reconozcan al mismo tiempo",
+      "emocion": "Juguetona",
+      "imagen_nuclear": "Emilia dibuja un sol en la arena y el cuerno del Unicornio se ilumina al ritmo del dibujo"
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Crear un ritmo conjunto con palmas y cascos",
+      "conflicto": "Necesitan intensificar la energía para que la luz sea visible",
+      "emocion": "Emoción",
+      "imagen_nuclear": "Manos aplaudiendo y cascos golpeando el suelo, generando pequeñas estrellas que chispean alrededor"
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Introducir el leitmotiv y reforzar la unión",
+      "conflicto": "El prado sigue oscuro; la luz necesita crecer",
+      "emocion": "Determinación",
+      "imagen_nuclear": "Emilia tararea 'Brilla, brilla, luz sin fin' mientras el cuerno del Unicornio brilla con cada palabra, creando una aureola creciente"
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Combinar canto, aplausos y pisadas para amplificar la luz",
+      "conflicto": "La luz tiembla y necesita mejor coordinación",
+      "emocion": "Tensión",
+      "imagen_nuclear": "Un torbellino de luz vacilante que gira alrededor de Emilia y el Unicornio, con destellos que parpadean al ritmo"
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Lograr comprensión mutua sin palabras",
+      "conflicto": "Duda momentánea de si podrán terminar la creación luminosa",
+      "emocion": "Confianza",
+      "imagen_nuclear": "Primer plano de los ojos de Emilia y el Unicornio reflejando una luz suave y cálida"
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Sincronizar perfectamente y dirigir la luz hacia la colina",
+      "conflicto": "La luz debe alcanzar la cima para revelar el secreto",
+      "emocion": "Alegría",
+      "imagen_nuclear": "Un rayo de luz que sube por una colina verde, con pájaros observando asombrados"
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Desvelar el jardín oculto y compartir la maravilla",
+      "conflicto": "Necesitan que la luz inspire a otros",
+      "emocion": "Orgullo",
+      "imagen_nuclear": "El jardín florece en colores vivos mientras Emilia y el Unicornio se abrazan bajo una cascada luminosa"
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Invitar a otros niños a comunicarse mediante la luz, mostrando que la comunicación trasciende las palabras",
+      "resolucion": "Los niños forman un círculo, sus manos se unen a la luz y el Unicornio irradia un brillo que envuelve a todos, creando una atmósfera cálida y esperanzadora",
+      "emocion": "Calidez",
+      "imagen_nuclear": "Un grupo de niños tomados de la mano bajo la luz del cuerno del Unicornio, con un arcoíris de brillo que los rodea"
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "Emilia y el Unicornio crean una lluvia de estrellas que cae sobre el prado, iluminando a los animales nocturnos",
+      "resolucion_alternativa": "Los animales se unen al círculo de luz, formando una gran familia luminosa que celebra la unión sin palabras"
+    },
+    {
+      "climax_alternativo": "El dúo descubre una cueva de cristales que refleja su luz, multiplicándola en mil destellos",
+      "resolucion_alternativa": "Los niños entran a la cueva y aprenden a usar los reflejos como un nuevo lenguaje de luces, compartiendo alegría sin necesidad de hablar"
+    }
+  ],
+  "qa": {
+    "promedio": 4.2
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 600,
+    "completion_tokens": 2015,
+    "total_tokens": 2615
+  },
+  "_metadata_params": {
+    "temperature": 0.85,
+    "top_p": null,
+    "repetition_penalty": null,
+    "attempt": 1
+  },
+  "_qa_passed": true
+}

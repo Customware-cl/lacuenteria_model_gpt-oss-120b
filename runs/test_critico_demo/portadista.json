@@ -1,0 +1,14 @@
+{
+  "titulos": [
+    "¡A la caza de pistas con mi lupa mágica!",
+    "Descubriendo tesoros: la aventura de Prueba y su lupa",
+    "El día que la lupa brilló"
+  ],
+  "portada": {
+    "prompt": "Ilustración infantil colorida, escena diurna en un jardín brillante, Prueba de 5 años con cabello rizado castaño, ojos verdes y pecas, lleva su camiseta de rayas azules y blancas, pantalones cortos amarillos y zapatillas rojas. En sus manos sostiene la lupa de juguete con mango de madera que refleja luz. Prueba señala un pequeño insecto sobre una hoja, sonríe con la boca abierta, mientras el sol de tarde baña la escena con tonos cálidos. Composición centrada, estilo de acuarela suave con contornos definidos, colores predominantes azul, amarillo y rojo, transmitiendo curiosidad y alegría."
+  },
+  "qa": {
+    "recordabilidad_titulo": 5,
+    "sintesis_emotiva": 5
+  }
+}

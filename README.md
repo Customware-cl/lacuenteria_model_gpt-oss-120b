@@ -2,7 +2,14 @@
 
 ## ⚠️ Estado Actual: En Desarrollo
 
-**Nota Importante**: El sistema presenta limitaciones con respuestas largas del modelo GPT-OSS-120B que afectan algunos agentes. Ver [`docs/LIMITACIONES_MODELO.md`](docs/LIMITACIONES_MODELO.md) para detalles técnicos.
+**Última actualización**: 22 de Agosto 2025
+
+### 🚀 Cambios Recientes
+- **Sistema de Evaluación Dual**: Control sobre verificador QA riguroso vs autoevaluación rápida
+- **Evaluación Externa**: Endpoint directo para evaluar historias desde lacuenteria.cl
+- **Optimizaciones**: Configuraciones específicas por agente para mejor rendimiento
+
+Ver [`docs/ESTADO_ACTUAL.md`](docs/ESTADO_ACTUAL.md) para detalles completos.
 
 ## 📚 Descripción
 
@@ -185,10 +192,30 @@ El sistema genera un JSON con la siguiente estructura:
 
 ## 🔒 Controles de Calidad
 
-Cada agente incluye autoevaluación QA (1-5):
-- Si QA < 4: El orquestador devuelve al agente anterior
-- Múltiples iteraciones hasta alcanzar calidad deseada
-- Validación final de formato y coherencia
+### Sistema de Evaluación Dual
+
+El sistema soporta dos modos de evaluación QA:
+
+#### Modo 1: Verificador QA Riguroso (Default)
+```python
+orchestrator = StoryOrchestrator(story_id, mode_verificador_qa=True)
+```
+- Evaluador independiente con métricas específicas por agente
+- Scores típicos: 2.8-3.5/5
+- Detecta problemas específicos y sugiere mejoras
+- Recomendado para **producción**
+
+#### Modo 2: Autoevaluación Rápida
+```python
+orchestrator = StoryOrchestrator(story_id, mode_verificador_qa=False)
+```
+- El agente evalúa su propio trabajo
+- Scores típicos: 4.0-5.0/5
+- Más rápido pero menos riguroso
+- Recomendado para **desarrollo y testing**
+
+**Umbral de aprobación**: 4.0/5 en ambos modos
+**Reintentos máximos**: 2 por agente si QA < 4.0
 
 ## 🚀 Uso
 
@@ -248,11 +275,16 @@ El sistema Cuentería utiliza tres tipos de endpoints:
 - **Función**: Obtener logs detallados del procesamiento
 - **Respuesta**: Logs de cada agente con timestamps y métricas
 
-##### Evaluación Crítica (Opcional)
+##### Evaluación Crítica 
+**Opción 1: API Local** (Solo accesible localmente)
 - **POST** `/api/stories/{story_id}/evaluate`
-- **Función**: Ejecutar agente crítico sobre historia completada
-- **Respuesta**: Evaluación detallada con fortalezas, áreas de mejora y sugerencias
-- **Nota**: No es parte del flujo principal, se ejecuta por separado
+- **Función**: Ejecutar agente crítico sobre historia (interna o externa)
+- **Body**: JSON de historia externa (opcional)
+
+**Opción 2: Endpoint Directo LLM** (Accesible desde Internet)
+- **POST** `http://69.19.136.204:8000/v1/chat/completions`
+- **Función**: Evaluación directa usando GPT-OSS-120B
+- **Documentación**: Ver [`docs/EVALUACION_DIRECTA_LLM.md`](docs/EVALUACION_DIRECTA_LLM.md)
 
 ##### Reintentar Historia
 - **POST** `/api/stories/{story_id}/retry`

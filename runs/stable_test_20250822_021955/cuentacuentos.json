@@ -1,0 +1,35 @@
+{
+  "paginas_texto": {
+    "1": "En el claro implora,\nsus brazos abiertos claman a la aurora,\nel bosque guarda silencio presente,\ny su corazón late valiente.",
+    "2": "Siguiendo pisadas que centellean con delicadeza,\nsobre musgo verde nace una senda firmeza,\nguidándola paso a paso mientras camina,\ny el eco misterioso invita al corazón a soñar.",
+    "3": "Al llegar al claro ve un corcel dorado,\nsus ojos reflejan mares donde el alba ha brotado,\nsin palabras intercambian miradas llenas de paz,\ngesticulan suaves notas que el aire dibuja audaz.",
+    "4": "Moviendo la mano busca crear algo sutil,\nsurge entonces una chispa tenue y también sutil,\naunque vacilan aún sienten calor interior,\ncada destello avanza alimentando mayor vigor.",
+    "5": "Uniendo sus energías crean una llama llena de magia,\nesa llama se expande y revela la entrada con pura magia,\ndespeja temor del altar,\ny el ánimo crece libre cual ave al volar.",
+    "6": "Avanzan cautelosos bajo ecos que parecen seda,\nlas paredes murmuran historias dulces como seda,\nsienten temores leves pero aprietan su puño con bondad,\njuntos descubren fuerza y continúan con segura seguridad.",
+    "7": "Observan luciérnas pálidas atrapadas en fría melancolía,\nsus luces menguan casi apagándose bajo gris melodía,\ncon ternura extienden sus manos para intentar hacerlas revivir,\nel gesto brinda consuelo y poco a poco vuelven a latir.",
+    "8": "Unen sus movimientos creando un haz lleno de fulgro,\nel rayo corta sombras como espada de puro fulgro,\ny al liberar a las luciérnas todos comienzan a celebrar,\nel bosque responde unido en coro para siempre festejar.",
+    "9": "El resplandor danza entre troncos despertando nuevo credo,\ncada rama vibra bajo halos que pintan eterno credo,\nels arroyos cantan alegres notas que nunca han sido oído,\ny los niños del bosque ríen felices sintiendo amor recibido.",
+    "10": "Al volver a su hogar lleva dentro dulce alma,\nsu corazón late tranquilo sabiendo que habla su propia alma,\nahora comparte gestos tiernos con quien escuche su sincera espera,\ny cada noche celebra vida bajo estrellas guardando eterna espera."
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    8,
+    10
+  ],
+  "qa": {
+    "promedio": 1.0
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 3171,
+    "completion_tokens": 5157,
+    "total_tokens": 8328
+  },
+  "_metadata_params": {
+    "temperature": 0.75,
+    "top_p": 0.8,
+    "repetition_penalty": 1.15,
+    "attempt": 3
+  },
+  "_qa_passed": false
+}

@@ -1,0 +1,195 @@
+{
+  "estilo_global": "Acuarela suave con contornos redondeados, paleta pastel y brillo sutil, inspirado en libros infantiles clásicos.",
+  "color_script": {
+    "1": {
+      "paleta": [
+        "#FFDAC1",
+        "#FFD1DC",
+        "#A8D0DB",
+        "#FFF8E1"
+      ],
+      "momento": "Amanecer, luz dorada difusa bañando el prado",
+      "atmosfera": "Suave halo cálido que envuelve a Emilia y al unicornio, sensación de sorpresa tímida; cámara 35mm f/2.8, poca profundidad de campo enfocando al unicornio."
+    },
+    "2": {
+      "paleta": [
+        "#FFE4B5",
+        "#BFD8B8",
+        "#FFC1E3",
+        "#FFF5BA"
+      ],
+      "momento": "Mediodía brillante en el claro del bosque",
+      "atmosfera": "Luz directa y nítida realza la crin arcoíris y el cuerno de cristal; cámara 50mm f/4, enfoque medio sobre el cuerno que dibuja luz."
+    },
+    "3": {
+      "paleta": [
+        "#FFB347",
+        "#FFCCCB",
+        "#FFDAB9",
+        "#FFF0E0"
+      ],
+      "momento": "Atardecer dorado",
+      "atmosfera": "Calor del sol poniente crea un halo dorado alrededor de Emilia y el unicornio, confianza creciente; cámara 85mm f/2.0, plano cercano en manos y llavero."
+    },
+    "4": {
+      "paleta": [
+        "#C1C8E4",
+        "#F5E1A4",
+        "#E6CFE2",
+        "#FFFFFF"
+      ],
+      "momento": "Crepúsculo con luciérnagas titilando",
+      "atmosfera": "Luz tenue mezclada con destellos de luciérnagas y arco iris pastel, alegría lúdica; cámara 35mm f/2.8, plano medio dinámico con ligera inclinación."
+    },
+    "5": {
+      "paleta": [
+        "#E0F7FA",
+        "#F8EDEB",
+        "#FFF9C4",
+        "#D1C4E9"
+      ],
+      "momento": "Noche de luna llena",
+      "atmosfera": "Luz plateada de la luna refleja una esfera luminosa serena, vínculo profundo; cámara 70mm f/2.2, macro detalle cenital sobre los objetos ancla."
+    },
+    "6": {
+      "paleta": [
+        "#A9A9A9",
+        "#708090",
+        "#B0C4DE",
+        "#FFB6C1"
+      ],
+      "momento": "Tormenta repentina sobre el prado",
+      "atmosfera": "Luz grisácea difusa con matices azulados, sombras contrastantes y chispa irregular del cuerno, confusión ligera; cámara 24mm f/5.6, gran angular que muestra la amenaza del viento."
+    },
+    "7": {
+      "paleta": [
+        "#CDE6F0",
+        "#F0E68C",
+        "#E6E6FA",
+        "#FFFFFF"
+      ],
+      "momento": "Lluvia ligera al caer la tarde",
+      "atmosfera": "Luz difusa de la lluvia suaviza los colores mientras el llavero emite una cálida luz, empatía y valentía; cámara 50mm f/3.5, plano medio centrado en la interacción."
+    },
+    "8": {
+      "paleta": [
+        "#FFEBCC",
+        "#B3E5FC",
+        "#FFCDD2",
+        "#E1BEE7"
+      ],
+      "momento": "Mañana despejada tras la lluvia, arco iris tenue",
+      "atmosfera": "Sol emergente atraviesa el arco iris creando brillos multicolores, protección compartida; cámara 35mm f/2.8, vista a nivel del suelo que destaca la burbuja luminosa."
+    },
+    "9": {
+      "paleta": [
+        "#2C3E50",
+        "#F4F4F4",
+        "#FFD700",
+        "#FF69B4"
+      ],
+      "momento": "Noche estrellada con luna creciente",
+      "atmosfera": "Luz lunar plateada y destellos estelares acompañan una danza exuberante, felicidad plena; cámara 85mm f/1.8, foco en los destellos y expresiones."
+    },
+    "10": {
+      "paleta": [
+        "#FFDAC1",
+        "#A8D0DB",
+        "#FFF8E1",
+        "#FFD700"
+      ],
+      "momento": "Amanecer del día siguiente",
+      "atmosfera": "Luz dorada envuelve la despedida, ternura y esperanza; cámara 50mm f/2.0, plano medio resaltando los rostros y la chispa ascendente."
+    }
+  },
+  "transiciones": [
+    {
+      "de_pagina": 1,
+      "a_pagina": 2,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 2,
+      "a_pagina": 3,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 3,
+      "a_pagina": 4,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 4,
+      "a_pagina": 5,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 5,
+      "a_pagina": 6,
+      "tipo": "dramatic shift"
+    },
+    {
+      "de_pagina": 6,
+      "a_pagina": 7,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 7,
+      "a_pagina": 8,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 8,
+      "a_pagina": 9,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 9,
+      "a_pagina": 10,
+      "tipo": "soft fade"
+    }
+  ],
+  "qa": {
+    "coherencia_visual": 3.2,
+    "progresion_emocional": 4.6,
+    "practicidad": 3.5,
+    "promedio": 3.8
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 4117,
+    "completion_tokens": 2671,
+    "total_tokens": 6788
+  },
+  "_metadata_params": {
+    "temperature": 0.65,
+    "top_p": 0.7,
+    "repetition_penalty": 1.05,
+    "attempt": 1
+  },
+  "_qa_evaluation": {
+    "scores": {
+      "coherencia_visual": 3.2,
+      "progresion_emocional": 4.6,
+      "practicidad": 3.5,
+      "promedio": 3.8
+    },
+    "promedio": 3.8,
+    "pasa_umbral": false,
+    "problemas": [
+      "Paletas de colores en páginas 6 y 9 introducen tonos oscuros y saturados (#2C3E50, #FF69B4, #A9A9A9) que rompen la coherencia con el estilo pastel descrito.",
+      "Repetición excesiva del tipo de transición \"gradual\" en 7 de 9 cambios, limitando la variedad visual.",
+      "Instrucciones de cámara muy técnicas (ej. \"macro detalle cenital\", \"cámara 70mm f/2.2\") pueden ser poco prácticas para ilustradores que no trabajan con equipos fotográficos reales.",
+      "Uso repetido del mismo color #FFDAC1 en páginas 1 y 10 sin justificación clara, disminuye la diversidad cromática.",
+      "Falta de indicaciones explícitas sobre la posición y escala de los personajes respecto al fondo en varias páginas."
+    ],
+    "mejoras": [
+      "Revisar las paletas de páginas 6 y 9 para usar tonos pastel más suaves y evitar colores muy oscuros o neón.",
+      "Introducir variedad en los tipos de transición (p. ej., \"fade\", \"wipe\", \"dissolve\") para enriquecer la progresión visual.",
+      "Simplificar las indicaciones de cámara a conceptos de composición (\"enfoque en el unicornio\", \"plano amplio del prado\") en lugar de especificaciones de lente exactas.",
+      "Variar los colores reutilizados o justificar su repetición mediante motivos narrativos (p. ej., color del objeto clave).",
+      "Añadir notas breves sobre la ubicación y escala de Emilia y el unicornio en cada escena para guiar al ilustrador."
+    ],
+    "justificacion": "Score 3.8/5: El agente entrega una dirección visual rica en detalle emocional y estilo, pero la coherencia cromática y la practicidad de algunas instrucciones son deficientes. La falta de variedad en transiciones y la escasa guía de composición reducen la puntuación. Con ajustes en paletas, simplificación de indicaciones técnicas y mayor diversidad de transiciones, podría alcanzar el umbral de 4.0."
+  },
+  "_qa_passed": false
+}

@@ -1,0 +1,98 @@
+{
+  "metas_generales": [
+    "Desarrollar la capacidad de expresar emociones y necesidades sin usar solo palabras.",
+    "Practicar la autorregulación mediante respiración y etiquetado emocional.",
+    "Fomentar la colaboración y la amistad a través de acciones compartidas."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Identificar y nombrar la curiosidad y el leve miedo que siente al entrar al bosque oscuro.",
+      "frase_modelo": "Siento curiosidad y un poquito de miedo.",
+      "recurso": "Juego de tarjetas con caritas que representan emociones; respirar 3 veces inhalando por la nariz y exhalando por la boca.",
+      "evitar": "No quedarse inmóvil sin expresar lo que siente."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Observar y describir la llegada del unicornio usando gestos y sonidos suaves.",
+      "frase_modelo": "Mira, el unicornio brilla y hace un sonido suave.",
+      "recurso": "Imitar el brillo con las manos y tararear una nota tranquila; etiquetar la sorpresa.",
+      "evitar": "Hablar en tono alto o gritar al ver al unicornio."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Reconocer la frustración cuando las palabras se pierden y buscar una forma alternativa de comunicar.",
+      "frase_modelo": "Mis palabras se van, pero puedo usar mi luz.",
+      "recurso": "Señalar con la mano y hacer un gesto de luz; respiración de 4 cuentas para calmar la frustración.",
+      "evitar": "Insistir en seguir hablando sin buscar otro medio."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Cooperar con el unicornio usando luz y música como lenguaje compartido.",
+      "frase_modelo": "Vamos a tocar la luz juntos.",
+      "recurso": "Clap de manos al ritmo de la música del unicornio; repetir la melodía con palmadas suaves.",
+      "evitar": "Interrumpir la música o apagar la luz de forma brusca."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Imitar la melodía con destellos de manos y reconocer el entusiasmo como señal de juego.",
+      "frase_modelo": "Mira mis chispas, ¡estoy jugando contigo!",
+      "recurso": "Mover los dedos como si fueran estrellas; contar hasta cinco mientras se hacen los destellos.",
+      "evitar": "Forzar movimientos rápidos que puedan generar frustración."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Mantener la concentración para crear un círculo de luz y notar la mancha negra como desafío.",
+      "frase_modelo": "Nuestro círculo es fuerte, aunque quede una sombra.",
+      "recurso": "Respirar profundo antes de iniciar el círculo; decir en voz alta \"¡Vamos!\" mientras se extienden los brazos.",
+      "evitar": "Abandonar el círculo sin intentar una solución."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Expresar coraje y confianza al mirar al unicornio y combinar luces para reforzar la amistad.",
+      "frase_modelo": "Juntos somos más brillantes.",
+      "recurso": "Sonreír y tocar suavemente el hombro del otro; inhalar y exhalar contando hasta tres para reforzar la seguridad.",
+      "evitar": "Mostrar miedo o retirarse del contacto visual."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Regular la tensión mediante respiración lenta mientras la nube negra se vuelve más densa.",
+      "frase_modelo": "Respiramos profundo y seguimos brillando.",
+      "recurso": "Respiración de 5 cuentas (inhala 2, sostén 1, exhala 2); usar una palabra calmante como \"tranquilo\".",
+      "evitar": "Gritar o moverse rápidamente sin control."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Participar en el canto del leitmotiv como forma de liberar energía positiva y disolver la sombra.",
+      "frase_modelo": "Brilla, brilla, luz de amistad.",
+      "recurso": "Cantar en voz suave y acompañar con palmadas rítmicas; marcar con los dedos el ritmo para mantener la calma.",
+      "evitar": "Interrumpir el canto o cantar de forma estridente."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Celebrar la resolución del conflicto expresando felicidad y paz mediante abrazos y palabras de agradecimiento.",
+      "frase_modelo": "Gracias, amigo, ahora todo está iluminado.",
+      "recurso": "Dar un abrazo suave; decir \"gracias\" y respirar profundo para sentir la alegría.",
+      "evitar": "Ignorar el momento de celebración o permanecer en silencio sin expresar gratitud."
+    }
+  ],
+  "banderas": [
+    "Posible sensibilidad a luces intensas; acompañar al niño si se muestra incómodo.",
+    "Atención a signos de sobrecarga sensorial durante la música y los destellos."
+  ],
+  "qa": {
+    "promedio": 4.2
+  },
+  "_metadata_tokens": {
+    "prompt_tokens": 1747,
+    "completion_tokens": 1593,
+    "total_tokens": 3340
+  },
+  "_metadata_params": {
+    "temperature": 0.55,
+    "top_p": null,
+    "repetition_penalty": null,
+    "attempt": 1
+  },
+  "_qa_passed": true
+}
