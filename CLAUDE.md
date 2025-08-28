@@ -124,7 +124,7 @@ Cuentería es un sistema de orquestación multiagente para la generación automa
 - `runs/{story_id}/` - Carpeta con todos los artefactos generados
 - `runs/{story_id}/manifest.json` - Metadata y estado del procesamiento
 - `runs/{story_id}/12_validador.json` - Cuento final completo
-
+- en caso de hacer un Test, la estructura debe ser `runs/{nombre de archivo brieg.json}{(versión del flujo)}-AAMMDDHHmm/`
 ## Sistema de Evaluación de Calidad (QA)
 
 ### Verificador QA Independiente

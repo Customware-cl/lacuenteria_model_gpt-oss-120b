@@ -3,15 +3,29 @@
 import json
 import requests
 import time
+import sys
 
-# Brief de prueba simple
-brief = {
-    "story_id": f"test-v2-{int(time.time())}",
-    "personajes": ["Sol", "Nube"],
-    "historia": "Sol y Nube aprenden a trabajar juntos",
-    "mensaje_a_transmitir": "La colaboración trae mejores resultados",
-    "edad_objetivo": 4
-}
+# Cargar brief desde archivo si se proporciona
+if len(sys.argv) > 1:
+    with open(sys.argv[1], 'r') as f:
+        brief_data = json.load(f)
+        # Convertir al formato esperado por la API
+        brief = {
+            "story_id": f"test-v2-emilia-{int(time.time())}",
+            "personajes": [p["nombre"] if isinstance(p, dict) else p for p in brief_data.get("personajes", [])],
+            "historia": brief_data.get("historia", ""),
+            "mensaje_a_transmitir": brief_data.get("mensaje_a_transmitir", "Aprender valores importantes"),
+            "edad_objetivo": 3  # Edad para Emilia
+        }
+else:
+    # Brief de prueba simple
+    brief = {
+        "story_id": f"test-v2-{int(time.time())}",
+        "personajes": ["Sol", "Nube"],
+        "historia": "Sol y Nube aprenden a trabajar juntos",
+        "mensaje_a_transmitir": "La colaboración trae mejores resultados",
+        "edad_objetivo": 4
+    }
 
 print(f"Probando pipeline v2 con historia: {brief['story_id']}")
 print("=" * 60)

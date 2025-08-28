@@ -1,8 +1,284 @@
 {
   "version": "v2",
-  "last_updated": "2025-08-28T00:00:00",
-  "total_conflicts_analyzed": 0,
-  "conflict_patterns": {},
+  "last_updated": "2025-08-28T21:51:40.291991",
+  "total_conflicts_analyzed": 3,
+  "conflict_patterns": {
+    "01_director": {
+      "new_1958": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:07:55.417419",
+        "typical_issue": "No se encontró campo 'qa' en la respuesta",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756415263"
+        ],
+        "status": "unresolved"
+      },
+      "ambiguity_issue": {
+        "count": 2,
+        "first_seen": "2025-08-28T21:45:19.346535",
+        "typical_issue": "El clímax de la historia no está claramente marcado; se percibe ambiguo entre la página 7 (viento) y la página 8 (arcoíris).",
+        "recommendation": "Agregar: 'cada descripción debe ser inequívoca y clara'",
+        "stories_affected": [
+          "test-v2-1756417495",
+          "test-v2-emilia-1756417877"
+        ],
+        "last_seen": "2025-08-28T21:51:40.291981"
+      },
+      "new_9562": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:45:46.592927",
+        "typical_issue": "Lógica confusa en página 2: Sol marchita flores y Nube cubre el cielo, pero la frase leitmotiv parece forzada.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      },
+      "new_7895": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:45:46.592939",
+        "typical_issue": "Objetivo y conflicto poco claros en página 4 (viento separa a Sol y Nube sin explicar la intención).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      },
+      "new_7390": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:45:46.592941",
+        "typical_issue": "Errores gramaticales: falta de coma en página 5 y uso inconsistente de \"Nubes oscuras\" en página 9.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      },
+      "new_7616": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:45:46.592942",
+        "typical_issue": "Repetición del leitmotiv \"¡Juntos brillamos más!\" tres veces, lo que puede resultar excesivo.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      },
+      "new_8378": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:52:06.191268",
+        "typical_issue": "Repetición excesiva del leitmotiv \"¡Tiritán, tiritán!\" (más de 3 apariciones)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-1756417877"
+        ],
+        "status": "unresolved"
+      },
+      "new_7843": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:52:06.191277",
+        "typical_issue": "Variante 2 introduce una lesión ligera, contenido sensible para preescolares",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-1756417877"
+        ],
+        "status": "unresolved"
+      },
+      "new_5772": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:52:06.191279",
+        "typical_issue": "Inconsistencia en los campos del beat_sheet: solo la página 10 incluye \"resolucion\"",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-1756417877"
+        ],
+        "status": "unresolved"
+      },
+      "new_3419": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:52:06.191281",
+        "typical_issue": "Conflictos como el pastel mojado (pág 2) y el globo desinflado (pág 5) no tienen resolución clara",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-1756417877"
+        ],
+        "status": "unresolved"
+      },
+      "new_7980": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:52:06.191282",
+        "typical_issue": "Clímax poco marcado; la mayor tensión está dispersa y no culmina en un punto alto",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-1756417877"
+        ],
+        "status": "unresolved"
+      },
+      "new_7699": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:52:34.958174",
+        "typical_issue": "Repetición de la frase \"¡Brilla la fiesta!\" más de 3 veces (páginas 2,5,10 y variantes)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-1756417877"
+        ],
+        "status": "unresolved"
+      },
+      "new_8856": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:52:34.958184",
+        "typical_issue": "Arco narrativo sin clímax claramente definido; los conflictos son fragmentados y no escalan de forma evidente",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-1756417877"
+        ],
+        "status": "unresolved"
+      },
+      "new_3407": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:52:34.958186",
+        "typical_issue": "Inconsistencia en la nomenclatura del último beat: usa \"resolucion\" en lugar de \"conflicto\"",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-1756417877"
+        ],
+        "status": "unresolved"
+      },
+      "new_4741": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:52:34.958188",
+        "typical_issue": "Escalada de tensión poco evidente entre los beats 4‑9; cada conflicto parece independiente",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-1756417877"
+        ],
+        "status": "unresolved"
+      },
+      "new_1853": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:52:34.958189",
+        "typical_issue": "Falta de conexión explícita entre los beats y la resolución final",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-1756417877"
+        ],
+        "status": "unresolved"
+      }
+    },
+    "02_psicoeducador": {
+      "new_1958": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:08:30.465429",
+        "typical_issue": "No se encontró campo 'qa' en la respuesta",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756415263"
+        ],
+        "status": "unresolved"
+      },
+      "new_2934": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:46:37.561958",
+        "typical_issue": "No se indica rango de edad objetivo para las actividades.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      },
+      "new_774": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:46:37.561970",
+        "typical_issue": "Algunas frases modelo son abstractas y pueden resultar difíciles de comprender para niños pequeños.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      },
+      "new_7174": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:46:37.561972",
+        "typical_issue": "Repetición del recurso \"Etiquetado emocional\" en tres páginas sin diversificar estrategias.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      },
+      "new_5136": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:46:37.561973",
+        "typical_issue": "Falta de indicadores de evaluación o criterios de éxito para medir la adquisición de habilidades.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      },
+      "new_5782": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:46:37.561975",
+        "typical_issue": "Micro_habilidades no siempre están claramente vinculadas a una meta general específica.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      },
+      "coherence_issue": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:47:04.770639",
+        "typical_issue": "Incoherencia entre micro_habilidad 'Planificación conjunta simple' y recurso 'Etiquetado emocional + Autocontrol por pasos' en página 6",
+        "recommendation": "Agregar verificación de coherencia con artefactos previos",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "last_seen": "2025-08-28T21:47:04.770649"
+      },
+      "new_65": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:47:28.859946",
+        "typical_issue": "Inconsistencia entre micro_habilidad y recurso en página 8 (señal visual vs pedir ayuda).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      },
+      "new_2131": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:47:28.859958",
+        "typical_issue": "Frase modelo poco clara en página 6 ('Primero brilla, luego llueve suave') no refleja plan por pasos.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      },
+      "new_5055": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:47:28.859960",
+        "typical_issue": "Recurso 'Etiquetado emocional' repetido 3 veces, posible sobreuso.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      },
+      "new_1734": {
+        "count": 1,
+        "first_seen": "2025-08-28T21:47:28.859961",
+        "typical_issue": "Micro_habilidad de página 4 ('dar sombra') puede resultar abstracta para niños pequeños.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-1756417495"
+        ],
+        "status": "unresolved"
+      }
+    }
+  },
   "agent_conflicts": {},
   "prompt_improvements": {}
 }
