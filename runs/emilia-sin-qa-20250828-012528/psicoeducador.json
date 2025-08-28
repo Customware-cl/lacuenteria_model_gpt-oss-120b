@@ -1,0 +1,93 @@
+{
+  "metas_generales": [
+    "Aprender a compartir juguetes y materiales con los demás.",
+    "Expresar emociones con palabras y gestos sencillos.",
+    "Pedir ayuda o permiso de forma amable y clara.",
+    "Participar en actividades grupales respetando turnos.",
+    "Desarrollar paciencia mientras se espera su turno o una sorpresa."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Identificar y nombrar la emoción de timidez.",
+      "frase_modelo": "Veo que te sientes un poquito tímido, ¿puedes decirme cómo se siente tu corazón?",
+      "recurso": "Etiquetado emocional + respiración de globo (inhalar profundo y soplar imaginando un globo).",
+      "evitar": "Decir que no debe sentirse tímido o minimizar su emoción."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Explorar opciones y expresar preferencia.",
+      "frase_modelo": "Mira todos los disfraces, ¿cuál te gusta más? Puedes señalarlo.",
+      "recurso": "Juego de elección con dos opciones usando palabras \"me gusta\" y gestos.",
+      "evitar": "Forzar una elección o criticar la indecisión."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Reconocer deseo y frustración.",
+      "frase_modelo": "Quieres jugar con la pelota, ¿cómo se siente eso?",
+      "recurso": "Etiquetado emocional + respiración de 4 cuentas (inhalar 1‑2‑3‑4, exhalar 1‑2‑3‑4).",
+      "evitar": "Reprimir la frustración o decir que no debe sentirla."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Pedir permiso de forma educada.",
+      "frase_modelo": "Puedes decir: \"¿Puedo jugar con la pelota, por favor?\"",
+      "recurso": "Modelado de frase y práctica con muñeco o peluche.",
+      "evitar": "Criticar si tarda en preguntar o reprender por timidez."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Cooperar en juego grupal.",
+      "frase_modelo": "¡Vamos a pasar la pelota juntos y reírnos!",
+      "recurso": "Juego de turnos con señal visual (banderín) y aplausos al pasar.",
+      "evitar": "Presionar para que todos jueguen sin pausas o sin respetar turnos."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Esperar con paciencia la sorpresa del pastel.",
+      "frase_modelo": "Podemos respirar mientras esperamos el pastel.",
+      "recurso": "Respiración de cuento (contar hasta 5 en inhalar y exhalar).",
+      "evitar": "Imponer urgencia o impaciencia."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Participar en canto y movimiento colectivo.",
+      "frase_modelo": "Cantemos juntos: \"¡Juntos es mejor!\"",
+      "recurso": "Canción con gestos y tomarse de la mano en círculo.",
+      "evitar": "Excluir a niños que no cantan o se sienten tímidos."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Regular la excitación al soplar las velas.",
+      "frase_modelo": "Antes de soplar, tomemos una respiración profunda.",
+      "recurso": "Respiración de soplo (inhalar, soplar como vela).",
+      "evitar": "Presionar para que soplen rápido o sin calma."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Practicar generosidad al compartir el pastel.",
+      "frase_modelo": "¿A quién le das un pedazo? Puedes decir \"para ti\".",
+      "recurso": "Uso de palabras de ofrecimiento y turnos de reparto.",
+      "evitar": "Culpar si algún niño quiere más porción."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Mantener la amistad y juego continuo.",
+      "frase_modelo": "Al final del día, podemos decir \"gracias\" y seguir jugando.",
+      "recurso": "Despedida con abrazo opcional y agradecimiento verbal.",
+      "evitar": "Forzar que todos jueguen hasta que estén cansados o incómodos."
+    }
+  ],
+  "banderas": [
+    "Retirada completa del juego o aislamiento prolongado.",
+    "Gritos, empujones o agresión al compartir.",
+    "Negarse repetidamente a pedir ayuda o permiso.",
+    "Falta de contacto visual al interactuar con otros niños.",
+    "Conductas de autolesión leve (rasguños, morderse)."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "metas_generales": [
+    "Reconocer y nombrar sus propias emociones y las de los demás",
+    "Practicar la espera de turnos de forma tranquila",
+    "Ofrecer y aceptar compartir juguetes y materiales",
+    "Utilizar respiraciones cortas para calmarse cuando surge frustración",
+    "Pedir ayuda o apoyo cuando se siente inseguro o tímido",
+    "Dividir objetos (como el pastel) en partes iguales",
+    "Expresar gratitud al recibir o dar algo",
+    "Participar en actividades grupales con entusiasmo y respeto"
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Despertar con alegría y expresar felicidad por su día especial",
+      "frase_modelo": "¡Mira, hoy es mi cumpleaños! Me siento muy feliz.",
+      "recurso": "Respiración de burbujas: inhalar profundo y soplar suavemente como si hiciera burbujas.",
+      "evitar": "Insistir que el niño deba estar feliz todo el tiempo o forzar la sonrisa."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Observar el entorno festivo y nombrar colores y disfraces",
+      "frase_modelo": "¡Qué colores tan brillantes! Me gusta ver a mis amigos con sus disfraces.",
+      "recurso": "Etiquetado emocional: decir \"Me siento emocionado al ver todo esto\" mientras señala los colores.",
+      "evitar": "Presionar a que todos se vistan de una forma específica o criticar la ropa de alguien."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Identificar su timidez y verbalizar cómo se siente",
+      "frase_modelo": "Me siento un poco tímida con mis alas de mariposa.",
+      "recurso": "Nombrar la emoción y hacer tres respiraciones profundas para sentirse más segura.",
+      "evitar": "Culpar o avergonzar al niño por sentirse tímido."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Aceptar ayuda y responder con gratitud",
+      "frase_modelo": "Gracias por compartir tu capa, me gusta jugar contigo.",
+      "recurso": "Practicar decir \"por favor\" y \"gracias\" antes y después de recibir la capa.",
+      "evitar": "Forzar la aceptación sin que el niño se sienta cómodo."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Esperar su turno mientras observa a los demás jugar",
+      "frase_modelo": "Voy a esperar mi turno para jugar con los bloques.",
+      "recurso": "Cuenta regresiva de 5 segundos (1,2,3,4,5) mientras espera.",
+      "evitar": "Castigar la impaciencia o gritar al niño por esperar."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Proponer un intercambio de juguetes de forma clara",
+      "frase_modelo": "¿Quieres intercambiar mi pelota por tu coche?",
+      "recurso": "Modelar el intercambio con una sonrisa y palabras sencillas, mostrando el objeto que se ofrece.",
+      "evitar": "Imponer el intercambio sin que el otro niño acepte."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Reforzar el leitmotiv cantando y aplaudiendo",
+      "frase_modelo": "¡Compartir es brillar! Cantemos juntos.",
+      "recurso": "Cantar la frase del leitmotiv con ritmo y aplaudir después de cada verso.",
+      "evitar": "Criticar a quien no quiera cantar o aplaudir."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Participar en el intercambio y expresar alegría",
+      "frase_modelo": "¡Mira, ahora tengo este bloque! Me gusta compartir.",
+      "recurso": "Aplaudir y decir \"¡bien hecho!\" a cada niño que comparte.",
+      "evitar": "Comparar quién tiene más o quién comparte mejor."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Negociar la división del pastel de forma equitativa",
+      "frase_modelo": "Vamos a cortar el pastel en pedazos iguales para todos.",
+      "recurso": "Usar una regla visual o contar los trozos en voz alta mientras se corta.",
+      "evitar": "Gritar, presionar o crear competencia por el trozo más grande."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Repartir el pastel de manera justa y celebrar juntos",
+      "frase_modelo": "Aquí tienes tu pedazo, gracias por compartir.",
+      "recurso": "Sonreír, dar un abrazo o un gesto de cariño y decir \"gracias\" al recibir.",
+      "evitar": "Enfatizar la perfección del reparto o señalar errores."
+    }
+  ],
+  "banderas": [
+    "Exceso de presión para que el niño comparta sin respetar su voluntad",
+    "No validar emociones negativas como timidez o frustración",
+    "Uso de castigos o reprimendas cuando el niño no espera su turno"
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

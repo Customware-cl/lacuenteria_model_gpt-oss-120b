@@ -1,0 +1,93 @@
+{
+  "paginas_texto_pulido": {
+    "1": "En el jardín flotan globos de mil colores\nLos niños vestidos ríen, llenos de colores\nEmilia bajo el arco guarda un sueño latente\nSus ojos miran, su corazón late latente",
+    "2": "Entre cajas de papel busca su traje ideal\nAl abrir una descubre alas, su anhelo se vuelve ideal\nCon voz temblorosa grita: ¡Feliz día, Emilia!\nTodos al unísono repiten: ¡Feliz día, Emilia!",
+    "3": "En círculo giran amigos, la música los llama\nEmilia observa sus pies, el compás la anima y llama\nEl miedo susurra, pero ella decide con brío\nCon un suspiro valiente, siente el suave compás con brío",
+    "4": "Un compañero extiende su mano bajo cielo brillante\nEmilia siente la confianza, acepta el gesto brillante\nCon valentía su corazón late fuerte y decidido\nJuntos dan un paso, y el temblor se vuelve canción decidido",
+    "5": "Con su vestido de mariposa, Emilia parece volar al cielo\nSus alas brillan al ritmo, y el sueño vuelve al cielo\nTodos gritan alegría: ¡Feliz cumpleaños, Emilia!\nLa fiesta vibra al compás, cantan todos: ¡Feliz cumpleaños, Emilia!",
+    "6": "Antes de cantar, respira profundo y siente el aire\nCuenta dos respiraciones, dos pausas, dos exhalaciones, llenas de aire\nEl silencio se vuelve dulce, aguardando la primera nota\nCada niño escucha, su pecho late al ritmo de la canción, sin prisa, en nota",
+    "7": "Emilia se inclina, fija la vista en la llama, prepara su soplo\nImagina una gran burbuja y, con delicadeza, la lanza en un soplo\nCon esfuerzo trata de apagar cada vela brillante\nEl aire danza y apaga una a una, dejando la noche tranquila y brillante",
+    "8": "Al soplar, el confeti estalla como lluvia de colores\nCada papelito brilla en el aire, anunciando alegría en colores\nTodos gritan orgullosos: ¡Feliz cumpleaños, Emilia!\nEl brillo del confeti refleja sus ojos mientras cantan: ¡Feliz cumpleaños, Emilia!",
+    "9": "En círculo, los niños alzan la voz y la canción se eleva\nLa melodía vibra, el salón tiembla, todos cantan y la canción se eleva\nCada niño espera su turno, unidos en energía\nLa fuerza del grupo se mantiene fuerte, fluyendo en pura energía",
+    "10": "Al final, abrazos suaves envuelven a Emilia, tiernos y cálidos\nLas luces titilan, y cada amigo ofrece su cálido abrazo, dulces y cálidos\nCon gratitud susurra: Gracias, querida amiga, mi corazón\nTodos concluyen cantando: ¡Feliz cumpleaños, Emilia!, con amor en el corazón"
+  },
+  "esquema_rima": {
+    "1": "AABB",
+    "2": "AABB",
+    "3": "AABB",
+    "4": "AABB",
+    "5": "AABB",
+    "6": "AABB",
+    "7": "AABB",
+    "8": "AABB",
+    "9": "AABB",
+    "10": "AABB"
+  },
+  "finales_de_verso": {
+    "1": [
+      "a",
+      "a",
+      "b",
+      "b"
+    ],
+    "2": [
+      "c",
+      "c",
+      "d",
+      "d"
+    ],
+    "3": [
+      "e",
+      "e",
+      "f",
+      "f"
+    ],
+    "4": [
+      "g",
+      "g",
+      "h",
+      "h"
+    ],
+    "5": [
+      "i",
+      "i",
+      "j",
+      "j"
+    ],
+    "6": [
+      "k",
+      "k",
+      "l",
+      "l"
+    ],
+    "7": [
+      "m",
+      "m",
+      "n",
+      "n"
+    ],
+    "8": [
+      "o",
+      "o",
+      "p",
+      "p"
+    ],
+    "9": [
+      "q",
+      "q",
+      "r",
+      "r"
+    ],
+    "10": [
+      "s",
+      "s",
+      "t",
+      "t"
+    ]
+  },
+  "qa": {
+    "fluidez": 5,
+    "consistencia_rima": 5,
+    "variacion_cierres": 5
+  }
+}

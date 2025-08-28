@@ -1,0 +1,14 @@
+{
+  "titulos": [
+    "El Brillo Dorado de Ana y la Mariposa Soñadora",
+    "Aventuras de Luz: Ana, la Mariposa y la Caja Mágica",
+    "Canción de Estrellas: El Viaje Brillante de Ana"
+  ],
+  "portada": {
+    "prompt": "Ilustración infantil en acuarela suave con acentos digitales vibrantes que muestra a Ana, una niña de 3 años con vestido azul de estrellas, medias blancas y zapatillas con lazos rosados, sonriendo y girando en el centro. Frente a ella revolotea la mariposa etérea de alas translúcidas naranja y azul, dejando un rastro luminoso dorado. Detrás, la caja brillante de madera con superficie pulida y cerradura plateada emite chispas doradas que bailan alrededor de Ana. Un halo de brillo dorado envuelve a los personajes, simbolizando el objeto ancla. La escena se ilumina con la luz cálida de un amanecer interior que entra por la ventana, usando la paleta #FFEBB5, #A0C4FF, #F7C6C7. La composición es centrada, con un fondo difuso de papel texturizado, transmitiendo curiosidad, alegría y magia."
+  },
+  "qa": {
+    "recordabilidad_titulo": 5,
+    "sintesis_emotiva": 5
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "riesgos_detectados": [
+    {
+      "pagina": 7,
+      "detalle": "Se muestra a Lucas (niño) ayudando a Emilia (niña) a subir al columpio, reforzando un rol de género tradicional donde el niño actúa como protector y la niña como dependiente.",
+      "riesgo": "roles de género rígidos"
+    },
+    {
+      "pagina": 1,
+      "detalle": "Los personajes no presentan diversidad étnica, cultural ni de capacidades, lo que puede limitar la representación inclusiva para la audiencia infantil.",
+      "riesgo": "falta de diversidad"
+    }
+  ],
+  "correcciones_sugeridas": [
+    {
+      "pagina": 7,
+      "texto_o_prompt": "Modificar la acción para que Emilia también ayude a Lucas, por ejemplo: \"Lucas y Emilia se ayudan mutuamente a subir al columpio, compartiendo risas y apoyándose\"."
+    },
+    {
+      "pagina": 1,
+      "texto_o_prompt": "Añadir descripciones que reflejen diversidad, como \"Emilia, con piel morena y cabello rizado, corre alegremente...\" y \"Lucas, con gafas y una sonrisa brillante, observa...\"."
+    }
+  ],
+  "apto_para_ninos": true,
+  "qa": {
+    "seguridad_respecto": 5
+  }
+}

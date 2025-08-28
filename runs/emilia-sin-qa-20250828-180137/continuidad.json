@@ -1,0 +1,84 @@
+{
+  "character_bible": [
+    {
+      "nombre": "Emilia",
+      "edad": "2 años",
+      "rasgos_visibles": "Pelo castaño ondulado, ojos grandes marrones, sonrisa contagiosa, mejillas sonrosadas",
+      "vestuario": "Vestido de colores pastel con estampado de mariposas y zapatitos blancos",
+      "colores_clave": [
+        "celeste",
+        "rosa",
+        "amarillo"
+      ],
+      "objeto_ancla": "capa azul con estrellas",
+      "gestos": "Agita los brazos al cantar, da palmadas y gira sobre sí misma cuando está feliz",
+      "no_haria": "No rompería los juguetes de sus amigos ni se alejaría del grupo sin pedir permiso"
+    },
+    {
+      "nombre": "Toby",
+      "edad": "Amigo imaginario (edad indefinida)",
+      "rasgos_visibles": "Silhueta luminosa de un niño pequeño, luz tenue azul alrededor, solo visible para Emilia",
+      "vestuario": "Envuelto en una bruma azul que se asemeja a una capa ligera",
+      "colores_clave": [
+        "azul",
+        "blanco"
+      ],
+      "objeto_ancla": "capa azul con estrellas",
+      "gestos": "Flota suavemente, señala cosas interesantes y hace gestos de ánimo con las manos",
+      "no_haria": "No causará miedo ni hará travesuras que asusten a Emilia"
+    },
+    {
+      "nombre": "Luna",
+      "edad": "3 años (peluche)",
+      "rasgos_visibles": "Conejo de peluche blanco, orejas largas, nariz rosada, lleva un lazo rojo en la cabeza",
+      "vestuario": "Sin ropa, pero siempre lleva el lazo rojo como detalle distintivo",
+      "colores_clave": [
+        "blanco",
+        "rojo"
+      ],
+      "objeto_ancla": "capa azul con estrellas",
+      "gestos": "Se abraza a Emilia, se sacude ligeramente cuando ella ríe y se acomoda en su regazo",
+      "no_haria": "No se caerá del brazo de Emilia ni se perderá durante el juego"
+    }
+  ],
+  "continuidad_narrativa": {
+    "relaciones": "Emilia es la protagonista que celebra su cumpleaños rodeada de sus compañeros. Toby, su amigo imaginario, la acompaña en todo momento, dándole confianza y animándola a participar. Luna, el conejo de peluche, es su compañero inseparable que la consuela y comparte sus aventuras. Los tres forman un trío de apoyo mutuo durante la fiesta y las actividades del jardín infantil.",
+    "evolucion_emocional": "Al inicio, Emilia muestra timidez al llegar al jardín y observar a los demás niños. Con la presencia constante de Toby, que le susurra palabras de aliento, y el consuelo de Luna, su confianza crece. Durante el momento de los disfraces, Emilia se vuelve valiente, se une al juego, ríe y lidera pequeñas coreografías, demostrando una evolución de la timidez a la alegría plena.",
+    "objeto_ancla_reapariciones": [
+      {
+        "personaje": "Emilia",
+        "paginas": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      {
+        "personaje": "Toby",
+        "paginas": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      {
+        "personaje": "Luna",
+        "paginas": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      }
+    ]
+  },
+  "qa": {
+    "coherencia_rasgos": 5,
+    "utilidad_arte": 5
+  }
+}

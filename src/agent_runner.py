@@ -14,6 +14,7 @@ from config import (
 )
 from llm_client import get_llm_client
 from quality_gates import get_quality_checker
+from conflict_analyzer import get_conflict_analyzer
 
 logger = logging.getLogger(__name__)
 
@@ -31,6 +32,11 @@ class AgentRunner:
         # Cargar configuración de versión
         from config import load_version_config
         self.version_config = load_version_config(version)
+        
+        # Inicializar analizador de conflictos para v2
+        self.conflict_analyzer = None
+        if version != 'v1':
+            self.conflict_analyzer = get_conflict_analyzer(version)
         
     def run_agent(self, agent_name: str, retry_count: int = 0) -> Dict[str, Any]:
         """
@@ -160,6 +166,20 @@ class AgentRunner:
                 if not qa_passed:
                     logger.warning(f"QA no pasó para {agent_name}: {qa_issues}")
                     
+                    # Analizar conflictos si estamos en v2
+                    conflict_analysis = None
+                    if self.conflict_analyzer:
+                        # Cargar el prompt del agente para análisis profundo
+                        agent_prompt = self._load_system_prompt(agent_name)
+                        conflict_analysis = self.conflict_analyzer.analyze_qa_failure(
+                            agent_name=agent_name,
+                            qa_issues=qa_issues,
+                            qa_scores=qa_scores,
+                            story_id=self.story_id,
+                            agent_prompt=agent_prompt
+                        )
+                        logger.info(f"Análisis de conflictos para {agent_name}: {len(conflict_analysis['patterns_detected'])} patrones detectados")
+                    
                     # Generar instrucciones de mejora
                     improvement_instructions = self.quality_checker.generate_improvement_instructions(
                         agent_name, qa_scores, qa_issues, agent_output
@@ -173,7 +193,9 @@ class AgentRunner:
                         return self._retry_with_improvements(
                             agent_name, 
                             improvement_instructions, 
-                            retry_count + 1
+                            retry_count + 1,
+                            conflict_analysis=conflict_analysis,
+                            qa_issues=qa_issues
                         )
                     else:
                         logger.error(f"Máximo de reintentos alcanzado para {agent_name}")
@@ -325,11 +347,13 @@ class AgentRunner:
         prompt_parts.append("3. Calcula el score para cada métrica del agente")
         prompt_parts.append("4. Determina si pasa el umbral de 4.0")
         prompt_parts.append("5. Genera feedback específico y accionable")
+        prompt_parts.append("6. En 'mejoras_especificas', incluye instrucciones CONCRETAS para corregir cada problema")
         
         prompt_parts.append("\nRECUERDA:")
         prompt_parts.append("- Sé CRÍTICO y OBJETIVO")
         prompt_parts.append("- La mayoría de outputs deben estar en 3-3.5")
         prompt_parts.append("- Un 5/5 es excepcional y requiere justificación")
+        prompt_parts.append("- Las mejoras_especificas deben ser ACCIONABLES y CLARAS")
         prompt_parts.append("- Devuelve ÚNICAMENTE el JSON especificado")
         
         return "\n".join(prompt_parts)
@@ -353,17 +377,62 @@ class AgentRunner:
         
         return instructions.get(agent_name, "Procesa según tu contrato definido.")
     
-    def _retry_with_improvements(self, agent_name: str, improvements: str, retry_count: int) -> Dict[str, Any]:
-        """Reintenta un agente con instrucciones de mejora"""
+    def _retry_with_improvements(self, 
+                                 agent_name: str, 
+                                 improvements: str, 
+                                 retry_count: int,
+                                 conflict_analysis: Optional[Dict[str, Any]] = None,
+                                 qa_issues: Optional[List[str]] = None) -> Dict[str, Any]:
+        """Reintenta un agente con instrucciones de mejora y feedback específico"""
         logger.info(f"Reintentando {agent_name} con mejoras (intento {retry_count})")
         
         # Modificar el prompt del usuario para incluir las mejoras
         system_prompt = self._load_system_prompt(agent_name)
         dependencies = self._load_dependencies(agent_name)
         
-        # Construir prompt con mejoras
+        # Construir prompt base
         user_prompt = self._build_user_prompt(agent_name, dependencies)
-        user_prompt += f"\n\n{improvements}\n\nPor favor, genera una nueva versión mejorada siguiendo estas instrucciones."
+        
+        # Agregar sección de mejoras específicas
+        user_prompt += "\n\n" + "=" * 50
+        user_prompt += "\n⚠️ RETROALIMENTACIÓN DEL VERIFICADOR DE CALIDAD ⚠️\n"
+        user_prompt += "=" * 50 + "\n"
+        
+        # Si tenemos análisis de conflictos (v2), usar feedback específico
+        if conflict_analysis and conflict_analysis.get('recommendations'):
+            user_prompt += "\n📊 PROBLEMAS DETECTADOS Y SOLUCIONES:\n"
+            for i, rec in enumerate(conflict_analysis['recommendations'], 1):
+                user_prompt += f"{i}. {rec}\n"
+            
+            # Agregar patrones específicos detectados
+            if conflict_analysis.get('patterns_detected'):
+                user_prompt += "\n🔍 DETALLES ESPECÍFICOS:\n"
+                for pattern in conflict_analysis['patterns_detected']:
+                    user_prompt += f"- Problema: {pattern['issue_text']}\n"
+                    user_prompt += f"  Solución: {pattern['recommendation']}\n"
+        
+        # Si tenemos recomendaciones del dashboard para este agente
+        if self.conflict_analyzer:
+            dashboard_recommendations = self.conflict_analyzer.get_recommendations_for_retry(agent_name)
+            if dashboard_recommendations:
+                user_prompt += "\n📚 ERRORES COMUNES A EVITAR:\n"
+                for rec in dashboard_recommendations:
+                    user_prompt += f"- {rec}\n"
+        
+        # Agregar issues específicos del verificador
+        if qa_issues:
+            user_prompt += "\n❌ PROBLEMAS ESPECÍFICOS ENCONTRADOS:\n"
+            for issue in qa_issues[:5]:  # Limitar a los 5 más importantes
+                user_prompt += f"- {issue}\n"
+        
+        # Agregar las instrucciones genéricas de mejora
+        user_prompt += f"\n{improvements}"
+        
+        # Instrucción final enfática
+        user_prompt += "\n\n" + "=" * 50
+        user_prompt += "\n🎯 IMPORTANTE: Por favor, genera una nueva versión que ESPECÍFICAMENTE resuelva los problemas mencionados arriba.\n"
+        user_prompt += "No repitas los mismos errores. Presta especial atención a los puntos marcados con ⚠️.\n"
+        user_prompt += "=" * 50
         
         # Ejecutar de nuevo (recursivamente)
         return self.run_agent(agent_name, retry_count)

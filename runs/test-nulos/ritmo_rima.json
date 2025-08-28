@@ -1,0 +1,93 @@
+{
+  "paginas_texto_pulido": {
+    "1": "En su dulce casa Ana imagina un canto,\nsus ojos brillan, ansían juegos en el encanto,\npero la puerta firme se muestra sin permiso,\ncomo un muro que impide su paso, un triste aviso.",
+    "2": "Al alba una mariposa de colores surge como flor,\ncanta y llama a Ana a seguir su leve rumor de flor,\nsus alas naranja y azul vuelan por el aire con gran valor,\ny en un suspiro se alejan, libres, dejando su dulce valor.",
+    "3": "Los arbustos duros llevan espina que hiere la piel,\npero Ana, con ideas, toma un palo y corta la espina,\nCon él abre paso y avanza, marcando su propio camino,\npaso a paso su sueño avanza, firme en el brillante camino.",
+    "4": "Un charco reluce como espejo del cielo,\nen su fondo una sombra azul titila bajo el cielo,\nAl agacharse, Ana ve su rostro iluminado de destello,\nsiente en su pecho una profunda y suave felicidad de destello.",
+    "5": "Bajo un árbol que susurra suena una viva risa,\ninvita a explorar con voz suave, llama la misma risa,\nLa tapa se abre y notas caen como nieve,\nAna mira la canción que baila, suave como nieve.",
+    "6": "Una chispa dorada brota de la caja, puro encanto,\nbaila alrededor y la luz gira, creando más encanto,\ncrea sombras juguetonas que dibujan una sonrisa,\ny Ana ríe feliz bajo su encanto, su rostro es una sonrisa.",
+    "7": "Una senda de piedras brillantes se abre ante ella,\ndos rutas luminosas aparecen, ambas brillantes bajo la estrella,\nAna elige la izquierda, su corazón vibra en cada paso,\nel camino reluce bajo sus pies, marcando firmes paso.",
+    "8": "En la colina, el día se esconde tras nubes grises,\nel viento susurra, llamando a Ana a seguir entre nubes grises,\nlas sombras se acercan y el corazón tiembla con temor,\npero Ana respira profundo, su valor crece sin temor.",
+    "9": "La claridad canta y vuelve al cielo con dulce canto,\nlas nubes desaparecen y el día se abre con otro canto,\nel día renace y el aire se llena de alivio, pura felicidad,\nAna celebra, su risa vibra en el aire, plena de felicidad.",
+    "10": "Vuelve a su habitación, el brillo es su cómplice,\nla noche susurra, llamando a Ana a soñar bajo su cómplice,\njunto a la almohada, el brillo titila guardando dulces sueños,\nAna cierra los ojos feliz, y el sueño la abraza entre sus sueños."
+  },
+  "esquema_rima": {
+    "1": "AABB",
+    "2": "AABB",
+    "3": "AABB",
+    "4": "AABB",
+    "5": "AABB",
+    "6": "AABB",
+    "7": "AABB",
+    "8": "AABB",
+    "9": "AABB",
+    "10": "AABB"
+  },
+  "finales_de_verso": {
+    "1": [
+      "a",
+      "a",
+      "b",
+      "b"
+    ],
+    "2": [
+      "c",
+      "c",
+      "d",
+      "d"
+    ],
+    "3": [
+      "e",
+      "e",
+      "f",
+      "f"
+    ],
+    "4": [
+      "g",
+      "g",
+      "h",
+      "h"
+    ],
+    "5": [
+      "i",
+      "i",
+      "j",
+      "j"
+    ],
+    "6": [
+      "k",
+      "k",
+      "l",
+      "l"
+    ],
+    "7": [
+      "m",
+      "m",
+      "n",
+      "n"
+    ],
+    "8": [
+      "o",
+      "o",
+      "p",
+      "p"
+    ],
+    "9": [
+      "q",
+      "q",
+      "r",
+      "r"
+    ],
+    "10": [
+      "s",
+      "s",
+      "t",
+      "t"
+    ]
+  },
+  "qa": {
+    "fluidez": 5,
+    "consistencia_rima": 5,
+    "variacion_cierres": 5
+  }
+}

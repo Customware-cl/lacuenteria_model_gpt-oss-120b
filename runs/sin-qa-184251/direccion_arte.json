@@ -1,0 +1,146 @@
+{
+  "estilo_global": "Ilustración infantil colorida, acuarela digital con trazos suaves y texturas ligeras que resaltan la luz y la emoción en cada página.",
+  "color_script": {
+    "1": {
+      "paleta": [
+        "#87CEEB",
+        "#7CFC00",
+        "#FF4B5C"
+      ],
+      "momento": "día soleado",
+      "atmosfera": "alegría explosiva, luz cálida y directa que realza los colores vibrantes"
+    },
+    "2": {
+      "paleta": [
+        "#FFB347",
+        "#40E0D0",
+        "#B19CD9"
+      ],
+      "momento": "mediodía",
+      "atmosfera": "entusiasmo contagioso, luz difusa que ilumina todo el patio"
+    },
+    "3": {
+      "paleta": [
+        "#FFD700",
+        "#FFC0CB",
+        "#87CEEB"
+      ],
+      "momento": "tarde temprana",
+      "atmosfera": "asombro y curiosidad, luz dorada suave que crea reflejos en la burbuja"
+    },
+    "4": {
+      "paleta": [
+        "#FFBF00",
+        "#FF8C00",
+        "#A0522D"
+      ],
+      "momento": "atardecer",
+      "atmosfera": "unión y fuerza, luz cálida que envuelve la escena interior"
+    },
+    "5": {
+      "paleta": [
+        "#FFAA33",
+        "#FFF8DC",
+        "#FADADD"
+      ],
+      "momento": "interior con velas",
+      "atmosfera": "sorpresa y felicidad, brillo suave de la vela que destaca el pastel"
+    },
+    "6": {
+      "paleta": [
+        "#70C1B3",
+        "#FFEA00",
+        "#98FB98"
+      ],
+      "momento": "tarde",
+      "atmosfera": "colaboración y orgullo, luz natural difusa que acaricia el grupo"
+    },
+    "7": {
+      "paleta": [
+        "#8A2BE2",
+        "#D4AF37",
+        "#191970"
+      ],
+      "momento": "crepúsculo",
+      "atmosfera": "deseo íntimo y ternura, luz tenue de las velas y resplandor dorado"
+    },
+    "8": {
+      "paleta": [
+        "#00CED1",
+        "#FFF44F",
+        "#FF7F50"
+      ],
+      "momento": "luz de día interior",
+      "atmosfera": "curiosidad y alegría, luz natural que resalta los colores de la caja"
+    },
+    "9": {
+      "paleta": [
+        "#FFCC00",
+        "#FFB347",
+        "#A8E6CF"
+      ],
+      "momento": "tarde dorada",
+      "atmosfera": "amistad y cooperación, luz cálida que baña la escena del jardín"
+    },
+    "10": {
+      "paleta": [
+        "#FF4500",
+        "#FF69B4",
+        "#008080"
+      ],
+      "momento": "atardecer",
+      "atmosfera": "gratitud y satisfacción, luz dorada que envuelve a Emilia y sus amigos"
+    }
+  },
+  "transiciones": [
+    {
+      "de_pagina": 1,
+      "a_pagina": 2,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 2,
+      "a_pagina": 3,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 3,
+      "a_pagina": 4,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 4,
+      "a_pagina": 5,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 5,
+      "a_pagina": 6,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 6,
+      "a_pagina": 7,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 7,
+      "a_pagina": 8,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 8,
+      "a_pagina": 9,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 9,
+      "a_pagina": 10,
+      "tipo": "suave"
+    }
+  ],
+  "qa": {
+    "coherencia_visual": 5,
+    "progresion_emocional": 5
+  }
+}

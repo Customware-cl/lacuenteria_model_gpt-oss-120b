@@ -1,0 +1,93 @@
+{
+  "metas_generales": [
+    "Reconocer y nombrar emociones básicas como timidez, curiosidad, alegría y orgullo.",
+    "Desarrollar habilidades de autocontrol mediante pasos visuales y respiración.",
+    "Fomentar la iniciativa y la confianza al explorar opciones y probar cosas nuevas.",
+    "Practicar pedir ayuda y aceptar el apoyo de amigos y adultos.",
+    "Regular la ansiedad y la excitación usando técnicas de respiración y pausa."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Identificar y nombrar la emoción de timidez y curiosidad.",
+      "frase_modelo": "Veo que te sientes un poco tímido y curioso, ¿puedes decirme cómo te sientes?",
+      "recurso": "Tarjetas con caras que expresan distintas emociones para etiquetar la propia emoción.",
+      "evitar": "No minimizar la timidez ni forzar la participación inmediata."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Explorar opciones y tomar decisiones simples.",
+      "frase_modelo": "¿Cuál de estas cajas te llama más?",
+      "recurso": "Elección guiada con dos alternativas visibles y señaladas.",
+      "evitar": "No presionar a elegir rápidamente ni imponer una opción."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Practicar el autocontrol mediante pasos para unirse al juego de baile.",
+      "frase_modelo": "Primero, pon tus pies en el círculo, luego escucha la música y da un paso.",
+      "recurso": "Secuencia de pasos visuales con pictogramas de “pie”, “música” y “movimiento”.",
+      "evitar": "No criticar la duda ni comparar con los demás niños."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Solicitar y aceptar ayuda de un amigo.",
+      "frase_modelo": "¿Quieres que tu amigo te tome de la mano?",
+      "recurso": "Modelado de petición amable y señal de mano extendida.",
+      "evitar": "No obligar a aceptar la ayuda si el niño muestra resistencia."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Mantener el ritmo y expresar alegría mediante movimiento.",
+      "frase_modelo": "¡Mira cómo tus alas se mueven al ritmo de la canción!",
+      "recurso": "Música con tempo marcado y conteo en voz alta para acompañar el baile.",
+      "evitar": "No comparar el desempeño con el de otros niños."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Manejar la anticipación antes de cantar.",
+      "frase_modelo": "Respira profundo dos veces y piensa en una canción que te gusta.",
+      "recurso": "Técnica de respiración 2‑2‑2 (inhala, sostiene, exhala) con visual de globos.",
+      "evitar": "No presionar a cantar si el niño aún se siente nervioso."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Regular la fuerza del soplo usando respiración.",
+      "frase_modelo": "Imagina que soplas una burbuja grande, usa tu aliento suave.",
+      "recurso": "Demostración de soplo con papel ligero para observar la fuerza.",
+      "evitar": "No criticar si no apaga todas las velas de inmediato."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Reconocer el orgullo y compartir la alegría del confeti.",
+      "frase_modelo": "¡Qué bonito confeti! ¿Cómo te sientes al ver todo esto?",
+      "recurso": "Reflexión guiada de emociones positivas con espejo de sonrisas.",
+      "evitar": "No minimizar el asombro ni forzar una respuesta específica."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Mantener la energía grupal y cooperar en el canto colectivo.",
+      "frase_modelo": "Vamos a cantar juntos, cada uno dice su parte cuando vea la señal.",
+      "recurso": "Turnos de canto con señal visual (luz o tarjeta) para indicar cuándo cantar.",
+      "evitar": "No interrumpir a quien está cantando ni exigir un volumen mayor."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Expresar gratitud y recibir abrazos con consentimiento.",
+      "frase_modelo": "Gracias por el abrazo, me siento querido.",
+      "recurso": "Juego de “abrazos de oso” donde cada niño pide y da abrazo con una señal clara.",
+      "evitar": "No forzar contacto físico si el niño muestra incomodidad."
+    }
+  ],
+  "banderas": [
+    "Usar siempre lenguaje positivo y validante.",
+    "Respetar el ritmo y la disposición individual de cada niño.",
+    "No emplear castigos ni amenazas.",
+    "No forzar la expresión de emociones que el niño no esté listo para mostrar.",
+    "Fomentar la autodeterminación y la elección libre."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

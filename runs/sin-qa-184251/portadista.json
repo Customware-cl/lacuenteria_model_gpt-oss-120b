@@ -1,0 +1,14 @@
+{
+  "titulos": [
+    "¡Globos al cielo, risas al viento!",
+    "Canta y sopla: el gran día de Emilia",
+    "Burbujas, pastel y amistad"
+  ],
+  "portada": {
+    "prompt": "Ilustración infantil colorida en acuarela digital, trazos suaves y luz cálida. En el centro, Emilia (2 años, vestido de estrellas, zapatillas blancas, diadema de flores) sostiene una cinta azul atada a su muñeca izquierda mientras suelta globos multicolores bajo un cielo azul brillante de día soleado. A su derecha, la mamá de Emilia, con blusa amarilla y falda azul, lleva una cinta azul en el asa de su bolso y aplaude. A la izquierda, Toby el perrito de peluche lleva su collar rojo con la misma cinta azul, mirando emocionado. Al fondo, el jardín con amigos corriendo, bolsas de regalo y guirnaldas, todo bañado por la luz directa que realza los tonos #87CEEB, #7CFC00 y #FF4B5C. La composición muestra movimiento y alegría, con el leitmotiv \"¡Cumpleaños feliz, vamos a cantar!\" flotando como notas musicales alrededor de los niños. Estilo: acuarela digital, colores vivos, atmósfera de celebración, unión y energía."
+  },
+  "qa": {
+    "recordabilidad_titulo": 5,
+    "sintesis_emotiva": 5
+  }
+}

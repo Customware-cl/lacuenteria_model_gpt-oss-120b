@@ -1,0 +1,14 @@
+{
+  "titulos": [
+    "El día brillante de Emilia y su risa de tesoro",
+    "Fiesta bajo el árbol: la risa que ilumina",
+    "Emilia y el cuento del pastel mágico"
+  ],
+  "portada": {
+    "prompt": "Ilustración infantil colorida en acuarela digital con trazos suaves y luz difusa, ambientada en el patio del jardín infantil al amanecer. En el centro, Emilia lleva su gorro de fiesta azul y sostiene un micrófono de juguete, rodeada de sus amigos disfrazados de león, mariposa y astronauta. A la derecha, un pastel de chocolate sobre una mesa con una caja abierta que revela brillantes juguetes y una carta que dice \"¡Tu risa es el mejor regalo!\". En el fondo, un gran árbol bajo un cielo rosado de la paleta #A8E6A3, #FFD1DC, #FFB74D, #87CEFA, con rayos de luz dorada que bañan la escena. La composición sugiere movimiento alegre, como si los niños estuvieran a punto de bailar, y el estilo mantiene texturas ligeras de papel y efectos de luz que realzan la magia del momento."
+  },
+  "qa": {
+    "recordabilidad_titulo": 5,
+    "sintesis_emotiva": 5
+  }
+}

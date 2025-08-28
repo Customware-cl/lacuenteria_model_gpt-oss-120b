@@ -1,0 +1,30 @@
+{
+  "prompts_paginas": {
+    "1": "Entorno: jardín infantil al amanecer con césped verde y flores de colores. Acción principal: Emilia corre alegremente sujetando su globo rojo en forma de corazón. Emoción dominante: alegría y curiosidad. Objetos ancla: globo rojo, vestido de flores rosa. Momento del día/iluminación: luz suave de la mañana, tonos cálidos. Composición: plano general amplio, cámara a nivel del suelo mirando hacia Emilia, enfoque nítido en el globo. Estilo: ilustración infantil colorida.",
+    "2": "Entorno: rincón de lectura bajo un árbol frondoso con sombra ligera. Acción principal: Lucas está sentado en una alfombra azul, mirando la caja de crayones multicolores. Emoción dominante: asombro y concentración. Objetos ancla: caja de crayones, gafas redondas. Momento del día/iluminación: luz filtrada de la tarde, sombras suaves. Composición: plano medio, cámara ligeramente elevada, foco en la mano de Lucas que elige un crayón amarillo. Estilo: ilustración infantil colorida.",
+    "3": "Entorno: patio del jardín con una zona de juegos de madera. Acción principal: Emilia entrega su globo rojo a Lucas, quien le muestra un dibujo hecho con los crayones. Emoción dominante: confianza y complicidad. Objetos ancla: globo rojo, caja de crayones. Momento del día/iluminación: sol brillante del mediodía, colores vivos. Composición: plano medio‑cercano, ángulo ligeramente diagonal, enfoque en las manos que se encuentran, rostro de Emilia sonriendo. Estilo: ilustración infantil colorida.",
+    "4": "Entorno: fuente de agua pequeña con chorros que reflejan la luz. Acción principal: el globo rojo se eleva ligeramente atrapado por una brisa, Emilia lo sigue con la mirada. Emoción dominante: sorpresa y ligera preocupación. Objetos ancla: globo rojo, vestido rosa con tirantes. Momento del día/iluminación: luz dorada del atardecer, reflejos en el agua. Composición: primer plano del rostro de Emilia, fondo desenfocado de la fuente, ángulo frontal. Estilo: ilustración infantil colorida.",
+    "5": "Entorno: zona de sombra bajo una pérgola con enredaderas. Acción principal: Emilia abraza a su osito de peluche mientras él balancea su cinta azul y el globo rojo flota cerca. Emoción dominante: consuelo y valentía renovada. Objetos ancla: osito de peluche con cinta azul, globo rojo. Momento del día/iluminación: luz tenue de la tarde, tonos pastel. Composición: plano detalle de Emilia y el osito, enfoque en las manos que sujetan al osito, ángulo bajo que captura el globo en el fondo. Estilo: ilustración infantil colorida.",
+    "6": "Entorno: mesa de picnic con mantel a cuadros y bocadillos. Acción principal: Lucas y Emilia comparten una merienda, Lucas dibuja una sonrisa en la servilleta con un crayón azul. Emoción dominante: amistad y alegría. Objetos ancla: caja de crayones, globo rojo atado al respaldo de la silla. Momento del día/iluminación: luz clara de medio día, sombras suaves. Composición: plano medio, cámara a nivel de la mesa, enfoque en la servilleta y la expresión de Emilia. Estilo: ilustración infantil colorida.",
+    "7": "Entorno: área de juegos con columpios y tobogán. Acción principal: Lucas ayuda a Emilia a subir al columpio mientras ella sostiene el globo rojo y el osito de peluche en su regazo. Emoción dominante: valentía y apoyo mutuo. Objetos ancla: globo rojo, osito de peluche, caja de crayones dejada en el césped. Momento del día/iluminación: luz cálida del atardecer, sombras alargadas. Composición: plano general dinámico, cámara ligeramente elevada mostrando el movimiento del columpio, enfoque en el rostro de Emilia feliz. Estilo: ilustración infantil colorida.",
+    "8": "Entorno: camino de piedra que lleva a la casita del árbol. Acción principal: Emilia camina lentamente, mirando el globo que ahora flota cerca del árbol, mientras el osito la sigue de la mano. Emoción dominante: curiosidad y serenidad. Objetos ancla: globo rojo, osito de peluche. Momento del día/iluminación: luz dorada del crepúsculo, tonos cálidos. Composición: plano medio‑cercano, ángulo lateral que captura el camino y la silueta del árbol, foco en el globo brillante. Estilo: ilustración infantil colorida.",
+    "9": "Entorno: interior de la sala de actividades, paredes decoradas con dibujos infantiles. Acción principal: Emilia se sienta en una alfombra rodeada de amigos, abrazando al osito y sosteniendo el globo rojo que ahora está ligeramente desinflado. Emoción dominante: satisfacción y seguridad. Objetos ancla: osito de peluche, globo rojo. Momento del día/iluminación: luz natural entrando por la ventana, tono suave. Composición: primer plano de Emilia y su osito, fondo difuso con niños jugando, ángulo frontal. Estilo: ilustración infantil colorida.",
+    "10": "Entorno: patio al anochecer con luces colgantes de colores. Acción principal: Emilia y Lucas se despiden, entregando el globo rojo a un nuevo amigo mientras el osito descansa en la mochila de Emilia. Emoción dominante: gratitud y esperanza. Objetos ancla: globo rojo, osito de peluche, caja de crayones en la mochila. Momento del día/iluminación: luz cálida de las farolas, tono azul profundo del cielo. Composición: plano general con foco suave en el globo que sube, ángulo bajo que muestra las luces, foco principal en Emilia sonriendo. Estilo: ilustración infantil colorida."
+  },
+  "anotaciones": [
+    "p1 plano general luminoso",
+    "p2 plano medio centrado",
+    "p3 plano medio‑cercano interacción",
+    "p4 primer plano rostro preocupado",
+    "p5 plano detalle abrazo osito",
+    "p6 plano medio mesa picnic",
+    "p7 plano general columpio dinámico",
+    "p8 plano medio‑cercano camino",
+    "p9 primer plano Emilia y osito",
+    "p10 plano general atardecer con luces"
+  ],
+  "qa": {
+    "alineacion_verso_escena": 5,
+    "variedad_planos": 5
+  }
+}

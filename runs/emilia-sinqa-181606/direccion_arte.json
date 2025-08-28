@@ -1,0 +1,156 @@
+{
+  "estilo_global": "Ilustración infantil colorida con trazos suaves y acuarela digital vibrante, texturas ligeras de papel y efectos de luz difusa.",
+  "color_script": {
+    "1": {
+      "paleta": [
+        "#A8E6A3",
+        "#FFD1DC",
+        "#FFB74D",
+        "#87CEFA"
+      ],
+      "momento": "amanecer",
+      "atmosfera": "luz suave y difusa, cielo rosado sobre pradera verde"
+    },
+    "2": {
+      "paleta": [
+        "#FFE082",
+        "#6B8E23",
+        "#8B4513",
+        "#FFF9C4"
+      ],
+      "momento": "mediodía",
+      "atmosfera": "rayos de sol filtrándose entre hojas doradas, ambiente cálido y brillante"
+    },
+    "3": {
+      "paleta": [
+        "#FFF8E1",
+        "#FFD700",
+        "#B0C4DE",
+        "#FFEB3B"
+      ],
+      "momento": "interior sin hora",
+      "atmosfera": "luz cálida de luciérnagas y vela, ambiente íntimo y mágico"
+    },
+    "4": {
+      "paleta": [
+        "#FF8A65",
+        "#4FC3F7",
+        "#90CAF9",
+        "#BA68C8"
+      ],
+      "momento": "atardecer",
+      "atmosfera": "luz dorada reflejada en el agua, colores vivos del río que cantan"
+    },
+    "5": {
+      "paleta": [
+        "#283593",
+        "#E1BEE7",
+        "#F8BBD0",
+        "#90A4AE"
+      ],
+      "momento": "crepúsculo",
+      "atmosfera": "luz azulada mezclada con destellos de luciérnagas, atmósfera de determinación"
+    },
+    "6": {
+      "paleta": [
+        "#FFCC80",
+        "#A5D6A7",
+        "#B3E5FC",
+        "#C0C0C0"
+      ],
+      "momento": "tarde clara",
+      "atmosfera": "luz brillante y sombras suaves, vibración visible en la piedra y reflejo plateado"
+    },
+    "7": {
+      "paleta": [
+        "#7E57C2",
+        "#F3E5F5",
+        "#FFE082",
+        "#FFFFFF"
+      ],
+      "momento": "anochecer",
+      "atmosfera": "cielo violeta con primeras estrellas, sensación de esperanza y asombro"
+    },
+    "8": {
+      "paleta": [
+        "#B3E5FC",
+        "#FFF3E0",
+        "#C5CAE9",
+        "#8D6E63"
+      ],
+      "momento": "noche clara",
+      "atmosfera": "luz de luna plateada combinada con luz cálida interior de la tienda, tranquilidad"
+    },
+    "9": {
+      "paleta": [
+        "#F48FB1",
+        "#FFCCBC",
+        "#4DB6AC",
+        "#FFF9C4"
+      ],
+      "momento": "madrugada",
+      "atmosfera": "faroles de colores iluminan el camino bajo un cielo rosado tenue, alegría y camaradería"
+    },
+    "10": {
+      "paleta": [
+        "#FFECB3",
+        "#FFCDD2",
+        "#BBDEFB",
+        "#FFE0B2"
+      ],
+      "momento": "amanecer",
+      "atmosfera": "luz dorada que baña la plaza pastel, amor y calidez familiar"
+    }
+  },
+  "transiciones": [
+    {
+      "de_pagina": 1,
+      "a_pagina": 2,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 2,
+      "a_pagina": 3,
+      "tipo": "cambio de luz interior"
+    },
+    {
+      "de_pagina": 3,
+      "a_pagina": 4,
+      "tipo": "flujo de colores al atardecer"
+    },
+    {
+      "de_pagina": 4,
+      "a_pagina": 5,
+      "tipo": "transición de atardecer a crepúsculo"
+    },
+    {
+      "de_pagina": 5,
+      "a_pagina": 6,
+      "tipo": "desvanecimiento a luz de tarde clara"
+    },
+    {
+      "de_pagina": 6,
+      "a_pagina": 7,
+      "tipo": "pasaje de tarde a anochecer estrellado"
+    },
+    {
+      "de_pagina": 7,
+      "a_pagina": 8,
+      "tipo": "cambio a noche lunar"
+    },
+    {
+      "de_pagina": 8,
+      "a_pagina": 9,
+      "tipo": "salida de la tienda a faroles de madrugada"
+    },
+    {
+      "de_pagina": 9,
+      "a_pagina": 10,
+      "tipo": "regreso al amanecer radiante"
+    }
+  ],
+  "qa": {
+    "coherencia_visual": 5,
+    "progresion_emocional": 5
+  }
+}

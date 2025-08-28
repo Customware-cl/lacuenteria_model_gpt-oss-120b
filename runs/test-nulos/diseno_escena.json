@@ -1,0 +1,30 @@
+{
+  "prompts_paginas": {
+    "1": "Entorno: interior de la dulce casa de Ana, luz matutina que entra por una ventana grande. Acción principal: Ana, de 3 años, con su vestido azul y zapatillas rosadas, intenta abrir la puerta cerrada mientras señala con el dedo índice. Emoción dominante: curiosidad mezclada con ligera frustración. Objetos ancla: la puerta maciza y un pequeño brillo dorado flotando cerca de su mano. Momento del día/iluminación: amanecer, luz suave y cálida. Composición: plano medio a nivel de los ojos, cámara ligeramente baja para captar la puerta y el brillo, foco en Ana y la puerta.",
+    "2": "Entorno: jardín al alba, flores de colores y luz dorada del sol naciente. Acción principal: una mariposa etérea de alas naranja y azul revolotea alrededor de Ana, que extiende su mano para tocarla. Emoción dominante: asombro y alegría. Objetos ancla: la mariposa luminosa y un rastro de brillo dorado que deja al volar. Momento del día/iluminación: primera luz del día, tonos cálidos y pastel. Composición: plano detalle de la mariposa en primer plano, seguida de un plano general que muestra a Ana y el jardín, ángulo ligeramente inclinado hacia arriba.",
+    "3": "Entorno: sendero entre arbustos duros con espinas, luz filtrada por hojas. Acción principal: Ana recoge un palo del suelo, lo usa para cortar las espinas y despejar el camino. Emoción dominante: determinación y valentía. Objetos ancla: el palo y el brillo dorado que destella sobre él. Momento del día/iluminación: día claro con sombras suaves. Composición: plano medio lateral, cámara a nivel de la cintura, foco en el movimiento del palo y el brillo.",
+    "4": "Entorno: pradera con un charco que refleja el cielo azul, luz del sol creando destellos. Acción principal: Ana se agacha y mira su propio reflejo en el charco, sonriendo. Emoción dominante: felicidad serena. Objetos ancla: el reflejo azul del cielo y el brillo dorado que rodea su rostro. Momento del día/iluminación: tarde soleada, luz brillante. Composición: primer plano del rostro de Ana en el reflejo, cámara en ángulo bajo mirando al charco, foco suave en el brillo.",
+    "5": "Entorno: bajo un árbol que susurra, hojas verdes y ramas que dejan caer notas blancas como nieve, luz tenue y dorada. Acción principal: Ana observa las notas que caen, las atrapa con las manos y las mira maravillada. Emoción dominante: maravilla y curiosidad. Objetos ancla: notas blancas flotantes y el brillo dorado que las envuelve. Momento del día/iluminación: atardecer con rayos dorados filtrándose. Composición: plano general del árbol y las notas, con un plano detalle de las notas en manos de Ana, ángulo ligeramente diagonal.",
+    "6": "Entorno: claro del bosque donde una caja de madera brillante está abierta, emanando chispas doradas. Acción principal: Ana se acerca, mira la chispa dorada que baila alrededor de la caja y ríe feliz. Emoción dominante: alegría y asombro. Objetos ancla: la caja brillante y la chispa dorada que gira, proyectando sombras juguetonas. Momento del día/iluminación: luz difusa del bosque con destellos dorados. Composición: plano detalle de la chispa y la caja, seguido de un plano medio de Ana riendo, cámara a nivel del pecho, foco en la chispa.",
+    "7": "Entorno: senda de piedras brillantes que se bifurca bajo la luz de una estrella tenue, ambiente mágico. Acción principal: Ana elige la ruta izquierda, avanza con pasos seguros sobre las piedras que relucen. Emoción dominante: decisión y entusiasmo. Objetos ancla: piedras luminosas y el brillo dorado que guía su paso. Momento del día/iluminación: noche clara con luz estelar. Composición: plano general que muestra ambas rutas y la bifurcación, cámara a nivel de los ojos, foco en la ruta elegida.",
+    "8": "Entorno: colina cubierta de nubes grises que se acercan, viento que sopla suavemente, luz melancólica. Acción principal: Ana respira profundo, levanta los brazos y enfrenta el viento con valentía. Emoción dominante: coraje frente al temor. Objetos ancla: nubes grises y un aura de brillo dorado alrededor de Ana. Momento del día/iluminación: tarde tormentosa con luces difusas. Composición: plano medio con la colina y nubes de fondo, ángulo bajo que realza su postura, foco en el aura dorada.",
+    "9": "Entorno: cielo despejado, luz solar radiante, aves cantando, ambiente de celebración. Acción principal: Ana salta de alegría, abre los brazos y ríe, mientras el sol dorado brilla intensamente. Emoción dominante: pura felicidad. Objetos ancla: sol dorado y el brillo dorado que la rodea. Momento del día/iluminación: día pleno con luz brillante. Composición: plano general amplio que captura el cielo abierto y a Ana en el centro, cámara ligeramente por debajo, foco en la expresión facial.",
+    "10": "Entorno: habitación acogedora de Ana, noche estrellada, luz tenue de una lámpara, brillo dorado titilando sobre la almohada. Acción principal: Ana se acuesta, cierra los ojos y se deja envolver por el sueño, abrazando su almohada. Emoción dominante: serenidad y dulzura. Objetos ancla: almohada suave y el brillo dorado que vibra cerca. Momento del día/iluminación: noche, luz nocturna suave con destellos dorados. Composición: plano detalle del rostro de Ana bajo la almohada, enfoque suave, cámara a nivel de la cabeza, fondo desenfocado."
+  },
+  "anotaciones": [
+    "p1 plano medio luminoso",
+    "p2 plano detalle mariposa y plano general aleatorio",
+    "p3 plano medio lateral con foco en palo",
+    "p4 primer plano reflejo del rostro",
+    "p5 plano general del árbol y plano detalle de notas",
+    "p6 plano detalle de chispa y plano medio de Ana",
+    "p7 plano general bifurcación de caminos",
+    "p8 plano medio con aura dorada",
+    "p9 plano general amplio con sol brillante",
+    "p10 plano detalle del rostro bajo almohada"
+  ],
+  "qa": {
+    "alineacion_verso_escena": 5,
+    "variedad_planos": 5
+  }
+}

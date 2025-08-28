@@ -1,0 +1,55 @@
+{
+  "titulo": "El Brillo Dorado de Ana y la Mariposa Soñadora",
+  "paginas": {
+    "1": {
+      "texto": "En su dulce casa Ana sueña con un canto,\nsus ojos brillan, ansían juegos bajo el encanto,\npero la puerta firme se muestra sin permiso,\ncomo un muro que impide su paso, triste aviso.",
+      "prompt": "Ilustración acuarela suave de Ana dentro de su habitación, mirando una puerta cerrada que parece un muro. Luz cálida de amanecer interior entra por la ventana, paleta #FFEBB5, #A0C4FF, #F7C6C7. Detalle del rostro curioso de Ana."
+    },
+    "2": {
+      "texto": "Al alba una mariposa de colores surge como flor,\ncanta y llama a Ana a seguir su leve rumor de flor,\nsus alas naranja y azul vuelan con gran valentía,\ny en un suspiro se alejan, dejando su dulce valor.",
+      "prompt": "Acuarela del jardín al alba, Ana persigue una mariposa de alas naranja y azul. Luz dorada del sol naciente, paleta #FFD166, #A8E6CF, #FFA07A. La mariposa deja un rastro luminoso."
+    },
+    "3": {
+      "texto": "Los arbustos duros guardan espinas que hieren la espina,\nAna y su hermana Luna toman un palo para cortar la espina,\nCon él abren paso y avanzan, marcando su propio camino,\nPaso a paso su sueño avanza, firme en el brillante camino.",
+      "prompt": "Acuarela del sendero con arbustos espinosos, Ana y su hermana Luna usando un palo para cortar espinas y abrir camino. Luz de día claro, paleta #6B8E23, #8B5A2B, #FFC300."
+    },
+    "4": {
+      "texto": "Un charco reluce, brillo dorado, como espejo del cielo,\nen su fondo una sombra azul titila bajo el cielo,\nAl agacharse, Ana ve su rostro iluminado, destello,\nsiente en su pecho una profunda y suave felicidad de destello.",
+      "prompt": "Acuarela del charco brillante bajo el cielo, reflejando luz dorada. Ana agachada mirando su reflejo. Paleta #87CEEB, #FFD700, #7CFC00."
+    },
+    "5": {
+      "texto": "Bajo un árbol que susurra suena una viva risa,\ninvita a explorar con voz suave, llama la misma risa,\nLa tapa se abre y notas caen como nieve,\nAna mira la canción que baila, suave como nieve.",
+      "prompt": "Acuarela bajo un árbol que susurra, Ana escuchando una risa viva. Notas caen como nieve alrededor. Paleta #FF8C00, #9370DB, #FFD700."
+    },
+    "6": {
+      "texto": "Una chispa dorada brota de la caja, puro encanto,\nbaila alrededor y la luz gira, creando más encanto,\ncrea sombras juguetonas que dibujan una sonrisa,\ny Ana ríe feliz bajo su brillo dorado, su sonrisa.",
+      "prompt": "Acuarela de una caja mágica que emite una chispa dorada, luz girando alrededor. Ana riendo bajo el brillo dorado. Paleta #5F9EA0, #A0522D, #FFD700."
+    },
+    "7": {
+      "texto": "Una senda de piedras brillantes se abre ante ella,\ndos rutas luminosas aparecen, ambas bajo la estrella,\nAna elige la izquierda, su corazón vibra en cada paso,\nel camino reluce bajo sus pies, marcando firme paso.",
+      "prompt": "Acuarela nocturna con senda de piedras brillantes bajo estrellas. Ana elige la ruta izquierda. Paleta #191970, #C0C0C0, #FFD700."
+    },
+    "8": {
+      "texto": "En la colina, el día se esconde tras nubes grises,\nel viento susurra, llamando a Ana a seguir entre nubes grises,\nlas sombras se acercan y el corazón tiembla con temor,\npero Ana respira profundo, su valor crece sin temor.",
+      "prompt": "Acuarela de colina con nubes grises y viento. Ana enfrentando sombras, respirando profundo. Paleta #708090, #4682B4, #D4AF37."
+    },
+    "9": {
+      "texto": "La claridad canta y vuelve al cielo con dulce canto,\nlas nubes desaparecen y el día se abre con otro canto,\nel sol brilla con su brillo dorado, llenando el aire de felicidad,\nAna celebra, su risa vibra en el aire, plena de felicidad.",
+      "prompt": "Acuarela de día pleno, sol brillante con brillo dorado, Ana celebrando bajo cielo azul. Paleta #FFEA00, #87CEFA, #FF69B4."
+    },
+    "10": {
+      "texto": "Vuelve a su habitación, el brillo es su cómplice,\nla noche susurra, llamando a Ana a soñar bajo su cómplice,\njunto a la almohada, el brillo titila guardando dulces sueños,\nAna cierra los ojos feliz, el sueño la abraza entre sueños.",
+      "prompt": "Acuarela de habitación nocturna, luz tenue de lámpara, Ana en su cama con almohada, brillo suave. Paleta #000080, #FFBF00, #2F4F4F."
+    }
+  },
+  "portada": {
+    "prompt": "Ilustración infantil en acuarela suave con acentos digitales vibrantes que muestra a Ana, una niña de 3 años con vestido azul de estrellas, medias blancas y zapatillas con lazos rosados, sonriendo y girando en el centro. Frente a ella revolotea la mariposa etérea de alas translúcidas naranja y azul, dejando un rastro luminoso dorado. Detrás, la caja brillante de madera con superficie pulida y cerradura plateada emite chispas doradas que bailan alrededor de Ana. Un halo de brillo dorado envuelve a los personajes, simbolizando el objeto ancla. La escena se ilumina con la luz cálida de un amanecer interior que entra por la ventana, usando la paleta #FFEBB5, #A0C4FF, #F7C6C7. La composición es centrada, con un fondo difuso de papel texturizado, transmitiendo curiosidad, alegría y magia."
+  },
+  "loader": [
+    "Ana gira feliz, el brillo dorado ya ilumina la portada.",
+    "Los tonos de amanecer #FFEBB5 envuelven la escena de Ana.",
+    "La mariposa naranja‑azul deja un rastro de luz dorada.",
+    "¡Página 2 vibra! Ana extiende su mano al vuelo de la mariposa.",
+    "La caja brillante chispea, su cerradura plateada destella."
+  ]
+}

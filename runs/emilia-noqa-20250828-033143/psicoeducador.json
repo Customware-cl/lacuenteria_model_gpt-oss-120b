@@ -1,0 +1,93 @@
+{
+  "metas_generales": [
+    "Reconocer y nombrar sus propias emociones.",
+    "Desarrollar habilidades simples de autocontrol y regulación.",
+    "Fomentar la interacción social y la petición de ayuda cuando la necesite.",
+    "Practicar la tolerancia a la frustración y la persistencia.",
+    "Incrementar la confianza al probar cosas nuevas y al participar en grupo."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Despertar con entusiasmo y reconocer la alegría del momento.",
+      "frase_modelo": "¡Qué día tan bonito! Me siento feliz al abrir los ojos.",
+      "recurso": "Respiración de sonrisa: inhalar y exhalar mientras se dice \"¡Qué alegría!\"",
+      "evitar": "No minimizar la emoción ni forzar una reacción diferente."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Observar el entorno decorado y expresar curiosidad.",
+      "frase_modelo": "¡Mira todos los colores! Me pregunto qué es eso.",
+      "recurso": "Etiquetado emocional: \"Me siento curioso\" y señalar lo que llama la atención.",
+      "evitar": "No presionar a que participe inmediatamente sin su curiosidad."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Identificar timidez y pedir ayuda a un adulto o amigo.",
+      "frase_modelo": "Me siento un poquito tímida, ¿me puedes ayudar?",
+      "recurso": "Modelo de petición: \"¿Me ayudas a ponerme la diadema?\"",
+      "evitar": "No obligar a que se vista al instante ni criticar su duda."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Aceptar una invitación y expresar incertidumbre de forma segura.",
+      "frase_modelo": "No sé si me gustará, pero puedo intentar.",
+      "recurso": "Pasos pequeños: mirar la diadema, tocarla, probarla lentamente.",
+      "evitar": "No ridiculizar la incertidumbre ni forzar la aceptación."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Persistir ante una dificultad ligera (lazo enredado).",
+      "frase_modelo": "El lazo está enredado, respiro profundo y sigo intentando.",
+      "recurso": "Técnica de pausa y respiración 3‑2‑1 (3 seg. inhalar, 2 seg. sostener, 1 seg. exhalar).",
+      "evitar": "No decir que es imposible o que debe rendirse."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Unirse al juego grupal y seguir el ritmo de la canción.",
+      "frase_modelo": "¡Vamos a cantar y saltar juntos!",
+      "recurso": "Aplaudir y mover los brazos al compás; usar gestos de unión.",
+      "evitar": "No excluir a quien aún no sigue el ritmo."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Manejar la sorpresa y el miedo breve por el globo que explota.",
+      "frase_modelo": "¡Oh! Ese ruido me asustó, ahora respiro profundo.",
+      "recurso": "Respiración calmante: inhalar por la nariz, exhalar por la boca contando hasta tres.",
+      "evitar": "No gritar ni crear más estímulos ruidosos."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Liderar con valentía y proponer una actividad nueva.",
+      "frase_modelo": "¿Qué tal si jugamos a aplaudir en círculo?",
+      "recurso": "Modelar la propuesta, esperar la respuesta y reforzar la participación.",
+      "evitar": "No invalidar la idea ni presionar si el grupo no está listo."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Expresar gratitud y compartir la alegría del momento del pastel.",
+      "frase_modelo": "¡Gracias por cantar conmigo y compartir este pastel!",
+      "recurso": "Gestos de agradecimiento: sonrisa, mirada y pequeño aplauso.",
+      "evitar": "No minimizar la emoción ni pasar rápidamente al siguiente evento."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Recibir afecto y cerrar con sensación de seguridad y felicidad.",
+      "frase_modelo": "Me siento amado y feliz.",
+      "recurso": "Abrazo grupal suave y respiración de calma (inhalar, sentir el abrazo, exhalar).",
+      "evitar": "No forzar contacto físico si el niño muestra resistencia."
+    }
+  ],
+  "banderas": [
+    "Miedo intenso que no cede con respiración simple.",
+    "Frustración prolongada sin intentos de pausa.",
+    "Retirada social constante y evitación de interacción.",
+    "Llanto inconsolable ante estímulos leves.",
+    "Conductas agresivas dirigidas a compañeros o adultos."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

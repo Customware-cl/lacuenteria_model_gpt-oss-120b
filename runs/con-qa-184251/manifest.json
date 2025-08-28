@@ -1,0 +1,234 @@
+{
+  "story_id": "con-qa-184251",
+  "source": "local",
+  "created_at": "2025-08-28T18:42:51.592560",
+  "updated_at": "2025-08-28T18:55:25.792726",
+  "estado": "completo",
+  "paso_actual": "validador",
+  "qa_historial": {
+    "director": {
+      "arco_narrativo": 4.5,
+      "potencia_leitmotiv": 5.0,
+      "claridad_estructura": 4.0,
+      "promedio": 4.5
+    },
+    "psicoeducador": {
+      "alineacion_pedagogica": 5,
+      "aplicabilidad": 4.5,
+      "sensibilidad": 5,
+      "promedio": 4.8
+    },
+    "cuentacuentos": {
+      "musicalidad": 2.0,
+      "imagineria": 2.5,
+      "fluidez_oral": 2.0,
+      "promedio": 2.2
+    },
+    "editor_claridad": {
+      "comprensibilidad": 4,
+      "preservacion_belleza": 4,
+      "coherencia": 5,
+      "promedio": 4.33
+    },
+    "ritmo_rima": {
+      "calidad_rimas": 2.5,
+      "consistencia_metrica": 2.0,
+      "variedad": 2.5,
+      "promedio": 2.3
+    },
+    "continuidad": {
+      "consistencia_personajes": 4.5,
+      "utilidad_referencias": 4.0,
+      "coherencia_narrativa": 4.5,
+      "promedio": 4.33
+    },
+    "diseno_escena": {
+      "especificidad": 5,
+      "variedad_visual": 4.5,
+      "alineacion_texto": 5,
+      "promedio": 4.33
+    },
+    "direccion_arte": {
+      "coherencia_visual": 4.5,
+      "progresion_emocional": 4.0,
+      "practicidad": 3.5,
+      "promedio": 4.0
+    },
+    "sensibilidad": {
+      "seguridad_infantil": 5,
+      "identificacion_riesgos": 3.5,
+      "respeto_cultural": 4,
+      "promedio": 4.2
+    },
+    "portadista": {
+      "impacto_titulo": 3.5,
+      "sintesis": 4.0,
+      "gancho_visual": 4.0,
+      "promedio": 3.83
+    },
+    "loader": {
+      "brevedad": 1.5,
+      "variedad": 4.5,
+      "tono": 4.0,
+      "promedio": 3.33
+    },
+    "validador": {}
+  },
+  "devoluciones": [
+    {
+      "paso": "cuentacuentos",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "musicalidad": 2.0,
+        "imagineria": 2.5,
+        "fluidez_oral": 2.0,
+        "promedio": 2.2
+      },
+      "issues": [
+        "Rima forzada: terminaciones idénticas en cada pareja de versos (pág. 1‑10)",
+        "Repetición excesiva de palabras clave (\"canto\", \"sol\", \"espuma\", \"cantar\") más de 3 veces en todo el texto",
+        "Errores gramaticales y de sintaxis (pág. 2‑2, pág. 3‑4, pág. 6‑2, pág. 8‑1, pág. 9‑2)",
+        "Imaginería genérica y falta de variedad visual",
+        "Fluidez oral dificultada por estructuras repetitivas y frases poco naturales"
+      ],
+      "timestamp": "2025-08-28T18:47:27.773449"
+    },
+    {
+      "paso": "ritmo_rima",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "calidad_rimas": 2.5,
+        "consistencia_metrica": 2.0,
+        "variedad": 2.5,
+        "promedio": 2.3
+      },
+      "issues": [
+        "Rimas no coinciden en páginas 2, 3, 4, 5 y 8 (esquema AABB incumplido)",
+        "Repetición forzada de palabras al final de los versos (p.1 \"cauce\", p.1 \"cielo\", p.3 \"senda\", p.4 \"arena\")",
+        "Repetición excesiva de la palabra \"cielo\" (más de 3 apariciones en todo el texto)",
+        "Metro inconsistente entre versos (variación notable de sílabas en la mayoría de las páginas)",
+        "Redundancia léxica y estructural que reduce la originalidad"
+      ],
+      "timestamp": "2025-08-28T18:49:37.139802"
+    },
+    {
+      "paso": "portadista",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "impacto_titulo": 3.5,
+        "sintesis": 4.0,
+        "gancho_visual": 4.0,
+        "promedio": 3.83
+      },
+      "issues": [
+        "Los títulos son algo extensos y carecen de un gancho ultra‑memorable",
+        "Repetición innecesaria del nombre 'Emilia' en los tres títulos",
+        "Prompt de portada muy detallado; podría simplificarse para evitar sobrecarga visual",
+        "Uso de la expresión 'alegría explosiva' que suena forzado en contexto infantil"
+      ],
+      "timestamp": "2025-08-28T18:52:58.683688"
+    },
+    {
+      "paso": "loader",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "brevedad": 1.5,
+        "variedad": 4.5,
+        "tono": 4.0,
+        "promedio": 3.33
+      },
+      "issues": [
+        "Mensaje 2 tiene 12 palabras (excede el máximo de 10).",
+        "Mensaje 3 tiene 11 palabras (excede el máximo de 10).",
+        "Mensaje 4 tiene 11 palabras (excede el máximo de 10).",
+        "Mensaje 6 tiene 11 palabras (excede el máximo de 10).",
+        "Mensaje 8 tiene 12 palabras (excede el máximo de 10).",
+        "Mensaje 9 tiene 11 palabras (excede el máximo de 10).",
+        "Repetición de la frase \"globo rojo\" en los mensajes 2 y 9."
+      ],
+      "timestamp": "2025-08-28T18:54:49.929086"
+    }
+  ],
+  "reintentos": {
+    "director": 2,
+    "cuentacuentos": 2,
+    "editor_claridad": 1,
+    "ritmo_rima": 2,
+    "continuidad": 2,
+    "direccion_arte": 1,
+    "sensibilidad": 2,
+    "portadista": 2,
+    "loader": 2
+  },
+  "timestamps": {
+    "director": {
+      "start": "2025-08-28T18:42:51.594915",
+      "end": "2025-08-28T18:44:10.371020",
+      "duration": 78.776101
+    },
+    "psicoeducador": {
+      "start": "2025-08-28T18:44:10.371713",
+      "end": "2025-08-28T18:44:37.955290",
+      "duration": 27.583573
+    },
+    "cuentacuentos": {
+      "start": "2025-08-28T18:44:37.956019",
+      "end": "2025-08-28T18:47:27.773425",
+      "duration": 169.817399
+    },
+    "editor_claridad": {
+      "start": "2025-08-28T18:47:27.774793",
+      "end": "2025-08-28T18:47:49.628722",
+      "duration": 21.853925
+    },
+    "ritmo_rima": {
+      "start": "2025-08-28T18:47:49.629437",
+      "end": "2025-08-28T18:49:37.139775",
+      "duration": 107.510331
+    },
+    "continuidad": {
+      "start": "2025-08-28T18:49:37.140950",
+      "end": "2025-08-28T18:50:34.341363",
+      "duration": 57.200407
+    },
+    "diseno_escena": {
+      "start": "2025-08-28T18:50:34.342253",
+      "end": "2025-08-28T18:50:56.881858",
+      "duration": 22.539601
+    },
+    "direccion_arte": {
+      "start": "2025-08-28T18:50:56.882733",
+      "end": "2025-08-28T18:51:45.866467",
+      "duration": 48.98373
+    },
+    "sensibilidad": {
+      "start": "2025-08-28T18:51:45.867283",
+      "end": "2025-08-28T18:52:23.981875",
+      "duration": 38.114588
+    },
+    "portadista": {
+      "start": "2025-08-28T18:52:23.982795",
+      "end": "2025-08-28T18:52:58.683648",
+      "duration": 34.700844
+    },
+    "loader": {
+      "start": "2025-08-28T18:52:58.685236",
+      "end": "2025-08-28T18:54:49.929047",
+      "duration": 111.243803
+    },
+    "validador": {
+      "start": "2025-08-28T18:54:49.930615",
+      "end": "2025-08-28T18:55:25.792200",
+      "duration": 35.861581
+    }
+  },
+  "webhook_url": null,
+  "webhook_attempts": 0,
+  "configuracion_modelo": {
+    "modelo": "openai/gpt-oss-120b",
+    "endpoint": "http://69.19.136.204:8000/v1/chat/completions",
+    "timeout": 900,
+    "default_temperature": 0.7,
+    "default_max_tokens": 4000
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "riesgos_detectados": [
+    {
+      "pagina": 4,
+      "detalle": "La descripción enfatiza un vestido rosa para Emilia, reforzando estereotipos de género tradicionales.",
+      "riesgo": "estereotipo de género"
+    },
+    {
+      "pagina": 0,
+      "detalle": "La historia no incluye personajes de distintas etnias, capacidades o contextos familiares, lo que limita la representación de la diversidad.",
+      "riesgo": "falta de diversidad"
+    }
+  ],
+  "correcciones_sugeridas": [
+    {
+      "pagina": 4,
+      "texto_o_prompt": "Modificar la descripción del atuendo de Emilia a un vestido de colores neutros o múltiples, evitando asociar exclusivamente el rosa a la niña."
+    },
+    {
+      "pagina": 0,
+      "texto_o_prompt": "Introducir personajes adicionales que representen diferentes etnias, capacidades y tipos familiares, o describir la apariencia de Emilia y los demás con rasgos más inclusivos."
+    }
+  ],
+  "apto_para_ninos": true,
+  "qa": {
+    "seguridad_respecto": 5
+  }
+}

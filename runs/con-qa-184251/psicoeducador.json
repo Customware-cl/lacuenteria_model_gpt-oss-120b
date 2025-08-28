@@ -1,0 +1,93 @@
+{
+  "metas_generales": [
+    "Identificar y nombrar emociones de alegría y empatía al compartir.",
+    "Practicar turnos y esperar pacientemente cuando otros participan.",
+    "Ofrecer ayuda y aceptar ayuda de los compañeros de forma amable.",
+    "Utilizar respiración o presión de manos para calmarse ante una frustración breve.",
+    "Expresar gratitud y despedirse con gestos de cariño."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Reconocer la emoción de alegría al iniciar el día.",
+      "frase_modelo": "¡Mira, Emilia está muy feliz de que sea su cumpleaños!",
+      "recurso": "Etiquetado emocional sencillo: \"estás feliz\" acompañado de una sonrisa.",
+      "evitar": "No comparar su alegría con la de otros niños ni decir que debe estar siempre feliz."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Desarrollar empatía al notar a un amigo tímido.",
+      "frase_modelo": "Veo que tu amiguito llegó un poquito tarde, ¿cómo se siente?",
+      "recurso": "Invitar al niño a acompañar al recién llegado y usar preguntas como \"¿Quieres darle un abrazo?\"",
+      "evitar": "No minimizar su timidez ni obligar a que hable de inmediato."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Practicar tolerancia a la frustración y buscar solución.",
+      "frase_modelo": "Si no encuentras el huevo, puedes respirar profundo y pedir ayuda.",
+      "recurso": "Respiración 2‑2‑2 (inhalar 2 seg, sostener 2 seg, exhalar 2 seg) y modelo de pedir ayuda: \"¿Me ayudas?\"",
+      "evitar": "No regañar por no encontrar el huevo ni apresurar la búsqueda."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Participar en la canción compartiendo turnos.",
+      "frase_modelo": "Vamos a cantar juntos, tú puedes decir la parte que falta.",
+      "recurso": "Modelar la letra, aplaudir cada intento y reforzar con \"¡Muy bien!\"",
+      "evitar": "No presionar para que cante perfectamente ni corregir en tono crítico."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Manejar sorpresa y pequeño susto con autorregulación.",
+      "frase_modelo": "¡Qué sorpresa! Si sientes un susto, puedes apretar tus manos y respirar.",
+      "recurso": "Apretar puños y soltar al exhalar, acompañado de un tono calmado.",
+      "evitar": "Exagerar el peligro ni crear miedo innecesario."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Practicar compartir equitativamente.",
+      "frase_modelo": "¿Quieres compartir tu pedazo grande con tus amigos?",
+      "recurso": "Frase de generosidad: \"Yo comparto porque me gusta que todos estén contentos\" y uso de un plato para dividir por igual.",
+      "evitar": "Castigar o avergonzar al niño que desea más porción."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Expresar asombro y alegría con burbujas.",
+      "frase_modelo": "¡Mira la burbuja gigante! Puedes decir \"¡Wow, es hermosa!\"",
+      "recurso": "Etiquetado emocional + respiración de alegría (inhalar grande y sonreír).",
+      "evitar": "Restar importancia a su entusiasmo ni interrumpir su juego."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Mostrar gratitud y reconocer cansancio.",
+      "frase_modelo": "Gracias por jugar, ahora podemos descansar un poquito.",
+      "recurso": "Señalar la señal de cansancio, ofrecer un abrazo o un rincón tranquilo.",
+      "evitar": "Forzar a seguir jugando cuando muestra signos de fatiga."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Reconocer sentimientos de despedida y consolar.",
+      "frase_modelo": "Veo que tu amiguito está triste, ¿quieres darle un abrazo?",
+      "recurso": "Validar la lágrima con \"Está bien sentirse triste\" y ofrecer gesto de consuelo.",
+      "evitar": "Ignorar la lágrima ni minimizar la emoción."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Promover compromiso de compartir en el futuro.",
+      "frase_modelo": "¿Qué tal si prometemos seguir compartiendo la alegría?",
+      "recurso": "Crear un pequeño pacto: mano en círculo y decir \"Yo prometo compartir\".",
+      "evitar": "Imponer una obligación rígida o usar tono autoritario."
+    }
+  ],
+  "banderas": [
+    "Frustración intensa que dura más de 2 minutos.",
+    "Retirada social repentina después de un conflicto.",
+    "Llanto inconsolable sin intento de autorregulación.",
+    "Comportamiento agresivo leve (golpes, empujones).",
+    "Falta de contacto visual al recibir apoyo."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

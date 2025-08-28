@@ -1,0 +1,47 @@
+{
+  "paginas_texto_claro": {
+    "1": "Emilia abre la puerta del cielo\nSus ojos persiguen el azul profundo\nUn suave viento lleva aromas dulces\nEl día arranca con risas y olores",
+    "2": "Los amigos llegan con disfraces\nUno lleva león que ruge, otro alas\n¡Cumpleaños, cantemos ya!\nQue el juego empiece y suene la canción",
+    "3": "En la mesa reluce el pastel\nVelas alzan luz dorada como miel\nEmilia mira al niño solo\nSu corazón late fuerte y claro",
+    "4": "Con valentía ella se acercó\nY al niño le ofreció su mano\nJuntos al círculo fueron a jugar\nDonde el miedo quedó atrás",
+    "5": "Giran las sillas al ritmo\nEl canto suena y trae tranquilidad\n¡Cumpleaños, cantemos ya!\nFalta una silla al final del canto",
+    "6": "Un niño triste quedó de pie\nSu llanto llenó el aire\nEmilia percibe su pena viva\nY su abrazo llega suave como brisa",
+    "7": "Comparte su cupcake, dulce y tierno\nY la silla que quedó vacía\nLos dos sonríen, la tristeza huye\nEl juego vuelve, brillante y fluido",
+    "8": "Todos levantan manos y cantan\nCon alegría el ritmo se expande\n¡Cumpleaños, cantemos ya!\nEl eco baila bajo estrellas",
+    "9": "La mano se acerca a la piñata\nLos niños esperan, la emoción crece\n¿Quién romperá la cáscara colorida?\nEl suspense vibra como tambor",
+    "10": "Los dulces vuelan, el pan se reparte\nRíen y abrazan, el amor se expande\n¡Cumpleaños, cantemos ya!\nLa amistad brilla al final del canto"
+  },
+  "glosario": [
+    {
+      "original": "alza",
+      "simple": "levanta"
+    },
+    {
+      "original": "persigue",
+      "simple": "busca"
+    },
+    {
+      "original": "rumge",
+      "simple": "ruge"
+    },
+    {
+      "original": "expande",
+      "simple": "crece"
+    },
+    {
+      "original": "brilla",
+      "simple": "luce"
+    }
+  ],
+  "cambios_clave": [
+    "Se reordenaron frases para mayor claridad visual",
+    "Se sustituyeron palabras complejas por sinónimos simples",
+    "Se eliminaron repeticiones y se unificó el leitmotiv",
+    "Se ajustó la métrica manteniendo la belleza poética",
+    "Se reforzaron imágenes inequívocas en cada verso"
+  ],
+  "qa": {
+    "comprensibilidad": 5,
+    "imagen_inequivoca": 5
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "character_bible": [
+    {
+      "nombre": "Emilia",
+      "edad": "2 años",
+      "rasgos_visibles": "Tímida al principio, curiosa, alegre, con personalidad fuerte; muestra valentía cuando necesita ayudar o compartir.",
+      "vestuario": "Vestido de cumpleaños color rosa pastel con una pequeña capa blanca, alas de mariposa amarillas atadas a la espalda y zapatillas rojas brillantes.",
+      "colores_clave": [
+        "rosa",
+        "rojo",
+        "amarillo",
+        "azul cielo"
+      ],
+      "objeto_ancla": "globo rojo",
+      "gestos": "Sonríe al levantar el globo, lo agita mientras habla; cuando se siente tímida se cubre la cara con las manos y da pasitos tímidos; al compartir muestra los brazos abiertos.",
+      "no_haria": "No rompería los juguetes de los demás, no abandonaría a sus amigos y nunca dejaría de intentar compartir."
+    }
+  ],
+  "continuidad_narrativa": {
+    "relaciones": "Emilia se relaciona con Lucas, quien le ofrece su capa y apoyo; con el maestro, quien guía la actividad musical; y con el resto de niños, con quienes aprende a compartir juguetes y pastel.",
+    "evolucion_emocional": "Comienza tímida y temerosa (pág. 1‑3), recibe apoyo de Lucas y empieza a confiar (pág. 4‑5), decide compartir su pelota y juguetes (pág. 6‑8), y culmina feliz y segura al dividir el pastel y cantar con todos (pág. 9‑10).",
+    "objeto_ancla_reapariciones": [
+      {
+        "personaje": "Emilia",
+        "paginas": [
+          1,
+          3,
+          6,
+          10
+        ]
+      }
+    ]
+  },
+  "qa": {
+    "coherencia_rasgos": 5,
+    "utilidad_arte": 5
+  }
+}

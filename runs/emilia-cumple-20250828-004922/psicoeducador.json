@@ -1,0 +1,92 @@
+{
+  "metas_generales": [
+    "Desarrollar la habilidad de compartir objetos y experiencias con los demás.",
+    "Identificar y nombrar emociones propias y ajenas de forma válida.",
+    "Pedir ayuda o permiso antes de tomar o usar algo que pertenece a otro.",
+    "Participar en actividades grupales siguiendo turnos y reglas simples."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Etiquetar la mezcla de entusiasmo y timidez que siente al ver a muchos niños disfrazados.",
+      "frase_modelo": "Veo que estás muy contenta y al mismo tiempo un poquito nerviosa, ¿puedes decirme cómo se siente tu corazón?",
+      "recurso": "Tarjetas con caras que representan emociones; juego de espejo para imitar la expresión.",
+      "evitar": "Forzar que hable si no quiere o minimizar su timidez."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Buscar una solución alternativa cuando no encuentra su disfraz favorito.",
+      "frase_modelo": "Si no encuentras tu disfraz, ¿qué otra cosa te gustaría probar?",
+      "recurso": "Lista visual de opciones de disfraces simples; pensamiento flexible con preguntas abiertas.",
+      "evitar": "Criticar su frustración o presionar a que acepte la primera opción."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Iniciar contacto social con un nuevo amigo usando un saludo sencillo.",
+      "frase_modelo": "Hola, soy Emilia, ¿quieres jugar conmigo?",
+      "recurso": "Modelado de saludo con muñecos; juego de roles en parejas.",
+      "evitar": "Presionar al otro niño para que acepte inmediatamente."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Pedir permiso para compartir la pelota y respetar la respuesta.",
+      "frase_modelo": "¿Puedo jugar con la pelota un ratito?",
+      "recurso": "Tarjeta de “Turno” con temporizador visual de 30 seg.; práctica de “Yo digo, tú respondes”.",
+      "evitar": "Tomar la pelota sin preguntar o regañar por la negativa."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Utilizar respiración profunda para calmar la confusión al olvidar la canción.",
+      "frase_modelo": "Vamos a respirar juntos tres veces y luego cantamos de nuevo.",
+      "recurso": "Ejercicio de respiración 3‑2‑1 (inhalar 3 seg, sostener 2 seg, exhalar 1 seg).",
+      "evitar": "Regañar por no recordar la letra."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Expresar determinación y animar a los demás con la voz al cantar el leitmotiv.",
+      "frase_modelo": "Escucha mi canción, vamos a cantar todos juntos.",
+      "recurso": "Señal visual de “¡Vamos!” (banderín); modelado de tono alegre.",
+      "evitar": "Forzar que todos canten al instante."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Invitar a los niños a unirse al canto respetando que algunos siguen jugando.",
+      "frase_modelo": "Si quieres, puedes dejar tu juguete un momento y cantar conmigo.",
+      "recurso": "Opción de “cantar ahora” o “cantar después”; pausa de 10 seg antes de cambiar de actividad.",
+      "evitar": "Criticar a los que no se unen de inmediato."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Compartir el pastel de forma equitativa entre todos los niños.",
+      "frase_modelo": "Vamos a cortar trocitos iguales para que todos tengan una parte.",
+      "recurso": "Cuchillo de juguete con marcas de medida; contar los niños en voz alta.",
+      "evitar": "Presionar a que todos tomen más de lo que necesitan."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Aceptar la lluvia ligera y adaptar el juego bajo el toldo.",
+      "frase_modelo": "¡Mira la lluvia! Podemos cantar bajo el toldo y saltar en los charquitos.",
+      "recurso": "Reencuadre positivo con canción “Baila bajo la lluvia”; movimiento de pies suaves.",
+      "evitar": "Generar miedo a la lluvia o prohibir el juego al exterior."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Expresar gratitud y cerrar la celebración con alegría.",
+      "frase_modelo": "Gracias por compartir, me alegra estar con todos ustedes.",
+      "recurso": "Ronda de “Gracias” donde cada niño dice una cosa que le gustó; aplausos colectivos.",
+      "evitar": "Olvidar reforzar la expresión de agradecimiento."
+    }
+  ],
+  "banderas": [
+    "Llanto prolongado sin consuelo.",
+    "Agresión física o verbal hacia otros niños.",
+    "Retiro total del juego y aislamiento.",
+    "Negativa persistente a compartir objetos.",
+    "Ansiedad marcada ante cambios inesperados."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

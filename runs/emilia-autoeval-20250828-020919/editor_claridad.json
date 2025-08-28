@@ -1,0 +1,51 @@
+{
+  "paginas_texto_claro": {
+    "1": "Al abrir los ojos, el día empieza a brillar\nGlobos de colores vuelan en su cuarto y brillan\nEmilia ríe, su corazón late feliz\nSabe que hoy será un día muy dulce",
+    "2": "El salón brilla con serpentinas y música\nNiños disfrazados giran y el aire vibra\nCapas, animales y piratas llenan el salón\nTodos ríen, la fiesta se vuelve más alta",
+    "3": "Con alas de mariposa, siente un leve temblor\nSe esconde tras la silla, su timidez tiembla\nMira sus pies y dice que el rojo es su color\nQuiere volar, pero el miedo colorea su mundo",
+    "4": "Lucas muestra su capa y dice \"soy tu amigo\"\nCon una sonrisa le da apoyo\nEmilia duda, pero siente un leve cambio\nAcepta la ayuda y su corazón late distinto",
+    "5": "Forman un círculo para jugar y brillar\nEl maestro invita y el salón se llena de risas\nAlgunos niños miran fuera y quieren jugar solos\nPero compartir los anima a jugar juntos",
+    "6": "Emilia levanta la pelota y propone cambiar\nDice \"intercambiemos juguetes, será bonito\"\nUn niño aprieta su coche y no lo suelta\nCon calma y una sonrisa, ella lo invita a compartir",
+    "7": "El maestro canta, su guitarra suena y todos brillan\nCon una frase mágica, la clase entera brilla\nLos niños aplauden, sus palmas suenan juntos\nCantan y el corazón late más fuerte, siempre unidos",
+    "8": "Manos pequeñas dan bloques, la amistad brilla\nCada regalo compartido hace al salón brillar\nRíen y cantan, la felicidad se ve en cada sonrisa\nJuntos celebran y el eco alegre se extiende",
+    "9": "Llega el pastel de chocolate y su aroma asusta\nLos niños lo miran ansiosos, la gran porción asusta\nSolo queda un trozo, pero el grupo muestra valor\nDeciden compartir y la unión crece",
+    "10": "Emilia corta el pastel y cada pieza hace brillar a todos\nReparte trozos iguales y el salón vuelve a brillar\nLos niños levantan sus platos y cantan juntos\nCon gratitud y abrazos repiten: ¡Compartir es brillar y cantar!"
+  },
+  "glosario": [
+    {
+      "original": "reluce",
+      "simple": "brilla"
+    },
+    {
+      "original": "canto",
+      "simple": "música"
+    },
+    {
+      "original": "temblor",
+      "simple": "temblecita"
+    },
+    {
+      "original": "pintar",
+      "simple": "colorear"
+    },
+    {
+      "original": "extiende",
+      "simple": "muestra"
+    },
+    {
+      "original": "magia",
+      "simple": "encanto"
+    }
+  ],
+  "cambios_clave": [
+    "Se sustituyeron palabras complejas por sinónimos simples.",
+    "Se mantuvo una imagen clara por verso para evitar ambigüedad.",
+    "Se redujo la repetición de la palabra \"brillar\" sin perder el sentido festivo.",
+    "Se conservó la métrica aproximada de cuatro líneas por página.",
+    "Se simplificaron las construcciones gramaticales para mayor comprensibilidad."
+  ],
+  "qa": {
+    "comprensibilidad": 5,
+    "imagen_inequivoca": 5
+  }
+}

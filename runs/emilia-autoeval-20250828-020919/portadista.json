@@ -1,0 +1,14 @@
+{
+  "titulos": [
+    "El globo rojo y la fiesta de compartir",
+    "Emilia y el brillo de compartir",
+    "¡Canta, comparte y brilla!"
+  ],
+  "portada": {
+    "prompt": "Ilustración infantil digital en estilo acuarela suave, con trazos delicados y texturas ligeras de papel. En el centro, Emilia (2 años) con su vestido rosa pastel, capa blanca y alas de mariposa amarillas, está de pie en el salón decorado para su cumpleaños. Sostiene un globo rojo brillante que flota ligeramente, su gesto es una sonrisa abierta y los brazos extendidos invitando a compartir. A su izquierda, Lucas extiende su capa de superhéroe colorida hacia ella. Al fondo, niños disfrazados de piratas, animales y capas forman un círculo alrededor de una mesa con pastel de chocolate y velas. La luz es la de un amanecer dorado (paleta #A8DFF5, #FFD700, #FF4B4B, #FFC0CB) que baña la escena con calidez y alegría. La composición muestra el globo rojo como punto focal, rodeado de colores pastel que evolucionan hacia tonos más cálidos a medida que la vista se desplaza a la derecha, reflejando la progresión emocional del cuento. El estilo es vibrante, colorido y festivo, ideal para niños pequeños, capturando la esencia del leitmotiv \"¡Compartir es brillar!\"."
+  },
+  "qa": {
+    "recordabilidad_titulo": 5,
+    "sintesis_emotiva": 5
+  }
+}

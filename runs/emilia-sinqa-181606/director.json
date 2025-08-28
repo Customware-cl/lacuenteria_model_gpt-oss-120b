@@ -1,0 +1,90 @@
+{
+  "leitmotiv": "¡Feliz día, Emilia, brilla tu risa!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y su día especial en el jardín infantil.",
+      "conflicto": "Emilia siente curiosidad y un poco de timidez al ver tantos niños reunidos.",
+      "emocion": "Alegría anticipada.",
+      "imagen_nuclear": "Emilia con un gorro de fiesta azul, rodeada de globos de colores bajo el cielo del patio."
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Mostrar la sorpresa de los disfraces de los compañeros.",
+      "conflicto": "Emilia se siente tímida al ver a los niños disfrazados de león, mariposa y astronauta.",
+      "emocion": "Curiosidad.",
+      "imagen_nuclear": "Fila de niños con trajes brillantes mirando a Emilia, quien observa con ojos grandes."
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Iniciar la celebración con una canción de cumpleaños.",
+      "conflicto": "Emilia duda cantar en voz alta frente a todos.",
+      "emocion": "Nerviosismo.",
+      "imagen_nuclear": "Maestra con guitarra, niños alrededor y Emilia sosteniendo un micrófono de juguete."
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Crear un pequeño contratiempo con el pastel.",
+      "conflicto": "Un niño disfrazado de rana tropieza y el pastel de chocolate casi se cae.",
+      "emocion": "Sorpresa.",
+      "imagen_nuclear": "Pastel sobre una mesa, niño rana con los brazos extendidos intentando atraparlo."
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Mostrar la valentía de Emilia al ayudar.",
+      "conflicto": "Emilia teme que el pastel se derrame mientras lo sostiene.",
+      "emocion": "Coraje.",
+      "imagen_nuclear": "Emilia con manos pequeñas sostiene firmemente el plato bajo el pastel, sonrisa decidida."
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Premiar el acto valiente de Emilia.",
+      "conflicto": "Ninguno, pero los niños aplauden y el confeti cae.",
+      "emocion": "Orgullo.",
+      "imagen_nuclear": "Niños aplaudiendo, confeti rosado y azul cayendo, Emilia en el centro brillando."
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Iniciar el juego de buscar tesoro en el jardín.",
+      "conflicto": "Emilia se pierde un minuto entre los arbustos de flores.",
+      "emocion": "Leve inquietud.",
+      "imagen_nuclear": "Emilia mirando curiosa entre flores, con un mapa de tesoro dibujado en papel."
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Descubrimiento del tesoro y mensaje especial.",
+      "conflicto": "La carta dentro de la caja dice: \"¡Tu risa es el mejor regalo!\".",
+      "emocion": "Felicidad.",
+      "imagen_nuclear": "Caja abierta con juguetes brillantes y una carta, Emilia riendo a carcajadas."
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Clímax festivo: todos bailan alrededor del árbol grande.",
+      "conflicto": "Ninguno, energía máxima del grupo.",
+      "emocion": "Euforia.",
+      "imagen_nuclear": "Círculo de niños bailando bajo un árbol iluminado, Emilia al frente cantando el leitmotiv."
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Cerrar con calidez y gratitud al soplar las velas.",
+      "resolucion": "Emilia se siente amada y segura, lista para futuros cumpleaños.",
+      "emocion": "Serenidad y alegría.",
+      "imagen_nuclear": "Emilia soplando velas mientras la maestra y los amigos la abrazan bajo un atardecer dorado."
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "Una lluvia de confeti brillante cubre a todos mientras bailan.",
+      "resolucion_alternativa": "Los niños ríen bajo el confeti, guardan los colores como recuerdo y se despiden felices."
+    },
+    {
+      "climax_alternativo": "Un gato del jardín se une al baile, saltando entre los niños.",
+      "resolucion_alternativa": "El gato se vuelve la mascota del jardín; los niños lo cuidan y lo incluyen en futuras fiestas."
+    }
+  ],
+  "qa": {
+    "arco_completo": 5,
+    "claridad_visual": 5,
+    "potencia_leitmotiv": 5
+  }
+}

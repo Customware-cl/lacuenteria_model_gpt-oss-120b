@@ -1,0 +1,21 @@
+[
+  {
+    "timestamp": "2025-08-28T18:03:17.849076",
+    "retry_count": 0,
+    "qa_scores": {
+      "alineacion_pedagogica": 4,
+      "aplicabilidad": 4,
+      "sensibilidad": 5,
+      "promedio": 4.33
+    },
+    "execution_time": 28.425926,
+    "temperature": 0.55,
+    "max_tokens": 4000,
+    "status": "success",
+    "tokens_consumed": {
+      "prompt_tokens": 1697,
+      "completion_tokens": 2104,
+      "total_tokens": 3801
+    }
+  }
+]

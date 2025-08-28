@@ -1,0 +1,13 @@
+{
+  "riesgos_detectados": [],
+  "correcciones_sugeridas": [
+    {
+      "pagina": 1,
+      "texto_o_prompt": "Incluir un personaje secundario (por ejemplo, un hermano, amiga/o o adulto) que acompañe a Ana en alguna parte de la historia, promoviendo la cooperación y la diversidad cultural."
+    }
+  ],
+  "apto_para_ninos": true,
+  "qa": {
+    "seguridad_respecto": 5
+  }
+}

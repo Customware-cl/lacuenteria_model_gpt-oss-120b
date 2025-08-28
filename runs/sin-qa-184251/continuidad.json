@@ -1,0 +1,82 @@
+{
+  "character_bible": [
+    {
+      "nombre": "Emilia",
+      "edad": "2 años",
+      "rasgos_visibles": "Pelo castaño ondulado, ojos grandes marrones, mejillas sonrosadas, sonrisa contagiosa",
+      "vestuario": "Vestido de algodón con estampado de estrellas, zapatillas blancas y una diadema de flores",
+      "colores_clave": [
+        "azul",
+        "blanco",
+        "rosa"
+      ],
+      "objeto_ancla": "cinta azul atada a su muñeca izquierda",
+      "gestos": "Salta de alegría, agita los brazos al soplar globos, abraza con entusiasmo",
+      "no_haria": "No rompería los globos ni interrumpiría el canto de sus amigos"
+    },
+    {
+      "nombre": "Mamá de Emilia",
+      "edad": "30 años",
+      "rasgos_visibles": "Cabello largo castaño, piel cálida, mirada protectora",
+      "vestuario": "Blusa amarilla, falda azul con bolsillos, sandalias cómodas",
+      "colores_clave": [
+        "amarillo",
+        "azul",
+        "verde"
+      ],
+      "objeto_ancla": "cinta azul sujeta al asa de su bolso",
+      "gestos": "Abraza a Emilia, aplaude al ritmo de la canción, sirve el pastel con delicadeza",
+      "no_haria": "No dejaría que la fiesta pierda su energía ni que algún niño se sienta excluido"
+    },
+    {
+      "nombre": "Toby el perrito de peluche",
+      "edad": "N/A (compañero de juego)",
+      "rasgos_visibles": "Pelaje gris suave, orejas largas, ojos brillantes de botón",
+      "vestuario": "Collar rojo con una pequeña campanilla",
+      "colores_clave": [
+        "gris",
+        "rojo",
+        "blanco"
+      ],
+      "objeto_ancla": "cinta azul atada al collar del perrito",
+      "gestos": "Mueve la cola de tela, da pequeños ladridos de juguete, se acurruca junto a Emilia",
+      "no_haria": "No se alejaría de Emilia durante la celebración ni interrumpiría el juego"
+    }
+  ],
+  "continuidad_narrativa": {
+    "relaciones": "Emilia es la protagonista central; su mamá la cuida y celebra su cumpleaños, mientras Toby el perrito de peluche actúa como su confidente y compañero de juego. Los amigos del jardín comparten risas y ayudan a Emilia, creando una red de apoyo y amistad.",
+    "evolucion_emocional": "Al inicio (pág. 1) Emilia muestra una alegría explosiva al soltar globos. A medida que avanza la fiesta, su curiosidad la lleva a soplar burbujas y a interactuar con el pastel, pasando de la excitación a la gratitud. En la página 7, al apagar la vela, siente un deseo íntimo y, al final (pág. 10), experimenta satisfacción y amor al repartir cajas y agradecer a sus amigos, cerrando el arco emocional con una sensación de plenitud y comunidad.",
+    "objeto_ancla_reapariciones": [
+      {
+        "personaje": "Emilia",
+        "paginas": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      {
+        "personaje": "Mamá de Emilia",
+        "paginas": [
+          1,
+          5,
+          9
+        ]
+      },
+      {
+        "personaje": "Toby el perrito de peluche",
+        "paginas": [
+          3,
+          7,
+          9
+        ]
+      }
+    ]
+  },
+  "qa": {
+    "coherencia_rasgos": 5,
+    "utilidad_arte": 5
+  }
+}

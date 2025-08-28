@@ -1,0 +1,25 @@
+{
+  "paginas_texto": {
+    "1": "En el jardín colgaban globos de mil color\nLos niños disfrazados brillaban con color\nEmilia bajo el arco siente timidez y curiosidad\nSus ojitos observan, el corazón late con curiosidad",
+    "2": "Entre cajas de papel, busca su traje ideal\nY al abrir una, halla alas, su sueño ideal\nCon voz temblorosa canta: ¡Feliz cumpleaños, Emilia!\nY todos repiten al unísono: ¡Feliz cumpleaños, Emilia!",
+    "3": "En círculo giran amigos, la música suena y llama\nEmilia mira sus pies, el ritmo la invita, pero su temor la llama\nSe pregunta si su cuerpo puede seguir el alegre baile\nCon un suspiro decide intentar, y sentir el suave baile",
+    "4": "Un compañero extiende su mano bajo el sol brillante\nEmilia siente la luz y dice sí, confiando en su gesto brillante\nCon valentía surge, late fuerte el pequeño corazón\nJuntos dan un paso, y el temblor se vuelve canción del corazón",
+    "5": "Con su vestido de mariposa, Emilia al cielo parece volar\nSus alas relucen al ritmo, y el sueño vuelve a volar\nTodos gritan con gozo: ¡Feliz cumpleaños, Emilia!\nLa fiesta vibra al compás, cantando: ¡Feliz cumpleaños, Emilia!",
+    "6": "Antes de cantar, respira profundo, siente el aire al inhalar\nCuenta dos inhalaciones, dos retenes, dos exhalaciones para respirar\nEl silencio se vuelve dulce, esperando la primera canción\nCada niño escucha, el corazón late al ritmo de la canción",
+    "7": "Emilia se inclina, los ojos fijos en la llama, prepara su soplo\nImagina una burbuja grande, y con delicadeza lanza su soplo\nCon esfuerzo intenta apagar todas las brillantes velas\nEl aire danza y logra que se apaguen, una a una, las velas",
+    "8": "Al soplar, el confeti estalla como lluvia de colores, confeti\nCada pieza brilla en el aire, anunciando su alegría confeti\nTodos gritan orgullosos: ¡Feliz cumpleaños, Emilia!\nEl brillo del confeti refleja sus ojos, cantan: ¡Feliz cumpleaños, Emilia!",
+    "9": "En círculo, los niños alzan su voz, comienza el canto\nLa melodía se eleva, y el salón vibra con el canto\nCada niño espera su turno, cantan unidos, siempre juntos\nLa energía fluye y el grupo permanece fuerte, siempre juntos",
+    "10": "Al final, abrazos suaves envuelven a Emilia, dulce abrazo\nLas luces titilan, y cada amigo ofrece su cálido abrazo\nCon gratitud susurra: Gracias, querida Emilia!\nY todos concluyen cantando: ¡Feliz cumpleaños, Emilia!"
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    8,
+    10
+  ],
+  "qa": {
+    "emocion": 5,
+    "claridad_visual": 5,
+    "uso_leitmotiv": 5
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "paginas_texto": {
+    "1": "Emilia abre puerta al cielo\nSus ojos buscan el azul en el cielo\nUn soplo de viento trae dulces aromas\nY el día empieza con risas y aromas",
+    "2": "Los amigos llegan disfrazados\nCon león rugiendo y alas aladas\n¡Cumple, cumple, vamos a cantar!\nQue el juego inicie y suene el cantar",
+    "3": "En la mesa brilla el pastel\nCon velas que alzan luz de miel\nEmilia ve al pequeño solo\nY su corazón late como un solo",
+    "4": "Con valentía ella se acercó\nY la mano del niño le tendió\nJuntos al círculo fueron a jugar\nDonde el miedo se fue a olvidar",
+    "5": "Giran las sillas al compás\nEl canto suena y el ritmo trae paz\n¡Cumple, cumple, vamos a cantar!\nY una silla falta al final cantar",
+    "6": "Un niño triste se quedó en pie\nSu lloriqueo el aire hizo ver\nEmilia siente su pena viva\nY su abrazo llega como una brisa",
+    "7": "Comparte su cupcake, dulce y suave\nY la silla que quedó bajo el ave\nLos dos sonríen, la tristeza huye\nY el juego vuelve con luz y fluye",
+    "8": "Todos alzan manos, voz y canto\nCon alegría el ritmo es tanto\n¡Cumple, cumple, vamos a cantar!\nY el eco baila con estrellas al cantar",
+    "9": "A la piñata se acerca la zarpa\nLos niños esperan, la emoción se atrapa\n¿Quién romperá la cáscara de color?\nEl suspense vibra como un tambor",
+    "10": "Los dulces vuelan, el pan se reparte\nRíen y abrazan, el amor se parte\n¡Cumple, cumple, vamos a cantar!\nY la amistad brilla en el final cantar"
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    8,
+    10
+  ],
+  "qa": {
+    "emocion": 5,
+    "claridad_visual": 5,
+    "uso_leitmotiv": 5
+  }
+}

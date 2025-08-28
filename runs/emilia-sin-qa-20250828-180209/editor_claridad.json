@@ -1,0 +1,186 @@
+{
+  "paginas_texto_claro": {
+    "1": "Despierta el sol, dorado al alba\\nLos campos susurran con la brisa del amanecer\\nLos pájaros cantan al nuevo día\\nLa niebla se va, muestra la luz",
+    "2": "El río corre rápido entre rocas lisas\\nEl agua refleja el cielo azul sin nubes\\nLos peces juegan bajo la corriente clara\\nEl sonido del agua es canto constante",
+    "3": "En el bosque, los árboles se alzan altos\\nSus hojas murmuran al viento suave\\nLa luz se filtra en manchas doradas\\nLos animales se ocultan entre sombras",
+    "4": "La montaña se eleva firme sobre la llanura\\nSus cumbres blancas brillan al sol\\nEl aire es frío y puro en la altura\\nLos valles abajo respiran tranquilidad",
+    "5": "En la ciudad, las luces nunca duermen\\nLos coches pasan como ríos de metal\\nLas voces se mezclan en un murmullo urbano\\nEl reloj marca el pulso de la noche",
+    "6": "El jardín florece con colores vivos\\nLas rosas rojas exudan perfume dulce\\nLas mariposas bailan sobre los pétalos\\nEl sol calienta la tierra fértil",
+    "7": "En la noche, la luna cuelga plateada\\nLas estrellas titilan como ojos curiosos\\nEl búho observa en silencio la sombra\\nEl viento nocturno susurra historias",
+    "8": "El mar extiende su azul sin fin\\nLas olas rompen con espuma blanca\\nLos barcos navegan bajo el horizonte\\nLa brisa marina lleva sal y libertad",
+    "9": "En el desierto, la arena brilla al sol\\nLas dunas forman montes de oro suave\\nEl calor abraza la tierra sin piedad\\nLas sombras se alargan al atardecer",
+    "10": "El otoño pinta hojas de fuego\\nEl viento las lleva en danza lenta\\nLos caminos se cubren de crujidos dorados\\nLa tierra se prepara para el reposo"
+  },
+  "glosario": [
+    {
+      "original": "Al alba, el astro rey despierta su fulgor dorado",
+      "simple": "Despierta el sol, dorado al alba"
+    },
+    {
+      "original": "Los campos susurran bajo la brisa tibia del amanecer",
+      "simple": "Los campos susurran con la brisa del amanecer"
+    },
+    {
+      "original": "Los pájaros, heraldos del día, entonan cantos celestiales",
+      "simple": "Los pájaros cantan al nuevo día"
+    },
+    {
+      "original": "La niebla se disipa, revelando la promesa de luz",
+      "simple": "La niebla se va, muestra la luz"
+    },
+    {
+      "original": "El cauce del río serpentea veloz entre rocas pulidas",
+      "simple": "El río corre rápido entre rocas lisas"
+    },
+    {
+      "original": "El espejo acuático refleja un cielo inmenso y azul sin nubes",
+      "simple": "El agua refleja el cielo azul sin nubes"
+    },
+    {
+      "original": "Los peces juegan bajo la corriente cristalina y clara",
+      "simple": "Los peces juegan bajo la corriente clara"
+    },
+    {
+      "original": "El rumor constante del agua es una canción sin fin",
+      "simple": "El sonido del agua es canto constante"
+    },
+    {
+      "original": "En el bosque, los árboles se alzan majestuosos y altos",
+      "simple": "En el bosque, los árboles se alzan altos"
+    },
+    {
+      "original": "Sus hojas murmuran al viento suave como susurros antiguos",
+      "simple": "Sus hojas murmuran al viento suave"
+    },
+    {
+      "original": "La luz se filtra en manchas doradas sobre el suelo",
+      "simple": "La luz se filtra en manchas doradas"
+    },
+    {
+      "original": "Los animales se ocultan entre sombras y troncos",
+      "simple": "Los animales se ocultan entre sombras"
+    },
+    {
+      "original": "La montaña se eleva firme sobre la llanura extensa",
+      "simple": "La montaña se eleva firme sobre la llanura"
+    },
+    {
+      "original": "Sus cumbres blancas brillan al sol como perlas",
+      "simple": "Sus cumbres blancas brillan al sol"
+    },
+    {
+      "original": "El aire es frío y puro en la altura inmensa",
+      "simple": "El aire es frío y puro en la altura"
+    },
+    {
+      "original": "Los valles abajo respiran una tranquila serenidad",
+      "simple": "Los valles abajo respiran tranquilidad"
+    },
+    {
+      "original": "En la ciudad, las luces nunca duermen, parpadean sin cesar",
+      "simple": "En la ciudad, las luces nunca duermen"
+    },
+    {
+      "original": "Los coches pasan como ríos de metal bajo el asfalto",
+      "simple": "Los coches pasan como ríos de metal"
+    },
+    {
+      "original": "Las voces se mezclan en un murmullo urbano constante",
+      "simple": "Las voces se mezclan en un murmullo urbano"
+    },
+    {
+      "original": "El reloj marca el pulso de la noche incansable",
+      "simple": "El reloj marca el pulso de la noche"
+    },
+    {
+      "original": "El jardín florece con colores vivos y brillantes",
+      "simple": "El jardín florece con colores vivos"
+    },
+    {
+      "original": "Las rosas rojas exudan perfume dulce y embriagador",
+      "simple": "Las rosas rojas exudan perfume dulce"
+    },
+    {
+      "original": "Las mariposas bailan sobre los pétalos como bailarinas",
+      "simple": "Las mariposas bailan sobre los pétalos"
+    },
+    {
+      "original": "El sol calienta la tierra fértil con su abrazo cálido",
+      "simple": "El sol calienta la tierra fértil"
+    },
+    {
+      "original": "En la noche, la luna cuelga plateada en el firmamento",
+      "simple": "En la noche, la luna cuelga plateada"
+    },
+    {
+      "original": "Las estrellas titilan como ojos curiosos en la oscuridad",
+      "simple": "Las estrellas titilan como ojos curiosos"
+    },
+    {
+      "original": "El búho observa en silencio la sombra del bosque",
+      "simple": "El búho observa en silencio la sombra"
+    },
+    {
+      "original": "El viento nocturno susurra historias antiguas",
+      "simple": "El viento nocturno susurra historias"
+    },
+    {
+      "original": "El mar extiende su azul sin fin hasta el horizonte",
+      "simple": "El mar extiende su azul sin fin"
+    },
+    {
+      "original": "Las olas rompen con espuma blanca contra la orilla",
+      "simple": "Las olas rompen con espuma blanca"
+    },
+    {
+      "original": "Los barcos navegan bajo el horizonte lejano",
+      "simple": "Los barcos navegan bajo el horizonte"
+    },
+    {
+      "original": "La brisa marina lleva sal y libertad en cada soplo",
+      "simple": "La brisa marina lleva sal y libertad"
+    },
+    {
+      "original": "En el desierto, la arena brilla al sol como polvo de oro",
+      "simple": "En el desierto, la arena brilla al sol"
+    },
+    {
+      "original": "Las dunas forman montes de oro suave y ondulado",
+      "simple": "Las dunas forman montes de oro suave"
+    },
+    {
+      "original": "El calor abraza la tierra sin piedad durante el día",
+      "simple": "El calor abraza la tierra sin piedad"
+    },
+    {
+      "original": "Las sombras se alargan al atardecer, tiñendo todo de rojo",
+      "simple": "Las sombras se alargan al atardecer"
+    },
+    {
+      "original": "El otoño pinta hojas de fuego con tonos rojizos y amarillos",
+      "simple": "El otoño pinta hojas de fuego"
+    },
+    {
+      "original": "El viento las lleva en danza lenta sobre el suelo",
+      "simple": "El viento las lleva en danza lenta"
+    },
+    {
+      "original": "Los caminos se cubren de crujidos dorados bajo los pasos",
+      "simple": "Los caminos se cubren de crujidos dorados"
+    },
+    {
+      "original": "La tierra se prepara para el reposo del invierno próximo",
+      "simple": "La tierra se prepara para el reposo"
+    }
+  ],
+  "cambios_clave": [
+    "Se sustituyeron palabras complejas por sinónimos simples.",
+    "Se reordenó el orden de los sujetos para mayor claridad.",
+    "Se eliminaron adjetivos innecesarios y se redujo la longitud de las frases.",
+    "Se mantuvo la métrica aproximada con cuatro versos por página."
+  ],
+  "qa": {
+    "comprensibilidad": 5,
+    "imagen_inequivoca": 5
+  }
+}

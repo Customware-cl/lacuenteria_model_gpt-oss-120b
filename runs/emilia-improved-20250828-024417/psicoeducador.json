@@ -1,0 +1,93 @@
+{
+  "metas_generales": [
+    "Aprender a compartir objetos y experiencias con los amigos.",
+    "Identificar y nombrar sus propias emociones y las de los demás.",
+    "Pedir ayuda cuando se sienta insegura o necesite apoyo.",
+    "Esperar su turno y respetar el turno de los otros.",
+    "Ofrecer y aceptar pequeñas muestras de generosidad, como una merienda o un juguete."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Saludar y reconocer a los demás con sonrisa y contacto visual.",
+      "frase_modelo": "¡Hola, maestra! ¡Hola, amigos!",
+      "recurso": "Practicar la sonrisa y el contacto visual breve al decir hola.",
+      "evitar": "Ignorar a los compañeros o pasar de largo sin saludar."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Mostrar entusiasmo y observar los disfraces sin juzgar.",
+      "frase_modelo": "¡Qué disfraces tan divertidos!",
+      "recurso": "Mirar con curiosidad y comentar algo positivo sobre cada disfraz.",
+      "evitar": "Criticar, comparar o decir que un disfraz es mejor que otro."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Identificar y nombrar la timidez que siente.",
+      "frase_modelo": "Me siento un poquito tímida ahora.",
+      "recurso": "Etiquetar la emoción con palabras simples y respirar 3 cuentas (inhala‑exhala).",
+      "evitar": "Presionar a elegir rápidamente sin darle tiempo para sentir su emoción."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Pedir ayuda y aceptar el apoyo de un amigo.",
+      "frase_modelo": "¿Me puedes ayudar a elegir mi disfraz?",
+      "recurso": "Modelar la frase de petición y reforzar con un abrazo o palmadita.",
+      "evitar": "Forzar que decida sola sin ofrecer la opción de pedir ayuda."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Compartir la pelota turnándose.",
+      "frase_modelo": "Yo paso la pelota a ti.",
+      "recurso": "Usar una señal visual (palmita al aire) para indicar el turno.",
+      "evitar": "Arrebatar la pelota o jugar de forma agresiva."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Expresar frustración con palabras y autorregularse.",
+      "frase_modelo": "Me siento triste porque no me dieron la pelota.",
+      "recurso": "Etiquetar la emoción + respiración profunda de 3 cuentas (inhala‑exhala).",
+      "evitar": "Gritos, llanto descontrolado o agresión física."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Ofrecer algo propio (merienda) como gesto de generosidad.",
+      "frase_modelo": "¿Quieres una galleta?",
+      "recurso": "Modelar la oferta con sonrisa y tono amable.",
+      "evitar": "Retener la comida como castigo o usarla para manipular."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Responder al compartir con gratitud.",
+      "frase_modelo": "¡Gracias por compartir!",
+      "recurso": "Decir 'gracias' y dar un abrazo suave o un gesto de aplauso.",
+      "evitar": "Rechazar el intercambio o mostrar desinterés."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Celebrar en grupo y esperar su turno para soplar las velas.",
+      "frase_modelo": "¡Feliz cumpleaños, Emilia! Ahora es tu turno.",
+      "recurso": "Respiración profunda antes de soplar (inhalar‑contar‑exhalar).",
+      "evitar": "Interrumpir el momento o tomar la vela sin permiso."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Repartir el pastel equitativamente entre los amigos.",
+      "frase_modelo": "Yo reparto una porción a cada amigo.",
+      "recurso": "Contar las piezas y dar una a cada niño, reforzando la igualdad.",
+      "evitar": "Tomar más de lo justo o negar porciones a alguien."
+    }
+  ],
+  "banderas": [
+    "Frustración prolongada sin señal de autorregulación.",
+    "Exclusión social persistente de algún niño.",
+    "Negativa repetida a compartir objetos o alimentos.",
+    "Ansiedad marcada al elegir ropa o disfraz.",
+    "Conducta agresiva al tomar objetos sin preguntar."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

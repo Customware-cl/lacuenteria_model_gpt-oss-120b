@@ -1,0 +1,93 @@
+{
+  "metas_generales": [
+    "Desarrollar la capacidad de compartir objetos y experiencias con los compañeros.",
+    "Fomentar la identificación y expresión de emociones propias y ajenas.",
+    "Practicar habilidades sociales como invitar, pedir ayuda y esperar turnos.",
+    "Promover la empatía y la generosidad en situaciones de juego grupal.",
+    "Reforzar el uso de recursos de autorregulación (respiración, etiquetado emocional)."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Reconocer y nombrar la alegría al iniciar el día.",
+      "frase_modelo": "¡Qué día tan feliz! Me gusta despertar y ver los globos de colores.",
+      "recurso": "Etiqueta emocional: alegría + sonrisa amplia.",
+      "evitar": "Minimizar o ignorar la emoción mostrada."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Identificar la timidez en los demás y etiquetarla.",
+      "frase_modelo": "Veo que estás un poquito tímido, está bien sentir eso.",
+      "recurso": "Respiración profunda de 3 cuentas + etiqueta emocional: timidez.",
+      "evitar": "Forzar al niño a que se muestre de inmediato."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Desarrollar empatía al notar a un amigo solo.",
+      "frase_modelo": "¿Te sientes solo? Yo también me sentí así alguna vez.",
+      "recurso": "Modelado de pregunta empática + contacto visual suave.",
+      "evitar": "Ignorar la señal de soledad del otro niño."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Invitar a otro niño a jugar usando una frase amable.",
+      "frase_modelo": "¿Quieres jugar conmigo? Podemos compartir los juguetes.",
+      "recurso": "Guía paso a paso: observar → sonreír → decir invitación → esperar respuesta.",
+      "evitar": "Presionar al niño para que acepte la invitación."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Participar en el juego de la silla respetando turnos.",
+      "frase_modelo": "Voy a esperar mi turno y aplaudir cuando sea mi turno.",
+      "recurso": "Señal visual (banderín) para indicar turno + aplausos de apoyo.",
+      "evitar": "Gritar, empujar o intentar adelantar el turno."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Reconocer y expresar tristeza propia o ajena.",
+      "frase_modelo": "Veo que estás triste, está bien sentirse así.",
+      "recurso": "Técnica de respiración 3‑2‑1 (3 inhalaciones, 2 retenciones, 1 exhalación) + etiqueta emocional: tristeza.",
+      "evitar": "Decir que no debe estar triste o minimizar la emoción."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Compartir un objeto (cupcake) y ofrecer una silla.",
+      "frase_modelo": "Yo compartiré mi pastelito y mi silla contigo.",
+      "recurso": "Modelado de intercambio + palabras de agradecimiento: \"gracias\" y \"de nada\".",
+      "evitar": "Retener el objeto o la silla para sí mismo."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Cantar en grupo y levantar las manos para unir al grupo.",
+      "frase_modelo": "¡Cantemos todos juntos y celebremos!",
+      "recurso": "Canción guiada con gestos de levantar manos + ritmo marcado.",
+      "evitar": "Excluir a algún niño del canto o del movimiento."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Esperar turnos para romper la piñata y animar al grupo.",
+      "frase_modelo": "Vamos a turnarnos, tú puedes intentar cuando sea tu momento.",
+      "recurso": "Contar hasta tres antes de cada intento + aplausos de apoyo al que intenta.",
+      "evitar": "Presionar al niño que no quiere participar o quitarle el turno."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Compartir los dulces y expresar gratitud.",
+      "frase_modelo": "Gracias por compartir, me gustó mucho.",
+      "recurso": "Práctica de decir \"gracias\" y \"por favor\" + reparto equitativo de dulces.",
+      "evitar": "Reclamar todo el dulce o no reconocer el gesto de los demás."
+    }
+  ],
+  "banderas": [
+    "El niño muestra agresión (golpes, empujones) cuando no consigue una silla.",
+    "Llanto prolongado sin consuelo después de sentirse excluido.",
+    "Retiro total del juego y aislamiento de los demás niños.",
+    "Dificultad para identificar o nombrar sus propias emociones.",
+    "Resistencia a esperar turnos o a compartir objetos."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

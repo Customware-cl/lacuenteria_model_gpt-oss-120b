@@ -1,0 +1,156 @@
+{
+  "estilo_global": "Ilustración infantil colorida, acuarela digital vibrante con bordes suaves y texturas ligeras tipo papel pastel",
+  "color_script": {
+    "1": {
+      "paleta": [
+        "#FF6B6B",
+        "#FFC5A1",
+        "#A8D5BA",
+        "#F7E9D0"
+      ],
+      "momento": "amanecer",
+      "atmosfera": "alegría y curiosidad"
+    },
+    "2": {
+      "paleta": [
+        "#6AA9FF",
+        "#FFE066",
+        "#F5A623",
+        "#FFFFFF"
+      ],
+      "momento": "tarde filtrada",
+      "atmosfera": "asombro y concentración"
+    },
+    "3": {
+      "paleta": [
+        "#FF6B6B",
+        "#FFD93D",
+        "#6AA9FF",
+        "#A8D5BA"
+      ],
+      "momento": "mediodía brillante",
+      "atmosfera": "confianza y complicidad"
+    },
+    "4": {
+      "paleta": [
+        "#FFB347",
+        "#FF6B6B",
+        "#5D5D5D",
+        "#FFE5B4"
+      ],
+      "momento": "atardecer dorado",
+      "atmosfera": "sorpresa y ligera preocupación"
+    },
+    "5": {
+      "paleta": [
+        "#FAD0C9",
+        "#B3CDE0",
+        "#FF6B6B",
+        "#FFF5E1"
+      ],
+      "momento": "tarde tenue",
+      "atmosfera": "consuelo y valentía renovada"
+    },
+    "6": {
+      "paleta": [
+        "#FF6B6B",
+        "#6AA9FF",
+        "#F5A623",
+        "#FFF8E1"
+      ],
+      "momento": "mediodía claro",
+      "atmosfera": "amistad y alegría"
+    },
+    "7": {
+      "paleta": [
+        "#FF8C42",
+        "#FF6B6B",
+        "#6AA9FF",
+        "#4A4A4A"
+      ],
+      "momento": "atardecer cálido",
+      "atmosfera": "valentía y apoyo mutuo"
+    },
+    "8": {
+      "paleta": [
+        "#FFB347",
+        "#FF6B6B",
+        "#8C6A4D",
+        "#F2E8CF"
+      ],
+      "momento": "crepúsculo dorado",
+      "atmosfera": "curiosidad y serenidad"
+    },
+    "9": {
+      "paleta": [
+        "#FFF5E1",
+        "#FF6B6B",
+        "#B3CDE0",
+        "#A8D5BA"
+      ],
+      "momento": "luz natural interior",
+      "atmosfera": "satisfacción y seguridad"
+    },
+    "10": {
+      "paleta": [
+        "#2C3E50",
+        "#FF6B6B",
+        "#F7C59F",
+        "#FFE066"
+      ],
+      "momento": "anochecer con luces colgantes",
+      "atmosfera": "gratitud y esperanza"
+    }
+  },
+  "transiciones": [
+    {
+      "de_pagina": 1,
+      "a_pagina": 2,
+      "tipo": "gradual de tonos cálidos a azules suaves"
+    },
+    {
+      "de_pagina": 2,
+      "a_pagina": 3,
+      "tipo": "incremento de saturación y luz del mediodía"
+    },
+    {
+      "de_pagina": 3,
+      "a_pagina": 4,
+      "tipo": "cambio de luz directa a dorada de atardecer"
+    },
+    {
+      "de_pagina": 4,
+      "a_pagina": 5,
+      "tipo": "suavizado a tonos pastel y disminución de contraste"
+    },
+    {
+      "de_pagina": 5,
+      "a_pagina": 6,
+      "tipo": "retorno a luz clara con colores vivos"
+    },
+    {
+      "de_pagina": 6,
+      "a_pagina": 7,
+      "tipo": "alargamiento de sombras y tono cálido"
+    },
+    {
+      "de_pagina": 7,
+      "a_pagina": 8,
+      "tipo": "transición a crepúsculo dorado"
+    },
+    {
+      "de_pagina": 8,
+      "a_pagina": 9,
+      "tipo": "pasaje a luz interior suave y neutra"
+    },
+    {
+      "de_pagina": 9,
+      "a_pagina": 10,
+      "tipo": "cambio a nocturnidad con luces cálidas"
+    }
+  ],
+  "qa": {
+    "coherencia_visual": 5,
+    "progresion_emocional": 5
+  }
+}

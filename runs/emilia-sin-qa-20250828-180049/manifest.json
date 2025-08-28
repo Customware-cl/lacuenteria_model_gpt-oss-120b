@@ -1,0 +1,139 @@
+{
+  "story_id": "emilia-sin-qa-20250828-180049",
+  "source": "local",
+  "created_at": "2025-08-28T18:00:49.694827",
+  "updated_at": "2025-08-28T18:13:19.640718",
+  "estado": "qa_failed",
+  "paso_actual": "continuidad",
+  "qa_historial": {
+    "director": {
+      "arco_narrativo": 3.5,
+      "potencia_leitmotiv": 4.0,
+      "claridad_estructura": 4.0,
+      "promedio": 3.83
+    },
+    "psicoeducador": {
+      "alineacion_pedagogica": 4.0,
+      "aplicabilidad": 4.0,
+      "sensibilidad": 5.0,
+      "promedio": 4.33
+    },
+    "cuentacuentos": {
+      "musicalidad": 2.0,
+      "imagineria": 2.5,
+      "fluidez_oral": 2.0,
+      "promedio": 2.2
+    },
+    "editor_claridad": {
+      "comprensibilidad": 4,
+      "preservacion_belleza": 4,
+      "coherencia": 4,
+      "promedio": 4.0
+    },
+    "ritmo_rima": {
+      "fluidez": 1.5,
+      "consistencia_rima": 1.5,
+      "variacion_cierres": 1.5,
+      "promedio": 1.5
+    }
+  },
+  "devoluciones": [
+    {
+      "paso": "director",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "arco_narrativo": 3.5,
+        "potencia_leitmotiv": 4.0,
+        "claridad_estructura": 4.0,
+        "promedio": 3.83
+      },
+      "issues": [
+        "Clímax no está claramente marcado; la mayor carga emocional se dispersa entre páginas 7 y 8 sin un punto de inflexión definido.",
+        "Leitmotiv presenta repetición de la palabra 'feliz' dos veces seguidas, lo que suena forzado y poco original.",
+        "En la página 10 falta un conflicto explícito antes de la resolución, lo que debilita la sensación de cierre.",
+        "Algunas emociones son superficiales (p. ej., 'Tristeza ligera') y podrían profundizarse para mayor impacto."
+      ],
+      "timestamp": "2025-08-28T18:02:15.990912"
+    },
+    {
+      "paso": "cuentacuentos",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "musicalidad": 2.0,
+        "imagineria": 2.5,
+        "fluidez_oral": 2.0,
+        "promedio": 2.2
+      },
+      "issues": [
+        "Rima forzada y repetición de la misma palabra en la mayoría de los versos (pág. 1‑10)",
+        "Errores gramaticales: 'colores que al sol brilla' (pág. 1), 'siento frustrar' (pág. 4), 'desatar lazo' (pág. 5)",
+        "Metro inconsistente: número de sílabas varía entre 6 y 14 sin patrón estable",
+        "Repetición excesiva de vocabulario (palabras como 'azul', 'cantar', 'triste', 'gracias' aparecen en casi todas las páginas)",
+        "Incoherencia semántica en algunos versos (pág. 2: '¿Puedo tocarlo, por favor, ayudar?')",
+        "Falta de variedad rítmica y melódica, lo que dificulta la lectura en voz alta"
+      ],
+      "timestamp": "2025-08-28T18:07:47.569530"
+    },
+    {
+      "paso": "ritmo_rima",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "fluidez": 1.5,
+        "consistencia_rima": 1.5,
+        "variacion_cierres": 1.5,
+        "promedio": 1.5
+      },
+      "issues": [
+        "Rima forzada con palabras idénticas (p.1 'rosa/rosa', p.2 'cristal/cristal', p.3 'paso/paso', etc.)",
+        "Repetición excesiva de la misma palabra al final de los versos (p.1 'serena/serena', p.4 'seguro/seguro', p.5 'doradas/doradas', etc.)",
+        "Metro inconsistente entre líneas (p.1 línea 1 tiene 12 sílabas, línea 2 13 sílabas; variaciones similares en todas las páginas)",
+        "Errores gramaticales e inversiones sintácticas ('brillo que serena', 'al rojo humo', 'manto paso')",
+        "Falta de variedad en los cierres de verso: todas las páginas usan esquema AABB con terminaciones idénticas"
+      ],
+      "timestamp": "2025-08-28T18:13:19.639717"
+    }
+  ],
+  "reintentos": {
+    "director": 2,
+    "psicoeducador": 1,
+    "cuentacuentos": 2,
+    "editor_claridad": 1,
+    "ritmo_rima": 2
+  },
+  "timestamps": {
+    "director": {
+      "start": "2025-08-28T18:00:49.696307",
+      "end": "2025-08-28T18:02:15.990865",
+      "duration": 86.294547
+    },
+    "psicoeducador": {
+      "start": "2025-08-28T18:02:15.991985",
+      "end": "2025-08-28T18:03:28.173071",
+      "duration": 72.181082
+    },
+    "cuentacuentos": {
+      "start": "2025-08-28T18:03:28.173769",
+      "end": "2025-08-28T18:07:47.569482",
+      "duration": 259.395703
+    },
+    "editor_claridad": {
+      "start": "2025-08-28T18:07:47.570690",
+      "end": "2025-08-28T18:08:58.827202",
+      "duration": 71.256506
+    },
+    "ritmo_rima": {
+      "start": "2025-08-28T18:08:58.828016",
+      "end": "2025-08-28T18:13:19.639690",
+      "duration": 260.811666
+    }
+  },
+  "webhook_url": null,
+  "webhook_attempts": 0,
+  "configuracion_modelo": {
+    "modelo": "openai/gpt-oss-120b",
+    "endpoint": "http://69.19.136.204:8000/v1/chat/completions",
+    "timeout": 900,
+    "default_temperature": 0.7,
+    "default_max_tokens": 4000
+  }
+}

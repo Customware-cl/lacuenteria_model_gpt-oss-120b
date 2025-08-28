@@ -1,0 +1,130 @@
+{
+  "story_id": "test-v1-explicit-1756410774",
+  "source": "local",
+  "created_at": "2025-08-28T19:52:54.308394",
+  "updated_at": "2025-08-28T20:01:01.590082",
+  "estado": "qa_failed",
+  "paso_actual": "ritmo_rima",
+  "qa_historial": {
+    "director": {
+      "arco_narrativo": 3.5,
+      "potencia_leitmotiv": 3.0,
+      "claridad_estructura": 2.5,
+      "promedio": 3.0
+    },
+    "psicoeducador": {
+      "alineacion_pedagogica": 4.5,
+      "aplicabilidad": 4.0,
+      "sensibilidad": 4.5,
+      "promedio": 4.33
+    },
+    "cuentacuentos": {
+      "musicalidad": 2.0,
+      "imagineria": 2.5,
+      "fluidez_oral": 2.0,
+      "promedio": 2.2
+    },
+    "editor_claridad": {
+      "comprensibilidad": 4,
+      "preservacion_belleza": 3,
+      "coherencia": 4,
+      "promedio": 3.67
+    }
+  },
+  "devoluciones": [
+    {
+      "paso": "director",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "arco_narrativo": 3.5,
+        "potencia_leitmotiv": 3.0,
+        "claridad_estructura": 2.5,
+        "promedio": 3.0
+      },
+      "issues": [
+        "Inconsistencia de campo: 's' en página 10 en lugar de 'imagen_nuclear'",
+        "Campo 'resolucion' solo presente en página 10; falta consistencia en las demás páginas",
+        "Leitmotiv genérico y poco original; suena forzado y no destaca",
+        "Conflictos poco específicos en algunas páginas (p. 4, p. 5) que reducen la tensión dramática"
+      ],
+      "timestamp": "2025-08-28T19:54:17.090948"
+    },
+    {
+      "paso": "cuentacuentos",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "musicalidad": 2.0,
+        "imagineria": 2.5,
+        "fluidez_oral": 2.0,
+        "promedio": 2.2
+      },
+      "issues": [
+        "Rima forzada en página 1 ('serena'/'serena')",
+        "Rima forzada en página 4 ('temor'/'temor')",
+        "Rima forzada en página 6 ('progreso'/'progreso')",
+        "Rima forzada en página 7 ('prisa'/'prisa')",
+        "Rima forzada en página 9 ('empeño'/'empeño')",
+        "Rima forzada en página 10 ('canción'/'canción')",
+        "Errores gramaticales: 'estrella que suena serena' (pág 1), 'tu mundo también se esconde' (pág 2), 'la luz que al problema hará menor clamor' (pág 4), 'cada una es mi propio visto' (pág 9)",
+        "Metro inconsistente entre versos (varía de 8 a 14 sílabas)",
+        "Repetición de vocabulario (temor, progreso, prisa, empeño) que reduce variedad"
+      ],
+      "timestamp": "2025-08-28T19:59:42.852870"
+    },
+    {
+      "paso": "editor_claridad",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "comprensibilidad": 4,
+        "preservacion_belleza": 3,
+        "coherencia": 4,
+        "promedio": 3.67
+      },
+      "issues": [
+        "Glosario no aplicado: palabras como 'alba', 'vibra', 'gris' siguen apareciendo en el texto.",
+        "Frase ambigua en página 2: \"El campo se cubre de dorado\" resulta poco clara para niños.",
+        "Uso de vocabulario algo abstracto (ej. 'sereno', 'desconocido') que puede dificultar la comprensión.",
+        "Repetición excesiva del artículo 'el' en varios versos, reduce fluidez lectora."
+      ],
+      "timestamp": "2025-08-28T20:01:01.589014"
+    }
+  ],
+  "reintentos": {
+    "director": 2,
+    "psicoeducador": 2,
+    "cuentacuentos": 2,
+    "editor_claridad": 2
+  },
+  "timestamps": {
+    "director": {
+      "start": "2025-08-28T19:52:54.309491",
+      "end": "2025-08-28T19:54:17.090912",
+      "duration": 82.781407
+    },
+    "psicoeducador": {
+      "start": "2025-08-28T19:54:17.092039",
+      "end": "2025-08-28T19:56:12.092346",
+      "duration": 115.000302
+    },
+    "cuentacuentos": {
+      "start": "2025-08-28T19:56:12.093171",
+      "end": "2025-08-28T19:59:42.852833",
+      "duration": 210.759653
+    },
+    "editor_claridad": {
+      "start": "2025-08-28T19:59:42.854023",
+      "end": "2025-08-28T20:01:01.588978",
+      "duration": 78.734947
+    }
+  },
+  "webhook_url": null,
+  "webhook_attempts": 0,
+  "pipeline_version": "v1",
+  "configuracion_modelo": {
+    "modelo": "openai/gpt-oss-120b",
+    "endpoint": "http://69.19.136.204:8000/v1/chat/completions",
+    "timeout": 900,
+    "default_temperature": 0.7,
+    "default_max_tokens": 4000
+  }
+}

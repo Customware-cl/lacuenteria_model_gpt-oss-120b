@@ -1,0 +1,21 @@
+[
+  {
+    "timestamp": "2025-08-28T02:09:29.678918",
+    "retry_count": 0,
+    "qa_scores": {
+      "arco_completo": 5,
+      "claridad_visual": 5,
+      "potencia_leitmotiv": 5,
+      "promedio": 5.0
+    },
+    "execution_time": 10.500599,
+    "temperature": 0.85,
+    "max_tokens": 4000,
+    "status": "success",
+    "tokens_consumed": {
+      "prompt_tokens": 677,
+      "completion_tokens": 1492,
+      "total_tokens": 2169
+    }
+  }
+]

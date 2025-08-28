@@ -1,0 +1,125 @@
+{
+  "story_id": "test-v1-1756410774",
+  "source": "local",
+  "created_at": "2025-08-28T19:52:54.302631",
+  "updated_at": "2025-08-28T19:59:44.243013",
+  "estado": "qa_failed",
+  "paso_actual": "ritmo_rima",
+  "qa_historial": {
+    "director": {
+      "arco_narrativo": 4.5,
+      "potencia_leitmotiv": 4.0,
+      "claridad_estructura": 4.0,
+      "promedio": 4.1666666667
+    },
+    "psicoeducador": {
+      "alineacion_pedagogica": 3.5,
+      "aplicabilidad": 3.5,
+      "sensibilidad": 3.5,
+      "promedio": 3.5
+    },
+    "cuentacuentos": {
+      "musicalidad": 2.0,
+      "imagineria": 3.0,
+      "fluidez_oral": 3.0,
+      "promedio": 2.7
+    },
+    "editor_claridad": {
+      "comprensibilidad": 4.0,
+      "preservacion_belleza": 4.0,
+      "coherencia": 3.0,
+      "promedio": 3.7
+    }
+  },
+  "devoluciones": [
+    {
+      "paso": "psicoeducador",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "alineacion_pedagogica": 3.5,
+        "aplicabilidad": 3.5,
+        "sensibilidad": 3.5,
+        "promedio": 3.5
+      },
+      "issues": [
+        "Repetición de la palabra \"luz\" en más de 3 páginas (páginas 2,8,9,10) – penalización por exceso de repetición.",
+        "Frase \"Comparaciones negativas con el Sol.\" aparece idéntica en dos páginas (1 y 5).",
+        "Algunas micro‑habilidades usan lenguaje algo abstracto para niños de edad preescolar (páginas 2 y 7)."
+      ],
+      "timestamp": "2025-08-28T19:55:30.301460"
+    },
+    {
+      "paso": "cuentacuentos",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "musicalidad": 2.0,
+        "imagineria": 3.0,
+        "fluidez_oral": 3.0,
+        "promedio": 2.7
+      },
+      "issues": [
+        "Repetición excesiva de la frase \"¡Brilla, brilla, mi luz especial!\" (4 apariciones) - penalización por repetición",
+        "Incoherencia en la página 9: la luz se describe como \"sombra\" y \"haz\" contradictoriamente",
+        "Errores gramaticales: \"al ritmo de un viejo bailar\" (debería ser \"baile\") y construcciones poco naturales en varias líneas",
+        "Métrica inconsistente entre estrofas (variación de sílabas evidente)",
+        "Ausencia de rima natural; la mayoría de los versos repiten palabras en lugar de rimar"
+      ],
+      "timestamp": "2025-08-28T19:58:40.412687"
+    },
+    {
+      "paso": "editor_claridad",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "comprensibilidad": 4.0,
+        "preservacion_belleza": 4.0,
+        "coherencia": 3.0,
+        "promedio": 3.7
+      },
+      "issues": [
+        "Falta la página 8 (incoherencia de numeración)",
+        "Fragmento gramatical en la página 9: \"los árboles cubiertos de blanco\" carece de verbo",
+        "Entrada del glosario \"ardea\" no se utiliza en el texto",
+        "Posible pérdida de matiz poético por simplificaciones excesivas en el glosario"
+      ],
+      "timestamp": "2025-08-28T19:59:44.242142"
+    }
+  ],
+  "reintentos": {
+    "director": 1,
+    "psicoeducador": 2,
+    "cuentacuentos": 2,
+    "editor_claridad": 2
+  },
+  "timestamps": {
+    "director": {
+      "start": "2025-08-28T19:52:54.304248",
+      "end": "2025-08-28T19:53:41.908881",
+      "duration": 47.604629
+    },
+    "psicoeducador": {
+      "start": "2025-08-28T19:53:41.910366",
+      "end": "2025-08-28T19:55:30.301422",
+      "duration": 108.391048
+    },
+    "cuentacuentos": {
+      "start": "2025-08-28T19:55:30.302437",
+      "end": "2025-08-28T19:58:40.412661",
+      "duration": 190.110217
+    },
+    "editor_claridad": {
+      "start": "2025-08-28T19:58:40.413861",
+      "end": "2025-08-28T19:59:44.242116",
+      "duration": 63.828248
+    }
+  },
+  "webhook_url": null,
+  "webhook_attempts": 0,
+  "pipeline_version": "v1",
+  "configuracion_modelo": {
+    "modelo": "openai/gpt-oss-120b",
+    "endpoint": "http://69.19.136.204:8000/v1/chat/completions",
+    "timeout": 900,
+    "default_temperature": 0.7,
+    "default_max_tokens": 4000
+  }
+}

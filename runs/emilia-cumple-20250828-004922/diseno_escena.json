@@ -1,0 +1,30 @@
+{
+  "prompts_paginas": {
+    "1": "Entorno: pradera luminosa al amanecer con flores de colores; Acción principal: la niña protagonista corre tras una mariposa brillante; Emoción dominante: alegría desbordante; Objetos ancla: una mochila roja y una lupa de madera; Momento del día/iluminación: luz dorada suave del alba; Composición: plano general amplio, cámara a nivel del suelo, enfoque profundo que captura horizonte; Coherencia con la Character Bible: vestimenta sencilla y cabellos rizados; Estilo: ilustración infantil colorida.",
+    "2": "Entorno: bosque encantado con árboles de troncos curvados y luces de luciérnagas; Acción principal: la niña descubre una puerta diminuta en el tronco; Emoción dominante: curiosidad; Objetos ancla: una llave dorada y un cuaderno de notas; Momento del día/iluminación: penumbra crepuscular con haces de luz filtrada; Composición: plano medio, ángulo ligeramente picado, foco en la puerta y la llave; Estilo: ilustración infantil colorida.",
+    "3": "Entorno: claro del bosque con un pequeño lago reflectante; Acción principal: la niña se asoma al agua y ve su reflejo transformado en un dragón amistoso; Emoción dominante: asombro; Objetos ancla: una rama de sauce y una piedra brillante; Momento del día/iluminación: luz de mediodía clara y reflejos brillantes; Composición: primer plano del rostro de la niña, espejo de agua en fondo difuso, ángulo frontal; Estilo: ilustración infantil colorida.",
+    "4": "Entorno: cueva de cristal con paredes relucientes; Acción principal: la niña recoge cristales que cantan al tocarlos; Emoción dominante: maravilla; Objetos ancla: una linterna de colores y una cadena de perlas; Momento del día/iluminación: luz interior pulsante multicolor; Composición: plano detalle de manos sosteniendo cristales, enfoque macro, ángulo bajo; Estilo: ilustración infantil colorida.",
+    "5": "Entorno: montaña nevada con picos altos bajo un cielo azul; Acción principal: la niña escala con ayuda de una cuerda mágica; Emoción dominante: determinación; Objetos ancla: botas de peluche y una brújula dorada; Momento del día/iluminación: luz brillante del mediodía con reflejo en la nieve; Composición: plano general que muestra la montaña, cámara en posición alta, foco en la niña al frente; Estilo: ilustración infantil colorida.",
+    "6": "Entorno: valle oculto con flores gigantes y mariposas gigantes; Acción principal: la niña juega a esconderse entre las flores; Emoción dominante: diversión; Objetos ancla: un sombrero de paja y una cesta de frutas; Momento del día/iluminación: luz cálida del atardecer, tonos anaranjados; Composición: plano medio, ángulo lateral, foco en la sonrisa de la niña; Estilo: ilustración infantil colorida.",
+    "7": "Entorno: castillo flotante de nubes sobre un cielo rosado; Acción principal: la niña sube una escalera de arcoíris hacia la puerta principal; Emoción dominante: expectativa; Objetos ancla: una capa azul y una pluma dorada; Momento del día/iluminación: crepúsculo con nubes iluminadas por el sol poniente; Composición: plano general con perspectiva ascendente, cámara en posición baja, foco en la escalera; Estilo: ilustración infantil colorida.",
+    "8": "Entorno: salón del castillo con tapices brillantes y una gran chimenea; Acción principal: la niña conversa con un sabio búho que habla; Emoción dominante: serenidad; Objetos ancla: una taza de té humeante y un libro antiguo; Momento del día/iluminación: luz tenue de lámparas de aceite, sombras suaves; Composición: plano medio, ángulo ligeramente inclinado, foco en el búho y la taza; Estilo: ilustración infantil colorida.",
+    "9": "Entorno: jardín de estrellas donde flores emiten luz propia; Acción principal: la niña suelta faroles al viento que se convierten en estrellas fugaces; Emoción dominante: esperanza; Objetos ancla: una cuerda de luces y una caja de música; Momento del día/iluminación: noche estrellada con brillo de las flores; Composición: plano detalle de faroles en vuelo, enfoque suave, ángulo panorámico bajo; Estilo: ilustración infantil colorida.",
+    "10": "Entorno: regreso a la casa de la niña, con la puerta abierta y el sol de la mañana entrando; Acción principal: la niña abraza a su mascota mientras cuenta su aventura; Emoción dominante: amor y satisfacción; Objetos ancla: una foto del bosque y un osito de peluche; Momento del día/iluminación: luz suave de la mañana, tonos cálidos; Composición: primer plano del abrazo, cámara a nivel de los ojos, foco en los rostros; Estilo: ilustración infantil colorida."
+  },
+  "anotaciones": [
+    "p1 plano general luminoso",
+    "p2 plano medio curiosidad",
+    "p3 primer plano asombro",
+    "p4 plano detalle maravilla",
+    "p5 plano general determinación",
+    "p6 plano medio diversión",
+    "p7 plano general expectativa",
+    "p8 plano medio serenidad",
+    "p9 plano detalle esperanza",
+    "p10 primer plano amor"
+  ],
+  "qa": {
+    "alineacion_verso_escena": 5,
+    "variedad_planos": 5
+  }
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "timestamp": "2025-08-28T18:52:23.981561",
+    "retry_count": 2,
+    "qa_scores": {
+      "seguridad_infantil": 5,
+      "identificacion_riesgos": 3.5,
+      "respeto_cultural": 4,
+      "promedio": 4.2
+    },
+    "execution_time": 7.357565,
+    "temperature": 0.5,
+    "max_tokens": 4000,
+    "status": "success",
+    "tokens_consumed": {
+      "prompt_tokens": 3162,
+      "completion_tokens": 1047,
+      "total_tokens": 4209
+    }
+  }
+]

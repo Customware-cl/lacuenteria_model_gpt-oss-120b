@@ -1,0 +1,303 @@
+{
+  "story_id": "emilia-sin-qa-20250828-012528",
+  "source": "local",
+  "created_at": "2025-08-28T01:25:28.126352",
+  "updated_at": "2025-08-28T01:37:26.030841",
+  "estado": "completo",
+  "paso_actual": "validador",
+  "qa_historial": {
+    "director": {
+      "arco_narrativo": 4.5,
+      "potencia_leitmotiv": 4.5,
+      "claridad_estructura": 4.0,
+      "promedio": 4.33
+    },
+    "psicoeducador": {
+      "alineacion_pedagogica": 4,
+      "aplicabilidad": 4,
+      "sensibilidad": 5,
+      "promedio": 4.33
+    },
+    "cuentacuentos": {
+      "musicalidad": 2.5,
+      "imagineria": 3.3,
+      "fluidez_oral": 3.0,
+      "promedio": 2.9
+    },
+    "editor_claridad": {
+      "comprensibilidad": 1,
+      "preservacion_belleza": 1,
+      "coherencia": 1,
+      "promedio": 1.0
+    },
+    "ritmo_rima": {
+      "fluidez": 1.5,
+      "consistencia_rima": 2.5,
+      "variacion_cierres": 2.5,
+      "promedio": 2.2
+    },
+    "continuidad": {
+      "consistencia_personajes": 2.0,
+      "utilidad_referencias": 2.5,
+      "coherencia_narrativa": 4.0,
+      "promedio": 2.8
+    },
+    "diseno_escena": {
+      "especificidad": 4.5,
+      "variedad_visual": 4.5,
+      "alineacion_texto": 3.5,
+      "promedio": 3.7
+    },
+    "direccion_arte": {
+      "coherencia_visual": 4.0,
+      "progresion_emocional": 4.0,
+      "practicidad": 2.5,
+      "promedio": 3.5
+    },
+    "sensibilidad": {
+      "seguridad_infantil": 3.5,
+      "identificacion_riesgos": 2.5,
+      "respeto_cultural": 3.5,
+      "promedio": 3.17
+    },
+    "portadista": {
+      "impact_titulo": 4.0,
+      "sintesis": 4.5,
+      "gancho_visual": 4.0,
+      "promedio": 4.17
+    },
+    "loader": {
+      "brevedad": 2.5,
+      "variedad": 2.0,
+      "tono": 3.0,
+      "promedio": 2.5
+    },
+    "validador": {}
+  },
+  "devoluciones": [
+    {
+      "paso": "cuentacuentos",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "musicalidad": 2.5,
+        "imagineria": 3.3,
+        "fluidez_oral": 3.0,
+        "promedio": 2.9
+      },
+      "issues": [
+        "Repetición excesiva del leitmotiv \"¡Juntos es mejor!\" (4 apariciones)",
+        "Repetición de la palabra \"amable\" al final de dos versos (página 4)",
+        "Repetición de terminaciones \"canto\"/\"canción\" y \"fin\" en varios versos",
+        "Falta de rima en página 3 verso 4 (\"más!\" no rima con \"paz\")",
+        "Rimas aproximadas o forzadas en páginas 2, 4 y 8",
+        "Métrica inconsistente entre páginas, variando el número de sílabas"
+      ],
+      "timestamp": "2025-08-28T01:29:51.511835"
+    },
+    {
+      "paso": "editor_claridad",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "comprensibilidad": 1,
+        "preservacion_belleza": 1,
+        "coherencia": 1,
+        "promedio": 1.0
+      },
+      "issues": [
+        "Todas las páginas de texto están vacías",
+        "Glosario ausente",
+        "Lista de cambios clave vacía",
+        "Puntuaciones de QA extremadamente bajas (1/5)",
+        "Falta de contenido que permita evaluar preservación de la belleza poética",
+        "Incoherencia total con la tarea solicitada"
+      ],
+      "timestamp": "2025-08-28T01:30:17.275133"
+    },
+    {
+      "paso": "ritmo_rima",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "fluidez": 1.5,
+        "consistencia_rima": 2.5,
+        "variacion_cierres": 2.5,
+        "promedio": 2.2
+      },
+      "issues": [
+        "Rimas forzadas o no coincidentes en página 2 (sol/rol) y página 5 (flor/olor)",
+        "Patrón ABAB incumplido en página 4 (luz/viento/siento/cruz) y página 6 (estrella/luz/bella/cruz)",
+        "Repetición de la palabra \"cruz\" al final de verso 4 veces (páginas 2,4,6,10)",
+        "Incoherencia semántica en \"el tren avanza bajo el silente coche\" (página 3)",
+        "Frase confusa \"que acaricia el rostro y lo que siento\" (página 4)",
+        "Inconsistencia métrica entre versos (variación de sílabas evidente)",
+        "Uso excesivo de rimas pobres (sol/rol, luz/cruz) que suenan forzadas"
+      ],
+      "timestamp": "2025-08-28T01:32:05.381480"
+    },
+    {
+      "paso": "continuidad",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "consistencia_personajes": 2.0,
+        "utilidad_referencias": 2.5,
+        "coherencia_narrativa": 4.0,
+        "promedio": 2.8
+      },
+      "issues": [
+        "Personajes Lucas y Ana mencionados en relaciones pero no aparecen en el character_bible",
+        "Character bible incompleta: solo se describe a Emilia, limitando la utilidad para el equipo de arte y guion",
+        "Falta de referencias de objeto ancla para personajes distintos a Emilia",
+        "No se indican páginas donde ocurre la evolución emocional (p. ej., momento de valentía)",
+        "Posible incoherencia con el brief al no cubrir todos los personajes principales"
+      ],
+      "timestamp": "2025-08-28T01:32:51.852846"
+    },
+    {
+      "paso": "diseno_escena",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "especificidad": 4.5,
+        "variedad_visual": 4.5,
+        "alineacion_texto": 3.5,
+        "promedio": 3.7
+      },
+      "issues": [
+        "Repetición excesiva de la frase \"estilo ilustración infantil colorida\" en todas las páginas (10 veces).",
+        "No se proporciona evidencia concreta de alineación con los versos; el score de 5 parece sobrevalorado.",
+        "Monotonía léxica en la descripción del estilo visual, falta de variación de vocabulario."
+      ],
+      "timestamp": "2025-08-28T01:33:57.837110"
+    },
+    {
+      "paso": "direccion_arte",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "coherencia_visual": 4.0,
+        "progresion_emocional": 4.0,
+        "practicidad": 2.5,
+        "promedio": 3.5
+      },
+      "issues": [
+        "Transiciones descritas con términos vagos (\"amanecer\", \"brillado gradual\", \"fade oscuro\") que dificultan su ejecución concreta",
+        "Falta de indicaciones de composición, ángulos de cámara y focal points para cada página",
+        "Escasa información sobre cómo aplicar los colores (foreground/background, personajes, objetos)",
+        "Auto‑evaluación QA inflada (coherencia_visual y progresion_emocional puntuadas 5 sin justificación externa)"
+      ],
+      "timestamp": "2025-08-28T01:34:53.542476"
+    },
+    {
+      "paso": "sensibilidad",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "seguridad_infantil": 3.5,
+        "identificacion_riesgos": 2.5,
+        "respeto_cultural": 3.5,
+        "promedio": 3.17
+      },
+      "issues": [
+        "Lista de riesgos detectados vacía sin justificación ni evidencia",
+        "Ausencia de correcciones sugeridas pese a la falta de análisis",
+        "No se explica el criterio usado para asignar \"seguridad_respecto\": 5",
+        "Falta de detalle que demuestre una revisión exhaustiva de contenido cultural"
+      ],
+      "timestamp": "2025-08-28T01:35:17.866799"
+    },
+    {
+      "paso": "loader",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "brevedad": 2.5,
+        "variedad": 2.0,
+        "tono": 3.0,
+        "promedio": 2.5
+      },
+      "issues": [
+        "Mensajes 4, 5, 7 y 10 superan el límite de 10 palabras (11‑12 palabras).",
+        "Repetición de la frase \"¡Juntos es mejor!\" en los mensajes 3 y 7.",
+        "Repetición del concepto \"pelota roja\" en los mensajes 2 y 4.",
+        "Tono mayormente descriptivo; falta de elementos mágicos o anticipatorios."
+      ],
+      "timestamp": "2025-08-28T01:36:48.127203"
+    }
+  ],
+  "reintentos": {
+    "cuentacuentos": 2,
+    "editor_claridad": 2,
+    "ritmo_rima": 2,
+    "continuidad": 2,
+    "diseno_escena": 2,
+    "direccion_arte": 2,
+    "sensibilidad": 2,
+    "loader": 2
+  },
+  "timestamps": {
+    "director": {
+      "start": "2025-08-28T01:25:28.127672",
+      "end": "2025-08-28T01:25:48.888315",
+      "duration": 20.760639
+    },
+    "psicoeducador": {
+      "start": "2025-08-28T01:25:48.888938",
+      "end": "2025-08-28T01:26:12.085772",
+      "duration": 23.196829
+    },
+    "cuentacuentos": {
+      "start": "2025-08-28T01:26:12.086611",
+      "end": "2025-08-28T01:29:51.511792",
+      "duration": 219.425171
+    },
+    "editor_claridad": {
+      "start": "2025-08-28T01:29:51.512989",
+      "end": "2025-08-28T01:30:17.275095",
+      "duration": 25.762097
+    },
+    "ritmo_rima": {
+      "start": "2025-08-28T01:30:17.276285",
+      "end": "2025-08-28T01:32:05.381447",
+      "duration": 108.105152
+    },
+    "continuidad": {
+      "start": "2025-08-28T01:32:05.382708",
+      "end": "2025-08-28T01:32:51.852813",
+      "duration": 46.470095
+    },
+    "diseno_escena": {
+      "start": "2025-08-28T01:32:51.854245",
+      "end": "2025-08-28T01:33:57.837060",
+      "duration": 65.982788
+    },
+    "direccion_arte": {
+      "start": "2025-08-28T01:33:57.838665",
+      "end": "2025-08-28T01:34:53.542430",
+      "duration": 55.703753
+    },
+    "sensibilidad": {
+      "start": "2025-08-28T01:34:53.544424",
+      "end": "2025-08-28T01:35:17.866754",
+      "duration": 24.322317
+    },
+    "portadista": {
+      "start": "2025-08-28T01:35:17.868914",
+      "end": "2025-08-28T01:35:32.903091",
+      "duration": 15.034172
+    },
+    "loader": {
+      "start": "2025-08-28T01:35:32.904535",
+      "end": "2025-08-28T01:36:48.127153",
+      "duration": 75.222608
+    },
+    "validador": {
+      "start": "2025-08-28T01:36:48.128923",
+      "end": "2025-08-28T01:37:26.030216",
+      "duration": 37.901288
+    }
+  },
+  "webhook_url": null,
+  "webhook_attempts": 0,
+  "configuracion_modelo": {
+    "modelo": "openai/gpt-oss-120b",
+    "endpoint": "http://69.19.136.204:8000/v1/chat/completions",
+    "timeout": 900,
+    "default_temperature": 0.7,
+    "default_max_tokens": 4000
+  }
+}

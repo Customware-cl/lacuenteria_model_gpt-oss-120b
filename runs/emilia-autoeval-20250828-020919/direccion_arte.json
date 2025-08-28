@@ -1,0 +1,156 @@
+{
+  "estilo_global": "Ilustración infantil digital vibrante con trazos suaves tipo acuarela, texturas ligeras de papel y paleta pastel‑cálida que evoluciona con la emoción de la narrativa.",
+  "color_script": {
+    "1": {
+      "paleta": [
+        "#A8DFF5",
+        "#FFD700",
+        "#FF4B4B",
+        "#FFC0CB"
+      ],
+      "momento": "amanecer",
+      "atmosfera": "luz dorada suave, alegría desbordante"
+    },
+    "2": {
+      "paleta": [
+        "#FFB84D",
+        "#FF4B4B",
+        "#FFD1DC",
+        "#FFE4A1"
+      ],
+      "momento": "mañana clara",
+      "atmosfera": "energía contagiosa, ambiente cálido y festivo"
+    },
+    "3": {
+      "paleta": [
+        "#F9E79F",
+        "#D3D3D3",
+        "#FF4B4B",
+        "#A8DFF5"
+      ],
+      "momento": "mediodía tenue",
+      "atmosfera": "timidez, sombras suaves, vulnerabilidad"
+    },
+    "4": {
+      "paleta": [
+        "#FFB347",
+        "#FFF5E1",
+        "#FFC0CB",
+        "#FF4B4B"
+      ],
+      "momento": "tarde cálida",
+      "atmosfera": "ternura y apoyo, resplandor acogedor"
+    },
+    "5": {
+      "paleta": [
+        "#FF8C42",
+        "#FF6F61",
+        "#FFC0CB",
+        "#FFD700"
+      ],
+      "momento": "atardecer difuso",
+      "atmosfera": "alegría colectiva, luz cálida y dorada"
+    },
+    "6": {
+      "paleta": [
+        "#A8E6CF",
+        "#FFD1DC",
+        "#FF4B4B",
+        "#FFE4A1"
+      ],
+      "momento": "mañana brillante",
+      "atmosfera": "calma serena, generosidad y compartir"
+    },
+    "7": {
+      "paleta": [
+        "#D4A373",
+        "#FFB347",
+        "#FF4B4B",
+        "#A8DFF5"
+      ],
+      "momento": "tarde dorada",
+      "atmosfera": "unión y entusiasmo, reflejos cálidos"
+    },
+    "8": {
+      "paleta": [
+        "#C5B4E3",
+        "#A8E6CF",
+        "#FFC0CB",
+        "#D3D3D3"
+      ],
+      "momento": "interior suave",
+      "atmosfera": "colaboración feliz, tonos pastel y delicados"
+    },
+    "9": {
+      "paleta": [
+        "#7B3F00",
+        "#D2691E",
+        "#FF4B4B",
+        "#FFF5E1"
+      ],
+      "momento": "tarde cálida",
+      "atmosfera": "tentación dulce mezclada con generosidad"
+    },
+    "10": {
+      "paleta": [
+        "#FFD700",
+        "#FF4B4B",
+        "#A8DFF5",
+        "#FFFFFF"
+      ],
+      "momento": "tarde radiante",
+      "atmosfera": "celebración festiva, gratitud y unión"
+    }
+  },
+  "transiciones": [
+    {
+      "de_pagina": 1,
+      "a_pagina": 2,
+      "tipo": "degradado suave"
+    },
+    {
+      "de_pagina": 2,
+      "a_pagina": 3,
+      "tipo": "descenso de saturación"
+    },
+    {
+      "de_pagina": 3,
+      "a_pagina": 4,
+      "tipo": "cambio de tono tibio"
+    },
+    {
+      "de_pagina": 4,
+      "a_pagina": 5,
+      "tipo": "expansión de luz cálida"
+    },
+    {
+      "de_pagina": 5,
+      "a_pagina": 6,
+      "tipo": "renovación fresca"
+    },
+    {
+      "de_pagina": 6,
+      "a_pagina": 7,
+      "tipo": "refuerzo dorado"
+    },
+    {
+      "de_pagina": 7,
+      "a_pagina": 8,
+      "tipo": "suavizado pastel"
+    },
+    {
+      "de_pagina": 8,
+      "a_pagina": 9,
+      "tipo": "acento chocolate"
+    },
+    {
+      "de_pagina": 9,
+      "a_pagina": 10,
+      "tipo": "explosión festiva"
+    }
+  ],
+  "qa": {
+    "coherencia_visual": 5,
+    "progresion_emocional": 5
+  }
+}

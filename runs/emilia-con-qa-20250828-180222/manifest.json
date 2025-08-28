@@ -1,0 +1,123 @@
+{
+  "story_id": "emilia-con-qa-20250828-180222",
+  "source": "local",
+  "created_at": "2025-08-28T18:02:22.575399",
+  "updated_at": "2025-08-28T18:14:11.909140",
+  "estado": "qa_failed",
+  "paso_actual": "continuidad",
+  "qa_historial": {
+    "director": {
+      "arco_narrativo": 4.0,
+      "potencia_leitmotiv": 4.0,
+      "claridad_estructura": 4.5,
+      "promedio": 4.2
+    },
+    "psicoeducador": {
+      "alineacion_pedagogica": 4.0,
+      "aplicabilidad": 4.0,
+      "sensibilidad": 4.5,
+      "promedio": 4.1666666667
+    },
+    "cuentacuentos": {
+      "musicalidad": 2.0,
+      "imagineria": 3.0,
+      "fluidez_oral": 2.5,
+      "promedio": 2.5
+    },
+    "editor_claridad": {
+      "comprensibilidad": 5,
+      "preservacion_belleza": 4,
+      "coherencia": 5,
+      "promedio": 4.7
+    },
+    "ritmo_rima": {
+      "calidad_rimas": 2.0,
+      "consistencia_metrica": 2.5,
+      "variedad_cierres": 2.0,
+      "promedio": 2.2
+    }
+  },
+  "devoluciones": [
+    {
+      "paso": "cuentacuentos",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "musicalidad": 2.0,
+        "imagineria": 3.0,
+        "fluidez_oral": 2.5,
+        "promedio": 2.5
+      },
+      "issues": [
+        "Rima forzada en la mayoría de las páginas (parejas de versos terminan con la misma palabra)",
+        "Repetición excesiva de palabras como \"brilla\", \"canto\", \"cinta\", \"sonrisa\", \"globo\" (más de 3 veces en todo el texto)",
+        "Incoherencia métrica: número de sílabas varía ampliamente entre versos, sin patrón estable",
+        "Errores gramaticales: \"un corazón agradecida\" (género discordante), frases confusas como \"extiende su mano en capa\"",
+        "Uso repetitivo del leitmotiv \"¡Festejemos juntos, cantando y bailando!\" en 5 de 10 páginas, disminuye originalidad",
+        "Redundancia de conceptos (ej. \"sombrero\" y \"capa\" repetidos en versos consecutivos)",
+        "Construcciones poco naturales que dificultan la fluidez al leer en voz alta"
+      ],
+      "timestamp": "2025-08-28T18:08:01.184566"
+    },
+    {
+      "paso": "ritmo_rima",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "calidad_rimas": 2.0,
+        "consistencia_metrica": 2.5,
+        "variedad_cierres": 2.0,
+        "promedio": 2.2
+      },
+      "issues": [
+        "Rimas idénticas en todos los pares (pág. 1‑4,6‑9) – rima forzada y falta de variación",
+        "Esquema AABB roto en página 5 (cabaña/llama) y página 10 (aquieta/día)",
+        "Repetición de palabras clave (canto, claro, fluir, rosa, alma) en versos contiguos",
+        "Metro inconsistente entre versos (pág. 1 verso 4 excesivamente largo, otras estrofas muy breves)",
+        "Inversión sintáctica para forzar rima en algunos versos (pág. 7, verso 2)",
+        "Uso de construcciones poco fluidas que dificultan la lectura en voz alta"
+      ],
+      "timestamp": "2025-08-28T18:14:11.908169"
+    }
+  ],
+  "reintentos": {
+    "director": 1,
+    "cuentacuentos": 2,
+    "editor_claridad": 1,
+    "ritmo_rima": 2
+  },
+  "timestamps": {
+    "director": {
+      "start": "2025-08-28T18:02:22.576536",
+      "end": "2025-08-28T18:03:49.053601",
+      "duration": 86.47706
+    },
+    "psicoeducador": {
+      "start": "2025-08-28T18:03:49.054232",
+      "end": "2025-08-28T18:04:33.588753",
+      "duration": 44.534516
+    },
+    "cuentacuentos": {
+      "start": "2025-08-28T18:04:33.589444",
+      "end": "2025-08-28T18:08:01.184535",
+      "duration": 207.595082
+    },
+    "editor_claridad": {
+      "start": "2025-08-28T18:08:01.186048",
+      "end": "2025-08-28T18:09:08.979083",
+      "duration": 67.79303
+    },
+    "ritmo_rima": {
+      "start": "2025-08-28T18:09:08.979861",
+      "end": "2025-08-28T18:14:11.908145",
+      "duration": 302.928275
+    }
+  },
+  "webhook_url": null,
+  "webhook_attempts": 0,
+  "configuracion_modelo": {
+    "modelo": "openai/gpt-oss-120b",
+    "endpoint": "http://69.19.136.204:8000/v1/chat/completions",
+    "timeout": 900,
+    "default_temperature": 0.7,
+    "default_max_tokens": 4000
+  }
+}

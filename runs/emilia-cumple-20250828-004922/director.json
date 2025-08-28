@@ -1,0 +1,90 @@
+{
+  "leitmotiv": "¡Compartir es celebrar!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia feliz y su curiosidad por el día especial",
+      "conflicto": "Se siente un poco nerviosa al ver a tantos niños disfrazados",
+      "emocion": "Entusiasmo mezclado con timidez",
+      "imagen_nuclear": "Emilia con su vestido rosa entra al jardín lleno de globos y niños con disfraces de animales"
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Descubrir los disfraces del día",
+      "conflicto": "No encuentra su disfraz favorito",
+      "emocion": "Frustración leve",
+      "imagen_nuclear": "Emilia busca entre disfraces y encuentra un sombrero de mariposa"
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Conocer a un nuevo amigo",
+      "conflicto": "Un niño parece ocupado y no lo invita a jugar",
+      "emocion": "Inseguridad",
+      "imagen_nuclear": "Emilia observa a Tomás el conejito jugando solo bajo un árbol"
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Invitar a Tomás a jugar juntos",
+      "conflicto": "Tomás no quiere compartir su pelota",
+      "emocion": "Desilusión",
+      "imagen_nuclear": "Emilia extiende su mano mientras Tomás sostiene la pelota con firmeza"
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Recordar la canción del día",
+      "conflicto": "No recuerda la letra completa",
+      "emocion": "Confusión",
+      "imagen_nuclear": "Emilia susurra la melodía mientras el sol ilumina el patio"
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Cantar el leitmotiv para animar a todos",
+      "conflicto": "Los niños están distraídos con sus juegos",
+      "emocion": "Determinación",
+      "imagen_nuclear": "Emilia levanta su voz y comienza a cantar '¡Compartir es celebrar!'"
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Lograr que los niños se unan al canto",
+      "conflicto": "Algunos siguen concentrados en sus juguetes",
+      "emocion": "Alegría creciente",
+      "imagen_nuclear": "Los niños dejan sus juguetes y se juntan alrededor de Emilia cantando"
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Compartir el pastel de cumpleaños",
+      "conflicto": "El pastel parece pequeño para tantos amigos",
+      "emocion": "Ansiedad",
+      "imagen_nuclear": "Una gran torta de colores sobre la mesa mientras Emilia la corta en trozos"
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Celebrar bajo la lluvia ligera",
+      "conflicto": "Empieza a caer una lluvia suave",
+      "emocion": "Sorpresa y diversión",
+      "imagen_nuclear": "Gotas de lluvia caen suavemente mientras los niños siguen cantando bajo un toldo de colores"
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Cierre feliz de la celebración",
+      "resolucion": "Todos prueban el pastel, ríen y agradecen a Emilia por compartir",
+      "emocion": "Calma y felicidad",
+      "imagen_nuclear": "Emilia rodeada de amigos, todos sonriendo y con confeti cayendo alrededor"
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "Emilia se siente triste porque su canción se detiene al sonar el trueno",
+      "resolucion_alternativa": "Un pajarito cantando en la rama inspira a los niños a seguir cantando y compartir"
+    },
+    {
+      "climax_alternativo": "El pastel se cae al suelo justo antes de servirlo",
+      "resolucion_alternativa": "Los niños recogen los pedazos, los decoran con frutas y hacen una fiesta de mini postres, celebrando la amistad"
+    }
+  ],
+  "qa": {
+    "arco_completo": 5,
+    "claridad_visual": 5,
+    "potencia_leitmotiv": 5
+  }
+}

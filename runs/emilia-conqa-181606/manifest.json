@@ -1,0 +1,235 @@
+{
+  "story_id": "emilia-conqa-181606",
+  "source": "local",
+  "created_at": "2025-08-28T18:16:06.826441",
+  "updated_at": "2025-08-28T18:29:36.396328",
+  "estado": "completo",
+  "paso_actual": "validador",
+  "qa_historial": {
+    "director": {
+      "arco_narrativo": 4.5,
+      "potencia_leitmotiv": 3.5,
+      "claridad_estructura": 4.0,
+      "promedio": 4.0
+    },
+    "psicoeducador": {
+      "alineacion_pedagogica": 5,
+      "aplicabilidad": 4,
+      "sensibilidad": 5,
+      "promedio": 4.7
+    },
+    "cuentacuentos": {
+      "musicalidad": 2.0,
+      "imagineria": 3.0,
+      "fluidez_oral": 2.5,
+      "promedio": 2.5
+    },
+    "editor_claridad": {
+      "comprensibilidad": 1,
+      "imagen_inequivoca": 1,
+      "promedio": 1.0
+    },
+    "ritmo_rima": {
+      "calidad_rimas": 2.5,
+      "consistencia_metrica": 2.0,
+      "variedad": 2.0,
+      "promedio": 2.2
+    },
+    "continuidad": {
+      "consistencia_personajes": 4.0,
+      "utilidad_referencias": 4.0,
+      "coherencia_narrativa": 4.0,
+      "promedio": 4.0
+    },
+    "diseno_escena": {
+      "especificidad": 3.5,
+      "variedad_visual": 4.0,
+      "alineacion_texto": 4.5,
+      "promedio": 4.0
+    },
+    "direccion_arte": {
+      "coherencia_visual": 4.5,
+      "progresion_emocional": 4.5,
+      "practicidad": 4.0,
+      "promedio": 4.33
+    },
+    "sensibilidad": {
+      "seguridad_infantil": 5,
+      "identificacion_riesgos": 4,
+      "respeto_cultural": 4.5,
+      "promedio": 4.5
+    },
+    "portadista": {
+      "impacto_titulo": 3.5,
+      "sintesis": 5.0,
+      "gancho_visual": 4.5,
+      "promedio": 4.33
+    },
+    "loader": {
+      "brevedad": 1,
+      "variedad": 5,
+      "tono": 4,
+      "promedio": 3.33
+    },
+    "validador": {}
+  },
+  "devoluciones": [
+    {
+      "paso": "cuentacuentos",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "musicalidad": 2.0,
+        "imagineria": 3.0,
+        "fluidez_oral": 2.5,
+        "promedio": 2.5
+      },
+      "issues": [
+        "Rima forzada: 'más' en página 2 ('con gran más'), 'rojo' en página 4, 'mar' en página 5, 'cielo' en página 6, 'llave' en página 7, 'brilla' en página 8",
+        "Repetición excesiva de palabras (>3 veces): 'canta', 'rojo', 'mar', 'cielo', 'llave', 'brilla'",
+        "Incoherencia: frase sin sentido en página 2 ('con gran más'), página 7 ('la llave abrirá su llave'), página 4 ('aunque no encaja, su mirada firme la sostiene, y su valentía arde en rojo')",
+        "Errores gramaticales: 'El salón decorado la mira', 'Los niños aparecen en trajes de león, unicornio y dragón, cantan al compás más', 'Cada cuenta es un latido que mantiene la calma, mientras el cofre guarda su secreto paso'",
+        "Metro inconsistente: número de sílabas varía ampliamente entre versos, sin patrón métrico estable"
+      ],
+      "timestamp": "2025-08-28T18:19:43.176790"
+    },
+    {
+      "paso": "editor_claridad",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "comprensibilidad": 1,
+        "imagen_inequivoca": 1,
+        "promedio": 1.0
+      },
+      "issues": [
+        "Todas las páginas de texto están vacías",
+        "Glosario ausente",
+        "Lista de cambios clave vacía",
+        "Puntuaciones de QA extremadamente bajas (1/5)",
+        "Falta de contenido que permita evaluar preservación de belleza y coherencia"
+      ],
+      "timestamp": "2025-08-28T18:20:35.210725"
+    },
+    {
+      "paso": "ritmo_rima",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "calidad_rimas": 2.5,
+        "consistencia_metrica": 2.0,
+        "variedad": 2.0,
+        "promedio": 2.2
+      },
+      "issues": [
+        "Rima forzada: uso del mismo término para cerrar cada pareja (p.1‑10)",
+        "Repetición excesiva de palabras clave (eco, canto, eterno, etc.)",
+        "Errores gramaticales: \"en la entera\" (p.2 v4), \"trueno silbido\" (p.9 v2)",
+        "Métrica inconsistente: versos con más de 12 sílabas y sin patrón regular",
+        "Construcciones poco naturales para la edad objetivo"
+      ],
+      "timestamp": "2025-08-28T18:23:35.333710"
+    },
+    {
+      "paso": "loader",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "brevedad": 1,
+        "variedad": 5,
+        "tono": 4,
+        "promedio": 3.33
+      },
+      "issues": [
+        "Mensaje 1 tiene 11 palabras (excede el máximo de 10).",
+        "Mensaje 2 tiene 11 palabras (excede el máximo de 10).",
+        "Mensaje 4 tiene 11 palabras (excede el máximo de 10).",
+        "Mensaje 5 tiene 11 palabras (excede el máximo de 10).",
+        "Mensaje 6 tiene 11 palabras (excede el máximo de 10).",
+        "Mensaje 7 tiene 12 palabras (excede el máximo de 10).",
+        "Mensaje 8 tiene 11 palabras (excede el máximo de 10).",
+        "Mensaje 9 tiene 12 palabras (excede el máximo de 10).",
+        "Mensaje 10 tiene 14 palabras (excede el máximo de 10).",
+        "Repetición frecuente de la palabra 'azul' (aparece en 5 mensajes), lo que reduce la sensación de variedad léxica."
+      ],
+      "timestamp": "2025-08-28T18:28:59.046250"
+    }
+  ],
+  "reintentos": {
+    "director": 2,
+    "cuentacuentos": 2,
+    "editor_claridad": 2,
+    "ritmo_rima": 2,
+    "diseno_escena": 1,
+    "direccion_arte": 1,
+    "portadista": 2,
+    "loader": 2
+  },
+  "timestamps": {
+    "director": {
+      "start": "2025-08-28T18:16:06.830324",
+      "end": "2025-08-28T18:17:15.721485",
+      "duration": 68.891157
+    },
+    "psicoeducador": {
+      "start": "2025-08-28T18:17:15.722130",
+      "end": "2025-08-28T18:17:40.838555",
+      "duration": 25.116421
+    },
+    "cuentacuentos": {
+      "start": "2025-08-28T18:17:40.839163",
+      "end": "2025-08-28T18:19:43.176748",
+      "duration": 122.337577
+    },
+    "editor_claridad": {
+      "start": "2025-08-28T18:19:43.177909",
+      "end": "2025-08-28T18:20:35.210699",
+      "duration": 52.032783
+    },
+    "ritmo_rima": {
+      "start": "2025-08-28T18:20:35.211933",
+      "end": "2025-08-28T18:23:35.333684",
+      "duration": 180.121744
+    },
+    "continuidad": {
+      "start": "2025-08-28T18:23:35.334989",
+      "end": "2025-08-28T18:24:00.457230",
+      "duration": 25.122237
+    },
+    "diseno_escena": {
+      "start": "2025-08-28T18:24:00.458065",
+      "end": "2025-08-28T18:24:49.155896",
+      "duration": 48.697827
+    },
+    "direccion_arte": {
+      "start": "2025-08-28T18:24:49.156797",
+      "end": "2025-08-28T18:25:42.133769",
+      "duration": 52.976968
+    },
+    "sensibilidad": {
+      "start": "2025-08-28T18:25:42.134562",
+      "end": "2025-08-28T18:25:56.709855",
+      "duration": 14.575289
+    },
+    "portadista": {
+      "start": "2025-08-28T18:25:56.710787",
+      "end": "2025-08-28T18:26:45.487766",
+      "duration": 48.776974
+    },
+    "loader": {
+      "start": "2025-08-28T18:26:45.488702",
+      "end": "2025-08-28T18:28:59.046212",
+      "duration": 133.557503
+    },
+    "validador": {
+      "start": "2025-08-28T18:28:59.047649",
+      "end": "2025-08-28T18:29:36.395896",
+      "duration": 37.348244
+    }
+  },
+  "webhook_url": null,
+  "webhook_attempts": 0,
+  "configuracion_modelo": {
+    "modelo": "openai/gpt-oss-120b",
+    "endpoint": "http://69.19.136.204:8000/v1/chat/completions",
+    "timeout": 900,
+    "default_temperature": 0.7,
+    "default_max_tokens": 4000
+  }
+}

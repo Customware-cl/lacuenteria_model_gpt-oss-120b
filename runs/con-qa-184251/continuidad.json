@@ -1,0 +1,83 @@
+{
+  "character_bible": [
+    {
+      "nombre": "Emilia",
+      "edad": "2 años",
+      "rasgos_visibles": "sonrisa amplia, ojos grandes y curiosos, cabello castaño ondulado",
+      "vestuario": "vestido rosa con estampado de flores y zapatillas blancas",
+      "colores_clave": [
+        "rosa",
+        "blanco",
+        "verde"
+      ],
+      "objeto_ancla": "globo rojo",
+      "gestos": "agita las manos al reír, da palmadas y corre con pasos tambaleantes",
+      "no_haria": "no rompería los juguetes de sus amigos ni se alejaría del círculo de juego"
+    },
+    {
+      "nombre": "Toby",
+      "edad": "N/A (osito de peluche)",
+      "rasgos_visibles": "pelaje marrón, ojos brillantes de botón, orejas redondas",
+      "vestuario": "no lleva ropa, pero tiene una cinta azul atada al cuello",
+      "colores_clave": [
+        "marrón",
+        "crema",
+        "azul"
+      ],
+      "objeto_ancla": "cinta azul",
+      "gestos": "se balancea suavemente cuando Emilia lo abraza, acompaña sus pasos",
+      "no_haria": "no se caería del árbol ni se perdería en el jardín"
+    },
+    {
+      "nombre": "Luna",
+      "edad": "N/A (mariposa de juguete)",
+      "rasgos_visibles": "alas translúcidas con colores arcoíris, cuerpo diminuto y brillante",
+      "vestuario": "no aplica",
+      "colores_clave": [
+        "azul",
+        "amarillo",
+        "rojo"
+      ],
+      "objeto_ancla": "campanilla colgante",
+      "gestos": "vuela en círculos alrededor de Emilia, tintinea al moverse",
+      "no_haria": "no se alejaría del jardín ni dejaría de acompañar a Emilia"
+    }
+  ],
+  "continuidad_narrativa": {
+    "relaciones": "Emilia es la protagonista que celebra su cumpleaños; Toby es su osito inseparable que la acompaña en cada juego, y Luna es la mariposa de juguete que la invita a compartir y explorar con los demás niños del jardín.",
+    "evolucion_emocional": "Al inicio Emilia muestra una alegría explosiva y curiosidad al descubrir los regalos; a medida que avanza la historia, al interactuar con Toby y Luna, aprende a compartir su felicidad, pasando de un entusiasmo individual a una alegría colectiva con sus amigos.",
+    "objeto_ancla_reapariciones": [
+      {
+        "personaje": "Emilia",
+        "paginas": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      {
+        "personaje": "Toby",
+        "paginas": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "personaje": "Luna",
+        "paginas": [
+          3,
+          5,
+          7
+        ]
+      }
+    ]
+  },
+  "qa": {
+    "coherencia_rasgos": 5,
+    "utilidad_arte": 5
+  }
+}

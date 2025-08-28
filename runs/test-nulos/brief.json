@@ -1,0 +1,12 @@
+{
+  "personajes": [
+    {
+      "nombre": "Ana",
+      "descripcion": "Niña de 3 años",
+      "rasgos": null
+    }
+  ],
+  "historia": "Una aventura",
+  "mensaje_a_transmitir": null,
+  "edad_objetivo": "3 años"
+}

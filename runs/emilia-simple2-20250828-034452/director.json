@@ -1,0 +1,90 @@
+{
+  "leitmotiv": "¡Feliz cumpleaños, Emilia!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar el jardín infantil decorado para la fiesta.",
+      "conflicto": "Emilia se siente tímida al ver a todos los niños disfrazados.",
+      "emocion": "Curiosidad mezclada con timidez.",
+      "imagen_nuclear": "Emilia observa bajo un arco de globos coloridos, rodeada de niños con disfraces brillantes."
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Encontrar su propio disfraz.",
+      "conflicto": "Debe buscar entre muchas cajas para descubrir el traje perfecto.",
+      "emocion": "Emoción al descubrir algo nuevo.",
+      "imagen_nuclear": "Emilia abre una caja y saca un vestido de mariposa con alas relucientes."
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Unirse al primer juego de baile.",
+      "conflicto": "Se siente insegura de bailar con los demás.",
+      "emocion": "Duda que crece.",
+      "imagen_nuclear": "Niños giran en círculo mientras Emilia mira sus pies, con la música sonando."
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Recibir el apoyo de un amigo.",
+      "conflicto": "Decidir si acepta la mano que le ofrece.",
+      "emocion": "Valentía emergente.",
+      "imagen_nuclear": "Un compañero extiende su mano bajo el sol que brilla sobre sus caras sonrientes."
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Bailar su primer paso con confianza.",
+      "conflicto": "Mantener el ritmo y seguir el movimiento.",
+      "emocion": "Alegría creciente.",
+      "imagen_nuclear": "Emilia gira feliz con su vestido de mariposa, mientras los niños aplauden."
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Descubrir la gran torta de cumpleaños.",
+      "conflicto": "Todos esperan que ella cante, y ella se siente nerviosa.",
+      "emocion": "Anticipación vibrante.",
+      "imagen_nuclear": "Una torta enorme con velas encendidas en el centro de la mesa, rodeada de niños curiosos."
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Soplar las velas.",
+      "conflicto": "Le cuesta soplar fuerte y apagar todas las velas.",
+      "emocion": "Nerviosismo y concentración.",
+      "imagen_nuclear": "Emilia se inclina sobre la vela, con la mirada centrada y los dedos apretados."
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Ver el efecto mágico de su soplo.",
+      "conflicto": "El confeti se dispersa rápidamente, y los niños gritan de sorpresa.",
+      "emocion": "Orgullo y asombro.",
+      "imagen_nuclear": "Confeti multicolor flota en el aire mientras Emilia sonríe radiante."
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Celebrar todos juntos cantando el leitmotiv.",
+      "conflicto": "Mantener la energía y la unión del grupo.",
+      "emocion": "Felicidad colectiva.",
+      "imagen_nuclear": "Círculo de niños cantando \"¡Feliz cumpleaños, Emilia!\" con Emilia en el centro, bajo luces de colores."
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Cerrar la fiesta con abrazos y cariño.",
+      "resolucion": "Emilia se siente segura, querida y feliz, rodeada de sus amigos.",
+      "emocion": "Calidez y esperanza.",
+      "imagen_nuclear": "Emilia recibe abrazos de sus compañeros bajo una luz suave de lámparas de papel."
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "Emilia se siente triste porque su vela no se apaga y su maestra le canta una canción calmante.",
+      "resolucion_alternativa": "Con la canción, la vela se apaga y Emilia ríe, sintiéndose apoyada por la maestra y sus amigos."
+    },
+    {
+      "climax_alternativo": "El pastel se cae accidentalmente, pero los niños lo recogen y lo convierten en una lluvia de fruta.",
+      "resolucion_alternativa": "Todos comparten la fruta, celebrando la improvisación y la amistad, y Emilia lidera el brindis."
+    }
+  ],
+  "qa": {
+    "arco_completo": 5,
+    "claridad_visual": 5,
+    "potencia_leitmotiv": 4
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "paginas_texto_claro": {
+    "1": "Emilia abre la ventana y mira al cielo\nGlobos de colores llenan el aire azul\nSu corazón late, la alegría resplandece\nSu rostro se abre, la felicidad brilla",
+    "2": "El salón se llena de risas y canciones\nNiños vestidos de piratas y hadas\nEmilia se siente pequeña entre tanta magia\nEl coro vibra: ¡Feliz fiesta, cantemos!",
+    "3": "En el espejo se ve con un sombrero de flores\nLos pétalos del lazo parecen tímidos\nUna duda aparece, un leve miedo\nSu voz susurra: «¿Basta mi color?»",
+    "4": "Mateo se acerca y le pone una capa reluciente\nLa tela reluce y cubre a Emilia\nElla siente el calor del apoyo y su ánimo sube\nAgradece con una sonrisa: Gracias",
+    "5": "Emilia da un paso, su falda de flores gira\nTropea un momento pero se levanta sonriendo\nAlza la voz: ¡Feliz fiesta, cantemos!\nCon ritmo invita a todos a cantar",
+    "6": "Los niños forman un círculo y aplauden al ritmo\nTodos cantan juntos, la alegría se hace canción\nEl aire vibra con: ¡Feliz fiesta, cantemos!\nEl salón se ilumina mientras cantan",
+    "7": "Un globo rojo se suelta y sube al cielo\nEmilia extiende la mano, su corazón late rápido\nLos amigos miran sorprendidos, sienten un leve miedo\nJuntos gritan: ¡Atrévanse, atrapémoslo!",
+    "8": "Forman una cadena humana, mano a mano\nCada niño se agarra firme, el lazo no se rompe\nFinalmente atrapan el globo y cantan: ¡Feliz fiesta, cantemos!\nLa canción resuena y el aire celebra",
+    "9": "Alrededor del pastel, las velas brillan\nLos niños soplan y la fiesta vibra\nGritan al unísono: ¡Feliz fiesta, cantemos!\nEl júbilo estalla y todos siguen cantando",
+    "10": "Emilia abraza a Mateo y al grupo, su corazón late valiente\nEl confeti cae como lluvia dorada sobre todos\nSusurra agradecida: Me siento valiente, gracias amigos\nLa fiesta termina en armonía, el eco repite: ¡Feliz fiesta, cantemos!"
+  },
+  "glosario": [
+    {
+      "original": "ve",
+      "simple": "mira"
+    },
+    {
+      "original": "mismo cielo",
+      "simple": "aire azul"
+    },
+    {
+      "original": "palpita",
+      "simple": "late"
+    },
+    {
+      "original": "dicha pura",
+      "simple": "felicidad"
+    },
+    {
+      "original": "disfrazados",
+      "simple": "vestidos"
+    },
+    {
+      "original": "encanto",
+      "simple": "magia"
+    },
+    {
+      "original": "temor",
+      "simple": "miedo"
+    },
+    {
+      "original": "vibra",
+      "simple": "resuena"
+    },
+    {
+      "original": "capa brillante",
+      "simple": "capa reluciente"
+    },
+    {
+      "original": "tropiezo",
+      "simple": "caída"
+    },
+    {
+      "original": "veloz vuelo",
+      "simple": "rápido"
+    }
+  ],
+  "cambios_clave": [
+    "Se sustituyó 've' por 'mira' para mayor claridad visual.",
+    "Se reemplazó 'palpita' por 'late' simplificando el vocabulario.",
+    "Se cambió 'disfrazados' por 'vestidos' para evitar ambigüedad.",
+    "Se utilizó 'mágia' en lugar de 'encanto' para una imagen más concreta.",
+    "Se redujo repeticiones y se ajustó la métrica manteniendo la belleza poética."
+  ],
+  "qa": {
+    "comprensibilidad": 5,
+    "imagen_inequivoca": 5
+  }
+}

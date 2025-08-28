@@ -1,0 +1,30 @@
+{
+  "prompts_paginas": {
+    "1": "Exterior, jardín festivo al mediodía con luz solar suave; vista amplia (plano general) del césped verde donde flotan globos de mil colores (rojo, verde, azul, amarillo) atados a cuerdas. Niños vestidos de tonos vivos ríen alrededor, mientras Emilia, de 2 años, con su vestido de mariposa y la mariposa de tela en la mano, observa bajo un arco de flores. Emoción: curiosidad y asombro. Objetos ancla: globo rojo con estrella amarilla y la mariposa de tela. Composición centrada en Emilia, foco suave en los globos.",
+    "2": "Interior, sala de fiesta decorada con luces cálidas de la tarde; plano medio centrado en Emilia que abre una caja de papel brillante y descubre unas alas de tela que brillan. Emoción: sorpresa y alegría temblorosa. Objetos: caja de papel, alas de tela. Emilia aprieta su mariposa de tela mientras su voz temblorosa grita “¡Feliz día, Emilia!”. Iluminación dorada que realza los colores del vestido.",
+    "3": "Exterior, patio con música y luces colgantes al atardecer; plano detalle de los pies de Emilia girando en círculo con los niños, la cámara ligeramente baja para capturar el movimiento del compás. Emoción: determinación y valentía emergente. Objetos: mariposa de tela apretada, pequeño tambor infantil. Luz cálida de farolillos crea sombras danzantes.",
+    "4": "Exterior, bajo un cielo azul brillante de tarde; plano medio ligeramente contrapicado mostrando a un compañero (niño) extendiendo su mano a Emilia. Emoción: confianza y aceptación. Objetos ancla: mano extendida, la mariposa de tela ahora suelta en el aire. Luz solar directa destaca los colores del vestuario.",
+    "5": "Exterior, jardín con cielo despejado al mediodía; plano general mostrando a Emilia con su vestido de mariposa desplegado, alas brillantes que reflejan la luz. Niños alrededor cantan “¡Feliz cumpleaños, Emilia!”. Emoción: euforia y vuelo imaginario. Objetos: mariposa de tela en mano, globos de colores flotando. Luz alta y viva, sombras suaves.",
+    "6": "Interior, salón de fiesta con luz tenue y focos de escenario; plano cercano (primer plano) del rostro de Emilia respirando profundo, cerrando los ojos. Emoción: calma y concentración. Objetos: mariposa de tela apretada contra el pecho, vela encendida al fondo. Iluminación focal en su rostro, fondo difuso.",
+    "7": "Interior, salón iluminado por luz de velas; plano medio mostrando a Emilia inclinada, mirando la llama de la vela, mientras sopla delicadamente. Emoción: esfuerzo y superación del miedo. Objetos: vela grande, mariposa de tela suelta sobre la mesa. Luz de vela crea destellos dorados en su rostro.",
+    "8": "Exterior, patio nocturno con luces de fiesta y confeti cayendo; plano general en ángulo bajo capturando la lluvia de confeti que estalla al soplar Emilia. Emoción: alegría explosiva. Objetos: confeti multicolor, mariposa de tela volando entre el aire. Iluminación de luces de colores que resaltan el brillo del confeti.",
+    "9": "Interior, salón con luces parpadeantes; plano grupal (plano general) del círculo de niños cantando, Emilia al centro levantando la voz. Emoción: unión y energía colectiva. Objetos: micrófono de juguete, mariposa de tela sobre el hombro de Emilia. Luz suave y cálida que envuelve a todos.",
+    "10": "Exterior, jardín al atardecer con luces titilantes en los árboles; plano medio mostrando abrazos alrededor de Emilia, amigos la rodean con ternura. Emoción: gratitud y amor. Objetos: mariposa de tela entregada a Emilia, farolillos colgantes. Iluminación dorada que baña la escena en un halo cálido."
+  },
+  "anotaciones": [
+    "p1 plano general luminoso",
+    "p2 plano medio sorpresa",
+    "p3 plano detalle pies movimiento",
+    "p4 plano medio confianza",
+    "p5 plano general euforia",
+    "p6 primer plano calma",
+    "p7 plano medio esfuerzo",
+    "p8 plano general alegría confeti",
+    "p9 plano grupal unión",
+    "p10 plano medio ternura"
+  ],
+  "qa": {
+    "alineacion_verso_escena": 5,
+    "variedad_planos": 5
+  }
+}

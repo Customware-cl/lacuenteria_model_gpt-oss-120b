@@ -1,0 +1,90 @@
+{
+  "leitmotiv": "¡Feliz fiesta, vamos a cantar!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y su entusiasmo por el cumpleaños",
+      "conflicto": "Ninguno, solo expectativa alegre",
+      "emocion": "Emoción y curiosidad",
+      "imagen_nuclear": "Emilia abre la ventana y ve globos de colores flotando en el jardín infantil"
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Mostrar el salón lleno de niños disfrazados",
+      "conflicto": "Emilia se siente un poco fuera de lugar al ver tantos disfraces",
+      "emocion": "Asombro mezclado con timidez",
+      "imagen_nuclear": "Niños en trajes de animales, piratas y hadas, todos riendo alrededor de mesas decoradas"
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Revelar la timidez de Emilia",
+      "conflicto": "Emilia duda si su disfraz es lo suficientemente bonito",
+      "emocion": "Inseguridad ligera",
+      "imagen_nuclear": "Emilia sostiene un pequeño sombrero de flores, mirándose en el espejo del salón"
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Fomentar la amistad y el apoyo",
+      "conflicto": "Un niño llamado Mateo ofrece ayudarla a ajustar el disfraz",
+      "emocion": "Calidez y confianza creciente",
+      "imagen_nuclear": "Mateo coloca una capa brillante sobre los hombros de Emilia mientras ella sonríe"
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Transformar la timidez en valentía",
+      "conflicto": "Emilia prueba bailar en su nuevo traje y tropieza ligeramente",
+      "emocion": "Desafío y determinación",
+      "imagen_nuclear": "Emilia da un paso de baile, su falda de flores revolotea y ella se levanta con risas"
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Iniciar la celebración con el leitmotiv",
+      "conflicto": "Ninguno, todos cantan y bailan",
+      "emocion": "Alegría contagiosa",
+      "imagen_nuclear": "Los niños forman un círculo, cantando «¡Feliz fiesta, vamos a cantar!» y aplaudiendo"
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Crear un pequeño obstáculo que requiera cooperación",
+      "conflicto": "Un globo rojo se suelta y flota hacia la ventana",
+      "emocion": "Sorpresa y urgencia ligera",
+      "imagen_nuclear": "El globo rojo se eleva, y Emilia extiende la mano mientras sus amigos la siguen"
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Resolver el obstáculo mediante trabajo en equipo",
+      "conflicto": "Necesitan agarrar el globo antes de que salga del jardín",
+      "emocion": "Colaboración y entusiasmo",
+      "imagen_nuclear": "Emilia y sus amigos forman una cadena humana y atrapan el globo juntos"
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Clímax de la fiesta con el leitmotiv repetido",
+      "conflicto": "Ninguno, la celebración alcanza su punto máximo",
+      "emocion": "Éxtasis y orgullo",
+      "imagen_nuclear": "Todos alrededor de una mesa de pastel, cantando nuevamente «¡Feliz fiesta, vamos a cantar!» mientras soplan velas"
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Cierre emotivo y sensación de pertenencia",
+      "resolucion": "Emilia se siente feliz y valiente, sabiendo que sus amigos la apoyan",
+      "emocion": "Calidez y satisfacción",
+      "imagen_nuclear": "Emilia abraza a Mateo y a los demás niños, sonriendo bajo una lluvia de confeti"
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "Emilia lidera un juego de escondite donde todos descubren un tesoro de golosinas",
+      "resolucion_alternativa": "El hallazgo del tesoro refuerza la unión del grupo y Emilia se siente heroína"
+    },
+    {
+      "climax_alternativo": "Una lluvia ligera comienza y los niños bailan bajo paraguas coloridos",
+      "resolucion_alternativa": "La lluvia se detiene, dejando un arcoíris que todos admiran juntos"
+    }
+  ],
+  "qa": {
+    "arco_completo": 5,
+    "claridad_visual": 5,
+    "potencia_leitmotiv": 5
+  }
+}

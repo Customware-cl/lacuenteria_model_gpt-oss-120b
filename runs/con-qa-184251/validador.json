@@ -1,0 +1,55 @@
+{
+  "titulo": "El Tesoro del Parque Brillante",
+  "paginas": {
+    "1": {
+      "texto": "El sol despierta el parque con luz dorada.\nEmilia y sus amigos llegan, risas llenan el aire.\nMaya trae su cuaderno de dibujos coloridos y brillantes.\nLuca rueda feliz, mientras Kai canta una canción suave.",
+      "prompt": "Ilustración infantil digital vibrante, estilo acuarela ligera, paleta #FFEB3B, #FF6F61, #A8E6CF, #FFFFFF, mañana soleada, luz natural brillante, escena del parque con Emilia, Maya, Luca y Kai entrando, risas, sol dorado."
+    },
+    "2": {
+      "texto": "Bajo la pérgola, sombras suaves crean un refugio acogedor.\nMaya muestra su dibujo de mariposas multicolores.\nLuca comparte una historia de estrellas que viajan lejos.\nKai sugiere buscar un tesoro escondido entre los árboles.",
+      "prompt": "Interior bajo pérgola, luz difusa, paleta #FFE4E1, #ADD8E6, #F5F5DC, #FFF8DC, atmósfera de ternura y calidez, Maya mostrando dibujo de mariposas, Luca contando historia, Kai proponiendo búsqueda, sombras suaves."
+    },
+    "3": {
+      "texto": "Los rayos dorados pintan el suelo con destellos de magia.\nEmilia descubre un mapa antiguo bajo una hoja crujiente.\nEl mapa indica un camino que lleva al lago brillante.\nTodos siguen la ruta, escuchando el canto de los pájaros.",
+      "prompt": "Tarde dorada, paleta #FFD54F, #FF8A80, #B3E5FC, #C8E6C9, atmósfera mágica, Emilia descubriendo mapa bajo hoja, grupo siguiendo camino hacia lago brillante, rayos dorados."
+    },
+    "4": {
+      "texto": "Al llegar al lago, el agua refleja luces plateadas.\nEmilia lleva una camiseta azul con estrellas y pantalón verde.\nMaya viste una falda de colores vibrantes y sandalias.\nLuca tiene una chaqueta roja y su silla brilla bajo sol.",
+      "prompt": "Mediodía con sol directo, paleta #FFCDD2, #FF8A65, #81C784, #FFFFFF, atmósfera generosa y feliz, Emilia con camiseta azul y pantalón verde, Maya con falda multicolor, Luca con chaqueta roja, todos junto al lago."
+    },
+    "5": {
+      "texto": "El lago reluce, ondas doradas bailan al ritmo del viento.\nKai lanza una piedra, creando círculos que se expanden rápidamente.\nMaya dibuja los círculos, imaginando un mapa de constelaciones.\nEmilia y Luca saltan, riendo, mientras el sol se inclina.",
+      "prompt": "Tarde con reflejos dorados en el agua, paleta #FFB74D, #F48FB1, #90CAF9, #FFF176, atmósfera de júbilo y movimiento, Kai lanzando piedra, círculos en agua, Maya dibujando constelaciones, risas."
+    },
+    "6": {
+      "texto": "Bajo la sombra fresca, el grupo descansa y comparte historias.\nLuca cuenta cómo aprendió a pintar con los dedos.\nMaya enseña a Kai una canción en lengua de señas.\nEmilia sugiere buscar el tesoro usando la luz del atardecer.",
+      "prompt": "Zona de sombra bajo pérgola, paleta #E1F5FE, #F8BBD0, #C5E1A5, #FFF9C4, atmósfera de confianza y juego suave, grupo descansando, Luca pintando con dedos, Maya enseñando canción en señas, Emilia planificando tesoro."
+    },
+    "7": {
+      "texto": "El sol se despide, tiñendo el cielo de naranja suave.\nLos amigos siguen el mapa, descubriendo una cueva oculta.\nDentro, hallan una caja brillante cubierta de símbolos antiguos.\nAl abrirla, encuentran cristales que reflejan la amistad verdadera.",
+      "prompt": "Atardecer con sombras largas, paleta #FFCC80, #FFAB91, #FF8A65, #F48FB1, atmósfera de compartir y alegría, grupo descubriendo cueva oculta, caja brillante con símbolos, cristales reflejando amistad."
+    },
+    "8": {
+      "texto": "Los cristales iluminan la cueva, creando arcoíris de colores.\nKai reparte los cristales, prometiendo compartirlos con su comunidad.\nMaya escribe un poema sobre la luz que une corazones.\nEmilia y Luca bailan, celebrando la unión bajo la luz.",
+      "prompt": "Tarde con luz difusa anaranjada, paleta #FFAB40, #FF8A80, #A5D6A7, #FFF3E0, atmósfera de entusiasmo y apoyo, cristales iluminando cueva, Kai repartiendo, Maya escribiendo poema, Emilia y Luca bailando."
+    },
+    "9": {
+      "texto": "Al caer la noche, cuelgan farolillos que chispean suavemente.\nLos niños cantan una canción de esperanza bajo estrellas titilantes.\nCada luz refleja los sueños de amistad que llevan dentro.\nJuntos, prometen volver al parque y crear nuevas aventuras.",
+      "prompt": "Noche temprana con farolillos, paleta #F48FB1, #FFCC80, #FFD54F, #FFF8E1, atmósfera de deseo y celebración, farolillos chispeantes, niños cantando bajo estrellas, luz de cristales, promesa de nuevas aventuras."
+    },
+    "10": {
+      "texto": "La luna llena baña el bosque con su brillo plateado.\nEmilia agradece a sus amigos por la magia compartida.\nMaya abraza la diversidad, sintiendo el calor de la unión.\nTodos regresan a casa, llevando en el corazón la luz.",
+      "prompt": "Noche completa bajo luna llena, paleta #283593, #5C6BC0, #9575CD, #F8BBD0, atmósfera de cierre emotivo, luna plateada, Emilia agradeciendo, Maya abrazando diversidad, todos regresando a casa con luz interior."
+    }
+  },
+  "portada": {
+    "prompt": "Portada vibrante estilo infantil, ilustración digital acuarela, título del cuento en tipografía alegre, muestra a Emilia, Maya, Luca y Kai juntos en el parque bajo sol matutino, paleta cálida #FFEB3B y #FF6F61, atmósfera de alegría y amistad."
+  },
+  "loader": [
+    "Cargando aventura...",
+    "Preparando colores...",
+    "Dibujando sonrisas...",
+    "Tejiendo historias...",
+    "Casi listo..."
+  ]
+}

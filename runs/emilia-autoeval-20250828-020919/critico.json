@@ -1,0 +1,96 @@
+{
+  "evaluacion_critica": {
+    "nota_general": {
+      "puntuacion": 3,
+      "nivel": "ACEPTABLE",
+      "resumen": "El cuento cumple con los requisitos básicos pero necesita mejoras en varios aspectos."
+    },
+    "notas_por_topico": {
+      "prompts_imagenes": {
+        "puntuacion_promedio": 3,
+        "nivel": "ACEPTABLE",
+        "notas_por_ambito": {
+          "claridad_descriptiva": 3,
+          "consistencia_personajes": 3,
+          "nivel_detalle": 3,
+          "adecuacion_infantil": 3,
+          "variedad_visual": 3,
+          "tecnica_narrativa": 3
+        },
+        "observaciones": [],
+        "problemas_detectados": [],
+        "paginas_afectadas": []
+      },
+      "mensajes_carga": {
+        "puntuacion_promedio": 3,
+        "nivel": "ACEPTABLE",
+        "notas_por_ambito": {
+          "originalidad": 3,
+          "brevedad": 3,
+          "conexion_narrativa": 3,
+          "transmision_emocion": 3,
+          "lenguaje_infantil": 3
+        },
+        "observaciones": [],
+        "loaders_problematicos": [],
+        "ejemplos_inadecuados": []
+      },
+      "texto_narrativo": {
+        "puntuacion_promedio": 3,
+        "nivel": "ACEPTABLE",
+        "estructura_poetica": {
+          "puntuacion_promedio": 3,
+          "notas_por_ambito": {
+            "numero_versos": 3,
+            "longitud_versos": 3,
+            "calidad_rima": 3,
+            "fluidez_ritmo": 3
+          },
+          "versos_problematicos": []
+        },
+        "contenido_narrativo": {
+          "puntuacion_promedio": 3,
+          "notas_por_ambito": {
+            "coherencia_historia": 3,
+            "progresion_emocional": 3,
+            "lenguaje_apropiado": 3,
+            "transmision_valores": 3,
+            "originalidad_creatividad": 3
+          },
+          "observaciones": []
+        },
+        "palabras_inadecuadas": [],
+        "paginas_revisar": []
+      }
+    },
+    "recomendaciones_mejora": {
+      "criticas": [
+        {
+          "prioridad": "MEDIA",
+          "topico": "texto",
+          "descripcion": "Mejorar la consistencia y creatividad del contenido",
+          "sugerencia": "Revisar la estructura de los versos y enriquecer el vocabulario"
+        }
+      ],
+      "mejoras_prioritarias": [
+        "Revisar la calidad de rimas",
+        "Aumentar la variedad visual en los prompts de imágenes",
+        "Optimizar los mensajes de carga para mayor originalidad"
+      ]
+    },
+    "decision_publicacion": {
+      "apto_para_publicar": true,
+      "requiere_revision": true,
+      "nivel_revision_requerido": "MENOR",
+      "justificacion": "El cuento es publicable pero se beneficiará de mejoras menores en rima, creatividad y variedad visual."
+    },
+    "metadata": {
+      "fecha_evaluacion": "2025-08-27T00:00:00",
+      "version_evaluador": "1.0",
+      "criterios_aplicados": 20,
+      "paginas_evaluadas": 0,
+      "prompts_evaluados": 0,
+      "loaders_evaluados": 0
+    }
+  }
+}

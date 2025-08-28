@@ -1,0 +1,14 @@
+{
+  "titulos": [
+    "El canto del pastel bajo la lluvia",
+    "Emilia y la canción que comparte sonrisas",
+    "¡Compartir es celebrar! La fiesta de la mariposa"
+  ],
+  "portada": {
+    "prompt": "Ilustración infantil digital vibrante con trazos suaves tipo acuarela, texturas ligeras de papel y efectos luminosos. Amanecer dorado, luz suave y alegría desbordante. En el centro Emilia, vestida de rosa, sostiene su sombrero de mariposa mientras mira a Tomás el conejito, que sostiene una pelota. Detrás, una gran torta multicolor sobre una mesa bajo un toldo de globos. Gotas de lluvia ligera caen alrededor, creando reflejos brillantes. Composición centrada, colores de la paleta 1 (#FFD57F, #A8D5BA, #FFB6C1, #87CEEB), ambiente de celebración y esperanza."
+  },
+  "qa": {
+    "recordabilidad_titulo": 5,
+    "sintesis_emotiva": 5
+  }
+}

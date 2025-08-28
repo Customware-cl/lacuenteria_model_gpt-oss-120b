@@ -1,0 +1,25 @@
+{
+  "paginas_texto": {
+    "1": "Emilia en el jardín cuelga globos al viento,\ncon mamá al lado, risas al mismo tiempo.\nDuda si quedarán libres, su corazón espera,\nel cielo azul guarda su fiesta sincera.",
+    "2": "Los amigos corren, bolsitas de regalo en mano,\nel sol los recibe, el jardín es temprano.\n¡Cumpleaños feliz, vamos a cantar! se oye sin cesar,\ny el ritmo los une, la alegría al volar.",
+    "3": "Una burbuja gigante Emilia sopla sin temer,\nrefleja el sol, danza ligera al crecer.\nSe escapa la esfera y besa la tarta dulzura,\nrisas y susurros, la sorpresa es pura.",
+    "4": "Manos entrelazadas cantan con fervor,\npero el estribillo se pierde, ¿quién lo cantó?\nCon gestos y risas el grupo lo recuerda,\ny la canción renace, la unión se celebra.",
+    "5": "El pastel de fresa resbala al posarse,\nvelas titilan, la mesa tiembla al nacer.\n¡Cumpleaños feliz, vamos a cantar! vuelve a sonar,\ny con cuidado lo ponen, la magia a empezar.",
+    "6": "Pequeñas manos se unen, firme el pastel,\ncada dedo es fuerza, un lazo de miel.\nJuntos lo sostienen, sin temor ni pesar,\nel calor del grupo hace el momento brillar.",
+    "7": "Emilia sopla fuerte, la llama se agita,\nuna vela se apaga, su risa invita.\nEl deseo se queda entre risas y luz,\ny el canto vuelve fuerte, el festín reluz.",
+    "8": "Cajas de colores esperan su abrir,\nEmilia duda, su mirada quiere decidir.\n¡Cumpleaños feliz, vamos a cantar! suena al llegar,\ny con amigos elige, la sorpresa a celebrar.",
+    "9": "Los niños giran bajo guirnaldas de luz,\nun pequeño tropieza, pero la mano alzó.\nLa risa los envuelve, la ayuda es canción,\ny al compás del leitmotiv sigue la diversión.",
+    "10": "El sol se despide, la tarde se vuelve dorada,\nEmilia reparte cajas, gratitud abrazada.\n¡Cumpleaños feliz, vamos a cantar! al final,\ny el corazón guarda la amistad sin final."
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    8,
+    10
+  ],
+  "qa": {
+    "emocion": 5,
+    "claridad_visual": 5,
+    "uso_leitmotiv": 5
+  }
+}

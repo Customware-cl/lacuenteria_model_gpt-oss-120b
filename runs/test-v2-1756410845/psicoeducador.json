@@ -1,0 +1,93 @@
+{
+  "metas_generales": [
+    "Reconocer y nombrar emociones propias y de los demás.",
+    "Expresar deseos y necesidades de forma clara y amable.",
+    "Practicar el turno y la espera antes de actuar.",
+    "Proponer y aceptar ideas de colaboración.",
+    "Pedir ayuda y ofrecer apoyo cuando la tarea es difícil.",
+    "Celebrar los logros compartidos y expresar gratitud."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Saludar y reconocer la presencia de un amigo.",
+      "frase_modelo": "¡Hola, Nube! Yo soy Sol.",
+      "recurso": "Sonrisa y gesto de saludo; contacto visual breve.",
+      "evitar": "Comparaciones que indiquen superioridad o inferioridad."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Nombrar el sentimiento de querer jugar y la soledad.",
+      "frase_modelo": "Me gustaría jugar contigo, Nube. Me siento solo.",
+      "recurso": "Etiquetado emocional sencillo + respiración de 2 cuentas antes de hablar.",
+      "evitar": "Ignorar la emoción del otro o minimizarla."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Probar una acción suave y observar la respuesta del otro.",
+      "frase_modelo": "¿Te parece si brindo una luz suave?",
+      "recurso": "Pausa de 2 respiraciones antes de actuar; observar la reacción.",
+      "evitar": "Forzar la acción sin esperar la respuesta del otro."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Identificar cómo su acción afecta al otro.",
+      "frase_modelo": "Cuando cubro mucho, el día se vuelve oscuro y tú te sientes triste.",
+      "recurso": "Mirar al otro y decir \"Yo hice eso\"; usar palabras de causa‑efecto.",
+      "evitar": "Culpar al otro o negar la responsabilidad."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Sugerir una idea conjunta de forma invitante.",
+      "frase_modelo": "¿Y si juntamos mi luz con tus gotitas para crear algo bonito?",
+      "recurso": "Palabras de invitación como \"¿Podemos…?\"; tono de curiosidad.",
+      "evitar": "Imponer una solución sin preguntar."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Seguir turnos para dar luz y gota.",
+      "frase_modelo": "Primero yo brillo, luego tú sueltas una gota.",
+      "recurso": "Contar hasta tres antes de cambiar de acción; usar un gesto de señal.",
+      "evitar": "Interrumpir al otro o actuar simultáneamente sin coordinación."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Expresar alegría por el logro compartido.",
+      "frase_modelo": "¡Mira el arcoíris! Lo hicimos juntos.",
+      "recurso": "Aplaudir, dar un abrazo simbólico y decir \"¡bien hecho!\".",
+      "evitar": "Apropiarse del mérito o restar la contribución del otro."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Ajustar la velocidad de la acción para estar en sintonía.",
+      "frase_modelo": "Vamos a movernos al mismo ritmo, como una canción.",
+      "recurso": "Tarareo simple mientras actúan; sincronizar movimientos con conteo.",
+      "evitar": "Presionar al otro para que vaya más rápido o más lento sin consenso."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Pedir apoyo mutuo cuando la situación se vuelve difícil.",
+      "frase_modelo": "Necesitamos unir nuestras fuerzas para calmar la tormenta.",
+      "recurso": "Respiración profunda juntos (inhala 3, exhala 3) y contacto visual.",
+      "evitar": "Culpar, rendirse o actuar de forma agresiva."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Reconocer el valor de trabajar juntos y expresar gratitud.",
+      "frase_modelo": "Gracias por ayudar, ahora el cielo es más bonito.",
+      "recurso": "Gestos de abrazo, decir \"gracias\" y una sonrisa compartida.",
+      "evitar": "Olvidar agradecer o minimizar la ayuda recibida."
+    }
+  ],
+  "banderas": [
+    "Frustración cuando la respuesta no es inmediata.",
+    "Aislamiento o retirada tras un conflicto.",
+    "Dificultad para esperar el turno.",
+    "Uso de gritos o gestos agresivos al intentar controlar la situación."
+  ],
+  "qa": {
+    "ajuste_edad": 5,
+    "alineacion_mensaje": 5,
+    "tono_amable": 5
+  }
+}

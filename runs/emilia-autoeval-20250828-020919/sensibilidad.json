@@ -1,0 +1,28 @@
+{
+  "riesgos_detectados": [
+    {
+      "pagina": 3,
+      "detalle": "Se menciona 'temblor' y 'miedo' que pueden generar ansiedad en niños muy sensibles.",
+      "riesgo": "miedo_excesivo"
+    },
+    {
+      "pagina": 9,
+      "detalle": "Se usa la palabra 'asusta' y 'tentación' al describir el pastel, lo que podría generar temor o culpa relacionada con la comida.",
+      "riesgo": "miedo_excesivo"
+    }
+  ],
+  "correcciones_sugeridas": [
+    {
+      "pagina": 3,
+      "texto_o_prompt": "Modificar la línea para expresar timidez sin usar 'temblor' ni 'miedo', por ejemplo: 'Con alas de mariposa siente un leve temblor de emoción'."
+    },
+    {
+      "pagina": 9,
+      "texto_o_prompt": "Cambiar 'asusta' por 'emociona' y 'tentación' por 'deseo', por ejemplo: 'Llega el pastel de chocolate y su aroma fuerte emociona'."
+    }
+  ],
+  "apto_para_ninos": true,
+  "qa": {
+    "seguridad_respecto": 5
+  }
+}

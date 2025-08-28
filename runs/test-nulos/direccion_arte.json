@@ -1,0 +1,146 @@
+{
+  "estilo_global": "Acuarela suave con acentos digitales vibrantes, trazos delicados y texturas de papel que resaltan el brillo dorado como elemento luminoso continuo.",
+  "color_script": {
+    "1": {
+      "paleta": [
+        "#FFEBB5",
+        "#A0C4FF",
+        "#F7C6C7"
+      ],
+      "momento": "amanecer interior, luz suave y cálida entrando por la ventana",
+      "atmosfera": "curiosidad ligera con toque de ligera frustración, ambiente acogedor y luminoso"
+    },
+    "2": {
+      "paleta": [
+        "#FFD166",
+        "#A8E6CF",
+        "#FFA07A"
+      ],
+      "momento": "alba en el jardín, luz dorada del sol naciente",
+      "atmosfera": "asombro y alegría, ambiente fresco y pastel con energía vibrante"
+    },
+    "3": {
+      "paleta": [
+        "#6B8E23",
+        "#8B5A2B",
+        "#FFC300"
+      ],
+      "momento": "día claro con sombras suaves en el sendero",
+      "atmosfera": "determinación y valentía, tono terroso y luminoso"
+    },
+    "4": {
+      "paleta": [
+        "#87CEEB",
+        "#FFD700",
+        "#7CFC00"
+      ],
+      "momento": "tarde soleada, reflejo brillante en el charco",
+      "atmosfera": "felicidad serena, luz brillante y colores frescos"
+    },
+    "5": {
+      "paleta": [
+        "#FF8C00",
+        "#9370DB",
+        "#FFD700"
+      ],
+      "momento": "atardecer bajo el árbol susurrante, rayos dorados filtrándose",
+      "atmosfera": "maravilla y curiosidad, tonos cálidos y melódicos"
+    },
+    "6": {
+      "paleta": [
+        "#5F9EA0",
+        "#A0522D",
+        "#FFD700"
+      ],
+      "momento": "luz difusa del bosque con destellos dorados",
+      "atmosfera": "alegría y asombro, ambiente mágico y acogedor"
+    },
+    "7": {
+      "paleta": [
+        "#191970",
+        "#C0C0C0",
+        "#FFD700"
+      ],
+      "momento": "noche clara con luz estelar, senda de piedras brillantes",
+      "atmosfera": "decisión y entusiasmo, atmósfera nocturna y luminosa"
+    },
+    "8": {
+      "paleta": [
+        "#708090",
+        "#4682B4",
+        "#D4AF37"
+      ],
+      "momento": "tarde tormentosa con nubes grises y luz melancólica",
+      "atmosfera": "coraje frente al temor, ambiente dramático y resistente"
+    },
+    "9": {
+      "paleta": [
+        "#FFEA00",
+        "#87CEFA",
+        "#FF69B4"
+      ],
+      "momento": "día pleno, sol radiante y cielo despejado",
+      "atmosfera": "pura felicidad, energía luminosa y festiva"
+    },
+    "10": {
+      "paleta": [
+        "#000080",
+        "#FFBF00",
+        "#2F4F4F"
+      ],
+      "momento": "noche estrellada en la habitación, luz tenue de lámpara",
+      "atmosfera": "serenidad y dulzura, ambiente íntimo y reposado"
+    }
+  },
+  "transiciones": [
+    {
+      "de_pagina": 1,
+      "a_pagina": 2,
+      "tipo": "gradual"
+    },
+    {
+      "de_pagina": 2,
+      "a_pagina": 3,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 3,
+      "a_pagina": 4,
+      "tipo": "brightening"
+    },
+    {
+      "de_pagina": 4,
+      "a_pagina": 5,
+      "tipo": "warm fade"
+    },
+    {
+      "de_pagina": 5,
+      "a_pagina": 6,
+      "tipo": "soft diffused"
+    },
+    {
+      "de_pagina": 6,
+      "a_pagina": 7,
+      "tipo": "shift to night"
+    },
+    {
+      "de_pagina": 7,
+      "a_pagina": 8,
+      "tipo": "dramatic"
+    },
+    {
+      "de_pagina": 8,
+      "a_pagina": 9,
+      "tipo": "explosive"
+    },
+    {
+      "de_pagina": 9,
+      "a_pagina": 10,
+      "tipo": "calm fade"
+    }
+  ],
+  "qa": {
+    "coherencia_visual": 5,
+    "progresion_emocional": 5
+  }
+}

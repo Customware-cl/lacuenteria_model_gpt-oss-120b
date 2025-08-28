@@ -1,0 +1,47 @@
+{
+  "paginas_texto_claro": {
+    "1": "Al alba, el cielo se tiñe de rosa.\nLos pájaros cantan sobre el campo.\nEl sol asoma, tibio y brillante.\nDespierta la tierra, suave y clara.",
+    "2": "El río fluye, espejo de luz.\nLas hojas bailan con la brisa.\nEl aroma a hierba llena el aire.\nTodo vibra con vida nueva.",
+    "3": "Montañas se alzan, sombras al paso.\nEl viento susurra entre rocas.\nUn ciervo cruza el valle sereno.\nLa luz se extiende, calma y pura.",
+    "4": "En la aldea, chimeneas humean.\nNiños juegan bajo el arco del cielo.\nMujeres tejen historias en tela.\nEl día avanza, lento y seguro.",
+    "5": "El campo se cubre de flores doradas.\nAbejas zumban, trabajando sin pausa.\nEl sol calienta la tarde tibia.\nLos sueños crecen como trigo.",
+    "6": "Al atardecer, el cielo se vuelve rojo.\nLas nubes pintan figuras suaves.\nLos grillos cantan su canción nocturna.\nLa noche llega, fresca y tranquila.",
+    "7": "La luna sube, espejo plateado.\nEstrellas titilan, guiando el camino.\nEl búho vigila desde su rama.\nEl silencio abraza la oscuridad.",
+    "8": "En el bosque, el rocío brilla.\nLos senderos se vuelven claros.\nEl aire huele a pino y tierra.\nEl corazón late con paz.",
+    "9": "Al amanecer, el canto renace.\nLos colores vuelven a pintar el mundo.\nLos ríos cantan su corriente constante.\nLa vida se despierta, plena y fuerte.",
+    "10": "El día cierra su ciclo dorado.\nEl sol se oculta tras la montaña.\nLa tierra descansa bajo la sombra.\nMañana volverá, firme y serena."
+  },
+  "glosario": [
+    {
+      "original": "crepúsculo",
+      "simple": "atardecer"
+    },
+    {
+      "original": "efímero",
+      "simple": "corto"
+    },
+    {
+      "original": "etéreo",
+      "simple": "ligero"
+    },
+    {
+      "original": "resplandor",
+      "simple": "brillo"
+    },
+    {
+      "original": "serenidad",
+      "simple": "calma"
+    }
+  ],
+  "cambios_clave": [
+    "Se sustituyeron palabras complejas por sinónimos simples.",
+    "Se invirtió el orden de sujeto y verbo para mayor claridad.",
+    "Se redujo la longitud de los versos manteniendo la métrica aproximada.",
+    "Se eliminaron ambigüedades y se usaron imágenes visuales inequívocas.",
+    "Se mejoró la puntuación para facilitar la lectura."
+  ],
+  "qa": {
+    "comprensibilidad": 5,
+    "imagen_inequivoca": 5
+  }
+}
