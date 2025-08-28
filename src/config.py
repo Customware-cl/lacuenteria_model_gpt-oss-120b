@@ -2,6 +2,7 @@
 Configuración del sistema de orquestación Cuentería
 """
 import os
+import json
 from pathlib import Path
 
 # Rutas base
@@ -155,3 +156,59 @@ def get_story_path(story_id):
 def get_artifact_path(story_id, artifact_name):
     """Retorna la ruta a un artefacto específico de una historia"""
     return get_story_path(story_id) / artifact_name
+
+# ========== FUNCIONES DE VERSIONADO ==========
+
+def load_version_config(version='v1'):
+    """Carga configuración específica de versión"""
+    if version == 'v1':
+        # v1 usa configuración actual hardcodeada para no romper nada
+        return {
+            'version': 'v1',
+            'agents_path': 'agentes',  # Path actual de producción
+            'qa_threshold': QUALITY_THRESHOLDS['min_qa_score'],
+            'max_retries': QUALITY_THRESHOLDS['max_retries'],
+            'max_tokens': LLM_CONFIG['max_tokens'],
+            'temperature': LLM_CONFIG['temperature'],
+            'pipeline': AGENT_PIPELINE,
+            'parallel_execution': False,
+            'dependencies': AGENT_DEPENDENCIES  # Usar dependencias hardcodeadas
+        }
+    else:
+        # v2+ usa config desde archivo JSON
+        config_path = BASE_DIR / f'flujo/{version}/config.json'
+        if config_path.exists():
+            with open(config_path, 'r', encoding='utf-8') as f:
+                config = json.load(f)
+                # Agregar path de agentes
+                config['agents_path'] = f'flujo/{version}/agentes'
+                
+                # Cargar dependencies.json si existe
+                deps_path = BASE_DIR / f'flujo/{version}/dependencies.json'
+                if deps_path.exists():
+                    with open(deps_path, 'r', encoding='utf-8') as f:
+                        config['dependencies'] = json.load(f)
+                else:
+                    config['dependencies'] = {}
+                    
+                return config
+        else:
+            # Fallback a v1 si no existe la versión
+            return load_version_config('v1')
+
+def get_agent_prompt_path(agent_name: str, version: str = 'v1') -> Path:
+    """Retorna path del prompt según versión"""
+    config = load_version_config(version)
+    agents_path = config.get('agents_path', 'agentes')
+    
+    # Si es path relativo, hacerlo absoluto desde BASE_DIR
+    if not agents_path.startswith('/'):
+        agents_path = BASE_DIR / agents_path
+    else:
+        agents_path = Path(agents_path)
+    
+    return agents_path / f"{agent_name}.json"
+
+def get_version_from_env():
+    """Obtiene versión desde variable de entorno o default v1"""
+    return os.getenv('PIPELINE_VERSION', 'v1')

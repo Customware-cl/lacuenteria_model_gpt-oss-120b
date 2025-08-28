@@ -1,0 +1,22 @@
+{
+  "version": "v1",
+  "qa_threshold": 4.0,
+  "max_retries": 2,
+  "max_tokens": 4000,
+  "temperature": 0.7,
+  "pipeline": [
+    "director",
+    "psicoeducador",
+    "cuentacuentos",
+    "editor_claridad",
+    "ritmo_rima",
+    "continuidad",
+    "diseno_escena",
+    "direccion_arte",
+    "sensibilidad",
+    "portadista",
+    "loader",
+    "validador"
+  ],
+  "parallel_execution": false
+}

@@ -21,10 +21,16 @@ logger = logging.getLogger(__name__)
 class AgentRunner:
     """Ejecuta agentes individuales con sus dependencias"""
     
-    def __init__(self, story_id: str):
+    def __init__(self, story_id: str, mode_verificador_qa: bool = True, version: str = 'v1'):
         self.story_id = story_id
         self.llm_client = get_llm_client()
         self.quality_checker = get_quality_checker()
+        self.mode_verificador_qa = mode_verificador_qa
+        self.version = version  # Nueva propiedad para versión
+        
+        # Cargar configuración de versión
+        from config import load_version_config
+        self.version_config = load_version_config(version)
         
     def run_agent(self, agent_name: str, retry_count: int = 0) -> Dict[str, Any]:
         """
@@ -86,58 +92,70 @@ class AgentRunner:
             
             # 6. Verificar quality gates (excepto para validador y critico que no tienen QA)
             if agent_name not in ["validador", "critico", "verificador_qa"]:
-                # Usar verificador_qa independiente en lugar de autoevaluación
-                logger.info(f"Ejecutando verificación QA independiente para {agent_name}")
-                
-                # Preparar contexto para el verificador
-                verification_context = {
-                    "agente_a_evaluar": agent_name,
-                    "output_del_agente": agent_output,
-                    "dependencias_usadas": dependencies if dependencies else {}
-                }
-                
-                # Ejecutar verificador_qa
-                verification_prompt = self._build_verification_prompt(agent_name, agent_output, dependencies)
-                
-                try:
-                    # Llamar al verificador con temperatura baja para consistencia
-                    # Guardar configuración actual de timeout
-                    original_timeout = self.llm_client.timeout
-                    self.llm_client.timeout = 900  # 900 segundos para evitar truncamiento
+                # Decidir si usar verificador_qa o autoevaluación basado en mode_verificador_qa
+                if self.mode_verificador_qa:
+                    # MODO VERIFICADOR QA INDEPENDIENTE (ESTRICTO)
+                    logger.info(f"Ejecutando verificación QA independiente para {agent_name}")
                     
-                    verificador_result = self.llm_client.generate(
-                        system_prompt=self._load_system_prompt("verificador_qa"),
-                        user_prompt=verification_prompt,
-                        temperature=0.3,  # Baja para evaluación consistente
-                        max_tokens=3000  # Aumentado para respuestas completas
-                    )
+                    # Preparar contexto para el verificador
+                    verification_context = {
+                        "agente_a_evaluar": agent_name,
+                        "output_del_agente": agent_output,
+                        "dependencias_usadas": dependencies if dependencies else {}
+                    }
                     
-                    # Restaurar timeout original
-                    self.llm_client.timeout = original_timeout
+                    # Ejecutar verificador_qa
+                    verification_prompt = self._build_verification_prompt(agent_name, agent_output, dependencies)
                     
-                    # Parsear resultado del verificador si es necesario
-                    import json
-                    if isinstance(verificador_result, str):
-                        verification = json.loads(verificador_result)
-                    else:
-                        verification = verificador_result  # Ya es un dict
+                    try:
+                        # Llamar al verificador con temperatura baja para consistencia
+                        # Guardar configuración actual de timeout
+                        original_timeout = self.llm_client.timeout
+                        self.llm_client.timeout = 900  # 900 segundos para evitar truncamiento
+                        
+                        verificador_result = self.llm_client.generate(
+                            system_prompt=self._load_system_prompt("verificador_qa"),
+                            user_prompt=verification_prompt,
+                            temperature=0.3,  # Baja para evaluación consistente
+                            max_tokens=3000  # Aumentado para respuestas completas
+                        )
+                        
+                        # Restaurar timeout original
+                        self.llm_client.timeout = original_timeout
+                        
+                        # Parsear resultado del verificador si es necesario
+                        import json
+                        if isinstance(verificador_result, str):
+                            verification = json.loads(verificador_result)
+                        else:
+                            verification = verificador_result  # Ya es un dict
+                        
+                        # Extraer scores y verificar umbral
+                        qa_scores = verification.get("qa_scores", {})
+                        qa_scores["promedio"] = verification.get("promedio", 0)
+                        qa_passed = verification.get("pasa_umbral", False)
+                        qa_issues = verification.get("problemas_detectados", [])
+                        
+                        # Log de la evaluación independiente
+                        logger.info(f"Verificación QA para {agent_name}: promedio={qa_scores.get('promedio', 0)}, pasa={qa_passed}")
+                        
+                    except Exception as e:
+                        logger.error(f"Error en verificación QA independiente: {e}")
+                        # Fallback a la autoevaluación si falla el verificador
+                        logger.warning("Usando autoevaluación como fallback")
+                        qa_passed, qa_scores, qa_issues = self.quality_checker.check_qa_scores(
+                            agent_output, agent_name
+                        )
+                else:
+                    # MODO AUTOEVALUACIÓN (RÁPIDO, MENOS ESTRICTO)
+                    logger.info(f"Ejecutando autoevaluación para {agent_name} (mode_verificador_qa=False)")
                     
-                    # Extraer scores y verificar umbral
-                    qa_scores = verification.get("qa_scores", {})
-                    qa_scores["promedio"] = verification.get("promedio", 0)
-                    qa_passed = verification.get("pasa_umbral", False)
-                    qa_issues = verification.get("problemas_detectados", [])
-                    
-                    # Log de la evaluación independiente
-                    logger.info(f"Verificación QA para {agent_name}: promedio={qa_scores.get('promedio', 0)}, pasa={qa_passed}")
-                    
-                except Exception as e:
-                    logger.error(f"Error en verificación QA independiente: {e}")
-                    # Fallback a la autoevaluación si falla el verificador
-                    logger.warning("Usando autoevaluación como fallback")
+                    # Usar autoevaluación directamente del output del agente
                     qa_passed, qa_scores, qa_issues = self.quality_checker.check_qa_scores(
                         agent_output, agent_name
                     )
+                    
+                    logger.info(f"Autoevaluación para {agent_name}: promedio={qa_scores.get('promedio', 0)}, pasa={qa_passed}")
                 
                 if not qa_passed:
                     logger.warning(f"QA no pasó para {agent_name}: {qa_issues}")
@@ -212,8 +230,9 @@ class AgentRunner:
             }
     
     def _load_system_prompt(self, agent_name: str) -> str:
-        """Carga el prompt del sistema para un agente"""
-        prompt_path = get_agent_prompt_path(agent_name)
+        """Carga el prompt del sistema para un agente según versión"""
+        # Usar versión para obtener el path correcto
+        prompt_path = get_agent_prompt_path(agent_name, self.version)
         
         with open(prompt_path, 'r', encoding='utf-8') as f:
             agent_config = json.load(f)
@@ -227,12 +246,21 @@ class AgentRunner:
         """Carga las dependencias (artefactos previos) para un agente"""
         dependencies = {}
         
-        if agent_name not in AGENT_DEPENDENCIES:
+        # Usar dependencias de la versión configurada
+        agent_dependencies = self.version_config.get('dependencies', {})
+        
+        if agent_name not in agent_dependencies:
             logger.warning(f"No se encontraron dependencias definidas para {agent_name}")
             return dependencies
         
-        for dependency_file in AGENT_DEPENDENCIES[agent_name]:
-            artifact_path = get_artifact_path(self.story_id, dependency_file)
+        for dependency_file in agent_dependencies[agent_name]:
+            # Para v2, convertir nombres numerados a nombres simples para buscar archivos
+            # Ej: "01_director.json" -> "director.json" para compatibilidad
+            if self.version != 'v1' and dependency_file.startswith(('0', '1')):
+                # Mantener el nombre numerado para v2
+                artifact_path = get_artifact_path(self.story_id, dependency_file)
+            else:
+                artifact_path = get_artifact_path(self.story_id, dependency_file)
             
             if artifact_path.exists():
                 with open(artifact_path, 'r', encoding='utf-8') as f:
@@ -342,7 +370,8 @@ class AgentRunner:
     
     def _get_output_filename(self, agent_name: str) -> str:
         """Genera el nombre del archivo de salida para un agente"""
-        # Usar solo el nombre del agente sin numeración para evitar problemas de dependencias
+        # Para v2, mantener numeración en el nombre del archivo
+        # Para v1, usar solo el nombre del agente
         return f"{agent_name}.json"
     
     def _save_output(self, filename: str, content: Dict[str, Any]):

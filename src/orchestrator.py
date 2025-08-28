@@ -25,21 +25,23 @@ logger = logging.getLogger(__name__)
 class StoryOrchestrator:
     """Orquesta el pipeline completo de generación de cuentos"""
     
-    def __init__(self, story_id: Optional[str] = None, mode_verificador_qa: bool = True):
+    def __init__(self, story_id: Optional[str] = None, mode_verificador_qa: bool = True, pipeline_version: str = 'v1'):
         """
         Inicializa el orquestador
         
         Args:
             story_id: ID de la historia (si None, se genera uno)
             mode_verificador_qa: Si True usa verificador_qa, si False usa autoevaluación
+            pipeline_version: Versión del pipeline a usar (v1, v2, etc.)
         """
         self.story_id = story_id or self._generate_story_id()
         self.story_path = get_story_path(self.story_id)
         self.mode_verificador_qa = mode_verificador_qa
-        self.agent_runner = AgentRunner(self.story_id, mode_verificador_qa=mode_verificador_qa)
+        self.pipeline_version = pipeline_version
+        self.agent_runner = AgentRunner(self.story_id, mode_verificador_qa=mode_verificador_qa, version=pipeline_version)
         self.manifest = self._init_manifest()
         
-        logger.info(f"Orchestrator inicializado - mode_verificador_qa: {mode_verificador_qa}")
+        logger.info(f"Orchestrator inicializado - mode_verificador_qa: {mode_verificador_qa}, version: {pipeline_version}")
         
     def _generate_story_id(self) -> str:
         """Genera un ID único para la historia"""
@@ -69,6 +71,7 @@ class StoryOrchestrator:
                 "timestamps": {},
                 "webhook_url": None,
                 "webhook_attempts": 0,
+                "pipeline_version": getattr(self, 'pipeline_version', 'v1'),
                 "configuracion_modelo": {
                     "modelo": LLM_CONFIG["model"],
                     "endpoint": LLM_CONFIG["endpoint"],
@@ -110,8 +113,11 @@ class StoryOrchestrator:
             self.manifest["estado"] = "en_progreso"
             self._save_manifest()
             
+            # Obtener pipeline de la versión configurada
+            pipeline = self.agent_runner.version_config.get('pipeline', AGENT_PIPELINE)
+            
             # Ejecutar pipeline
-            for agent_name in AGENT_PIPELINE:
+            for agent_name in pipeline:
                 logger.info(f"Ejecutando agente: {agent_name}")
                 
                 # Actualizar manifest
@@ -238,10 +244,13 @@ class StoryOrchestrator:
             # Empezar desde el principio
             return self.process_story(brief, self.manifest.get("webhook_url"))
         
+        # Obtener pipeline de la versión configurada
+        pipeline = self.agent_runner.version_config.get('pipeline', AGENT_PIPELINE)
+        
         # Encontrar siguiente agente
         try:
-            last_index = AGENT_PIPELINE.index(last_completed)
-            remaining_agents = AGENT_PIPELINE[last_index + 1:]
+            last_index = pipeline.index(last_completed)
+            remaining_agents = pipeline[last_index + 1:]
         except ValueError:
             return self._build_error_response("resume", f"Agente desconocido: {last_completed}")
         
@@ -306,7 +315,10 @@ class StoryOrchestrator:
     
     def _find_last_completed_agent(self) -> Optional[str]:
         """Encuentra el último agente completado exitosamente"""
-        for agent in reversed(AGENT_PIPELINE):
+        # Obtener pipeline de la versión configurada
+        pipeline = self.agent_runner.version_config.get('pipeline', AGENT_PIPELINE)
+        
+        for agent in reversed(pipeline):
             output_file = self._get_agent_output_file(agent)
             if get_artifact_path(self.story_id, output_file).exists():
                 return agent

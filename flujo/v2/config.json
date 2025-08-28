@@ -1,0 +1,30 @@
+{
+  "version": "v2",
+  "qa_threshold": 3.5,
+  "max_retries": 1,
+  "max_tokens": 8000,
+  "temperature": 0.7,
+  "pipeline": [
+    "01_director",
+    "02_psicoeducador",
+    "03_cuentacuentos",
+    "04_editor_claridad",
+    "05_ritmo_rima",
+    "06_continuidad",
+    "07_diseno_escena",
+    "08_direccion_arte",
+    "09_sensibilidad",
+    "10_portadista",
+    "11_loader",
+    "12_validador"
+  ],
+  "parallel_execution": true,
+  "parallel_groups": [
+    ["07_diseno_escena", "08_direccion_arte", "10_portadista"]
+  ],
+  "optimizations": {
+    "enable_caching": true,
+    "streaming": false,
+    "timeout": 900
+  }
+}

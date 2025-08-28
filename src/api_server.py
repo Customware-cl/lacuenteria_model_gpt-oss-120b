@@ -36,7 +36,7 @@ processing_queue = {}
 processing_lock = threading.Lock()
 
 
-def process_story_async(story_id: str, brief: dict, webhook_url: str):
+def process_story_async(story_id: str, brief: dict, webhook_url: str, mode_verificador_qa: bool = True, pipeline_version: str = 'v1'):
     """
     Procesa una historia de forma asíncrona
     
@@ -44,12 +44,23 @@ def process_story_async(story_id: str, brief: dict, webhook_url: str):
         story_id: ID de la historia
         brief: Brief de la historia
         webhook_url: URL para notificaciones
+        mode_verificador_qa: Si True usa verificador QA estricto, si False usa autoevaluación
+        pipeline_version: Versión del pipeline a usar (v1, v2, etc.)
     """
     try:
-        logger.info(f"Iniciando procesamiento asíncrono de historia: {story_id}")
+        logger.info(f"Iniciando procesamiento asíncrono de historia: {story_id} (verificador_qa={mode_verificador_qa}, version={pipeline_version})")
         
-        # Crear orquestador
-        orchestrator = StoryOrchestrator(story_id)
+        # Crear orquestador con modo y versión configurables
+        from config import load_version_config
+        version_config = load_version_config(pipeline_version)
+        
+        # Si la versión especifica config especiales, aplicarlas
+        if version_config:
+            # Actualizar modo QA si la versión lo especifica
+            if 'mode_verificador_qa' in version_config:
+                mode_verificador_qa = version_config['mode_verificador_qa']
+        
+        orchestrator = StoryOrchestrator(story_id, mode_verificador_qa=mode_verificador_qa, pipeline_version=pipeline_version)
         
         # Procesar historia
         result = orchestrator.process_story(brief, webhook_url)
@@ -134,6 +145,7 @@ def create_story():
     - mensaje_a_transmitir: Objetivo educativo
     - edad_objetivo: Edad target
     - webhook_url: URL para notificaciones
+    - mode_verificador_qa: (opcional) Si True usa verificador QA estricto, si False usa autoevaluación. Default: True
     """
     try:
         data = request.get_json()
@@ -151,6 +163,14 @@ def create_story():
         
         story_id = data['story_id']
         webhook_url = data.get('webhook_url')
+        mode_verificador_qa = data.get('mode_verificador_qa', True)  # Default: True (estricto)
+        
+        # Detectar versión del pipeline (default v1 para compatibilidad)
+        pipeline_version = data.get('pipeline_version', 'v1')
+        if pipeline_version not in ['v1', 'v2']:
+            pipeline_version = 'v1'  # Fallback seguro
+        
+        logger.info(f"Creando historia {story_id} con pipeline {pipeline_version}")
         
         # Verificar si la historia ya existe
         story_path = get_story_path(story_id)
@@ -189,17 +209,21 @@ def create_story():
             "edad_objetivo": data['edad_objetivo']
         }
         
+        # Log del modo de verificación
+        logger.info(f"Creando historia {story_id} con mode_verificador_qa={mode_verificador_qa}")
+        
         # Agregar a cola de procesamiento
         with processing_lock:
             processing_queue[story_id] = {
                 "status": "queued",
-                "queued_at": datetime.now().isoformat()
+                "queued_at": datetime.now().isoformat(),
+                "mode_verificador_qa": mode_verificador_qa
             }
         
-        # Iniciar procesamiento asíncrono
+        # Iniciar procesamiento asíncrono con versión
         thread = threading.Thread(
             target=process_story_async,
-            args=(story_id, brief, webhook_url)
+            args=(story_id, brief, webhook_url, mode_verificador_qa, pipeline_version)
         )
         thread.daemon = True
         thread.start()
@@ -614,6 +638,194 @@ def evaluate_story(story_id):
         }), 500
 
 
+@app.route('/api/v1/stories/create', methods=['POST'])
+def create_story_v1():
+    """
+    Endpoint explícito para crear historias con pipeline v1
+    Usa la configuración actual de producción sin cambios
+    """
+    try:
+        data = request.get_json()
+        # Inyectar versión
+        data['pipeline_version'] = 'v1'
+        
+        # Procesar directamente
+        required_fields = ['story_id', 'personajes', 'historia', 
+                         'mensaje_a_transmitir', 'edad_objetivo']
+        
+        missing_fields = [field for field in required_fields if field not in data]
+        if missing_fields:
+            return jsonify({
+                "status": "error",
+                "error": f"Campos faltantes: {', '.join(missing_fields)}"
+            }), 400
+        
+        story_id = data['story_id']
+        webhook_url = data.get('webhook_url')
+        mode_verificador_qa = data.get('mode_verificador_qa', True)
+        
+        logger.info(f"Creando historia {story_id} con pipeline v1 (explícito)")
+        
+        # Verificar si existe
+        story_path = get_story_path(story_id)
+        if story_path.exists():
+            manifest_path = get_artifact_path(story_id, "manifest.json")
+            if manifest_path.exists():
+                with open(manifest_path, 'r', encoding='utf-8') as f:
+                    manifest = json.load(f)
+                
+                if manifest.get("estado") == "completo":
+                    validador_path = get_artifact_path(story_id, "validador.json")
+                    if validador_path.exists():
+                        with open(validador_path, 'r', encoding='utf-8') as f:
+                            result = json.load(f)
+                        return jsonify({
+                            "story_id": story_id,
+                            "status": "already_completed",
+                            "result": result
+                        }), 200
+                elif manifest.get("estado") == "en_progreso":
+                    return jsonify({
+                        "story_id": story_id,
+                        "status": "already_processing",
+                        "message": "La historia ya está siendo procesada"
+                    }), 200
+        
+        # Preparar brief
+        brief = {
+            "personajes": data['personajes'],
+            "historia": data['historia'],
+            "mensaje_a_transmitir": data['mensaje_a_transmitir'],
+            "edad_objetivo": data['edad_objetivo']
+        }
+        
+        # Agregar a cola
+        with processing_lock:
+            processing_queue[story_id] = {
+                "status": "queued",
+                "queued_at": datetime.now().isoformat(),
+                "mode_verificador_qa": mode_verificador_qa,
+                "pipeline_version": "v1"
+            }
+        
+        # Iniciar procesamiento asíncrono
+        thread = threading.Thread(
+            target=process_story_async,
+            args=(story_id, brief, webhook_url, mode_verificador_qa, "v1")
+        )
+        thread.daemon = True
+        thread.start()
+        
+        return jsonify({
+            "story_id": story_id,
+            "status": "processing",
+            "pipeline_version": "v1",
+            "estimated_time": 180,
+            "accepted_at": datetime.now().isoformat()
+        }), 202
+        
+    except Exception as e:
+        logger.error(f"Error creando historia v1: {e}")
+        return jsonify({
+            "status": "error",
+            "error": str(e)
+        }), 500
+
+
+@app.route('/api/v2/stories/create', methods=['POST'])
+def create_story_v2():
+    """
+    Endpoint explícito para crear historias con pipeline v2
+    Usa optimizaciones y nueva configuración
+    """
+    try:
+        data = request.get_json()
+        # Inyectar versión
+        data['pipeline_version'] = 'v2'
+        
+        # Procesar directamente
+        required_fields = ['story_id', 'personajes', 'historia', 
+                         'mensaje_a_transmitir', 'edad_objetivo']
+        
+        missing_fields = [field for field in required_fields if field not in data]
+        if missing_fields:
+            return jsonify({
+                "status": "error",
+                "error": f"Campos faltantes: {', '.join(missing_fields)}"
+            }), 400
+        
+        story_id = data['story_id']
+        webhook_url = data.get('webhook_url')
+        mode_verificador_qa = data.get('mode_verificador_qa', True)
+        
+        logger.info(f"Creando historia {story_id} con pipeline v2 (explícito)")
+        
+        # Verificar si existe
+        story_path = get_story_path(story_id)
+        if story_path.exists():
+            manifest_path = get_artifact_path(story_id, "manifest.json")
+            if manifest_path.exists():
+                with open(manifest_path, 'r', encoding='utf-8') as f:
+                    manifest = json.load(f)
+                
+                if manifest.get("estado") == "completo":
+                    validador_path = get_artifact_path(story_id, "validador.json")
+                    if validador_path.exists():
+                        with open(validador_path, 'r', encoding='utf-8') as f:
+                            result = json.load(f)
+                        return jsonify({
+                            "story_id": story_id,
+                            "status": "already_completed",
+                            "result": result
+                        }), 200
+                elif manifest.get("estado") == "en_progreso":
+                    return jsonify({
+                        "story_id": story_id,
+                        "status": "already_processing",
+                        "message": "La historia ya está siendo procesada"
+                    }), 200
+        
+        # Preparar brief
+        brief = {
+            "personajes": data['personajes'],
+            "historia": data['historia'],
+            "mensaje_a_transmitir": data['mensaje_a_transmitir'],
+            "edad_objetivo": data['edad_objetivo']
+        }
+        
+        # Agregar a cola
+        with processing_lock:
+            processing_queue[story_id] = {
+                "status": "queued",
+                "queued_at": datetime.now().isoformat(),
+                "mode_verificador_qa": mode_verificador_qa,
+                "pipeline_version": "v2"
+            }
+        
+        # Iniciar procesamiento asíncrono
+        thread = threading.Thread(
+            target=process_story_async,
+            args=(story_id, brief, webhook_url, mode_verificador_qa, "v2")
+        )
+        thread.daemon = True
+        thread.start()
+        
+        return jsonify({
+            "story_id": story_id,
+            "status": "processing",
+            "pipeline_version": "v2",
+            "estimated_time": 120,  # Menor tiempo estimado con optimizaciones
+            "accepted_at": datetime.now().isoformat()
+        }), 202
+        
+    except Exception as e:
+        logger.error(f"Error creando historia v2: {e}")
+        return jsonify({
+            "status": "error",
+            "error": str(e)
+        }), 500
+
+
 @app.route('/api/stories/<story_id>/retry', methods=['POST'])
 def retry_story(story_id):
     """Reintenta el procesamiento de una historia desde donde falló"""
@@ -626,8 +838,16 @@ def retry_story(story_id):
                 "error": "Historia no encontrada"
             }), 404
         
-        # Crear orquestador y reanudar
-        orchestrator = StoryOrchestrator(story_id)
+        # Detectar versión desde el manifest si existe
+        pipeline_version = 'v1'  # Default
+        manifest_path = get_artifact_path(story_id, "manifest.json")
+        if manifest_path.exists():
+            with open(manifest_path, 'r', encoding='utf-8') as f:
+                manifest = json.load(f)
+                pipeline_version = manifest.get('pipeline_version', 'v1')
+        
+        # Crear orquestador con la versión correcta
+        orchestrator = StoryOrchestrator(story_id, pipeline_version=pipeline_version)
         
         # Reanudar en thread separado
         thread = threading.Thread(
@@ -639,7 +859,8 @@ def retry_story(story_id):
         return jsonify({
             "story_id": story_id,
             "status": "resuming",
-            "message": "Procesamiento reanudado"
+            "message": "Procesamiento reanudado",
+            "pipeline_version": pipeline_version
         }), 202
         
     except Exception as e:
