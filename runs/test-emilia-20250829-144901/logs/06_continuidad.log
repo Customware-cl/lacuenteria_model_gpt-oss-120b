@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": "2025-08-29T15:03:41.662997",
+    "retry_count": 2,
+    "qa_scores": {
+      "coherencia_general": {
+        "criterios_evaluados": {
+          "character_bible_completo": true,
+          "relaciones_descritas": true,
+          "evolucion_emocional_descrita": true,
+          "objeto_ancla_reapariciones_minimo": true
+        },
+        "criterios_cumplidos": 4,
+        "criterios_totales": 4,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "alineacion_brief": {
+        "criterios_evaluados": {
+          "paginas_objeto_ancla_secuenciales": true,
+          "sin_contradicciones": true
+        },
+        "criterios_cumplidos": 2,
+        "criterios_totales": 2,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "integracion_dependencias": {
+        "criterios_evaluados": {
+          "integracion_ritmo_rima": false
+        },
+        "criterios_cumplidos": 0,
+        "criterios_totales": 1,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 0,
+        "nota_calculada": 0.0,
+        "ajustes_contextuales": [],
+        "nota_final": 0.0
+      },
+      "promedio": {
+        "nota_ponderada": 3.33,
+        "ajustes_globales": [],
+        "nota_final": 3.33
+      }
+    },
+    "execution_time": 13.643215,
+    "temperature": 0.7,
+    "max_tokens": 20000,
+    "status": "qa_failed",
+    "qa_issues": [
+      "Falta integración de ritmo y rima según la dependencia 05_ritmo_rima.json",
+      "Objeto ancla de Pipo el Payaso no tiene reapariciones listadas",
+      "Objeto ancla de Lucas no tiene reapariciones listadas"
+    ]
+  }
+]

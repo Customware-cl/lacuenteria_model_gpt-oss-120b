@@ -1,0 +1,13 @@
+{
+  "story_id": "test-v2-emilia-20250829-171408",
+  "personajes": [
+    {
+      "nombre": "Emilia",
+      "descripcion": "Hermosa niña de 2 años, de pelo castaño ondulado, muy alegre y de personalidad fuerte",
+      "rasgos": "Tímida, curiosa, valiente cuando es necesario"
+    }
+  ],
+  "historia": "El día en que Emilia celebró su cumpleaños en el jardín infantil y todos los niños se disfrazaron",
+  "mensaje_a_transmitir": null,
+  "edad_objetivo": "2-6 años"
+}

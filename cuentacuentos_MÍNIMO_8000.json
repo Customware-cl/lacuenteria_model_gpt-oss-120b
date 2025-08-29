@@ -1,0 +1,24 @@
+{
+  "paginas_texto": {
+    "1": "En el bosque canta el río\nmueve las hojas al río\nAve alza su canto al sol\nLos niños juegan bajo sol",
+    "2": "El búho mira al cielo\nBrilla la luna sobre el mar\nLos luceros guían el cielo\nLos peces sueñan bajo el mar",
+    "3": "En el prado brota la paz\nLos niños cantan sin ninguna paz\nUna mariposa sigue al río\nY el espejo refleja al río",
+    "4": "Una luz nace en la estrella\nLos conejos corren en el bosque\nCanción vibra con la estrella\nLas ramas cantan al bosque",
+    "5": "El zorro sueña con su canto\nBrilla la luna sobre el mar\nEn la noche vuelve su canto\nLos grillos duermen bajo el mar",
+    "6": "Al amanecer abre el día\nLos pajaritos saludan al día\nUna tortuga cruza la arena\nY el sol la cubre con su arena",
+    "7": "Las nubes dibujan el cielo\nLos patos nadan en el río\nEl viento susurra al cielo\nLas ranas cantan al río",
+    "8": "Un árbol alto guarda el bosque\nLos niños suben al gran bosque\nLas hojas murmuran su canto\nEl eco devuelve su canto",
+    "9": "Una chispa nace como estrella\nLos peces nadan bajo el mar\nEl sueño vuelve a la estrella\nLas olas cantan al mar",
+    "10": "Los grillos saludan al canto\nLas luciérnagas siguen su canto\nBrilla la luna, pura luz\nEl bosque duerme bajo la luz"
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    10
+  ],
+  "_metadata_tokens": {
+    "prompt_tokens": 464,
+    "completion_tokens": 7055,
+    "total_tokens": 7519
+  }
+}

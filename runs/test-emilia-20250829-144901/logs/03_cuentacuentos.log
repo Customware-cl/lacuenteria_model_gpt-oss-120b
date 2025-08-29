@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2025-08-29T14:55:01.367582",
+    "retry_count": 2,
+    "qa_scores": {},
+    "execution_time": 50.471108,
+    "temperature": 0.7,
+    "max_tokens": 20000,
+    "status": "qa_failed",
+    "qa_issues": [
+      "No se encontró campo 'qa' en la respuesta"
+    ]
+  }
+]

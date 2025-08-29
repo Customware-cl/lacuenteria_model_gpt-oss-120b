@@ -1,0 +1,39 @@
+[
+  {
+    "timestamp": "2025-08-29T15:06:34.721079",
+    "retry_count": 1,
+    "qa_scores": {
+      "sensibilidad": {
+        "criterios_evaluados": {
+          "detectar_estereotipo_genero": true,
+          "detectar_falta_diversidad": true,
+          "sugerir_correccion_estereotipo": true,
+          "sugerir_correccion_diversidad": true,
+          "apto_para_ninos": true,
+          "uso_correcto_dependencias": true
+        },
+        "criterios_cumplidos": 6,
+        "criterios_totales": 6,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "promedio": {
+        "nota_ponderada": 5.0,
+        "ajustes_globales": [],
+        "nota_final": 5.0
+      }
+    },
+    "execution_time": 5.287743,
+    "temperature": 0.7,
+    "max_tokens": 20000,
+    "status": "success",
+    "tokens_consumed": {
+      "prompt_tokens": 3611,
+      "completion_tokens": 750,
+      "total_tokens": 4361
+    }
+  }
+]

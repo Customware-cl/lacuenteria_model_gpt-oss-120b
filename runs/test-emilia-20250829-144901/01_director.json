@@ -1,0 +1,85 @@
+{
+  "leitmotiv": "¡Tirititi, vamos a brincar!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y la alegre fiesta de cumpleaños en el jardín infantil.",
+      "conflicto": "Al llegar al patio, los globos de colores están atados a una rama alta del árbol y nadie puede alcanzarlos.",
+      "emocion": "Asombro",
+      "imagen_nuclear": "Emilia mirando los globos brillantes atrapados entre las hojas."
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Mostrar el intento de los niños por rescatar los globos.",
+      "conflicto": "Los niños forman una cadena humana y cantan el leitmotiv \"¡Tirititi, vamos a brincar!\" mientras intentan subir y alcanzar los globos.",
+      "emocion": "Diversión",
+      "imagen_nuclear": "Pequeños niños estirándose y sonriendo bajo el árbol."
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Introducir un nuevo obstáculo con los disfraces.",
+      "conflicto": "El armario de disfraces se abre y los trajes se enredan como serpientes de tela.",
+      "emocion": "Confusión",
+      "imagen_nuclear": "Ropa de superhéroes y princesas formando un revoltijo colorido."
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Crear tensión con la música de la fiesta.",
+      "conflicto": "El reproductor de música se detiene justo cuando todos están a punto de bailar.",
+      "emocion": "Frustración",
+      "imagen_nuclear": "Niños con pasos preparados, mirando el silencio del altavoz."
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Reactivar la energía de la celebración.",
+      "conflicto": "El payaso pierde su nariz roja y los niños cantan de nuevo \"¡Tirititi, vamos a brincar!\" mientras la buscan.",
+      "emocion": "Entusiasmo",
+      "imagen_nuclear": "El payaso con cara sorprendida y niños escudriñando el jardín."
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Aumentar la expectativa del pastel.",
+      "conflicto": "El carrito de pastel llega tarde y solo trae una caja vacía.",
+      "emocion": "Expectativa",
+      "imagen_nuclear": "Emilia mirando la caja sin nada dentro, con los ojos grandes."
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Mostrar apoyo entre los compañeros.",
+      "conflicto": "Un niño tímido se queda atrás sin su disfraz y se siente excluido.",
+      "emocion": "Compasión",
+      "imagen_nuclear": "El niño mirando al suelo mientras los demás juegan."
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Crear un desafío final antes del pastel.",
+      "conflicto": "La piñata está colgada demasiado alta y el palo se rompe al intentar golpearla.",
+      "emocion": "Desafío",
+      "imagen_nuclear": "La piñata brillante cuelga sobre la cabeza de Emilia."
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Aumentar la tensión antes del momento clave.",
+      "conflicto": "Las velas del pastel están tan altas que Emilia no puede alcanzarlas para soplar.",
+      "emocion": "Nerviosismo",
+      "imagen_nuclear": "El pastel con velas que parecen pequeñas torres."
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Resolver la fiesta con alegría y unión.",
+      "resolucion": "Todos forman una torre humana, Emilia sopla las velas mientras los niños cantan el leitmotiv \"¡Tirititi, vamos a brincar!\" y el pastel se revela completo, compartiendo risas y pastel.",
+      "emocion": "Felicidad",
+      "imagen_nuclear": "Emilia rodeada de amigos, con el pastel iluminado y todos aplaudiendo."
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "En vez de la piñata, un árbol de globos se infla y casi explota, creando un momento de sorpresa.",
+      "resolucion_alternativa": "Los niños usan una manta como paracaídas para bajar los globos, y el pastel aparece bajo una lluvia de confeti."
+    },
+    {
+      "climax_alternativo": "La música se transforma en una canción improvisada con instrumentos hechos de cucharas y latas.",
+      "resolucion_alternativa": "Todos tocan sus instrumentos y la canción culmina con el pastel iluminado, celebrando la creatividad."
+    }
+  ]
+}

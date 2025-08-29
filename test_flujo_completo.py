@@ -14,20 +14,32 @@ from datetime import datetime
 BASE_URL = "http://localhost:5000"
 STORY_ID = f"test-emilia-{datetime.now().strftime('%Y%m%d-%H%M%S')}"
 
-# Brief de Emilia
-BRIEF_EMILIA = {
-    "story_id": STORY_ID,
-    "personajes": [
-        {
-            "nombre": "Emilia",
-            "descripcion": "Niña de 3 años con síndrome de Angelman",
-            "rasgos": "No verbal, comunicación gestual y afectiva muy expresiva"
+# Cargar brief desde archivo si se proporciona, sino usar el por defecto
+if len(sys.argv) > 1:
+    with open(sys.argv[1], 'r') as f:
+        brief_data = json.load(f)
+        BRIEF_EMILIA = {
+            "story_id": STORY_ID,
+            "personajes": [p["nombre"] if isinstance(p, dict) else p for p in brief_data.get("personajes", [])],
+            "historia": brief_data.get("historia", ""),
+            "mensaje_a_transmitir": brief_data.get("mensaje_a_transmitir", ""),
+            "edad_objetivo": brief_data.get("edad_objetivo", 3)
         }
-    ],
-    "historia": "Emilia descubre el poder de comunicarse sin palabras a través de abrazos, sonrisas y gestos en una aventura mágica donde debe ayudar a un unicornio que ha perdido su voz",
-    "mensaje_a_transmitir": "La comunicación va más allá de las palabras. Los gestos, sonrisas y abrazos son formas poderosas de expresar amor y conectar con otros",
-    "edad_objetivo": "3-5 años"
-}
+else:
+    # Brief de Emilia por defecto
+    BRIEF_EMILIA = {
+        "story_id": STORY_ID,
+        "personajes": [
+            {
+                "nombre": "Emilia",
+                "descripcion": "Niña de 3 años con síndrome de Angelman",
+                "rasgos": "No verbal, comunicación gestual y afectiva muy expresiva"
+            }
+        ],
+        "historia": "Emilia descubre el poder de comunicarse sin palabras a través de abrazos, sonrisas y gestos en una aventura mágica donde debe ayudar a un unicornio que ha perdido su voz",
+        "mensaje_a_transmitir": "La comunicación va más allá de las palabras. Los gestos, sonrisas y abrazos son formas poderosas de expresar amor y conectar con otros",
+        "edad_objetivo": "3-5 años"
+    }
 
 def print_status(message, status="INFO"):
     """Imprime mensajes con formato"""
@@ -64,7 +76,7 @@ def create_story():
     
     try:
         response = requests.post(
-            f"{BASE_URL}/api/stories/create",
+            f"{BASE_URL}/api/v2/stories/create",  # Usar endpoint v2
             json=BRIEF_EMILIA,
             headers={"Content-Type": "application/json"}
         )
@@ -246,7 +258,10 @@ def main():
     print("PRUEBA AUTOMATIZADA - FLUJO COMPLETO CUENTERÍA")
     print("="*60)
     print(f"Story ID: {STORY_ID}")
-    print(f"Personaje: {BRIEF_EMILIA['personajes'][0]['nombre']}")
+    if isinstance(BRIEF_EMILIA['personajes'][0], dict):
+        print(f"Personaje: {BRIEF_EMILIA['personajes'][0]['nombre']}")
+    else:
+        print(f"Personaje: {BRIEF_EMILIA['personajes'][0]}")
     print("="*60 + "\n")
     
     # 1. Verificar salud del servidor

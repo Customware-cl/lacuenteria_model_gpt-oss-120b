@@ -2,6 +2,7 @@
 Sistema de Quality Gates para validación de salidas de agentes
 """
 import logging
+import re
 from typing import Dict, Any, List, Tuple, Optional
 from config import QUALITY_THRESHOLDS
 
@@ -11,9 +12,11 @@ logger = logging.getLogger(__name__)
 class QualityGateChecker:
     """Validador de quality gates para las salidas de los agentes"""
     
-    def __init__(self):
+    def __init__(self, agent_qa_thresholds=None):
         self.min_qa_score = QUALITY_THRESHOLDS["min_qa_score"]
         self.max_retries = QUALITY_THRESHOLDS["max_retries"]
+        # Umbrales específicos por agente (opcional)
+        self.agent_qa_thresholds = agent_qa_thresholds or {}
         
     def check_qa_scores(self, agent_output: Dict[str, Any], agent_name: str) -> Tuple[bool, Dict[str, float], List[str]]:
         """
@@ -48,17 +51,19 @@ class QualityGateChecker:
                 issues.append(f"Score '{metric}' inválido: {score} (debe ser entre 1 y 5)")
                 continue
             
-            # Verificar si cumple el umbral mínimo
-            if score < self.min_qa_score:
-                issues.append(f"Score '{metric}' bajo umbral: {score} < {self.min_qa_score}")
+            # Verificar si cumple el umbral mínimo (específico por agente o global)
+            threshold = self.agent_qa_thresholds.get(agent_name, self.min_qa_score)
+            if score < threshold:
+                issues.append(f"Score '{metric}' bajo umbral: {score} < {threshold}")
         
         # Calcular score promedio
         if scores:
             avg_score = sum(scores.values()) / len(scores)
             scores["promedio"] = round(avg_score, 2)
             
-            # El gate pasa si el promedio cumple el umbral
-            passed = avg_score >= self.min_qa_score and len(issues) == 0
+            # El gate pasa si el promedio cumple el umbral específico del agente
+            threshold = self.agent_qa_thresholds.get(agent_name, self.min_qa_score)
+            passed = avg_score >= threshold and len(issues) == 0
         else:
             passed = False
             issues.append("No se encontraron scores QA válidos")
@@ -83,6 +88,7 @@ class QualityGateChecker:
             Instrucciones de mejora como string
         """
         instructions = []
+        specific_corrections = []  # Correcciones muy específicas para el JSON
         
         # Instrucciones específicas por agente
         agent_specific = {
@@ -149,13 +155,66 @@ class QualityGateChecker:
                 metric = issue.split("'")[1]
                 instructions.append(f"- Mejorar {metric}: puntaje actual {scores.get(metric, 0)}")
         
+        # Generar correcciones específicas basadas en los issues más comunes
+        if agent_name == "director" or agent_name.endswith("_director"):
+            for issue in issues[:3]:  # Solo los 3 problemas principales
+                if "Repetición" in issue and "leitmotiv" in issue.lower():
+                    if "beat_sheet" in agent_output:
+                        # Encontrar dónde se repite
+                        leitmotiv = agent_output.get("leitmotiv", "")
+                        specific_corrections.append(
+                            f"CAMBIO ESPECÍFICO: En 'leitmotiv', reemplaza '{leitmotiv}' por una frase diferente que no se repita más de 3 veces"
+                        )
+                elif "clímax" in issue.lower():
+                    specific_corrections.append(
+                        "CAMBIO ESPECÍFICO: En beat_sheet[7] o beat_sheet[8], marca claramente el punto de máxima tensión en el campo 'conflicto'"
+                    )
+                elif "resolucion" in issue and "conflicto" in issue:
+                    specific_corrections.append(
+                        "CAMBIO ESPECÍFICO: En beat_sheet[9], cambia el campo 'resolucion' por 'conflicto'. Solo beat_sheet[10] debe tener 'resolucion'"
+                    )
+                elif "escalada" in issue.lower() or "tensión" in issue.lower():
+                    specific_corrections.append(
+                        "CAMBIO ESPECÍFICO: En beat_sheet[4] a beat_sheet[9], asegura que cada 'conflicto' sea progresivamente más intenso"
+                    )
+        
+        elif agent_name == "cuentacuentos" or agent_name.endswith("_cuentacuentos"):
+            for issue in issues[:3]:
+                if "rima forzada" in issue.lower():
+                    # Buscar página específica si se menciona
+                    page_match = re.search(r'página (\d+)', issue.lower())
+                    if page_match:
+                        page_num = page_match.group(1)
+                        specific_corrections.append(
+                            f"CAMBIO ESPECÍFICO: En paginas_texto['{page_num}'], reescribe los versos para que la rima fluya naturalmente"
+                        )
+                elif "repetición" in issue.lower():
+                    word_match = re.search(r"'([^']+)'", issue)
+                    if word_match:
+                        word = word_match.group(1)
+                        specific_corrections.append(
+                            f"CAMBIO ESPECÍFICO: Busca la palabra '{word}' y reemplázala con sinónimos variados"
+                        )
+        
         # Si no hay instrucciones específicas, dar feedback general
-        if not instructions:
+        if not instructions and not specific_corrections:
             instructions.append("- Revisar la calidad general de la salida")
             instructions.append("- Asegurar coherencia con los artefactos previos")
             instructions.append("- Verificar cumplimiento del contrato JSON")
         
-        return "INSTRUCCIONES DE MEJORA:\n" + "\n".join(instructions)
+        # Combinar instrucciones generales y correcciones específicas
+        result = "INSTRUCCIONES DE MEJORA:\n"
+        
+        if specific_corrections:
+            result += "\n🔧 CORRECCIONES ESPECÍFICAS EN EL JSON:\n"
+            result += "\n".join(specific_corrections)
+            result += "\n\n"
+        
+        if instructions:
+            result += "📝 MEJORAS GENERALES:\n"
+            result += "\n".join(instructions)
+        
+        return result
     
     def should_retry(self, retry_count: int) -> bool:
         """
@@ -236,13 +295,20 @@ class QualityGateChecker:
 # Singleton para reutilizar el checker
 _checker_instance = None
 
-def get_quality_checker() -> QualityGateChecker:
+def get_quality_checker(agent_qa_thresholds=None) -> QualityGateChecker:
     """
-    Obtiene una instancia singleton del quality checker
+    Obtiene una instancia del quality checker con umbrales opcionales
+    
+    Args:
+        agent_qa_thresholds: Diccionario opcional con umbrales específicos por agente
     
     Returns:
         Instancia de QualityGateChecker
     """
+    # No usar singleton cuando hay umbrales específicos
+    if agent_qa_thresholds:
+        return QualityGateChecker(agent_qa_thresholds)
+    
     global _checker_instance
     if _checker_instance is None:
         _checker_instance = QualityGateChecker()

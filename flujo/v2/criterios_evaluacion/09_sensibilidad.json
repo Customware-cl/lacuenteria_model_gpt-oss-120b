@@ -1,0 +1,130 @@
+{
+  "agente": "09_sensibilidad",
+  "descripcion": "Criterios de evaluación para el Guardia de sensibilidad",
+  "metricas": {
+    "deteccion_riesgos": {
+      "peso": 0.5,
+      "descripcion": "Evaluación de la identificación de contenido inadecuado",
+      "criterios": {
+        "identifica_riesgos": {
+          "descripcion": "¿Identifica riesgos potenciales para niños?",
+          "verificar": "campo riesgos_detectados no vacío o justificado",
+          "esencial": true
+        },
+        "sin_miedo_excesivo": {
+          "descripcion": "¿Evita contenido que genere miedo excesivo?",
+          "verificar": "no hay elementos terroríficos o angustiantes",
+          "esencial": true
+        },
+        "sin_violencia": {
+          "descripcion": "¿Está libre de violencia física o verbal?",
+          "verificar": "no hay agresiones o lenguaje violento",
+          "esencial": true
+        },
+        "sin_abandono": {
+          "descripcion": "¿Evita temas de abandono parental?",
+          "verificar": "no hay separación traumática de padres",
+          "esencial": true
+        },
+        "lenguaje_apropiado": {
+          "descripcion": "¿El lenguaje es apropiado para la edad?",
+          "verificar": "vocabulario simple, sin términos adultos",
+          "esencial": true
+        },
+        "sin_culpabilizacion": {
+          "descripcion": "¿Evita culpabilizar al niño?",
+          "verificar": "no hace sentir mal al niño por errores",
+          "esencial": true
+        }
+      }
+    },
+    "sugerencias_mejora": {
+      "peso": 0.3,
+      "descripcion": "Evaluación de las propuestas de mejora",
+      "criterios": {
+        "minimo_una_mejora": {
+          "descripcion": "¿Identifica MÍNIMO 1 punto de mejora?",
+          "verificar": "siempre sugiere algo (enriquecimiento si perfecto)",
+          "esencial": true
+        },
+        "correcciones_utiles": {
+          "descripcion": "¿Las correcciones sugeridas son útiles?",
+          "verificar": "propuestas concretas y aplicables",
+          "esencial": true
+        },
+        "detecta_estereotipos": {
+          "descripcion": "¿Identifica estereotipos de género/cultura?",
+          "verificar": "revisa roles y representaciones",
+          "esencial": false
+        },
+        "mejoras_especificas": {
+          "descripcion": "¿Las mejoras son específicas por página?",
+          "verificar": "indica página y cambio concreto",
+          "esencial": false
+        }
+      }
+    },
+    "inclusion_diversidad": {
+      "peso": 0.2,
+      "descripcion": "Evaluación de inclusión y diversidad",
+      "criterios": {
+        "considera_diversidad": {
+          "descripcion": "¿Considera diversidad en personajes?",
+          "verificar": "no asume contextos específicos",
+          "esencial": false
+        },
+        "roles_flexibles": {
+          "descripcion": "¿Evita roles de género rígidos?",
+          "verificar": "personajes no limitados por género",
+          "esencial": false
+        },
+        "mensajes_positivos": {
+          "descripcion": "¿Refuerza mensajes positivos?",
+          "verificar": "valores constructivos y esperanzadores",
+          "esencial": true
+        },
+        "apto_confirmado": {
+          "descripcion": "¿Confirma explícitamente apto para niños?",
+          "verificar": "campo apto_para_ninos = true/false",
+          "esencial": true
+        }
+      }
+    }
+  },
+  "ajustes_contextuales": {
+    "sensibilidad_excepcional": {
+      "max_ajuste": 0.3,
+      "descripcion": "Análisis de sensibilidad extraordinario",
+      "aplicar_si": "identifica sutilezas y propone mejoras valiosas"
+    },
+    "enfoque_inclusivo": {
+      "max_ajuste": 0.2,
+      "descripcion": "Promueve activamente la inclusión",
+      "aplicar_si": "sugiere diversidad y representación positiva"
+    },
+    "analisis_superficial": {
+      "max_ajuste": -0.3,
+      "descripcion": "Análisis muy básico o superficial",
+      "aplicar_si": "no detecta problemas evidentes"
+    },
+    "sugerencias_inaplicables": {
+      "max_ajuste": -0.2,
+      "descripcion": "Sugerencias poco prácticas",
+      "aplicar_si": "correcciones vagas o irrealizables"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_metricas + ajustes_contextuales",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    }
+  }
+}

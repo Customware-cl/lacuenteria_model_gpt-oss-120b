@@ -1,0 +1,31 @@
+{
+  "prompts_paginas": {
+    "1": "Jardín colorido bajo un cielo azul brillante; Emilia, de 5 años, entra con su vestido de mariposas y lleva un globo rojo carmesí atado a su mano, mientras observa frutas colgantes que le sacan una sonrisa. Emoción dominante: alegría contagiosa. Objeto ancla: globo rojo. Luz del mediodía, sol difuso. Plano general, cámara a nivel de los ojos, ligeramente inclinada hacia arriba para captar la amplitud del jardín. Estilo ilustración infantil colorida.",
+    "2": "Espacio abierto al atardecer con una gran estrella brillante en el cielo; varios niños, entre ellos Emilia con su globo rojo, se toman de las manos formando una cadena y saltan alto buscando el brillo de la estrella. Emoción dominante: entusiasmo y energía. Objetos ancla: globo rojo y cadena de manos. Luz crepuscular, tonos cálidos. Plano medio, cámara ligeramente baja mirando hacia la estrella. Estilo ilustración infantil colorida.",
+    "3": "Interior de una casa con un armario antiguo; Emilia abre la puerta y de él brota un arco iris vibrante que llena el espacio de colores voladores, mientras su globo rojo flota cerca. Emoción dominante: asombro y maravilla. Objetos ancla: globo rojo y arco iris. Luz natural filtrada por ventana, colores pastel. Plano detalle del armario abierto, cámara frontal a nivel de la cintura. Estilo ilustración infantil colorida.",
+    "4": "Escenario con ligera bruma y un altavoz grande; los niños, incluida Emilia con su globo rojo, miran atentos al altavoz esperando que la música regrese. Emoción dominante: anticipación. Objetos ancla: globo rojo y altavoz. Iluminación tenue con luces de escenario suaves. Plano medio, cámara a nivel de los ojos, ligeramente lateral. Estilo ilustración infantil colorida.",
+    "5": "Zona de espectáculo donde Pipo el Payaso llora por haber perdido su nariz roja brillante; Emilia y los demás niños buscan y encuentran la nariz roja en el suelo, entregándosela a Pipo que vuelve a sonreír. Emoción dominante: tristeza que se transforma en alegría. Objetos ancla: nariz roja de Pipo y globo rojo de Emilia. Luz de día festiva, colores vivos. Plano cercano al rostro de Pipo, cámara ligeramente baja. Estilo ilustración infantil colorida.",
+    "6": "Patio con un carrito vacío; Emilia, con su globo rojo, lo observa curiosa mientras los niños cantan alrededor y de repente la música vibra y llena el aire. Emoción dominante: curiosidad que se vuelve alegría. Objetos ancla: globo rojo y carrito vacío. Luz del mediodía clara. Plano medio, cámara a nivel de los ojos, ligeramente inclinada hacia el carrito. Estilo ilustración infantil colorida.",
+    "7": "Jardín donde Lucas, sin traje, busca un tesoro; Emilia le entrega una caja de tesoro de madera y le da un traje de colores, haciendo que Lucas juegue feliz. Emoción dominante: inseguridad que se convierte en confianza. Objetos ancla: caja de tesoro de madera y globo rojo. Luz de tarde suave. Plano detalle de la caja y el traje, cámara ligeramente alta mirando hacia abajo. Estilo ilustración infantil colorida.",
+    "8": "Espacio festivo con una piñata colgante prometiendo azúcar; los niños, con el globo rojo de Emilia visible, usan un palo que cruje para intentar romperla, brillando de emoción. Emoción dominante: excitación y expectativa. Objetos ancla: piñata y globo rojo. Luz del atardecer dorada. Plano general, cámara baja mirando hacia arriba para capturar la piñata. Estilo ilustración infantil colorida.",
+    "9": "Patio al anochecer con velas altas formando una torre que apunta al cielo; Emilia sostiene su globo rojo mientras los niños soplan y usan la caja de tesoro como apoyo para alcanzar el aire. Emoción dominante: asombro y unión. Objetos ancla: globo rojo y caja de tesoro. Luz de velas y faroles, ambiente nocturno cálido. Plano medio, cámara a nivel bajo mirando la torre. Estilo ilustración infantil colorida.",
+    "10": "Gran celebración nocturna con todos los niños formando una torre humana, cantando en ritual; Emilia con su globo rojo alzando las manos, el pastel brillante al fondo. Emoción dominante: alegría festiva. Objetos ancla: globo rojo y pastel. Iluminación de luces de fiesta y estrellas. Plano general, cámara ligeramente alta para capturar la torre completa. Estilo ilustración infantil colorida."
+  },
+  "anotaciones": [
+    "Página 1: Plano general - Entrada alegre y sonrisa",
+    "Página 2: Plano medio - Cadena y salto bajo estrella",
+    "Página 3: Plano detalle - Armario y arco iris emergente",
+    "Página 4: Plano medio - Espera del sonido entre bruma",
+    "Página 5: Plano cercano - Recuperación de la nariz y alegría",
+    "Página 6: Plano medio - Observación del carrito vacío y música",
+    "Página 7: Plano detalle - Entrega de caja y traje, confianza",
+    "Página 8: Plano general - Ataque a la piñata y brillo",
+    "Página 9: Plano medio - Torre de velas y uso de la caja",
+    "Página 10: Plano general - Torre humana y celebración final"
+  ],
+  "qa_scores": {
+    "integracion_ritmo_rima": 5,
+    "coherencia_general": 5,
+    "alineacion_brief": 5
+  }
+}

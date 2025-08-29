@@ -1,0 +1,529 @@
+{
+  "agente": "03_cuentacuentos",
+  "descripcion": "Criterios de evaluación página por página para el Cuentacuentos versificador",
+  "metricas": {
+    "pagina_1": {
+      "peso": 0.1,
+      "descripcion": "Evaluación integral de la página 1",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO rojo/rojo, azul/azul, etc.",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "esquema_rima": {
+          "descripcion": "¿Mantiene esquema AABB o ABAB?",
+          "verificar": "patrón de rima consistente",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja 'Emilia busca su sombrero de fiesta'?",
+          "verificar": "contenido alineado con director página 1",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Incorpora 'buscar objetos y pedir ayuda'?",
+          "verificar": "usa micro-habilidad del psicoeducador",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Crea imagen de Emilia buscando bajo la cama?",
+          "verificar": "descripción visual específica",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario para 2-6 años?",
+          "verificar": "palabras simples y comprensibles",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Orden natural de palabras?",
+          "verificar": "sin inversiones forzadas",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_2": {
+      "peso": 0.1,
+      "descripcion": "Evaluación integral de la página 2",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO aire/aire, cantar/cantar, etc.",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "leitmotiv_presente": {
+          "descripcion": "¿Incluye '¡Tiritas, tiritas, vamos a cantar!'?",
+          "verificar": "leitmotiv textual exacto",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja 'música se corta, Emilia dice leitmotiv'?",
+          "verificar": "contenido alineado con director página 2",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Usa frase positiva para cambiar situación?",
+          "verificar": "sustituciones conductuales",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Muestra niños alrededor del micrófono?",
+          "verificar": "imagen nuclear del director",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario para 2-6 años?",
+          "verificar": "palabras apropiadas",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Fluye naturalmente al leer?",
+          "verificar": "sin trabalenguas",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_3": {
+      "peso": 0.1,
+      "descripcion": "Evaluación integral de la página 3",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO juego/juego, valor/valor, etc.",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja 'caja de disfraces cerrada con llave'?",
+          "verificar": "contenido alineado con director página 3",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Muestra pasos secuenciales y colaboración?",
+          "verificar": "autocontrol por pasos",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza manos girando cerradura?",
+          "verificar": "imagen nuclear específica",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado?",
+          "verificar": "comprensible para niños",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Mantiene orden natural?",
+          "verificar": "sin inversiones",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_4": {
+      "peso": 0.1,
+      "descripcion": "Evaluación integral de la página 4",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO patio/patio, llegará/llegará, etc.",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 6-12 sílabas?",
+          "verificar": "especial atención verso 2 (suele exceder)",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja 'nube gris amenaza con lluvia'?",
+          "verificar": "contenido alineado con director página 4",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Incluye respiración consciente para calmarse?",
+          "verificar": "nombrar preocupación y respirar",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Muestra cielo oscuro sobre globos?",
+          "verificar": "contraste visual",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado?",
+          "verificar": "palabras simples",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Fluye naturalmente?",
+          "verificar": "pausas apropiadas",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_5": {
+      "peso": 0.1,
+      "descripcion": "Evaluación integral de la página 5",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO cielo/cielo, cantar/cantar, etc.",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "leitmotiv_presente": {
+          "descripcion": "¿Incluye '¡Tiritas, tiritas, vamos a cantar!'?",
+          "verificar": "leitmotiv textual exacto",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja 'globos se sueltan, Emilia canta mientras corre'?",
+          "verificar": "contenido alineado con director página 5",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Canaliza energía con movimiento y canto?",
+          "verificar": "sustituciones conductuales",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza Emilia con red persiguiendo globos?",
+          "verificar": "acción dinámica",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado?",
+          "verificar": "palabras para 2-6 años",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Mantiene fluidez?",
+          "verificar": "ritmo natural",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_6": {
+      "peso": 0.1,
+      "descripcion": "Evaluación integral de la página 6",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO luz/luz, pastel/pastel, etc.",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja 'pastel desaparece misteriosamente'?",
+          "verificar": "contenido alineado con director página 6",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Busca pistas y expresa sorpresa sin tristeza?",
+          "verificar": "etiquetado emocional",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Muestra mesa vacía con vela y migas?",
+          "verificar": "pista visual del misterio",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado?",
+          "verificar": "palabras comprensibles",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Orden natural?",
+          "verificar": "sin inversiones",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_7": {
+      "peso": 0.1,
+      "descripcion": "Evaluación integral de la página 7",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO mesa/mesa, juego/juego, etc.",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja 'Lucho tímido se esconde'?",
+          "verificar": "contenido alineado con director página 7",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Invita con empatía a participar?",
+          "verificar": "inclusión y empatía",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza ojos asomando bajo la mesa?",
+          "verificar": "imagen de timidez",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado?",
+          "verificar": "palabras simples",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Diálogo natural?",
+          "verificar": "invitación creíble",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_8": {
+      "peso": 0.1,
+      "descripcion": "Evaluación integral de la página 8",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO pasar/pasar, juntos/juntos, etc.",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja 'puerta atascada, trabajo en equipo'?",
+          "verificar": "contenido alineado con director página 8",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Muestra cooperación física coordinada?",
+          "verificar": "autocontrol y cooperación",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza manos tirando de puerta?",
+          "verificar": "esfuerzo colectivo",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado?",
+          "verificar": "palabras para niños",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Exclamaciones naturales?",
+          "verificar": "¡Ánimo! creíble",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_9": {
+      "peso": 0.1,
+      "descripcion": "Evaluación integral de la página 9",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO enredos/enredos, solución/solución, etc.",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja 'hilos de globos enredados'?",
+          "verificar": "contenido alineado con director página 9",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Muestra trabajo en equipo para desenredar?",
+          "verificar": "cooperación y paciencia",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza maraña de colores?",
+          "verificar": "caos visual resuelto",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado?",
+          "verificar": "palabras simples",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Secuencia lógica?",
+          "verificar": "problema-solución clara",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_10": {
+      "peso": 0.1,
+      "descripcion": "Evaluación integral de la página 10",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO sol/sol, cantar/cantar, etc.",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "leitmotiv_presente": {
+          "descripcion": "¿Incluye '¡Tiritas, tiritas, vamos a cantar!'?",
+          "verificar": "leitmotiv textual exacto para cierre",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja celebración final con todos los elementos?",
+          "verificar": "resolución completa del director",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Expresa alegría y gratitud?",
+          "verificar": "etiquetado emocional positivo",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza Emilia soplando velas con amigos?",
+          "verificar": "imagen culminante",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado?",
+          "verificar": "palabras festivas simples",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Cierre satisfactorio?",
+          "verificar": "final natural y alegre",
+          "esencial": true
+        }
+      }
+    }
+  },
+  "penalizaciones_especiales": {
+    "palabra_repetida_rima": {
+      "penalizacion": -1.0,
+      "descripcion": "Usar misma palabra para rimar (rojo/rojo)",
+      "aplicar_por": "cada ocurrencia"
+    },
+    "metro_excedido": {
+      "penalizacion": -0.5,
+      "descripcion": "Verso con más de 12 sílabas",
+      "aplicar_por": "cada verso excedido"
+    },
+    "leitmotiv_faltante": {
+      "penalizacion": -1.0,
+      "descripcion": "Falta leitmotiv en página 2, 5 o 10",
+      "aplicar_por": "cada página faltante"
+    },
+    "incoherencia_narrativa": {
+      "penalizacion": -0.5,
+      "descripcion": "Cambio injustificado de elementos",
+      "aplicar_por": "cada incoherencia"
+    },
+    "no_integra_director": {
+      "penalizacion": -0.5,
+      "descripcion": "No refleja beat sheet de la página",
+      "aplicar_por": "cada página"
+    },
+    "no_integra_psicoeducador": {
+      "penalizacion": -0.5,
+      "descripcion": "No usa micro-habilidad correspondiente",
+      "aplicar_por": "cada página"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_paginas + penalizaciones",
+    "pesos_metricas_por_pagina": {
+      "musicalidad": 0.4,
+      "imagineria": 0.35,
+      "fluidez": 0.25
+    },
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    },
+    "nota_maxima_si_repite_palabras": 2.0,
+    "evaluacion_por_pagina": true
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "agente": "04_editor_claridad",
+  "descripcion": "Criterios de evaluación para el Editor de claridad",
+  "metricas": {
+    "claridad_linguistica": {
+      "peso": 0.4,
+      "descripcion": "Evaluación de la simplificación y claridad del lenguaje",
+      "criterios": {
+        "vocabulario_apropiado": {
+          "descripcion": "¿El vocabulario es apropiado para la edad objetivo?",
+          "verificar": "palabras comprensibles, no abstractas",
+          "esencial": true
+        },
+        "ideas_concretas": {
+          "descripcion": "¿Cada verso presenta una idea visual concreta?",
+          "verificar": "una imagen clara por verso, sin ambigüedades",
+          "esencial": true
+        },
+        "lenguaje_directo": {
+          "descripcion": "¿Usa lenguaje directo sin metáforas complejas?",
+          "verificar": "evita abstracciones y figuras difíciles",
+          "esencial": true
+        },
+        "sin_ambiguedades": {
+          "descripcion": "¿Se eliminaron todas las ambigüedades?",
+          "verificar": "significado único y claro en cada verso",
+          "esencial": false
+        },
+        "palabras_concretas": {
+          "descripcion": "¿Reemplazó palabras abstractas por concretas?",
+          "verificar": "sustantivos y verbos tangibles",
+          "esencial": false
+        }
+      }
+    },
+    "preservacion_poetica": {
+      "peso": 0.3,
+      "descripcion": "Evaluación del mantenimiento de la calidad poética",
+      "criterios": {
+        "metrica_mantenida": {
+          "descripcion": "¿Mantiene métrica de 6-12 sílabas por verso?",
+          "verificar": "contar sílabas en cada verso",
+          "esencial": true
+        },
+        "rima_preservada": {
+          "descripcion": "¿Preserva esquema de rima AABB o ABAB?",
+          "verificar": "patrón de rima consistente",
+          "esencial": true
+        },
+        "belleza_poetica": {
+          "descripcion": "¿Mantiene belleza sin sacrificar claridad?",
+          "verificar": "lenguaje evocador pero simple",
+          "esencial": false
+        },
+        "cuatro_versos_pagina": {
+          "descripcion": "¿Cada página tiene exactamente 4 versos?",
+          "verificar": "contar versos por página",
+          "esencial": true
+        }
+      }
+    },
+    "documentacion_cambios": {
+      "peso": 0.3,
+      "descripcion": "Evaluación del registro de modificaciones",
+      "criterios": {
+        "glosario_completo": {
+          "descripcion": "¿El glosario incluye TODAS las simplificaciones?",
+          "verificar": "cada cambio tiene entrada original/simple",
+          "esencial": true
+        },
+        "cambios_registrados": {
+          "descripcion": "¿Registra todos los cambios clave?",
+          "verificar": "campo cambios_clave documentado",
+          "esencial": true
+        },
+        "justificacion_clara": {
+          "descripcion": "¿Los cambios están bien justificados?",
+          "verificar": "razón pedagógica para cada cambio",
+          "esencial": false
+        }
+      }
+    }
+  },
+  "ajustes_contextuales": {
+    "simplificacion_excepcional": {
+      "max_ajuste": 0.3,
+      "descripcion": "Simplificación magistral sin perder esencia",
+      "aplicar_si": "logra claridad cristalina manteniendo poesía"
+    },
+    "innovacion_pedagogica": {
+      "max_ajuste": 0.2,
+      "descripcion": "Soluciones creativas para conceptos difíciles",
+      "aplicar_si": "encuentra formas originales de simplificar"
+    },
+    "perdida_poetica": {
+      "max_ajuste": -0.3,
+      "descripcion": "Simplificación excesiva que pierde magia",
+      "aplicar_si": "texto queda plano o sin emoción"
+    },
+    "cambios_no_documentados": {
+      "max_ajuste": -0.2,
+      "descripcion": "Modificaciones sin registrar",
+      "aplicar_si": "hay cambios evidentes no incluidos en glosario"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_metricas + ajustes_contextuales",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    }
+  }
+}

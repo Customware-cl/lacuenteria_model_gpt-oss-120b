@@ -1,0 +1,80 @@
+{
+  "character_bible": [
+    {
+      "nombre": "Emilia",
+      "edad": "5 años",
+      "rasgos_visibles": "Cabello castaño rizado, ojos marrones, sonrisa curiosa",
+      "vestuario": "Gorro rojo de lana, vestido amarillo con botones blancos",
+      "colores_clave": [
+        "rojo brillante",
+        "azul cielo",
+        "amarillo sol"
+      ],
+      "objeto_ancla": "gorro rojo",
+      "gestos": "Señala con el dedo índice y agita las manos al cantar",
+      "no_haria": "No dejaría su gorro sin vigilar"
+    },
+    {
+      "nombre": "Lucho",
+      "edad": "6 años",
+      "rasgos_visibles": "Pelo negro corto, gafas redondas, expresión tímida",
+      "vestuario": "Camisa gris perla, pantalón azul marino",
+      "colores_clave": [
+        "gris perla",
+        "azul marino"
+      ],
+      "objeto_ancla": "caja mágica",
+      "gestos": "Se agacha bajo la mesa y observa con ojos brillantes",
+      "no_haria": "No traicionaría la confianza de sus amigos"
+    },
+    {
+      "nombre": "Tomás",
+      "edad": "5 años",
+      "rasgos_visibles": "Pelo rubio lacio, sonrisa amplia",
+      "vestuario": "Camisa verde lima, pantalón beige",
+      "colores_clave": [
+        "verde lima",
+        "beige arena"
+      ],
+      "objeto_ancla": "llave dorada",
+      "gestos": "Entrega objetos con ambas manos y salta ligeramente",
+      "no_haria": "No rompería una promesa de compartir"
+    }
+  ],
+  "continuidad_narrativa": {
+    "relaciones": "Emilia celebra su cumpleaños y lidera el juego; Lucho es su compañero tímido que se une al juego; Tomás es el amigo que le regala el azul cielo y ayuda a encontrar la llave.",
+    "evolucion_emocional": "Emilia pasa de tristeza por perder su gorro a alegría al recuperar el azul cielo y compartir con sus amigos; Lucho evoluciona de esconderse bajo la mesa a sonreír al ser invitado; Tomás mantiene una actitud de apoyo constante durante toda la historia.",
+    "objeto_ancla_reapariciones": [
+      {
+        "personaje": "Emilia",
+        "paginas": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      {
+        "personaje": "Lucho",
+        "paginas": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      {
+        "personaje": "Tomás",
+        "paginas": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      }
+    ]
+  }
+}

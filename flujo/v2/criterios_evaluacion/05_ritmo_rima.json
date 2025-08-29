@@ -1,0 +1,263 @@
+{
+  "agente": "05_ritmo_rima",
+  "descripcion": "Criterios de evaluación página por página para el Entrenador de ritmo y rima",
+  "metricas": {
+    "correccion_repeticiones": {
+      "peso": 0.5,
+      "descripcion": "Evaluación de eliminación de palabras repetidas en rimas",
+      "criterios": {
+        "pagina_1_sin_repeticion": {
+          "descripcion": "¿Página 1: versos 1-2 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas (no rojo/rojo)",
+          "esencial": true
+        },
+        "pagina_1_sin_repeticion_34": {
+          "descripcion": "¿Página 1: versos 3-4 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_2_sin_repeticion": {
+          "descripcion": "¿Página 2: versos 1-2 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_2_sin_repeticion_34": {
+          "descripcion": "¿Página 2: versos 3-4 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_3_sin_repeticion": {
+          "descripcion": "¿Página 3: versos 1-2 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_3_sin_repeticion_34": {
+          "descripcion": "¿Página 3: versos 3-4 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_4_sin_repeticion": {
+          "descripcion": "¿Página 4: versos 1-2 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_4_sin_repeticion_34": {
+          "descripcion": "¿Página 4: versos 3-4 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_5_sin_repeticion": {
+          "descripcion": "¿Página 5: versos 1-2 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_5_sin_repeticion_34": {
+          "descripcion": "¿Página 5: versos 3-4 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_6_sin_repeticion": {
+          "descripcion": "¿Página 6: versos 1-2 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_6_sin_repeticion_34": {
+          "descripcion": "¿Página 6: versos 3-4 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_7_sin_repeticion": {
+          "descripcion": "¿Página 7: versos 1-2 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_7_sin_repeticion_34": {
+          "descripcion": "¿Página 7: versos 3-4 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_8_sin_repeticion": {
+          "descripcion": "¿Página 8: versos 1-2 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_8_sin_repeticion_34": {
+          "descripcion": "¿Página 8: versos 3-4 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_9_sin_repeticion": {
+          "descripcion": "¿Página 9: versos 1-2 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_9_sin_repeticion_34": {
+          "descripcion": "¿Página 9: versos 3-4 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_10_sin_repeticion": {
+          "descripcion": "¿Página 10: versos 1-2 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        },
+        "pagina_10_sin_repeticion_34": {
+          "descripcion": "¿Página 10: versos 3-4 terminan en palabras DIFERENTES?",
+          "verificar": "palabras finales distintas",
+          "esencial": true
+        }
+      }
+    },
+    "metrica_correcta": {
+      "peso": 0.25,
+      "descripcion": "Evaluación de métrica por página",
+      "criterios": {
+        "pagina_1_metro": {
+          "descripcion": "¿Página 1: todos los versos tienen 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "pagina_2_metro": {
+          "descripcion": "¿Página 2: todos los versos tienen 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "pagina_3_metro": {
+          "descripcion": "¿Página 3: todos los versos tienen 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "pagina_4_metro": {
+          "descripcion": "¿Página 4: todos los versos tienen 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "pagina_5_metro": {
+          "descripcion": "¿Página 5: todos los versos tienen 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "pagina_6_metro": {
+          "descripcion": "¿Página 6: todos los versos tienen 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "pagina_7_metro": {
+          "descripcion": "¿Página 7: todos los versos tienen 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "pagina_8_metro": {
+          "descripcion": "¿Página 8: todos los versos tienen 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "pagina_9_metro": {
+          "descripcion": "¿Página 9: todos los versos tienen 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "pagina_10_metro": {
+          "descripcion": "¿Página 10: todos los versos tienen 6-12 sílabas?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        }
+      }
+    },
+    "calidad_mejoras": {
+      "peso": 0.25,
+      "descripcion": "Evaluación de la calidad de las correcciones realizadas",
+      "criterios": {
+        "elimino_todas_repeticiones": {
+          "descripcion": "¿Eliminó TODAS las palabras repetidas del cuentacuentos?",
+          "verificar": "ninguna palabra se repite para rimar",
+          "esencial": true
+        },
+        "mantuvo_sentido": {
+          "descripcion": "¿Las correcciones mantienen el sentido narrativo?",
+          "verificar": "historia coherente después de cambios",
+          "esencial": true
+        },
+        "rimas_naturales": {
+          "descripcion": "¿Las nuevas rimas suenan naturales?",
+          "verificar": "no hay inversiones sintácticas forzadas",
+          "esencial": true
+        },
+        "esquema_consistente": {
+          "descripcion": "¿Mantiene esquema AABB en todas las páginas?",
+          "verificar": "patrón de rima coherente",
+          "esencial": true
+        },
+        "finales_documentados": {
+          "descripcion": "¿Documentó correctamente finales_de_verso?",
+          "verificar": "campo completo con palabras finales reales",
+          "esencial": true
+        },
+        "vocabulario_apropiado": {
+          "descripcion": "¿Las palabras nuevas son apropiadas para niños?",
+          "verificar": "vocabulario comprensible para edad objetivo",
+          "esencial": false
+        },
+        "variedad_rimas": {
+          "descripcion": "¿Evita repetir las mismas terminaciones?",
+          "verificar": "no más de 2 páginas con misma terminación",
+          "esencial": false
+        }
+      }
+    }
+  },
+  "penalizaciones_especiales": {
+    "dejo_repeticion": {
+      "penalizacion": -2.0,
+      "descripcion": "Dejó palabra repetida sin corregir",
+      "aplicar_si": "encuentra cualquier palabra repetida para rimar"
+    },
+    "empeoro_metrica": {
+      "penalizacion": -1.0,
+      "descripcion": "Empeoró la métrica al corregir",
+      "aplicar_si": "algún verso excede 12 sílabas después de corrección"
+    },
+    "perdio_sentido": {
+      "penalizacion": -1.0,
+      "descripcion": "Perdió coherencia narrativa",
+      "aplicar_si": "las correcciones no tienen sentido en contexto"
+    },
+    "inversiones_sintacticas": {
+      "penalizacion": -0.5,
+      "descripcion": "Introdujo inversiones sintácticas",
+      "aplicar_si": "usa orden antinatural de palabras"
+    }
+  },
+  "ajustes_contextuales": {
+    "maestria_correctiva": {
+      "max_ajuste": 0.3,
+      "descripcion": "Correcciones excepcionales",
+      "aplicar_si": "todas las correcciones mejoran el texto original"
+    },
+    "creatividad_rimica": {
+      "max_ajuste": 0.2,
+      "descripcion": "Rimas originales y sorprendentes",
+      "aplicar_si": "encuentra combinaciones frescas y naturales"
+    },
+    "mejora_integral": {
+      "max_ajuste": 0.2,
+      "descripcion": "Mejora global del texto",
+      "aplicar_si": "el texto pulido supera claramente al original"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_metricas + penalizaciones + ajustes_contextuales",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    },
+    "nota_maxima_si_deja_repeticion": 1.0
+  }
+}

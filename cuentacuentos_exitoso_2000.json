@@ -1,0 +1,24 @@
+{
+  "paginas_texto": {
+    "1": "En un pueblo de luz, vivía Emilia,\ncon ojos curiosos y risa cristalina.\nEl sol la saludaba al salir la aurora,\ny soñaba con sorbos de dulce en su hora.",
+    "2": "Llegó la mañana del gran cumpleaños,\n¡Tic, tac, la canción del pastel! suena entre los años.\nLos amigos reunidos, cantan sin parar,\ny el aroma del azúcar empieza a volar.",
+    "3": "En la cocina, la abuela mezcla la masa,\ncon harina, huevos y una pizca de gracia.\nEmilia observa, con manos temblorosas,\ny siente que el tiempo se vuelve melodioso.",
+    "4": "El horno chisporrotea, la luz se vuelve dorada,\nel pastel sube, como una nube alada.\nLos niños curiosos miran con ilusión,\nmientras el reloj marca la canción.",
+    "5": "Cuando el pastel está listo, brilla como sol,\n¡Tic, tac, la canción del pastel! vibra en el corazón.\nEmilia sopla velas, pidiendo un deseo,\ny la fiesta comienza con risas al cielo.",
+    "6": "Los colores del confeti caen como lluvia,\ny la música suena, la alegría fluye.\nLos cuentos de hadas se cuentan alrededor,\nmientras el pastel espera su dulce sabor.",
+    "7": "Cada trozo se reparte, generoso y tierno,\nlas manos se unen, el cariño es eterno.\nEmilia prueba, la primera mordida es luz,\ny el sabor del sueño a todos seduz.",
+    "8": "El día se vuelve noche, las estrellas cantan,\npero el eco del pastel nunca se espanta.\nLos recuerdos se guardan en la memoria,\ncomo un tesoro de azúcar y de historia.",
+    "9": "Al final del festín, el cansancio llega suave,\npero el corazón de Emilia aún late fuerte y grave.\nPromete volver a hornear otro día,\ny compartir la magia con armonía.",
+    "10": "Al cerrar los ojos, la noche susurra un final,\n¡Tic, tac, la canción del pastel! retumba en el umbral.\nEmilia sueña con futuros pasteles dorados,\ny el canto del tiempo sigue, nunca apagado."
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    10
+  ],
+  "_metadata_tokens": {
+    "prompt_tokens": 268,
+    "completion_tokens": 1475,
+    "total_tokens": 1743
+  }
+}

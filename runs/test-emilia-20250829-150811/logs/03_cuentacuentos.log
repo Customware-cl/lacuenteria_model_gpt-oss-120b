@@ -1,0 +1,84 @@
+[
+  {
+    "timestamp": "2025-08-29T15:13:25.708121",
+    "retry_count": 1,
+    "qa_scores": {
+      "metro": {
+        "criterios_evaluados": {
+          "pagina1": true,
+          "pagina2": true,
+          "pagina3": true,
+          "pagina4": true,
+          "pagina5": true,
+          "pagina6": false,
+          "pagina7": false,
+          "pagina8": true,
+          "pagina9": true,
+          "pagina10": false
+        },
+        "criterios_cumplidos": 7,
+        "criterios_totales": 10,
+        "criterios_esenciales_fallados": [
+          "pagina6",
+          "pagina7",
+          "pagina10"
+        ],
+        "porcentaje": 70,
+        "nota_calculada": 3.5,
+        "ajustes_contextuales": [],
+        "nota_final": 3.5
+      },
+      "rima": {
+        "criterios_evaluados": {
+          "pagina1": true,
+          "pagina2": true,
+          "pagina3": true,
+          "pagina4": false,
+          "pagina5": true,
+          "pagina6": true,
+          "pagina7": true,
+          "pagina8": true,
+          "pagina9": true,
+          "pagina10": true
+        },
+        "criterios_cumplidos": 9,
+        "criterios_totales": 10,
+        "criterios_esenciales_fallados": [
+          "pagina4"
+        ],
+        "porcentaje": 90,
+        "nota_calculada": 4.5,
+        "ajustes_contextuales": [],
+        "nota_final": 4.5
+      },
+      "leitmotiv": {
+        "criterios_evaluados": {
+          "pagina2": true,
+          "pagina5": true,
+          "pagina10": true
+        },
+        "criterios_cumplidos": 3,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "promedio": {
+        "nota_ponderada": 4.33,
+        "ajustes_globales": [],
+        "nota_final": 4.33
+      }
+    },
+    "execution_time": 63.547646,
+    "temperature": 0.7,
+    "max_tokens": 20000,
+    "status": "success",
+    "tokens_consumed": {
+      "prompt_tokens": 2698,
+      "completion_tokens": 8983,
+      "total_tokens": 11681
+    }
+  }
+]

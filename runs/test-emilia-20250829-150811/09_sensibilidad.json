@@ -1,0 +1,29 @@
+{
+  "riesgos_detectados": [
+    {
+      "pagina": 1,
+      "detalle": "Se presenta a Emilia como triste y dependiente de Tomás para resolver su problema, lo que refuerza un estereotipo de género donde la niña es emocional y el niño es el solucionador.",
+      "riesgo": "estereotipo de género"
+    },
+    {
+      "pagina": 2,
+      "detalle": "Los personajes mostrados carecen de diversidad étnica, de capacidades diferentes o de estructuras familiares variadas, limitando la inclusión.",
+      "riesgo": "falta de diversidad e inclusión"
+    }
+  ],
+  "correcciones_sugeridas": [
+    {
+      "pagina": 1,
+      "texto_o_prompt": "Modificar la escena para que Emilia tome una actitud proactiva: \"Emilia busca su gorro rojo y, con la ayuda de Tomás, también encuentra una pieza de tela azul cielo, mostrando iniciativa y alegría al descubrir ambos objetos.\""
+    },
+    {
+      "pagina": 2,
+      "texto_o_prompt": "Añadir diversidad de personajes: incluir a una niña que usa silla de ruedas y a un niño con cabello rizado, todos participando alegremente en el jardín."
+    },
+    {
+      "pagina": 7,
+      "texto_o_prompt": "Reformular la acción de Lucho: \"Lucho explora bajo la mesa y, tras ser invitado por Emilia, se une al baile, mostrando curiosidad y entusiasmo.\""
+    }
+  ],
+  "apto_para_ninos": true
+}

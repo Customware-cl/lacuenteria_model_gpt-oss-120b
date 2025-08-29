@@ -1,0 +1,135 @@
+{
+  "agente": "11_loader",
+  "descripcion": "Criterios de evaluación para el Generador de loader",
+  "metricas": {
+    "personalizacion": {
+      "peso": 0.4,
+      "descripcion": "Evaluación del uso de elementos específicos del cuento",
+      "criterios": {
+        "diez_mensajes": {
+          "descripcion": "¿Genera exactamente 10 mensajes?",
+          "verificar": "array loader con 10 elementos",
+          "esencial": true
+        },
+        "usa_nombre_personajes": {
+          "descripcion": "¿Menciona nombres de personajes específicos?",
+          "verificar": "incluye nombres propios del cuento",
+          "esencial": true
+        },
+        "incluye_leitmotiv": {
+          "descripcion": "¿Hace guiños al leitmotiv?",
+          "verificar": "referencia el leitmotiv al menos una vez",
+          "esencial": false
+        },
+        "objetos_ancla": {
+          "descripcion": "¿Menciona objetos ancla de la bible?",
+          "verificar": "incluye elementos de continuidad",
+          "esencial": false
+        },
+        "mensaje_transmitir": {
+          "descripcion": "¿Conecta con el mensaje a transmitir?",
+          "verificar": "alude al tema principal",
+          "esencial": false
+        },
+        "elementos_visuales": {
+          "descripcion": "¿Referencia colores o atmósferas del color_script?",
+          "verificar": "menciona paletas o momentos visuales",
+          "esencial": false
+        }
+      }
+    },
+    "experiencia_wow": {
+      "peso": 0.35,
+      "descripcion": "Evaluación del impacto emocional y sorpresa",
+      "criterios": {
+        "tono_magico": {
+          "descripcion": "¿Mantiene tono cálido, esperanzador y mágico?",
+          "verificar": "lenguaje evocador y positivo",
+          "esencial": true
+        },
+        "evita_cliches": {
+          "descripcion": "¿Evita frases cliché de carga?",
+          "verificar": "no usa 'cargando...', 'procesando...'",
+          "esencial": true
+        },
+        "sorprendentes": {
+          "descripcion": "¿Los mensajes producen efecto WOW?",
+          "verificar": "frases inesperadas y encantadoras",
+          "esencial": true
+        },
+        "longitud_apropiada": {
+          "descripcion": "¿Respeta máximo 70 caracteres recomendado?",
+          "verificar": "mensajes breves y poderosos",
+          "esencial": false
+        },
+        "sin_lenguaje_tecnico": {
+          "descripcion": "¿Evita términos técnicos?",
+          "verificar": "no dice 'render', 'pipeline', etc.",
+          "esencial": true
+        }
+      }
+    },
+    "variedad_progresion": {
+      "peso": 0.25,
+      "descripcion": "Evaluación de la diversidad de mensajes",
+      "criterios": {
+        "tipos_variados": {
+          "descripcion": "¿Alterna tipos de mensaje?",
+          "verificar": "progreso, anticipación, personalización variados",
+          "esencial": true
+        },
+        "sin_repeticiones": {
+          "descripcion": "¿Evita repetir palabras/frases?",
+          "verificar": "cada mensaje aporta algo nuevo",
+          "esencial": true
+        },
+        "progresion_logica": {
+          "descripcion": "¿Hay sensación de avance?",
+          "verificar": "mensajes sugieren progreso de creación",
+          "esencial": false
+        },
+        "micro_logros": {
+          "descripcion": "¿Incluye micro-logros específicos?",
+          "verificar": "celebra páginas o elementos completados",
+          "esencial": false
+        }
+      }
+    }
+  },
+  "ajustes_contextuales": {
+    "mensajes_memorables": {
+      "max_ajuste": 0.3,
+      "descripcion": "Mensajes excepcionalmente creativos",
+      "aplicar_si": "frases que quedan grabadas en la memoria"
+    },
+    "inmersion_total": {
+      "max_ajuste": 0.2,
+      "descripcion": "Crea inmersión completa en el cuento",
+      "aplicar_si": "usuario siente que vive la creación"
+    },
+    "mensajes_genericos": {
+      "max_ajuste": -0.3,
+      "descripcion": "Mensajes muy genéricos",
+      "aplicar_si": "podrían aplicar a cualquier cuento"
+    },
+    "falta_personalizacion": {
+      "max_ajuste": -0.2,
+      "descripcion": "No usa elementos específicos",
+      "aplicar_si": "no menciona personajes ni elementos únicos"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_metricas + ajustes_contextuales",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    }
+  }
+}

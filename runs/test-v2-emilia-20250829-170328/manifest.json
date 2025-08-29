@@ -1,0 +1,141 @@
+{
+  "story_id": "test-v2-emilia-20250829-170328",
+  "source": "local",
+  "created_at": "2025-08-29T17:03:28.560767",
+  "updated_at": "2025-08-29T17:05:31.707739",
+  "estado": "error",
+  "paso_actual": "03_cuentacuentos",
+  "qa_historial": {
+    "01_director": {
+      "estructura_narrativa": {
+        "criterios_evaluados": {
+          "introduccion_presenta": true,
+          "desarrollo_presenta": true,
+          "climax_presenta": true,
+          "resolucion_presenta": true
+        },
+        "criterios_cumplidos": 4,
+        "criterios_totales": 4,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "leitmotiv_contado": {
+        "criterios_evaluados": {
+          "presencia_minima_3_veces_en_beat_sheet": true
+        },
+        "criterios_cumplidos": 1,
+        "criterios_totales": 1,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "etiquetado_conflicto_resolucion": {
+        "criterios_evaluados": {
+          "paginas_1_9_usar_conflicto": true,
+          "pagina_10_usar_resolucion": true
+        },
+        "criterios_cumplidos": 2,
+        "criterios_totales": 2,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "promedio": {
+        "nota_ponderada": 5.0,
+        "ajustes_globales": [],
+        "nota_final": 5.0
+      }
+    },
+    "02_psicoeducador": {
+      "alineacion_edad": {
+        "criterios_evaluados": {
+          "edad_objetivo_especificada": false,
+          "micro_habilidades_apropiadas_para_edad": true
+        },
+        "criterios_cumplidos": 1,
+        "criterios_totales": 2,
+        "criterios_esenciales_fallados": [
+          "edad_objetivo_especificada"
+        ],
+        "porcentaje": 50,
+        "nota_calculada": 2.5,
+        "ajustes_contextuales": [],
+        "nota_final": 2.5
+      },
+      "recursos_implementables": {
+        "criterios_evaluados": {
+          "todos_los_recursos_concretos_y_aplicables": true,
+          "ningun_recurso_peligroso": true
+        },
+        "criterios_cumplidos": 2,
+        "criterios_totales": 2,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5,
+        "ajustes_contextuales": [],
+        "nota_final": 5
+      },
+      "ausencia_moralizacion": {
+        "criterios_evaluados": {
+          "sin_juicios_morales": true,
+          "sin_lenguaje_paternizador": true
+        },
+        "criterios_cumplidos": 2,
+        "criterios_totales": 2,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5,
+        "ajustes_contextuales": [],
+        "nota_final": 5
+      },
+      "promedio": {
+        "nota_ponderada": 4.1666666667,
+        "ajustes_globales": [],
+        "nota_final": 4.1666666667
+      }
+    }
+  },
+  "devoluciones": [],
+  "reintentos": {
+    "02_psicoeducador": 2
+  },
+  "timestamps": {
+    "01_director": {
+      "start": "2025-08-29T17:03:28.561231",
+      "end": "2025-08-29T17:04:01.945397",
+      "duration": 33.384161
+    },
+    "02_psicoeducador": {
+      "start": "2025-08-29T17:04:01.946013",
+      "end": "2025-08-29T17:05:31.707437",
+      "duration": 89.761419
+    },
+    "03_cuentacuentos": {
+      "start": "2025-08-29T17:05:31.708213",
+      "end": "2025-08-29T17:10:46.434091",
+      "duration": 314.725872
+    }
+  },
+  "webhook_url": null,
+  "webhook_attempts": 0,
+  "pipeline_version": "v2",
+  "configuracion_modelo": {
+    "modelo": "openai/gpt-oss-120b",
+    "endpoint": "http://69.19.136.204:8000/v1/chat/completions",
+    "timeout": 900,
+    "default_temperature": 0.7,
+    "default_max_tokens": 20000
+  },
+  "error": {
+    "agent": "03_cuentacuentos",
+    "message": "Contexto excedido - El modelo no puede procesar esta cantidad de información",
+    "timestamp": "2025-08-29T17:10:46.434131"
+  }
+}

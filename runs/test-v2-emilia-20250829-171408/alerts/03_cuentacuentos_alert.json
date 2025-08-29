@@ -1,0 +1,25 @@
+{
+  "tipo": "contexto_excedido",
+  "agente": "03_cuentacuentos",
+  "intento": 1,
+  "timestamp": "2025-08-29T17:18:22.441359",
+  "critico": true,
+  "contexto": {
+    "temperatura": 0.7,
+    "max_tokens": 20000,
+    "timeout": 900,
+    "prompt_length": 9594,
+    "dependencies_size": 7974,
+    "total_chars": 11497,
+    "approx_tokens": 2874
+  },
+  "diagnostico": {
+    "posibles_causas": [],
+    "metricas": {
+      "prompt_tokens_aprox": 2398,
+      "dependencies_chars": 7974
+    },
+    "recomendaciones": []
+  },
+  "accion": "PROCESO DETENIDO - No se realizarán reintentos"
+}

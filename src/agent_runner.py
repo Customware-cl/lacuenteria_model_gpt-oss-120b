@@ -3,6 +3,7 @@ Ejecutor de agentes individuales
 """
 import json
 import logging
+import os
 from pathlib import Path
 from typing import Dict, Any, List, Optional
 from datetime import datetime
@@ -10,6 +11,7 @@ from datetime import datetime
 from config import (
     get_agent_prompt_path,
     get_artifact_path,
+    get_story_path as get_story_dir,
     AGENT_DEPENDENCIES
 )
 from llm_client import get_llm_client
@@ -25,13 +27,16 @@ class AgentRunner:
     def __init__(self, story_id: str, mode_verificador_qa: bool = True, version: str = 'v1'):
         self.story_id = story_id
         self.llm_client = get_llm_client()
-        self.quality_checker = get_quality_checker()
         self.mode_verificador_qa = mode_verificador_qa
         self.version = version  # Nueva propiedad para versión
         
         # Cargar configuración de versión
         from config import load_version_config
         self.version_config = load_version_config(version)
+        
+        # Inicializar quality_checker con umbrales específicos si existen
+        agent_qa_thresholds = self.version_config.get('agent_qa_thresholds', {})
+        self.quality_checker = get_quality_checker(agent_qa_thresholds)
         
         # Inicializar analizador de conflictos para v2
         self.conflict_analyzer = None
@@ -50,6 +55,7 @@ class AgentRunner:
             Diccionario con el resultado de la ejecución
         """
         logger.info(f"Ejecutando agente: {agent_name} (intento {retry_count + 1})")
+        logger.info(f"DEBUG: Verificando configuración para '{agent_name}'")
         
         try:
             # 1. Cargar el prompt del sistema
@@ -68,14 +74,86 @@ class AgentRunner:
             # 5. Llamar al LLM con temperatura específica
             # Usar configuración de max_tokens específica por agente si existe
             max_tokens = AGENT_MAX_TOKENS.get(agent_name, None)
+            if max_tokens:
+                logger.info(f"📊 Usando max_tokens específico para {agent_name}: {max_tokens}")
+            else:
+                logger.info(f"📊 Sin configuración específica para '{agent_name}', usando default: {self.llm_client.max_tokens}")
+                logger.info(f"📊 Configuraciones disponibles: {list(AGENT_MAX_TOKENS.keys())}")
             
             start_time = datetime.now()
-            agent_output = self.llm_client.generate(
-                system_prompt, 
-                user_prompt,
-                temperature=agent_temperature,
-                max_tokens=max_tokens
-            )
+            try:
+                agent_output = self.llm_client.generate(
+                    system_prompt, 
+                    user_prompt,
+                    temperature=agent_temperature,
+                    max_tokens=max_tokens
+                )
+            except ValueError as ve:
+                # Capturar el caso especial de STOP
+                if "STOP:" in str(ve):
+                    logger.error(f"🛑 {agent_name} - Contexto excedido en primer intento")
+                    
+                    # Crear alerta crítica
+                    alert_data = {
+                        "tipo": "contexto_excedido",
+                        "agente": agent_name,
+                        "intento": retry_count + 1,
+                        "timestamp": datetime.now().isoformat(),
+                        "critico": True,
+                        "contexto": {
+                            "temperatura": agent_temperature or self.llm_client.temperature,
+                            "max_tokens": max_tokens or self.llm_client.max_tokens,
+                            "timeout": self.llm_client.timeout,
+                            "prompt_length": len(user_prompt),
+                            "dependencies_size": sum(len(str(v)) for v in dependencies.values()) if dependencies else 0,
+                            "total_chars": len(system_prompt) + len(user_prompt),
+                            "approx_tokens": (len(system_prompt) + len(user_prompt)) // 4
+                        },
+                        "diagnostico": self._diagnosticar_problema_contenido(agent_name, user_prompt, dependencies),
+                        "accion": "PROCESO DETENIDO - No se realizarán reintentos"
+                    }
+                    
+                    # Guardar alerta crítica
+                    self._registrar_alerta_temprana(alert_data)
+                    
+                    # NO reintentar - propagar el error inmediatamente
+                    return {
+                        "status": "error",
+                        "agent": agent_name,
+                        "error": "Contexto excedido - El modelo no puede procesar esta cantidad de información",
+                        "details": alert_data,
+                        "retry_count": retry_count
+                    }
+                    
+                elif "El modelo no generó contenido" in str(ve):
+                    # ALERTA TEMPRANA - Intento sin contenido (no es el primero)
+                    logger.error(f"🚨 ALERTA: {agent_name} - El modelo no generó contenido en intento {retry_count + 1}")
+                    
+                    # Crear alerta detallada
+                    alert_data = {
+                        "tipo": "contenido_vacio",
+                        "agente": agent_name,
+                        "intento": retry_count + 1,
+                        "timestamp": datetime.now().isoformat(),
+                        "contexto": {
+                            "temperatura": agent_temperature or self.llm_client.temperature,
+                            "max_tokens": max_tokens or self.llm_client.max_tokens,
+                            "timeout": self.llm_client.timeout,
+                            "prompt_length": len(user_prompt),
+                            "dependencies_size": sum(len(str(v)) for v in dependencies.values()) if dependencies else 0
+                        },
+                        "diagnostico": self._diagnosticar_problema_contenido(agent_name, user_prompt, dependencies)
+                    }
+                    
+                    # Guardar alerta en manifest
+                    self._registrar_alerta_temprana(alert_data)
+                    
+                    # Re-lanzar para que el flujo normal maneje el reintento
+                    raise
+                else:
+                    # Otros errores de ValueError
+                    raise
+            
             execution_time = (datetime.now() - start_time).total_seconds()
             
             # Extraer información de tokens si está disponible
@@ -123,7 +201,7 @@ class AgentRunner:
                             system_prompt=self._load_system_prompt("verificador_qa"),
                             user_prompt=verification_prompt,
                             temperature=0.3,  # Baja para evaluación consistente
-                            max_tokens=3000  # Aumentado para respuestas completas
+                            max_tokens=30000  # Masivo para evaluar contenidos grandes
                         )
                         
                         # Restaurar timeout original
@@ -195,10 +273,39 @@ class AgentRunner:
                             improvement_instructions, 
                             retry_count + 1,
                             conflict_analysis=conflict_analysis,
-                            qa_issues=qa_issues
+                            qa_issues=qa_issues,
+                            previous_output=agent_output
                         )
                     else:
                         logger.error(f"Máximo de reintentos alcanzado para {agent_name}")
+                        
+                        # IMPORTANTE: Guardar el output aunque falle QA para no romper dependencias
+                        output_file = self._get_output_filename(agent_name)
+                        # Agregar metadata de QA al output antes de guardar
+                        agent_output_with_qa = agent_output.copy()
+                        agent_output_with_qa["_qa_metadata"] = {
+                            "status": "failed",
+                            "scores": qa_scores,
+                            "issues": qa_issues[:5],  # Solo los 5 principales
+                            "retry_count": retry_count,
+                            "timestamp": datetime.now().isoformat()
+                        }
+                        self._save_output(output_file, agent_output_with_qa)
+                        logger.warning(f"Output guardado con QA fallido para {agent_name} (para mantener dependencias)")
+                        
+                        # Guardar log del fallo
+                        log_data = {
+                            "timestamp": datetime.now().isoformat(),
+                            "retry_count": retry_count,
+                            "qa_scores": qa_scores,
+                            "execution_time": execution_time,
+                            "temperature": agent_temperature or self.llm_client.temperature,
+                            "max_tokens": max_tokens or self.llm_client.max_tokens,
+                            "status": "qa_failed",
+                            "qa_issues": qa_issues[:5]
+                        }
+                        self._save_log(agent_name, log_data)
+                        
                         return {
                             "status": "qa_failed",
                             "agent": agent_name,
@@ -254,7 +361,9 @@ class AgentRunner:
     def _load_system_prompt(self, agent_name: str) -> str:
         """Carga el prompt del sistema para un agente según versión"""
         # Usar versión para obtener el path correcto
+        logger.info(f"🔍 Cargando prompt para {agent_name} con versión {self.version}")
         prompt_path = get_agent_prompt_path(agent_name, self.version)
+        logger.info(f"🔍 Path calculado: {prompt_path}")
         
         with open(prompt_path, 'r', encoding='utf-8') as f:
             agent_config = json.load(f)
@@ -382,7 +491,8 @@ class AgentRunner:
                                  improvements: str, 
                                  retry_count: int,
                                  conflict_analysis: Optional[Dict[str, Any]] = None,
-                                 qa_issues: Optional[List[str]] = None) -> Dict[str, Any]:
+                                 qa_issues: Optional[List[str]] = None,
+                                 previous_output: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """Reintenta un agente con instrucciones de mejora y feedback específico"""
         logger.info(f"Reintentando {agent_name} con mejoras (intento {retry_count})")
         
@@ -397,6 +507,16 @@ class AgentRunner:
         user_prompt += "\n\n" + "=" * 50
         user_prompt += "\n⚠️ RETROALIMENTACIÓN DEL VERIFICADOR DE CALIDAD ⚠️\n"
         user_prompt += "=" * 50 + "\n"
+        
+        # IMPORTANTE: Incluir el output anterior para que el modelo lo corrija
+        if previous_output:
+            user_prompt += "\n📝 TU OUTPUT ANTERIOR (que necesita correcciones):\n"
+            user_prompt += "```json\n"
+            user_prompt += json.dumps(previous_output, ensure_ascii=False, indent=2)
+            user_prompt += "\n```\n"
+            user_prompt += "\n⚠️ INSTRUCCIÓN CRÍTICA: NO generes un output completamente nuevo.\n"
+            user_prompt += "Toma el JSON anterior como base y MODIFICA SOLO lo necesario para corregir los problemas señalados.\n"
+            user_prompt += "Mantén todo lo que está bien y cambia únicamente lo que se indica a continuación.\n"
         
         # Si tenemos análisis de conflictos (v2), usar feedback específico
         if conflict_analysis and conflict_analysis.get('recommendations'):
@@ -430,8 +550,15 @@ class AgentRunner:
         
         # Instrucción final enfática
         user_prompt += "\n\n" + "=" * 50
-        user_prompt += "\n🎯 IMPORTANTE: Por favor, genera una nueva versión que ESPECÍFICAMENTE resuelva los problemas mencionados arriba.\n"
-        user_prompt += "No repitas los mismos errores. Presta especial atención a los puntos marcados con ⚠️.\n"
+        if previous_output:
+            user_prompt += "\n🎯 MODO CORRECCIÓN ACTIVADO:\n"
+            user_prompt += "1. USA el JSON anterior como base\n"
+            user_prompt += "2. APLICA SOLO las correcciones específicas mencionadas\n"
+            user_prompt += "3. MANTÉN todo lo demás exactamente igual\n"
+            user_prompt += "4. NO regeneres desde cero\n"
+        else:
+            user_prompt += "\n🎯 IMPORTANTE: Por favor, genera una nueva versión que ESPECÍFICAMENTE resuelva los problemas mencionados arriba.\n"
+            user_prompt += "No repitas los mismos errores. Presta especial atención a los puntos marcados con ⚠️.\n"
         user_prompt += "=" * 50
         
         # Ejecutar de nuevo (recursivamente)
@@ -471,3 +598,88 @@ class AgentRunner:
             json.dump(logs, f, ensure_ascii=False, indent=2)
         
         logger.info(f"Log guardado para {agent_name}")
+    
+    def _diagnosticar_problema_contenido(self, agent_name: str, user_prompt: str, dependencies: Dict[str, Any]) -> Dict[str, Any]:
+        """Diagnostica por qué el modelo no generó contenido"""
+        diagnostico = {
+            "posibles_causas": [],
+            "metricas": {},
+            "recomendaciones": []
+        }
+        
+        # Analizar tamaño del prompt
+        prompt_tokens_approx = len(user_prompt) // 4  # Aproximación
+        diagnostico["metricas"]["prompt_tokens_aprox"] = prompt_tokens_approx
+        
+        if prompt_tokens_approx > 3000:
+            diagnostico["posibles_causas"].append("Prompt demasiado largo (>3000 tokens aprox)")
+            diagnostico["recomendaciones"].append("Reducir tamaño de dependencias o simplificar prompt")
+        
+        # Analizar dependencias
+        if dependencies:
+            dep_size = sum(len(str(v)) for v in dependencies.values())
+            diagnostico["metricas"]["dependencies_chars"] = dep_size
+            
+            if dep_size > 20000:
+                diagnostico["posibles_causas"].append(f"Dependencias muy grandes ({dep_size} caracteres)")
+                diagnostico["recomendaciones"].append("Considerar resumir o filtrar dependencias")
+        
+        # Analizar agente específico
+        agentes_problematicos = ["cuentacuentos", "validador", "loader"]
+        if agent_name in agentes_problematicos:
+            diagnostico["posibles_causas"].append(f"Agente {agent_name} requiere output extenso")
+            diagnostico["recomendaciones"].append(f"Aumentar max_tokens para {agent_name}")
+        
+        # Verificar JSON complejo
+        if agent_name in ["validador", "cuentacuentos"]:
+            diagnostico["posibles_causas"].append("Output JSON muy complejo requerido")
+            diagnostico["recomendaciones"].append("Considerar dividir en sub-tareas")
+        
+        # Timeout vs contenido vacío
+        if self.llm_client.timeout < 600:
+            diagnostico["posibles_causas"].append(f"Timeout muy corto ({self.llm_client.timeout}s)")
+            diagnostico["recomendaciones"].append("Aumentar timeout a 900s")
+        
+        return diagnostico
+    
+    def _registrar_alerta_temprana(self, alert_data: Dict[str, Any]):
+        """Registra una alerta temprana en el manifest y logs"""
+        try:
+            # Actualizar manifest con alerta
+            manifest_path = get_artifact_path(self.story_id, "manifest.json")
+            
+            if os.path.exists(manifest_path):
+                with open(manifest_path, 'r', encoding='utf-8') as f:
+                    manifest = json.load(f)
+            else:
+                manifest = {}
+            
+            # Agregar sección de alertas si no existe
+            if "alertas_tempranas" not in manifest:
+                manifest["alertas_tempranas"] = []
+            
+            manifest["alertas_tempranas"].append(alert_data)
+            
+            # También actualizar el campo de error si es relevante
+            if alert_data["intento"] == 1:  # Primer intento
+                manifest["primer_fallo_contenido"] = {
+                    "agente": alert_data["agente"],
+                    "timestamp": alert_data["timestamp"],
+                    "diagnostico_resumen": alert_data["diagnostico"]["posibles_causas"][:2] if alert_data["diagnostico"]["posibles_causas"] else []
+                }
+            
+            with open(manifest_path, 'w', encoding='utf-8') as f:
+                json.dump(manifest, f, ensure_ascii=False, indent=2)
+            
+            # Guardar también en log específico de alertas
+            alerts_dir = os.path.join(get_story_dir(self.story_id), "alerts")
+            os.makedirs(alerts_dir, exist_ok=True)
+            
+            alert_file = os.path.join(alerts_dir, f"{alert_data['agente']}_alert.json")
+            with open(alert_file, 'w', encoding='utf-8') as f:
+                json.dump(alert_data, f, ensure_ascii=False, indent=2)
+            
+            logger.warning(f"🚨 Alerta temprana registrada para {alert_data['agente']}: {alert_data['diagnostico']['posibles_causas'][:1]}")
+            
+        except Exception as e:
+            logger.error(f"Error registrando alerta temprana: {e}")

@@ -1,0 +1,88 @@
+{
+  "paginas_texto_pulido": {
+    "1": "Emilia busca su gorro rojo\nLo halla bajo la cama, rojo\nTriste está sin su azul de cielo\nUn amigo le regala azul cielo",
+    "2": "Los niños corren al jardín alegre\nSus risas suenan con tono alegre\nCantamos todos, Tiritas en su compás\nLos niños bailan al ritmo del compás",
+    "3": "Caja cerrada frena el juego\nLos niños buscan la llave del juego\nHallan la llave y surge risa\nAl abrir la caja, suena la risa",
+    "4": "Una nube gris cubre todo el patio\nLos niños esperan bajo el patio\nRespiran profundo y mira el sol\nEl cielo claro muestra su brillante sol",
+    "5": "Globos rojos suben al cielo azul\nEmilia lanza la red al azul\nCantamos todos, Tiritas en su canto\nLos niños bailan al vivo canto",
+    "6": "Tarta espera en la mesa sin luz\nUna vela arde y brinda su luz\nEmilia halla migas del sabor\nCon ayuda hallan el pastel de sabor",
+    "7": "Lucho se esconde bajo la mesa gris\nSus ojos miran, buscan luz gris\nEmilia invita, baila su juego\nLucho sonríe y se une al juego",
+    "8": "La puerta cruje sin dejar pasar\nNiños empujan con fuerza al pasar\nCon risas gritan, ánimo y canto\nLogran abrir la puerta, suena el canto",
+    "9": "Hilos de colores forman enredos\nNiños observan los claros enredos\nTrabajan juntos y hallan solución\nLos globos vuelan al ver la solución",
+    "10": "Todos cantan bajo la luz clara\nEmilia sopla, pide luz clara\nCantamos, Tiritas en su ritmo\nAmigos celebran con fuerte ritmo"
+  },
+  "esquema_rima": {
+    "1": "AABB",
+    "2": "AABB",
+    "3": "AABB",
+    "4": "AABB",
+    "5": "AABB",
+    "6": "AABB",
+    "7": "AABB",
+    "8": "AABB",
+    "9": "AABB",
+    "10": "AABB"
+  },
+  "finales_de_verso": {
+    "1": [
+      "rojo",
+      "rojo",
+      "cielo",
+      "cielo"
+    ],
+    "2": [
+      "alegre",
+      "alegre",
+      "compás",
+      "compás"
+    ],
+    "3": [
+      "juego",
+      "juego",
+      "risa",
+      "risa"
+    ],
+    "4": [
+      "patio",
+      "patio",
+      "sol",
+      "sol"
+    ],
+    "5": [
+      "azul",
+      "azul",
+      "canto",
+      "canto"
+    ],
+    "6": [
+      "luz",
+      "luz",
+      "sabor",
+      "sabor"
+    ],
+    "7": [
+      "gris",
+      "gris",
+      "juego",
+      "juego"
+    ],
+    "8": [
+      "pasar",
+      "pasar",
+      "canto",
+      "canto"
+    ],
+    "9": [
+      "enredos",
+      "enredos",
+      "solución",
+      "solución"
+    ],
+    "10": [
+      "clara",
+      "clara",
+      "ritmo",
+      "ritmo"
+    ]
+  }
+}

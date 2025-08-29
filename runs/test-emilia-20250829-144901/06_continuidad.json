@@ -1,0 +1,119 @@
+{
+  "character_bible": [
+    {
+      "nombre": "Emilia",
+      "edad": "5 años",
+      "rasgos_visibles": "cabello rizado castaño claro, ojos verde hoja, sonrisa constante",
+      "vestuario": "vestido de algodón con estampado de mariposas",
+      "colores_clave": [
+        "rosa pastel",
+        "verde hoja",
+        "azul cielo"
+      ],
+      "objeto_ancla": "globo rojo carmesí",
+      "gestos": "agita las manos al saludar, gira sobre sus puntas",
+      "no_haria": "no rompería juguetes ajenos"
+    },
+    {
+      "nombre": "Pipo el Payaso",
+      "edad": "30 años",
+      "rasgos_visibles": "nariz roja brillante, bigote azul marino, cara pintada de blanco",
+      "vestuario": "traje de rayas multicolores con botones amarillos",
+      "colores_clave": [
+        "rojo carmesí",
+        "amarillo girasol",
+        "azul marino"
+      ],
+      "objeto_ancla": "nariz de payaso roja",
+      "gestos": "hace muecas cómicas, lanza pelotas al aire",
+      "no_haria": "no dejaría de sonreír durante el show"
+    },
+    {
+      "nombre": "Lucas",
+      "edad": "4 años",
+      "rasgos_visibles": "cabello corto negro, ojos marrón chocolate, pecas en la nariz",
+      "vestuario": "pantalones cortos azul cielo y camiseta blanca",
+      "colores_clave": [
+        "azul cielo",
+        "blanco nieve",
+        "amarillo girasol"
+      ],
+      "objeto_ancla": "caja de tesoro de madera",
+      "gestos": "se agacha buscando en el suelo, levanta los brazos al encontrar algo",
+      "no_haria": "no abandonaría a sus amigos en medio del juego"
+    }
+  ],
+  "continuidad_narrativa": {
+    "relaciones": "Emilia es la cumpleañera y lidera el juego; Pipo el payaso anima la fiesta y ayuda a Emilia; Lucas es un amigo que busca el tesoro y recibe ayuda de Emilia.",
+    "evolucion_emocional": "Emilia comienza emocionada, pasa a sentirse sorprendida al perder su globo, luego feliz al recuperarlo y celebrar; Pipo pasa de tristeza por perder su nariz a alegría al recuperarla; Lucas pasa de inseguridad sin traje a confianza al recibir un traje y participar.",
+    "objeto_ancla_reapariciones": [
+      {
+        "personaje": "Emilia",
+        "paginas": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      }
+    ]
+  },
+  "_qa_metadata": {
+    "status": "failed",
+    "scores": {
+      "coherencia_general": {
+        "criterios_evaluados": {
+          "character_bible_completo": true,
+          "relaciones_descritas": true,
+          "evolucion_emocional_descrita": true,
+          "objeto_ancla_reapariciones_minimo": true
+        },
+        "criterios_cumplidos": 4,
+        "criterios_totales": 4,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "alineacion_brief": {
+        "criterios_evaluados": {
+          "paginas_objeto_ancla_secuenciales": true,
+          "sin_contradicciones": true
+        },
+        "criterios_cumplidos": 2,
+        "criterios_totales": 2,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "integracion_dependencias": {
+        "criterios_evaluados": {
+          "integracion_ritmo_rima": false
+        },
+        "criterios_cumplidos": 0,
+        "criterios_totales": 1,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 0,
+        "nota_calculada": 0.0,
+        "ajustes_contextuales": [],
+        "nota_final": 0.0
+      },
+      "promedio": {
+        "nota_ponderada": 3.33,
+        "ajustes_globales": [],
+        "nota_final": 3.33
+      }
+    },
+    "issues": [
+      "Falta integración de ritmo y rima según la dependencia 05_ritmo_rima.json",
+      "Objeto ancla de Pipo el Payaso no tiene reapariciones listadas",
+      "Objeto ancla de Lucas no tiene reapariciones listadas"
+    ],
+    "retry_count": 2,
+    "timestamp": "2025-08-29T15:03:41.662650"
+  }
+}

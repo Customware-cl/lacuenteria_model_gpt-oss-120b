@@ -1,0 +1,152 @@
+{
+  "estilo_global": "Ilustración infantil colorida, acuarela digital vibrante con bordes suaves y textura ligera de papel",
+  "color_script": {
+    "1": {
+      "paleta": [
+        "#87CEEB",
+        "#7CFC00",
+        "#D72631",
+        "#FFC0CB"
+      ],
+      "momento": "Mediodía, luz solar difusa",
+      "atmosfera": "Alegría contagiosa y vibrante"
+    },
+    "2": {
+      "paleta": [
+        "#FF8C00",
+        "#6A0DAD",
+        "#FFD700",
+        "#D72631"
+      ],
+      "momento": "Atardecer crepuscular",
+      "atmosfera": "Entusiasmo y energía"
+    },
+    "3": {
+      "paleta": [
+        "#C8A2C8",
+        "#A0D8EF",
+        "#FFF9B1",
+        "#D72631"
+      ],
+      "momento": "Luz natural filtrada por ventana, interior diurno",
+      "atmosfera": "Asombro y maravilla"
+    },
+    "4": {
+      "paleta": [
+        "#B0B0B0",
+        "#5F9EA0",
+        "#D72631",
+        "#F4E04D"
+      ],
+      "momento": "Iluminación tenue con luces de escenario suaves",
+      "atmosfera": "Anticipación"
+    },
+    "5": {
+      "paleta": [
+        "#D72631",
+        "#001F3F",
+        "#FFDC00",
+        "#2ECC71"
+      ],
+      "momento": "Luz de día festiva, colores vivos",
+      "atmosfera": "Tristeza que se transforma en alegría"
+    },
+    "6": {
+      "paleta": [
+        "#87CEFA",
+        "#7CFC00",
+        "#D72631",
+        "#F5DEB3"
+      ],
+      "momento": "Mediodía claro al aire libre",
+      "atmosfera": "Curiosidad que se vuelve alegría"
+    },
+    "7": {
+      "paleta": [
+        "#FFDAB9",
+        "#87CEEB",
+        "#C19A6B",
+        "#D72631"
+      ],
+      "momento": "Tarde suave, luz dorada",
+      "atmosfera": "Inseguridad que se convierte en confianza"
+    },
+    "8": {
+      "paleta": [
+        "#FFB347",
+        "#D72631",
+        "#FF7F50",
+        "#8A2BE2"
+      ],
+      "momento": "Atardecer dorado",
+      "atmosfera": "Excitación y expectativa"
+    },
+    "9": {
+      "paleta": [
+        "#FFBF00",
+        "#191970",
+        "#D72631",
+        "#8B4513"
+      ],
+      "momento": "Anochecer con luz de velas cálida",
+      "atmosfera": "Asombro y unión"
+    },
+    "10": {
+      "paleta": [
+        "#0D0D0D",
+        "#FF69B4",
+        "#00BFFF",
+        "#FFD700"
+      ],
+      "momento": "Noche festiva, luces de fiesta y estrellas",
+      "atmosfera": "Alegría festiva"
+    }
+  },
+  "transiciones": [
+    {
+      "de_pagina": 1,
+      "a_pagina": 2,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 2,
+      "a_pagina": 3,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 3,
+      "a_pagina": 4,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 4,
+      "a_pagina": 5,
+      "tipo": "abrupta"
+    },
+    {
+      "de_pagina": 5,
+      "a_pagina": 6,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 6,
+      "a_pagina": 7,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 7,
+      "a_pagina": 8,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 8,
+      "a_pagina": 9,
+      "tipo": "suave"
+    },
+    {
+      "de_pagina": 9,
+      "a_pagina": 10,
+      "tipo": "suave"
+    }
+  ]
+}

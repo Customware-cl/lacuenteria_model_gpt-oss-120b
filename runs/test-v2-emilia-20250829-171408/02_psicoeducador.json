@@ -1,0 +1,120 @@
+{
+  "metas_generales": [
+    "Desarrollar la habilidad de pedir ayuda de forma verbal y respetuosa.",
+    "Reconocer y nombrar sus propias emociones para regularlas con apoyo.",
+    "Practicar la paciencia y el autocontrol al enfrentar obstáculos físicos.",
+    "Fomentar la cooperación y el trabajo en equipo con sus compañeros.",
+    "Utilizar técnicas de respiración consciente para calmarse en situaciones de tensión."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Señalar y nombrar su silla mientras busca ayuda.",
+      "frase_modelo": "Emilia, ¿puedes señalar la silla que es tuya y decir \"esta es mi silla\"?",
+      "recurso": "Pedir ayuda",
+      "evitar": "No criticar si tarda en encontrarla."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Identificar y nombrar la emoción de sorpresa al ver el disfraz.",
+      "frase_modelo": "Veo que te sorprendió el disfraz en la rama, ¿puedes decir \"¡qué sorpresa!\"?",
+      "recurso": "Etiquetado emocional",
+      "evitar": "No minimizar la sorpresa con comentarios como \"no es gran cosa\"."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Solicitar ayuda a Sofía usando palabras simples.",
+      "frase_modelo": "Emilia, puedes decir \"Sofía, ayúdame por favor\" para pedir ayuda.",
+      "recurso": "Pedir ayuda",
+      "evitar": "No obligar a que lo haga sola antes de intentar pedir ayuda."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Dar un paso atrás y avisar cuando la pelota se acerca.",
+      "frase_modelo": "Cuando la pelota viene, di \"¡cuidado!\" y da un paso atrás.",
+      "recurso": "Autocontrol por pasos",
+      "evitar": "No empujar o intentar detener la pelota con fuerza."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Colaborar en subir al árbol respetando turnos.",
+      "frase_modelo": "Vamos a subir juntos, espera tu turno y sujeta la rama cuando sea tu momento.",
+      "recurso": "Sustituciones conductuales",
+      "evitar": "No apresurarla ni forzarla a subir antes de estar lista."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Desenredar las alas mientras respira profundo.",
+      "frase_modelo": "Respira hondo: inhala, exhala, y suelta los globos poco a poco para desenredar las alas.",
+      "recurso": "Respiración consciente",
+      "evitar": "No gritar ni apresurarse, lo que puede aumentar la confusión."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Mantener el equilibrio agarrándose a una rama y decir que está segura.",
+      "frase_modelo": "Puedes decir \"estoy segura\" mientras te agarras firmemente a la rama.",
+      "recurso": "Autocontrol por pasos",
+      "evitar": "No dejar que el miedo la paralice sin ofrecer una estrategia de apoyo."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Expresar la tristeza por la cinta rota y buscar una solución.",
+      "frase_modelo": "Di \"Estoy triste porque la cinta se rompió, ¿qué podemos usar ahora?\" y busca otra cinta.",
+      "recurso": "Etiquetado emocional",
+      "evitar": "No ignorar su sentimiento ni minimizarlo."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Participar en el canto de cumpleaños aunque el disfraz no está completo.",
+      "frase_modelo": "Puedes cantar \"¡Feliz cumpleaños!\" mientras esperas que el disfraz quede listo.",
+      "recurso": "Sustituciones conductuales",
+      "evitar": "No presionar para que se vista inmediatamente."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Agradecer a sus amigos al terminar la celebración.",
+      "frase_modelo": "Al terminar, di \"Gracias, amigos, por ayudarme\" y sonríe.",
+      "recurso": "Pedir ayuda",
+      "evitar": "No olvidar reconocer la ayuda recibida."
+    }
+  ],
+  "banderas": [
+    "Dificultad persistente para pedir ayuda cuando la necesita.",
+    "Reacciones exageradas a estímulos sensoriales como ruidos fuertes o luces brillantes.",
+    "Cierre abrupto de la actividad frente a la frustración sin intentar una solución alternativa.",
+    "Aislamiento social prolongado después de un conflicto o desacuerdo.",
+    "Llanto prolongado que no disminuye con técnicas de regulación emocional básicas."
+  ],
+  "_qa_metadata": {
+    "status": "failed",
+    "scores": {
+      "psicoeducador": {
+        "criterios_evaluados": {
+          "alineacion_con_edad_objetivo": false,
+          "recursos_son_implementables": true,
+          "ausencia_de_moralizacion": true
+        },
+        "criterios_cumplidos": 2,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [
+          "alineacion_con_edad_objetivo"
+        ],
+        "porcentaje": 60,
+        "nota_calculada": 3.0,
+        "ajustes_contextuales": [],
+        "nota_final": 3.0
+      },
+      "promedio": {
+        "nota_ponderada": 3.0,
+        "ajustes_globales": [],
+        "nota_final": 3.0
+      }
+    },
+    "issues": [
+      "Falta alineación con edad objetivo: no se incluye ningún campo o referencia a la edad objetivo del niño/a.",
+      "Los recursos están listados pero no se describen materiales o pasos concretos para su implementación."
+    ],
+    "retry_count": 2,
+    "timestamp": "2025-08-29T17:15:58.190289"
+  }
+}

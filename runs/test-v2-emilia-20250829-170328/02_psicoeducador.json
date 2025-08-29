@@ -1,0 +1,86 @@
+{
+  "metas_generales": [
+    "Reconocer y nombrar emociones básicas como sorpresa, miedo y alegría.",
+    "Regular la excitación o la frustración mediante respiración consciente.",
+    "Desarrollar habilidades de ayuda y cooperación con los compañeros.",
+    "Seguir pasos simples para resolver problemas y pedir ayuda cuando sea necesario.",
+    "Fomentar la expresión de orgullo y satisfacción tras lograr una meta."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Identificar la sorpresa y expresarla con palabras simples.",
+      "frase_modelo": "¿Qué sientes al ver que la caja de regalos está vacía?",
+      "recurso": "Etiquetado emocional",
+      "evitar": "No minimizar la sorpresa ni decir que 'no es nada'."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Usar respiración consciente para manejar la excitación al ver el globo volar.",
+      "frase_modelo": "Vamos a respirar juntos mientras miramos el globo subir.",
+      "recurso": "Respiración consciente",
+      "evitar": "No gritar ni empujar para alcanzar el globo."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Ofrecer ayuda física a un compañero que ha caído.",
+      "frase_modelo": "¿Quieres que te ayude a levantarte?",
+      "recurso": "Autocontrol por pasos",
+      "evitar": "No empujar al niño caído ni dejarlo solo."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Detener el movimiento impulsivo y pedir ayuda para el pastel que se desliza.",
+      "frase_modelo": "Vamos a detener el pastel y pedir ayuda a la maestra.",
+      "recurso": "Pedir ayuda",
+      "evitar": "No intentar agarrar el pastel sin apoyo."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Colaborar en equipo para alcanzar el globo atrapado usando un escalón.",
+      "frase_modelo": "Trabajemos juntos: uno sostiene el escalón y otro agarra el globo.",
+      "recurso": "Sustituciones conductuales",
+      "evitar": "No subir sin supervisión ni ponerse en riesgo."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Reconocer y nombrar los roles de los disfraces, expresando risa y curiosidad.",
+      "frase_modelo": "¿Quién es el pirata? ¿Quién la princesa?",
+      "recurso": "Etiquetado emocional",
+      "evitar": "No criticar la confusión ni forzar una respuesta rápida."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Detener la carrera de sacos y limpiar la pintura siguiendo pasos de autocontrol.",
+      "frase_modelo": "Paremos la carrera y limpiemos la pintura juntos.",
+      "recurso": "Autocontrol por pasos",
+      "evitar": "No regañar por el derrame, sino guiar calmadamente."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Proponer una canción sencilla y guiar al grupo para que la canten en conjunto.",
+      "frase_modelo": "Cantemos esta canción fácil, una nota a la vez.",
+      "recurso": "Sustituciones conductuales",
+      "evitar": "No forzar a cantar si algún niño muestra frustración."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Regular el miedo al pastel caído usando respiración y solicitando ayuda.",
+      "frase_modelo": "Respiremos profundo y pidamos a la maestra que nos ayude a arreglarlo.",
+      "recurso": "Respiración consciente, Pedir ayuda",
+      "evitar": "No dejar que el miedo se convierta en llanto prolongado sin intervenir."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Celebrar el logro soplando la vela y aplaudir, expresando orgullo.",
+      "frase_modelo": "¡Bien hecho! ¿Cómo te sientes ahora?",
+      "recurso": "Etiquetado emocional",
+      "evitar": "No minimizar la celebración ni pasar rápidamente al siguiente juego."
+    }
+  ],
+  "banderas": [
+    "Supervisar siempre el uso de escaleras o escalones para evitar caídas.",
+    "Observar signos de frustración y ofrecer apoyo antes de que escale.",
+    "Asegurar que los materiales (globos, pastel, pintura) estén seguros y bajo vigilancia constante."
+  ]
+}

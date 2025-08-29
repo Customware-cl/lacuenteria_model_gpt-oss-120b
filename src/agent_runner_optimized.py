@@ -299,7 +299,7 @@ Recuerda:
                 system_prompt=verificador_prompt,
                 user_prompt=user_prompt,
                 temperature=0.3,  # Baja para consistencia
-                max_tokens=3000,  # Aumentado para evaluación completa con feedback
+                max_tokens=30000,  # Masivo para evaluar contenidos grandes
                 seed=42           # Para reproducibilidad
             )
             

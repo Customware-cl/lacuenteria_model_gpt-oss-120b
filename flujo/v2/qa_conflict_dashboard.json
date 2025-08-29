@@ -1,7 +1,7 @@
 {
   "version": "v2",
-  "last_updated": "2025-08-28T21:51:40.291991",
-  "total_conflicts_analyzed": 3,
+  "last_updated": "2025-08-29T18:51:05.399759",
+  "total_conflicts_analyzed": 24,
   "conflict_patterns": {
     "01_director": {
       "new_1958": {
@@ -164,6 +164,356 @@
           "test-v2-emilia-1756417877"
         ],
         "status": "unresolved"
+      },
+      "leitmotiv_repetition_conflict": {
+        "count": 1,
+        "first_seen": "2025-08-29T01:59:27.753031",
+        "typical_issue": "Repetición excesiva del leitmotiv \"¡Tic-tac, la canción del pastel!\" (aparece >3 veces)",
+        "recommendation": "Especificar número exacto de repeticiones (ej: 'exactamente 3 veces')",
+        "stories_affected": [
+          "test-retry-improvements-1756432738"
+        ],
+        "last_seen": "2025-08-29T01:59:27.753040"
+      },
+      "new_2902": {
+        "count": 1,
+        "first_seen": "2025-08-29T01:59:59.748618",
+        "typical_issue": "Error gramatical en la resolución: 'Emilia sople sus velas' (debe ser 'sopla')",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432738"
+        ],
+        "status": "unresolved"
+      },
+      "new_870": {
+        "count": 1,
+        "first_seen": "2025-08-29T01:59:59.748630",
+        "typical_issue": "Clímax poco definido; la mayor tensión se dispersa en varias páginas sin un punto álgido claro",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432738"
+        ],
+        "status": "unresolved"
+      },
+      "new_4220": {
+        "count": 1,
+        "first_seen": "2025-08-29T01:59:59.748634",
+        "typical_issue": "Repetición de la frase leitmotiv '¡Tic-tac, la canción del juego!' en tres páginas, genera redundancia",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432738"
+        ],
+        "status": "unresolved"
+      },
+      "new_6341": {
+        "count": 1,
+        "first_seen": "2025-08-29T01:59:59.748635",
+        "typical_issue": "Ausencia de indicios de resolución en beats intermedios (páginas 6‑9), lo que debilita la progresión narrativa",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432738"
+        ],
+        "status": "unresolved"
+      },
+      "new_5032": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:00:23.606094",
+        "typical_issue": "Repetición excesiva del leitmotiv \"¡Tic-tac, suena la canción del pastel!\" en al menos 5 páginas (penalización por redundancia)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432738"
+        ],
+        "status": "unresolved"
+      },
+      "new_3091": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:00:23.606104",
+        "typical_issue": "Clímax poco definido; la tensión se dispersa entre varias páginas sin un punto álgido claro",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432738"
+        ],
+        "status": "unresolved"
+      },
+      "new_7793": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:00:23.606106",
+        "typical_issue": "Uso del leitmotiv en momentos de conflicto que debilita su impacto como elemento musical memorable",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432738"
+        ],
+        "status": "unresolved"
+      },
+      "new_4758": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:02:55.061944",
+        "typical_issue": "Repetición excesiva del leitmotiv \"¡Tic-tac, suena el tambor!\" (aparece en 5 beats y en variantes)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_6459": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:02:55.061954",
+        "typical_issue": "Arco narrativo débil: falta de un clímax definido y de una progresión clara de tensión",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_1571": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:02:55.061956",
+        "typical_issue": "Sólo el beat 10 incluye una resolución; los beats intermedios carecen de cierre parcial",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_969": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:02:55.061958",
+        "typical_issue": "Uso del leitmotiv como conflicto en varios beats parece forzado",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_5954": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:02:55.061959",
+        "typical_issue": "Variantes no están integradas al arco principal, generan redundancia",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_9295": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:03:19.987102",
+        "typical_issue": "Repetición excesiva de la frase \"arcoíris de globos\" (4 menciones)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_4134": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:03:19.987114",
+        "typical_issue": "Clímax poco definido y de bajo impacto; la mayor tensión ocurre en la página 6 pero no se resuelve de forma clara",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_3903": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:03:19.987117",
+        "typical_issue": "Conflictos secundarios (altavoz roto, velas faltantes) aparecen después del clímax y diluyen la tensión dramática",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_6752": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:03:19.987120",
+        "typical_issue": "Leitmotiv poco memorable y sin musicalidad",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_9755": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:03:19.987122",
+        "typical_issue": "Algunas páginas presentan conflicto sin una mini‑resolución que avance la trama",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_3792": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:03:45.493277",
+        "typical_issue": "Arco narrativo poco definido: la historia se compone de mini‑conflictos aislados y no muestra una escalada clara hacia un clímax central.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_849": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:03:45.493287",
+        "typical_issue": "Exceso de repetición del leitmotiv \"¡Brilla la canción!\" en casi todas las páginas, lo que reduce su impacto dramático.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_4863": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:03:45.493289",
+        "typical_issue": "Repetición de la emoción \"sorpresa\" en dos beats diferentes sin aportar variación emocional.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_9064": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:03:45.493290",
+        "typical_issue": "Algunos beats (pág. 5‑9) presentan conflictos que no aumentan la tensión de forma perceptible.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_3769": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:21:32.383678",
+        "typical_issue": "Repetición de la palabra 'mariposa' 5 veces (páginas 2, 5, 10 y en imágenes de páginas 2 y 5)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-verificador-mejorado-1756434056"
+        ],
+        "status": "unresolved"
+      },
+      "new_6265": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:21:32.383689",
+        "typical_issue": "Clímax no identificado explícitamente en el beat sheet (no hay campo 'climax' en ninguna página, se esperaría en página 7 u 8)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-verificador-mejorado-1756434056"
+        ],
+        "status": "unresolved"
+      },
+      "new_9668": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:22:13.467265",
+        "typical_issue": "Exceso de leitmotiv: aparece 4 veces (páginas 2, 5, 10 y en el campo 'leitmotiv')",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-verificador-mejorado-1756434056"
+        ],
+        "status": "unresolved"
+      },
+      "new_5164": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:22:13.467275",
+        "typical_issue": "Clímax no identificado explícitamente en ninguna página (se esperaba en página 7 u 8)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-verificador-mejorado-1756434056"
+        ],
+        "status": "unresolved"
+      },
+      "new_4614": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:22:41.492212",
+        "typical_issue": "Exceso de leitmotiv: aparece 4 veces (páginas 2, 5, 10 y campo superior \"leitmotiv\")",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-verificador-mejorado-1756434056"
+        ],
+        "status": "unresolved"
+      },
+      "new_9579": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:22:41.492223",
+        "typical_issue": "Clímax no está etiquetado explícitamente en ninguna página (se esperaría una marca en página 7 u 8)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-verificador-mejorado-1756434056"
+        ],
+        "status": "unresolved"
+      },
+      "new_9374": {
+        "count": 1,
+        "first_seen": "2025-08-29T04:39:02.073938",
+        "typical_issue": "Leitmotiv ausente en páginas 1, 3, 4, 6, 7, 8 y 9 del beat_sheet.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756442318"
+        ],
+        "status": "unresolved"
+      },
+      "new_4509": {
+        "count": 1,
+        "first_seen": "2025-08-29T04:39:02.073949",
+        "typical_issue": "El campo superior \"leitmotiv\" no cuenta para el criterio de presencia en beat_sheet.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756442318"
+        ],
+        "status": "unresolved"
+      },
+      "new_7830": {
+        "count": 1,
+        "first_seen": "2025-08-29T04:39:30.844094",
+        "typical_issue": "Falta de clímax explícito en la narrativa (ningún elemento 'climax' en beat_sheet)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756442318"
+        ],
+        "status": "unresolved"
+      },
+      "new_799": {
+        "count": 1,
+        "first_seen": "2025-08-29T04:39:30.844107",
+        "typical_issue": "Leitmotiv no aparece en todas las páginas; solo está presente en páginas 2, 5 y 10",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756442318"
+        ],
+        "status": "unresolved"
+      },
+      "new_8615": {
+        "count": 1,
+        "first_seen": "2025-08-29T04:39:30.844110",
+        "typical_issue": "Inconsistencia en la distribución del leitmotiv: ausencia en páginas clave (1,3,4,6,7,8,9)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756442318"
+        ],
+        "status": "unresolved"
+      },
+      "new_2704": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:39:24.027203",
+        "typical_issue": "Leitmotiv no aparece en ninguna entrada del beat_sheet (solo está en campo superior).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-133844"
+        ],
+        "status": "unresolved"
+      },
+      "new_1019": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:39:24.027214",
+        "typical_issue": "Ausencia de un marcador explícito de clímax en la estructura.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-133844"
+        ],
+        "status": "unresolved"
       }
     },
     "02_psicoeducador": {
@@ -228,14 +578,15 @@
         "status": "unresolved"
       },
       "coherence_issue": {
-        "count": 1,
+        "count": 2,
         "first_seen": "2025-08-28T21:47:04.770639",
         "typical_issue": "Incoherencia entre micro_habilidad 'Planificación conjunta simple' y recurso 'Etiquetado emocional + Autocontrol por pasos' en página 6",
         "recommendation": "Agregar verificación de coherencia con artefactos previos",
         "stories_affected": [
-          "test-v2-1756417495"
+          "test-v2-1756417495",
+          "test-stop-1756472575"
         ],
-        "last_seen": "2025-08-28T21:47:04.770649"
+        "last_seen": "2025-08-29T13:03:58.408234"
       },
       "new_65": {
         "count": 1,
@@ -276,6 +627,1169 @@
           "test-v2-1756417495"
         ],
         "status": "unresolved"
+      },
+      "new_1198": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:00:46.368026",
+        "typical_issue": "Repetición del recurso \"Etiquetado emocional\" en 3 páginas (1,5,10) genera redundancia.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432738"
+        ],
+        "status": "unresolved"
+      },
+      "new_294": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:00:46.368038",
+        "typical_issue": "No se indica la edad objetivo del material, dificultando la validación pedagógica.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432738"
+        ],
+        "status": "unresolved"
+      },
+      "new_6426": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:00:46.368041",
+        "typical_issue": "Algunas frases modelo carecen de validación emocional previa (pág. 4, 8).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432738"
+        ],
+        "status": "unresolved"
+      },
+      "new_4134": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:00:46.368043",
+        "typical_issue": "Micro‑habilidad de la página 4 menciona \"buscar la llave\" sin contexto narrativo claro.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432738"
+        ],
+        "status": "unresolved"
+      },
+      "new_9199": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:04:08.156080",
+        "typical_issue": "Micro_habilidad 5 ('Usar el canto como herramienta de esperanza') es abstracta y poco observable en niños en edad preescolar.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_6637": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:04:08.156091",
+        "typical_issue": "Frase modelo 6 ('Observa la nariz roja y, cuando esté cerca, extiende la mano suavemente.') tiene estructura sintáctica compleja para la edad objetivo.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_3158": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:04:08.156094",
+        "typical_issue": "Repetición del recurso 'Autocontrol por pasos' en 3 páginas reduce la variedad de estrategias propuestas.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_3345": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:04:08.156095",
+        "typical_issue": "No se indica explícitamente la edad o rango de desarrollo al que se dirige el plan.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "abstract_language": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:04:34.830342",
+        "typical_issue": "Lenguaje abstracto en micro_habilidad de la página 1 ('Etiquetar la emoción que surge al ver la nube gris y aceptar la anticipación') que puede resultar complejo para niños de edad preescolar",
+        "recommendation": "Agregar: 'usa lenguaje concreto y visual, evita abstracciones'",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "last_seen": "2025-08-29T02:04:34.830355"
+      },
+      "new_1249": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:04:55.671691",
+        "typical_issue": "No se aborda la bandera 'Frustración por el altavoz apagado' en ninguna página.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_6790": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:04:55.671701",
+        "typical_issue": "No se aborda la bandera 'Miedo a la lluvia al ver la nube gris' en ninguna página.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "new_138": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:04:55.671703",
+        "typical_issue": "Repetición del recurso 'Respiración consciente' en tres páginas sin variación de estrategia.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-retry-improvements-1756432942"
+        ],
+        "status": "unresolved"
+      },
+      "ambiguity_issue": {
+        "count": 1,
+        "first_seen": "2025-08-29T02:23:05.900458",
+        "typical_issue": "Ambigüedad en la frase modelo 'Yo ayudo a pasar la manta' (página 6).",
+        "recommendation": "Agregar: 'cada descripción debe ser inequívoca y clara'",
+        "stories_affected": [
+          "test-verificador-mejorado-1756434056"
+        ],
+        "last_seen": "2025-08-29T02:23:05.900467"
+      },
+      "new_1718": {
+        "count": 1,
+        "first_seen": "2025-08-29T03:48:22.478444",
+        "typical_issue": "No se indica explícitamente la edad objetivo del material; falta alineación con la población a la que va dirigido.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-034727"
+        ],
+        "status": "unresolved"
+      },
+      "new_3295": {
+        "count": 1,
+        "first_seen": "2025-08-29T03:48:22.478457",
+        "typical_issue": "Los recursos están descritos de forma genérica (p.ej., \"Etiquetado emocional\") sin especificar materiales concretos o pasos operacionales.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-034727"
+        ],
+        "status": "unresolved"
+      },
+      "new_6479": {
+        "count": 1,
+        "first_seen": "2025-08-29T04:40:29.462548",
+        "typical_issue": "No se especifica la edad objetivo del público, impidiendo verificar alineación con la etapa de desarrollo.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756442318"
+        ],
+        "status": "unresolved"
+      },
+      "new_8239": {
+        "count": 1,
+        "first_seen": "2025-08-29T04:40:29.462562",
+        "typical_issue": "Falta referencia a adaptación de recursos para diferentes niveles de habilidad.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756442318"
+        ],
+        "status": "unresolved"
+      },
+      "new_9578": {
+        "count": 1,
+        "first_seen": "2025-08-29T04:40:47.981750",
+        "typical_issue": "Falta de especificación de edad objetivo, impide verificar alineación con el nivel de desarrollo del niño.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756442318"
+        ],
+        "status": "unresolved"
+      },
+      "new_5061": {
+        "count": 1,
+        "first_seen": "2025-08-29T04:40:47.981760",
+        "typical_issue": "Repetición del recurso \"Etiquetado emocional\" en múltiples páginas sin diversificar estrategias complementarias.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756442318"
+        ],
+        "status": "unresolved"
+      },
+      "new_393": {
+        "count": 1,
+        "first_seen": "2025-08-29T04:41:12.006939",
+        "typical_issue": "No se indica la edad objetivo del público; por lo tanto no se puede comprobar la alineación con la edad.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756442318"
+        ],
+        "status": "unresolved"
+      },
+      "new_9950": {
+        "count": 1,
+        "first_seen": "2025-08-29T04:41:12.006950",
+        "typical_issue": "Falta referencia explícita al brief que justifique la selección de habilidades y recursos para la edad propuesta.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756442318"
+        ],
+        "status": "unresolved"
+      },
+      "new_2846": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:04:31.453144",
+        "typical_issue": "No se especifica la edad objetivo del material.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756472575"
+        ],
+        "status": "unresolved"
+      },
+      "new_5723": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:04:31.453156",
+        "typical_issue": "Faltan indicadores claros de seguimiento o evaluación del aprendizaje.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-stop-1756472575"
+        ],
+        "status": "unresolved"
+      },
+      "new_3824": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:20:29.567313",
+        "typical_issue": "Falta de especificación de edad objetivo en el contenido.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-131931"
+        ],
+        "status": "unresolved"
+      },
+      "new_1940": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:20:29.567321",
+        "typical_issue": "No hay evidencia de adaptación del lenguaje al rango de edad.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-131931"
+        ],
+        "status": "unresolved"
+      },
+      "new_4553": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:20:29.567324",
+        "typical_issue": "Posible falta de alineación con metas de desarrollo para la edad indicada.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-131931"
+        ],
+        "status": "unresolved"
+      },
+      "new_6378": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:21:01.459763",
+        "typical_issue": "No se especifica la edad objetivo del programa; impide validar alineación con desarrollo infantil.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-131931"
+        ],
+        "status": "unresolved"
+      },
+      "new_1460": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:21:01.459772",
+        "typical_issue": "Las micro‑habilidades no están claramente adaptadas a una edad concreta (p.ej., actividades de respiración pueden ser complejas para niños menores de 4 años).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-131931"
+        ],
+        "status": "unresolved"
+      },
+      "new_4522": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:21:01.459774",
+        "typical_issue": "Falta un plan de acción concreto para abordar las banderas de riesgo señaladas (agresión física, dificultad para nombrar emociones, etc.).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-131931"
+        ],
+        "status": "unresolved"
+      },
+      "new_7293": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:40:19.143285",
+        "typical_issue": "Falta de información sobre la edad objetivo del público, impide validar alineación de metas y micro‑habilidades.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-133844"
+        ],
+        "status": "unresolved"
+      },
+      "new_8805": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:40:19.143296",
+        "typical_issue": "Las metas generales y micro‑habilidades no pueden comprobarse como apropiadas para la edad sin ese dato.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-133844"
+        ],
+        "status": "unresolved"
+      },
+      "new_3350": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:40:19.143298",
+        "typical_issue": "Criterios esenciales de alineación fallan, limitando la puntuación máxima del métrico de alineación a 60 % (se obtuvo 0 %).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-133844"
+        ],
+        "status": "unresolved"
+      },
+      "new_7747": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:43:59.972198",
+        "typical_issue": "Falta de alineación explícita con edad objetivo; no se indica rango de edad ni adapta lenguaje.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-134249"
+        ],
+        "status": "unresolved"
+      },
+      "new_8323": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:43:59.972209",
+        "typical_issue": "Ausencia de referencia a nivel de desarrollo cognitivo para las micro_habilidades.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-134249"
+        ],
+        "status": "unresolved"
+      },
+      "new_6942": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:47:08.863313",
+        "typical_issue": "No se evidencia alineación explícita con la edad objetivo del público al que va dirigido el material.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-134619"
+        ],
+        "status": "unresolved"
+      },
+      "new_5721": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:47:08.863326",
+        "typical_issue": "Falta de referencia a la edad objetivo en el mapa psico‑narrativo y en las frases modelo.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-134619"
+        ],
+        "status": "unresolved"
+      },
+      "new_1074": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:47:40.527892",
+        "typical_issue": "Metas generales no son específicas ni medibles (p. ej., \"Reconocer y nombrar sus emociones\" carece de indicadores observables).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-134619"
+        ],
+        "status": "unresolved"
+      },
+      "new_5359": {
+        "count": 1,
+        "first_seen": "2025-08-29T13:47:40.527904",
+        "typical_issue": "No se incluye una lista de materiales o recursos físicos necesarios para implementar las actividades (ausencia de campo 'materiales').",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-134619"
+        ],
+        "status": "unresolved"
+      },
+      "new_7861": {
+        "count": 1,
+        "first_seen": "2025-08-29T14:02:34.017633",
+        "typical_issue": "Falta de especificación de edad objetivo, impide validar alineación con desarrollo infantil.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-140136"
+        ],
+        "status": "unresolved"
+      },
+      "new_9969": {
+        "count": 1,
+        "first_seen": "2025-08-29T14:02:34.017643",
+        "typical_issue": "Criterio esencial de alineación con edad objetivo no cumplido.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-140136"
+        ],
+        "status": "unresolved"
+      },
+      "new_2039": {
+        "count": 1,
+        "first_seen": "2025-08-29T14:49:57.632783",
+        "typical_issue": "Alineación con edad objetivo no verificada ni justificada en el output.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_9744": {
+        "count": 1,
+        "first_seen": "2025-08-29T14:49:57.632794",
+        "typical_issue": "Falta referencia explícita a la edad objetivo del público al que se dirige la intervención.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_3692": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:09:15.810946",
+        "typical_issue": "Falta evidencia de alineación con edad objetivo (no se menciona la franja etaria en el output).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_9119": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:09:15.810959",
+        "typical_issue": "Los recursos están descritos de forma genérica y no se especifican materiales concretos para su implementación.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_7836": {
+        "count": 1,
+        "first_seen": "2025-08-29T17:04:31.728959",
+        "typical_issue": "No se indica la edad objetivo del contenido, impidiendo verificar alineación con el grupo etario.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-20250829-170328"
+        ],
+        "status": "unresolved"
+      },
+      "new_8188": {
+        "count": 1,
+        "first_seen": "2025-08-29T17:04:31.728973",
+        "typical_issue": "Falta evidencia de adaptación de metas a nivel de desarrollo del niño.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-20250829-170328"
+        ],
+        "status": "unresolved"
+      },
+      "new_3543": {
+        "count": 1,
+        "first_seen": "2025-08-29T17:05:01.733611",
+        "typical_issue": "No se incluye ningún campo que indique la edad objetivo del material; por lo tanto, no se puede verificar la alineación con la edad objetivo.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-20250829-170328"
+        ],
+        "status": "unresolved"
+      },
+      "new_3620": {
+        "count": 1,
+        "first_seen": "2025-08-29T17:15:02.358026",
+        "typical_issue": "No se indica explícitamente el rango de edad objetivo; por lo tanto, el criterio de alineación con edad objetivo falla.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-20250829-171408"
+        ],
+        "status": "unresolved"
+      },
+      "new_8478": {
+        "count": 1,
+        "first_seen": "2025-08-29T17:15:02.358039",
+        "typical_issue": "Al no especificar edad, algunos recursos podrían no ser adecuados para la etapa de desarrollo prevista.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-20250829-171408"
+        ],
+        "status": "unresolved"
+      },
+      "new_5508": {
+        "count": 1,
+        "first_seen": "2025-08-29T17:15:30.398554",
+        "typical_issue": "No se especifica la edad objetivo del material, impidiendo validar la alineación con el público infantil.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-20250829-171408"
+        ],
+        "status": "unresolved"
+      },
+      "new_798": {
+        "count": 1,
+        "first_seen": "2025-08-29T17:15:30.398567",
+        "typical_issue": "Las metas generales no son medibles (carecen de indicadores cuantitativos o de tiempo).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-20250829-171408"
+        ],
+        "status": "unresolved"
+      },
+      "new_337": {
+        "count": 1,
+        "first_seen": "2025-08-29T17:15:30.398571",
+        "typical_issue": "Aunque los recursos son implementables, algunos recursos aparecen repetidos sin variación (p. ej., respiración consciente en varias páginas).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-20250829-171408"
+        ],
+        "status": "unresolved"
+      },
+      "new_6140": {
+        "count": 1,
+        "first_seen": "2025-08-29T17:15:58.188203",
+        "typical_issue": "Falta alineación con edad objetivo: no se incluye ningún campo o referencia a la edad objetivo del niño/a.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-20250829-171408"
+        ],
+        "status": "unresolved"
+      },
+      "new_5125": {
+        "count": 1,
+        "first_seen": "2025-08-29T17:15:58.188217",
+        "typical_issue": "Los recursos están listados pero no se describen materiales o pasos concretos para su implementación.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-20250829-171408"
+        ],
+        "status": "unresolved"
+      }
+    },
+    "03_cuentacuentos": {
+      "new_1440": {
+        "count": 1,
+        "first_seen": "2025-08-29T14:14:18.866008",
+        "typical_issue": "No se encontró campo 'qa' en la respuesta",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-141208"
+        ],
+        "status": "unresolved"
+      },
+      "new_3434": {
+        "count": 1,
+        "first_seen": "2025-08-29T14:52:29.687401",
+        "typical_issue": "No se encontró campo 'qa' en la respuesta",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "syllable_count_issue": {
+        "count": 13,
+        "first_seen": "2025-08-29T15:11:37.178390",
+        "typical_issue": "Sílabas fuera del rango en página 2 línea 4 (7 sílabas).",
+        "recommendation": "Especificar conteo exacto de sílabas por verso",
+        "stories_affected": [
+          "test-emilia-20250829-150811",
+          "test-v2-emilia-20250829-170328",
+          "test-v2-emilia-20250829-184715"
+        ],
+        "last_seen": "2025-08-29T18:51:05.399758"
+      },
+      "forced_rhyme": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:11:37.178439",
+        "typical_issue": "Rimas forzadas y falta de consistencia métrica en varias páginas.",
+        "recommendation": "Agregar: 'prioriza naturalidad sobre rima perfecta, acepta asonancia'",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "last_seen": "2025-08-29T15:11:37.178441"
+      }
+    },
+    "04_editor_claridad": {
+      "new_3434": {
+        "count": 1,
+        "first_seen": "2025-08-29T14:56:16.068762",
+        "typical_issue": "No se encontró campo 'qa' en la respuesta",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      }
+    },
+    "05_ritmo_rima": {
+      "syllable_count_issue": {
+        "count": 2,
+        "first_seen": "2025-08-29T14:58:37.310883",
+        "typical_issue": "Métrica inconsistente: la mayoría de los versos no cumplen 8‑12 sílabas.",
+        "recommendation": "Especificar conteo exacto de sílabas por verso",
+        "stories_affected": [
+          "test-emilia-20250829-144901",
+          "test-emilia-20250829-150811"
+        ],
+        "last_seen": "2025-08-29T15:16:29.133549"
+      },
+      "new_3434": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:00:28.398984",
+        "typical_issue": "No se encontró campo 'qa' en la respuesta",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      }
+    },
+    "06_continuidad": {
+      "new_6365": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:02:18.694804",
+        "typical_issue": "Objeto ancla sólo reaparece para Emilia; falta para Payaso y Lucho",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_3997": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:02:18.694817",
+        "typical_issue": "No se evidencia integración de la información de 05_ritmo_rima.json",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_9909": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:02:18.694820",
+        "typical_issue": "Falta referencia explícita al brief que indique edad objetivo y tema central",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_6124": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:03:10.504885",
+        "typical_issue": "Falta de conclusión narrativa satisfactoria al final de la historia.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_7509": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:03:10.504894",
+        "typical_issue": "Objeto ancla del Payaso Lucho no reaparece en ninguna página.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_6742": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:03:10.504896",
+        "typical_issue": "Objeto ancla de Tomás no reaparece en ninguna página.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_6761": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:03:10.504898",
+        "typical_issue": "Criterio esencial de reapariciones de objetos ancla para todos los personajes no cumplido.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_8180": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:03:41.661223",
+        "typical_issue": "Falta integración de ritmo y rima según la dependencia 05_ritmo_rima.json",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_3444": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:03:41.661232",
+        "typical_issue": "Objeto ancla de Pipo el Payaso no tiene reapariciones listadas",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_1612": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:03:41.661234",
+        "typical_issue": "Objeto ancla de Lucas no tiene reapariciones listadas",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      }
+    },
+    "07_diseno_escena": {
+      "new_5433": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:04:24.837674",
+        "typical_issue": "Leitmotiv (globo rojo carmesí) no aparece en todas las páginas; faltan en 2,4,7,8,10.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_1909": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:04:24.837683",
+        "typical_issue": "Palabra 'conflicto' no se usa en páginas 1-9 como exige el criterio de conflicto.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_3818": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:04:24.837685",
+        "typical_issue": "Palabra 'resolucion' no aparece en página 10.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_5763": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:04:24.837687",
+        "typical_issue": "No se respeta el esquema de ritmo y rima definido en 05_ritmo_rima.json.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_7606": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:04:24.837688",
+        "typical_issue": "Inconsistencia entre la descripción visual y la guía de ritmo; las frases no siguen patrón de rima.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_258": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:19:28.945359",
+        "typical_issue": "Ausencia total de ritmo y rima en los prompts, incumpliendo la dependencia 05_ritmo_rima.json.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_9825": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:19:28.945372",
+        "typical_issue": "Inconsistencias de continuidad: introducción de la tarta y la vela en página 6 sin referencia previa; aparición de la flauta en página 10 sin contexto.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_9971": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:19:28.945375",
+        "typical_issue": "Falta de referencia al leitmotiv esperado en la escena, según criterios de diseño.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_2280": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:20:15.523740",
+        "typical_issue": "Ausencia total de rima en los prompts (ninguna página contiene una frase rimada).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_1094": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:20:15.523753",
+        "typical_issue": "Patrón rítmico inexistente; no se observa consistencia métrica entre descripciones.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_9402": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:20:15.523756",
+        "typical_issue": "Referencia a la canción 'Tiritas' solo en páginas 2 y 10, incumpliendo la expectativa de presencia continua.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_3255": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:20:52.319780",
+        "typical_issue": "Ausencia total de esquema rímico en todas las páginas (criterio ritmo_rima).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_6155": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:20:52.319789",
+        "typical_issue": "No se menciona ningún leitmotiv a lo largo del guion (criterio estructura_narrativa).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_3527": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:20:52.319791",
+        "typical_issue": "Falta de conflicto inicial claro en la página 1 (criterio estructura_narrativa).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_6149": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:20:52.319793",
+        "typical_issue": "No se presenta una resolución explícita en la página 10 (criterio estructura_narrativa).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_1545": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:20:52.319794",
+        "typical_issue": "El ritmo narrativo no está definido ni se respeta un patrón métrico (criterio ritmo_rima).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      }
+    },
+    "08_direccion_arte": {
+      "new_2823": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:05:33.965230",
+        "typical_issue": "Falta de referencias explícitas a los archivos de dependencia 07_diseno_escena.json y 06_continuidad.json.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_9180": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:05:33.965239",
+        "typical_issue": "No se evidencia consistencia con los lineamientos de diseño de escena proporcionados en 07_diseno_escena.json.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_2433": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:05:33.965241",
+        "typical_issue": "No se evidencia consistencia con la continuidad narrativa especificada en 06_continuidad.json.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_4022": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:21:12.124319",
+        "typical_issue": "No se pudo acceder al archivo de criterios para realizar la evaluación objetiva.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_7716": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:21:42.971327",
+        "typical_issue": "Falta de alineación con el diseño de escena (07_diseno_escena.json) – no se menciona ningún elemento de personajes, fondos o composición.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_8719": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:21:42.971336",
+        "typical_issue": "Uso excesivo del color #E63946 en todas las paletas, reduciendo la variedad cromática.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_5578": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:21:42.971339",
+        "typical_issue": "Tipo de transición \"cambio de tono\" entre página 9 y 10 no está definido en los tipos aceptados.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      }
+    },
+    "09_sensibilidad": {
+      "new_6946": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:06:18.045591",
+        "typical_issue": "No se dispone de los criterios de evaluación para el agente 09_sensibilidad.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_8310": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:22:28.106211",
+        "typical_issue": "No se evidencia integración de las dependencias 05_ritmo_rima.json, 07_diseno_escena.json y 08_direccion_arte.json.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_1631": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:22:28.106221",
+        "typical_issue": "El análisis de riesgos se limita a un único punto (página 0) y no cubre otras posibles áreas de sensibilidad.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_2268": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:22:28.106223",
+        "typical_issue": "Falta de referencia a aspectos de ritmo y rima que podrían afectar la percepción sensorial del niño.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_5261": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:22:49.940586",
+        "typical_issue": "No se propuso corrección para el riesgo general de falta de diversidad (riesgo marcado como 'general' sin acción específica).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_93": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:22:49.940595",
+        "typical_issue": "Solo se sugirieron correcciones en dos páginas (1 y 5), dejando sin cobertura otras áreas potencialmente problemáticas.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      }
+    },
+    "10_portadista": {
+      "new_319": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:06:48.501943",
+        "typical_issue": "No se pudo cargar el archivo de criterios para evaluación.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_8925": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:23:30.391075",
+        "typical_issue": "No se dispone del archivo de criterios de evaluación para el agente 10_portadista; imposible validar cumplimiento de requisitos específicos.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_2516": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:23:30.391084",
+        "typical_issue": "Sin acceso a los criterios de 05_ritmo_rima.json, 06_continuidad.json, 08_direccion_arte.json y 01_director.json, no se pueden verificar alineación con ritmo, continuidad narrativa, dirección de arte ni requisitos de dirección.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_9955": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:23:30.391086",
+        "typical_issue": "El output carece de información estructural requerida (por ejemplo, ausencia de campos de métricas, rimas o continuidad) que suelen estar especificados en los criterios.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_4217": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:23:40.439483",
+        "typical_issue": "No se pudo cargar ni verificar los criterios específicos del agente porque el archivo de criterios no está disponible en el contexto de evaluación.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      }
+    },
+    "11_loader": {
+      "new_5042": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:07:39.034681",
+        "typical_issue": "Archivo de criterios de evaluación no disponible; no se pudo realizar evaluación objetiva.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-144901"
+        ],
+        "status": "unresolved"
+      },
+      "new_2483": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:24:30.338875",
+        "typical_issue": "No se pudieron cargar los criterios de evaluación para el agente 11_loader.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_8447": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:24:53.220151",
+        "typical_issue": "No se pudo cargar el archivo de criterios de evaluación para el agente 11_loader.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      }
+    },
+    "12_validador": {
+      "new_5062": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:27:14.794089",
+        "typical_issue": "Página 10 no contiene la palabra 'resolución' requerida.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_755": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:27:14.794098",
+        "typical_issue": "Páginas 1‑9 no contienen la palabra 'conflicto' requerida.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_2612": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:27:14.794100",
+        "typical_issue": "Esquema de rima inconsistente entre los versos de varias páginas.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_7370": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:27:14.794102",
+        "typical_issue": "El conteo de sílabas supera el rango 6‑12 en varias líneas (páginas 1, 3, 5, 6).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_1319": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:27:14.794103",
+        "typical_issue": "Ritmo irregular: algunas estrofas presentan más de dos versos o versos demasiado extensos.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "syllable_count_issue": {
+        "count": 1,
+        "first_seen": "2025-08-29T15:28:24.281457",
+        "typical_issue": "No se respeta el metro de 6‑12 sílabas por verso; varios versos superan 14 sílabas.",
+        "recommendation": "Especificar conteo exacto de sílabas por verso",
+        "stories_affected": [
+          "test-emilia-20250829-150811"
+        ],
+        "last_seen": "2025-08-29T15:28:24.281466"
       }
     }
   },

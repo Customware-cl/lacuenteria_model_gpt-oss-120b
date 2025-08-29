@@ -1,0 +1,85 @@
+{
+  "leitmotiv": "¡Festejemos juntos!",
+  "beat_sheet": [
+    {
+      "pagina": 1,
+      "objetivo": "Presentar a Emilia y el ambiente festivo",
+      "conflicto": "Los globos de colores se sueltan y flotan hacia el techo",
+      "emocion": "Maravilla",
+      "imagen_nuclear": "Emilia mira los globos elevándose"
+    },
+    {
+      "pagina": 2,
+      "objetivo": "Iniciar el desfile de disfraces",
+      "conflicto": "La maestra anuncia con entusiasmo: ¡Festejemos juntos! y todos corren a mostrarse",
+      "emocion": "Excitación",
+      "imagen_nuclear": "Niños en trajes coloridos alineados"
+    },
+    {
+      "pagina": 3,
+      "objetivo": "Mostrar la variedad de disfraces",
+      "conflicto": "El dragón de papel de Lucas se engancha en una silla y se desenrolla",
+      "emocion": "Risas",
+      "imagen_nuclear": "Dragón gigante atrapado en la silla"
+    },
+    {
+      "pagina": 4,
+      "objetivo": "Jugar al juego de la cuerda",
+      "conflicto": "Una ráfaga de viento sopla la cinta de la cuerda, haciéndola caer",
+      "emocion": "Sorpresa",
+      "imagen_nuclear": "Cinta volando como serpiente"
+    },
+    {
+      "pagina": 5,
+      "objetivo": "Comenzar la canción de cumpleaños",
+      "conflicto": "Los niños cantan y la canción incluye la frase: ¡Festejemos juntos! mientras Emilia busca su sombrero",
+      "emocion": "Alegría",
+      "imagen_nuclear": "Niños cantando con instrumentos"
+    },
+    {
+      "pagina": 6,
+      "objetivo": "Descubrir el pastel",
+      "conflicto": "El pastel está cubierto por una gran manta que se mueve misteriosamente",
+      "emocion": "Intriga",
+      "imagen_nuclear": "Manta ondeando sobre el pastel"
+    },
+    {
+      "pagina": 7,
+      "objetivo": "Invitar al juego de la pelota",
+      "conflicto": "Una gatita curiosa se cuela y empuja la pelota, haciéndola rodar fuera del salón",
+      "emocion": "Desconcertado",
+      "imagen_nuclear": "Gatita persiguiendo la pelota"
+    },
+    {
+      "pagina": 8,
+      "objetivo": "Clímax: El caos del pastel",
+      "conflicto": "La gatita salta sobre la mesa y derriba el pastel, esparciendo crema por todas partes",
+      "emocion": "Asombro",
+      "imagen_nuclear": "Pastel volcado, crema por el suelo"
+    },
+    {
+      "pagina": 9,
+      "objetivo": "Resolver el desastre",
+      "conflicto": "Los niños, liderados por Emilia, recogen la crema y decoran un nuevo pastel improvisado",
+      "emocion": "Trabajo en equipo",
+      "imagen_nuclear": "Manos pequeñas decorando un pastel con frutas"
+    },
+    {
+      "pagina": 10,
+      "objetivo": "Celebrar juntos",
+      "resolucion": "Todos se sientan y la maestra dice: ¡Festejemos juntos! mientras comparten el pastel",
+      "emocion": "Calidez",
+      "imagen_nuclear": "Mesa redonda con niños sonriendo y pastel"
+    }
+  ],
+  "variantes": [
+    {
+      "climax_alternativo": "La gatita, asustada, derriba la mesa completa y los niños deben reconstruirla antes del final del día",
+      "resolucion_alternativa": "Con la ayuda de los maestros, los niños reconstruyen la mesa y celebran con una canción improvisada"
+    },
+    {
+      "climax_alternativo": "Un globo gigante se escapa y atraviesa el salón, provocando que el pastel caiga del techo",
+      "resolucion_alternativa": "Los niños atrapan el globo, lo sueltan suavemente y reutilizan el pastel para una merienda al aire libre"
+    }
+  ]
+}

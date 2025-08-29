@@ -1,0 +1,78 @@
+[
+  {
+    "timestamp": "2025-08-29T15:24:06.321935",
+    "retry_count": 2,
+    "qa_scores": {
+      "coherencia_arte": {
+        "criterios_evaluados": {
+          "paleta_colores_apropiada": true,
+          "leitmotiv_incluido": true,
+          "composicion_dirige_mirada_central": true
+        },
+        "criterios_cumplidos": 3,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "cumplimiento_director": {
+        "criterios_evaluados": {
+          "tema_central_reflejado": true,
+          "personajes_principales_descritos": true,
+          "tono_estilo_respetado": true
+        },
+        "criterios_cumplidos": 3,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "ritmo_rima": {
+        "criterios_evaluados": {
+          "frases_con_ritmo": true,
+          "rimas_no_forzadas": true,
+          "longitud_frases_adecuada": true
+        },
+        "criterios_cumplidos": 3,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "continuidad": {
+        "criterios_evaluados": {
+          "conexion_con_contenido": true,
+          "consistencia_visual_estilo": true,
+          "evita_elementos_discordantes": true
+        },
+        "criterios_cumplidos": 3,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "promedio": {
+        "nota_ponderada": 5.0,
+        "ajustes_globales": [],
+        "nota_final": 5.0
+      }
+    },
+    "execution_time": 5.543327,
+    "temperature": 0.7,
+    "max_tokens": 20000,
+    "status": "success",
+    "tokens_consumed": {
+      "prompt_tokens": 3992,
+      "completion_tokens": 790,
+      "total_tokens": 4782
+    }
+  }
+]

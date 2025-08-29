@@ -1,0 +1,125 @@
+{
+  "agente": "01_director",
+  "descripcion": "Criterios de evaluación para el Director de narrativa infantil",
+  "metricas": {
+    "arco_narrativo": {
+      "peso": 0.4,
+      "descripcion": "Evaluación de la estructura narrativa completa",
+      "criterios": {
+        "tiene_introduccion_clara": {
+          "descripcion": "¿Presenta personajes y situación inicial en páginas 1-2?",
+          "verificar": "beat_sheet[0-1] contienen presentación clara",
+          "esencial": true
+        },
+        "tiene_desarrollo_progresivo": {
+          "descripcion": "¿La tensión aumenta gradualmente entre páginas 3-6?",
+          "verificar": "conflictos muestran escalada progresiva",
+          "esencial": true
+        },
+        "tiene_climax_identificable": {
+          "descripcion": "¿Hay un punto máximo de tensión claro en páginas 7-8?",
+          "verificar": "página 7 u 8 marca explícitamente el clímax",
+          "esencial": true
+        },
+        "tiene_resolucion_satisfactoria": {
+          "descripcion": "¿Se resuelven los conflictos en páginas 9-10?",
+          "verificar": "página 10 usa campo 'resolucion' y cierra conflictos",
+          "esencial": true
+        },
+        "coherencia_causal": {
+          "descripcion": "¿Cada beat se conecta lógicamente con el siguiente?",
+          "verificar": "no hay saltos narrativos inexplicables",
+          "esencial": false
+        }
+      }
+    },
+    "potencia_leitmotiv": {
+      "peso": 0.3,
+      "descripcion": "Evaluación del leitmotiv como elemento recurrente",
+      "criterios": {
+        "es_memorable": {
+          "descripcion": "¿La frase es pegadiza, musical y recordable?",
+          "verificar": "leitmotiv tiene ritmo, rima o aliteración",
+          "esencial": true
+        },
+        "aparece_tres_veces": {
+          "descripcion": "¿Aparece exactamente 3 veces en beat_sheet (páginas 2,5,10)?",
+          "verificar": "contar apariciones en campos conflicto/resolucion",
+          "esencial": true
+        },
+        "es_apropiado_edad": {
+          "descripcion": "¿Es comprensible para la edad objetivo?",
+          "verificar": "vocabulario simple, máximo 10 palabras",
+          "esencial": false
+        },
+        "integrado_naturalmente": {
+          "descripcion": "¿Se integra de forma natural en la narrativa?",
+          "verificar": "no se siente forzado en el contexto",
+          "esencial": false
+        }
+      }
+    },
+    "claridad_estructura": {
+      "peso": 0.3,
+      "descripcion": "Evaluación de la estructura técnica del beat sheet",
+      "criterios": {
+        "tiene_10_beats": {
+          "descripcion": "¿Hay exactamente 10 beats completos?",
+          "verificar": "beat_sheet.length === 10",
+          "esencial": true
+        },
+        "campos_completos": {
+          "descripcion": "¿Cada beat tiene todos los campos requeridos?",
+          "verificar": "objetivo, conflicto/resolucion, emocion, imagen_nuclear presentes",
+          "esencial": true
+        },
+        "progresion_emocional": {
+          "descripcion": "¿Las emociones siguen un arco coherente?",
+          "verificar": "campo 'emocion' muestra evolución lógica",
+          "esencial": false
+        },
+        "imagenes_visualizables": {
+          "descripcion": "¿Cada imagen_nuclear es clara y visualizable?",
+          "verificar": "descripciones concretas, no abstractas",
+          "esencial": false
+        },
+        "estructura_json_correcta": {
+          "descripcion": "¿Páginas 1-9 usan 'conflicto' y página 10 usa 'resolucion'?",
+          "verificar": "campos correctos según número de página",
+          "esencial": true
+        }
+      }
+    }
+  },
+  "ajustes_contextuales": {
+    "originalidad_excepcional": {
+      "max_ajuste": 0.3,
+      "descripcion": "Planteamiento único, innovador o sorprendente",
+      "aplicar_si": "la estructura narrativa es particularmente creativa"
+    },
+    "coherencia_perfecta": {
+      "max_ajuste": 0.2,
+      "descripcion": "Todos los elementos se integran perfectamente",
+      "aplicar_si": "no hay ninguna inconsistencia o elemento fuera de lugar"
+    },
+    "fallo_estructural_grave": {
+      "max_ajuste": -0.5,
+      "descripcion": "Problemas fundamentales en la estructura",
+      "aplicar_si": "falta el clímax o la resolución es incoherente"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_metricas + ajustes_contextuales",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    }
+  }
+}

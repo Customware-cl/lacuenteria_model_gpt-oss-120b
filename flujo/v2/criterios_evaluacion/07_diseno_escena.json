@@ -1,0 +1,130 @@
+{
+  "agente": "07_diseno_escena",
+  "descripcion": "Criterios de evaluación para el Diseñador de escena",
+  "metricas": {
+    "correspondencia_texto": {
+      "peso": 0.4,
+      "descripcion": "Evaluación de la fidelidad al texto",
+      "criterios": {
+        "refleja_versos": {
+          "descripcion": "¿Los prompts reflejan EXACTAMENTE los versos?",
+          "verificar": "elementos visuales corresponden al texto",
+          "esencial": true
+        },
+        "sin_elementos_extra": {
+          "descripcion": "¿Evita elementos no mencionados en el texto?",
+          "verificar": "no añade objetos o acciones inventadas",
+          "esencial": true
+        },
+        "coherencia_bible": {
+          "descripcion": "¿Respeta la Character Bible absolutamente?",
+          "verificar": "descripciones consistentes con bible",
+          "esencial": true
+        },
+        "accion_principal": {
+          "descripcion": "¿Captura la acción principal del verso?",
+          "verificar": "foco en la acción descrita",
+          "esencial": true
+        },
+        "emocion_visible": {
+          "descripcion": "¿La emoción dominante es visible?",
+          "verificar": "expresiones y ambiente emocional",
+          "esencial": false
+        }
+      }
+    },
+    "calidad_tecnica": {
+      "peso": 0.35,
+      "descripcion": "Evaluación de especificaciones técnicas",
+      "criterios": {
+        "tipo_plano": {
+          "descripcion": "¿Especifica tipo de plano para cada página?",
+          "verificar": "general/medio/primer plano/detalle",
+          "esencial": true
+        },
+        "angulo_camara": {
+          "descripcion": "¿Define ángulo de cámara?",
+          "verificar": "perspectiva clara en cada prompt",
+          "esencial": true
+        },
+        "iluminacion": {
+          "descripcion": "¿Incluye momento del día/iluminación?",
+          "verificar": "luz natural, hora del día, ambiente",
+          "esencial": true
+        },
+        "locacion_especifica": {
+          "descripcion": "¿Define entorno/locación específica?",
+          "verificar": "lugar concreto descrito",
+          "esencial": true
+        },
+        "objetos_ancla": {
+          "descripcion": "¿Incluye 1-2 objetos ancla de continuidad?",
+          "verificar": "elementos consistentes entre páginas",
+          "esencial": false
+        }
+      }
+    },
+    "variedad_visual": {
+      "peso": 0.25,
+      "descripcion": "Evaluación de la diversidad visual",
+      "criterios": {
+        "alterna_planos": {
+          "descripcion": "¿ALTERNA planos para variedad visual?",
+          "verificar": "no repite mismo plano consecutivamente",
+          "esencial": true
+        },
+        "composiciones_diversas": {
+          "descripcion": "¿Varía las composiciones?",
+          "verificar": "diferentes encuadres y perspectivas",
+          "esencial": false
+        },
+        "estilo_consistente": {
+          "descripcion": "¿Mantiene estilo 'ilustración infantil colorida'?",
+          "verificar": "todas incluyen referencia al estilo",
+          "esencial": true
+        },
+        "anotaciones_completas": {
+          "descripcion": "¿Incluye anotaciones sobre planos?",
+          "verificar": "campo anotaciones documentado",
+          "esencial": false
+        }
+      }
+    }
+  },
+  "ajustes_contextuales": {
+    "prompts_cinematograficos": {
+      "max_ajuste": 0.3,
+      "descripcion": "Prompts con calidad cinematográfica",
+      "aplicar_si": "composiciones excepcionales y evocadoras"
+    },
+    "narrativa_visual": {
+      "max_ajuste": 0.2,
+      "descripcion": "Excelente narrativa visual",
+      "aplicar_si": "los prompts cuentan la historia visualmente"
+    },
+    "prompts_genericos": {
+      "max_ajuste": -0.3,
+      "descripcion": "Prompts vagos o genéricos",
+      "aplicar_si": "descripciones poco específicas"
+    },
+    "incoherencia_visual": {
+      "max_ajuste": -0.3,
+      "descripcion": "Inconsistencias con texto o bible",
+      "aplicar_si": "contradice elementos establecidos"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_metricas + ajustes_contextuales",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    }
+  }
+}

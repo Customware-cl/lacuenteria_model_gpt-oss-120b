@@ -1,0 +1,125 @@
+{
+  "agente": "08_direccion_arte",
+  "descripcion": "Criterios de evaluación para el Director de arte",
+  "metricas": {
+    "coherencia_cromatica": {
+      "peso": 0.4,
+      "descripcion": "Evaluación de la consistencia de la paleta de colores",
+      "criterios": {
+        "paleta_definida": {
+          "descripcion": "¿Define paleta de 3-4 colores por página?",
+          "verificar": "cada página tiene paleta específica",
+          "esencial": true
+        },
+        "colores_hex": {
+          "descripcion": "¿Usa códigos hex precisos (#RRGGBB)?",
+          "verificar": "colores en formato hexadecimal",
+          "esencial": true
+        },
+        "transiciones_suaves": {
+          "descripcion": "¿Las transiciones entre páginas son coherentes?",
+          "verificar": "cambios justificados por narrativa",
+          "esencial": true
+        },
+        "consistencia_personajes": {
+          "descripcion": "¿Colores de personajes consistentes con bible?",
+          "verificar": "respeta colores definidos en character_bible",
+          "esencial": true
+        },
+        "transiciones_documentadas": {
+          "descripcion": "¿Documenta las transiciones importantes?",
+          "verificar": "campo transiciones completo",
+          "esencial": false
+        }
+      }
+    },
+    "atmosfera_emocional": {
+      "peso": 0.35,
+      "descripcion": "Evaluación del uso del color para transmitir emociones",
+      "criterios": {
+        "refleja_arco_emocional": {
+          "descripcion": "¿Los colores reflejan el arco emocional?",
+          "verificar": "paleta acorde con emoción de cada página",
+          "esencial": true
+        },
+        "momento_dia_coherente": {
+          "descripcion": "¿El momento del día es coherente?",
+          "verificar": "progresión lógica de luz/tiempo",
+          "esencial": true
+        },
+        "atmosfera_definida": {
+          "descripcion": "¿Define atmósfera para cada página?",
+          "verificar": "campo atmosfera descriptivo",
+          "esencial": true
+        },
+        "climax_visual": {
+          "descripcion": "¿El clímax tiene tratamiento visual especial?",
+          "verificar": "páginas 7-8 con paleta distintiva",
+          "esencial": false
+        }
+      }
+    },
+    "especificacion_tecnica": {
+      "peso": 0.25,
+      "descripcion": "Evaluación de la completitud técnica",
+      "criterios": {
+        "estilo_global": {
+          "descripcion": "¿Define estilo global de ilustración?",
+          "verificar": "campo estilo_global especificado",
+          "esencial": true
+        },
+        "color_script_completo": {
+          "descripcion": "¿Color script para las 10 páginas?",
+          "verificar": "todas las páginas tienen paleta",
+          "esencial": true
+        },
+        "texturas_materiales": {
+          "descripcion": "¿Considera texturas/materiales clave?",
+          "verificar": "referencias a texturas cuando aplica",
+          "esencial": false
+        },
+        "referencias_visuales": {
+          "descripcion": "¿Proporciona referencias visuales claras?",
+          "verificar": "estilo bien definido y replicable",
+          "esencial": false
+        }
+      }
+    }
+  },
+  "ajustes_contextuales": {
+    "direccion_magistral": {
+      "max_ajuste": 0.3,
+      "descripcion": "Dirección de arte excepcional",
+      "aplicar_si": "crea atmósfera visual memorable y coherente"
+    },
+    "innovacion_visual": {
+      "max_ajuste": 0.2,
+      "descripcion": "Propuesta visual innovadora",
+      "aplicar_si": "uso creativo del color y la luz"
+    },
+    "paleta_monotona": {
+      "max_ajuste": -0.3,
+      "descripcion": "Paleta repetitiva o sin variación",
+      "aplicar_si": "mismos colores en todas las páginas"
+    },
+    "incoherencia_cromatica": {
+      "max_ajuste": -0.3,
+      "descripcion": "Cambios de color injustificados",
+      "aplicar_si": "transiciones bruscas sin razón narrativa"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_metricas + ajustes_contextuales",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    }
+  }
+}

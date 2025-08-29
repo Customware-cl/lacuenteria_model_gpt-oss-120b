@@ -1,0 +1,28 @@
+{
+  "paginas_texto": {
+    "1": "Emilia llega al jardín\nLos colores brillan en el jardín\nCuelgan alto, en la rama\nNadie los puede tocar la rama",
+    "2": "Manos se unen, forman cadena\n¡Tirititi, vamos a brincar!\nSaltan y estiran, buscan la cadena\nJuntos gritan, ¡todos a brincar!",
+    "3": "El armario se abre, surge color\nRopas vuelan, giran en red de color\nPrincesa y héroe quedan enredados\nDesorden de telas crean nudos enredados",
+    "4": "La canción suena, todos a bailar\nDe pronto el silencio cubre el lugar\nMiran al altavoz, quieren bailar\nQuieren que vuelva el sonido al lugar",
+    "5": "Payaso llora, falta su nariz roja\nLos niños buscan, la pista es roja\n¡Tirititi, vamos a brincar!\nLa encuentran, el show vuelve a brincar",
+    "6": "Carrito llega, está vacío\nEmilia mira, cara muestra asombro\nEsperan cantando, sigue vacío\nCantan, la espera vibra con asombro",
+    "7": "Un niño sin traje se siente solo\nMira al suelo, ánimo queda solo\nAmigos le brindan un traje nuevo\nJuega contento, lleva traje nuevo",
+    "8": "La piñata cuelga, alta en el cielo\nEl palo cruje, se rompe y cayó\nNiños ansían, dulce bajo el cielo\nAyudan, buscan otro palo y cayó",
+    "9": "Velas altas alzan torres de luz\nBrillan fuerte, llenan el aire de luz\nPide cajita, así podrá subir\nCon ella llega, sopla y logra subir",
+    "10": "Todos forman torre, unidos al cantar\nManos unidas, vibra el aire cantar\n¡Tirititi, vamos a brincar!\nAplauden, pastel brilla al brincar"
+  },
+  "leitmotiv_usado_en": [
+    2,
+    5,
+    10
+  ],
+  "_qa_metadata": {
+    "status": "failed",
+    "scores": {},
+    "issues": [
+      "No se encontró campo 'qa' en la respuesta"
+    ],
+    "retry_count": 2,
+    "timestamp": "2025-08-29T14:55:01.367346"
+  }
+}

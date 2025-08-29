@@ -74,7 +74,7 @@ class StoryOrchestrator:
                 "pipeline_version": getattr(self, 'pipeline_version', 'v1'),
                 "configuracion_modelo": {
                     "modelo": LLM_CONFIG["model"],
-                    "endpoint": LLM_CONFIG["endpoint"],
+                    "endpoint": LLM_CONFIG.get("api_url", "http://69.19.136.204:8000/v1/chat/completions"),
                     "timeout": self.agent_runner.llm_client.timeout,
                     "default_temperature": LLM_CONFIG["temperature"],
                     "default_max_tokens": LLM_CONFIG["max_tokens"]

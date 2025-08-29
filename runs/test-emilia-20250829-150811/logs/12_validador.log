@@ -1,0 +1,95 @@
+[
+  {
+    "timestamp": "2025-08-29T15:29:24.094752",
+    "retry_count": 2,
+    "qa_scores": {
+      "estructura_narrativa": {
+        "criterios_evaluados": {
+          "coherencia_historia": true,
+          "climax_present": true,
+          "resolucion_present": true
+        },
+        "criterios_cumplidos": 3,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "ritmo_rima": {
+        "criterios_evaluados": {
+          "ritmo_consistente": false,
+          "esquema_rima": false,
+          "silabas_entre_6_12": false,
+          "leitmotiv_en_paginas": false
+        },
+        "criterios_cumplidos": 0,
+        "criterios_totales": 4,
+        "criterios_esenciales_fallados": [
+          "esquema_rima",
+          "silabas_entre_6_12",
+          "leitmotiv_en_paginas"
+        ],
+        "porcentaje": 0,
+        "nota_calculada": 0.0,
+        "ajustes_contextuales": [],
+        "nota_final": 0.0
+      },
+      "sensibilidad": {
+        "criterios_evaluados": {
+          "representacion_inclusiva": true,
+          "ausencia_estereotipos": true
+        },
+        "criterios_cumplidos": 2,
+        "criterios_totales": 2,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "portada": {
+        "criterios_evaluados": {
+          "leitmotiv_present": true,
+          "objeto_ancla_central": true,
+          "estilo_coherente_con_direccion_arte": true
+        },
+        "criterios_cumplidos": 3,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "loader": {
+        "criterios_evaluados": {
+          "coherencia_con_historia": true,
+          "inclusion_leitmotiv": true
+        },
+        "criterios_cumplidos": 2,
+        "criterios_totales": 2,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "promedio": {
+        "nota_ponderada": 4.0,
+        "ajustes_globales": [],
+        "nota_final": 4.0
+      }
+    },
+    "execution_time": 38.982401,
+    "temperature": 0.7,
+    "max_tokens": 20000,
+    "status": "success",
+    "tokens_consumed": {
+      "prompt_tokens": 3273,
+      "completion_tokens": 5503,
+      "total_tokens": 8776
+    }
+  }
+]

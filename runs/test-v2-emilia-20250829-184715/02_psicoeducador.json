@@ -1,0 +1,88 @@
+{
+  "edad_objetivo": "2-6 años",
+  "metas_generales": [
+    "Identificar y nombrar emociones al experimentar sorpresas o cambios inesperados.",
+    "Utilizar la respiración consciente cuando surge una situación que causa sorpresa o frustración.",
+    "Pedir ayuda a un adulto o a un compañero cuando se siente inseguro o necesita apoyo.",
+    "Colaborar con otros niños para resolver problemas y limpiar desordenes.",
+    "Practicar el autocontrol esperando su turno y siguiendo pasos simples para lograr una meta.",
+    "Expresar gratitud y alegría al finalizar una actividad grupal."
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Etiquetar la emoción de maravilla y sorpresa.",
+      "frase_modelo": "¡Mira, los globos vuelan!",
+      "recurso": "Etiquetado emocional",
+      "evitar": "Ignorar la emoción del niño."
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Practicar autocontrol esperando su turno para mostrar el disfraz.",
+      "frase_modelo": "Yo esperaré mi turno para mostrar mi disfraz.",
+      "recurso": "Autocontrol por pasos",
+      "evitar": "Empujar o interrumpir a los demás."
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Resolver el problema del dragón pidiendo ayuda.",
+      "frase_modelo": "¿Podemos mover la silla juntos?",
+      "recurso": "Pedir ayuda",
+      "evitar": "Frustrarse y abandonar la tarea."
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Usar respiración consciente ante la sorpresa de la cinta que cae.",
+      "frase_modelo": "Voy a respirar hondo.",
+      "recurso": "Respiración consciente",
+      "evitar": "Gritar o correr sin calmarse."
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Mantener el foco y buscar su sombrero sin rendirse.",
+      "frase_modelo": "¿Dónde está mi sombrero?",
+      "recurso": "Autocontrol por pasos",
+      "evitar": "Desistir rápidamente."
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Expresar curiosidad y preguntar sobre la manta misteriosa.",
+      "frase_modelo": "¿Qué se esconde bajo la manta?",
+      "recurso": "Etiquetado emocional",
+      "evitar": "Saltar sobre la manta sin preguntar."
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Adaptarse al cambio cuando la gatita empuja la pelota.",
+      "frase_modelo": "¡Oh, la pelota se fue!",
+      "recurso": "Respiración consciente",
+      "evitar": "Enfadar o lanzar objetos."
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Manejo de frustración y cooperación para limpiar el pastel derramado.",
+      "frase_modelo": "Vamos a limpiar juntos.",
+      "recurso": "Sustituciones conductuales",
+      "evitar": "Culpar a otros o a la gatita."
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Trabajo en equipo y compartir tareas al decorar el nuevo pastel.",
+      "frase_modelo": "Yo pongo las frutas.",
+      "recurso": "Pedir ayuda",
+      "evitar": "Quedarse con todo el control sin incluir a los demás."
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Expresar gratitud y alegría al compartir el pastel.",
+      "frase_modelo": "¡Gracias por ayudar!",
+      "recurso": "Etiquetado emocional",
+      "evitar": "Olvidar reconocer la ayuda de los demás."
+    }
+  ],
+  "banderas": [
+    "Inquietud o angustia prolongada ante cambios inesperados.",
+    "Negativa repetida a pedir ayuda cuando la situación es difícil.",
+    "Comportamiento agresivo o de rechazo al compartir materiales."
+  ]
+}

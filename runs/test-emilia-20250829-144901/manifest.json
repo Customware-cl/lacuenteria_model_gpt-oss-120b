@@ -1,0 +1,454 @@
+{
+  "story_id": "test-emilia-20250829-144901",
+  "source": "local",
+  "created_at": "2025-08-29T14:49:01.492929",
+  "updated_at": "2025-08-29T15:07:09.482732",
+  "estado": "qa_failed",
+  "paso_actual": "11_loader",
+  "qa_historial": {
+    "01_director": {
+      "estructura_narrativa": {
+        "criterios_evaluados": {
+          "narrativa_completa": true
+        },
+        "criterios_cumplidos": 1,
+        "criterios_totales": 1,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "leitmotiv_en_beat_sheet": {
+        "criterios_evaluados": {
+          "leitmotiv_aparece_en_beat_sheet": true
+        },
+        "criterios_cumplidos": 1,
+        "criterios_totales": 1,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "uso_resolucion": {
+        "criterios_evaluados": {
+          "pagina_10_resolucion_y_1_9_conflicto": true
+        },
+        "criterios_cumplidos": 1,
+        "criterios_totales": 1,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "promedio": {
+        "nota_ponderada": 5.0,
+        "ajustes_globales": [],
+        "nota_final": 5.0
+      }
+    },
+    "02_psicoeducador": {
+      "alineacion_y_recursos": {
+        "criterios_evaluados": {
+          "alineacion_edad_objetivo": true,
+          "recursos_implementables": false,
+          "ausencia_moralizacion": true,
+          "claridad_micro_habilidad": true,
+          "consistencia_formato": true,
+          "inclusion_banderas": true,
+          "lenguaje_positivo": true,
+          "variedad_recursos": true
+        },
+        "criterios_cumplidos": 7,
+        "criterios_totales": 8,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 88,
+        "nota_calculada": 4.4,
+        "ajustes_contextuales": [],
+        "nota_final": 4.4
+      },
+      "promedio": {
+        "nota_ponderada": 4.4,
+        "ajustes_globales": [],
+        "nota_final": 4.4
+      }
+    },
+    "03_cuentacuentos": {},
+    "04_editor_claridad": {
+      "overall": 5,
+      "promedio": 5.0
+    },
+    "05_ritmo_rima": {},
+    "06_continuidad": {
+      "coherencia_general": {
+        "criterios_evaluados": {
+          "character_bible_completo": true,
+          "relaciones_descritas": true,
+          "evolucion_emocional_descrita": true,
+          "objeto_ancla_reapariciones_minimo": true
+        },
+        "criterios_cumplidos": 4,
+        "criterios_totales": 4,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "alineacion_brief": {
+        "criterios_evaluados": {
+          "paginas_objeto_ancla_secuenciales": true,
+          "sin_contradicciones": true
+        },
+        "criterios_cumplidos": 2,
+        "criterios_totales": 2,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "integracion_dependencias": {
+        "criterios_evaluados": {
+          "integracion_ritmo_rima": false
+        },
+        "criterios_cumplidos": 0,
+        "criterios_totales": 1,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 0,
+        "nota_calculada": 0.0,
+        "ajustes_contextuales": [],
+        "nota_final": 0.0
+      },
+      "promedio": {
+        "nota_ponderada": 3.33,
+        "ajustes_globales": [],
+        "nota_final": 3.33
+      }
+    },
+    "07_diseno_escena": {
+      "integracion_ritmo_rima": {
+        "criterios_evaluados": {
+          "cumple_patron_ritmico": true,
+          "uso_correcto_de_rimas": true,
+          "coherencia_con_05_ritmo_rima": true
+        },
+        "criterios_cumplidos": 3,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "coherencia_general": {
+        "criterios_evaluados": {
+          "continuidad_narrativa": true,
+          "consistencia_emocional": true,
+          "coherencia_visual": true
+        },
+        "criterios_cumplidos": 3,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "alineacion_brief": {
+        "criterios_evaluados": {
+          "presencia_leitmotiv_globo_rojo": true,
+          "cumplimiento_estilo_ilustracion": true,
+          "uso_de_objetos_ancora": true
+        },
+        "criterios_cumplidos": 3,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "promedio": {
+        "nota_ponderada": 5.0,
+        "ajustes_globales": [],
+        "nota_final": 5.0
+      }
+    },
+    "08_direccion_arte": {
+      "coherencia_color": {
+        "criterios_evaluados": {
+          "paleta_tamano_cuatro": true,
+          "variedad_colores": true,
+          "momento_atmosfera_coherentes": true
+        },
+        "criterios_cumplidos": 3,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "transiciones": {
+        "criterios_evaluados": {
+          "secuencia_completa": true,
+          "consistencia_tipo_transicion": false,
+          "rango_valido": true
+        },
+        "criterios_cumplidos": 2,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [
+          "consistencia_tipo_transicion"
+        ],
+        "porcentaje": 66.66666666666666,
+        "nota_calculada": 3.33,
+        "ajustes_contextuales": [
+          "criterio esencial fallado, máximo 60% permitido"
+        ],
+        "nota_final": 3.0
+      },
+      "completitud": {
+        "criterios_evaluados": {
+          "secciones_presentes": true,
+          "momento_atmosfera_en_todas_paginas": true,
+          "codigos_hex_correctos": true
+        },
+        "criterios_cumplidos": 3,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "promedio": {
+        "nota_ponderada": 4.33,
+        "ajustes_globales": [],
+        "nota_final": 4.33
+      }
+    },
+    "09_sensibilidad": {
+      "sensibilidad": {
+        "criterios_evaluados": {
+          "detectar_estereotipo_genero": true,
+          "detectar_falta_diversidad": true,
+          "sugerir_correccion_estereotipo": true,
+          "sugerir_correccion_diversidad": true,
+          "apto_para_ninos": true,
+          "uso_correcto_dependencias": true
+        },
+        "criterios_cumplidos": 6,
+        "criterios_totales": 6,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "promedio": {
+        "nota_ponderada": 5.0,
+        "ajustes_globales": [],
+        "nota_final": 5.0
+      }
+    },
+    "10_portadista": {
+      "titulos": {
+        "criterios_evaluados": {
+          "titulos_adecuados_edad": true
+        },
+        "criterios_cumplidos": 1,
+        "criterios_totales": 1,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "contenido_prompt": {
+        "criterios_evaluados": {
+          "paleta_colores_incluida": true,
+          "leitmotiv_mencionado": true,
+          "direccion_arte_respetada": true,
+          "personajes_requeridos_incluidos": true
+        },
+        "criterios_cumplidos": 4,
+        "criterios_totales": 4,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "calidad_linguistica": {
+        "criterios_evaluados": {
+          "gramatica_clara": true
+        },
+        "criterios_cumplidos": 1,
+        "criterios_totales": 1,
+        "criterios_esenciales_fallados": [],
+        "porcentaje": 100,
+        "nota_calculada": 5.0,
+        "ajustes_contextuales": [],
+        "nota_final": 5.0
+      },
+      "promedio": {
+        "nota_ponderada": 5.0,
+        "ajustes_globales": [],
+        "nota_final": 5.0
+      }
+    }
+  },
+  "devoluciones": [
+    {
+      "paso": "03_cuentacuentos",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {},
+      "issues": [
+        "No se encontró campo 'qa' en la respuesta"
+      ],
+      "timestamp": "2025-08-29T14:55:01.367797"
+    },
+    {
+      "paso": "05_ritmo_rima",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {},
+      "issues": [
+        "No se encontró campo 'qa' en la respuesta"
+      ],
+      "timestamp": "2025-08-29T15:01:55.856084"
+    },
+    {
+      "paso": "06_continuidad",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "coherencia_general": {
+          "criterios_evaluados": {
+            "character_bible_completo": true,
+            "relaciones_descritas": true,
+            "evolucion_emocional_descrita": true,
+            "objeto_ancla_reapariciones_minimo": true
+          },
+          "criterios_cumplidos": 4,
+          "criterios_totales": 4,
+          "criterios_esenciales_fallados": [],
+          "porcentaje": 100,
+          "nota_calculada": 5.0,
+          "ajustes_contextuales": [],
+          "nota_final": 5.0
+        },
+        "alineacion_brief": {
+          "criterios_evaluados": {
+            "paginas_objeto_ancla_secuenciales": true,
+            "sin_contradicciones": true
+          },
+          "criterios_cumplidos": 2,
+          "criterios_totales": 2,
+          "criterios_esenciales_fallados": [],
+          "porcentaje": 100,
+          "nota_calculada": 5.0,
+          "ajustes_contextuales": [],
+          "nota_final": 5.0
+        },
+        "integracion_dependencias": {
+          "criterios_evaluados": {
+            "integracion_ritmo_rima": false
+          },
+          "criterios_cumplidos": 0,
+          "criterios_totales": 1,
+          "criterios_esenciales_fallados": [],
+          "porcentaje": 0,
+          "nota_calculada": 0.0,
+          "ajustes_contextuales": [],
+          "nota_final": 0.0
+        },
+        "promedio": {
+          "nota_ponderada": 3.33,
+          "ajustes_globales": [],
+          "nota_final": 3.33
+        }
+      },
+      "issues": [
+        "Falta integración de ritmo y rima según la dependencia 05_ritmo_rima.json",
+        "Objeto ancla de Pipo el Payaso no tiene reapariciones listadas",
+        "Objeto ancla de Lucas no tiene reapariciones listadas"
+      ],
+      "timestamp": "2025-08-29T15:03:41.663359"
+    }
+  ],
+  "reintentos": {
+    "02_psicoeducador": 1,
+    "03_cuentacuentos": 2,
+    "04_editor_claridad": 1,
+    "05_ritmo_rima": 2,
+    "06_continuidad": 2,
+    "07_diseno_escena": 1,
+    "08_direccion_arte": 1,
+    "09_sensibilidad": 1,
+    "10_portadista": 1
+  },
+  "timestamps": {
+    "01_director": {
+      "start": "2025-08-29T14:49:01.494884",
+      "end": "2025-08-29T14:49:26.722666",
+      "duration": 25.227777
+    },
+    "02_psicoeducador": {
+      "start": "2025-08-29T14:49:26.723319",
+      "end": "2025-08-29T14:50:24.910579",
+      "duration": 58.187255
+    },
+    "03_cuentacuentos": {
+      "start": "2025-08-29T14:50:24.911374",
+      "end": "2025-08-29T14:55:01.367764",
+      "duration": 276.456386
+    },
+    "04_editor_claridad": {
+      "start": "2025-08-29T14:55:01.368648",
+      "end": "2025-08-29T14:57:19.250798",
+      "duration": 137.882145
+    },
+    "05_ritmo_rima": {
+      "start": "2025-08-29T14:57:19.251671",
+      "end": "2025-08-29T15:01:55.856038",
+      "duration": 276.604362
+    },
+    "06_continuidad": {
+      "start": "2025-08-29T15:01:55.857073",
+      "end": "2025-08-29T15:03:41.663315",
+      "duration": 105.806237
+    },
+    "07_diseno_escena": {
+      "start": "2025-08-29T15:03:41.664607",
+      "end": "2025-08-29T15:04:59.792306",
+      "duration": 78.127694
+    },
+    "08_direccion_arte": {
+      "start": "2025-08-29T15:04:59.793899",
+      "end": "2025-08-29T15:06:05.226433",
+      "duration": 65.43253
+    },
+    "09_sensibilidad": {
+      "start": "2025-08-29T15:06:05.227633",
+      "end": "2025-08-29T15:06:34.721400",
+      "duration": 29.493763
+    },
+    "10_portadista": {
+      "start": "2025-08-29T15:06:34.722686",
+      "end": "2025-08-29T15:07:09.482070",
+      "duration": 34.759379
+    }
+  },
+  "webhook_url": null,
+  "webhook_attempts": 0,
+  "pipeline_version": "v2",
+  "configuracion_modelo": {
+    "modelo": "openai/gpt-oss-120b",
+    "endpoint": "http://69.19.136.204:8000/v1/chat/completions",
+    "timeout": 900,
+    "default_temperature": 0.7,
+    "default_max_tokens": 20000
+  }
+}

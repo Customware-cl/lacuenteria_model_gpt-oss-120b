@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "2025-08-29T17:15:58.190585",
+    "retry_count": 2,
+    "qa_scores": {
+      "psicoeducador": {
+        "criterios_evaluados": {
+          "alineacion_con_edad_objetivo": false,
+          "recursos_son_implementables": true,
+          "ausencia_de_moralizacion": true
+        },
+        "criterios_cumplidos": 2,
+        "criterios_totales": 3,
+        "criterios_esenciales_fallados": [
+          "alineacion_con_edad_objetivo"
+        ],
+        "porcentaje": 60,
+        "nota_calculada": 3.0,
+        "ajustes_contextuales": [],
+        "nota_final": 3.0
+      },
+      "promedio": {
+        "nota_ponderada": 3.0,
+        "ajustes_globales": [],
+        "nota_final": 3.0
+      }
+    },
+    "execution_time": 15.180833,
+    "temperature": 0.7,
+    "max_tokens": 20000,
+    "status": "qa_failed",
+    "qa_issues": [
+      "Falta alineación con edad objetivo: no se incluye ningún campo o referencia a la edad objetivo del niño/a.",
+      "Los recursos están listados pero no se describen materiales o pasos concretos para su implementación."
+    ]
+  }
+]

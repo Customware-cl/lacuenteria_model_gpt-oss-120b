@@ -1,9 +1,0 @@
-[
-  {
-    "timestamp": 1755829483.511482,
-    "retry_count": 0,
-    "error": "Fallo después de 3 intentos. Último error: Error en intento 3: No se pudo parsear como JSON: {\n  \"paginas_texto_pulido\": {\n    \"1\": \"En la noche clara brilla la luz\\nEl viento susurra suave al mar\\nde luna\\nCruzo sombras donde yace mi cruz\\nY escucho el eco vibrar como bar\",\n    \"2\": \"Bajo el cielo gris se extiende el día\\nLos niños juegan bajo el sol brillante\\nSus risas llenan el aire con alegría\\nMientras corre el tiempo como corriente\",\n    \"3\": \"Sobre el río lento fluye la canción\\nQue lleva recuerdos de antaño y paz\\nSe mezcla con hojas que bailan en unión\\nY canta el bosque su et...",
-    "execution_time": 58.15357971191406,
-    "status": "error"
-  }
-]
