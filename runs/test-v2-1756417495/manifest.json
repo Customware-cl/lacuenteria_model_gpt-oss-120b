@@ -1,0 +1,77 @@
+{
+  "story_id": "test-v2-1756417495",
+  "source": "local",
+  "created_at": "2025-08-28T21:44:55.710946",
+  "updated_at": "2025-08-28T21:47:28.861015",
+  "estado": "error",
+  "paso_actual": "03_cuentacuentos",
+  "qa_historial": {
+    "01_director": {
+      "arco_narrativo": 4.5,
+      "potencia_leitmotiv": 4.5,
+      "claridad_estructura": 4.0,
+      "promedio": 4.33
+    },
+    "02_psicoeducador": {
+      "alineacion_pedagogica": 3.0,
+      "aplicabilidad": 2.5,
+      "sensibilidad": 4.0,
+      "promedio": 3.2
+    }
+  },
+  "devoluciones": [
+    {
+      "paso": "02_psicoeducador",
+      "motivo": "QA bajo umbral después de reintentos",
+      "qa_scores": {
+        "alineacion_pedagogica": 3.0,
+        "aplicabilidad": 2.5,
+        "sensibilidad": 4.0,
+        "promedio": 3.2
+      },
+      "issues": [
+        "Inconsistencia entre micro_habilidad y recurso en página 8 (señal visual vs pedir ayuda).",
+        "Frase modelo poco clara en página 6 ('Primero brilla, luego llueve suave') no refleja plan por pasos.",
+        "Recurso 'Etiquetado emocional' repetido 3 veces, posible sobreuso.",
+        "Micro_habilidad de página 4 ('dar sombra') puede resultar abstracta para niños pequeños."
+      ],
+      "timestamp": "2025-08-28T21:47:28.860503"
+    }
+  ],
+  "reintentos": {
+    "01_director": 2,
+    "02_psicoeducador": 2
+  },
+  "timestamps": {
+    "01_director": {
+      "start": "2025-08-28T21:44:55.711822",
+      "end": "2025-08-28T21:46:11.203505",
+      "duration": 75.491677
+    },
+    "02_psicoeducador": {
+      "start": "2025-08-28T21:46:11.204189",
+      "end": "2025-08-28T21:47:28.860475",
+      "duration": 77.656282
+    },
+    "03_cuentacuentos": {
+      "start": "2025-08-28T21:47:28.861209",
+      "end": "2025-08-28T21:48:56.728982",
+      "duration": 87.867765
+    }
+  },
+  "webhook_url": null,
+  "webhook_attempts": 0,
+  "pipeline_version": "v2",
+  "configuracion_modelo": {
+    "modelo": "openai/gpt-oss-120b",
+    "endpoint": "http://69.19.136.204:8000/v1/chat/completions",
+    "timeout": 900,
+    "default_temperature": 0.7,
+    "default_max_tokens": 4000
+  },
+  "error": {
+    "agent": "03_cuentacuentos",
+    "message": "Fallo después de 3 intentos. Último error: Error en intento 3: El modelo no generó contenido",
+    "timestamp": "2025-08-28T21:48:56.729017"
+  }
+}

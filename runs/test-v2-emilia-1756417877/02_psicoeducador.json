@@ -1,0 +1,85 @@
+{
+  "metas_generales": [
+    "Esperar su turno para abrir regalos y jugar con los juguetes",
+    "Expresar sus sentimientos con palabras como \"feliz\", \"triste\" o \"enojado\"",
+    "Compartir materiales y disfraces con los compañeros",
+    "Regresar a la zona de calma y respirar cuando se sienta abrumado"
+  ],
+  "mapa_psico_narrativo": [
+    {
+      "pagina": 1,
+      "micro_habilidad": "Identificar emociones propias",
+      "frase_modelo": "Veo que estás muy contenta porque es tu cumpleaños",
+      "recurso": "Etiquetado emocional",
+      "evitar": "Etiquetar sin validar"
+    },
+    {
+      "pagina": 2,
+      "micro_habilidad": "Reconocer emociones de los demás",
+      "frase_modelo": "¿Cómo crees que se siente tu amiguito con su disfraz?",
+      "recurso": "Etiquetado emocional",
+      "evitar": "Suponer sin preguntar"
+    },
+    {
+      "pagina": 3,
+      "micro_habilidad": "Pedir ayuda cuando lo necesite",
+      "frase_modelo": "Si no encuentras tu pieza, puedes decir \"Necesito ayuda, por favor\"",
+      "recurso": "Pedir ayuda",
+      "evitar": "Presionar para que lo haga solo"
+    },
+    {
+      "pagina": 4,
+      "micro_habilidad": "Esperar su turno",
+      "frase_modelo": "Vamos a contar hasta tres y luego será tu turno",
+      "recurso": "Autocontrol por pasos",
+      "evitar": "Interrumpir al otro"
+    },
+    {
+      "pagina": 5,
+      "micro_habilidad": "Compartir materiales",
+      "frase_modelo": "¿Te gustaría compartir tu sombrero con Ana?",
+      "recurso": "Sustituciones conductuales",
+      "evitar": "Retener los objetos"
+    },
+    {
+      "pagina": 6,
+      "micro_habilidad": "Usar respiración consciente para calmarse",
+      "frase_modelo": "Inhalemos juntos contando hasta tres, y exhalemos despacio",
+      "recurso": "Respiración consciente",
+      "evitar": "Ignorar señales de agitación"
+    },
+    {
+      "pagina": 7,
+      "micro_habilidad": "Expresar frustración con palabras",
+      "frase_modelo": "Si te sientes triste porque no tienes el mismo disfraz, puedes decir \"Estoy triste\"",
+      "recurso": "Etiquetado emocional",
+      "evitar": "Gritar o llorar sin acompañar con palabras"
+    },
+    {
+      "pagina": 8,
+      "micro_habilidad": "Aceptar diferencias",
+      "frase_modelo": "Cada uno tiene un disfraz único, ¡eso es lo divertido!",
+      "recurso": "Sustituciones conductuales",
+      "evitar": "Comparar y menospreciar"
+    },
+    {
+      "pagina": 9,
+      "micro_habilidad": "Participar en la canción de cumpleaños",
+      "frase_modelo": "Cantemos juntos, tú puedes levantar la mano cuando sea tu parte",
+      "recurso": "Autocontrol por pasos",
+      "evitar": "Forzar participación"
+    },
+    {
+      "pagina": 10,
+      "micro_habilidad": "Despedirse agradeciendo",
+      "frase_modelo": "Al final, podemos decir \"Gracias por jugar conmigo\"",
+      "recurso": "Etiquetado emocional",
+      "evitar": "Olvidar el agradecimiento"
+    }
+  ],
+  "banderas": [
+    "Muestra dificultad para esperar su turno",
+    "Se frustra rápidamente cuando no consigue el mismo disfraz",
+    "Evita el contacto visual al expresar emociones"
+  ]
+}
