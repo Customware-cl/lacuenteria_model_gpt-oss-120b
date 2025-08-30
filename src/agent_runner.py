@@ -30,6 +30,10 @@ class AgentRunner:
         self.mode_verificador_qa = mode_verificador_qa
         self.version = version  # Nueva propiedad para versión
         
+        # Establecer directorio base
+        from pathlib import Path
+        self.base_dir = Path(__file__).parent.parent
+        
         # Cargar configuración de versión
         from config import load_version_config
         self.version_config = load_version_config(version)
@@ -67,18 +71,46 @@ class AgentRunner:
             # 3. Construir el prompt del usuario
             user_prompt = self._build_user_prompt(agent_name, dependencies)
             
-            # 4. Obtener temperatura específica del agente
-            from config import AGENT_TEMPERATURES, AGENT_MAX_TOKENS
-            agent_temperature = AGENT_TEMPERATURES.get(agent_name, None)
+            # 4. Obtener configuración específica del agente
+            agent_config = {}
+            agent_temperature = None
+            max_tokens = None
+            top_p = None
             
-            # 5. Llamar al LLM con temperatura específica
-            # Usar configuración de max_tokens específica por agente si existe
-            max_tokens = AGENT_MAX_TOKENS.get(agent_name, None)
+            # Para v2+, usar configuración desde agent_config.json
+            if self.version != 'v1' and 'agent_config' in self.version_config:
+                agent_config = self.version_config['agent_config'].get(agent_name, {})
+                agent_temperature = agent_config.get('temperature')
+                max_tokens = agent_config.get('max_tokens')
+                top_p = agent_config.get('top_p')
+            
+            # Fallback para v1 o si no hay configuración específica
+            if agent_temperature is None:
+                from config import AGENT_TEMPERATURES
+                agent_temperature = AGENT_TEMPERATURES.get(agent_name, None)
+            
+            if max_tokens is None:
+                from config import AGENT_MAX_TOKENS
+                max_tokens = AGENT_MAX_TOKENS.get(agent_name, None)
             if max_tokens:
                 logger.info(f"📊 Usando max_tokens específico para {agent_name}: {max_tokens}")
             else:
                 logger.info(f"📊 Sin configuración específica para '{agent_name}', usando default: {self.llm_client.max_tokens}")
-                logger.info(f"📊 Configuraciones disponibles: {list(AGENT_MAX_TOKENS.keys())}")
+            
+            if top_p:
+                logger.info(f"📊 Usando top_p específico para {agent_name}: {top_p}")
+            
+            # Guardar solicitud completa antes de enviar
+            self._save_agent_request(
+                agent_name=agent_name,
+                system_prompt=system_prompt,
+                user_prompt=user_prompt,
+                temperature=agent_temperature,
+                max_tokens=max_tokens,
+                top_p=top_p,
+                dependencies=list(dependencies.keys()) if dependencies else [],
+                retry_count=retry_count
+            )
             
             start_time = datetime.now()
             try:
@@ -86,7 +118,8 @@ class AgentRunner:
                     system_prompt, 
                     user_prompt,
                     temperature=agent_temperature,
-                    max_tokens=max_tokens
+                    max_tokens=max_tokens,
+                    top_p=top_p
                 )
             except ValueError as ve:
                 # Capturar el caso especial de STOP
@@ -197,8 +230,20 @@ class AgentRunner:
                         original_timeout = self.llm_client.timeout
                         self.llm_client.timeout = 900  # 900 segundos para evitar truncamiento
                         
+                        # Guardar solicitud del verificador QA
+                        verificador_system_prompt = self._load_system_prompt("verificador_qa")
+                        self._save_agent_request(
+                            agent_name=f"verificador_qa_{agent_name}",
+                            system_prompt=verificador_system_prompt,
+                            user_prompt=verification_prompt,
+                            temperature=0.3,
+                            max_tokens=30000,
+                            dependencies=[f"{agent_name}.json"],
+                            retry_count=0
+                        )
+                        
                         verificador_result = self.llm_client.generate(
-                            system_prompt=self._load_system_prompt("verificador_qa"),
+                            system_prompt=verificador_system_prompt,
                             user_prompt=verification_prompt,
                             temperature=0.3,  # Baja para evaluación consistente
                             max_tokens=30000  # Masivo para evaluar contenidos grandes
@@ -371,6 +416,8 @@ class AgentRunner:
         if "content" not in agent_config:
             raise ValueError(f"Archivo de agente {agent_name} no tiene campo 'content'")
         
+        # NO reemplazar placeholders - actúan como referencias descriptivas
+        # La información real viene del brief.json en el user_prompt
         return agent_config["content"]
     
     def _load_dependencies(self, agent_name: str) -> Dict[str, Any]:
@@ -438,6 +485,20 @@ class AgentRunner:
         prompt_parts.append("=" * 50)
         prompt_parts.append(f"\nAGENTE A EVALUAR: {agent_name}")
         
+        # Cargar criterios de evaluación desde el archivo JSON si existe
+        criterios_path = self.base_dir / f"flujo/{self.version}/criterios_evaluacion/{agent_name}.json"
+        criterios_content = None
+        
+        if criterios_path.exists():
+            try:
+                with open(criterios_path, 'r', encoding='utf-8') as f:
+                    criterios_content = json.load(f)
+                    prompt_parts.append("\nCRITERIOS DE EVALUACIÓN (desde archivo JSON):")
+                    prompt_parts.append("=" * 50)
+                    prompt_parts.append(json.dumps(criterios_content, ensure_ascii=False, indent=2))
+            except Exception as e:
+                logger.warning(f"Error cargando criterios de evaluación: {e}")
+        
         # Incluir dependencias que usó el agente para contexto
         if dependencies:
             prompt_parts.append("\nDEPENDENCIAS QUE USÓ EL AGENTE:")
@@ -451,17 +512,25 @@ class AgentRunner:
         
         prompt_parts.append("\n\nINSTRUCCIONES DE EVALUACIÓN:")
         prompt_parts.append("=" * 50)
-        prompt_parts.append("1. Analiza el output buscando problemas específicos")
-        prompt_parts.append("2. Aplica las penalizaciones automáticas según corresponda")
-        prompt_parts.append("3. Calcula el score para cada métrica del agente")
-        prompt_parts.append("4. Determina si pasa el umbral de 4.0")
-        prompt_parts.append("5. Genera feedback específico y accionable")
-        prompt_parts.append("6. En 'mejoras_especificas', incluye instrucciones CONCRETAS para corregir cada problema")
+        
+        if criterios_content:
+            prompt_parts.append("1. USA LOS CRITERIOS DEL JSON CARGADO ARRIBA")
+            prompt_parts.append("2. Evalúa cada criterio como true/false según el output")
+            prompt_parts.append("3. Calcula porcentajes según la configuración del JSON")
+            prompt_parts.append("4. Aplica penalizaciones automáticas si están definidas")
+            prompt_parts.append("5. El umbral de aprobación está en el JSON")
+        else:
+            prompt_parts.append("1. Analiza el output buscando problemas específicos")
+            prompt_parts.append("2. Aplica las penalizaciones automáticas según corresponda")
+            prompt_parts.append("3. Calcula el score para cada métrica del agente")
+            prompt_parts.append("4. Determina si pasa el umbral de 4.0")
+        
+        prompt_parts.append("6. Genera feedback específico y accionable")
+        prompt_parts.append("7. En 'mejoras_especificas', incluye instrucciones CONCRETAS para corregir cada problema")
         
         prompt_parts.append("\nRECUERDA:")
         prompt_parts.append("- Sé CRÍTICO y OBJETIVO")
-        prompt_parts.append("- La mayoría de outputs deben estar en 3-3.5")
-        prompt_parts.append("- Un 5/5 es excepcional y requiere justificación")
+        prompt_parts.append("- Usa la configuración del JSON de criterios si está disponible")
         prompt_parts.append("- Las mejoras_especificas deben ser ACCIONABLES y CLARAS")
         prompt_parts.append("- Devuelve ÚNICAMENTE el JSON especificado")
         
@@ -683,3 +752,44 @@ class AgentRunner:
             
         except Exception as e:
             logger.error(f"Error registrando alerta temprana: {e}")
+    
+    def _save_agent_request(self, agent_name: str, system_prompt: str, user_prompt: str, 
+                           temperature: float = None, max_tokens: int = None, top_p: float = None,
+                           dependencies: list = None, retry_count: int = 0):
+        """Guarda la solicitud completa enviada a un agente en la carpeta inputs/"""
+        try:
+            # Crear carpeta inputs si no existe
+            inputs_dir = os.path.join(get_story_dir(self.story_id), "inputs")
+            os.makedirs(inputs_dir, exist_ok=True)
+            
+            # Construir datos de la solicitud
+            request_data = {
+                "agent": agent_name,
+                "timestamp": datetime.now().isoformat(),
+                "endpoint": self.llm_client.endpoint,
+                "model": self.llm_client.model,
+                "temperature": temperature or self.llm_client.temperature,
+                "max_tokens": max_tokens or self.llm_client.max_tokens,
+                "top_p": top_p,
+                "timeout": self.llm_client.timeout,
+                "retry_count": retry_count,
+                "dependencies": dependencies or [],
+                "system_prompt": system_prompt,
+                "user_prompt": user_prompt,
+                "prompt_stats": {
+                    "system_prompt_chars": len(system_prompt),
+                    "user_prompt_chars": len(user_prompt),
+                    "total_chars": len(system_prompt) + len(user_prompt),
+                    "approx_tokens": (len(system_prompt) + len(user_prompt)) // 4
+                }
+            }
+            
+            # Guardar archivo JSON
+            request_file = os.path.join(inputs_dir, f"{agent_name}_request.json")
+            with open(request_file, 'w', encoding='utf-8') as f:
+                json.dump(request_data, f, ensure_ascii=False, indent=2)
+            
+            logger.debug(f"📝 Solicitud guardada: {request_file}")
+            
+        except Exception as e:
+            logger.warning(f"Error al guardar solicitud de {agent_name}: {e}")

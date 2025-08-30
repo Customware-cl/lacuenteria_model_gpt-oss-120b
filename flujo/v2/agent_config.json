@@ -1,0 +1,86 @@
+{
+  "01_director": {
+    "temperature": 0.7,
+    "max_tokens": 20000,
+    "top_p": 0.95,
+    "qa_threshold": 3.5
+  },
+  "02_psicoeducador": {
+    "temperature": 0.5,
+    "max_tokens": 20000,
+    "top_p": 0.9,
+    "qa_threshold": 3.5
+  },
+  "03_cuentacuentos": {
+    "temperature": 0.6,
+    "max_tokens": 20000,
+    "top_p": 0.92,
+    "qa_threshold": 4.0
+  },
+  "04_editor_claridad": {
+    "temperature": 0.3,
+    "max_tokens": 20000,
+    "top_p": 0.85,
+    "qa_threshold": 3.5
+  },
+  "05_ritmo_rima": {
+    "temperature": 0.5,
+    "max_tokens": 20000,
+    "top_p": 0.9,
+    "qa_threshold": 3.5
+  },
+  "06_continuidad": {
+    "temperature": 0.5,
+    "max_tokens": 20000,
+    "top_p": 0.9,
+    "qa_threshold": 3.5
+  },
+  "07_diseno_escena": {
+    "temperature": 0.8,
+    "max_tokens": 20000,
+    "top_p": 0.95,
+    "qa_threshold": 3.5
+  },
+  "08_direccion_arte": {
+    "temperature": 0.8,
+    "max_tokens": 20000,
+    "top_p": 0.95,
+    "qa_threshold": 3.5
+  },
+  "09_sensibilidad": {
+    "temperature": 0.3,
+    "max_tokens": 20000,
+    "top_p": 0.85,
+    "qa_threshold": 4.0
+  },
+  "10_portadista": {
+    "temperature": 0.7,
+    "max_tokens": 20000,
+    "top_p": 0.92,
+    "qa_threshold": 3.5
+  },
+  "11_loader": {
+    "temperature": 0.8,
+    "max_tokens": 20000,
+    "top_p": 0.95,
+    "qa_threshold": 3.5
+  },
+  "12_validador": {
+    "temperature": 0.3,
+    "max_tokens": 20000,
+    "top_p": 0.85,
+    "qa_threshold": 4.0
+  },
+  "13_critico": {
+    "temperature": 0.3,
+    "max_tokens": 20000,
+    "top_p": 0.85,
+    "qa_threshold": 3.5
+  },
+  "14_verificador_qa": {
+    "temperature": 0.3,
+    "max_tokens": 30000,
+    "top_p": 0.85,
+    "qa_threshold": null
+  }
+}
