@@ -1,7 +1,7 @@
-# Directorios de ejecución - COMENTADO PARA INCLUIR RUNS EN GIT
-# runs/
-# Excepto el ejemplo de Emilia
-# !runs/emilia-test-001/
+# Directorios de ejecución
+runs/
+# Excepto el ejemplo de Emilia si existe
+!runs/emilia-test-001/
 
 # Archivos del sistema
 .DS_Store
