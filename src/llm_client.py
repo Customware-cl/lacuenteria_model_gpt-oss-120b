@@ -27,7 +27,8 @@ class LLMClient:
                  system_prompt: str, 
                  user_prompt: str,
                  temperature: Optional[float] = None,
-                 max_tokens: Optional[int] = None) -> Dict[str, Any]:
+                 max_tokens: Optional[int] = None,
+                 top_p: Optional[float] = None) -> Dict[str, Any]:
         """
         Genera una respuesta del modelo LLM
         
@@ -36,6 +37,7 @@ class LLMClient:
             user_prompt: Prompt del usuario (entrada específica)
             temperature: Temperatura opcional (sobrescribe la configuración)
             max_tokens: Tokens máximos opcionales (sobrescribe la configuración)
+            top_p: Top-p (nucleus sampling) opcional (sobrescribe la configuración)
             
         Returns:
             Dict con la respuesta del modelo
@@ -58,6 +60,10 @@ class LLMClient:
             "temperature": temperature or self.temperature,
             "max_tokens": max_tokens or self.max_tokens
         }
+        
+        # Agregar top_p si se proporciona
+        if top_p is not None:
+            payload["top_p"] = top_p
         
         # Intentar con reintentos
         last_error = None

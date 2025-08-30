@@ -117,9 +117,10 @@ AGENT_MAX_TOKENS = {
 
 # Configuración de temperaturas específicas por agente
 AGENT_TEMPERATURES = {
+    # v1 - nombres sin números
     "director": 0.7,
     "psicoeducador": 0.5,
-    "cuentacuentos": 0.9,
+    "cuentacuentos": 0.6,  # Reducido de 0.9 para mayor control
     "editor_claridad": 0.3,
     "ritmo_rima": 0.5,
     "continuidad": 0.5,
@@ -130,6 +131,21 @@ AGENT_TEMPERATURES = {
     "loader": 0.8,
     "validador": 0.3,
     "critico": 0.3,
+    
+    # v2 - nombres con números (heredan las mismas temperaturas)
+    "01_director": 0.7,
+    "02_psicoeducador": 0.5,
+    "03_cuentacuentos": 0.6,  # Reducido de 0.9 para mayor control
+    "04_editor_claridad": 0.3,
+    "05_ritmo_rima": 0.5,
+    "06_continuidad": 0.5,
+    "07_diseno_escena": 0.8,
+    "08_direccion_arte": 0.8,
+    "09_sensibilidad": 0.3,
+    "10_portadista": 0.7,
+    "11_loader": 0.8,
+    "12_validador": 0.3,
+    "13_critico": 0.3,
 }
 
 # Dependencias entre agentes (qué artefactos necesita cada uno)
@@ -230,9 +246,21 @@ def load_version_config(version='v1'):
                         config['dependencies'] = json.load(f)
                 else:
                     config['dependencies'] = {}
-                    
-                # Agregar umbrales QA específicos para v2
-                config['agent_qa_thresholds'] = AGENT_QA_THRESHOLDS
+                
+                # Cargar agent_config.json si existe (configuración granular por agente)
+                agent_config_path = BASE_DIR / f'flujo/{version}/agent_config.json'
+                if agent_config_path.exists():
+                    with open(agent_config_path, 'r', encoding='utf-8') as f:
+                        config['agent_config'] = json.load(f)
+                        # Extraer umbrales QA de agent_config si existen
+                        config['agent_qa_thresholds'] = {}
+                        for agent_name, agent_settings in config['agent_config'].items():
+                            if 'qa_threshold' in agent_settings and agent_settings['qa_threshold'] is not None:
+                                config['agent_qa_thresholds'][agent_name] = agent_settings['qa_threshold']
+                else:
+                    # Fallback a configuración hardcodeada si no existe agent_config.json
+                    config['agent_config'] = {}
+                    config['agent_qa_thresholds'] = AGENT_QA_THRESHOLDS
                 
                 return config
         else:
