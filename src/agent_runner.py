@@ -61,6 +61,40 @@ class AgentRunner:
         logger.info(f"Ejecutando agente: {agent_name} (intento {retry_count + 1})")
         logger.info(f"DEBUG: Verificando configuración para '{agent_name}'")
         
+        # Verificar si debe usar procesamiento paralelo para cuentacuentos
+        if agent_name == "03_cuentacuentos" and self.version == "v2":
+            # Verificar si está habilitado el modo paralelo
+            agent_config = self.version_config.get('agent_config', {}).get('03_cuentacuentos', {})
+            if agent_config.get('parallel_mode', False):
+                logger.info(f"🚀 Usando procesamiento PARALELO para {agent_name}")
+                try:
+                    from parallel_cuentacuentos import ParallelCuentacuentos
+                    processor = ParallelCuentacuentos(self.story_id, self.version)
+                    result = processor.run()
+                    
+                    # Adaptar resultado al formato esperado
+                    if result["status"] == "completed":
+                        return {
+                            "status": "success",
+                            "agent_output": result["agent_output"],
+                            "qa_passed": True,
+                            "qa_score": result["agent_output"]["metadata"].get("average_qa_score", 4.0),
+                            "processing_mode": "parallel",
+                            "processing_time": result["total_time"]
+                        }
+                    else:
+                        return {
+                            "status": "partial_failure",
+                            "agent_output": result["agent_output"],
+                            "qa_passed": False,
+                            "error": f"Solo {result['pages_successful']}/10 páginas completadas",
+                            "processing_mode": "parallel",
+                            "processing_time": result["total_time"]
+                        }
+                except Exception as e:
+                    logger.error(f"❌ Error en procesamiento paralelo, fallback a secuencial: {e}")
+                    # Continuar con procesamiento normal si falla
+        
         try:
             # 1. Cargar el prompt del sistema
             system_prompt = self._load_system_prompt(agent_name)
