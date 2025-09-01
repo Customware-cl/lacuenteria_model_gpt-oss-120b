@@ -2,80 +2,80 @@
   "agente": "04_editor_claridad",
   "descripcion": "Criterios de evaluación para el Editor de claridad",
   "metricas": {
-    "claridad_linguistica": {
+    "coherencia_narrativa": {
       "peso": 0.4,
-      "descripcion": "Evaluación de la simplificación y claridad del lenguaje",
+      "descripcion": "Evaluación de la preservación de la coherencia y flujo narrativo",
       "criterios": {
-        "vocabulario_apropiado": {
-          "descripcion": "¿El vocabulario es apropiado para la edad objetivo?",
-          "verificar": "palabras comprensibles, no abstractas",
+        "unidad_narrativa": {
+          "descripcion": "¿Los 4 versos de cada página mantienen su conexión narrativa?",
+          "verificar": "flujo lógico entre versos, historia conectada",
           "esencial": true
         },
-        "ideas_concretas": {
-          "descripcion": "¿Cada verso presenta una idea visual concreta?",
-          "verificar": "una imagen clara por verso, sin ambigüedades",
+        "preservacion_sentido": {
+          "descripcion": "¿Se preservó el sentido original de la narrativa?",
+          "verificar": "la historia sigue siendo la misma",
           "esencial": true
         },
-        "lenguaje_directo": {
-          "descripcion": "¿Usa lenguaje directo sin metáforas complejas?",
-          "verificar": "evita abstracciones y figuras difíciles",
+        "contexto_mantenido": {
+          "descripcion": "¿Cada verso se entiende en contexto con los otros?",
+          "verificar": "relación clara entre los 4 versos",
           "esencial": true
         },
-        "sin_ambiguedades": {
-          "descripcion": "¿Se eliminaron todas las ambigüedades?",
-          "verificar": "significado único y claro en cada verso",
+        "metaforas_preservadas": {
+          "descripcion": "¿Se mantuvieron las metáforas simples apropiadas?",
+          "verificar": "personificaciones y metáforas infantiles intactas",
           "esencial": false
         },
-        "palabras_concretas": {
-          "descripcion": "¿Reemplazó palabras abstractas por concretas?",
-          "verificar": "sustantivos y verbos tangibles",
+        "emocion_conservada": {
+          "descripcion": "¿Se conservó la emoción y magia del texto original?",
+          "verificar": "tono emocional similar al original",
           "esencial": false
         }
       }
     },
-    "preservacion_poetica": {
-      "peso": 0.3,
-      "descripcion": "Evaluación del mantenimiento de la calidad poética",
+    "edicion_quirurgica": {
+      "peso": 0.35,
+      "descripcion": "Evaluación de la precisión y minimalismo en las ediciones",
       "criterios": {
-        "metrica_mantenida": {
-          "descripcion": "¿Mantiene métrica de 6-12 sílabas por verso?",
-          "verificar": "contar sílabas en cada verso",
+        "porcentaje_editado": {
+          "descripcion": "¿Se editó menos del 25% del texto por página?",
+          "verificar": "contar palabras cambiadas vs total",
           "esencial": true
         },
-        "rima_preservada": {
-          "descripcion": "¿Preserva esquema de rima AABB o ABAB?",
-          "verificar": "patrón de rima consistente",
+        "cambios_necesarios": {
+          "descripcion": "¿Todos los cambios eran realmente necesarios?",
+          "verificar": "justificación clara para cada edición",
           "esencial": true
         },
-        "belleza_poetica": {
-          "descripcion": "¿Mantiene belleza sin sacrificar claridad?",
-          "verificar": "lenguaje evocador pero simple",
+        "vocabulario_apropiado": {
+          "descripcion": "¿El vocabulario final es apropiado para la edad?",
+          "verificar": "palabras comprensibles para el target",
+          "esencial": true
+        },
+        "claridad_mejorada": {
+          "descripcion": "¿Los cambios mejoraron genuinamente la claridad?",
+          "verificar": "comparar comprensibilidad antes/después",
           "esencial": false
-        },
-        "cuatro_versos_pagina": {
-          "descripcion": "¿Cada página tiene exactamente 4 versos?",
-          "verificar": "contar versos por página",
-          "esencial": true
         }
       }
     },
     "documentacion_cambios": {
-      "peso": 0.3,
+      "peso": 0.25,
       "descripcion": "Evaluación del registro de modificaciones",
       "criterios": {
-        "glosario_completo": {
-          "descripcion": "¿El glosario incluye TODAS las simplificaciones?",
-          "verificar": "cada cambio tiene entrada original/simple",
+        "glosario_preciso": {
+          "descripcion": "¿El glosario documenta solo los cambios reales?",
+          "verificar": "cada entrada corresponde a un cambio efectivo",
           "esencial": true
         },
-        "cambios_registrados": {
-          "descripcion": "¿Registra todos los cambios clave?",
-          "verificar": "campo cambios_clave documentado",
+        "porcentajes_reportados": {
+          "descripcion": "¿Se reportó el porcentaje de edición por página?",
+          "verificar": "campo porcentaje_editado presente y correcto",
           "esencial": true
         },
-        "justificacion_clara": {
-          "descripcion": "¿Los cambios están bien justificados?",
-          "verificar": "razón pedagógica para cada cambio",
+        "cambios_clave_claros": {
+          "descripcion": "¿Los cambios clave están bien documentados?",
+          "verificar": "descripción clara de modificaciones principales",
           "esencial": false
         }
       }

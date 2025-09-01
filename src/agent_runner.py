@@ -61,39 +61,37 @@ class AgentRunner:
         logger.info(f"Ejecutando agente: {agent_name} (intento {retry_count + 1})")
         logger.info(f"DEBUG: Verificando configuración para '{agent_name}'")
         
-        # Verificar si debe usar procesamiento paralelo para cuentacuentos
+        # SIEMPRE usar procesamiento especial para cuentacuentos en v2
         if agent_name == "03_cuentacuentos" and self.version == "v2":
-            # Verificar si está habilitado el modo paralelo
-            agent_config = self.version_config.get('agent_config', {}).get('03_cuentacuentos', {})
-            if agent_config.get('parallel_mode', False):
-                logger.info(f"🚀 Usando procesamiento PARALELO para {agent_name}")
-                try:
-                    from parallel_cuentacuentos import ParallelCuentacuentos
-                    processor = ParallelCuentacuentos(self.story_id, self.version)
-                    result = processor.run()
-                    
-                    # Adaptar resultado al formato esperado
-                    if result["status"] == "completed":
-                        return {
-                            "status": "success",
-                            "agent_output": result["agent_output"],
-                            "qa_passed": True,
-                            "qa_score": result["agent_output"]["metadata"].get("average_qa_score", 4.0),
-                            "processing_mode": "parallel",
-                            "processing_time": result["total_time"]
-                        }
-                    else:
-                        return {
-                            "status": "partial_failure",
-                            "agent_output": result["agent_output"],
-                            "qa_passed": False,
-                            "error": f"Solo {result['pages_successful']}/10 páginas completadas",
-                            "processing_mode": "parallel",
-                            "processing_time": result["total_time"]
-                        }
-                except Exception as e:
-                    logger.error(f"❌ Error en procesamiento paralelo, fallback a secuencial: {e}")
-                    # Continuar con procesamiento normal si falla
+            # Usar siempre el procesador especial (que ahora es secuencial)
+            logger.info(f"🚀 Usando procesamiento ESPECIAL para {agent_name}")
+            try:
+                from parallel_cuentacuentos import ParallelCuentacuentos
+                processor = ParallelCuentacuentos(self.story_id, self.version)
+                result = processor.run()
+                
+                # Adaptar resultado al formato esperado
+                if result["status"] == "completed":
+                    return {
+                        "status": "success",
+                        "agent_output": result["agent_output"],
+                        "qa_passed": True,
+                        "qa_score": result["agent_output"]["metadata"].get("average_qa_score", 4.0),
+                        "processing_mode": "parallel",
+                        "processing_time": result["total_time"]
+                    }
+                else:
+                    return {
+                        "status": "partial_failure",
+                        "agent_output": result["agent_output"],
+                        "qa_passed": False,
+                        "error": f"Solo {result['pages_successful']}/10 páginas completadas",
+                        "processing_mode": "parallel",
+                        "processing_time": result["total_time"]
+                    }
+            except Exception as e:
+                logger.error(f"❌ Error en procesamiento paralelo, fallback a secuencial: {e}")
+                # Continuar con procesamiento normal si falla
         
         try:
             # 1. Cargar el prompt del sistema
@@ -675,9 +673,19 @@ class AgentRunner:
     
     def _save_output(self, filename: str, content: Dict[str, Any]):
         """Guarda la salida de un agente"""
-        output_path = get_artifact_path(self.story_id, filename)
+        # Guardar en outputs/agents
+        story_path = Path(get_story_dir(self.story_id))
+        outputs_dir = story_path / "outputs" / "agents"
+        outputs_dir.mkdir(parents=True, exist_ok=True)
+        
+        output_path = outputs_dir / filename
         
         with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(content, f, ensure_ascii=False, indent=2)
+        
+        # También guardar en raíz por compatibilidad
+        legacy_path = get_artifact_path(self.story_id, filename)
+        with open(legacy_path, 'w', encoding='utf-8') as f:
             json.dump(content, f, ensure_ascii=False, indent=2)
         
         logger.info(f"Salida guardada en: {output_path}")
@@ -818,8 +826,15 @@ class AgentRunner:
                 }
             }
             
-            # Guardar archivo JSON
-            request_file = os.path.join(inputs_dir, f"{agent_name}_request.json")
+            # Guardar en inputs/agents para agentes regulares
+            if "cuentacuentos" not in agent_name:
+                agents_inputs_dir = os.path.join(inputs_dir, "agents")
+                os.makedirs(agents_inputs_dir, exist_ok=True)
+                request_file = os.path.join(agents_inputs_dir, f"{agent_name}_request.json")
+            else:
+                # Para cuentacuentos, mantener en inputs/ por ahora (se maneja en parallel_cuentacuentos)
+                request_file = os.path.join(inputs_dir, f"{agent_name}_request.json")
+            
             with open(request_file, 'w', encoding='utf-8') as f:
                 json.dump(request_data, f, ensure_ascii=False, indent=2)
             

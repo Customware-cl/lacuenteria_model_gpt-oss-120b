@@ -3,7 +3,7 @@
   "source": "local",
   "created_at": "2025-08-29T18:47:15.827991",
   "updated_at": "2025-08-29T18:48:06.062454",
-  "estado": "en_progreso",
+  "estado": "error",
   "paso_actual": "03_cuentacuentos",
   "qa_historial": {
     "01_director": {
@@ -61,6 +61,11 @@
       "start": "2025-08-29T18:47:41.543213",
       "end": "2025-08-29T18:48:06.062223",
       "duration": 24.519006
+    },
+    "03_cuentacuentos": {
+      "start": "2025-08-29T18:48:06.062898",
+      "end": "2025-08-29T18:56:20.746378",
+      "duration": 494.683476
     }
   },
   "webhook_url": null,
@@ -72,5 +77,10 @@
     "timeout": 900,
     "default_temperature": 0.7,
     "default_max_tokens": 20000
+  },
+  "error": {
+    "agent": "03_cuentacuentos",
+    "message": "Contexto excedido - El modelo no puede procesar esta cantidad de información",
+    "timestamp": "2025-08-29T18:56:20.746405"
   }
 }

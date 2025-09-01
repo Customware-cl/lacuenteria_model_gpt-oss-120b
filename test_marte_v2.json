@@ -1,0 +1,14 @@
+{
+  "story_id": "test-v2-marte",
+  "personajes": ["Emilia de 2 años", "Caty de 35 años"],
+  "historia": "Una historia sobre cómo Emilia y Caty caminan hasta Marte para seguir un mapa misterioso",
+  "mensaje_a_transmitir": "Aprender a reconocer y expresar emociones de manera saludable. Superar miedos nocturnos y fomentar el sueño independiente",
+  "edad_objetivo": 2,
+  "metadata": {
+    "parentesco": "Caty y Emilia son madre e hija",
+    "valores": "Aprender a reconocer y expresar emociones de manera saludable",
+    "comportamientos": "Superar miedos nocturnos y fomentar el sueño independiente",
+    "version": "v2",
+    "test_date": "2025-08-30"
+  }
+}

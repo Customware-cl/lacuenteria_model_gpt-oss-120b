@@ -14,13 +14,15 @@
   "03_cuentacuentos": {
     "temperature": 0.75,
     "max_tokens": 100000,
-    "max_tokens_per_page": 1500,
+    "max_tokens_per_page": 30000,
     "top_p": 0.95,
     "qa_threshold": 3.5,
-    "parallel_mode": true,
-    "max_workers": 10,
-    "page_timeout": 60,
-    "max_retries_per_page": 2
+    "parallel_mode": false,
+    "max_workers": 1,
+    "page_timeout": 120,
+    "max_retries_per_page": 3,
+    "force_sequential": true,
+    "delay_between_pages": 2
   },
   "04_editor_claridad": {
     "temperature": 0.3,

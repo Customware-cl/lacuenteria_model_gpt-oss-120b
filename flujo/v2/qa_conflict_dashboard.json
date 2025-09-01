@@ -1,7 +1,7 @@
 {
   "version": "v2",
-  "last_updated": "2025-08-29T18:51:05.399759",
-  "total_conflicts_analyzed": 24,
+  "last_updated": "2025-09-01T19:32:15.626478",
+  "total_conflicts_analyzed": 71,
   "conflict_patterns": {
     "01_director": {
       "new_1958": {
@@ -1191,16 +1191,19 @@
         "status": "unresolved"
       },
       "syllable_count_issue": {
-        "count": 13,
+        "count": 19,
         "first_seen": "2025-08-29T15:11:37.178390",
         "typical_issue": "Sílabas fuera del rango en página 2 línea 4 (7 sílabas).",
         "recommendation": "Especificar conteo exacto de sílabas por verso",
         "stories_affected": [
           "test-emilia-20250829-150811",
           "test-v2-emilia-20250829-170328",
-          "test-v2-emilia-20250829-184715"
+          "test-v2-emilia-20250829-184715",
+          "test-v2-emilia-20250829-194916",
+          "test-v2-emilia-marte-chupete-20250901-151726",
+          "test-v2-emilia-marte-chupete-20250901-153639"
         ],
-        "last_seen": "2025-08-29T18:51:05.399758"
+        "last_seen": "2025-09-01T16:02:11.955923"
       },
       "forced_rhyme": {
         "count": 1,
@@ -1211,6 +1214,156 @@
           "test-emilia-20250829-150811"
         ],
         "last_seen": "2025-08-29T15:11:37.178441"
+      },
+      "new_5043": {
+        "count": 1,
+        "first_seen": "2025-08-29T19:14:17.522866",
+        "typical_issue": "No se evidencia integración con el beat_sheet del director (criterio esencial fallado).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-20250829-191107"
+        ],
+        "status": "unresolved"
+      },
+      "new_3157": {
+        "count": 1,
+        "first_seen": "2025-08-29T19:14:17.522881",
+        "typical_issue": "No se utilizan micro‑habilidades del psicoeducador (criterio esencial fallado).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-20250829-191107"
+        ],
+        "status": "unresolved"
+      },
+      "new_6530": {
+        "count": 1,
+        "first_seen": "2025-08-30T00:54:18.046327",
+        "typical_issue": "Rimas inválidas (versos 3‑4) en las páginas 2, 3, 4 y 8.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-marte-20250830-004948"
+        ],
+        "status": "unresolved"
+      },
+      "new_3005": {
+        "count": 1,
+        "first_seen": "2025-08-30T00:54:18.046339",
+        "typical_issue": "Los criterios de imaginería (refleja_beat_sheet e integra_psicoeducador) fallan en todas las páginas por falta de evidencia de alineación con el beat‑sheet y la micro‑habilidad.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-marte-20250830-004948"
+        ],
+        "status": "unresolved"
+      },
+      "new_4956": {
+        "count": 1,
+        "first_seen": "2025-08-30T00:54:18.046342",
+        "typical_issue": "Esquema de rima correcto solo en la página 1; en otras páginas el esquema AABB/ABAB no se mantiene.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-marte-20250830-004948"
+        ],
+        "status": "unresolved"
+      },
+      "new_8546": {
+        "count": 1,
+        "first_seen": "2025-08-30T00:54:18.046343",
+        "typical_issue": "Posible desconexión narrativa detectada, lo que activa la penalización de desconexión del director.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-marte-20250830-004948"
+        ],
+        "status": "unresolved"
+      },
+      "new_8310": {
+        "count": 1,
+        "first_seen": "2025-08-30T00:57:07.385073",
+        "typical_issue": "Uso repetido de la misma palabra para rimar en la mayoría de los versos (p.1‑1/2, 1‑3/4, 2‑1/2, 2‑3/4, etc.)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-marte-20250830-004948"
+        ],
+        "status": "unresolved"
+      },
+      "new_9520": {
+        "count": 1,
+        "first_seen": "2025-08-30T00:57:07.385086",
+        "typical_issue": "Falta de alineación con los beat_sheet del director en todas las páginas (criterios de imaginería no cumplidos)",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-marte-20250830-004948"
+        ],
+        "status": "unresolved"
+      },
+      "new_4429": {
+        "count": 1,
+        "first_seen": "2025-08-30T00:57:07.385088",
+        "typical_issue": "En la página 10 no se utiliza la palabra clave 'resolucion' para indicar la resolución del conflicto",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-marte-20250830-004948"
+        ],
+        "status": "unresolved"
+      },
+      "new_728": {
+        "count": 1,
+        "first_seen": "2025-08-30T00:57:07.385091",
+        "typical_issue": "Esquema de rima inconsistente (no se mantiene AABB o ABAB) en todas las páginas",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-marte-20250830-004948"
+        ],
+        "status": "unresolved"
+      },
+      "new_6020": {
+        "count": 1,
+        "first_seen": "2025-09-01T15:21:27.640949",
+        "typical_issue": "Todas las páginas utilizan la misma palabra para rimar en los pares de versos, violando la regla de rima válida.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-marte-chupete-20250901-151726"
+        ],
+        "status": "unresolved"
+      },
+      "new_9725": {
+        "count": 1,
+        "first_seen": "2025-09-01T15:21:27.640961",
+        "typical_issue": "Ninguna página refleja el beat_sheet ni integra la micro_habilidad del psicoeducador, incumpliendo criterios esenciales de imaginería.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-marte-chupete-20250901-151726"
+        ],
+        "status": "unresolved"
+      },
+      "new_9156": {
+        "count": 1,
+        "first_seen": "2025-09-01T15:21:27.640964",
+        "typical_issue": "Se repiten palabras al final de los versos, lo que genera penalizaciones por \"palabra_repetida_para_rima\".",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-marte-chupete-20250901-151726"
+        ],
+        "status": "unresolved"
+      },
+      "new_3686": {
+        "count": 1,
+        "first_seen": "2025-09-01T15:21:27.640966",
+        "typical_issue": "Falta de alineación con la narrativa del director, activando la penalización \"desconexion_director\" en todas las páginas.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-marte-chupete-20250901-151726"
+        ],
+        "status": "unresolved"
+      },
+      "new_4940": {
+        "count": 1,
+        "first_seen": "2025-09-01T15:21:27.640968",
+        "typical_issue": "En la mayoría de las páginas la imaginería clara no está presente.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-v2-emilia-marte-chupete-20250901-151726"
+        ],
+        "status": "unresolved"
       }
     },
     "04_editor_claridad": {
@@ -1223,19 +1376,72 @@
           "test-emilia-20250829-144901"
         ],
         "status": "unresolved"
+      },
+      "ambiguity_issue": {
+        "count": 8,
+        "first_seen": "2025-09-01T14:38:39.423234",
+        "typical_issue": "Ambigüedades presentes en varios versos, como \"Caty dice: No temamos, seguir rodar\".",
+        "recommendation": "Agregar: 'cada descripción debe ser inequívoca y clara'",
+        "stories_affected": [
+          "test-v2-emilia-marte-chupete-20250901-143538",
+          "test-v2-emilia-marte-chupete-20250901-144706",
+          "test-v2-emilia-marte-chupete-20250901-153639",
+          "test-v2-emilia-marte-chupete-20250901-164530",
+          "test-v2-emilia-marte-chupete-20250901-171819"
+        ],
+        "last_seen": "2025-09-01T17:30:18.583248"
+      },
+      "syllable_count_issue": {
+        "count": 7,
+        "first_seen": "2025-09-01T14:50:39.385166",
+        "typical_issue": "Versos con más de 12 sílabas (p.1 v2, p.2 v1, etc.) – incumple métrica requerida.",
+        "recommendation": "Especificar conteo exacto de sílabas por verso",
+        "stories_affected": [
+          "test-v2-emilia-marte-chupete-20250901-144706",
+          "test-v2-emilia-marte-chupete-20250901-153639",
+          "test-v2-emilia-marte-chupete-20250901-164530",
+          "test-v2-emilia-marte-chupete-20250901-171819"
+        ],
+        "last_seen": "2025-09-01T17:30:18.583210"
+      },
+      "missing_glossary_field": {
+        "count": 4,
+        "first_seen": "2025-09-01T14:50:39.385223",
+        "typical_issue": "Falta de justificación pedagógica para los cambios en el glosario.",
+        "recommendation": "Actualizar JSON contract para incluir campo 'glosario'",
+        "stories_affected": [
+          "test-v2-emilia-marte-chupete-20250901-144706",
+          "test-v2-emilia-marte-chupete-20250901-153639",
+          "test-v2-emilia-marte-chupete-20250901-164530",
+          "test-v2-emilia-marte-chupete-20250901-171819"
+        ],
+        "last_seen": "2025-09-01T17:30:18.583261"
+      },
+      "abstract_language": {
+        "count": 1,
+        "first_seen": "2025-09-01T14:52:05.899058",
+        "typical_issue": "Falla en los criterios esenciales de ideas_concretas y lenguaje_directo, lo que indica que varios versos siguen siendo abstractos o metafóricos (p. ej., \"El meteoro va y canta al cielo\").",
+        "recommendation": "Agregar: 'usa lenguaje concreto y visual, evita abstracciones'",
+        "stories_affected": [
+          "test-v2-emilia-marte-chupete-20250901-144706"
+        ],
+        "last_seen": "2025-09-01T14:52:05.899068"
       }
     },
     "05_ritmo_rima": {
       "syllable_count_issue": {
-        "count": 2,
+        "count": 11,
         "first_seen": "2025-08-29T14:58:37.310883",
         "typical_issue": "Métrica inconsistente: la mayoría de los versos no cumplen 8‑12 sílabas.",
         "recommendation": "Especificar conteo exacto de sílabas por verso",
         "stories_affected": [
           "test-emilia-20250829-144901",
-          "test-emilia-20250829-150811"
+          "test-emilia-20250829-150811",
+          "test-v2-paralelo-20250830-013039",
+          "test-v2-emilia-marte-chupete-20250901-143538",
+          "test-v2-paralelo-20250901-192231"
         ],
-        "last_seen": "2025-08-29T15:16:29.133549"
+        "last_seen": "2025-09-01T19:32:15.626477"
       },
       "new_3434": {
         "count": 1,
@@ -1246,6 +1452,30 @@
           "test-emilia-20250829-144901"
         ],
         "status": "unresolved"
+      },
+      "coherence_issue": {
+        "count": 4,
+        "first_seen": "2025-08-30T01:36:17.050644",
+        "typical_issue": "Pérdida de coherencia narrativa en varias páginas (p.5 \"La caja reposa firme sobre la cadera\", p.6 \"Emilia ve una nube gris en el cielo\" sin conexión clara) – viola criterio mantuvo_sentido.",
+        "recommendation": "Agregar verificación de coherencia con artefactos previos",
+        "stories_affected": [
+          "test-v2-paralelo-20250830-013039",
+          "test-v2-emilia-marte-chupete-20250901-143538",
+          "test-v2-paralelo-20250901-192231"
+        ],
+        "last_seen": "2025-09-01T19:32:15.626399"
+      },
+      "forced_rhyme": {
+        "count": 5,
+        "first_seen": "2025-08-30T01:36:17.050659",
+        "typical_issue": "Rimas forzadas y poco naturales (p.3 \"daño\" / \"dañó\", p.5 \"radiante\" / \"brillante\") – viola criterio rimas_naturales.",
+        "recommendation": "Agregar: 'prioriza naturalidad sobre rima perfecta, acepta asonancia'",
+        "stories_affected": [
+          "test-v2-paralelo-20250830-013039",
+          "test-v2-emilia-marte-chupete-20250901-143538",
+          "test-v2-paralelo-20250901-192231"
+        ],
+        "last_seen": "2025-09-01T19:32:15.626417"
       }
     },
     "06_continuidad": {
@@ -1582,6 +1812,16 @@
           "test-emilia-20250829-150811"
         ],
         "status": "unresolved"
+      },
+      "coherence_issue": {
+        "count": 3,
+        "first_seen": "2025-09-01T16:09:58.386097",
+        "typical_issue": "Transiciones entre páginas no justificadas, incumpliendo la coherencia cromática.",
+        "recommendation": "Agregar verificación de coherencia con artefactos previos",
+        "stories_affected": [
+          "test-v2-emilia-marte-chupete-20250901-153639"
+        ],
+        "last_seen": "2025-09-01T16:10:49.256785"
       }
     },
     "09_sensibilidad": {
