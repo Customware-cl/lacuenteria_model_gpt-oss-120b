@@ -194,15 +194,66 @@ def validate_config():
     
     return True
 
-# Función para obtener la ruta de una historia
+# Función para obtener la ruta de una historia (con timestamp si se proporciona)
 def get_story_path(story_id):
-    """Retorna la ruta al directorio de una historia"""
+    """
+    Retorna la ruta al directorio de una historia
+    Si el story_id ya incluye timestamp, lo usa directamente
+    """
     return RUNS_DIR / story_id
 
 # Función para obtener la ruta de un artefacto
 def get_artifact_path(story_id, artifact_name):
     """Retorna la ruta a un artefacto específico de una historia"""
     return get_story_path(story_id) / artifact_name
+
+# Función para generar nombre de carpeta con timestamp
+def generate_timestamped_story_folder(story_id):
+    """Genera un nombre de carpeta único con timestamp para evitar duplicados"""
+    from datetime import datetime
+    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    return f"{timestamp}-{story_id}"
+
+# Función para obtener la carpeta más reciente de un story_id
+def get_latest_story_path(story_id):
+    """
+    Busca la carpeta más reciente para un story_id dado
+    Retorna None si no existe ninguna
+    """
+    import glob
+    # Buscar con el nuevo patrón: {timestamp}-{story_id}
+    pattern = str(RUNS_DIR / f"*-{story_id}")
+    matching_dirs = glob.glob(pattern)
+    
+    if not matching_dirs:
+        # Buscar con el patrón antiguo por compatibilidad: {story_id}-{timestamp}
+        pattern_old = str(RUNS_DIR / f"{story_id}-*")
+        matching_dirs = glob.glob(pattern_old)
+    
+    if not matching_dirs:
+        # Buscar también sin timestamp por compatibilidad
+        legacy_path = RUNS_DIR / story_id
+        if legacy_path.exists():
+            return legacy_path
+        return None
+    
+    # Ordenar por timestamp (el más reciente primero)
+    matching_dirs.sort(reverse=True)
+    return Path(matching_dirs[0])
+
+# Función para obtener todas las carpetas de un story_id
+def get_all_story_paths(story_id):
+    """Retorna todas las carpetas existentes para un story_id"""
+    import glob
+    pattern = str(RUNS_DIR / f"{story_id}-*")
+    matching_dirs = glob.glob(pattern)
+    
+    # Incluir también la carpeta sin timestamp si existe
+    legacy_path = RUNS_DIR / story_id
+    if legacy_path.exists():
+        matching_dirs.append(str(legacy_path))
+    
+    return [Path(d) for d in matching_dirs]
 
 # Función para obtener la ruta del prompt de un agente
 def get_agent_prompt_path(agent_name, version='v1'):

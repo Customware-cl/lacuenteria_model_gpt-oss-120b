@@ -17,12 +17,12 @@
     "max_tokens_per_page": 30000,
     "top_p": 0.95,
     "qa_threshold": 3.5,
-    "parallel_mode": false,
-    "max_workers": 1,
+    "parallel_mode": true,
+    "max_workers": 3,
     "page_timeout": 120,
     "max_retries_per_page": 3,
-    "force_sequential": true,
-    "delay_between_pages": 2
+    "force_sequential": false,
+    "delay_between_pages": 1
   },
   "04_editor_claridad": {
     "temperature": 0.3,

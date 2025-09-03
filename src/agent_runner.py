@@ -464,6 +464,31 @@ class AgentRunner:
             return dependencies
         
         for dependency_file in agent_dependencies[agent_name]:
+            # Caso especial: configuracion_poetica/estructura_rima.json
+            if dependency_file == "configuracion_poetica/estructura_rima.json":
+                # Copiar el archivo de configuración a la carpeta de la historia si no existe
+                story_path = get_story_dir(self.story_id)
+                config_dir = story_path / "inputs" / "configuracion_poetica"
+                config_dir.mkdir(parents=True, exist_ok=True)
+                
+                target_file = config_dir / "estructura_rima.json"
+                if not target_file.exists():
+                    # Copiar desde la carpeta de flujo v2
+                    source_file = Path(__file__).parent.parent / "flujo" / self.version / "configuracion_poetica" / "estructura_rima.json"
+                    if source_file.exists():
+                        import shutil
+                        shutil.copy2(source_file, target_file)
+                        logger.info(f"Copiado archivo de configuración: estructura_rima.json")
+                    else:
+                        logger.warning(f"No se encontró archivo fuente: {source_file}")
+                
+                # Cargar el archivo
+                if target_file.exists():
+                    with open(target_file, 'r', encoding='utf-8') as f:
+                        dependencies[dependency_file] = json.load(f)
+                    logger.info(f"Cargada configuración poética: estructura_rima.json")
+                continue
+            
             # Para v2, convertir nombres numerados a nombres simples para buscar archivos
             # Ej: "01_director.json" -> "director.json" para compatibilidad
             if self.version != 'v1' and dependency_file.startswith(('0', '1')):

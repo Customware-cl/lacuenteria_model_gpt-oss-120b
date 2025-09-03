@@ -2,8 +2,55 @@
   "agente": "05_ritmo_rima",
   "descripcion": "Criterios de evaluación página por página para el Entrenador de ritmo y rima",
   "metricas": {
+    "coherencia_narrativa": {
+      "peso": 0.3,
+      "descripcion": "Evaluación de preservación de coherencia al corregir rimas",
+      "criterios": {
+        "flujo_narrativo_mantenido": {
+          "descripcion": "¿Los 4 versos mantienen conexión narrativa después de correcciones?",
+          "verificar": "historia coherente en cada página",
+          "esencial": true
+        },
+        "sentido_preservado": {
+          "descripcion": "¿Las correcciones mantienen el sentido original?",
+          "verificar": "no hay cambios drásticos de significado",
+          "esencial": true
+        },
+        "progresion_logica": {
+          "descripcion": "¿Se mantiene la progresión escena→desarrollo→reacción→cierre?",
+          "verificar": "estructura narrativa clara",
+          "esencial": false
+        }
+      }
+    },
+    "esquemas_configurados": {
+      "peso": 0.25,
+      "descripcion": "Evaluación de aplicación correcta de esquemas de rima según configuracion_poetica/estructura_rima.json",
+      "criterios": {
+        "configuracion_leida": {
+          "descripcion": "¿Se leyó y aplicó la configuración de estructura_rima.json?",
+          "verificar": "esquema aplicado coincide con archivo de configuración",
+          "esencial": true
+        },
+        "esquemas_correctos": {
+          "descripcion": "¿Cada página usa el esquema indicado en la configuración?",
+          "verificar": "comparar con configuracion_poetica/estructura_rima.json",
+          "esencial": true
+        },
+        "rimas_validas": {
+          "descripcion": "¿Las rimas siguen el patrón configurado dinámicamente?",
+          "verificar": "consonancia o asonancia según esquema del archivo",
+          "esencial": true
+        },
+        "verso_libre_respetado": {
+          "descripcion": "¿Las páginas marcadas como 'libre' priorizan ritmo sobre rima?",
+          "verificar": "musicalidad sin forzar rima donde aplique",
+          "esencial": false
+        }
+      }
+    },
     "correccion_repeticiones": {
-      "peso": 0.5,
+      "peso": 0.25,
       "descripcion": "Evaluación de eliminación de palabras repetidas en rimas",
       "criterios": {
         "pagina_1_sin_repeticion": {

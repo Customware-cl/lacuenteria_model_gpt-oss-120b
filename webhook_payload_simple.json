@@ -1,0 +1,74 @@
+{
+  "event": "story_complete",
+  "timestamp": 1756837959.4886017,
+  "data": {
+    "status": "success",
+    "story_id": "6534605d-961d-43be-890a-8da9a59bcd94",
+    "result": {
+      "titulo": "La Gran Aventura de la Burbuja Brillante",
+      "paginas": {
+        "1": {
+          "texto": "Los tres hermanos, pieles distintas, sostienen una burbuja al sol\nFranco la empuja, su risa vibra como un tambor alegre\nEmilia sonríe, su vestido verde brilla bajo la luz dorada\nLeón aprieta su chupete, mirando el horizonte con esperanza",
+          "prompt": "Ilustración infantil digital vibrante, estilo suave y acuarelado. En la playa bajo el sol, tres hermanos de diferentes tonos de piel sostienen una burbuja brillante. Franco, con una chaqueta roja, empuja la burbuja mientras ríe. Emilia lleva un vestido verde y sonríe. León, con camiseta azul, aprieta su chupete. Ambiente alegre y luminoso."
+        },
+        "2": {
+          "texto": "Suben todos dentro de la burbuja brillante, cantando bajo el agua\n¡Burbuja, burbuja, vamos a cantar!, gritan mientras giran en ondas\nLos peces curiosos rodean la esfera, formando círculos de colores\nLa luz del sol se filtra, pintando el fondo de azul brillante",
+          "prompt": "Escena bajo el agua dentro de la burbuja luminosa. Los tres hermanos cantan mientras la burbuja gira entre ondas. Pequeños peces de colores rodean la esfera formando círculos. Luz solar filtrada ilumina el fondo azul brillante. Atmosfera de entusiasmo y burbujeo."
+        },
+        "3": {
+          "texto": "Emilia descubre una grieta en la burbuja que mira al mar\nLeón grita: ¡Ayuda! El aire se escapa por la fisura\nUn pez plateado nada cerca y pregunta qué sucede\nFranco sopla fuerte, cierra la fuga y salva la burbuja",
+          "prompt": "Dentro de la burbuja se ve una grieta que mira al mar. León grita preocupado, mientras un pez plateado nada cerca. Franco sopla con fuerza para cerrar la fuga. Emoción de tensión y alivio al repararse la burbuja."
+        },
+        "4": {
+          "texto": "Dentro de la burbuja brilla un mapa bioluminiscente verde\nEl mapa muestra un sendero luminoso que lleva a la luz\nLos amigos miran el camino y hacen una pregunta curiosa\nAl final del sendero descubren una cruz que guía su rumbo",
+          "prompt": "Mapa bioluminiscente verde flota dentro de la burbuja. Muestra un sendero luminoso que lleva a una cruz brillante. Los tres hermanos observan el mapa y se preguntan el destino. Ambiente de curiosidad iluminada por luz suave."
+        },
+        "5": {
+          "texto": "Emilia y León guardan la burbuja en el cielo estrellado\n¡Burbuja, burbuja, vamos a cantar!, entonan con voces de colores\nFranco alza su voz, cubriendo la burbuja con un manto\nJuntos resisten la corriente y logran elevarse hacia el horizonte",
+          "prompt": "Los hermanos guardan la burbuja en el cielo estrellado al atardecer. Cantan juntos dentro de la burbuja, con voces de colores. Franco alza su voz, cubriendo la burbuja con un manto de luz dorada. Sentimiento de determinación y unión."
+        },
+        "6": {
+          "texto": "Bajan bajo una estrella plateada que ilumina el fondo marino\nUna tortuga sabia sonríe y lanza un reto de amistad\nFranco pregunta: ¿Qué suena sin moverse en la profundidad?\nEmilia responde: la lluvia que cae, su manto de silencio",
+          "prompt": "Escena bajo una estrella plateada en el fondo marino. Una tortuga sabia sonríe cerca de la burbuja. Franco pregunta qué suena sin moverse; Emilia responde sobre la lluvia. Ambiente de asombro y reflexión."
+        },
+        "7": {
+          "texto": "Emilia guía una cuerda azul que brilla como luz\nLas algas aprietan, pero el miedo no logra detenerlos\nEmilia pide ayuda, su luz cruza la oscuridad del abismo\nCon un salto valiente, la burbuja se eleva hacia la superficie",
+          "prompt": "Emilia sostiene una cuerda azul que ilumina la oscuridad submarina. Algas aprietan alrededor, pero la luz de Emilia atraviesa el abismo. Los hermanos observan mientras la burbuja se eleva con un salto valiente. Sensación de valentía."
+        },
+        "8": {
+          "texto": "Emilia descubre al pulpo violeta junto a un cofre azul\nLeón susurra: Comprendo, no temas, la aventura continúa\nFranco pregunta al pulpo: ¿Puedes ayudar, amigo del mar?\nEl pulpo asiente y muestra el tesoro brillante dentro del cofre",
+          "prompt": "En una cueva submarina, Emilia descubre al pulpo violeta junto a un cofre azul. León susurra al pulpo, y Franco le pregunta si puede ayudar. El pulpo asiente y muestra el tesoro brillante. Ambiente de confianza."
+        },
+        "9": {
+          "texto": "León abre su pecho y confiesa estar triste y solo\nPide al pulpo su chupete, su voz temblorosa implora ayuda\nEl pulpo escucha y entrega el dulce chupete con ternura\nLeón sonríe, siente alivio y abraza a sus valientes amigos",
+          "prompt": "León abre su pecho y muestra tristeza, pidiendo su chupete al pulpo. El pulpo entrega el dulce chupete con ternura. León sonríe, sintiendo alivio y abraza a sus amigos. Emoción de consuelo."
+        },
+        "10": {
+          "texto": "Los tres suben, la burbuja empieza a bailar en el aire\n¡Burbuja, burbuja, vamos a cantar!, gritan al amanecer radiante\nEl arcoíris brilla, llenando de sonrisas el cielo azul\nRespiran profundo, sienten la fresca brisa y celebran la amistad",
+          "prompt": "Los tres hermanos vuelan en la burbuja que baila en el aire al amanecer. Cantan el leitmotiv mientras el arcoíris brilla llenando de sonrisas el cielo azul. Sienten la fresca brisa y celebran la amistad. Ambiente festivo."
+        }
+      },
+      "portada": {
+        "prompt": "Ilustración digital infantil vibrante, trazos suaves y texturas acuareladas. En el centro, una gran burbuja luminosa que refleja la luz del amanecer con tonos #FF4500, #FFD700, #00FA9A y #7FFFD4. Dentro de la burbuja, Emilia (vestida con su vestido verde esmeralda y zapatillas rosa coral) señala con la mano derecha, León (camiseta azul marino, pantalón amarillo mostaza) aprieta los puños y sostiene su chupete, y Franco (chaqueta roja carmesí, capucha azul cielo) sopla con los hombros levantados. Alrededor, la tortuga sabia de caparazón verde esmeralda y el pulpo violeta profundo con tentáculos azul índigo emergen curiosos, ofreciendo el chupete. En el fondo, un arcoíris multicolor surge del mar, y el cielo al amanecer se ilumina con destellos dorados. La escena combina la atmósfera de alegría y valentía, con la burbuja como objeto ancla que une a los personajes, siguiendo el estilo de ilustración infantil digital, colores saturados y luz bioluminiscente."
+      },
+      "loader": [
+        "¡Burbuja, burbuja, vamos a cantar! Emilia señala la burbuja luminosa.",
+        "León aprieta los puños; su chupete perdido destella entre azules.",
+        "Franco sopla, moviendo hombros, para tapar la fuga de la burbuja.",
+        "El mapa bioluminiscente, verde esmeralda y azul zafiro, guía su ruta.",
+        "Al atardecer, la burbuja vibra en dorado y púrpura; cantan juntos.",
+        "Una tortuga asiente; su caparazón verde esmeralda brilla en plata.",
+        "Emilia lanza la cuerda azul, iluminando la oscura selva de algas.",
+        "El pulpo violeta extiende un tentáculo plateado y entrega el chupete.",
+        "León pide ayuda; su voz temblorosa y el pulpo le brinda consuelo.",
+        "Al amanecer, la burbuja estalla en arcoíris; los hermanos celebran."
+      ]
+    },
+    "processing_time": 946.528683,
+    "metadata": {
+      "warnings": [],
+      "pipeline_version": "v2",
+      "folder": "6534605d-961d-43be-890a-8da9a59bcd94-20250902-155259"
+    }
+  }
+}

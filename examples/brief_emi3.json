@@ -1,0 +1,25 @@
+{   "edad_objetivo": 6,
+    "personajes": [
+      {
+        "nombre": "Caty",
+        "edad": 36,
+        "relacion": "madre de Emilia"
+      },
+      {
+        "nombre": "Emilia",
+        "edad": 2,
+        "relacion": "hija de Caty"
+      }
+    ],
+    "historia": "El día en que Emilia y Caty viajan al centro de un volcán lleno de lava, humo y una cueva llena de dinosaurios vivos",
+    "mensaje_a_transmitir": {
+      "valores_y_desarrollo_emocional": [
+        "Desarrollar habilidades de comunicación asertiva"
+      ],
+      "comportamientos_a_reforzar": [
+        "Dejar el pañal", 
+        "Pedir ayuda cuando lo necesite"
+      ]
+    }
+  }
+  

@@ -1,7 +1,7 @@
 {
   "version": "v2",
-  "last_updated": "2025-09-01T19:32:15.626478",
-  "total_conflicts_analyzed": 71,
+  "last_updated": "2025-09-03T01:14:59.680559",
+  "total_conflicts_analyzed": 115,
   "conflict_patterns": {
     "01_director": {
       "new_1958": {
@@ -1426,11 +1426,151 @@
           "test-v2-emilia-marte-chupete-20250901-144706"
         ],
         "last_seen": "2025-09-01T14:52:05.899068"
+      },
+      "new_4547": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:54:35.987669",
+        "typical_issue": "Falta de preservación de la unidad narrativa y del sentido original en los versos.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-154859"
+        ],
+        "status": "unresolved"
+      },
+      "new_9517": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:54:35.987686",
+        "typical_issue": "Los cambios realizados no están justificados claramente.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-154859"
+        ],
+        "status": "unresolved"
+      },
+      "new_641": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:54:35.987689",
+        "typical_issue": "No se evidencia una mejora de claridad comparada con el texto original.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-154859"
+        ],
+        "status": "unresolved"
+      },
+      "new_6678": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:54:35.987691",
+        "typical_issue": "Pérdida de emoción y magia del texto original.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-154859"
+        ],
+        "status": "unresolved"
+      },
+      "new_9733": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:54:35.987692",
+        "typical_issue": "Existen cambios en el texto que no están documentados en el glosario.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-154859"
+        ],
+        "status": "unresolved"
+      },
+      "new_748": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:59:21.973022",
+        "typical_issue": "Los cambios realizados no están justificados individualmente (cambio_necesario marcado como false).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-155259"
+        ],
+        "status": "unresolved"
+      },
+      "new_2606": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:59:21.973034",
+        "typical_issue": "El glosario contiene entradas que no corresponden claramente a cambios reales (glosario_preciso marcado como false).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-155259"
+        ],
+        "status": "unresolved"
+      },
+      "new_1387": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:59:21.973037",
+        "typical_issue": "Hay modificaciones evidentes en los versos que no fueron registradas en el glosario (cambios_no_documentados).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-155259"
+        ],
+        "status": "unresolved"
+      },
+      "new_5767": {
+        "count": 1,
+        "first_seen": "2025-09-02T21:46:41.526160",
+        "typical_issue": "Falta de unidad narrativa: los versos de cada página no guardan una conexión lógica clara (páginas 1, 2, 4, etc.).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-pm-20250902-214055-20250902-214055"
+        ],
+        "status": "unresolved"
+      },
+      "new_3917": {
+        "count": 1,
+        "first_seen": "2025-09-02T21:46:41.526171",
+        "typical_issue": "Cambios no justificados: varias sustituciones (p.ej., \"alto\" por \"rápido\" en página 6) carecen de justificación explícita.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-pm-20250902-214055-20250902-214055"
+        ],
+        "status": "unresolved"
+      },
+      "new_2401": {
+        "count": 1,
+        "first_seen": "2025-09-02T21:46:41.526174",
+        "typical_issue": "Cambios no documentados en el glosario: la adición de la conjunción \"y\" en la página 4 y otras modificaciones no aparecen en el glosario.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-pm-20250902-214055-20250902-214055"
+        ],
+        "status": "unresolved"
+      },
+      "new_4954": {
+        "count": 1,
+        "first_seen": "2025-09-02T21:46:41.526176",
+        "typical_issue": "Pérdida de tono poético y emocional: el texto simplificado resulta plano y sin la magia original.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-pm-20250902-214055-20250902-214055"
+        ],
+        "status": "unresolved"
+      },
+      "new_5233": {
+        "count": 1,
+        "first_seen": "2025-09-02T21:46:41.526178",
+        "typical_issue": "Algunas entradas del glosario (p.ej., \"parece casa\", \"ilusión canción\") no están descritas en la lista de cambios clave.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-pm-20250902-214055-20250902-214055"
+        ],
+        "status": "unresolved"
+      },
+      "coherence_issue": {
+        "count": 1,
+        "first_seen": "2025-09-02T21:47:39.189440",
+        "typical_issue": "Falta de coherencia narrativa: los versos de cada página no mantienen conexión lógica (p.ej., página 1: 'Se cuelga y vemos un juguete suelto' no sigue del verso anterior).",
+        "recommendation": "Agregar verificación de coherencia con artefactos previos",
+        "stories_affected": [
+          "test-pm-20250902-214055-20250902-214055"
+        ],
+        "last_seen": "2025-09-02T21:47:39.189449"
       }
     },
     "05_ritmo_rima": {
       "syllable_count_issue": {
-        "count": 11,
+        "count": 34,
         "first_seen": "2025-08-29T14:58:37.310883",
         "typical_issue": "Métrica inconsistente: la mayoría de los versos no cumplen 8‑12 sílabas.",
         "recommendation": "Especificar conteo exacto de sílabas por verso",
@@ -1439,9 +1579,20 @@
           "test-emilia-20250829-150811",
           "test-v2-paralelo-20250830-013039",
           "test-v2-emilia-marte-chupete-20250901-143538",
-          "test-v2-paralelo-20250901-192231"
+          "test-v2-paralelo-20250901-192231",
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-131821",
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-132346",
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-154859",
+          "test-metrics-20250902-185357-20250902-185357",
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250902-195058",
+          "test-pm-20250902-214055-20250902-214055",
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-003911",
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-004059",
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-004448",
+          "c0d344dc-f99f-475a-b105-dd0b67260142-20250903-004727",
+          "20250903-010240-c0d344dc-f99f-475a-b105-dd0b67260142"
         ],
-        "last_seen": "2025-09-01T19:32:15.626477"
+        "last_seen": "2025-09-03T01:14:59.680534"
       },
       "new_3434": {
         "count": 1,
@@ -1454,28 +1605,90 @@
         "status": "unresolved"
       },
       "coherence_issue": {
-        "count": 4,
+        "count": 9,
         "first_seen": "2025-08-30T01:36:17.050644",
         "typical_issue": "Pérdida de coherencia narrativa en varias páginas (p.5 \"La caja reposa firme sobre la cadera\", p.6 \"Emilia ve una nube gris en el cielo\" sin conexión clara) – viola criterio mantuvo_sentido.",
         "recommendation": "Agregar verificación de coherencia con artefactos previos",
         "stories_affected": [
           "test-v2-paralelo-20250830-013039",
           "test-v2-emilia-marte-chupete-20250901-143538",
-          "test-v2-paralelo-20250901-192231"
+          "test-v2-paralelo-20250901-192231",
+          "test-metrics-20250902-185357-20250902-185357",
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-004059",
+          "20250903-010240-c0d344dc-f99f-475a-b105-dd0b67260142"
         ],
-        "last_seen": "2025-09-01T19:32:15.626399"
+        "last_seen": "2025-09-03T01:14:59.680557"
       },
       "forced_rhyme": {
-        "count": 5,
+        "count": 20,
         "first_seen": "2025-08-30T01:36:17.050659",
         "typical_issue": "Rimas forzadas y poco naturales (p.3 \"daño\" / \"dañó\", p.5 \"radiante\" / \"brillante\") – viola criterio rimas_naturales.",
         "recommendation": "Agregar: 'prioriza naturalidad sobre rima perfecta, acepta asonancia'",
         "stories_affected": [
           "test-v2-paralelo-20250830-013039",
           "test-v2-emilia-marte-chupete-20250901-143538",
-          "test-v2-paralelo-20250901-192231"
+          "test-v2-paralelo-20250901-192231",
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-131821",
+          "test-metrics-20250902-185357-20250902-185357",
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250902-195058",
+          "test-pm-20250902-214055-20250902-214055",
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-003911",
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-004059",
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-004448",
+          "c0d344dc-f99f-475a-b105-dd0b67260142-20250903-004727",
+          "20250903-010240-c0d344dc-f99f-475a-b105-dd0b67260142"
         ],
-        "last_seen": "2025-09-01T19:32:15.626417"
+        "last_seen": "2025-09-03T01:12:17.256133"
+      },
+      "new_8238": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:56:58.854538",
+        "typical_issue": "No se verificó la aplicación del esquema de rima configurado (configuracion_leida, esquemas_correctos, rimas_validas).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-154859"
+        ],
+        "status": "unresolved"
+      },
+      "new_7088": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:56:58.854547",
+        "typical_issue": "Todas las métricas de sílabas están fuera del rango 6‑12, provocando penalización por empeorar la métrica.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-154859"
+        ],
+        "status": "unresolved"
+      },
+      "new_1396": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:56:58.854550",
+        "typical_issue": "Las rimas no siguen un patrón natural ni consistente (rimas_naturales y esquema_consistente fallan).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-154859"
+        ],
+        "status": "unresolved"
+      },
+      "new_5853": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:56:58.854551",
+        "typical_issue": "Falta de progresión lógica clara entre escena, desarrollo, reacción y cierre.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-154859"
+        ],
+        "status": "unresolved"
+      },
+      "new_3300": {
+        "count": 1,
+        "first_seen": "2025-09-02T15:56:58.854552",
+        "typical_issue": "Posibles inversiones sintácticas forzadas en varios versos (p.ej., \"¡Vamos a seguir, brilla!\").",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-154859"
+        ],
+        "status": "unresolved"
       }
     },
     "06_continuidad": {
@@ -1822,6 +2035,196 @@
           "test-v2-emilia-marte-chupete-20250901-153639"
         ],
         "last_seen": "2025-09-01T16:10:49.256785"
+      },
+      "new_7828": {
+        "count": 1,
+        "first_seen": "2025-09-02T02:31:03.253832",
+        "typical_issue": "Los colores de los personajes no se comparan con la character_bible (criterio 'consistencia_personajes' fallado).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "emi3-v2-20250902022206"
+        ],
+        "status": "unresolved"
+      },
+      "new_1863": {
+        "count": 1,
+        "first_seen": "2025-09-02T02:31:03.253843",
+        "typical_issue": "Una transición (página 8 → 9) está marcada como 'dramático' sin justificación narrativa (criterio 'transiciones_suaves' fallado).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "emi3-v2-20250902022206"
+        ],
+        "status": "unresolved"
+      },
+      "new_4389": {
+        "count": 1,
+        "first_seen": "2025-09-02T02:31:03.253846",
+        "typical_issue": "No se documentan las transiciones importantes (criterio 'transiciones_documentadas' fallado).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "emi3-v2-20250902022206"
+        ],
+        "status": "unresolved"
+      },
+      "new_4659": {
+        "count": 1,
+        "first_seen": "2025-09-02T02:31:03.253848",
+        "typical_issue": "La paleta de colores no muestra una correspondencia clara con el arco emocional de la historia (criterio 'refleja_arco_emocional' fallado).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "emi3-v2-20250902022206"
+        ],
+        "status": "unresolved"
+      },
+      "new_9430": {
+        "count": 1,
+        "first_seen": "2025-09-02T02:31:03.253850",
+        "typical_issue": "No se mencionan texturas ni materiales clave (criterio 'texturas_materiales' fallado).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "emi3-v2-20250902022206"
+        ],
+        "status": "unresolved"
+      },
+      "new_9080": {
+        "count": 1,
+        "first_seen": "2025-09-02T02:31:03.253851",
+        "typical_issue": "Faltan referencias visuales claras para replicar el estilo (criterio 'referencias_visuales' fallado).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "emi3-v2-20250902022206"
+        ],
+        "status": "unresolved"
+      },
+      "new_8788": {
+        "count": 1,
+        "first_seen": "2025-09-02T16:04:07.958261",
+        "typical_issue": "Página 10 contiene 5 colores en la paleta, excediendo el rango 3‑4 requerido (paleta_definida).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-155259"
+        ],
+        "status": "unresolved"
+      },
+      "new_5082": {
+        "count": 1,
+        "first_seen": "2025-09-02T16:04:07.958271",
+        "typical_issue": "No se proporciona justificación narrativa para los tipos de transición (transiciones_suaves).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-155259"
+        ],
+        "status": "unresolved"
+      },
+      "new_9918": {
+        "count": 1,
+        "first_seen": "2025-09-02T16:04:07.958273",
+        "typical_issue": "No hay referencia a la character_bible, por lo que la consistencia de colores de personajes no puede verificarse (consistencia_personajes).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-155259"
+        ],
+        "status": "unresolved"
+      },
+      "new_4276": {
+        "count": 1,
+        "first_seen": "2025-09-02T16:04:07.958275",
+        "typical_issue": "Las paletas no reflejan claramente el arco emocional ni la progresión del momento del día (refleja_arco_emocional, momento_dia_coherente).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-155259"
+        ],
+        "status": "unresolved"
+      },
+      "new_9593": {
+        "count": 1,
+        "first_seen": "2025-09-02T16:04:07.958276",
+        "typical_issue": "Faltan referencias a texturas y materiales clave (texturas_materiales).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-155259"
+        ],
+        "status": "unresolved"
+      },
+      "new_3276": {
+        "count": 1,
+        "first_seen": "2025-09-02T16:04:07.958278",
+        "typical_issue": "No se incluyen referencias visuales claras para replicar el estilo (referencias_visuales).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "6534605d-961d-43be-890a-8da9a59bcd94-20250902-155259"
+        ],
+        "status": "unresolved"
+      },
+      "new_123": {
+        "count": 1,
+        "first_seen": "2025-09-03T00:55:04.759179",
+        "typical_issue": "Transiciones entre páginas no están justificadas narrativamente (transiciones_suaves).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-003911"
+        ],
+        "status": "unresolved"
+      },
+      "new_6249": {
+        "count": 1,
+        "first_seen": "2025-09-03T00:55:04.759190",
+        "typical_issue": "No se verifica la consistencia de colores de personajes con la character bible (consistencia_personajes).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-003911"
+        ],
+        "status": "unresolved"
+      },
+      "new_9901": {
+        "count": 1,
+        "first_seen": "2025-09-03T00:55:04.759194",
+        "typical_issue": "La paleta de colores no refleja claramente el arco emocional de la historia (refleja_arco_emocional).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-003911"
+        ],
+        "status": "unresolved"
+      },
+      "new_8202": {
+        "count": 1,
+        "first_seen": "2025-09-03T00:55:04.759196",
+        "typical_issue": "La secuencia de momentos del día no sigue una progresión lógica (momento_dia_coherente).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-003911"
+        ],
+        "status": "unresolved"
+      },
+      "new_9933": {
+        "count": 1,
+        "first_seen": "2025-09-03T00:55:04.759198",
+        "typical_issue": "No se destaca visualmente el clímax en las páginas 7-8 (climax_visual).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-003911"
+        ],
+        "status": "unresolved"
+      },
+      "new_1802": {
+        "count": 1,
+        "first_seen": "2025-09-03T00:55:04.759199",
+        "typical_issue": "Faltan referencias a texturas y materiales clave (texturas_materiales).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-003911"
+        ],
+        "status": "unresolved"
+      },
+      "new_1084": {
+        "count": 1,
+        "first_seen": "2025-09-03T00:55:04.759201",
+        "typical_issue": "No se proporcionan referencias visuales claras para replicar el estilo (referencias_visuales).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "75edf127-13f5-4397-9e15-bdbaebbf2ee5-20250903-003911"
+        ],
+        "status": "unresolved"
       }
     },
     "09_sensibilidad": {
@@ -1966,6 +2369,56 @@
         "recommendation": "Requiere análisis manual",
         "stories_affected": [
           "test-emilia-20250829-150811"
+        ],
+        "status": "unresolved"
+      },
+      "new_6930": {
+        "count": 1,
+        "first_seen": "2025-09-02T19:05:47.483870",
+        "typical_issue": "No menciona nombres de personajes específicos (usa_nombre_personajes).",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-metrics-20250902-185357-20250902-185357"
+        ],
+        "status": "unresolved"
+      },
+      "new_35": {
+        "count": 1,
+        "first_seen": "2025-09-02T19:05:47.483881",
+        "typical_issue": "Falta de referencias al leitmotiv y objetos ancla.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-metrics-20250902-185357-20250902-185357"
+        ],
+        "status": "unresolved"
+      },
+      "new_1978": {
+        "count": 1,
+        "first_seen": "2025-09-02T19:05:47.483883",
+        "typical_issue": "No conecta claramente con el mensaje principal del cuento.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-metrics-20250902-185357-20250902-185357"
+        ],
+        "status": "unresolved"
+      },
+      "new_7210": {
+        "count": 1,
+        "first_seen": "2025-09-02T19:05:47.483885",
+        "typical_issue": "Repetición de palabras como 'gira' y 'gran botón' entre mensajes.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-metrics-20250902-185357-20250902-185357"
+        ],
+        "status": "unresolved"
+      },
+      "new_7421": {
+        "count": 1,
+        "first_seen": "2025-09-02T19:05:47.483886",
+        "typical_issue": "Los mensajes son algo genéricos y carecen de personalización profunda.",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "test-metrics-20250902-185357-20250902-185357"
         ],
         "status": "unresolved"
       }

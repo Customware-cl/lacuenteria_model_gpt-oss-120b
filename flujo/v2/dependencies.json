@@ -3,7 +3,7 @@
   "02_psicoeducador": ["brief.json", "01_director.json"],
   "03_cuentacuentos": ["01_director.json", "02_psicoeducador.json"],
   "04_editor_claridad": ["03_cuentacuentos.json"],
-  "05_ritmo_rima": ["04_editor_claridad.json"],
+  "05_ritmo_rima": ["04_editor_claridad.json", "configuracion_poetica/estructura_rima.json"],
   "06_continuidad": ["05_ritmo_rima.json", "brief.json"],
   "07_diseno_escena": ["05_ritmo_rima.json", "06_continuidad.json"],
   "08_direccion_arte": ["07_diseno_escena.json", "06_continuidad.json"],

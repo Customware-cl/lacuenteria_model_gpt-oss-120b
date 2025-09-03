@@ -36,7 +36,7 @@ processing_queue = {}
 processing_lock = threading.Lock()
 
 
-def process_story_async(story_id: str, brief: dict, webhook_url: str, mode_verificador_qa: bool = True, pipeline_version: str = 'v1'):
+def process_story_async(story_id: str, brief: dict, webhook_url: str, mode_verificador_qa: bool = True, pipeline_version: str = 'v1', prompt_metrics_id: str = None):
     """
     Procesa una historia de forma asíncrona
     
@@ -60,29 +60,42 @@ def process_story_async(story_id: str, brief: dict, webhook_url: str, mode_verif
             if 'mode_verificador_qa' in version_config:
                 mode_verificador_qa = version_config['mode_verificador_qa']
         
-        orchestrator = StoryOrchestrator(story_id, mode_verificador_qa=mode_verificador_qa, pipeline_version=pipeline_version)
+        # Crear orquestador con timestamp para evitar colisiones
+        orchestrator = StoryOrchestrator(story_id, mode_verificador_qa=mode_verificador_qa, pipeline_version=pipeline_version, use_timestamp=True, prompt_metrics_id=prompt_metrics_id)
+        
+        # Actualizar el story_id en la cola con el ID con timestamp
+        actual_story_id = orchestrator.story_id
         
         # Procesar historia
         result = orchestrator.process_story(brief, webhook_url)
         
         # Enviar webhook con resultado
         if webhook_url:
+            logger.info(f"Preparando envío de webhook para historia {story_id}, status: {result.get('status')}")
             webhook_client = get_webhook_client()
             if result["status"] == "success":
+                logger.info(f"Enviando webhook de éxito para {story_id}")
                 webhook_client.send_story_complete(webhook_url, result)
             else:
+                logger.info(f"Enviando webhook de error para {story_id}: {result.get('error')}")
                 webhook_client.send_story_error(
                     webhook_url, 
                     story_id, 
                     result.get("error", "Error desconocido")
                 )
+        else:
+            logger.info(f"No hay webhook_url para historia {story_id}")
         
-        # Actualizar estado en cola
+        # Actualizar estado en cola usando tanto el ID original como el timestamped
         with processing_lock:
+            # Actualizar con el story_id original para búsquedas
             if story_id in processing_queue:
                 processing_queue[story_id] = result
+            # También actualizar con el ID timestamped si es diferente
+            if actual_story_id != story_id:
+                processing_queue[actual_story_id] = result
         
-        logger.info(f"Procesamiento completado para historia: {story_id}")
+        logger.info(f"Procesamiento completado para historia: {story_id} (carpeta: {actual_story_id})")
         
     except Exception as e:
         logger.error(f"Error procesando historia {story_id}: {e}")
@@ -163,7 +176,12 @@ def create_story():
         
         story_id = data['story_id']
         webhook_url = data.get('webhook_url')
+        prompt_metrics_id = data.get('prompt_metrics_id')  # Nuevo campo para v2
         mode_verificador_qa = data.get('mode_verificador_qa', True)  # Default: True (estricto)
+        
+        # Log del prompt_metrics_id recibido
+        if prompt_metrics_id:
+            logger.info(f"prompt_metrics_id recibido: {prompt_metrics_id}")
         
         # Detectar versión del pipeline (default v1 para compatibilidad)
         pipeline_version = data.get('pipeline_version', 'v1')
@@ -172,34 +190,8 @@ def create_story():
         
         logger.info(f"Creando historia {story_id} con pipeline {pipeline_version}")
         
-        # Verificar si la historia ya existe
-        story_path = get_story_path(story_id)
-        if story_path.exists():
-            # Verificar estado
-            manifest_path = get_artifact_path(story_id, "manifest.json")
-            if manifest_path.exists():
-                with open(manifest_path, 'r', encoding='utf-8') as f:
-                    manifest = json.load(f)
-                
-                if manifest.get("estado") == "completo":
-                    # Devolver resultado existente
-                    validador_path = get_artifact_path(story_id, "validador.json")
-                    if validador_path.exists():
-                        with open(validador_path, 'r', encoding='utf-8') as f:
-                            result = json.load(f)
-                        
-                        return jsonify({
-                            "story_id": story_id,
-                            "status": "already_completed",
-                            "result": result
-                        }), 200
-                
-                elif manifest.get("estado") == "en_progreso":
-                    return jsonify({
-                        "story_id": story_id,
-                        "status": "already_processing",
-                        "message": "La historia ya está siendo procesada"
-                    }), 200
+        # NOTA: Ya no verificamos si existe, siempre creamos una nueva carpeta con timestamp
+        # Esto permite regenerar historias con el mismo story_id
         
         # Preparar brief
         brief = {
@@ -208,6 +200,10 @@ def create_story():
             "mensaje_a_transmitir": data['mensaje_a_transmitir'],
             "edad_objetivo": data['edad_objetivo']
         }
+        
+        # NO agregar prompt_metrics_id al brief - solo debe ir en el manifest y webhook
+        if prompt_metrics_id:
+            logger.info(f"prompt_metrics_id recibido (será guardado en manifest): {prompt_metrics_id}")
         
         # Log del modo de verificación
         logger.info(f"Creando historia {story_id} con mode_verificador_qa={mode_verificador_qa}")
@@ -223,7 +219,7 @@ def create_story():
         # Iniciar procesamiento asíncrono con versión
         thread = threading.Thread(
             target=process_story_async,
-            args=(story_id, brief, webhook_url, mode_verificador_qa, pipeline_version)
+            args=(story_id, brief, webhook_url, mode_verificador_qa, pipeline_version, prompt_metrics_id)
         )
         thread.daemon = True
         thread.start()
@@ -245,21 +241,28 @@ def create_story():
 
 @app.route('/api/stories/<story_id>/status', methods=['GET'])
 def get_story_status(story_id):
-    """Obtiene el estado de una historia"""
+    """Obtiene el estado de una historia (busca la más reciente)"""
+    from config import get_latest_story_path
+    
     try:
-        # Verificar en cola de procesamiento
+        # Primero verificar en cola de procesamiento (podría estar en memoria)
         with processing_lock:
-            if story_id in processing_queue:
-                return jsonify(processing_queue[story_id]), 200
+            # Buscar por original_story_id o story_id con timestamp
+            for queue_id, queue_data in processing_queue.items():
+                # Si es el ID exacto o si el queue_id empieza con story_id-timestamp
+                if queue_id == story_id or queue_id.startswith(f"{story_id}-"):
+                    return jsonify(queue_data), 200
         
-        # Verificar en disco
-        manifest_path = get_artifact_path(story_id, "manifest.json")
-        if not manifest_path.exists():
+        # Buscar la carpeta más reciente de este story_id
+        story_path = get_latest_story_path(story_id)
+        if not story_path:
             return jsonify({
                 "status": "not_found",
                 "error": "Historia no encontrada"
             }), 404
         
+        # Leer manifest de la carpeta encontrada
+        manifest_path = story_path / "manifest.json"
         with open(manifest_path, 'r', encoding='utf-8') as f:
             manifest = json.load(f)
         
@@ -269,7 +272,8 @@ def get_story_status(story_id):
             "current_step": manifest.get("paso_actual"),
             "qa_scores": manifest.get("qa_historial", {}),
             "created_at": manifest.get("created_at"),
-            "updated_at": manifest.get("updated_at")
+            "updated_at": manifest.get("updated_at"),
+            "folder": story_path.name
         }), 200
         
     except Exception as e:
@@ -282,18 +286,20 @@ def get_story_status(story_id):
 
 @app.route('/api/stories/<story_id>/result', methods=['GET'])
 def get_story_result(story_id):
-    """Obtiene el resultado final de una historia"""
+    """Obtiene el resultado final de una historia (busca la más reciente)"""
+    from config import get_latest_story_path
+    
     try:
-        # Verificar que existe
-        story_path = get_story_path(story_id)
-        if not story_path.exists():
+        # Buscar la carpeta más reciente de este story_id
+        story_path = get_latest_story_path(story_id)
+        if not story_path:
             return jsonify({
                 "status": "not_found",
                 "error": "Historia no encontrada"
             }), 404
         
         # Verificar estado
-        manifest_path = get_artifact_path(story_id, "manifest.json")
+        manifest_path = story_path / "manifest.json"
         if manifest_path.exists():
             with open(manifest_path, 'r', encoding='utf-8') as f:
                 manifest = json.load(f)
@@ -302,16 +308,20 @@ def get_story_result(story_id):
                 return jsonify({
                     "status": "not_ready",
                     "current_state": manifest.get("estado"),
-                    "message": "La historia aún no está completa"
+                    "message": "La historia aún no está completa",
+                    "folder": story_path.name
                 }), 202
         
         # Obtener resultado del validador
-        validador_path = get_artifact_path(story_id, "validador.json")
+        validador_path = story_path / "validador.json"
         if not validador_path.exists():
-            return jsonify({
-                "status": "error",
-                "error": "Resultado no encontrado"
-            }), 404
+            # Intentar con 12_validador.json para compatibilidad v2
+            validador_path = story_path / "outputs" / "agents" / "12_validador.json"
+            if not validador_path.exists():
+                return jsonify({
+                    "status": "error",
+                    "error": "Resultado no encontrado"
+                }), 404
         
         with open(validador_path, 'r', encoding='utf-8') as f:
             result = json.load(f)
@@ -662,6 +672,7 @@ def create_story_v1():
         
         story_id = data['story_id']
         webhook_url = data.get('webhook_url')
+        prompt_metrics_id = data.get('prompt_metrics_id')  # Soportar en v1 también
         mode_verificador_qa = data.get('mode_verificador_qa', True)
         
         logger.info(f"Creando historia {story_id} con pipeline v1 (explícito)")
@@ -699,6 +710,10 @@ def create_story_v1():
             "edad_objetivo": data['edad_objetivo']
         }
         
+        # NO agregar prompt_metrics_id al brief - solo debe ir en el manifest y webhook
+        if prompt_metrics_id:
+            logger.info(f"prompt_metrics_id recibido para v1 (será guardado en manifest): {prompt_metrics_id}")
+        
         # Agregar a cola
         with processing_lock:
             processing_queue[story_id] = {
@@ -711,7 +726,7 @@ def create_story_v1():
         # Iniciar procesamiento asíncrono
         thread = threading.Thread(
             target=process_story_async,
-            args=(story_id, brief, webhook_url, mode_verificador_qa, "v1")
+            args=(story_id, brief, webhook_url, mode_verificador_qa, "v1", prompt_metrics_id)
         )
         thread.daemon = True
         thread.start()
@@ -793,6 +808,10 @@ def create_story_v2():
             "edad_objetivo": data['edad_objetivo']
         }
         
+        # NO agregar prompt_metrics_id al brief - solo debe ir en el manifest y webhook
+        if prompt_metrics_id:
+            logger.info(f"prompt_metrics_id recibido para v2 (será guardado en manifest): {prompt_metrics_id}")
+        
         # Agregar a cola
         with processing_lock:
             processing_queue[story_id] = {
@@ -805,7 +824,7 @@ def create_story_v2():
         # Iniciar procesamiento asíncrono
         thread = threading.Thread(
             target=process_story_async,
-            args=(story_id, brief, webhook_url, mode_verificador_qa, "v2")
+            args=(story_id, brief, webhook_url, mode_verificador_qa, "v2", prompt_metrics_id)
         )
         thread.daemon = True
         thread.start()

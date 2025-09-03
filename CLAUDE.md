@@ -147,6 +147,32 @@ Cuentería es un sistema de orquestación multiagente para la generación automa
 - **Información**: Tiempos, temperaturas, QA scores, reintentos por agente
 - **Robustez**: Funciona incluso sin logs disponibles
 
+## Configuración de Webhooks
+
+### Autenticación con Supabase
+- **Archivo**: `.env` debe contener `anon_key=<tu_anon_key_de_supabase>`
+- **Headers requeridos**: `Authorization: Bearer {anon_key}`
+- **Formato del payload**:
+  ```json
+  {
+    "event": "story_complete",
+    "timestamp": 1234567890,
+    "data": {
+      "story_id": "...",
+      "status": "success",
+      "prompt_metrics_id": "...",
+      "result": {...}
+    }
+  }
+  ```
+
+## Estructura de Carpetas
+
+### Formato de nombres (NUEVO - Sept 2025)
+- **Patrón**: `{YYYYMMDD-HHMMSS}-{story_id}`
+- **Ejemplo**: `20250903-010240-c0d344dc-f99f-475a-b105-dd0b67260142`
+- **Compatibilidad**: El sistema mantiene compatibilidad con el formato anterior
+
 ## Limitaciones Conocidas
 
 - **Truncamiento de respuestas**: El modelo puede truncar respuestas largas (>3000 caracteres en JSON)

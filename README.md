@@ -2,11 +2,13 @@
 
 ## ⚠️ Estado Actual: En Desarrollo
 
-**Última actualización**: 22 de Agosto 2025
+**Última actualización**: 3 de Septiembre 2025
 
-### 🚀 Cambios Recientes
+### 🚀 Cambios Recientes (Sept 2025)
+- **Nueva estructura de carpetas**: `{YYYYMMDD-HHMMSS}-{story_id}` para mejor ordenamiento
+- **Autenticación de Webhooks**: Soporte completo para Supabase Edge Functions
+- **Gestión de métricas**: `prompt_metrics_id` correctamente aislado del contexto de agentes
 - **Sistema de Evaluación Dual**: Control sobre verificador QA riguroso vs autoevaluación rápida
-- **Evaluación Externa**: Endpoint directo para evaluar historias desde lacuenteria.cl
 - **Optimizaciones**: Configuraciones específicas por agente para mejor rendimiento
 
 Ver [`docs/ESTADO_ACTUAL.md`](docs/ESTADO_ACTUAL.md) para detalles completos.

@@ -23,5 +23,20 @@
     "enable_caching": true,
     "streaming": false,
     "timeout": 900
-  }
+  },
+  "agent_toggles": {
+    "01_director": true,
+    "02_psicoeducador": true,
+    "03_cuentacuentos": true,
+    "04_editor_claridad": true,
+    "05_ritmo_rima": true,
+    "06_continuidad": true,
+    "07_diseno_escena": true,
+    "08_direccion_arte": true,
+    "09_sensibilidad": true,
+    "10_portadista": true,
+    "11_loader": true,
+    "12_validador": true
+  },
+  "agent_toggles_note": "Establece false para saltar un agente. El sistema manejará las dependencias automáticamente."
 }

@@ -16,7 +16,7 @@ class WebhookClient:
     
     def __init__(self):
         self.timeout = WEBHOOK_CONFIG["timeout"]
-        self.max_attempts = WEBHOOK_CONFIG["max_attempts"]
+        self.max_attempts = WEBHOOK_CONFIG.get("max_attempts", WEBHOOK_CONFIG.get("max_retries", 3))
         self.retry_delay = WEBHOOK_CONFIG["retry_delay"]
     
     def send_notification(self, 
@@ -113,6 +113,7 @@ class WebhookClient:
         Returns:
             True si se envió exitosamente
         """
+        logger.info(f"Preparando webhook de error para {story_id}")
         payload = {
             "story_id": story_id,
             "status": "error",

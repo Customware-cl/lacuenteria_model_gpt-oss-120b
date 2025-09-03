@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 class StoryOrchestrator:
     """Orquesta el pipeline completo de generación de cuentos"""
     
-    def __init__(self, story_id: Optional[str] = None, mode_verificador_qa: bool = True, pipeline_version: str = 'v1'):
+    def __init__(self, story_id: Optional[str] = None, mode_verificador_qa: bool = True, pipeline_version: str = 'v1', use_timestamp: bool = True, prompt_metrics_id: Optional[str] = None):
         """
         Inicializa el orquestador
         
@@ -33,15 +33,27 @@ class StoryOrchestrator:
             story_id: ID de la historia (si None, se genera uno)
             mode_verificador_qa: Si True usa verificador_qa, si False usa autoevaluación
             pipeline_version: Versión del pipeline a usar (v1, v2, etc.)
+            use_timestamp: Si True, añade timestamp al nombre de la carpeta
+            prompt_metrics_id: ID de métricas del prompt (solo para manifest y webhook)
         """
-        self.story_id = story_id or self._generate_story_id()
+        from config import generate_timestamped_story_folder
+        
+        self.original_story_id = story_id or self._generate_story_id()
+        
+        # Si use_timestamp es True, añadir timestamp al nombre de la carpeta
+        if use_timestamp:
+            self.story_id = generate_timestamped_story_folder(self.original_story_id)
+        else:
+            self.story_id = self.original_story_id
+            
         self.story_path = get_story_path(self.story_id)
         self.mode_verificador_qa = mode_verificador_qa
         self.pipeline_version = pipeline_version
+        self.prompt_metrics_id = prompt_metrics_id
         self.agent_runner = AgentRunner(self.story_id, mode_verificador_qa=mode_verificador_qa, version=pipeline_version)
         self.manifest = self._init_manifest()
         
-        logger.info(f"Orchestrator inicializado - mode_verificador_qa: {mode_verificador_qa}, version: {pipeline_version}")
+        logger.info(f"Orchestrator inicializado - story_id: {self.story_id}, original_id: {self.original_story_id}, mode_verificador_qa: {mode_verificador_qa}, version: {pipeline_version}")
         
     def _generate_story_id(self) -> str:
         """Genera un ID único para la historia"""
@@ -60,6 +72,7 @@ class StoryOrchestrator:
             from config import LLM_CONFIG
             return {
                 "story_id": self.story_id,
+                "original_story_id": self.original_story_id,
                 "source": "local",
                 "created_at": datetime.now().isoformat(),
                 "updated_at": datetime.now().isoformat(),
@@ -110,14 +123,26 @@ class StoryOrchestrator:
             
             # Actualizar manifest
             self.manifest["webhook_url"] = webhook_url
+            # Guardar prompt_metrics_id si fue proporcionado al orchestrator
+            if self.prompt_metrics_id:
+                self.manifest["prompt_metrics_id"] = self.prompt_metrics_id
             self.manifest["estado"] = "en_progreso"
             self._save_manifest()
             
             # Obtener pipeline de la versión configurada
             pipeline = self.agent_runner.version_config.get('pipeline', AGENT_PIPELINE)
             
+            # Obtener toggles de agentes (por defecto todos habilitados)
+            agent_toggles = self.agent_runner.version_config.get('agent_toggles', {})
+            
             # Ejecutar pipeline
             for agent_name in pipeline:
+                # Verificar si el agente está habilitado
+                if not agent_toggles.get(agent_name, True):
+                    logger.info(f"Saltando agente deshabilitado: {agent_name}")
+                    self._handle_skipped_agent(agent_name)
+                    continue
+                
                 logger.info(f"Ejecutando agente: {agent_name}")
                 
                 # Actualizar manifest
@@ -198,7 +223,7 @@ class StoryOrchestrator:
             # Obtener resultado final
             final_result = self._get_final_result()
             
-            return {
+            result_dict = {
                 "status": "success",
                 "story_id": self.story_id,
                 "result": final_result,
@@ -209,6 +234,12 @@ class StoryOrchestrator:
                     "warnings": self.manifest.get("devoluciones", [])
                 }
             }
+            
+            # Incluir prompt_metrics_id si existe
+            if "prompt_metrics_id" in self.manifest:
+                result_dict["prompt_metrics_id"] = self.manifest["prompt_metrics_id"]
+            
+            return result_dict
             
         except Exception as e:
             logger.error(f"Error fatal en pipeline: {e}")
@@ -289,12 +320,18 @@ class StoryOrchestrator:
         self.manifest["estado"] = "completo"
         self._save_manifest()
         
-        return {
+        result_dict = {
             "status": "success",
             "story_id": self.story_id,
             "result": self._get_final_result(),
             "resumed": True
         }
+        
+        # Incluir prompt_metrics_id si existe
+        if "prompt_metrics_id" in self.manifest:
+            result_dict["prompt_metrics_id"] = self.manifest["prompt_metrics_id"]
+        
+        return result_dict
     
     def get_status(self) -> Dict[str, Any]:
         """
@@ -328,6 +365,56 @@ class StoryOrchestrator:
         """Obtiene el nombre del archivo de salida de un agente"""
         # Usar solo el nombre del agente sin numeración para evitar problemas de dependencias
         return f"{agent_name}.json"
+    
+    def _handle_skipped_agent(self, agent_name: str):
+        """
+        Maneja un agente que fue saltado, creando los archivos necesarios
+        para que los siguientes agentes encuentren sus dependencias.
+        """
+        import shutil
+        
+        # Mapeo de qué archivo usar cuando se salta un agente
+        dependency_mapping = {
+            "04_editor_claridad": "03_cuentacuentos",
+            "05_ritmo_rima": "04_editor_claridad",  # Si editor está saltado, usa cuentacuentos
+            "06_continuidad": "05_ritmo_rima",
+            "07_diseno_escena": "05_ritmo_rima",
+            "08_direccion_arte": "07_diseno_escena",
+            "09_sensibilidad": "05_ritmo_rima",
+            "10_portadista": "05_ritmo_rima",
+            "11_loader": "10_portadista",
+            "12_validador": "05_ritmo_rima"
+        }
+        
+        # Si el agente saltado tiene un mapeo, copiar el archivo anterior
+        if agent_name in dependency_mapping:
+            source_agent = dependency_mapping[agent_name]
+            
+            # Si el agente fuente también fue saltado, buscar recursivamente
+            agent_toggles = self.agent_runner.version_config.get('agent_toggles', {})
+            while source_agent in dependency_mapping and not agent_toggles.get(source_agent, True):
+                source_agent = dependency_mapping[source_agent]
+            
+            # Remover números del inicio del nombre del agente para el archivo
+            source_file_name = source_agent.lstrip('0123456789_')
+            target_file_name = agent_name.lstrip('0123456789_')
+            
+            source_file = get_artifact_path(self.story_id, f"{source_file_name}.json")
+            target_file = get_artifact_path(self.story_id, f"{target_file_name}.json")
+            
+            if source_file.exists():
+                logger.info(f"Copiando {source_file.name} como {target_file.name} para mantener dependencias")
+                shutil.copy2(source_file, target_file)
+                
+                # Registrar en manifest que el agente fue saltado
+                self.manifest["timestamps"][agent_name] = {
+                    "skipped": True,
+                    "source_file": source_agent,
+                    "timestamp": datetime.now().isoformat()
+                }
+                self._save_manifest()
+            else:
+                logger.warning(f"No se pudo encontrar archivo fuente {source_file} para agente saltado {agent_name}")
     
     def _get_final_result(self) -> Dict[str, Any]:
         """Obtiene el resultado final del validador"""

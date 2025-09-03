@@ -1,0 +1,784 @@
+{
+  "event": "story_complete",
+  "timestamp": 1756837836.4005258,
+  "data": {
+    "status": "success",
+    "story_id": "6534605d-961d-43be-890a-8da9a59bcd94",
+    "result": {
+      "titulo": "La Gran Aventura de la Burbuja Brillante",
+      "paginas": {
+        "1": {
+          "texto": "Los tres hermanos, pieles distintas, sostienen una burbuja al sol\nFranco la empuja, su risa vibra como un tambor alegre\nEmilia sonríe, su vestido verde brilla bajo la luz dorada\nLeón aprieta su chupete, mirando el horizonte con esperanza",
+          "prompt": "Ilustración infantil digital vibrante, estilo suave y acuarelado. En la playa bajo el sol, tres hermanos de diferentes tonos de piel sostienen una burbuja brillante. Franco, con una chaqueta roja, empuja la burbuja mientras ríe. Emilia lleva un vestido verde y sonríe. León, con camiseta azul, aprieta su chupete. Ambiente alegre y luminoso."
+        },
+        "2": {
+          "texto": "Suben todos dentro de la burbuja brillante, cantando bajo el agua\n¡Burbuja, burbuja, vamos a cantar!, gritan mientras giran en ondas\nLos peces curiosos rodean la esfera, formando círculos de colores\nLa luz del sol se filtra, pintando el fondo de azul brillante",
+          "prompt": "Escena bajo el agua dentro de la burbuja luminosa. Los tres hermanos cantan mientras la burbuja gira entre ondas. Pequeños peces de colores rodean la esfera formando círculos. Luz solar filtrada ilumina el fondo azul brillante. Atmosfera de entusiasmo y burbujeo."
+        },
+        "3": {
+          "texto": "Emilia descubre una grieta en la burbuja que mira al mar\nLeón grita: ¡Ayuda! El aire se escapa por la fisura\nUn pez plateado nada cerca y pregunta qué sucede\nFranco sopla fuerte, cierra la fuga y salva la burbuja",
+          "prompt": "Dentro de la burbuja se ve una grieta que mira al mar. León grita preocupado, mientras un pez plateado nada cerca. Franco sopla con fuerza para cerrar la fuga. Emoción de tensión y alivio al repararse la burbuja."
+        },
+        "4": {
+          "texto": "Dentro de la burbuja brilla un mapa bioluminiscente verde\nEl mapa muestra un sendero luminoso que lleva a la luz\nLos amigos miran el camino y hacen una pregunta curiosa\nAl final del sendero descubren una cruz que guía su rumbo",
+          "prompt": "Mapa bioluminiscente verde flota dentro de la burbuja. Muestra un sendero luminoso que lleva a una cruz brillante. Los tres hermanos observan el mapa y se preguntan el destino. Ambiente de curiosidad iluminada por luz suave."
+        },
+        "5": {
+          "texto": "Emilia y León guardan la burbuja en el cielo estrellado\n¡Burbuja, burbuja, vamos a cantar!, entonan con voces de colores\nFranco alza su voz, cubriendo la burbuja con un manto\nJuntos resisten la corriente y logran elevarse hacia el horizonte",
+          "prompt": "Los hermanos guardan la burbuja en el cielo estrellado al atardecer. Cantan juntos dentro de la burbuja, con voces de colores. Franco alza su voz, cubriendo la burbuja con un manto de luz dorada. Sentimiento de determinación y unión."
+        },
+        "6": {
+          "texto": "Bajan bajo una estrella plateada que ilumina el fondo marino\nUna tortuga sabia sonríe y lanza un reto de amistad\nFranco pregunta: ¿Qué suena sin moverse en la profundidad?\nEmilia responde: la lluvia que cae, su manto de silencio",
+          "prompt": "Escena bajo una estrella plateada en el fondo marino. Una tortuga sabia sonríe cerca de la burbuja. Franco pregunta qué suena sin moverse; Emilia responde sobre la lluvia. Ambiente de asombro y reflexión."
+        },
+        "7": {
+          "texto": "Emilia guía una cuerda azul que brilla como luz\nLas algas aprietan, pero el miedo no logra detenerlos\nEmilia pide ayuda, su luz cruza la oscuridad del abismo\nCon un salto valiente, la burbuja se eleva hacia la superficie",
+          "prompt": "Emilia sostiene una cuerda azul que ilumina la oscuridad submarina. Algas aprietan alrededor, pero la luz de Emilia atraviesa el abismo. Los hermanos observan mientras la burbuja se eleva con un salto valiente. Sensación de valentía."
+        },
+        "8": {
+          "texto": "Emilia descubre al pulpo violeta junto a un cofre azul\nLeón susurra: Comprendo, no temas, la aventura continúa\nFranco pregunta al pulpo: ¿Puedes ayudar, amigo del mar?\nEl pulpo asiente y muestra el tesoro brillante dentro del cofre",
+          "prompt": "En una cueva submarina, Emilia descubre al pulpo violeta junto a un cofre azul. León susurra al pulpo, y Franco le pregunta si puede ayudar. El pulpo asiente y muestra el tesoro brillante. Ambiente de confianza."
+        },
+        "9": {
+          "texto": "León abre su pecho y confiesa estar triste y solo\nPide al pulpo su chupete, su voz temblorosa implora ayuda\nEl pulpo escucha y entrega el dulce chupete con ternura\nLeón sonríe, siente alivio y abraza a sus valientes amigos",
+          "prompt": "León abre su pecho y muestra tristeza, pidiendo su chupete al pulpo. El pulpo entrega el dulce chupete con ternura. León sonríe, sintiendo alivio y abraza a sus amigos. Emoción de consuelo."
+        },
+        "10": {
+          "texto": "Los tres suben, la burbuja empieza a bailar en el aire\n¡Burbuja, burbuja, vamos a cantar!, gritan al amanecer radiante\nEl arcoíris brilla, llenando de sonrisas el cielo azul\nRespiran profundo, sienten la fresca brisa y celebran la amistad",
+          "prompt": "Los tres hermanos vuelan en la burbuja que baila en el aire al amanecer. Cantan el leitmotiv mientras el arcoíris brilla llenando de sonrisas el cielo azul. Sienten la fresca brisa y celebran la amistad. Ambiente festivo."
+        }
+      },
+      "portada": {
+        "prompt": "Ilustración digital infantil vibrante, trazos suaves y texturas acuareladas. En el centro, una gran burbuja luminosa que refleja la luz del amanecer con tonos #FF4500, #FFD700, #00FA9A y #7FFFD4. Dentro de la burbuja, Emilia (vestida con su vestido verde esmeralda y zapatillas rosa coral) señala con la mano derecha, León (camiseta azul marino, pantalón amarillo mostaza) aprieta los puños y sostiene su chupete, y Franco (chaqueta roja carmesí, capucha azul cielo) sopla con los hombros levantados. Alrededor, la tortuga sabia de caparazón verde esmeralda y el pulpo violeta profundo con tentáculos azul índigo emergen curiosos, ofreciendo el chupete. En el fondo, un arcoíris multicolor surge del mar, y el cielo al amanecer se ilumina con destellos dorados. La escena combina la atmósfera de alegría y valentía, con la burbuja como objeto ancla que une a los personajes, siguiendo el estilo de ilustración infantil digital, colores saturados y luz bioluminiscente."
+      },
+      "loader": [
+        "¡Burbuja, burbuja, vamos a cantar! Emilia señala la burbuja luminosa.",
+        "León aprieta los puños; su chupete perdido destella entre azules.",
+        "Franco sopla, moviendo hombros, para tapar la fuga de la burbuja.",
+        "El mapa bioluminiscente, verde esmeralda y azul zafiro, guía su ruta.",
+        "Al atardecer, la burbuja vibra en dorado y púrpura; cantan juntos.",
+        "Una tortuga asiente; su caparazón verde esmeralda brilla en plata.",
+        "Emilia lanza la cuerda azul, iluminando la oscura selva de algas.",
+        "El pulpo violeta extiende un tentáculo plateado y entrega el chupete.",
+        "León pide ayuda; su voz temblorosa y el pulpo le brinda consuelo.",
+        "Al amanecer, la burbuja estalla en arcoíris; los hermanos celebran."
+      ]
+    },
+    "qa_scores": {
+      "overall": 4.25,
+      "by_agent": {
+        "01_director": {
+          "arco_narrativo": {
+            "criterios_evaluados": {
+              "tiene_introduccion_clara": true,
+              "tiene_desarrollo_progresivo": true,
+              "tiene_climax_identificable": true,
+              "tiene_resolucion_satisfactoria": true,
+              "coherencia_causal": true
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "potencia_leitmotiv": {
+            "criterios_evaluados": {
+              "es_memorable": true,
+              "aparece_tres_veces": true,
+              "es_apropiado_edad": true,
+              "integrado_naturalmente": true
+            },
+            "criterios_cumplidos": 4,
+            "criterios_totales": 4,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "claridad_estructura": {
+            "criterios_evaluados": {
+              "tiene_10_beats": true,
+              "campos_completos": true,
+              "progresion_emocional": true,
+              "imagenes_visualizables": true,
+              "estructura_json_correcta": true
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "promedio": {
+            "nota_ponderada": 5.0,
+            "ajustes_globales": [
+              "coherencia_perfecta +0.2"
+            ],
+            "nota_final": 5.0
+          }
+        },
+        "02_psicoeducador": {
+          "alineacion_pedagogica": {
+            "criterios_evaluados": {
+              "recursos_apropiados_edad": true,
+              "alineacion_con_mensaje": true,
+              "metas_conductuales_claras": true,
+              "progresion_pedagogica": true,
+              "sin_moralizar": true
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "aplicabilidad": {
+            "criterios_evaluados": {
+              "frases_modelo_utiles": true,
+              "recursos_implementables": true,
+              "actividades_concretas": false,
+              "transferencia_vida_real": true
+            },
+            "criterios_cumplidos": 3,
+            "criterios_totales": 4,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 75,
+            "nota_calculada": 4.0,
+            "ajustes_contextuales": [],
+            "nota_final": 4.0
+          },
+          "sensibilidad": {
+            "criterios_evaluados": {
+              "respeta_desarrollo_emocional": true,
+              "lenguaje_validante": true,
+              "sin_contenido_inadecuado": true,
+              "diversidad_inclusion": true
+            },
+            "criterios_cumplidos": 4,
+            "criterios_totales": 4,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "promedio": {
+            "nota_ponderada": 4.7,
+            "ajustes_globales": [
+              "coherencia_excepcional +0.2"
+            ],
+            "nota_final": 4.9
+          }
+        },
+        "04_editor_claridad": {
+          "coherencia_narrativa": {
+            "criterios_evaluados": {
+              "unidad_narrativa": true,
+              "preservacion_sentido": true,
+              "contexto_mantenido": true,
+              "metaforas_preservadas": true,
+              "emocion_conservada": true
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "edicion_quirurgica": {
+            "criterios_evaluados": {
+              "porcentaje_editado": true,
+              "cambios_necesarios": true,
+              "vocabulario_apropiado": true,
+              "claridad_mejorada": true
+            },
+            "criterios_cumplidos": 4,
+            "criterios_totales": 4,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "documentacion_cambios": {
+            "criterios_evaluados": {
+              "glosario_preciso": true,
+              "porcentajes_reportados": true,
+              "cambios_clave_claros": true
+            },
+            "criterios_cumplidos": 3,
+            "criterios_totales": 3,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "promedio": {
+            "nota_ponderada": 5.0,
+            "ajustes_globales": [],
+            "nota_final": 5.0
+          }
+        },
+        "05_ritmo_rima": {
+          "coherencia_narrativa": {
+            "criterios_evaluados": {
+              "flujo_narrativo_mantenido": true,
+              "sentido_preservado": true,
+              "progresion_logica": false
+            },
+            "criterios_cumplidos": 2,
+            "criterios_totales": 3,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 67,
+            "nota_calculada": 3.5,
+            "ajustes_contextuales": [],
+            "nota_final": 3.5
+          },
+          "esquemas_configurados": {
+            "criterios_evaluados": {
+              "configuracion_leida": true,
+              "esquemas_correctos": false,
+              "rimas_validas": false,
+              "verso_libre_respetado": false
+            },
+            "criterios_cumplidos": 1,
+            "criterios_totales": 4,
+            "criterios_esenciales_fallados": [
+              "esquemas_correctos",
+              "rimas_validas"
+            ],
+            "porcentaje": 25,
+            "nota_calculada": 1.5,
+            "ajustes_contextuales": [],
+            "nota_final": 1.5
+          },
+          "correccion_repeticiones": {
+            "criterios_evaluados": {
+              "pagina_1_sin_repeticion": true,
+              "pagina_1_sin_repeticion_34": true,
+              "pagina_2_sin_repeticion": true,
+              "pagina_2_sin_repeticion_34": true,
+              "pagina_3_sin_repeticion": true,
+              "pagina_3_sin_repeticion_34": true,
+              "pagina_4_sin_repeticion": true,
+              "pagina_4_sin_repeticion_34": true,
+              "pagina_5_sin_repeticion": true,
+              "pagina_5_sin_repeticion_34": true,
+              "pagina_6_sin_repeticion": true,
+              "pagina_6_sin_repeticion_34": true,
+              "pagina_7_sin_repeticion": true,
+              "pagina_7_sin_repeticion_34": true,
+              "pagina_8_sin_repeticion": true,
+              "pagina_8_sin_repeticion_34": true,
+              "pagina_9_sin_repeticion": true,
+              "pagina_9_sin_repeticion_34": true,
+              "pagina_10_sin_repeticion": true,
+              "pagina_10_sin_repeticion_34": true
+            },
+            "criterios_cumplidos": 20,
+            "criterios_totales": 20,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "metrica_correcta": {
+            "criterios_evaluados": {
+              "pagina_1_metro": false,
+              "pagina_2_metro": false,
+              "pagina_3_metro": false,
+              "pagina_4_metro": false,
+              "pagina_5_metro": false,
+              "pagina_6_metro": false,
+              "pagina_7_metro": false,
+              "pagina_8_metro": false,
+              "pagina_9_metro": false,
+              "pagina_10_metro": false
+            },
+            "criterios_cumplidos": 0,
+            "criterios_totales": 10,
+            "criterios_esenciales_fallados": [
+              "pagina_1_metro",
+              "pagina_2_metro",
+              "pagina_3_metro",
+              "pagina_4_metro",
+              "pagina_5_metro",
+              "pagina_6_metro",
+              "pagina_7_metro",
+              "pagina_8_metro",
+              "pagina_9_metro",
+              "pagina_10_metro"
+            ],
+            "porcentaje": 0,
+            "nota_calculada": 1.0,
+            "ajustes_contextuales": [],
+            "nota_final": 1.0
+          },
+          "calidad_mejoras": {
+            "criterios_evaluados": {
+              "elimino_todas_repeticiones": true,
+              "mantuvo_sentido": true,
+              "rimas_naturales": false,
+              "esquema_consistente": false,
+              "finales_documentados": true,
+              "vocabulario_apropiado": true,
+              "variedad_rimas": true
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 7,
+            "criterios_esenciales_fallados": [
+              "rimas_naturales",
+              "esquema_consistente"
+            ],
+            "porcentaje": 71,
+            "nota_calculada": 3.5,
+            "ajustes_contextuales": [],
+            "nota_final": 3.5
+          },
+          "promedio": {
+            "nota_ponderada": 3.8,
+            "ajustes_globales": [],
+            "nota_final": 3.8
+          }
+        },
+        "06_continuidad": {
+          "character_bible_completa": {
+            "criterios_evaluados": {
+              "minimo_tres_entradas": true,
+              "campos_completos": false,
+              "descripciones_detalladas": true,
+              "colores_especificos": true,
+              "rasgos_invariables": true
+            },
+            "criterios_cumplidos": 4,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [
+              "campos_completos"
+            ],
+            "porcentaje": 60,
+            "nota_calculada": 3.5,
+            "ajustes_contextuales": [],
+            "nota_final": 3.5
+          },
+          "coherencia_visual": {
+            "criterios_evaluados": {
+              "personajes_del_texto": true,
+              "vestuario_definido": false,
+              "gestos_caracteristicos": true,
+              "relaciones_claras": true
+            },
+            "criterios_cumplidos": 3,
+            "criterios_totales": 4,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 75,
+            "nota_calculada": 4.0,
+            "ajustes_contextuales": [],
+            "nota_final": 4.0
+          },
+          "objeto_ancla": {
+            "criterios_evaluados": {
+              "apariciones_correctas": true,
+              "objeto_definido": true,
+              "evolucion_emocional": true
+            },
+            "criterios_cumplidos": 3,
+            "criterios_totales": 3,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "promedio": {
+            "nota_ponderada": 4.05,
+            "ajustes_globales": [],
+            "nota_final": 4.05
+          }
+        },
+        "07_diseno_escena": {
+          "correspondencia_texto": {
+            "criterios_evaluados": {
+              "refleja_versos": false,
+              "sin_elementos_extra": false,
+              "coherencia_bible": true,
+              "accion_principal": true,
+              "emocion_visible": true
+            },
+            "criterios_cumplidos": 3,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [
+              "refleja_versos",
+              "sin_elementos_extra"
+            ],
+            "porcentaje": 60,
+            "nota_calculada": 3.5,
+            "ajustes_contextuales": [],
+            "nota_final": 3.5
+          },
+          "calidad_tecnica": {
+            "criterios_evaluados": {
+              "tipo_plano": true,
+              "angulo_camara": true,
+              "iluminacion": true,
+              "locacion_especifica": true,
+              "objetos_ancla": true
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "variedad_visual": {
+            "criterios_evaluados": {
+              "alterna_planos": true,
+              "composiciones_diversas": true,
+              "estilo_consistente": true,
+              "anotaciones_completas": true
+            },
+            "criterios_cumplidos": 4,
+            "criterios_totales": 4,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "promedio": {
+            "nota_ponderada": 4.4,
+            "ajustes_globales": [
+              {
+                "ajuste": "narrativa_visual",
+                "valor": 0.2,
+                "descripcion": "Los prompts cuentan una historia visual coherente y atractiva"
+              }
+            ],
+            "nota_final": 4.6
+          }
+        },
+        "08_direccion_arte": {
+          "coherencia_cromatica": {
+            "criterios_evaluados": {
+              "paleta_definida": true,
+              "colores_hex": true,
+              "transiciones_suaves": false,
+              "consistencia_personajes": false,
+              "transiciones_documentadas": true
+            },
+            "criterios_cumplidos": 3,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [
+              "transiciones_suaves",
+              "consistencia_personajes"
+            ],
+            "porcentaje": 60,
+            "nota_calculada": 3.5,
+            "ajustes_contextuales": [],
+            "nota_final": 3.5
+          },
+          "atmosfera_emocional": {
+            "criterios_evaluados": {
+              "refleja_arco_emocional": false,
+              "momento_dia_coherente": true,
+              "atmosfera_definida": true,
+              "climax_visual": true
+            },
+            "criterios_cumplidos": 3,
+            "criterios_totales": 4,
+            "criterios_esenciales_fallados": [
+              "refleja_arco_emocional"
+            ],
+            "porcentaje": 60,
+            "nota_calculada": 3.5,
+            "ajustes_contextuales": [],
+            "nota_final": 3.5
+          },
+          "especificacion_tecnica": {
+            "criterios_evaluados": {
+              "estilo_global": true,
+              "color_script_completo": true,
+              "texturas_materiales": false,
+              "referencias_visuales": false
+            },
+            "criterios_cumplidos": 2,
+            "criterios_totales": 4,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 50,
+            "nota_calculada": 3.0,
+            "ajustes_contextuales": [],
+            "nota_final": 3.0
+          },
+          "promedio": {
+            "nota_ponderada": 3.375,
+            "ajustes_globales": [
+              "incoherencia_cromatica (-0.3)"
+            ],
+            "nota_final": 3.08
+          }
+        },
+        "09_sensibilidad": {
+          "deteccion_riesgos": {
+            "criterios_evaluados": {
+              "identifica_riesgos": false,
+              "sin_miedo_excesivo": true,
+              "sin_violencia": true,
+              "sin_abandono": true,
+              "lenguaje_apropiado": true,
+              "sin_culpabilizacion": true
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 6,
+            "criterios_esenciales_fallados": [
+              "identifica_riesgos"
+            ],
+            "porcentaje": 60,
+            "nota_calculada": 3.5,
+            "ajustes_contextuales": [],
+            "nota_final": 3.5
+          },
+          "sugerencias_mejora": {
+            "criterios_evaluados": {
+              "minimo_una_mejora": true,
+              "correcciones_utiles": true,
+              "detecta_estereotipos": false,
+              "mejoras_especificas": true
+            },
+            "criterios_cumplidos": 3,
+            "criterios_totales": 4,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 75,
+            "nota_calculada": 4.0,
+            "ajustes_contextuales": [],
+            "nota_final": 4.0
+          },
+          "inclusion_diversidad": {
+            "criterios_evaluados": {
+              "considera_diversidad": true,
+              "roles_flexibles": true,
+              "mensajes_positivos": true,
+              "apto_confirmado": true
+            },
+            "criterios_cumplidos": 4,
+            "criterios_totales": 4,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "promedio": {
+            "nota_ponderada": 4.0,
+            "ajustes_globales": [
+              "analisis_superficial (-0.3)",
+              "enfoque_inclusivo (+0.2)"
+            ],
+            "nota_final": 3.9
+          }
+        },
+        "10_portadista": {
+          "calidad_titulos": {
+            "criterios_evaluados": {
+              "tres_opciones": true,
+              "titulos_memorables": true,
+              "apropiados_edad": true,
+              "reflejan_esencia": true,
+              "variedad_opciones": true
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [
+              "titulos_brillantes"
+            ],
+            "nota_final": 5.0
+          },
+          "prompt_portada": {
+            "criterios_evaluados": {
+              "personajes_principales": true,
+              "objeto_ancla": true,
+              "atmosfera_coherente": true,
+              "momento_dia": true,
+              "composicion_descrita": true
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [
+              "portada_evocadora"
+            ],
+            "nota_final": 5.0
+          },
+          "coherencia_visual": {
+            "criterios_evaluados": {
+              "respeta_guia_arte": true,
+              "estilo_ilustracion": true,
+              "esencia_emocional": true
+            },
+            "criterios_cumplidos": 3,
+            "criterios_totales": 3,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "promedio": {
+            "nota_ponderada": 5.0,
+            "ajustes_globales": [
+              "titulos_brillantes (+0.3)",
+              "portada_evocadora (+0.2)"
+            ],
+            "nota_final": 5.0
+          }
+        },
+        "11_loader": {
+          "personalizacion": {
+            "criterios_evaluados": {
+              "diez_mensajes": true,
+              "usa_nombre_personajes": true,
+              "incluye_leitmotiv": false,
+              "objetos_ancla": false,
+              "mensaje_transmitir": false,
+              "elementos_visuales": true
+            },
+            "criterios_cumplidos": 3,
+            "criterios_totales": 6,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 50,
+            "nota_calculada": 3.0,
+            "ajustes_contextuales": [],
+            "nota_final": 3.0
+          },
+          "experiencia_wow": {
+            "criterios_evaluados": {
+              "tono_magico": true,
+              "evita_cliches": true,
+              "sorprendentes": true,
+              "longitud_apropiada": true,
+              "sin_lenguaje_tecnico": true
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "variedad_progresion": {
+            "criterios_evaluados": {
+              "tipos_variados": true,
+              "sin_repeticiones": false,
+              "progresion_logica": true,
+              "micro_logros": false
+            },
+            "criterios_cumplidos": 2,
+            "criterios_totales": 4,
+            "criterios_esenciales_fallados": [
+              "sin_repeticiones"
+            ],
+            "porcentaje": 50,
+            "nota_calculada": 3.0,
+            "ajustes_contextuales": [],
+            "nota_final": 3.0
+          },
+          "promedio": {
+            "nota_ponderada": 3.7,
+            "ajustes_globales": [],
+            "nota_final": 3.7
+          }
+        },
+        "12_validador": {
+          "estructura_correcta": {
+            "criterios_evaluados": {
+              "json_valido": true,
+              "claves_exactas": true,
+              "diez_paginas": true,
+              "campos_pagina": true,
+              "portada_completa": true,
+              "loader_cinco": false
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 6,
+            "criterios_esenciales_fallados": [
+              "loader_cinco"
+            ],
+            "porcentaje": 60,
+            "nota_calculada": 3.5,
+            "ajustes_contextuales": [
+              "errores_estructura (-0.5)"
+            ],
+            "nota_final": 3.5
+          },
+          "coherencia_contenido": {
+            "criterios_evaluados": {
+              "texto_prompts_alineados": true,
+              "leitmotiv_presente": true,
+              "coherencia_bible": true,
+              "coherencia_arte": true,
+              "sensibilidad_aplicada": true
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "formato_texto": {
+            "criterios_evaluados": {
+              "cuatro_cinco_versos": true,
+              "palabras_por_verso": true,
+              "sin_numeracion": true,
+              "sin_repeticion_final": true,
+              "español_correcto": true
+            },
+            "criterios_cumplidos": 5,
+            "criterios_totales": 5,
+            "criterios_esenciales_fallados": [],
+            "porcentaje": 100,
+            "nota_calculada": 5.0,
+            "ajustes_contextuales": [],
+            "nota_final": 5.0
+          },
+          "promedio": {
+            "nota_ponderada": 4.25,
+            "ajustes_globales": [
+              "errores_estructura (-0.5)"
+            ],
+            "nota_final": 3.75
+          }
+        }
+      }
+    },
+    "processing_time": 946.528683,
+    "metadata": {
+      "retries": {
+        "04_editor_claridad": 1,
+        "08_direccion_arte": 1
+      },
+      "warnings": [],
+      "pipeline_version": "v2",
+      "folder": "6534605d-961d-43be-890a-8da9a59bcd94-20250902-155259"
+    }
+  }
+}
