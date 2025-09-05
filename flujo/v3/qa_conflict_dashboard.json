@@ -1,0 +1,45 @@
+{
+  "version": "v3",
+  "last_updated": "2025-09-05T00:39:00.933254",
+  "total_conflicts_analyzed": 0,
+  "conflict_patterns": {
+    "01_director_v3": {
+      "new_7689": {
+        "count": 1,
+        "first_seen": "2025-09-05T00:39:19.839564",
+        "typical_issue": "No se encontró campo 'qa' en la respuesta",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "20250905-003900-test-v3-emilia-felipe-20250905-003900"
+        ],
+        "status": "unresolved"
+      }
+    },
+    "02_escritor_v3": {
+      "new_7689": {
+        "count": 1,
+        "first_seen": "2025-09-05T00:40:25.186435",
+        "typical_issue": "No se encontró campo 'qa' en la respuesta",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "20250905-003900-test-v3-emilia-felipe-20250905-003900"
+        ],
+        "status": "unresolved"
+      }
+    },
+    "04_consolidador_v3": {
+      "new_7689": {
+        "count": 1,
+        "first_seen": "2025-09-05T00:48:16.074706",
+        "typical_issue": "No se encontró campo 'qa' en la respuesta",
+        "recommendation": "Requiere análisis manual",
+        "stories_affected": [
+          "20250905-004420-test-v3-emilia-felipe-20250905-004420"
+        ],
+        "status": "unresolved"
+      }
+    }
+  },
+  "agent_conflicts": {},
+  "prompt_improvements": {}
+}

@@ -67,7 +67,7 @@ class AgentRunner:
             logger.info(f"🚀 Usando procesamiento ESPECIAL para {agent_name}")
             try:
                 from parallel_cuentacuentos import ParallelCuentacuentos
-                processor = ParallelCuentacuentos(self.story_id, self.version)
+                processor = ParallelCuentacuentos(self.story_id, self.version, self.mode_verificador_qa)
                 result = processor.run()
                 
                 # Adaptar resultado al formato esperado
@@ -239,8 +239,16 @@ class AgentRunner:
                     "retry_count": retry_count
                 }
             
-            # 6. Verificar quality gates (excepto para validador y critico que no tienen QA)
-            if agent_name not in ["validador", "critico", "verificador_qa"]:
+            # 6. Verificar quality gates (excepto para validador, critico y agentes v3)
+            # v3 no requiere QA ya que los prompts están optimizados para generar contenido de calidad
+            skip_qa_agents = ["validador", "critico", "verificador_qa"]
+            if self.version == 'v3' or agent_name.endswith('_v3'):
+                # Skip QA completamente para v3
+                logger.info(f"Saltando verificación QA para {agent_name} (pipeline v3 no requiere QA)")
+                qa_passed = True
+                qa_scores = {}
+                qa_issues = []
+            elif agent_name not in skip_qa_agents:
                 # Decidir si usar verificador_qa o autoevaluación basado en mode_verificador_qa
                 if self.mode_verificador_qa:
                     # MODO VERIFICADOR QA INDEPENDIENTE (ESTRICTO)

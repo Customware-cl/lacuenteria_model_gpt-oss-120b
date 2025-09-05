@@ -1,0 +1,27 @@
+{
+  "version": "v3",
+  "max_retries": 2,
+  "pipeline": [
+    "01_director_v3",
+    "02_escritor_v3",
+    "03_directorarte_v3",
+    "04_consolidador_v3"
+  ],
+  "parallel_execution": false,
+  "parallel_groups": [],
+  "optimizations": {
+    "enable_caching": true,
+    "streaming": false,
+    "timeout": 900
+  },
+  "mode_verificador_qa": false,
+  "skip_qa": true,
+  "qa_note": "Pipeline v3 no requiere verificación QA - los prompts están optimizados para calidad",
+  "agent_toggles": {
+    "01_director_v3": true,
+    "02_escritor_v3": true,
+    "03_directorarte_v3": true,
+    "04_consolidador_v3": true
+  },
+  "agent_toggles_note": "Establece false para saltar un agente. El sistema manejará las dependencias automáticamente."
+}

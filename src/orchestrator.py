@@ -225,7 +225,7 @@ class StoryOrchestrator:
             
             result_dict = {
                 "status": "success",
-                "story_id": self.story_id,
+                "story_id": self.original_story_id,  # Usar ID original para compatibilidad con BD
                 "result": final_result,
                 "qa_scores": self._calculate_overall_qa(),
                 "processing_time": self._calculate_total_time(),
@@ -289,7 +289,7 @@ class StoryOrchestrator:
             logger.info("Historia ya completada")
             return {
                 "status": "already_completed",
-                "story_id": self.story_id,
+                "story_id": self.original_story_id,  # Usar ID original para compatibilidad con BD
                 "result": self._get_final_result()
             }
         
@@ -322,7 +322,7 @@ class StoryOrchestrator:
         
         result_dict = {
             "status": "success",
-            "story_id": self.story_id,
+            "story_id": self.original_story_id,  # Usar ID original para compatibilidad con BD
             "result": self._get_final_result(),
             "resumed": True
         }
@@ -470,7 +470,7 @@ class StoryOrchestrator:
         """Construye una respuesta de error"""
         return {
             "status": "error",
-            "story_id": self.story_id,
+            "story_id": self.original_story_id,  # Usar ID original para compatibilidad con BD
             "agent": agent,
             "error": error,
             "manifest": self.manifest

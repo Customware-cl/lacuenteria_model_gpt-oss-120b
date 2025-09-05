@@ -72,17 +72,42 @@ def process_story_async(story_id: str, brief: dict, webhook_url: str, mode_verif
         # Enviar webhook con resultado
         if webhook_url:
             logger.info(f"Preparando envío de webhook para historia {story_id}, status: {result.get('status')}")
-            webhook_client = get_webhook_client()
+            # Obtener el path de la historia para el logging del webhook
+            story_path = orchestrator.story_path
+            webhook_client = get_webhook_client(story_path)
+            
+            webhook_success = False
             if result["status"] == "success":
                 logger.info(f"Enviando webhook de éxito para {story_id}")
-                webhook_client.send_story_complete(webhook_url, result)
+                webhook_success = webhook_client.send_story_complete(webhook_url, result)
             else:
                 logger.info(f"Enviando webhook de error para {story_id}: {result.get('error')}")
-                webhook_client.send_story_error(
+                webhook_success = webhook_client.send_story_error(
                     webhook_url, 
                     story_id, 
                     result.get("error", "Error desconocido")
                 )
+            
+            # Actualizar manifest con resultado del webhook
+            try:
+                manifest_path = story_path / "manifest.json"
+                if manifest_path.exists():
+                    with open(manifest_path, 'r', encoding='utf-8') as f:
+                        manifest = json.load(f)
+                    
+                    manifest["webhook_result"] = {
+                        "success": webhook_success,
+                        "timestamp": datetime.now().isoformat(),
+                        "url": webhook_url,
+                        "status": result.get("status")
+                    }
+                    
+                    with open(manifest_path, 'w', encoding='utf-8') as f:
+                        json.dump(manifest, f, ensure_ascii=False, indent=2)
+                    
+                    logger.info(f"Webhook result registrado en manifest: {'SUCCESS' if webhook_success else 'FAILED'}")
+            except Exception as e:
+                logger.error(f"Error actualizando manifest con resultado de webhook: {e}")
         else:
             logger.info(f"No hay webhook_url para historia {story_id}")
         
@@ -110,7 +135,15 @@ def process_story_async(story_id: str, brief: dict, webhook_url: str, mode_verif
         
         # Enviar webhook de error
         if webhook_url:
-            webhook_client = get_webhook_client()
+            # Intentar obtener el path si el orchestrator existe
+            story_path = None
+            try:
+                if 'orchestrator' in locals():
+                    story_path = orchestrator.story_path
+            except:
+                pass
+            
+            webhook_client = get_webhook_client(story_path)
             webhook_client.send_story_error(webhook_url, story_id, str(e))
 
 
@@ -163,9 +196,18 @@ def create_story():
     try:
         data = request.get_json()
         
-        # Validar campos requeridos
-        required_fields = ['story_id', 'personajes', 'historia', 
-                         'mensaje_a_transmitir', 'edad_objetivo']
+        # Detectar versión del pipeline primero para validación condicional
+        pipeline_version = data.get('pipeline_version', 'v1')
+        if pipeline_version not in ['v1', 'v2', 'v3']:
+            pipeline_version = 'v1'  # Fallback seguro
+        
+        # Validar campos requeridos según versión
+        if pipeline_version == 'v3':
+            # v3 puede derivar mensaje_a_transmitir de valores
+            required_fields = ['story_id', 'personajes', 'historia', 'edad_objetivo']
+        else:
+            required_fields = ['story_id', 'personajes', 'historia', 
+                             'mensaje_a_transmitir', 'edad_objetivo']
         
         missing_fields = [field for field in required_fields if field not in data]
         if missing_fields:
@@ -183,23 +225,32 @@ def create_story():
         if prompt_metrics_id:
             logger.info(f"prompt_metrics_id recibido: {prompt_metrics_id}")
         
-        # Detectar versión del pipeline (default v1 para compatibilidad)
-        pipeline_version = data.get('pipeline_version', 'v1')
-        if pipeline_version not in ['v1', 'v2']:
-            pipeline_version = 'v1'  # Fallback seguro
+        # pipeline_version ya fue detectado arriba para validación condicional
         
         logger.info(f"Creando historia {story_id} con pipeline {pipeline_version}")
         
         # NOTA: Ya no verificamos si existe, siempre creamos una nueva carpeta con timestamp
         # Esto permite regenerar historias con el mismo story_id
         
-        # Preparar brief
+        # Preparar brief con todos los campos
         brief = {
             "personajes": data['personajes'],
             "historia": data['historia'],
-            "mensaje_a_transmitir": data['mensaje_a_transmitir'],
+            "mensaje_a_transmitir": data.get('mensaje_a_transmitir', ''),
             "edad_objetivo": data['edad_objetivo']
         }
+        
+        # Agregar campos adicionales para v3 si están presentes
+        if pipeline_version == 'v3':
+            brief.update({
+                "relacion_personajes": data.get('relacion_personajes', []),
+                "valores": data.get('valores', []),
+                "comportamientos": data.get('comportamientos', []),
+                "numero_paginas": data.get('numero_paginas', 10)
+            })
+            # Si no hay mensaje_a_transmitir pero hay valores, generarlo
+            if not brief['mensaje_a_transmitir'] and brief['valores']:
+                brief['mensaje_a_transmitir'] = ', '.join(brief['valores'])
         
         # NO agregar prompt_metrics_id al brief - solo debe ir en el manifest y webhook
         if prompt_metrics_id:

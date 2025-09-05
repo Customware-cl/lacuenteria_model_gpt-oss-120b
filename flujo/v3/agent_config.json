@@ -1,0 +1,26 @@
+{
+  "01_director_v3": {
+    "temperature": 0.7,
+    "max_tokens": 30000,
+    "qa_threshold": null,
+    "description": "Director que planifica la estructura narrativa"
+  },
+  "02_escritor_v3": {
+    "temperature": 0.8,
+    "max_tokens": 30000,
+    "qa_threshold": null,
+    "description": "Escritor que desarrolla el texto completo del cuento"
+  },
+  "03_directorarte_v3": {
+    "temperature": 0.9,
+    "max_tokens": 30000,
+    "qa_threshold": null,
+    "description": "Director de arte para diseño visual y prompts de ilustración"
+  },
+  "04_consolidador_v3": {
+    "temperature": 0.3,
+    "max_tokens": 30000,
+    "qa_threshold": null,
+    "description": "Consolidador que ensambla el resultado final"
+  }
+}
