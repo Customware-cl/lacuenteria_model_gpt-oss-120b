@@ -1,0 +1,120 @@
+{
+  "agente": "04_editor_claridad",
+  "descripcion": "Criterios de evaluación para el Editor de claridad",
+  "metricas": {
+    "coherencia_narrativa": {
+      "peso": 0.4,
+      "descripcion": "Evaluación de la preservación de la coherencia y flujo narrativo",
+      "criterios": {
+        "unidad_narrativa": {
+          "descripcion": "¿Los 4 versos de cada página mantienen su conexión narrativa?",
+          "verificar": "flujo lógico entre versos, historia conectada",
+          "esencial": true
+        },
+        "preservacion_sentido": {
+          "descripcion": "¿Se preservó el sentido original de la narrativa?",
+          "verificar": "la historia sigue siendo la misma",
+          "esencial": true
+        },
+        "contexto_mantenido": {
+          "descripcion": "¿Cada verso se entiende en contexto con los otros?",
+          "verificar": "relación clara entre los 4 versos",
+          "esencial": true
+        },
+        "metaforas_preservadas": {
+          "descripcion": "¿Se mantuvieron las metáforas simples apropiadas?",
+          "verificar": "personificaciones y metáforas infantiles intactas",
+          "esencial": false
+        },
+        "emocion_conservada": {
+          "descripcion": "¿Se conservó la emoción y magia del texto original?",
+          "verificar": "tono emocional similar al original",
+          "esencial": false
+        }
+      }
+    },
+    "edicion_quirurgica": {
+      "peso": 0.35,
+      "descripcion": "Evaluación de la precisión y minimalismo en las ediciones",
+      "criterios": {
+        "porcentaje_editado": {
+          "descripcion": "¿Se editó menos del 25% del texto por página?",
+          "verificar": "contar palabras cambiadas vs total",
+          "esencial": true
+        },
+        "cambios_necesarios": {
+          "descripcion": "¿Todos los cambios eran realmente necesarios?",
+          "verificar": "justificación clara para cada edición",
+          "esencial": true
+        },
+        "vocabulario_apropiado": {
+          "descripcion": "¿El vocabulario final es apropiado para la edad?",
+          "verificar": "palabras comprensibles para el target",
+          "esencial": true
+        },
+        "claridad_mejorada": {
+          "descripcion": "¿Los cambios mejoraron genuinamente la claridad?",
+          "verificar": "comparar comprensibilidad antes/después",
+          "esencial": false
+        }
+      }
+    },
+    "documentacion_cambios": {
+      "peso": 0.25,
+      "descripcion": "Evaluación del registro de modificaciones",
+      "criterios": {
+        "glosario_preciso": {
+          "descripcion": "¿El glosario documenta solo los cambios reales?",
+          "verificar": "cada entrada corresponde a un cambio efectivo",
+          "esencial": true
+        },
+        "porcentajes_reportados": {
+          "descripcion": "¿Se reportó el porcentaje de edición por página?",
+          "verificar": "campo porcentaje_editado presente y correcto",
+          "esencial": true
+        },
+        "cambios_clave_claros": {
+          "descripcion": "¿Los cambios clave están bien documentados?",
+          "verificar": "descripción clara de modificaciones principales",
+          "esencial": false
+        }
+      }
+    }
+  },
+  "ajustes_contextuales": {
+    "simplificacion_excepcional": {
+      "max_ajuste": 0.3,
+      "descripcion": "Simplificación magistral sin perder esencia",
+      "aplicar_si": "logra claridad cristalina manteniendo poesía"
+    },
+    "innovacion_pedagogica": {
+      "max_ajuste": 0.2,
+      "descripcion": "Soluciones creativas para conceptos difíciles",
+      "aplicar_si": "encuentra formas originales de simplificar"
+    },
+    "perdida_poetica": {
+      "max_ajuste": -0.3,
+      "descripcion": "Simplificación excesiva que pierde magia",
+      "aplicar_si": "texto queda plano o sin emoción"
+    },
+    "cambios_no_documentados": {
+      "max_ajuste": -0.2,
+      "descripcion": "Modificaciones sin registrar",
+      "aplicar_si": "hay cambios evidentes no incluidos en glosario"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_metricas + ajustes_contextuales",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    }
+  }
+}

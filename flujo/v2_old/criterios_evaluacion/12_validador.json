@@ -1,0 +1,140 @@
+{
+  "agente": "12_validador",
+  "descripcion": "Criterios de evaluación para el Validador final",
+  "metricas": {
+    "estructura_correcta": {
+      "peso": 0.5,
+      "descripcion": "Evaluación de la estructura técnica del JSON",
+      "criterios": {
+        "json_valido": {
+          "descripcion": "¿El JSON es válido y bien formateado?",
+          "verificar": "parseable sin errores",
+          "esencial": true
+        },
+        "claves_exactas": {
+          "descripcion": "¿Tiene claves exactas: titulo, paginas, portada, loader?",
+          "verificar": "todas las claves principales presentes",
+          "esencial": true
+        },
+        "diez_paginas": {
+          "descripcion": "¿Paginas tiene claves string '1' a '10'?",
+          "verificar": "exactamente 10 páginas numeradas",
+          "esencial": true
+        },
+        "campos_pagina": {
+          "descripcion": "¿Cada página tiene 'texto' y 'prompt'?",
+          "verificar": "ambos campos en cada página",
+          "esencial": true
+        },
+        "portada_completa": {
+          "descripcion": "¿Portada tiene campo 'prompt'?",
+          "verificar": "prompt de portada presente",
+          "esencial": true
+        },
+        "loader_cinco": {
+          "descripcion": "¿Loader tiene exactamente 5 mensajes?",
+          "verificar": "array con 5 strings",
+          "esencial": true
+        }
+      }
+    },
+    "coherencia_contenido": {
+      "peso": 0.3,
+      "descripcion": "Evaluación de la coherencia narrativa y visual",
+      "criterios": {
+        "texto_prompts_alineados": {
+          "descripcion": "¿Texto y prompts están alineados?",
+          "verificar": "prompts reflejan el texto de cada página",
+          "esencial": true
+        },
+        "leitmotiv_presente": {
+          "descripcion": "¿Leitmotiv aparece 3-4 veces máximo?",
+          "verificar": "contar apariciones en texto",
+          "esencial": true
+        },
+        "coherencia_bible": {
+          "descripcion": "¿Respeta Character Bible?",
+          "verificar": "descripciones consistentes",
+          "esencial": true
+        },
+        "coherencia_arte": {
+          "descripcion": "¿Coherente con guía de arte?",
+          "verificar": "prompts siguen dirección artística",
+          "esencial": false
+        },
+        "sensibilidad_aplicada": {
+          "descripcion": "¿Aplica correcciones de sensibilidad?",
+          "verificar": "incorpora sugerencias del agente 09",
+          "esencial": false
+        }
+      }
+    },
+    "formato_texto": {
+      "peso": 0.2,
+      "descripcion": "Evaluación del formato del texto versificado",
+      "criterios": {
+        "cuatro_cinco_versos": {
+          "descripcion": "¿Cada página tiene 4-5 versos?",
+          "verificar": "contar versos separados por \\n",
+          "esencial": true
+        },
+        "palabras_por_verso": {
+          "descripcion": "¿Cada verso tiene 7-12 palabras?",
+          "verificar": "contar palabras en cada verso",
+          "esencial": false
+        },
+        "sin_numeracion": {
+          "descripcion": "¿Versos sin numeración ni viñetas?",
+          "verificar": "solo texto, sin 1., 2., •, etc.",
+          "esencial": true
+        },
+        "sin_repeticion_final": {
+          "descripcion": "¿No repite misma palabra al final de versos consecutivos?",
+          "verificar": "finales de verso variados",
+          "esencial": false
+        },
+        "español_correcto": {
+          "descripcion": "¿Todo en español correcto?",
+          "verificar": "ortografía y gramática correctas",
+          "esencial": true
+        }
+      }
+    }
+  },
+  "ajustes_contextuales": {
+    "ensamblaje_perfecto": {
+      "max_ajuste": 0.3,
+      "descripcion": "Integración impecable de todos los elementos",
+      "aplicar_si": "fusiona perfectamente trabajo de todos los agentes"
+    },
+    "formato_impecable": {
+      "max_ajuste": 0.2,
+      "descripcion": "Formato y estructura perfectos",
+      "aplicar_si": "JSON limpio y perfectamente organizado"
+    },
+    "errores_estructura": {
+      "max_ajuste": -0.5,
+      "descripcion": "Errores graves de estructura",
+      "aplicar_si": "JSON inválido o faltan campos esenciales"
+    },
+    "incoherencias": {
+      "max_ajuste": -0.3,
+      "descripcion": "Incoherencias entre elementos",
+      "aplicar_si": "texto y prompts no coinciden"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_metricas + ajustes_contextuales",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    }
+  }
+}

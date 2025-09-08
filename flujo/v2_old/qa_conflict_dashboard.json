@@ -524,16 +524,6 @@
           "20250903-033643-75edf127-13f5-4397-9e15-bdbaebbf2ee5"
         ],
         "status": "unresolved"
-      },
-      "new_2303": {
-        "count": 1,
-        "first_seen": "2025-09-05T03:40:19.697181",
-        "typical_issue": "No se encontró campo 'qa' en la respuesta",
-        "recommendation": "Requiere análisis manual",
-        "stories_affected": [
-          "20250905-034004-57e9bbb1-fb51-421d-bf8f-94ff055bd13f"
-        ],
-        "status": "unresolved"
       }
     },
     "02_psicoeducador": {
@@ -1195,16 +1185,6 @@
         "recommendation": "Requiere análisis manual",
         "stories_affected": [
           "20250903-033643-75edf127-13f5-4397-9e15-bdbaebbf2ee5"
-        ],
-        "status": "unresolved"
-      },
-      "new_2303": {
-        "count": 1,
-        "first_seen": "2025-09-05T03:41:05.317866",
-        "typical_issue": "No se encontró campo 'qa' en la respuesta",
-        "recommendation": "Requiere análisis manual",
-        "stories_affected": [
-          "20250905-034004-57e9bbb1-fb51-421d-bf8f-94ff055bd13f"
         ],
         "status": "unresolved"
       }
@@ -2293,16 +2273,6 @@
           "20250903-033643-75edf127-13f5-4397-9e15-bdbaebbf2ee5"
         ],
         "status": "unresolved"
-      },
-      "new_2303": {
-        "count": 1,
-        "first_seen": "2025-09-05T03:42:46.623700",
-        "typical_issue": "No se encontró campo 'qa' en la respuesta",
-        "recommendation": "Requiere análisis manual",
-        "stories_affected": [
-          "20250905-034004-57e9bbb1-fb51-421d-bf8f-94ff055bd13f"
-        ],
-        "status": "unresolved"
       }
     },
     "08_direccion_arte": {
@@ -2585,16 +2555,6 @@
           "20250903-033643-75edf127-13f5-4397-9e15-bdbaebbf2ee5"
         ],
         "status": "unresolved"
-      },
-      "new_2303": {
-        "count": 1,
-        "first_seen": "2025-09-05T03:42:59.324367",
-        "typical_issue": "No se encontró campo 'qa' en la respuesta",
-        "recommendation": "Requiere análisis manual",
-        "stories_affected": [
-          "20250905-034004-57e9bbb1-fb51-421d-bf8f-94ff055bd13f"
-        ],
-        "status": "unresolved"
       }
     },
     "09_sensibilidad": {
@@ -2667,16 +2627,6 @@
           "20250903-033643-75edf127-13f5-4397-9e15-bdbaebbf2ee5"
         ],
         "status": "unresolved"
-      },
-      "new_2303": {
-        "count": 1,
-        "first_seen": "2025-09-05T03:43:25.342182",
-        "typical_issue": "No se encontró campo 'qa' en la respuesta",
-        "recommendation": "Requiere análisis manual",
-        "stories_affected": [
-          "20250905-034004-57e9bbb1-fb51-421d-bf8f-94ff055bd13f"
-        ],
-        "status": "unresolved"
       }
     },
     "10_portadista": {
@@ -2737,16 +2687,6 @@
         "recommendation": "Requiere análisis manual",
         "stories_affected": [
           "20250903-033643-75edf127-13f5-4397-9e15-bdbaebbf2ee5"
-        ],
-        "status": "unresolved"
-      },
-      "new_2303": {
-        "count": 1,
-        "first_seen": "2025-09-05T03:43:39.614761",
-        "typical_issue": "No se encontró campo 'qa' en la respuesta",
-        "recommendation": "Requiere análisis manual",
-        "stories_affected": [
-          "20250905-034004-57e9bbb1-fb51-421d-bf8f-94ff055bd13f"
         ],
         "status": "unresolved"
       }
@@ -2841,16 +2781,6 @@
           "20250903-033643-75edf127-13f5-4397-9e15-bdbaebbf2ee5"
         ],
         "status": "unresolved"
-      },
-      "new_2303": {
-        "count": 1,
-        "first_seen": "2025-09-05T03:44:04.842853",
-        "typical_issue": "No se encontró campo 'qa' en la respuesta",
-        "recommendation": "Requiere análisis manual",
-        "stories_affected": [
-          "20250905-034004-57e9bbb1-fb51-421d-bf8f-94ff055bd13f"
-        ],
-        "status": "unresolved"
       }
     },
     "12_validador": {
@@ -2921,16 +2851,6 @@
         "recommendation": "Requiere análisis manual",
         "stories_affected": [
           "20250903-033643-75edf127-13f5-4397-9e15-bdbaebbf2ee5"
-        ],
-        "status": "unresolved"
-      },
-      "new_2303": {
-        "count": 1,
-        "first_seen": "2025-09-05T03:45:03.269552",
-        "typical_issue": "No se encontró campo 'qa' en la respuesta",
-        "recommendation": "Requiere análisis manual",
-        "stories_affected": [
-          "20250905-034004-57e9bbb1-fb51-421d-bf8f-94ff055bd13f"
         ],
         "status": "unresolved"
       }

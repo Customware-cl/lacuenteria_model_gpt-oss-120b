@@ -290,6 +290,140 @@ def create_story():
         }), 500
 
 
+@app.route('/api/stories/create-sync', methods=['POST'])
+def create_story_sync():
+    """
+    Endpoint síncrono para crear una historia - espera hasta completar
+    
+    Mantiene la conexión HTTP abierta durante el procesamiento (~2.5 minutos)
+    y devuelve el resultado completo directamente, sin necesidad de polling.
+    
+    Diseñado para ser compatible con Edge Functions que pueden esperar 5+ minutos.
+    """
+    import time
+    from config import generate_timestamped_story_folder, get_story_path
+    
+    try:
+        data = request.get_json()
+        
+        # Detectar versión del pipeline
+        pipeline_version = data.get('pipeline_version', 'v1')
+        if pipeline_version not in ['v1', 'v2', 'v3']:
+            pipeline_version = 'v1'
+        
+        # Validar campos requeridos según versión
+        if pipeline_version == 'v3':
+            required_fields = ['story_id', 'personajes', 'historia', 'edad_objetivo']
+        else:
+            required_fields = ['story_id', 'personajes', 'historia', 
+                             'mensaje_a_transmitir', 'edad_objetivo']
+        
+        missing_fields = [field for field in required_fields if field not in data]
+        if missing_fields:
+            return jsonify({
+                "status": "error",
+                "error": f"Campos faltantes: {', '.join(missing_fields)}"
+            }), 400
+        
+        story_id = data['story_id']
+        prompt_metrics_id = data.get('prompt_metrics_id')
+        mode_verificador_qa = data.get('mode_verificador_qa', True)
+        
+        logger.info(f"[SYNC] Creando historia {story_id} con pipeline {pipeline_version}")
+        
+        # Preparar brief
+        brief = {
+            "personajes": data['personajes'],
+            "historia": data['historia'],
+            "mensaje_a_transmitir": data.get('mensaje_a_transmitir', ''),
+            "edad_objetivo": data['edad_objetivo']
+        }
+        
+        # Agregar campos adicionales para v3
+        if pipeline_version == 'v3':
+            brief.update({
+                "relacion_personajes": data.get('relacion_personajes', []),
+                "valores": data.get('valores', []),
+                "comportamientos": data.get('comportamientos', []),
+                "numero_paginas": data.get('numero_paginas', 10)
+            })
+            if not brief['mensaje_a_transmitir'] and brief['valores']:
+                brief['mensaje_a_transmitir'] = ', '.join(brief['valores'])
+        
+        # Crear orquestador y procesar SÍNCRONAMENTE
+        start_time = time.time()
+        
+        from config import load_version_config
+        version_config = load_version_config(pipeline_version)
+        
+        if version_config and 'mode_verificador_qa' in version_config:
+            mode_verificador_qa = version_config['mode_verificador_qa']
+        
+        # Crear orquestador con timestamp
+        orchestrator = StoryOrchestrator(
+            story_id, 
+            mode_verificador_qa=mode_verificador_qa, 
+            pipeline_version=pipeline_version, 
+            use_timestamp=True, 
+            prompt_metrics_id=prompt_metrics_id
+        )
+        
+        # Procesar historia síncronamente (bloquea hasta completar)
+        logger.info(f"[SYNC] Iniciando procesamiento síncrono de {story_id}")
+        result = orchestrator.process_story(brief, webhook_url=None)
+        
+        # Calcular tiempo transcurrido
+        elapsed_time = time.time() - start_time
+        logger.info(f"[SYNC] Historia {story_id} completada en {elapsed_time:.1f} segundos")
+        
+        # Obtener el resultado del archivo correspondiente
+        story_path = get_story_path(orchestrator.story_id)
+        
+        if pipeline_version == 'v3':
+            result_path = story_path / "outputs" / "agents" / "04_consolidador_v3.json"
+        else:
+            result_path = story_path / "outputs" / "agents" / "12_validador.json"
+            if not result_path.exists():
+                result_path = story_path / "validador.json"
+        
+        if not result_path.exists():
+            logger.error(f"[SYNC] No se encontró resultado en {result_path}")
+            return jsonify({
+                "status": "error",
+                "error": "Resultado no encontrado después del procesamiento"
+            }), 500
+        
+        with open(result_path, 'r', encoding='utf-8') as f:
+            story_result = json.load(f)
+        
+        # Leer manifest para obtener métricas
+        manifest_path = story_path / "manifest.json"
+        qa_scores = {}
+        if manifest_path.exists():
+            with open(manifest_path, 'r', encoding='utf-8') as f:
+                manifest = json.load(f)
+                qa_scores = manifest.get("qa_historial", {})
+        
+        # Devolver resultado completo directamente
+        return jsonify({
+            "status": "completed",
+            "story_id": story_id,
+            "folder": orchestrator.story_id,
+            "result": story_result,
+            "processing_time": round(elapsed_time, 1),
+            "pipeline_version": pipeline_version,
+            "qa_scores": qa_scores,
+            "prompt_metrics_id": prompt_metrics_id
+        }), 200
+        
+    except Exception as e:
+        logger.error(f"[SYNC] Error procesando historia: {e}", exc_info=True)
+        return jsonify({
+            "status": "error",
+            "error": str(e)
+        }), 500
+
+
 @app.route('/api/stories/<story_id>/status', methods=['GET'])
 def get_story_status(story_id):
     """Obtiene el estado de una historia (busca la más reciente)"""
@@ -363,18 +497,31 @@ def get_story_result(story_id):
                     "folder": story_path.name
                 }), 202
         
-        # Obtener resultado del validador
-        validador_path = story_path / "validador.json"
-        if not validador_path.exists():
-            # Intentar con 12_validador.json para compatibilidad v2
-            validador_path = story_path / "outputs" / "agents" / "12_validador.json"
-            if not validador_path.exists():
+        # Detectar versión del pipeline desde manifest
+        pipeline_version = manifest.get("pipeline_version", "v1")
+        
+        # Obtener resultado según la versión del pipeline
+        if pipeline_version == "v3":
+            # Para v3, buscar el consolidador
+            result_path = story_path / "outputs" / "agents" / "04_consolidador_v3.json"
+            if not result_path.exists():
                 return jsonify({
                     "status": "error",
-                    "error": "Resultado no encontrado"
+                    "error": f"Resultado v3 no encontrado en {result_path.name}"
                 }), 404
+        else:
+            # Para v1/v2, buscar el validador
+            result_path = story_path / "validador.json"
+            if not result_path.exists():
+                # Intentar con 12_validador.json para compatibilidad v2
+                result_path = story_path / "outputs" / "agents" / "12_validador.json"
+                if not result_path.exists():
+                    return jsonify({
+                        "status": "error",
+                        "error": "Resultado no encontrado"
+                    }), 404
         
-        with open(validador_path, 'r', encoding='utf-8') as f:
+        with open(result_path, 'r', encoding='utf-8') as f:
             result = json.load(f)
         
         # Calcular QA scores

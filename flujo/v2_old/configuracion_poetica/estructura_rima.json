@@ -1,0 +1,103 @@
+{
+  "version": "1.0",
+  "descripcion": "Configuración de estructuras de rima por página para cuentos versificados",
+  "default_scheme": "AABB",
+  "schemes_disponibles": {
+    "AABB": {
+      "nombre": "Rima pareada",
+      "descripcion": "Los versos riman de dos en dos (1-2, 3-4)",
+      "ejemplo": "El gato subió al tejado / mirando el cielo estrellado / La luna brillaba fuerte / iluminando su suerte"
+    },
+    "ABAB": {
+      "nombre": "Rima cruzada o alternada",
+      "descripcion": "Los versos riman alternadamente (1-3, 2-4)",
+      "ejemplo": "El sol brillaba en el mar / las olas danzaban suaves / los niños iban a jugar / entre las rocas y las naves"
+    },
+    "ABBA": {
+      "nombre": "Rima abrazada",
+      "descripcion": "Los versos externos riman entre sí y los internos también (1-4, 2-3)",
+      "ejemplo": "En el bosque hay un camino / donde cantan los gorriones / escuchando sus canciones / llego feliz a mi destino"
+    },
+    "ABCB": {
+      "nombre": "Rima de balada",
+      "descripcion": "Solo riman los versos pares (2-4)",
+      "ejemplo": "La niña mira el cielo / las nubes pasan veloces / cuenta hasta diez despacio / y aparecen miles de luces"
+    },
+    "libre": {
+      "nombre": "Verso libre",
+      "descripcion": "Sin estructura de rima obligatoria, enfoque en ritmo y musicalidad",
+      "ejemplo": "El viento sopla entre los árboles / susurrando historias antiguas / los pájaros escuchan atentos / mientras el sol se esconde"
+    },
+    "AAAA": {
+      "nombre": "Monorrima",
+      "descripcion": "Todos los versos riman entre sí",
+      "ejemplo": "En el jardín hay una rosa / que es delicada y hermosa / con pétalos color de rosa / y fragancia maravillosa"
+    }
+  },
+  "pages": {
+    "1": {
+      "scheme": "AABB",
+      "nombre": "Rima pareada",
+      "justificacion": "Inicio clásico y accesible para introducir la historia"
+    },
+    "2": {
+      "scheme": "ABAB",
+      "nombre": "Rima cruzada",
+      "justificacion": "Variación para mantener interés, incluye leitmotiv"
+    },
+    "3": {
+      "scheme": "AABB",
+      "nombre": "Rima pareada",
+      "justificacion": "Retorno a estructura familiar para desarrollo"
+    },
+    "4": {
+      "scheme": "ABCB",
+      "nombre": "Rima de balada",
+      "justificacion": "Estructura más libre para momento de transición"
+    },
+    "5": {
+      "scheme": "ABBA",
+      "nombre": "Rima abrazada",
+      "justificacion": "Punto medio del cuento, estructura envolvente con leitmotiv"
+    },
+    "6": {
+      "scheme": "AABB",
+      "nombre": "Rima pareada",
+      "justificacion": "Estabilidad narrativa en desarrollo del conflicto"
+    },
+    "7": {
+      "scheme": "ABAB",
+      "nombre": "Rima cruzada",
+      "justificacion": "Dinamismo para el momento de acción"
+    },
+    "8": {
+      "scheme": "AABB",
+      "nombre": "Rima pareada",
+      "justificacion": "Preparación para el clímax"
+    },
+    "9": {
+      "scheme": "libre",
+      "nombre": "Verso libre",
+      "justificacion": "Libertad expresiva en el clímax emocional"
+    },
+    "10": {
+      "scheme": "AABB",
+      "nombre": "Rima pareada",
+      "justificacion": "Cierre clásico y satisfactorio con leitmotiv"
+    }
+  },
+  "reglas_especiales": {
+    "paginas_con_leitmotiv": [2, 5, 10],
+    "permitir_asonancia": true,
+    "permitir_consonancia_imperfecta": false,
+    "tolerancia_metrica": 2,
+    "verificar_palabras_repetidas": true,
+    "prioridad_musicalidad": "alta"
+  },
+  "instrucciones_para_agentes": {
+    "cuentacuentos": "Respetar estrictamente el esquema de rima indicado para cada página",
+    "verificador_qa": "Evaluar según el esquema configurado, no asumir AABB por defecto",
+    "editor_claridad": "Mantener esquema de rima al hacer correcciones",
+    "ritmo_rima": "Verificar que el esquema configurado se cumpla correctamente"
+  }
+}

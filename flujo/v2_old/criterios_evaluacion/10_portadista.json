@@ -1,0 +1,125 @@
+{
+  "agente": "10_portadista",
+  "descripcion": "Criterios de evaluación para el Titular y portadista",
+  "metricas": {
+    "calidad_titulos": {
+      "peso": 0.4,
+      "descripcion": "Evaluación de las opciones de título",
+      "criterios": {
+        "tres_opciones": {
+          "descripcion": "¿Propone exactamente 3 títulos?",
+          "verificar": "array titulos con 3 elementos",
+          "esencial": true
+        },
+        "titulos_memorables": {
+          "descripcion": "¿Los títulos son memorables y pegadizos?",
+          "verificar": "fáciles de recordar, musicales",
+          "esencial": true
+        },
+        "apropiados_edad": {
+          "descripcion": "¿Son apropiados para la edad objetivo?",
+          "verificar": "lenguaje y conceptos acordes a edad",
+          "esencial": true
+        },
+        "reflejan_esencia": {
+          "descripcion": "¿Capturan la esencia del cuento?",
+          "verificar": "conectan con tema principal",
+          "esencial": true
+        },
+        "variedad_opciones": {
+          "descripcion": "¿Las opciones son suficientemente diferentes?",
+          "verificar": "no son variaciones mínimas",
+          "esencial": false
+        }
+      }
+    },
+    "prompt_portada": {
+      "peso": 0.35,
+      "descripcion": "Evaluación del prompt de portada",
+      "criterios": {
+        "personajes_principales": {
+          "descripcion": "¿Incluye personajes principales?",
+          "verificar": "protagonistas descritos en prompt",
+          "esencial": true
+        },
+        "objeto_ancla": {
+          "descripcion": "¿Integra el objeto ancla?",
+          "verificar": "elemento de continuidad presente",
+          "esencial": true
+        },
+        "atmosfera_coherente": {
+          "descripcion": "¿La atmósfera es coherente con el cuento?",
+          "verificar": "tono y ambiente apropiados",
+          "esencial": true
+        },
+        "momento_dia": {
+          "descripcion": "¿Especifica momento del día?",
+          "verificar": "iluminación definida",
+          "esencial": false
+        },
+        "composicion_descrita": {
+          "descripcion": "¿Describe la composición visual?",
+          "verificar": "distribución de elementos clara",
+          "esencial": false
+        }
+      }
+    },
+    "coherencia_visual": {
+      "peso": 0.25,
+      "descripcion": "Evaluación de la coherencia con guías visuales",
+      "criterios": {
+        "respeta_guia_arte": {
+          "descripcion": "¿Respeta la guía de arte?",
+          "verificar": "coherente con color_script y estilo",
+          "esencial": true
+        },
+        "estilo_ilustracion": {
+          "descripcion": "¿Mantiene estilo 'ilustración infantil colorida'?",
+          "verificar": "especifica estilo en prompt",
+          "esencial": true
+        },
+        "esencia_emocional": {
+          "descripcion": "¿Condensa la esencia emocional?",
+          "verificar": "transmite el sentimiento del cuento",
+          "esencial": false
+        }
+      }
+    }
+  },
+  "ajustes_contextuales": {
+    "titulos_brillantes": {
+      "max_ajuste": 0.3,
+      "descripcion": "Títulos excepcionalmente creativos",
+      "aplicar_si": "opciones originales y memorables"
+    },
+    "portada_evocadora": {
+      "max_ajuste": 0.2,
+      "descripcion": "Prompt de portada muy evocador",
+      "aplicar_si": "descripción rica que captura la magia"
+    },
+    "titulos_genericos": {
+      "max_ajuste": -0.3,
+      "descripcion": "Títulos cliché o poco originales",
+      "aplicar_si": "usa fórmulas trilladas"
+    },
+    "prompt_vago": {
+      "max_ajuste": -0.2,
+      "descripcion": "Prompt de portada poco específico",
+      "aplicar_si": "descripción genérica o incompleta"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_metricas + ajustes_contextuales",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    }
+  }
+}

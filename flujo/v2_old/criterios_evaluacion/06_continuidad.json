@@ -1,0 +1,120 @@
+{
+  "agente": "06_continuidad",
+  "descripcion": "Criterios de evaluación para el Responsable de continuidad",
+  "metricas": {
+    "character_bible_completa": {
+      "peso": 0.4,
+      "descripcion": "Evaluación de la completitud de la bible de personajes",
+      "criterios": {
+        "minimo_tres_entradas": {
+          "descripcion": "¿Tiene mínimo 3 entradas en character_bible?",
+          "verificar": "protagonista + 2 elementos/secundarios",
+          "esencial": true
+        },
+        "campos_completos": {
+          "descripcion": "¿Cada entrada tiene todos los campos requeridos?",
+          "verificar": "nombre, edad, rasgos, vestuario, colores, objeto_ancla, gestos, no_haria",
+          "esencial": true
+        },
+        "descripciones_detalladas": {
+          "descripcion": "¿Las descripciones son específicas y visualizables?",
+          "verificar": "detalles concretos, no genéricos",
+          "esencial": true
+        },
+        "colores_especificos": {
+          "descripcion": "¿Define colores EXACTOS (no genéricos)?",
+          "verificar": "'azul cielo' no solo 'azul'",
+          "esencial": true
+        },
+        "rasgos_invariables": {
+          "descripcion": "¿Define rasgos que NO cambien entre páginas?",
+          "verificar": "características permanentes identificadas",
+          "esencial": false
+        }
+      }
+    },
+    "coherencia_visual": {
+      "peso": 0.35,
+      "descripcion": "Evaluación de la consistencia visual",
+      "criterios": {
+        "personajes_del_texto": {
+          "descripcion": "¿Describe TODOS los personajes/elementos del texto?",
+          "verificar": "no falta ningún personaje mencionado",
+          "esencial": true
+        },
+        "vestuario_definido": {
+          "descripcion": "¿El vestuario está claramente especificado?",
+          "verificar": "prendas y colores específicos",
+          "esencial": false
+        },
+        "gestos_caracteristicos": {
+          "descripcion": "¿Define gestos característicos de cada personaje?",
+          "verificar": "maneras de moverse o expresarse",
+          "esencial": false
+        },
+        "relaciones_claras": {
+          "descripcion": "¿Las relaciones entre personajes están definidas?",
+          "verificar": "campo relaciones en continuidad_narrativa",
+          "esencial": true
+        }
+      }
+    },
+    "objeto_ancla": {
+      "peso": 0.25,
+      "descripcion": "Evaluación del uso del objeto ancla",
+      "criterios": {
+        "apariciones_correctas": {
+          "descripcion": "¿Objeto ancla aparece en páginas 1,3,5,7,9?",
+          "verificar": "verificar array objeto_ancla_reapariciones",
+          "esencial": true
+        },
+        "objeto_definido": {
+          "descripcion": "¿Cada personaje tiene objeto ancla definido?",
+          "verificar": "campo objeto_ancla no vacío",
+          "esencial": true
+        },
+        "evolucion_emocional": {
+          "descripcion": "¿Documenta evolución emocional?",
+          "verificar": "campo evolucion_emocional completo",
+          "esencial": false
+        }
+      }
+    }
+  },
+  "ajustes_contextuales": {
+    "bible_excepcional": {
+      "max_ajuste": 0.3,
+      "descripcion": "Character bible extraordinariamente detallada",
+      "aplicar_si": "descripciones ricas y evocadoras"
+    },
+    "coherencia_perfecta": {
+      "max_ajuste": 0.2,
+      "descripcion": "Consistencia visual impecable",
+      "aplicar_si": "todos los elementos perfectamente definidos"
+    },
+    "falta_elementos": {
+      "max_ajuste": -0.3,
+      "descripcion": "Elementos importantes sin definir",
+      "aplicar_si": "personajes del texto sin entrada en bible"
+    },
+    "descripciones_vagas": {
+      "max_ajuste": -0.2,
+      "descripcion": "Descripciones genéricas o ambiguas",
+      "aplicar_si": "usa términos como 'normal', 'común', sin especificar"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_metricas + ajustes_contextuales",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    }
+  }
+}

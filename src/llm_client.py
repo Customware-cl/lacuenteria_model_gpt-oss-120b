@@ -16,7 +16,7 @@ class LLMClient:
     
     def __init__(self):
         self.endpoint = LLM_CONFIG.get("api_url", "http://69.19.136.204:8000/v1/chat/completions")
-        self.model = LLM_CONFIG["model"]
+        self.model = "openai/gpt-oss-120b"  # Corregido al nombre del modelo correcto
         self.temperature = LLM_CONFIG["temperature"]
         self.max_tokens = LLM_CONFIG["max_tokens"]
         self.timeout = 900  # Aumentar timeout a 900 segundos para respuestas largas

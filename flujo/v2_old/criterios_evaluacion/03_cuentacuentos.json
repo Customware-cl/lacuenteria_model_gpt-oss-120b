@@ -1,0 +1,563 @@
+{
+  "agente": "03_cuentacuentos",
+  "descripcion": "Criterios de evaluación GENÉRICOS página por página para el Cuentacuentos versificador",
+  "configuracion": {
+    "silabas_min": 8,
+    "silabas_max": 15,
+    "tolerancia_silabas": 2,
+    "paginas_leitmotiv": [2, 5, 10]
+  },
+  "metricas": {
+    "coherencia_pagina": {
+      "peso": 0.15,
+      "descripcion": "Evaluación de coherencia narrativa dentro de cada página",
+      "criterios": {
+        "flujo_interno": {
+          "descripcion": "¿Los 4 versos fluyen conectadamente contando el mismo momento?",
+          "verificar": "conexión lógica entre verso 1→2→3→4",
+          "esencial": true
+        },
+        "unidad_tematica": {
+          "descripcion": "¿Los 4 versos tratan el mismo beat/momento narrativo?",
+          "verificar": "no hay saltos temáticos entre versos",
+          "esencial": true
+        },
+        "progresion_clara": {
+          "descripcion": "¿Hay secuencia lógica: escena→desarrollo→reacción→cierre?",
+          "verificar": "estructura narrativa clara en los 4 versos",
+          "esencial": false
+        },
+        "contexto_mantenido": {
+          "descripcion": "¿Se mantiene el contexto espacial/temporal?",
+          "verificar": "no hay confusión sobre dónde/cuándo ocurre",
+          "esencial": false
+        }
+      }
+    },
+    "pagina_1": {
+      "peso": 0.085,
+      "descripcion": "Evaluación integral de la página 1",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO debe repetir la misma palabra para rimar",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 8-15 sílabas (+2 tolerancia)?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "esquema_rima": {
+          "descripcion": "¿Mantiene esquema AABB o ABAB?",
+          "verificar": "patrón de rima consistente",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja el conflicto definido en beat_sheet[0]?",
+          "verificar": "contenido alineado con director página 1",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Incorpora la micro_habilidad de página 1?",
+          "verificar": "usa elemento del mapa_psico_narrativo[0]",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza la imagen_nuclear de página 1?",
+          "verificar": "descripción visual del beat_sheet",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado para edad_objetivo?",
+          "verificar": "palabras simples y comprensibles",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Orden natural de palabras?",
+          "verificar": "sin inversiones forzadas",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_2": {
+      "peso": 0.085,
+      "descripcion": "Evaluación integral de la página 2 (con leitmotiv)",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO debe repetir la misma palabra para rimar",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 8-15 sílabas (+2 tolerancia)?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "leitmotiv_presente": {
+          "descripcion": "¿Incluye el leitmotiv del director?",
+          "verificar": "leitmotiv textual exacto de director.json",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja el conflicto definido en beat_sheet[1]?",
+          "verificar": "contenido alineado con director página 2",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Incorpora la micro_habilidad de página 2?",
+          "verificar": "usa elemento del mapa_psico_narrativo[1]",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza la imagen_nuclear de página 2?",
+          "verificar": "descripción visual del beat_sheet",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado para edad_objetivo?",
+          "verificar": "palabras apropiadas",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Fluye naturalmente al leer?",
+          "verificar": "sin trabalenguas",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_3": {
+      "peso": 0.085,
+      "descripcion": "Evaluación integral de la página 3",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO debe repetir la misma palabra para rimar",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 8-15 sílabas (+2 tolerancia)?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja el conflicto definido en beat_sheet[2]?",
+          "verificar": "contenido alineado con director página 3",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Incorpora la micro_habilidad de página 3?",
+          "verificar": "usa elemento del mapa_psico_narrativo[2]",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza la imagen_nuclear de página 3?",
+          "verificar": "descripción visual del beat_sheet",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado para edad_objetivo?",
+          "verificar": "comprensible para niños",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Mantiene orden natural?",
+          "verificar": "sin inversiones",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_4": {
+      "peso": 0.085,
+      "descripcion": "Evaluación integral de la página 4",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO debe repetir la misma palabra para rimar",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 8-15 sílabas (+2 tolerancia)?",
+          "verificar": "contar sílabas métricas",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja el conflicto definido en beat_sheet[3]?",
+          "verificar": "contenido alineado con director página 4",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Incorpora la micro_habilidad de página 4?",
+          "verificar": "usa elemento del mapa_psico_narrativo[3]",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza la imagen_nuclear de página 4?",
+          "verificar": "descripción visual del beat_sheet",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado para edad_objetivo?",
+          "verificar": "palabras simples",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Fluye naturalmente?",
+          "verificar": "pausas apropiadas",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_5": {
+      "peso": 0.085,
+      "descripcion": "Evaluación integral de la página 5 (con leitmotiv)",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO debe repetir la misma palabra para rimar",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 8-15 sílabas (+2 tolerancia)?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "leitmotiv_presente": {
+          "descripcion": "¿Incluye el leitmotiv del director?",
+          "verificar": "leitmotiv textual exacto de director.json",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja el conflicto definido en beat_sheet[4]?",
+          "verificar": "contenido alineado con director página 5",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Incorpora la micro_habilidad de página 5?",
+          "verificar": "usa elemento del mapa_psico_narrativo[4]",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza la imagen_nuclear de página 5?",
+          "verificar": "descripción visual del beat_sheet",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado para edad_objetivo?",
+          "verificar": "palabras apropiadas",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Fluye naturalmente?",
+          "verificar": "sin interrupciones",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_6": {
+      "peso": 0.085,
+      "descripcion": "Evaluación integral de la página 6",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO debe repetir la misma palabra para rimar",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 8-15 sílabas (+2 tolerancia)?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja el conflicto definido en beat_sheet[5]?",
+          "verificar": "contenido alineado con director página 6",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Incorpora la micro_habilidad de página 6?",
+          "verificar": "usa elemento del mapa_psico_narrativo[5]",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza la imagen_nuclear de página 6?",
+          "verificar": "descripción visual del beat_sheet",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado para edad_objetivo?",
+          "verificar": "comprensible",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Mantiene orden natural?",
+          "verificar": "sin inversiones",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_7": {
+      "peso": 0.085,
+      "descripcion": "Evaluación integral de la página 7",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO debe repetir la misma palabra para rimar",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 8-15 sílabas (+2 tolerancia)?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja el conflicto definido en beat_sheet[6]?",
+          "verificar": "contenido alineado con director página 7",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Incorpora la micro_habilidad de página 7?",
+          "verificar": "usa elemento del mapa_psico_narrativo[6]",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza la imagen_nuclear de página 7?",
+          "verificar": "descripción visual del beat_sheet",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado para edad_objetivo?",
+          "verificar": "palabras apropiadas",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Fluye naturalmente?",
+          "verificar": "lectura fluida",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_8": {
+      "peso": 0.085,
+      "descripcion": "Evaluación integral de la página 8",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO debe repetir la misma palabra para rimar",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 8-15 sílabas (+2 tolerancia)?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja el conflicto definido en beat_sheet[7]?",
+          "verificar": "contenido alineado con director página 8",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Incorpora la micro_habilidad de página 8?",
+          "verificar": "usa elemento del mapa_psico_narrativo[7]",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza la imagen_nuclear de página 8?",
+          "verificar": "descripción visual del beat_sheet",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado para edad_objetivo?",
+          "verificar": "palabras simples",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Mantiene orden natural?",
+          "verificar": "sin inversiones",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_9": {
+      "peso": 0.085,
+      "descripcion": "Evaluación integral de la página 9",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO debe repetir la misma palabra para rimar",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 8-15 sílabas (+2 tolerancia)?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja el conflicto definido en beat_sheet[8]?",
+          "verificar": "contenido alineado con director página 9",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Incorpora la micro_habilidad de página 9?",
+          "verificar": "usa elemento del mapa_psico_narrativo[8]",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza la imagen_nuclear de página 9?",
+          "verificar": "descripción visual del beat_sheet",
+          "esencial": false
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado para edad_objetivo?",
+          "verificar": "comprensible",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Fluye naturalmente?",
+          "verificar": "lectura fluida",
+          "esencial": true
+        }
+      }
+    },
+    "pagina_10": {
+      "peso": 0.085,
+      "descripcion": "Evaluación integral de la página 10 (con leitmotiv y resolución)",
+      "musicalidad": {
+        "rima_valida": {
+          "descripcion": "¿Versos 1-2 y 3-4 riman con palabras DIFERENTES?",
+          "verificar": "NO debe repetir la misma palabra para rimar",
+          "esencial": true
+        },
+        "metro_correcto": {
+          "descripcion": "¿Cada verso tiene 8-15 sílabas (+2 tolerancia)?",
+          "verificar": "contar sílabas métricas exactas",
+          "esencial": true
+        },
+        "leitmotiv_presente": {
+          "descripcion": "¿Incluye el leitmotiv del director?",
+          "verificar": "leitmotiv textual exacto de director.json",
+          "esencial": true
+        }
+      },
+      "imagineria": {
+        "refleja_beat_sheet": {
+          "descripcion": "¿Refleja la RESOLUCIÓN definida en beat_sheet[9]?",
+          "verificar": "debe usar 'resolucion' no 'conflicto'",
+          "esencial": true
+        },
+        "integra_psicoeducador": {
+          "descripcion": "¿Incorpora la micro_habilidad de página 10?",
+          "verificar": "usa elemento del mapa_psico_narrativo[9]",
+          "esencial": true
+        },
+        "imagen_clara": {
+          "descripcion": "¿Visualiza la imagen_nuclear de página 10?",
+          "verificar": "descripción visual del beat_sheet",
+          "esencial": false
+        },
+        "cierre_satisfactorio": {
+          "descripcion": "¿Proporciona un cierre emotivo satisfactorio?",
+          "verificar": "sensación de completitud",
+          "esencial": true
+        }
+      },
+      "fluidez": {
+        "vocabulario_edad": {
+          "descripcion": "¿Vocabulario apropiado para edad_objetivo?",
+          "verificar": "celebratorio y comprensible",
+          "esencial": true
+        },
+        "sintaxis_natural": {
+          "descripcion": "¿Fluye naturalmente como cierre?",
+          "verificar": "ritmo conclusivo",
+          "esencial": true
+        }
+      }
+    }
+  },
+  "penalizaciones": {
+    "palabra_repetida_para_rima": {
+      "descripcion": "Usar la misma palabra para rimar (ej: rojo/rojo)",
+      "penalizacion": -2.0,
+      "aplicar_si": "detecta palabras idénticas rimando"
+    },
+    "exceso_silabas_grave": {
+      "descripcion": "Más de 17 sílabas en un verso (tolerancia +2 excedida)",
+      "penalizacion": -1.0,
+      "aplicar_si": "verso excede 17 sílabas"
+    },
+    "leitmotiv_faltante": {
+      "descripcion": "No incluir leitmotiv en páginas 2, 5 o 10",
+      "penalizacion": -1.5,
+      "aplicar_si": "falta leitmotiv en páginas obligatorias"
+    },
+    "desconexion_director": {
+      "descripcion": "No reflejar el beat_sheet del director",
+      "penalizacion": -1.0,
+      "aplicar_si": "contenido no alineado con estructura narrativa"
+    }
+  },
+  "ajustes_contextuales": {
+    "creatividad_excepcional": {
+      "max_ajuste": 0.5,
+      "descripcion": "Versos particularmente creativos y memorables",
+      "aplicar_si": "rimas ingeniosas sin forzar métrica"
+    },
+    "integracion_perfecta": {
+      "max_ajuste": 0.3,
+      "descripcion": "Integración perfecta de director y psicoeducador",
+      "aplicar_si": "elementos narrativos y pedagógicos fluyen naturalmente"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_paginas + penalizaciones + ajustes",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    },
+    "umbral_minimo": 4.0,
+    "nota_maxima_si_repite_palabras": 2.0
+  }
+}

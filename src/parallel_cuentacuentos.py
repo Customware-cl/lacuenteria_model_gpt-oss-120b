@@ -21,9 +21,10 @@ logger = logging.getLogger(__name__)
 class ParallelCuentacuentos:
     """Procesador paralelo para el agente cuentacuentos"""
     
-    def __init__(self, story_id: str, version: str = 'v2'):
+    def __init__(self, story_id: str, version: str = 'v2', mode_verificador_qa: bool = True):
         self.story_id = story_id
         self.version = version
+        self.mode_verificador_qa = mode_verificador_qa
         self.llm_client = get_llm_client()
         
         # Thread-safe para tracking de rimas usadas
@@ -46,17 +47,17 @@ class ParallelCuentacuentos:
         
     def load_config(self):
         """Carga configuración para procesamiento paralelo"""
-        # MODO SECUENCIAL FORZADO - Para garantizar 100% de páginas
+        # Configuración por defecto - MODO PARALELO
         self.config = {
-            "max_workers": 1,  # SECUENCIAL: Solo 1 worker para garantizar completitud
-            "page_timeout": 120,  # Aumentado de 60 a 120 segundos
-            "max_retries_per_page": 3,  # Aumentado de 2 a 3 reintentos
+            "max_workers": 3,  # PARALELO: 3 workers para procesamiento concurrente
+            "page_timeout": 120,  # Timeout de 120 segundos por página
+            "max_retries_per_page": 3,  # 3 reintentos por página
             "temperature": 0.75,
-            "max_tokens": 30000,  # AUMENTADO: 30000 tokens para evitar truncamiento
+            "max_tokens": 30000,  # 30000 tokens para evitar truncamiento
             "top_p": 0.95,
             "qa_threshold": 3.5,
-            "delay_between_pages": 2,  # Aumentado: 2 segundos entre páginas
-            "force_sequential": True  # Flag para forzar procesamiento secuencial
+            "delay_between_pages": 1,  # 1 segundo entre páginas para paralelo
+            "force_sequential": False  # NO forzar procesamiento secuencial por defecto
         }
         
         # Intentar cargar configuración específica de v2
@@ -72,11 +73,11 @@ class ParallelCuentacuentos:
                         "max_tokens": cuentos_config.get("max_tokens_per_page", 30000),
                         "top_p": cuentos_config.get("top_p", 0.95),
                         "qa_threshold": cuentos_config.get("qa_threshold", 3.5),
-                        "max_workers": cuentos_config.get("max_workers", 1),
+                        "max_workers": cuentos_config.get("max_workers", 3),  # Por defecto 3 workers
                         "page_timeout": cuentos_config.get("page_timeout", 120),
                         "max_retries_per_page": cuentos_config.get("max_retries_per_page", 3),
-                        "force_sequential": cuentos_config.get("force_sequential", True),
-                        "delay_between_pages": cuentos_config.get("delay_between_pages", 2)
+                        "force_sequential": cuentos_config.get("force_sequential", False),  # Por defecto paralelo
+                        "delay_between_pages": cuentos_config.get("delay_between_pages", 1)  # Por defecto 1 segundo
                     })
         
         logger.info(f"📊 Configuración paralela cargada: {self.config}")
@@ -422,17 +423,28 @@ RESPONDE ÚNICAMENTE CON EL JSON ESPECIFICADO."""
                 qa_issues = structure_issues.copy()
                 
                 if structure_valid:
-                    # SIEMPRE ejecutar verificación QA externa si la estructura es válida
-                    logger.info(f"🔍 Ejecutando verificación QA para página {page_num}, intento {retry+1}")
-                    qa_verification = self.run_qa_verification(result, page_num, retry)
-                    qa_passed = qa_verification.get('pasa_umbral', False)
-                    logger.info(f"📊 QA resultado para página {page_num}: pasa={qa_passed}")
-                    
-                    # Extraer score del QA
-                    if 'promedio' in qa_verification and 'nota_final' in qa_verification['promedio']:
-                        qa_score = qa_verification['promedio']['nota_final']
+                    # Verificación QA condicional basada en mode_verificador_qa
+                    if self.mode_verificador_qa:
+                        logger.info(f"🔍 Ejecutando verificación QA para página {page_num}, intento {retry+1}")
+                        qa_verification = self.run_qa_verification(result, page_num, retry)
+                        qa_passed = qa_verification.get('pasa_umbral', False)
+                        logger.info(f"📊 QA resultado para página {page_num}: pasa={qa_passed}")
+                        
+                        # Extraer score del QA
+                        if 'promedio' in qa_verification and 'nota_final' in qa_verification['promedio']:
+                            qa_score = qa_verification['promedio']['nota_final']
+                        else:
+                            qa_score = qa_verification.get('qa_score', 3.0)
                     else:
-                        qa_score = qa_verification.get('qa_score', 3.0)
+                        # Si mode_verificador_qa es False, aprobar automáticamente
+                        logger.info(f"⚡ Saltando verificación QA para página {page_num} (mode_verificador_qa=False)")
+                        qa_passed = True
+                        qa_score = 4.5  # Score por defecto cuando no hay verificación
+                        qa_verification = {
+                            'pasa_umbral': True,
+                            'qa_score': qa_score,
+                            'nota': 'QA automático (verificador deshabilitado)'
+                        }
                     
                     if not qa_passed:
                         # QA externo falló, actualizar issues

@@ -1,0 +1,120 @@
+{
+  "agente": "02_psicoeducador",
+  "descripcion": "Criterios de evaluación para el Psicoeducador infantil",
+  "metricas": {
+    "alineacion_pedagogica": {
+      "peso": 0.4,
+      "descripcion": "Evaluación de la coherencia pedagógica con edad y mensaje",
+      "criterios": {
+        "recursos_apropiados_edad": {
+          "descripcion": "¿Los recursos son apropiados para la edad objetivo?",
+          "verificar": "habilidades y estrategias acordes al desarrollo infantil",
+          "esencial": true
+        },
+        "alineacion_con_mensaje": {
+          "descripcion": "¿Los recursos refuerzan el mensaje principal?",
+          "verificar": "cada recurso conecta con mensaje_a_transmitir",
+          "esencial": true
+        },
+        "metas_conductuales_claras": {
+          "descripcion": "¿Las metas conductuales son específicas y alcanzables?",
+          "verificar": "metas_conductuales son concretas y medibles",
+          "esencial": true
+        },
+        "progresion_pedagogica": {
+          "descripcion": "¿Hay una progresión lógica en las habilidades?",
+          "verificar": "micro_habilidades van de simple a complejo",
+          "esencial": false
+        },
+        "sin_moralizar": {
+          "descripcion": "¿Evita sermones y moralización explícita?",
+          "verificar": "no hay frases prescriptivas o autoritarias",
+          "esencial": false
+        }
+      }
+    },
+    "aplicabilidad": {
+      "peso": 0.3,
+      "descripcion": "Evaluación de la practicidad de las estrategias",
+      "criterios": {
+        "frases_modelo_utiles": {
+          "descripcion": "¿Las frases modelo son naturales y usables?",
+          "verificar": "frases que un niño realmente diría",
+          "esencial": true
+        },
+        "recursos_implementables": {
+          "descripcion": "¿Los recursos son fáciles de implementar?",
+          "verificar": "no requieren materiales especiales o contextos irreales",
+          "esencial": true
+        },
+        "actividades_concretas": {
+          "descripcion": "¿Las actividades de refuerzo son específicas?",
+          "verificar": "actividades tienen pasos claros y realizables",
+          "esencial": false
+        },
+        "transferencia_vida_real": {
+          "descripcion": "¿Las habilidades se pueden usar en situaciones cotidianas?",
+          "verificar": "aplicables en casa, escuela, juego",
+          "esencial": false
+        }
+      }
+    },
+    "sensibilidad": {
+      "peso": 0.3,
+      "descripcion": "Evaluación del respeto al desarrollo infantil",
+      "criterios": {
+        "respeta_desarrollo_emocional": {
+          "descripcion": "¿Respeta las capacidades emocionales de la edad?",
+          "verificar": "no exige regulación emocional más allá de la edad",
+          "esencial": true
+        },
+        "lenguaje_validante": {
+          "descripcion": "¿Usa lenguaje validante y empático?",
+          "verificar": "valida emociones, no las minimiza",
+          "esencial": true
+        },
+        "sin_contenido_inadecuado": {
+          "descripcion": "¿Evita temas sensibles o inapropiados?",
+          "verificar": "no incluye miedos, violencia o temas adultos",
+          "esencial": true
+        },
+        "diversidad_inclusion": {
+          "descripcion": "¿Considera diversidad y es inclusivo?",
+          "verificar": "no asume contextos familiares específicos",
+          "esencial": false
+        }
+      }
+    }
+  },
+  "ajustes_contextuales": {
+    "innovacion_pedagogica": {
+      "max_ajuste": 0.3,
+      "descripcion": "Enfoque pedagógico particularmente innovador",
+      "aplicar_si": "introduce estrategias creativas y efectivas"
+    },
+    "coherencia_excepcional": {
+      "max_ajuste": 0.2,
+      "descripcion": "Integración perfecta con la narrativa",
+      "aplicar_si": "los recursos fluyen naturalmente con la historia"
+    },
+    "desalineacion_grave": {
+      "max_ajuste": -0.5,
+      "descripcion": "Recursos contradicen el mensaje o son inapropiados",
+      "aplicar_si": "hay contradicción con objetivos o inadecuación para la edad"
+    }
+  },
+  "calculo_nota": {
+    "formula": "promedio_ponderado_metricas + ajustes_contextuales",
+    "escala": {
+      "90-100%": 5.0,
+      "80-89%": 4.5,
+      "70-79%": 4.0,
+      "60-69%": 3.5,
+      "50-59%": 3.0,
+      "40-49%": 2.5,
+      "30-39%": 2.0,
+      "20-29%": 1.5,
+      "0-19%": 1.0
+    }
+  }
+}
