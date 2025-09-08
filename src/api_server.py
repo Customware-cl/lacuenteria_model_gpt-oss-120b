@@ -36,7 +36,7 @@ processing_queue = {}
 processing_lock = threading.Lock()
 
 
-def process_story_async(story_id: str, brief: dict, webhook_url: str, mode_verificador_qa: bool = True, pipeline_version: str = 'v1', prompt_metrics_id: str = None):
+def process_story_async(story_id: str, brief: dict, webhook_url: str, mode_verificador_qa: bool = True, pipeline_version: str = 'v1', prompt_metrics_id: str = None, pipeline_request_id: str = None):
     """
     Procesa una historia de forma asíncrona
     
@@ -61,7 +61,7 @@ def process_story_async(story_id: str, brief: dict, webhook_url: str, mode_verif
                 mode_verificador_qa = version_config['mode_verificador_qa']
         
         # Crear orquestador con timestamp para evitar colisiones
-        orchestrator = StoryOrchestrator(story_id, mode_verificador_qa=mode_verificador_qa, pipeline_version=pipeline_version, use_timestamp=True, prompt_metrics_id=prompt_metrics_id)
+        orchestrator = StoryOrchestrator(story_id, mode_verificador_qa=mode_verificador_qa, pipeline_version=pipeline_version, use_timestamp=True, prompt_metrics_id=prompt_metrics_id, pipeline_request_id=pipeline_request_id)
         
         # Actualizar el story_id en la cola con el ID con timestamp
         actual_story_id = orchestrator.story_id
@@ -219,11 +219,16 @@ def create_story():
         story_id = data['story_id']
         webhook_url = data.get('webhook_url')
         prompt_metrics_id = data.get('prompt_metrics_id')  # Nuevo campo para v2
+        pipeline_request_id = data.get('pipeline_request_id')  # Nuevo campo para tracking único
         mode_verificador_qa = data.get('mode_verificador_qa', True)  # Default: True (estricto)
         
         # Log del prompt_metrics_id recibido
         if prompt_metrics_id:
             logger.info(f"prompt_metrics_id recibido: {prompt_metrics_id}")
+        
+        # Log del pipeline_request_id recibido
+        if pipeline_request_id:
+            logger.info(f"pipeline_request_id recibido: {pipeline_request_id}")
         
         # pipeline_version ya fue detectado arriba para validación condicional
         
@@ -270,7 +275,7 @@ def create_story():
         # Iniciar procesamiento asíncrono con versión
         thread = threading.Thread(
             target=process_story_async,
-            args=(story_id, brief, webhook_url, mode_verificador_qa, pipeline_version, prompt_metrics_id)
+            args=(story_id, brief, webhook_url, mode_verificador_qa, pipeline_version, prompt_metrics_id, pipeline_request_id)
         )
         thread.daemon = True
         thread.start()
@@ -569,6 +574,10 @@ def get_story_result(story_id):
         # Incluir evaluación crítica si existe
         if evaluacion_critica:
             response["evaluacion_critica"] = evaluacion_critica
+        
+        # Incluir pipeline_request_id si existe en el manifest
+        if "pipeline_request_id" in manifest:
+            response["pipeline_request_id"] = manifest["pipeline_request_id"]
         
         return jsonify(response), 200
         

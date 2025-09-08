@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 class StoryOrchestrator:
     """Orquesta el pipeline completo de generación de cuentos"""
     
-    def __init__(self, story_id: Optional[str] = None, mode_verificador_qa: bool = True, pipeline_version: str = 'v1', use_timestamp: bool = True, prompt_metrics_id: Optional[str] = None):
+    def __init__(self, story_id: Optional[str] = None, mode_verificador_qa: bool = True, pipeline_version: str = 'v1', use_timestamp: bool = True, prompt_metrics_id: Optional[str] = None, pipeline_request_id: Optional[str] = None):
         """
         Inicializa el orquestador
         
@@ -50,6 +50,7 @@ class StoryOrchestrator:
         self.mode_verificador_qa = mode_verificador_qa
         self.pipeline_version = pipeline_version
         self.prompt_metrics_id = prompt_metrics_id
+        self.pipeline_request_id = pipeline_request_id
         self.agent_runner = AgentRunner(self.story_id, mode_verificador_qa=mode_verificador_qa, version=pipeline_version)
         self.manifest = self._init_manifest()
         
@@ -126,6 +127,9 @@ class StoryOrchestrator:
             # Guardar prompt_metrics_id si fue proporcionado al orchestrator
             if self.prompt_metrics_id:
                 self.manifest["prompt_metrics_id"] = self.prompt_metrics_id
+            # Guardar pipeline_request_id si fue proporcionado
+            if self.pipeline_request_id:
+                self.manifest["pipeline_request_id"] = self.pipeline_request_id
             self.manifest["estado"] = "en_progreso"
             self._save_manifest()
             
@@ -238,6 +242,10 @@ class StoryOrchestrator:
             # Incluir prompt_metrics_id si existe
             if "prompt_metrics_id" in self.manifest:
                 result_dict["prompt_metrics_id"] = self.manifest["prompt_metrics_id"]
+            
+            # Incluir pipeline_request_id si existe
+            if "pipeline_request_id" in self.manifest:
+                result_dict["pipeline_request_id"] = self.manifest["pipeline_request_id"]
             
             return result_dict
             
