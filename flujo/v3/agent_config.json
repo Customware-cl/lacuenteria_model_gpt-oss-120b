@@ -6,7 +6,7 @@
     "description": "Director que planifica la estructura narrativa"
   },
   "02_escritor_v3": {
-    "temperature": 0.8,
+    "temperature": 0.4,
     "max_tokens": 30000,
     "qa_threshold": null,
     "description": "Escritor que desarrolla el texto completo del cuento"

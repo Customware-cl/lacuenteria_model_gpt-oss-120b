@@ -2,5 +2,5 @@
   "01_director_v3": ["brief.json"],
   "02_escritor_v3": ["01_director_v3.json"],
   "03_directorarte_v3": ["01_director_v3.json","02_escritor_v3.json"],
-  "04_consolidador_v3": ["02_escritor_v3.json", "03_directorarte_v3.json"]
+  "04_consolidador_v3": ["01_director_v3.json", "02_escritor_v3.json", "03_directorarte_v3.json"]
 }
