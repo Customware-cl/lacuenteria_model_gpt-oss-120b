@@ -5,6 +5,8 @@
 **Última actualización**: 3 de Septiembre 2025
 
 ### 🚀 Cambios Recientes (Sept 2025)
+- **Flujo v3 Optimizado**: Nueva versión con solo 4 agentes (67% más rápido)
+- **Soporte Multiidioma**: Detección automática de idioma en v3
 - **Nueva estructura de carpetas**: `{YYYYMMDD-HHMMSS}-{story_id}` para mejor ordenamiento
 - **Autenticación de Webhooks**: Soporte completo para Supabase Edge Functions
 - **Gestión de métricas**: `prompt_metrics_id` correctamente aislado del contexto de agentes
@@ -15,7 +17,11 @@ Ver [`docs/ESTADO_ACTUAL.md`](docs/ESTADO_ACTUAL.md) para detalles completos.
 
 ## 📚 Descripción
 
-Cuentería es un sistema multiagente basado en IA para la creación automatizada de cuentos infantiles personalizados. El sistema orquesta 12 agentes especializados que trabajan en conjunto para producir narrativas infantiles completas con texto e indicaciones visuales, garantizando calidad pedagógica, literaria y sensibilidad cultural.
+Cuentería es un sistema multiagente basado en IA para la creación automatizada de cuentos infantiles personalizados. Disponible en dos versiones:
+- **v3 (Recomendado)**: Pipeline optimizado con 4 agentes - 67% más rápido
+- **v2 (Clásico)**: Pipeline completo con 12 agentes especializados
+
+Ambas versiones producen narrativas infantiles completas con texto e indicaciones visuales, garantizando calidad pedagógica, literaria y sensibilidad cultural.
 
 ## 🎯 Objetivo
 
@@ -28,8 +34,23 @@ Generar cuentos infantiles de 10 páginas que:
 
 ## 🏗️ Arquitectura del Sistema
 
-### Pipeline de Agentes
+### Versiones del Pipeline
 
+#### 🆕 Pipeline v3 (Optimizado - Recomendado)
+Flujo reducido con solo **4 agentes especializados** que combinan las funciones de los 12 agentes originales:
+
+1. **Director v3** → Estructura narrativa + psicoeducación + continuidad
+2. **Escritor v3** → Texto en versos con claridad y ritmo integrados  
+3. **Director Arte v3** → Diseño visual completo (escenas + arte + sensibilidad)
+4. **Consolidador v3** → Ensamblaje final con portada y loader
+
+**Ventajas del v3:**
+- ⚡ 67% más rápido (60-90 segundos vs 180 segundos)
+- 🌍 Soporte multiidioma automático
+- 📊 Sin necesidad de verificación QA
+- 💾 Menor consumo de recursos
+
+#### Pipeline v2 (Clásico - 12 Agentes)
 El sistema ejecuta un flujo secuencial con quality gates entre cada paso:
 
 1. **Director** → Diseña la estructura narrativa (Beat Sheet)
@@ -57,7 +78,7 @@ El agente **Orquestador** coordina todo el pipeline:
 
 ```
 cuenteria/
-├── agentes/              # Definiciones de agentes especializados
+├── agentes/              # Definiciones de agentes v2 (clásico)
 │   ├── orquestador.json  # Coordinador del pipeline
 │   ├── director.json      # Diseñador de estructura narrativa
 │   ├── psicoeducador.json # Experto en psicología infantil
@@ -70,6 +91,18 @@ cuenteria/
 │   ├── portadista.json   # Creador de títulos y portadas
 │   ├── loader.json       # Generador de mensajes de carga
 │   └── validador.json    # Ensamblador final
+├── flujo/
+│   └── v3/               # Pipeline v3 optimizado
+│       ├── config.json   # Configuración v3
+│       └── agentes/      # Agentes v3
+│           ├── 01_director_v3.json
+│           ├── 02_escritor_v3.json
+│           ├── 03_directorarte_v3.json
+│           └── 04_consolidador_v3.json
+├── docs/                 # Documentación completa
+│   ├── V3_FLOW_DOCUMENTATION.md      # Referencia completa v3
+│   ├── V3_QUICK_START_GUIDE.md       # Inicio rápido v3
+│   └── V3_TROUBLESHOOTING_GUIDE.md   # Resolución de problemas v3
 └── runs/                 # Ejecuciones y resultados generados
 ```
 
@@ -219,13 +252,83 @@ orchestrator = StoryOrchestrator(story_id, mode_verificador_qa=False)
 **Umbral de aprobación**: 4.0/5 en ambos modos
 **Reintentos máximos**: 2 por agente si QA < 4.0
 
-## 🚀 Uso
+## 🚀 Uso Rápido
 
-El sistema requiere:
-1. **Personajes**: Definición de protagonistas
-2. **Historia**: Trama base
-3. **Mensaje a transmitir**: Objetivo educativo
-4. **Edad objetivo**: Para adaptar complejidad
+### Opción 1: Pipeline v3 (Recomendado - 60-90 segundos)
+
+```bash
+# 1. Iniciar el servidor
+python3 src/api_server.py
+
+# 2. Crear un cuento con v3 (en otra terminal)
+curl -X POST http://localhost:5000/api/stories/create \
+  -H "Content-Type: application/json" \
+  -d '{
+    "story_id": "test-v3-story",
+    "personajes": ["Luna", "Estrella"],
+    "historia": "Luna y Estrella aprenden sobre amistad",
+    "mensaje_a_transmitir": "La importancia de compartir",
+    "edad_objetivo": 5,
+    "pipeline_version": "v3"
+  }'
+
+# 3. Verificar estado
+curl http://localhost:5000/api/stories/test-v3-story/status
+
+# 4. Obtener resultado (cuando esté completo)
+curl http://localhost:5000/api/stories/test-v3-story/result
+```
+
+### Opción 2: Pipeline v2 (Clásico - 180 segundos)
+
+```bash
+# Mismo comando pero sin pipeline_version o con "v2"
+curl -X POST http://localhost:5000/api/stories/create \
+  -H "Content-Type: application/json" \
+  -d '{
+    "story_id": "test-v2-story",
+    "personajes": ["Luna", "Estrella"],
+    "historia": "Luna y Estrella aprenden sobre amistad",
+    "mensaje_a_transmitir": "La importancia de compartir",
+    "edad_objetivo": 5
+  }'
+```
+
+### Scripts de Prueba Disponibles
+
+```bash
+# Test v3 con historia predefinida
+python3 test_v3_emilia_felipe.py
+
+# Test v2 clásico
+python3 test_flujo_completo.py
+
+# Test rápido (primeros 4 agentes v2)
+python3 test_rapido.py
+```
+
+## 📋 Parámetros Requeridos
+
+| Parámetro | Tipo | Requerido | Descripción | Ejemplo |
+|-----------|------|-----------|-------------|---------|
+| `story_id` | string | Sí | Identificador único | "cuento-001" |
+| `personajes` | array | Sí | Lista de personajes (1-3) | ["Luna", "Sol"] |
+| `historia` | string | Sí | Trama principal (50-200 palabras) | "Luna busca un amigo..." |
+| `mensaje_a_transmitir` | string | Opcional (v3) | Objetivo educativo | "Valor de la amistad" |
+| `edad_objetivo` | integer | Sí | Edad target (3-8) | 5 |
+| `pipeline_version` | string | No | Versión ("v2" o "v3") | "v3" |
+| `webhook_url` | string | No | URL para notificaciones | "https://..." |
+
+### Diferencias entre v2 y v3
+
+| Característica | v2 (Clásico) | v3 (Optimizado) |
+|----------------|--------------|-----------------|
+| Tiempo total | 180 segundos | 60-90 segundos |
+| Número de agentes | 12 agentes | 4 agentes |
+| Verificación QA | Requerida | No necesaria |
+| Soporte multiidioma | No | Sí (automático) |
+| Llamadas al LLM | 12+ | 4 |
+| mensaje_a_transmitir | Requerido | Opcional |
 
 ## 🌐 API Endpoints
 
@@ -256,11 +359,14 @@ El sistema Cuentería utiliza tres tipos de endpoints:
     "historia": "trama principal",
     "mensaje_a_transmitir": "objetivo educativo",
     "edad_objetivo": 3,
+    "pipeline_version": "v3",  // Opcional: "v2" o "v3" (default: "v2")
     "webhook_url": "URL opcional para notificaciones"
   }
   ```
 - **Respuesta**: Status 202 (Accepted) con ID y tiempo estimado
-- **Proceso**: Ejecuta los 12 agentes en secuencia asíncrona
+- **Proceso**: 
+  - v3: Ejecuta 4 agentes optimizados (60-90 segundos)
+  - v2: Ejecuta 12 agentes clásicos (180 segundos)
 
 ##### Consultar Estado
 - **GET** `/api/stories/{story_id}/status`

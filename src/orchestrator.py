@@ -8,6 +8,10 @@ from pathlib import Path
 from datetime import datetime
 from typing import Dict, Any, Optional, List
 import uuid
+from dotenv import load_dotenv
+
+# Cargar variables de entorno desde .env
+load_dotenv()
 
 from config import (
     AGENT_PIPELINE,

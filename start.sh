@@ -24,7 +24,8 @@ pip3 install -q -r requirements.txt 2>/dev/null || {
 }
 
 # Configurar variables de entorno por defecto
-export LLM_ENDPOINT="${LLM_ENDPOINT:-http://localhost:8080/v1/completions}"
+export LLM_API_URL="${LLM_API_URL:-http://localhost:8000/v1/chat/completions}"
+export LLM_MODEL="${LLM_MODEL:-openai/gpt-oss-120b}"
 export API_HOST="${API_HOST:-0.0.0.0}"
 export API_PORT="${API_PORT:-5000}"
 export LOG_LEVEL="${LOG_LEVEL:-INFO}"
@@ -32,7 +33,8 @@ export DEBUG="${DEBUG:-False}"
 
 echo ""
 echo "Configuración:"
-echo "  - LLM Endpoint: $LLM_ENDPOINT"
+echo "  - LLM Endpoint: $LLM_API_URL"
+echo "  - LLM Model: $LLM_MODEL"
 echo "  - API Host: $API_HOST"
 echo "  - API Port: $API_PORT"
 echo "  - Log Level: $LOG_LEVEL"
