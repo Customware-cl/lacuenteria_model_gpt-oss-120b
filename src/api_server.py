@@ -693,8 +693,8 @@ def run_critico_on_data(story_data, story_id="external"):
     try:
         from llm_client import LLMClient
         
-        # Cargar prompt del crítico
-        critico_prompt_path = get_agent_prompt_path("critico")
+        # Cargar prompt del crítico - siempre usar v2
+        critico_prompt_path = get_agent_prompt_path("13_critico", version='v2')
         with open(critico_prompt_path, 'r', encoding='utf-8') as f:
             critico_config = json.load(f)
         
